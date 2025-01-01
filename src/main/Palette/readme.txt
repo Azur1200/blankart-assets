@@ -1,0 +1,1 @@
+This is a custom color palette that tries to kinda look similar to 2.2s palette while using 2.1 mapping.

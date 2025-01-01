@@ -1,0 +1,16 @@
+*.ncb
+*.opt
+*.plg
+*.suo
+*.vcproj.*.*.user
+*.bsc
+*.dgb
+*.debug
+*.debug.txt
+*.user
+*.db
+*.opendb
+*.kate-swp
+/.vs
+/out
+/CMakeUserPresets.json
