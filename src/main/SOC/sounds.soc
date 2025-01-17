@@ -1,0 +1,4477 @@
+Sound sfx_None
+
+# Skin Sounds
+Sound sfx_altdi1
+Priority = 192
+Flags = 16
+SkinSound = SKSPLDET1
+Caption = Dying
+
+Sound sfx_altdi2
+Priority = 192
+Flags = 16
+SkinSound = SKSPLDET2
+Caption = Dying
+
+Sound sfx_altdi3
+Priority = 192
+Flags = 16
+SkinSound = SKSPLDET3
+Caption = Dying
+
+Sound sfx_altdi4
+Priority = 192
+Flags = 16
+SkinSound = SKSPLDET4
+Caption = Dying
+
+Sound sfx_altow1
+Priority = 192
+Flags = 16
+SkinSound = SKSPLPAN1
+Caption = Ring loss
+
+Sound sfx_altow2
+Priority = 192
+Flags = 16
+SkinSound = SKSPLPAN2
+Caption = Ring loss
+
+Sound sfx_altow3
+Priority = 192
+Flags = 16
+SkinSound = SKSPLPAN3
+Caption = Ring loss
+
+Sound sfx_altow4
+Priority = 192
+Flags = 16
+SkinSound = SKSPLPAN4
+Caption = Ring loss
+
+Sound sfx_victr1
+Priority = 64
+Flags = 16
+SkinSound = SKSPLVCT1
+Caption = /
+
+Sound sfx_victr2
+Priority = 64
+Flags = 16
+SkinSound = SKSPLVCT2
+Caption = /
+
+Sound sfx_victr3
+Priority = 64
+Flags = 16
+SkinSound = SKSPLVCT3
+Caption = /
+
+Sound sfx_victr4
+Priority = 64
+Flags = 16
+SkinSound = SKSPLVCT4
+Caption = /
+
+Sound sfx_gasp
+Priority = 64
+SkinSound = SKSGASP
+Caption = Bubble gasp
+
+Sound sfx_jump
+Priority = 140
+SkinSound = SKSJUMP
+Caption = Jump
+
+Sound sfx_pudpud
+Priority = 64
+SkinSound = SKSPUDPUD
+Caption = Tired flight
+
+Sound sfx_putput
+Priority = 64
+SkinSound = SKSPUTPUT
+Caption = Flight
+
+Sound sfx_spin
+Priority = 100
+SkinSound = SKSSPIN
+Caption = Spin
+
+Sound sfx_spndsh
+Priority = 64
+Flags = 1
+SkinSound = SKSSPNDSH
+Caption = Spindash
+
+Sound sfx_thok
+Priority = 96
+SkinSound = SKSTHOK
+Caption = Thok
+
+Sound sfx_zoom
+Priority = 120
+Flags = 1
+SkinSound = SKSZOOM
+Caption = Spin launch
+
+Sound sfx_skid
+Priority = 64
+Flags = 32
+SkinSound = SKSSKID
+Caption = Skid
+
+# Ambience/background objects/etc
+Sound sfx_ambint
+Singular = true
+Priority = 32
+Caption = Obnoxious disco music
+
+Sound sfx_alarm
+Priority = 32
+Caption = Alarm
+
+Sound sfx_buzz1
+Priority = 64
+Caption = Electric zap
+
+Sound sfx_buzz2
+Priority = 64
+Caption = Electric zap
+
+Sound sfx_buzz3
+Priority = 64
+Caption = Wacky worksurface
+
+Sound sfx_buzz4
+Singular = true
+Priority = 8
+Caption = Buzz
+
+Sound sfx_crumbl
+Singular = true
+Priority = 127
+Caption = Crumbling
+
+Sound sfx_fire
+Priority = 8
+Flags = 32
+Caption = Flamethrower
+
+Sound sfx_grind
+Priority = 64
+Caption = Metallic grinding
+
+Sound sfx_laser
+Singular = true
+Priority = 16
+Flags = 2
+Caption = Laser hum
+
+Sound sfx_mswing
+Priority = 16
+Flags = 65
+Caption = Swinging mace
+
+Sound sfx_pstart
+Priority = 100
+Caption = /
+
+Sound sfx_pstop
+Priority = 100
+Caption = Crusher stomp
+
+Sound sfx_steam1
+Priority = 64
+Caption = Steam jet
+
+Sound sfx_steam2
+Priority = 64
+Caption = Steam jet
+
+Sound sfx_wbreak
+Singular = true
+Priority = 64
+Caption = Wood breaking
+
+Sound sfx_ambmac
+Priority = 60
+Caption = Machinery
+
+Sound sfx_spsmsh
+Singular = true
+Priority = 60
+Caption = Heavy impact
+
+Sound sfx_rainin
+Singular = true
+Priority = 24
+Flags = 4
+Caption = Rain
+
+Sound sfx_litng1
+Priority = 16
+Flags = 2
+Caption = Lightning
+
+Sound sfx_litng2
+Priority = 16
+Flags = 2
+Caption = Lightning
+
+Sound sfx_litng3
+Priority = 16
+Flags = 2
+Caption = Lightning
+
+Sound sfx_litng4
+Priority = 16
+Flags = 2
+Caption = Lightning
+
+Sound sfx_athun1
+Priority = 16
+Flags = 2
+Caption = Thunder
+
+Sound sfx_athun2
+Priority = 16
+Flags = 2
+Caption = Thunder
+
+Sound sfx_amwtr1
+Priority = 12
+Caption = Stream
+
+Sound sfx_amwtr2
+Priority = 12
+Caption = Stream
+
+Sound sfx_amwtr3
+Priority = 12
+Caption = Stream
+
+Sound sfx_amwtr4
+Priority = 12
+Caption = Stream
+
+Sound sfx_amwtr5
+Priority = 12
+Caption = Stream
+
+Sound sfx_amwtr6
+Priority = 12
+Caption = Stream
+
+Sound sfx_amwtr7
+Priority = 12
+Caption = Stream
+
+Sound sfx_amwtr8
+Priority = 12
+Caption = Stream
+
+Sound sfx_bubbl1
+Priority = 11
+Caption = Glub
+
+Sound sfx_bubbl2
+Priority = 11
+Caption = Glub
+
+Sound sfx_bubbl3
+Priority = 11
+Caption = Glub
+
+Sound sfx_bubbl4
+Priority = 11
+Caption = Glub
+
+Sound sfx_bubbl5
+Priority = 11
+Caption = Glub
+
+Sound sfx_floush
+Priority = 16
+Caption = Glub
+
+Sound sfx_splash
+Priority = 64
+Caption = Glub
+
+Sound sfx_splish
+Priority = 64
+Caption = Splash
+
+Sound sfx_wdrip1
+Priority = 8
+Caption = Drip
+
+Sound sfx_wdrip2
+Priority = 8
+Caption = Drip
+
+Sound sfx_wdrip3
+Priority = 8
+Caption = Drip
+
+Sound sfx_wdrip4
+Priority = 8
+Caption = Drip
+
+Sound sfx_wdrip5
+Priority = 8
+Caption = Drip
+
+Sound sfx_wdrip6
+Priority = 8
+Caption = Drip
+
+Sound sfx_wdrip7
+Priority = 8
+Caption = Drip
+
+Sound sfx_wdrip8
+Priority = 8
+Caption = Drip
+
+Sound sfx_wslap
+Priority = 32
+Caption = Splash
+
+Sound sfx_doora1
+Priority = 64
+Caption = Sliding open
+
+Sound sfx_doorb1
+Priority = 64
+Caption = Sliding open
+
+Sound sfx_doorc1
+Priority = 64
+Caption = Wooden door opening
+
+Sound sfx_doorc2
+Priority = 64
+Caption = Slamming shut
+
+Sound sfx_doord1
+Priority = 64
+Caption = Creaking open
+
+Sound sfx_doord2
+Priority = 64
+Caption = Slamming shut
+
+Sound sfx_eleva1
+Priority = 64
+Caption = Starting elevator
+
+Sound sfx_eleva2
+Priority = 64
+Caption = Moving elevator
+
+Sound sfx_eleva3
+Priority = 64
+Caption = Stopping elevator
+
+Sound sfx_elevb1
+Priority = 64
+Caption = Starting elevator
+
+Sound sfx_elevb2
+Priority = 64
+Caption = Moving elevator
+
+Sound sfx_elevb3
+Priority = 64
+Caption = Stopping elevator
+
+Sound sfx_ambin2
+Priority = 64
+Caption = Natural vibrations
+
+Sound sfx_lavbub
+Priority = 64
+Flags = 8
+Caption = Bubbling lava
+
+Sound sfx_rocks1
+Priority = 64
+Flags = 64
+Caption = Falling rocks
+
+Sound sfx_rocks2
+Priority = 64
+Flags = 64
+Caption = Falling rocks
+
+Sound sfx_rocks3
+Priority = 64
+Flags = 64
+Caption = Falling rocks
+
+Sound sfx_rocks4
+Priority = 64
+Flags = 64
+Caption = Falling rocks
+
+Sound sfx_rumbam
+Priority = 64
+Caption = Ominous rumbling
+
+Sound sfx_rumble
+Priority = 64
+Flags = 24
+Caption = Ominous rumbling
+
+# Game objects, etc
+Sound sfx_appear
+Priority = 127
+Caption = Appearing platform
+
+Sound sfx_bkpoof
+Priority = 70
+Flags = 8
+Caption = Armageddon pow
+
+Sound sfx_bnce1
+Priority = 64
+Caption = Bounce
+
+Sound sfx_bnce2
+Priority = 64
+Caption = Scatter
+
+Sound sfx_cannon
+Priority = 64
+Flags = 8
+Caption = Powerful shot
+
+Sound sfx_cgot
+Singular = true
+Priority = 120
+Caption = Got Emerald
+
+Sound sfx_cybdth
+Priority = 32
+Caption = Explosion
+
+Sound sfx_deton
+Singular = true
+Priority = 64
+Caption = Threatening beeping
+
+# old sfx_appear sound
+Sound sfx_ding
+Priority = 127
+Flags = 8
+Caption = Ding
+
+Sound sfx_dmpain
+Priority = 96
+Caption = Machine damage
+
+Sound sfx_drown
+Priority = 192
+Caption = Drowning
+
+Sound sfx_fizzle
+Priority = 127
+Flags = 8
+Caption = Electric fizzle
+
+Sound sfx_gbeep
+Priority = 64
+Caption = Threatening beeping
+
+Sound sfx_wepfir
+Priority = 64
+Caption = Firing weapon
+
+Sound sfx_ghit
+Priority = 64
+Caption = Goop splash
+
+Sound sfx_gloop
+Priority = 60
+Caption = Splash
+
+Sound sfx_gspray
+Priority = 64
+Caption = Goop sling
+
+Sound sfx_gravch
+Priority = 64
+Caption = Recycler
+
+Sound sfx_itemup
+Singular = true
+Priority = 255
+Caption = Sparkle
+
+Sound sfx_jet
+Priority = 8
+Caption = Jet engine
+
+Sound sfx_jshard
+Singular = true
+Priority = 167
+Caption = Life transfer
+
+Sound sfx_lose
+Priority = 127
+Caption = Failure
+
+Sound sfx_lvpass
+Priority = 96
+Caption = Spinning signpost
+
+Sound sfx_mindig
+Priority = 8
+Flags = 64
+Caption = Tunnelling
+
+Sound sfx_mixup
+Singular = true
+Priority = 127
+Caption = Teleport
+
+Sound sfx_monton
+Priority = 64
+Caption = Golden Monitor activated
+
+Sound sfx_pogo
+Priority = 64
+Caption = Mechanical pogo
+
+Sound sfx_pop
+Priority = 78
+Caption = Pop
+
+Sound sfx_rail1
+Priority = 64
+Caption = Firing rail
+
+Sound sfx_rail2
+Priority = 64
+Caption = Crashing rail
+
+Sound sfx_rlaunc
+Priority = 64
+Caption = Firing
+
+Sound sfx_shield
+Priority = 60
+Caption = Pity Shield
+
+Sound sfx_wirlsg
+Priority = 60
+Caption = Whirlwind Shield
+
+Sound sfx_forcsg
+Priority = 60
+Caption = Force Shield
+
+Sound sfx_frcssg
+Priority = 60
+Caption = Weak Force Shield
+
+Sound sfx_elemsg
+Priority = 60
+Caption = Elemental Shield
+
+Sound sfx_armasg
+Priority = 60
+Caption = Armageddon Shield
+
+Sound sfx_attrsg
+Priority = 60
+Caption = Attraction Shield
+
+Sound sfx_shldls
+Priority = 64
+Caption = Hurt
+
+Sound sfx_spdpad
+Priority = 127
+Caption = Speedpad
+
+Sound sfx_spkdth
+Priority = 127
+Caption = Spiked
+
+Sound sfx_spring
+Priority = 112
+Caption = Spring
+
+Sound sfx_statu1
+Singular = true
+Priority = 64
+Flags = 2
+Caption = Pushing a statue
+
+Sound sfx_statu2
+Singular = true
+Priority = 64
+Flags = 2
+Caption = Pushing a statue
+
+Sound sfx_strpst
+Singular = true
+Priority = 192
+Caption = Starpost
+
+Sound sfx_supert
+Singular = true
+Priority = 127
+Flags = 2
+Caption = Transformation
+
+Sound sfx_telept
+Priority = 32
+Caption = Dash
+
+Sound sfx_tink
+Priority = 60
+Caption = Tink
+
+Sound sfx_token
+Singular = true
+Priority = 224
+Caption = Got Token
+
+Sound sfx_trfire
+Singular = true
+Priority = 60
+Flags = 8
+Caption = Laser fired
+
+Sound sfx_trpowr
+Singular = true
+Priority = 127
+Flags = 8
+Caption = Powering up
+
+Sound sfx_turhit
+Priority = 40
+Flags = 8
+Caption = Laser hit
+
+Sound sfx_wdjump
+Priority = 60
+Caption = Whirlwind jump
+
+Sound sfx_shrpsp
+Singular = true
+Priority = 60
+Caption = Spincushion
+
+Sound sfx_shrpgo
+Priority = 60
+Caption = Launch
+
+Sound sfx_mswarp
+Priority = 60
+Flags = 16
+Caption = Spinning out
+
+Sound sfx_mspogo
+Singular = true
+Priority = 60
+Flags = 8
+Caption = Breaking through
+
+Sound sfx_boingf
+Priority = 60
+Caption = Bouncing
+
+Sound sfx_corkp
+Priority = 64
+Caption = Cork fired
+
+Sound sfx_corkh
+Priority = 32
+Caption = Cork hit
+
+Sound sfx_alart
+Priority = 200
+Caption = Caught red handed!
+
+Sound sfx_vwre
+Priority = 200
+Caption = Clone fighter!
+
+Sound sfx_bowl
+Priority = 32
+Caption = Bowling
+
+Sound sfx_chuchu
+Priority = 32
+Caption = Train horn
+
+#sfx_bsnipe,
+Sound sfx_sprong
+Priority = 112
+Caption = Power spring
+
+Sound sfx_lvfal1
+Singular = true
+Priority = 64
+Caption = Rumble
+
+Sound sfx_pscree
+Priority = 64
+Caption = SCREE!
+
+Sound sfx_iceb
+Priority = 64
+Caption = Ice crack
+
+Sound sfx_shattr
+Singular = true
+Priority = 64
+Caption = Shattering
+
+Sound sfx_antiri
+Singular = true
+Priority = 255
+Caption = Depletion
+
+# Menu, interface
+Sound sfx_chchng
+Priority = 120
+Caption = Score
+
+Sound sfx_dwnind
+Priority = 212
+Caption = Thinking about air
+
+Sound sfx_emfind
+Priority = 64
+Caption = Radar beep
+
+Sound sfx_flgcap
+Priority = 64
+Caption = Flag captured
+
+Sound sfx_menu1
+Singular = true
+Priority = 64
+Caption = Menu beep
+
+Sound sfx_oneup
+Singular = true
+Priority = 192
+Caption = One-up
+
+Sound sfx_ptally
+Singular = true
+Priority = 64
+Caption = Tally
+
+Sound sfx_radio
+Priority = 60
+Caption = Notification
+
+Sound sfx_wepchg
+Singular = true
+Priority = 64
+Caption = Weapon change
+
+Sound sfx_wtrdng
+Singular = true
+Priority = 212
+Caption = Aquaphobia
+
+Sound sfx_zelda
+Priority = 120
+Caption = Discovery
+
+Sound sfx_adderr
+Singular = true
+Priority = 64
+Caption = Error
+
+Sound sfx_notadd
+Singular = true
+Priority = 64
+Caption = Reject
+
+Sound sfx_addfil
+Singular = true
+Priority = 64
+Caption = Accept
+
+# NiGHTS
+Sound sfx_ideya
+Priority = 127
+Caption = Success
+
+# Xmas
+Sound sfx_xideya
+Priority = 127
+Caption = Success
+
+Sound sfx_nbmper
+Priority = 96
+Caption = Bumper
+
+# Xmas
+Sound sfx_nxbump
+Priority = 96
+Caption = Bumper
+
+Sound sfx_ncchip
+Priority = 204
+Caption = Got chip
+
+Sound sfx_ncitem
+Priority = 204
+Caption = Got special
+
+# Xmas
+Sound sfx_nxitem
+Priority = 204
+Caption = Got special
+
+Sound sfx_ngdone
+Singular = true
+Priority = 127
+Caption = Bonus time start
+
+# Xmas
+Sound sfx_nxdone
+Singular = true
+Priority = 127
+Caption = Bonus time start
+
+Sound sfx_drill1
+Priority = 48
+Caption = Drill
+
+Sound sfx_drill2
+Priority = 48
+Caption = Drill
+
+Sound sfx_ncspec
+Priority = 204
+Caption = Power-up
+
+Sound sfx_nghurt
+Priority = 96
+Caption = Hurt
+
+Sound sfx_ngskid
+Priority = 64
+Caption = Force stop
+
+Sound sfx_hoop1
+Priority = 192
+Caption = Hoop
+
+Sound sfx_hoop2
+Priority = 192
+Caption = Hoop+
+
+Sound sfx_hoop3
+Priority = 192
+Caption = Hoop++
+
+Sound sfx_hidden
+Priority = 204
+Caption = Discovery
+
+Sound sfx_prloop
+Priority = 104
+Caption = Gust of wind
+
+Sound sfx_timeup
+Singular = true
+Priority = 256
+Caption = Ominous Countdown
+
+Sound sfx_ngjump
+Priority = 96
+Caption = Jump
+
+Sound sfx_peww
+Priority = 96
+Caption = Pew
+
+# Halloween
+Sound sfx_lntsit
+Priority = 60
+Caption = Cacolantern awake
+
+Sound sfx_lntdie
+Priority = 60
+Caption = Cacolantern death
+
+Sound sfx_pumpkn
+Priority = 60
+Caption = Pumpkin smash
+
+Sound sfx_ghosty
+Priority = 64
+Caption = Laughter
+
+# Mario
+Sound sfx_koopfr
+Singular = true
+Priority = 127
+Flags = 8
+Caption = Fire
+
+Sound sfx_mario1
+Priority = 60
+Caption = Hit
+
+Sound sfx_mario2
+Priority = 127
+Caption = Bonk
+
+Sound sfx_mario3
+Priority = 60
+Caption = Power-up
+
+Sound sfx_mario4
+Singular = true
+Priority = 78
+Caption = Got coin
+
+Sound sfx_mario5
+Priority = 78
+Caption = Boot-stomp
+
+Sound sfx_mario6
+Priority = 60
+Caption = Jump
+
+Sound sfx_mario7
+Priority = 32
+Caption = Fire
+
+Sound sfx_mario8
+Priority = 48
+Flags = 8
+Caption = Hurt
+
+Sound sfx_mario9
+Singular = true
+Priority = 120
+Caption = Emerging power-up
+
+Sound sfx_marioa
+Singular = true
+Priority = 192
+Caption = One-up
+
+Sound sfx_thwomp
+Singular = true
+Priority = 127
+Flags = 8
+Caption = Thwomp
+
+# Black Eggman
+Sound sfx_bebomb
+Priority = 64
+Flags = 64
+Caption = Big explosion
+
+Sound sfx_bechrg
+Priority = 64
+Flags = 64
+Caption = Powering up
+
+Sound sfx_becrsh
+Priority = 64
+Flags = 64
+Caption = Crash
+
+Sound sfx_bedeen
+Priority = 64
+Flags = 64
+Caption = Metallic crash
+
+Sound sfx_bedie1
+Priority = 64
+Flags = 64
+Caption = Eggman crying
+
+Sound sfx_bedie2
+Priority = 64
+Flags = 64
+Caption = Eggman crying
+
+Sound sfx_beeyow
+Priority = 64
+Flags = 64
+Caption = Failing machinery
+
+Sound sfx_befall
+Priority = 64
+Flags = 64
+Caption = Metallic slam
+
+Sound sfx_befire
+Priority = 64
+Flags = 64
+Caption = Firing goop
+
+Sound sfx_beflap
+Priority = 64
+Flags = 64
+Caption = Mechanical jump
+
+Sound sfx_begoop
+Priority = 64
+Flags = 64
+Caption = Powerful shot
+
+Sound sfx_begrnd
+Priority = 64
+Flags = 64
+Caption = Metallic grinding
+
+Sound sfx_behurt
+Priority = 64
+Flags = 64
+Caption = Eggman shocked
+
+Sound sfx_bejet1
+Priority = 64
+Flags = 64
+Caption = Jetpack charge
+
+Sound sfx_belnch
+Priority = 64
+Flags = 64
+Caption = Mechanical jump
+
+Sound sfx_beoutb
+Priority = 64
+Flags = 64
+Caption = Failed shot
+
+Sound sfx_beragh
+Priority = 64
+Flags = 64
+Caption = Eggman screaming
+
+Sound sfx_beshot
+Priority = 64
+Flags = 64
+Caption = Firing missile
+
+Sound sfx_bestep
+Priority = 64
+Flags = 64
+Caption = Mechanical stomp
+
+Sound sfx_bestp2
+Priority = 64
+Flags = 64
+Caption = Mechanical stomp
+
+Sound sfx_bewar1
+Priority = 64
+Flags = 64
+Caption = Eggman laughing
+
+Sound sfx_bewar2
+Priority = 64
+Flags = 64
+Caption = Eggman laughing
+
+Sound sfx_bewar3
+Priority = 64
+Flags = 64
+Caption = Eggman laughing
+
+Sound sfx_bewar4
+Priority = 64
+Flags = 64
+Caption = Eggman laughing
+
+Sound sfx_bexpld
+Priority = 64
+Flags = 64
+Caption = Explosion
+
+Sound sfx_bgxpld
+Priority = 64
+Flags = 64
+Caption = Explosion
+
+# Cy-Brak-Demon
+# Electric barrier ambience
+Sound sfx_beelec
+Priority = 64
+Flags = 64
+Caption = Electricity
+
+# Rocket launcher
+Sound sfx_brakrl
+Priority = 64
+Flags = 64
+Caption = Rocket launch
+
+# Rocket explodes
+Sound sfx_brakrx
+Priority = 64
+Flags = 64
+Caption = Rocket explosion
+
+# S1 sounds
+Sound sfx_s1a0
+Priority = 64
+
+Sound sfx_s1a1
+Priority = 64
+
+Sound sfx_s1a2
+Priority = 64
+
+Sound sfx_s1a3
+Priority = 64
+
+Sound sfx_s1a4
+Priority = 64
+
+Sound sfx_s1a5
+Priority = 64
+
+Sound sfx_s1a6
+Priority = 64
+
+Sound sfx_s1a7
+Priority = 64
+
+Sound sfx_s1a8
+Priority = 64
+
+Sound sfx_s1a9
+Priority = 64
+
+Sound sfx_s1aa
+Priority = 64
+
+Sound sfx_s1ab
+Priority = 64
+
+Sound sfx_s1ac
+Priority = 64
+
+Sound sfx_s1ad
+Priority = 64
+
+Sound sfx_s1ae
+Priority = 64
+
+Sound sfx_s1af
+Priority = 64
+
+Sound sfx_s1b0
+Priority = 64
+
+Sound sfx_s1b1
+Priority = 64
+
+Sound sfx_s1b2
+Priority = 64
+
+Sound sfx_s1b3
+Priority = 64
+
+Sound sfx_s1b4
+Priority = 64
+Caption = /
+
+Sound sfx_s1b5
+Priority = 64
+
+Sound sfx_s1b6
+Priority = 64
+
+Sound sfx_s1b7
+Priority = 64
+
+Sound sfx_s1b8
+Priority = 64
+
+Sound sfx_s1b9
+Priority = 64
+
+Sound sfx_s1ba
+Priority = 64
+
+Sound sfx_s1bb
+Priority = 64
+Caption = Thwomp
+
+Sound sfx_s1bc
+Priority = 64
+
+Sound sfx_s1bd
+Priority = 64
+Caption = Ballhog Bounce
+
+Sound sfx_s1be
+Priority = 64
+
+Sound sfx_s1bf
+Priority = 64
+
+Sound sfx_s1c0
+Priority = 64
+
+Sound sfx_s1c1
+Priority = 64
+Caption = /
+
+Sound sfx_s1c2
+Priority = 64
+
+Sound sfx_s1c3
+Priority = 64
+
+Sound sfx_s1c4
+Priority = 64
+
+Sound sfx_s1c5
+Priority = 64
+
+Sound sfx_s1c6
+Priority = 64
+
+Sound sfx_s1c7
+Priority = 64
+
+Sound sfx_s1c8
+Priority = 64
+
+Sound sfx_s1c9
+Priority = 64
+Caption = Item Hit
+
+Sound sfx_s1ca
+Priority = 64
+
+Sound sfx_s1cb
+Priority = 64
+
+Sound sfx_s1cc
+Priority = 64
+
+Sound sfx_s1cd
+Priority = 64
+
+Sound sfx_s1ce
+Priority = 64
+
+Sound sfx_s1cf
+Priority = 64
+
+# S2 sounds
+Sound sfx_s220
+Priority = 64
+
+Sound sfx_s221
+Priority = 64
+Caption = Next Lap
+
+Sound sfx_s222
+Priority = 64
+
+Sound sfx_s223
+Priority = 64
+
+Sound sfx_s224
+Priority = 64
+
+Sound sfx_s225
+Priority = 64
+
+Sound sfx_s226
+Priority = 64
+
+Sound sfx_s227
+Priority = 64
+
+Sound sfx_s228
+Priority = 64
+
+Sound sfx_s229
+Priority = 64
+
+Sound sfx_s22a
+Priority = 64
+
+Sound sfx_s22b
+Priority = 64
+
+Sound sfx_s22c
+Priority = 64
+
+Sound sfx_s22d
+Priority = 64
+
+Sound sfx_s22e
+Priority = 64
+
+Sound sfx_s22f
+Priority = 64
+
+Sound sfx_s230
+Priority = 64
+
+Sound sfx_s231
+Priority = 64
+
+Sound sfx_s232
+Priority = 64
+
+Sound sfx_s233
+Priority = 64
+
+Sound sfx_s234
+Priority = 64
+
+Sound sfx_s235
+Priority = 64
+
+Sound sfx_s236
+Priority = 64
+
+Sound sfx_s237
+Priority = 64
+
+Sound sfx_s238
+Priority = 64
+
+Sound sfx_s239
+Priority = 64
+
+Sound sfx_s23a
+Priority = 64
+
+Sound sfx_s23b
+Priority = 64
+
+Sound sfx_s23c
+Priority = 64
+Caption = Drift Release
+
+Sound sfx_s23d
+Priority = 64
+
+Sound sfx_s23e
+Priority = 64
+Caption = /
+
+Sound sfx_s23f
+Priority = 64
+
+Sound sfx_s240
+Priority = 64
+
+Sound sfx_s241
+Priority = 64
+
+Sound sfx_s242
+Priority = 64
+
+Sound sfx_s243
+Priority = 64
+
+Sound sfx_s244
+Priority = 64
+
+Sound sfx_s245
+Priority = 64
+
+Sound sfx_s246
+Priority = 64
+
+Sound sfx_s247
+Priority = 64
+
+Sound sfx_s248
+Priority = 64
+
+Sound sfx_s249
+Priority = 64
+
+Sound sfx_s24a
+Priority = 64
+
+Sound sfx_s24b
+Priority = 64
+
+Sound sfx_s24c
+Priority = 64
+
+Sound sfx_s24d
+Priority = 64
+
+Sound sfx_s24e
+Priority = 64
+
+Sound sfx_s24f
+Priority = 64
+
+Sound sfx_s250
+Priority = 64
+
+Sound sfx_s251
+Priority = 64
+
+Sound sfx_s252
+Priority = 64
+
+Sound sfx_s253
+Priority = 255
+Caption = Finish!
+
+Sound sfx_s254
+Priority = 64
+
+Sound sfx_s255
+Priority = 64
+
+Sound sfx_s256
+Priority = 64
+
+Sound sfx_s257
+Priority = 64
+
+Sound sfx_s258
+Priority = 64
+
+Sound sfx_s259
+Priority = 96
+Flags = 8
+Caption = Item Clash
+
+Sound sfx_s25a
+Priority = 64
+
+Sound sfx_s25b
+Priority = 64
+
+Sound sfx_s25c
+Priority = 64
+
+Sound sfx_s25d
+Priority = 64
+
+Sound sfx_s25e
+Priority = 64
+
+Sound sfx_s25f
+Priority = 64
+Caption = Perfect Start
+
+Sound sfx_s260
+Priority = 64
+
+Sound sfx_s261
+Priority = 64
+
+Sound sfx_s262
+Priority = 64
+
+Sound sfx_s263
+Priority = 64
+
+Sound sfx_s264
+Priority = 64
+
+Sound sfx_s265
+Priority = 64
+
+Sound sfx_s266
+Priority = 64
+
+Sound sfx_s267
+Priority = 64
+
+Sound sfx_s268
+Priority = 64
+
+Sound sfx_s269
+Priority = 64
+
+Sound sfx_s26a
+Priority = 64
+
+Sound sfx_s26b
+Priority = 64
+
+Sound sfx_s26c
+Priority = 64
+
+Sound sfx_s26d
+Priority = 64
+
+Sound sfx_s26e
+Priority = 64
+
+Sound sfx_s26f
+Priority = 64
+
+Sound sfx_s270
+Priority = 64
+
+# S3&K sounds
+Sound sfx_s3k2b
+Singular = true
+Priority = 120
+Caption = Got Emerald
+
+Sound sfx_s3k33
+Priority = 64
+Caption = Sparkle
+
+Sound sfx_s3k34
+Priority = 64
+Caption = Sparkle
+
+Sound sfx_s3k35
+Priority = 64
+Caption = Hurt
+
+Sound sfx_s3k36
+Priority = 64
+Caption = Skid
+
+Sound sfx_s3k37
+Priority = 64
+Caption = Spiked
+
+Sound sfx_s3k38
+Priority = 64
+Caption = Bubble gasp
+
+Sound sfx_s3k39
+Priority = 64
+Caption = Splash
+
+Sound sfx_s3k3a
+Priority = 64
+Caption = Shield
+
+Sound sfx_s3k3b
+Priority = 64
+Caption = Drowning
+
+Sound sfx_s3k3c
+Priority = 64
+Caption = Spin
+
+Sound sfx_s3k3d
+Priority = 64
+Caption = Pop
+
+Sound sfx_s3k3e
+Priority = 64
+Caption = Flame Shield
+
+Sound sfx_s3k3f
+Priority = 64
+Caption = Bubble Shield
+
+Sound sfx_s3k40
+Priority = 64
+Caption = Attraction blast
+
+Sound sfx_s3k41
+Priority = 64
+Caption = Thunder Shield
+
+Sound sfx_s3k42
+Priority = 64
+Caption = Twinspin
+
+Sound sfx_s3k43
+Priority = 64
+Caption = Flame burst
+
+Sound sfx_s3k44
+Priority = 64
+Caption = Bubble bounce
+
+Sound sfx_s3k45
+Priority = 64
+Caption = Lightning zap
+
+Sound sfx_s3k46
+Priority = 64
+Caption = Transformation
+
+Sound sfx_s3k47
+Priority = 64
+Caption = Rising dust
+
+Sound sfx_s3k48
+Priority = 64
+Caption = Pulse
+
+Sound sfx_s3k49
+Priority = 64
+Caption = Bonk
+
+Sound sfx_s3k4a
+Priority = 64
+Caption = Grab
+
+Sound sfx_s3k4b
+Priority = 64
+Caption = Splash
+
+Sound sfx_s3k4c
+Priority = 64
+Caption = Heavy hit
+
+Sound sfx_s3k4d
+Priority = 64
+Caption = Firing bullet
+
+Sound sfx_s3k4e
+Priority = 64
+Caption = Big explosion
+
+Sound sfx_s3k4f
+Priority = 64
+Caption = Flamethrower
+
+Sound sfx_s3k50
+Priority = 64
+Caption = Siren
+
+Sound sfx_s3k51
+Priority = 64
+Caption = Falling
+
+Sound sfx_s3k52
+Priority = 64
+Caption = Spike
+
+Sound sfx_s3k53
+Priority = 64
+Caption = Powering up
+
+Sound sfx_s3k54
+Priority = 64
+Flags = 64
+Caption = Firing
+
+Sound sfx_s3k55
+Priority = 64
+Caption = Mechanical movement
+
+Sound sfx_s3k56
+Priority = 64
+Caption = Heavy landing
+
+Sound sfx_s3k57
+Priority = 64
+Caption = Burst
+
+Sound sfx_s3k58
+Priority = 64
+Caption = Mechanical movement
+
+Sound sfx_s3k59
+Priority = 64
+Caption = Crumbling
+
+Sound sfx_s3k5a
+Priority = 64
+Caption = Aiming
+
+Sound sfx_s3k5b
+Priority = 64
+Caption = Menu beep
+
+Sound sfx_s3k5c
+Priority = 64
+Caption = Mine Tick
+
+Sound sfx_s3k5d
+Priority = 64
+Caption = Heavy hit
+
+Sound sfx_s3k5e
+Priority = 127
+Flags = 8
+Caption = Releasing charge
+
+Sound sfx_s3k5f
+Priority = 64
+Caption = Crusher stomp
+
+Sound sfx_s3k60
+Priority = 64
+Caption = Accelerating
+
+Sound sfx_s3k61
+Priority = 64
+Caption = Drilling
+
+Sound sfx_s3k62
+Priority = 64
+Caption = Jump
+
+Sound sfx_s3k63
+Priority = 64
+Caption = Starpost
+
+Sound sfx_s3k64
+Priority = 64
+Flags = 2
+Caption = Clatter
+
+Sound sfx_s3k65
+Priority = 255
+Caption = Got sphere
+
+Sound sfx_s3k66
+Priority = 64
+Caption = Special stage end
+
+Sound sfx_s3k67
+Priority = 64
+Caption = Firing missile
+
+Sound sfx_s3k68
+Priority = 64
+Caption = Discovery
+
+Sound sfx_s3k69
+Priority = 64
+Caption = Switch click
+
+Sound sfx_s3k6a
+Priority = 64
+Caption = Special stage clear
+
+Sound sfx_s3k6b
+Priority = 64
+Caption = Punch
+
+Sound sfx_s3k6c
+Priority = 64
+Caption = Burst
+
+Sound sfx_s3k6d
+Priority = 64
+
+Sound sfx_s3k6e
+Priority = 64
+Caption = Mechanical damage
+
+Sound sfx_s3k6f
+Priority = 64
+Caption = Ominous rumbling
+
+Sound sfx_s3k70
+Singular = true
+Priority = 64
+Caption = Burst
+
+Sound sfx_s3k71
+Priority = 64
+Caption = Basic Shield
+
+Sound sfx_s3k72
+Priority = 64
+Caption = Movement
+
+Sound sfx_s3k73
+Priority = 64
+Caption = Warp
+
+Sound sfx_s3k74
+Priority = 64
+Caption = Gong
+
+Sound sfx_s3k75
+Priority = 64
+Caption = Rising
+
+Sound sfx_s3k76
+Priority = 64
+Caption = Click
+
+Sound sfx_s3k77
+Priority = 64
+Caption = Balloon pop
+
+Sound sfx_s3k78
+Priority = 64
+Caption = Magnet
+
+Sound sfx_s3k79
+Priority = 64
+Caption = Electric charge
+
+Sound sfx_s3k7a
+Priority = 64
+Caption = Rising from lava
+
+Sound sfx_s3k7b
+Priority = 64
+Caption = Soft bounce
+
+Sound sfx_s3k7c
+Priority = 64
+Caption = Magnet
+
+Sound sfx_s3k7d
+Priority = 64
+
+Sound sfx_s3k7e
+Priority = 64
+Caption = Dust
+
+Sound sfx_s3k7f
+Priority = 64
+Caption = Freeze
+
+Sound sfx_s3k80
+Priority = 64
+Caption = Ice spike burst
+
+Sound sfx_s3k81
+Priority = 64
+Caption = Burst
+
+Sound sfx_s3k82
+Priority = 64
+Caption = Burst
+
+Sound sfx_s3k83
+Priority = 64
+Caption = Collapsing
+
+Sound sfx_s3k84
+Priority = 64
+Caption = Powering up
+
+Sound sfx_s3k85
+Priority = 64
+Caption = Powering down
+
+Sound sfx_s3k86
+Priority = 128
+Flags = 8
+Caption = Alarm
+
+Sound sfx_s3k87
+Priority = 64
+Caption = Bounce
+
+Sound sfx_s3k88
+Priority = 64
+Caption = Metallic squeak
+
+Sound sfx_s3k89
+Priority = 64
+Caption = Advanced tech
+
+Sound sfx_s3k8a
+Priority = 64
+Caption = Boing
+
+Sound sfx_s3k8b
+Priority = 64
+Caption = Powerful hit
+
+Sound sfx_s3k8c
+Priority = 64
+Caption = Humming power
+
+Sound sfx_s3k8d
+Priority = 64
+Caption = /
+
+Sound sfx_s3k8e
+Priority = 64
+Caption = Accelerating
+
+Sound sfx_s3k8f
+Priority = 64
+Caption = Opening
+
+Sound sfx_s3k90
+Priority = 64
+Caption = Impact
+
+Sound sfx_s3k91
+Priority = 64
+Caption = Closed
+
+Sound sfx_s3k92
+Priority = 64
+Caption = Ghost
+
+Sound sfx_s3k93
+Priority = 64
+Caption = Gas release
+
+Sound sfx_s3k94
+Priority = 64
+Caption = Spike
+
+Sound sfx_s3k95
+Priority = 64
+Caption = Lava burst
+
+Sound sfx_s3k96
+Priority = 64
+Caption = Landing
+
+Sound sfx_s3k97
+Priority = 64
+Caption = Wind
+
+Sound sfx_s3k98
+Priority = 64
+Caption = Falling spike
+
+Sound sfx_s3k99
+Priority = 64
+Caption = Bounce
+
+Sound sfx_s3k9a
+Priority = 64
+Caption = Click
+
+Sound sfx_s3k9b
+Priority = 64
+Caption = Crusher stomp
+
+Sound sfx_s3k9c
+Priority = 64
+Caption = Got Super Emerald
+
+Sound sfx_s3k9d
+Priority = 64
+Caption = Targeting
+
+Sound sfx_s3k9e
+Priority = 64
+Caption = Wham
+
+Sound sfx_s3k9f
+Priority = 64
+Caption = Transformation
+
+Sound sfx_s3ka0
+Priority = 64
+Caption = Launch
+
+Sound sfx_s3ka1
+Priority = 64
+
+Sound sfx_s3ka2
+Priority = 64
+Caption = Drift Charge
+
+Sound sfx_s3ka3
+Priority = 64
+Caption = Rising charge
+
+Sound sfx_s3ka4
+Priority = 64
+Caption = Powering up
+
+Sound sfx_s3ka5
+Priority = 64
+
+Sound sfx_s3ka6
+Priority = 64
+Caption = Attraction fizzle
+
+Sound sfx_s3ka7
+Priority = 64
+Caption = Countdown beep
+
+Sound sfx_s3ka8
+Priority = 64
+Caption = Energy
+
+Sound sfx_s3ka9
+Priority = 64
+Caption = Aquaphobia
+
+Sound sfx_s3kaa
+Priority = 64
+Caption = Bumper
+
+Sound sfx_s3kab
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab1
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab2
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab3
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab4
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab5
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab6
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab7
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab8
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab9
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kaba
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kabb
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kabc
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kabd
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kabe
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kabf
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kac
+Priority = 64
+Caption = Got Continue
+
+Sound sfx_s3kad
+Priority = 64
+Caption = GO!
+
+Sound sfx_s3kae
+Priority = 64
+Caption = Pinball flipper
+
+Sound sfx_s3kaf
+Priority = 64
+Caption = To Special Stage
+
+Sound sfx_s3kb0
+Priority = 64
+Caption = Score
+
+Sound sfx_s3kb1
+Priority = 64
+Caption = Spring
+
+Sound sfx_s3kb2
+Priority = 64
+Caption = Failure
+
+Sound sfx_s3kb3
+Priority = 64
+Caption = Warp
+
+Sound sfx_s3kb4
+Priority = 64
+Caption = Explosion
+
+Sound sfx_s3kb5
+Priority = 64
+Caption = Clink
+
+Sound sfx_s3kb6
+Priority = 64
+Caption = Spin launch
+
+Sound sfx_s3kb7
+Priority = 64
+Caption = Tumbler
+
+Sound sfx_s3kb8
+Priority = 64
+Caption = Spinning signpost
+
+Sound sfx_s3kb9
+Priority = 64
+Caption = Ring loss
+
+Sound sfx_s3kba
+Priority = 64
+Caption = Flight
+
+Sound sfx_s3kbb
+Priority = 64
+Caption = Tired flight
+
+Sound sfx_s3kbcs
+Priority = 64
+
+Sound sfx_s3kbcl
+Priority = 64
+
+Sound sfx_s3kbds
+Priority = 64
+Caption = Flying fortress
+
+Sound sfx_s3kbdl
+Priority = 64
+Caption = Flying fortress
+
+Sound sfx_s3kbes
+Priority = 64
+Caption = Flying
+
+Sound sfx_s3kbel
+Priority = 64
+Caption = Flying
+
+Sound sfx_s3kbfs
+Priority = 64
+Caption = Turbine
+
+Sound sfx_s3kbfl
+Priority = 64
+Caption = Turbine
+
+Sound sfx_s3kc0s
+Priority = 64
+Caption = Turbine
+
+Sound sfx_s3kc0l
+Priority = 64
+Caption = Turbine
+
+Sound sfx_s3kc1s
+Priority = 64
+Caption = Fan
+
+Sound sfx_s3kc1l
+Priority = 64
+Caption = Fan
+
+Sound sfx_s3kc2s
+Priority = 64
+Caption = Flamethrower
+
+Sound sfx_s3kc2l
+Priority = 64
+Caption = Flamethrower
+
+Sound sfx_s3kc3s
+Priority = 64
+Caption = Levitation
+
+Sound sfx_s3kc3l
+Priority = 64
+Caption = Levitation
+
+Sound sfx_s3kc4s
+Priority = 64
+Caption = Firing laser
+
+Sound sfx_s3kc4l
+Priority = 64
+Caption = Firing laser
+
+Sound sfx_s3kc5s
+Priority = 64
+Caption = Revving up
+
+Sound sfx_s3kc5l
+Priority = 64
+Caption = Revving up
+
+Sound sfx_s3kc6s
+Priority = 64
+Caption = Orbiting
+
+Sound sfx_s3kc6l
+Priority = 64
+Caption = Orbiting
+
+Sound sfx_s3kc7s
+Priority = 64
+Caption = Aiming
+
+Sound sfx_s3kc7l
+Priority = 64
+Caption = Aiming
+
+Sound sfx_s3kc8s
+Priority = 64
+Caption = Sliding
+
+Sound sfx_s3kc8l
+Priority = 64
+Caption = Sliding
+
+Sound sfx_s3kc9s
+Priority = 64
+Flags = 65
+Caption = Swinging
+
+Sound sfx_s3kc9l
+Priority = 64
+Flags = 65
+Caption = Swinging
+
+Sound sfx_s3kcas
+Priority = 64
+Caption = Energy
+
+Sound sfx_s3kcal
+Priority = 64
+Caption = Energy
+
+Sound sfx_s3kcbs
+Priority = 64
+Caption = Ominous rumbling
+
+Sound sfx_s3kcbl
+Priority = 64
+Caption = Ominous rumbling
+
+Sound sfx_s3kccs
+Priority = 64
+Caption = Bursting
+
+Sound sfx_s3kccl
+Priority = 64
+Caption = Bursting
+
+Sound sfx_s3kcds
+Priority = 64
+Caption = Ominous rumbling
+
+Sound sfx_s3kcdl
+Priority = 64
+Caption = Ominous rumbling
+
+Sound sfx_s3kces
+Priority = 64
+Caption = Wind tunnel
+
+Sound sfx_s3kcel
+Priority = 64
+Caption = Dust devil
+
+Sound sfx_s3kcfs
+Priority = 64
+
+Sound sfx_s3kcfl
+Priority = 64
+
+Sound sfx_s3kd0s
+Priority = 64
+Caption = Rising
+
+Sound sfx_s3kd0l
+Priority = 64
+Caption = Rising
+
+Sound sfx_s3kd1s
+Priority = 64
+
+Sound sfx_s3kd1l
+Priority = 64
+
+Sound sfx_s3kd2s
+Priority = 64
+Caption = Turning
+
+Sound sfx_s3kd2l
+Priority = 64
+Caption = Moving chain
+
+Sound sfx_s3kd3s
+Priority = 64
+Caption = Digging
+
+Sound sfx_s3kd3l
+Priority = 64
+Caption = Digging
+
+Sound sfx_s3kd4s
+Priority = 64
+Caption = Engine
+
+Sound sfx_s3kd4l
+Priority = 64
+Caption = Engine
+
+Sound sfx_s3kd5s
+Priority = 64
+Caption = Falling lava
+
+Sound sfx_s3kd5l
+Priority = 64
+Caption = Falling lava
+
+Sound sfx_s3kd6s
+Priority = 64
+
+Sound sfx_s3kd6l
+Priority = 64
+
+Sound sfx_s3kd7s
+Priority = 64
+Caption = Movement
+
+Sound sfx_s3kd7l
+Priority = 64
+Caption = Movement
+
+Sound sfx_s3kd8s
+Priority = 64
+Flags = 64
+Caption = Acceleration
+
+Sound sfx_s3kd8l
+Priority = 64
+Caption = Acceleration
+
+Sound sfx_s3kd9s
+Priority = 64
+Caption = Magnetism
+
+Sound sfx_s3kd9l
+Priority = 64
+Caption = Magnetism
+
+Sound sfx_s3kdas
+Priority = 64
+Caption = Click
+
+Sound sfx_s3kdal
+Priority = 64
+Caption = Click
+
+Sound sfx_s3kdbs
+Priority = 64
+Caption = Running on water
+
+Sound sfx_s3kdbl
+Priority = 64
+Caption = Running on water
+
+# 3DB sounds
+Sound sfx_3db06
+Priority = 96
+Flags = 8
+Caption = Collection
+
+Sound sfx_3db09
+Priority = 64
+Caption = Peep
+
+Sound sfx_3db14
+Priority = 64
+Caption = Chirp
+
+Sound sfx_3db16
+Priority = 64
+
+# SCD sounds
+Sound sfx_cdfm00
+Priority = 64
+Caption = Skid
+
+Sound sfx_cdfm01
+Priority = 64
+Caption = Boost
+
+Sound sfx_cdfm02
+Priority = 64
+Caption = Jump
+
+Sound sfx_cdfm03
+Priority = 64
+Caption = Dying
+
+Sound sfx_cdfm04
+Priority = 64
+Caption = Ring loss
+
+Sound sfx_cdfm05
+Priority = 64
+Caption = Sparkle
+
+Sound sfx_cdfm06
+Priority = 64
+Caption = Pop
+
+Sound sfx_cdfm07
+Priority = 64
+Caption = Shield
+
+Sound sfx_cdfm08
+Priority = 64
+Caption = Spring
+
+Sound sfx_cdfm09
+Priority = 64
+
+Sound sfx_cdfm10
+Priority = 64
+
+Sound sfx_cdfm11
+Priority = 64
+
+Sound sfx_cdfm12
+Priority = 64
+
+Sound sfx_cdfm13
+Priority = 64
+
+Sound sfx_cdfm14
+Priority = 64
+
+Sound sfx_cdfm15
+Priority = 64
+
+Sound sfx_cdfm16
+Priority = 64
+
+Sound sfx_cdfm17
+Priority = 64
+Caption = Brake Drifting
+
+Sound sfx_cdfm18
+Priority = 64
+
+Sound sfx_cdfm19
+Priority = 64
+
+Sound sfx_cdfm20
+Priority = 64
+
+Sound sfx_cdfm21
+Priority = 64
+
+Sound sfx_cdfm22
+Priority = 64
+
+Sound sfx_cdfm23
+Priority = 64
+
+Sound sfx_cdfm24
+Priority = 64
+
+Sound sfx_cdfm25
+Priority = 64
+
+Sound sfx_cdfm26
+Priority = 64
+
+Sound sfx_cdfm27
+Priority = 64
+
+Sound sfx_cdfm28
+Priority = 96
+
+Sound sfx_cdfm29
+Priority = 64
+Caption = Bubble gasp
+
+Sound sfx_cdfm30
+Priority = 64
+Caption = Starpost
+
+Sound sfx_cdfm31
+Priority = 64
+Caption = Warp
+
+Sound sfx_cdfm32
+Priority = 64
+
+Sound sfx_cdfm33
+Priority = 64
+
+Sound sfx_cdfm34
+Priority = 64
+
+Sound sfx_cdfm35
+Priority = 64
+
+Sound sfx_cdfm36
+Priority = 64
+
+Sound sfx_cdfm37
+Priority = 64
+
+Sound sfx_cdfm38
+Priority = 64
+Caption = Drowning
+
+Sound sfx_cdfm39
+Priority = 128
+Flags = 8
+
+Sound sfx_cdfm40
+Priority = 64
+Caption = Power up
+
+Sound sfx_cdfm41
+Priority = 64
+
+Sound sfx_cdfm42
+Priority = 64
+
+Sound sfx_cdfm43
+Priority = 64
+
+Sound sfx_cdfm44
+Priority = 64
+Caption = Extra time
+
+Sound sfx_cdfm45
+Priority = 64
+
+Sound sfx_cdfm46
+Priority = 64
+
+Sound sfx_cdfm47
+Priority = 64
+
+Sound sfx_cdfm48
+Priority = 64
+
+Sound sfx_cdfm49
+Priority = 64
+Caption = Aquaphobia
+
+Sound sfx_cdfm50
+Priority = 64
+
+Sound sfx_cdfm51
+Priority = 64
+
+Sound sfx_cdfm52
+Priority = 64
+
+Sound sfx_cdfm53
+Priority = 64
+
+Sound sfx_cdfm54
+Priority = 64
+
+Sound sfx_cdfm55
+Priority = 64
+
+Sound sfx_cdfm56
+Priority = 64
+Caption = Warp
+
+Sound sfx_cdfm57
+Priority = 64
+
+Sound sfx_cdfm58
+Priority = 64
+
+Sound sfx_cdfm59
+Priority = 64
+
+Sound sfx_cdfm60
+Priority = 64
+
+Sound sfx_cdfm61
+Priority = 64
+
+Sound sfx_cdfm62
+Priority = 64
+Caption = Speed boost
+
+Sound sfx_cdfm63
+Priority = 64
+
+Sound sfx_cdfm64
+Priority = 64
+Flags = 8
+
+Sound sfx_cdfm65
+Priority = 64
+
+Sound sfx_cdfm66
+Priority = 64
+
+Sound sfx_cdfm67
+Priority = 64
+
+Sound sfx_cdfm68
+Priority = 64
+
+Sound sfx_cdfm69
+Priority = 64
+
+Sound sfx_cdfm70
+Priority = 96
+Caption = Offroad
+
+Sound sfx_cdfm71
+Priority = 64
+Flags = 8
+
+Sound sfx_cdfm72
+Priority = 64
+
+Sound sfx_cdfm73
+Priority = 64
+
+Sound sfx_cdfm74
+Priority = 64
+
+Sound sfx_cdfm75
+Priority = 64
+
+Sound sfx_cdfm76
+Priority = 64
+
+Sound sfx_cdfm77
+Priority = 64
+
+Sound sfx_cdfm78
+Priority = 64
+
+Sound sfx_cdfm79
+Priority = 64
+
+Sound sfx_cdpcm0
+Priority = 64
+Caption = Future.
+
+Sound sfx_cdpcm1
+Priority = 64
+Caption = Past.
+
+Sound sfx_cdpcm2
+Priority = 64
+Caption = All right!
+
+Sound sfx_cdpcm3
+Priority = 64
+Caption = I'm outta here...
+
+Sound sfx_cdpcm4
+Priority = 64
+Caption = Yes!
+
+Sound sfx_cdpcm5
+Priority = 64
+Caption = Yeah!
+
+Sound sfx_cdpcm6
+Priority = 64
+Caption = Giggles
+
+Sound sfx_cdpcm7
+Priority = 64
+Caption = Eep!
+
+Sound sfx_cdpcm8
+Priority = 64
+
+Sound sfx_cdpcm9
+Priority = 96
+Flags = 8
+Caption = Bumper
+
+# KC sounds
+Sound sfx_kc2a
+Priority = 64
+
+Sound sfx_kc2b
+Priority = 64
+
+Sound sfx_kc2c
+Priority = 64
+
+Sound sfx_kc2d
+Priority = 64
+
+Sound sfx_kc2e
+Priority = 96
+Caption = Item Pop
+
+Sound sfx_kc2f
+Priority = 96
+Flags = 8
+Caption = Pogo Spring Panel
+
+Sound sfx_kc30
+Priority = 64
+
+Sound sfx_kc31
+Priority = 64
+Flags = 64
+
+Sound sfx_kc32
+Priority = 64
+
+Sound sfx_kc33
+Priority = 64
+
+Sound sfx_kc34
+Priority = 64
+
+Sound sfx_kc35
+Priority = 64
+
+Sound sfx_kc36
+Priority = 64
+
+Sound sfx_kc37
+Priority = 64
+
+Sound sfx_kc38
+Priority = 64
+
+Sound sfx_kc39
+Priority = 64
+
+Sound sfx_kc3a
+Priority = 64
+
+Sound sfx_kc3b
+Priority = 64
+
+Sound sfx_kc3c
+Priority = 64
+
+Sound sfx_kc3d
+Priority = 64
+
+Sound sfx_kc3e
+Priority = 64
+
+Sound sfx_kc3f
+Priority = 64
+
+Sound sfx_kc40
+Priority = 64
+
+Sound sfx_kc41
+Priority = 64
+
+Sound sfx_kc42
+Priority = 64
+Caption = Confirm
+
+Sound sfx_kc43
+Priority = 64
+
+Sound sfx_kc44
+Priority = 64
+
+Sound sfx_kc45
+Priority = 64
+
+Sound sfx_kc46
+Priority = 96
+Flags = 8
+
+Sound sfx_kc47
+Priority = 64
+
+Sound sfx_kc48
+Priority = 64
+Caption = Select
+
+Sound sfx_kc49
+Priority = 64
+
+Sound sfx_kc4a
+Priority = 64
+
+Sound sfx_kc4b
+Priority = 64
+
+Sound sfx_kc4c
+Priority = 64
+Caption = Pop-shot
+
+Sound sfx_kc4d
+Priority = 64
+Caption = Power up
+
+Sound sfx_kc4e
+Priority = 64
+
+Sound sfx_kc4f
+Priority = 64
+
+Sound sfx_kc50
+Priority = 64
+
+Sound sfx_kc51
+Priority = 64
+Flags = 64
+
+Sound sfx_kc52
+Priority = 64
+Flags = 8
+
+Sound sfx_kc53
+Priority = 64
+
+Sound sfx_kc54
+Priority = 64
+
+Sound sfx_kc55
+Priority = 64
+
+Sound sfx_kc56
+Priority = 64
+
+Sound sfx_kc57
+Priority = 128
+Flags = 8
+Caption = Sheer terror
+
+Sound sfx_kc58
+Priority = 64
+
+Sound sfx_kc59
+Priority = 128
+Flags = 8
+Caption = Shrink
+
+Sound sfx_kc5a
+Priority = 128
+Flags = 8
+Caption = Grow
+
+Sound sfx_kc5b
+Priority = 64
+
+Sound sfx_kc5c
+Priority = 64
+
+Sound sfx_kc5d
+Priority = 64
+
+Sound sfx_kc5e
+Priority = 64
+
+Sound sfx_kc5f
+Priority = 64
+
+Sound sfx_kc60
+Priority = 64
+
+Sound sfx_kc61
+Priority = 64
+
+Sound sfx_kc62
+Priority = 64
+
+Sound sfx_kc63
+Priority = 64
+
+Sound sfx_kc64
+Priority = 96
+Caption = Terrifying rumble
+
+Sound sfx_kc65
+Priority = 64
+Caption = Power down
+
+Sound sfx_kc66
+Priority = 64
+
+Sound sfx_kc67
+Priority = 64
+
+Sound sfx_kc68
+Priority = 64
+
+Sound sfx_kc69
+Priority = 64
+
+Sound sfx_kc6b
+Priority = 64
+Caption = Ascending
+
+Sound sfx_kc6c
+Priority = 64
+
+Sound sfx_kc6d
+Priority = 64
+
+Sound sfx_kc6e
+Priority = 64
+
+# Mean Bean Machine sounds
+Sound sfx_mbs41
+Priority = 64
+
+Sound sfx_mbs42
+Priority = 64
+
+Sound sfx_mbs43
+Priority = 64
+
+Sound sfx_mbs44
+Priority = 64
+
+Sound sfx_mbs45
+Priority = 64
+
+Sound sfx_mbs46
+Priority = 64
+
+Sound sfx_mbs47
+Priority = 64
+
+Sound sfx_mbs48
+Priority = 64
+
+Sound sfx_mbs49
+Priority = 64
+
+Sound sfx_mbs4a
+Priority = 64
+
+Sound sfx_mbs4b
+Priority = 64
+
+Sound sfx_mbs4c
+Priority = 64
+
+Sound sfx_mbs4d
+Priority = 64
+
+Sound sfx_mbs4e
+Priority = 64
+
+Sound sfx_mbs4f
+Priority = 64
+
+Sound sfx_mbs50
+Priority = 64
+
+Sound sfx_mbs51
+Priority = 64
+
+Sound sfx_mbs52
+Priority = 64
+
+Sound sfx_mbs53
+Priority = 64
+
+Sound sfx_mbs54
+Priority = 64
+
+Sound sfx_mbs55
+Priority = 64
+
+Sound sfx_mbs56
+Priority = 64
+
+Sound sfx_mbs57
+Priority = 64
+
+Sound sfx_mbs58
+Priority = 64
+
+Sound sfx_mbs59
+Priority = 64
+
+Sound sfx_mbs5a
+Priority = 64
+
+Sound sfx_mbs5b
+Priority = 64
+
+Sound sfx_mbs5c
+Priority = 64
+
+Sound sfx_mbs5d
+Priority = 64
+
+Sound sfx_mbs5e
+Priority = 64
+
+Sound sfx_mbs5f
+Priority = 64
+
+Sound sfx_mbs60
+Priority = 64
+
+Sound sfx_mbs61
+Priority = 64
+
+Sound sfx_mbs62
+Priority = 64
+
+Sound sfx_mbs63
+Priority = 64
+
+Sound sfx_mbs64
+Priority = 64
+
+Sound sfx_mbs67
+Priority = 64
+
+Sound sfx_mbs68
+Priority = 64
+
+Sound sfx_mbs69
+Priority = 64
+
+Sound sfx_mbs6a
+Priority = 64
+
+Sound sfx_mbs6b
+Priority = 64
+
+Sound sfx_mbs6d
+Priority = 64
+
+Sound sfx_mbs6e
+Priority = 64
+
+Sound sfx_mbs70
+Priority = 64
+
+Sound sfx_mbs71
+Priority = 64
+
+Sound sfx_mbs72
+Priority = 64
+
+Sound sfx_mbv81
+Priority = 64
+
+Sound sfx_mbv82
+Priority = 64
+
+Sound sfx_mbv83
+Priority = 64
+
+Sound sfx_mbv84
+Priority = 64
+
+Sound sfx_mbv85
+Priority = 64
+
+Sound sfx_mbv86
+Priority = 64
+
+Sound sfx_mbv87
+Priority = 64
+
+Sound sfx_mbv88
+Priority = 64
+
+Sound sfx_mbv89
+Priority = 64
+
+Sound sfx_mbv8a
+Priority = 64
+
+Sound sfx_mbv8b
+Priority = 64
+
+Sound sfx_mbv8c
+Priority = 64
+
+Sound sfx_mbv8d
+Priority = 64
+
+Sound sfx_mbv8e
+Priority = 64
+
+Sound sfx_mbv8f
+Priority = 64
+
+Sound sfx_mbv90
+Priority = 64
+
+Sound sfx_mbv91
+Priority = 64
+
+Sound sfx_mbv92
+Priority = 64
+
+Sound sfx_mbv93
+Priority = 64
+
+Sound sfx_mbv94
+Priority = 64
+
+Sound sfx_mbv95
+Priority = 64
+
+Sound sfx_mbv96
+Priority = 64
+
+Sound sfx_mbv97
+Priority = 64
+
+# SegaSonic Arcade sounds
+Sound sfx_ssa001
+Priority = 64
+
+Sound sfx_ssa002
+Priority = 64
+
+Sound sfx_ssa003
+Priority = 64
+
+Sound sfx_ssa004
+Priority = 64
+
+Sound sfx_ssa005
+Priority = 64
+
+Sound sfx_ssa006
+Priority = 64
+
+Sound sfx_ssa007
+Priority = 64
+
+Sound sfx_ssa008
+Priority = 64
+
+Sound sfx_ssa009
+Priority = 64
+
+Sound sfx_ssa010
+Priority = 64
+
+Sound sfx_ssa011
+Priority = 64
+
+Sound sfx_ssa012
+Priority = 64
+
+Sound sfx_ssa013
+Priority = 64
+
+Sound sfx_ssa014
+Priority = 64
+
+Sound sfx_ssa015
+Priority = 64
+
+Sound sfx_ssa016
+Priority = 64
+
+Sound sfx_ssa017
+Priority = 64
+
+Sound sfx_ssa018
+Priority = 64
+
+Sound sfx_ssa019
+Priority = 64
+
+Sound sfx_ssa020
+Priority = 64
+
+Sound sfx_ssa021
+Priority = 64
+
+Sound sfx_ssa022
+Priority = 64
+
+Sound sfx_ssa023
+Priority = 64
+
+Sound sfx_ssa024
+Priority = 64
+
+Sound sfx_ssa025
+Priority = 64
+
+Sound sfx_ssa026
+Priority = 64
+
+Sound sfx_ssa027
+Priority = 64
+
+Sound sfx_ssa028
+Priority = 64
+
+Sound sfx_ssa029
+Priority = 64
+
+Sound sfx_ssa030
+Priority = 64
+
+Sound sfx_ssa031
+Priority = 64
+
+Sound sfx_ssa032
+Priority = 64
+
+Sound sfx_ssa033
+Priority = 64
+
+Sound sfx_ssa034
+Priority = 64
+
+Sound sfx_ssa035
+Priority = 64
+
+Sound sfx_ssa036
+Priority = 64
+
+Sound sfx_ssa037
+Priority = 64
+
+Sound sfx_ssa038
+Priority = 64
+
+Sound sfx_ssa039
+Priority = 64
+
+Sound sfx_ssa040
+Priority = 64
+
+Sound sfx_ssa041
+Priority = 64
+
+Sound sfx_ssa042
+Priority = 64
+
+Sound sfx_ssa043
+Priority = 64
+
+Sound sfx_ssa044
+Priority = 64
+
+Sound sfx_ssa045
+Priority = 64
+
+Sound sfx_ssa046
+Priority = 64
+
+Sound sfx_ssa047
+Priority = 64
+
+Sound sfx_ssa048
+Priority = 64
+
+Sound sfx_ssa049
+Priority = 64
+
+Sound sfx_ssa050
+Priority = 64
+
+Sound sfx_ssa051
+Priority = 64
+
+Sound sfx_ssa052
+Priority = 64
+
+Sound sfx_ssa053
+Priority = 64
+
+Sound sfx_ssa054
+Priority = 64
+
+Sound sfx_ssa055
+Priority = 64
+
+Sound sfx_ssa056
+Priority = 64
+
+Sound sfx_ssa057
+Priority = 64
+
+Sound sfx_ssa058
+Priority = 64
+
+Sound sfx_ssa059
+Priority = 64
+
+Sound sfx_ssa060
+Priority = 64
+
+Sound sfx_ssa061
+Priority = 64
+
+Sound sfx_ssa062
+Priority = 64
+
+Sound sfx_ssa063
+Priority = 64
+
+Sound sfx_ssa064
+Priority = 64
+
+Sound sfx_ssa065
+Priority = 64
+
+Sound sfx_ssa066
+Priority = 64
+
+Sound sfx_ssa067
+Priority = 64
+
+Sound sfx_ssa068
+Priority = 64
+
+Sound sfx_ssa069
+Priority = 64
+
+Sound sfx_ssa070
+Priority = 64
+
+Sound sfx_ssa071
+Priority = 64
+
+Sound sfx_ssa072
+Priority = 64
+
+Sound sfx_ssa073
+Priority = 64
+
+Sound sfx_ssa074
+Priority = 64
+
+Sound sfx_ssa075
+Priority = 64
+
+Sound sfx_ssa076
+Priority = 64
+
+Sound sfx_ssa077
+Priority = 64
+
+Sound sfx_ssa078
+Priority = 64
+
+Sound sfx_ssa079
+Priority = 64
+
+Sound sfx_ssa080
+Priority = 64
+
+Sound sfx_ssa081
+Priority = 64
+
+Sound sfx_ssa082
+Priority = 64
+
+Sound sfx_ssa083
+Priority = 64
+
+Sound sfx_ssa084
+Priority = 64
+
+Sound sfx_ssa085
+Priority = 64
+
+Sound sfx_ssa086
+Priority = 64
+
+Sound sfx_ssa087
+Priority = 64
+
+Sound sfx_ssa088
+Priority = 64
+
+Sound sfx_ssa089
+Priority = 64
+
+Sound sfx_ssa090
+Priority = 64
+
+Sound sfx_ssa091
+Priority = 64
+
+Sound sfx_ssa092
+Priority = 64
+
+Sound sfx_ssa093
+Priority = 64
+
+Sound sfx_ssa094
+Priority = 64
+
+Sound sfx_ssa095
+Priority = 64
+
+Sound sfx_ssa096
+Priority = 64
+
+Sound sfx_ssa097
+Priority = 64
+
+Sound sfx_ssa098
+Priority = 64
+
+Sound sfx_ssa099
+Priority = 64
+
+Sound sfx_ssa100
+Priority = 64
+
+Sound sfx_ssa101
+Priority = 64
+
+Sound sfx_ssa102
+Priority = 64
+
+Sound sfx_ssa103
+Priority = 64
+
+Sound sfx_ssa104
+Priority = 64
+
+Sound sfx_ssa105
+Priority = 64
+
+Sound sfx_ssa106
+Priority = 64
+
+Sound sfx_ssa107
+Priority = 64
+
+Sound sfx_ssa108
+Priority = 64
+
+Sound sfx_ssa109
+Priority = 64
+
+Sound sfx_ssa110
+Priority = 64
+
+Sound sfx_ssa111
+Priority = 64
+
+Sound sfx_ssa112
+Priority = 64
+
+Sound sfx_ssa113
+Priority = 64
+
+Sound sfx_ssa114
+Priority = 64
+
+Sound sfx_ssa115
+Priority = 64
+
+Sound sfx_ssa116
+Priority = 64
+
+Sound sfx_ssa117
+Priority = 64
+
+Sound sfx_ssa118
+Priority = 64
+
+Sound sfx_ssa119
+Priority = 64
+
+Sound sfx_ssa120
+Priority = 64
+
+Sound sfx_ssa121
+Priority = 64
+
+Sound sfx_ssa122
+Priority = 64
+
+Sound sfx_ssa123
+Priority = 64
+
+Sound sfx_ssa124
+Priority = 64
+
+Sound sfx_ssa125
+Priority = 64
+
+Sound sfx_ssa126
+Priority = 64
+
+Sound sfx_ssa127
+Priority = 64
+
+Sound sfx_ssa128
+Priority = 64
+
+Sound sfx_ssa129
+Priority = 64
+
+Sound sfx_ssa130
+Priority = 64
+
+# SRB2kart
+Sound sfx_slip
+Priority = 96
+Caption = Spinout
+
+Sound sfx_screec
+Priority = 48
+Caption = /
+
+Sound sfx_drift
+Priority = 48
+Caption = /
+
+Sound sfx_ruburn
+Priority = 48
+Caption = /
+
+Sound sfx_ddash
+Priority = 64
+Caption = Dropdash
+
+Sound sfx_tossed
+Priority = 192
+Flags = 8
+Caption = Item Thrown
+
+Sound sfx_itpick
+Priority = 128
+Flags = 8
+Caption = Item Pickup
+
+Sound sfx_peel
+Priority = 96
+Caption = Banana landed
+
+Sound sfx_hogbom
+Priority = 96
+Flags = 8
+Caption = Ballhog Explosion
+
+Sound sfx_zio3
+Priority = 128
+Flags = 8
+Caption = Thunder Shield
+
+Sound sfx_kpogos
+Priority = 96
+Flags = 8
+Caption = Pogo Spring
+
+Sound sfx_alarmi
+Priority = 255
+Flags = 8
+Caption = Invincibility
+
+Sound sfx_alarmg
+Priority = 255
+Flags = 8
+Caption = Grow
+
+Sound sfx_kinvnc
+Priority = 255
+Flags = 8
+Caption = Invincibility
+
+Sound sfx_kgrow
+Priority = 255
+Flags = 8
+Caption = Grow
+
+Sound sfx_itrol1
+Singular = true
+Priority = 96
+Caption = Roulette
+
+Sound sfx_itrol2
+Singular = true
+Priority = 96
+Caption = Roulette
+
+Sound sfx_itrol3
+Singular = true
+Priority = 96
+Caption = Roulette
+
+Sound sfx_itrol4
+Singular = true
+Priority = 96
+Caption = Roulette
+
+Sound sfx_itrol5
+Singular = true
+Priority = 96
+Caption = Roulette
+
+Sound sfx_itrol6
+Singular = true
+Priority = 96
+Caption = Roulette
+
+Sound sfx_itrol7
+Singular = true
+Priority = 96
+Caption = Roulette
+
+Sound sfx_itrol8
+Singular = true
+Priority = 96
+Caption = Roulette
+
+Sound sfx_itrolf
+Singular = true
+Priority = 96
+Caption = Item Get
+
+Sound sfx_itrolm
+Singular = true
+Priority = 96
+Caption = Item Get (Mashed)
+
+Sound sfx_itrolk
+Singular = true
+Priority = 96
+Caption = Item Get (Enhanced)
+
+Sound sfx_itrole
+Singular = true
+Priority = 96
+Caption = Eggman Get
+
+Sound sfx_vroom
+Priority = 64
+Caption = /
+
+Sound sfx_chaooo
+Priority = 64
+Caption = /
+
+Sound sfx_yeeeah
+Priority = 64
+Caption = /
+
+Sound sfx_noooo1
+Priority = 64
+Caption = /
+
+Sound sfx_noooo2
+Priority = 64
+Caption = /
+
+Sound sfx_ruby1
+Priority = 64
+Caption = /
+
+Sound sfx_ruby2
+Priority = 64
+Caption = /
+
+Sound sfx_tcart
+Priority = 64
+Caption = /
+
+Sound sfx_bfare
+Priority = 128
+Caption = Fan Fare
+
+Sound sfx_merry
+Priority = 64
+Caption = /
+
+Sound sfx_bowlh
+Priority = 64
+Caption = /
+
+Sound sfx_tppop
+Priority = 64
+Caption = /
+
+Sound sfx_hsdoor
+Priority = 64
+Caption = /
+
+Sound sfx_hstrn
+Priority = 64
+Caption = /
+
+Sound sfx_aspkb
+Priority = 64
+Caption = Spikeball
+
+Sound sfx_wind1
+Priority = 64
+Flags = 8
+
+Sound sfx_fire2
+Priority = 64
+Flags = 8
+
+Sound sfx_chain
+Priority = 255
+Flags = 8
+Caption = Reaper
+
+Sound sfx_mkuma
+Priority = 96
+Flags = 8
+Caption = Monokuma
+
+Sound sfx_toada
+Priority = 64
+Caption = /
+
+Sound sfx_gemhit
+Priority = 64
+Caption = /
+
+Sound sfx_bsnipe
+Priority = 96
+Flags = 8
+Caption = Sniped
+
+Sound sfx_join
+Singular = true
+Priority = 96
+Flags = 8
+
+Sound sfx_leave
+Singular = true
+Priority = 96
+Flags = 8
+
+Sound sfx_requst
+Singular = true
+Priority = 96
+Flags = 8
+
+Sound sfx_syfail
+Singular = true
+Priority = 96
+Flags = 8
+
+Sound sfx_itfree
+Priority = 64
+
+Sound sfx_dbgsal
+Priority = 255
+Flags = 8
+
+Sound sfx_typri1
+Priority = 64
+Flags = 16
+
+Sound sfx_typri2
+Priority = 64
+Flags = 16
+
+Sound sfx_eggspr
+Priority = 64
+Flags = 16
+
+# SRB2Kart - Drop target sounds
+Sound sfx_kdtrg1
+Priority = 64
+Flags = 16
+
+Sound sfx_kdtrg2
+Priority = 64
+Flags = 16
+
+Sound sfx_kdtrg3
+Priority = 64
+Flags = 80
+
+# Shout message sound effect
+Sound sfx_sysmsg
+Priority = 60
+Caption = Server notification
+
+# Next up: UNIQUE ENGINE SOUNDS! Hoooooo boy...
+# Engine class A - Low Speed, Low Weight
+Sound sfx_krta00
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krta01
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krta02
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krta03
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krta04
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krta05
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krta06
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krta07
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krta08
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krta09
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krta10
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krta11
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krta12
+Priority = 48
+Flags = 65
+Caption = /
+
+# Engine class B - Average Speed, Low Weight
+Sound sfx_krtb00
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtb01
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtb02
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtb03
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtb04
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtb05
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtb06
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtb07
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtb08
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtb09
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtb10
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtb11
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtb12
+Priority = 48
+Flags = 65
+Caption = /
+
+# Engine class C - High Speed, Low Weight
+Sound sfx_krtc00
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtc01
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtc02
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtc03
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtc04
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtc05
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtc06
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtc07
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtc08
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtc09
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtc10
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtc11
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtc12
+Priority = 48
+Flags = 65
+Caption = /
+
+# Engine class D - Low Speed, Average Weight
+Sound sfx_krtd00
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtd01
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtd02
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtd03
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtd04
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtd05
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtd06
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtd07
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtd08
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtd09
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtd10
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtd11
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtd12
+Priority = 48
+Flags = 65
+Caption = /
+
+# Engine class E - Average Speed, Average Weight
+Sound sfx_krte00
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krte01
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krte02
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krte03
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krte04
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krte05
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krte06
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krte07
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krte08
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krte09
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krte10
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krte11
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krte12
+Priority = 48
+Flags = 65
+Caption = /
+
+# Engine class F - High Speed, Average Weight
+Sound sfx_krtf00
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtf01
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtf02
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtf03
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtf04
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtf05
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtf06
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtf07
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtf08
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtf09
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtf10
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtf11
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtf12
+Priority = 48
+Flags = 65
+Caption = /
+
+# Engine class G - Low Speed, High Weight
+Sound sfx_krtg00
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtg01
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtg02
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtg03
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtg04
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtg05
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtg06
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtg07
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtg08
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtg09
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtg10
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtg11
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krtg12
+Priority = 48
+Flags = 65
+Caption = /
+
+# Engine class H - Average Speed, High Weight
+Sound sfx_krth00
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krth01
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krth02
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krth03
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krth04
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krth05
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krth06
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krth07
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krth08
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krth09
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krth10
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krth11
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krth12
+Priority = 48
+Flags = 65
+Caption = /
+
+# Engine class I - High Speed, High Weight
+Sound sfx_krti00
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krti01
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krti02
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krti03
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krti04
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krti05
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krti06
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krti07
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krti08
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krti09
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krti10
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krti11
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_krti12
+Priority = 48
+Flags = 65
+Caption = /
+
+# And LASTLY, Kart's skin sounds.
+Sound sfx_kwin
+Priority = 64
+Flags = 96
+SkinSound = SKSKWIN
+Caption = /
+
+Sound sfx_klose
+Priority = 64
+Flags = 96
+SkinSound = SKSKLOSE
+Caption = /
+
+Sound sfx_khurt1
+Priority = 64
+Flags = 96
+SkinSound = SKSKPAN1
+Caption = /
+
+Sound sfx_khurt2
+Priority = 64
+Flags = 96
+SkinSound = SKSKPAN2
+Caption = /
+
+Sound sfx_kattk1
+Priority = 64
+Flags = 96
+SkinSound = SKSKATK1
+Caption = /
+
+Sound sfx_kattk2
+Priority = 64
+Flags = 96
+SkinSound = SKSKATK2
+Caption = /
+
+Sound sfx_kbost1
+Priority = 64
+Flags = 96
+SkinSound = SKSKBST1
+Caption = /
+
+Sound sfx_kbost2
+Priority = 64
+Flags = 96
+SkinSound = SKSKBST2
+Caption = /
+
+Sound sfx_kslow
+Priority = 64
+Flags = 32
+SkinSound = SKSKSLOW
+Caption = /
+
+Sound sfx_khitem
+Priority = 128
+Flags = 32
+SkinSound = SKSKHITM
+Caption = /
+
+Sound sfx_kgloat
+Priority = 64
+Flags = 48
+SkinSound = SKSKPOWR
+Caption = /
+

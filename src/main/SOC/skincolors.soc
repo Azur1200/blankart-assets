@@ -1,0 +1,1993 @@
+Color SKINCOLOR_NONE
+Name = None
+Ramp = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+InvColor = SKINCOLOR_NONE
+InvShade = 0
+ChatColor = 0
+
+Color SKINCOLOR_WHITE
+Name = White
+Ramp = 120,120,120,120,0,2,5,8,9,11,14,17,20,22,25,28
+InvColor = SKINCOLOR_BLACK
+InvShade = 8
+ChatColor = V_GRAYMAP
+Accessible = 1
+
+Color SKINCOLOR_SILVER
+Name = Silver
+Ramp = 0,1,2,3,5,7,9,12,13,15,18,20,23,25,27,30
+InvColor = SKINCOLOR_NICKEL
+InvShade = 8
+ChatColor = 0
+Accessible = 1
+
+Color SKINCOLOR_GREY
+Name = Grey
+Ramp = 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31
+InvColor = SKINCOLOR_GREY
+InvShade = 8
+ChatColor = V_GRAYMAP
+Accessible = 1
+
+Color SKINCOLOR_NICKEL
+Name = Nickel
+Ramp = 3,5,8,11,15,17,19,21,23,24,25,26,27,29,30,31
+InvColor = SKINCOLOR_SILVER
+InvShade = 8
+ChatColor = V_GRAYMAP
+Accessible = 1
+
+Color SKINCOLOR_BLACK
+Name = Black
+Ramp = 4,7,11,15,20,22,24,27,28,28,28,29,29,30,30,31
+InvColor = SKINCOLOR_WHITE
+InvShade = 8
+ChatColor = 0
+Accessible = 1
+
+Color SKINCOLOR_SKUNK
+Name = Skunk
+Ramp = 120,120,0,2,4,10,16,22,23,24,25,26,27,28,29,31
+InvColor = SKINCOLOR_SKUNK
+InvShade = 8
+ChatColor = V_GRAYMAP
+Accessible = 1
+
+Color SKINCOLOR_FAIRY
+Name = Fairy
+Ramp = 120,120,121,121,122,123,10,14,16,18,20,22,24,26,28,31
+InvColor = SKINCOLOR_ARTICHOKE
+InvShade = 12
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_POPCORN
+Name = Popcorn
+Ramp = 120,96,97,98,99,71,32,11,13,16,18,21,23,26,28,31
+InvColor = SKINCOLOR_PIGEON
+InvShade = 12
+ChatColor = V_YELLOWMAP
+Accessible = 1
+
+Color SKINCOLOR_ARTICHOKE
+Name = Artichoke
+Ramp = 97,176,177,162,163,179,12,14,16,18,20,22,24,26,28,31
+InvColor = SKINCOLOR_FAIRY
+InvShade = 12
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_PIGEON
+Name = Pigeon
+Ramp = 0,208,209,211,226,202,14,15,17,19,21,23,25,27,29,31
+InvColor = SKINCOLOR_POPCORN
+InvShade = 12
+ChatColor = V_STEELMAP
+Accessible = 1
+
+Color SKINCOLOR_SEPIA
+Name = Sepia
+Ramp = 0,1,3,5,7,9,34,36,38,40,42,44,60,61,62,63
+InvColor = SKINCOLOR_LEATHER
+InvShade = 6
+ChatColor = V_BROWNMAP
+Accessible = 1
+
+Color SKINCOLOR_BEIGE
+Name = Beige
+Ramp = 120,65,67,69,32,34,36,38,40,42,44,45,46,47,62,63
+InvColor = SKINCOLOR_BROWN
+InvShade = 2
+ChatColor = V_BROWNMAP
+Accessible = 1
+
+Color SKINCOLOR_WALNUT
+Name = Walnut
+Ramp = 3,6,32,33,35,37,51,52,54,55,57,58,60,61,63,30
+InvColor = SKINCOLOR_CAMOUFLAGE
+InvShade = 8
+ChatColor = V_BROWNMAP
+Accessible = 1
+
+Color SKINCOLOR_BROWN
+Name = Brown
+Ramp = 67,70,73,76,48,49,51,53,54,56,58,59,61,63,29,30
+InvColor = SKINCOLOR_BEIGE
+InvShade = 8
+ChatColor = V_BROWNMAP
+Accessible = 1
+
+Color SKINCOLOR_LEATHER
+Name = Leather
+Ramp = 72,76,48,51,53,55,57,59,61,63,28,28,29,29,30,31
+InvColor = SKINCOLOR_SEPIA
+InvShade = 8
+ChatColor = V_BROWNMAP
+Accessible = 1
+
+Color SKINCOLOR_SALMON
+Name = Salmon
+Ramp = 120,120,120,121,121,122,123,124,126,127,129,131,133,135,137,139
+InvColor = SKINCOLOR_TEA
+InvShade = 8
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_PINK
+Name = Pink
+Ramp = 120,121,121,122,144,145,146,147,148,149,150,151,134,136,138,140
+InvColor = SKINCOLOR_PISTACHIO
+InvShade = 8
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_ROSE
+Name = Rose
+Ramp = 144,145,146,147,148,149,150,151,134,135,136,137,138,139,140,141
+InvColor = SKINCOLOR_MOSS
+InvShade = 8
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_BRICK
+Name = Brick
+Ramp = 64,67,70,73,146,147,148,150,118,118,119,119,156,159,141,143
+InvColor = SKINCOLOR_RUST
+InvShade = 8
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_CINNAMON
+Name = Cinnamon
+Ramp = 68,75,48,50,52,94,152,136,137,138,139,140,141,142,143,31
+InvColor = SKINCOLOR_WRISTWATCH
+InvShade = 6
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_RUBY
+Name = Ruby
+Ramp = 120,121,144,145,147,149,132,133,134,136,198,198,199,255,30,31
+InvColor = SKINCOLOR_SAPPHIRE
+InvShade = 8
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_RASPBERRY
+Name = Raspberry
+Ramp = 120,121,122,123,124,125,126,127,128,130,131,134,136,137,139,140
+InvColor = SKINCOLOR_MINT
+InvShade = 8
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_CHERRY
+Name = Cherry
+Ramp = 120,65,67,69,71,124,125,127,132,133,135,136,138,139,140,141
+InvColor = SKINCOLOR_HANDHELD
+InvShade = 10
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_RED
+Name = Red
+Ramp = 122,123,124,126,129,132,133,134,135,136,137,138,139,140,141,142
+InvColor = SKINCOLOR_GREEN
+InvShade = 6
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_CRIMSON
+Name = Crimson
+Ramp = 123,125,128,131,133,135,136,138,140,140,141,141,142,142,143,31
+InvColor = SKINCOLOR_PINETREE
+InvShade = 6
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_MAROON
+Name = Maroon
+Ramp = 123,124,126,128,132,135,137,27,28,28,28,29,29,30,30,31
+InvColor = SKINCOLOR_TOXIC
+InvShade = 8
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_LEMONADE
+Name = Lemonade
+Ramp = 120,96,97,98,99,65,122,144,123,124,147,149,151,153,156,159
+InvColor = SKINCOLOR_THUNDER
+InvShade = 8
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_FLAME
+Name = Flame
+Ramp = 120,97,112,113,113,85,87,126,149,150,151,252,253,254,255,29
+InvColor = SKINCOLOR_CARIBBEAN
+InvShade = 10
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_SCARLET
+Name = Scarlet
+Ramp = 99,113,113,84,85,87,126,128,130,196,197,198,199,240,243,246
+InvColor = SKINCOLOR_ALGAE
+InvShade = 10
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_KETCHUP
+Name = Ketchup
+Ramp = 103,113,113,84,85,88,127,130,131,133,134,136,138,139,141,143
+InvColor = SKINCOLOR_MUSTARD
+InvShade = 10
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_DAWN
+Name = Dawn
+Ramp = 120,121,122,123,124,147,148,91,93,95,152,154,156,159,141,143
+InvColor = SKINCOLOR_DUSK
+InvShade = 8
+ChatColor = V_ORANGEMAP
+Accessible = 1
+
+Color SKINCOLOR_SUNSET
+Name = Sunset
+Ramp = 98,112,113,84,85,87,89,149,150,251,251,205,206,207,29,31
+InvColor = SKINCOLOR_MOONSLAM
+InvShade = 8
+ChatColor = V_ORANGEMAP
+Accessible = 1
+
+Color SKINCOLOR_CREAMSICLE
+Name = Creamsicle
+Ramp = 120,120,80,80,81,82,83,83,84,85,86,88,89,91,93,95
+InvColor = SKINCOLOR_PERIWINKLE
+InvShade = 8
+ChatColor = V_ORANGEMAP
+Accessible = 1
+
+Color SKINCOLOR_ORANGE
+Name = Orange
+Ramp = 80,81,82,83,84,85,86,88,89,91,94,95,154,156,158,159
+InvColor = SKINCOLOR_BLUE
+InvShade = 8
+ChatColor = V_ORANGEMAP
+Accessible = 1
+
+Color SKINCOLOR_PUMPKIN
+Name = Pumpkin
+Ramp = 82,83,84,85,87,89,90,92,94,152,153,155,157,159,141,142
+InvColor = SKINCOLOR_BLUEBERRY
+InvShade = 8
+ChatColor = V_ORANGEMAP
+Accessible = 1
+
+Color SKINCOLOR_ROSEWOOD
+Name = Rosewood
+Ramp = 83,85,88,90,92,94,152,153,154,156,157,159,140,141,142,143
+InvColor = SKINCOLOR_NAVY
+InvShade = 6
+ChatColor = V_ORANGEMAP
+Accessible = 1
+
+Color SKINCOLOR_BURGUNDY
+Name = Burgundy
+Ramp = 84,86,89,91,152,154,155,157,158,159,140,141,142,143,31,31
+InvColor = SKINCOLOR_JET
+InvShade = 8
+ChatColor = V_ORANGEMAP
+Accessible = 1
+
+Color SKINCOLOR_TANGERINE
+Name = Tangerine
+Ramp = 98,98,112,112,113,113,84,85,87,89,91,93,95,153,156,159
+InvColor = SKINCOLOR_LIME
+InvShade = 8
+ChatColor = V_ORANGEMAP
+Accessible = 1
+
+Color SKINCOLOR_PEACH
+Name = Peach
+Ramp = 120,80,66,70,72,76,148,149,150,151,153,154,156,61,62,63
+InvColor = SKINCOLOR_CYAN
+InvShade = 8
+ChatColor = V_PEACHMAP
+Accessible = 1
+
+Color SKINCOLOR_CARAMEL
+Name = Caramel
+Ramp = 64,66,68,70,72,74,76,78,48,50,52,54,56,58,60,62
+InvColor = SKINCOLOR_CERULEAN
+InvShade = 8
+ChatColor = V_PEACHMAP
+Accessible = 1
+
+Color SKINCOLOR_CREAM
+Name = Cream
+Ramp = 120,96,96,97,98,82,84,77,50,54,57,59,61,63,29,31
+InvColor = SKINCOLOR_COPPER
+InvShade = 10
+ChatColor = V_PEACHMAP
+Accessible = 1
+
+Color SKINCOLOR_GOLD
+Name = Gold
+Ramp = 96,97,98,112,113,114,115,116,117,151,118,119,157,159,140,143
+InvColor = SKINCOLOR_SLATE
+InvShade = 8
+ChatColor = V_GOLDMAP
+Accessible = 1
+
+Color SKINCOLOR_ROYAL
+Name = Royal
+Ramp = 97,112,113,113,114,78,53,252,252,253,253,254,255,29,30,31
+InvColor = SKINCOLOR_PLATINUM
+InvShade = 6
+ChatColor = V_GOLDMAP
+Accessible = 1
+
+Color SKINCOLOR_BRONZE
+Name = Bronze
+Ramp = 112,113,114,115,116,117,118,119,156,157,158,159,141,141,142,143
+InvColor = SKINCOLOR_STEEL
+InvShade = 8
+ChatColor = V_GOLDMAP
+Accessible = 1
+
+Color SKINCOLOR_COPPER
+Name = Copper
+Ramp = 120,99,113,114,116,117,119,61,63,28,28,29,29,30,30,31
+InvColor = SKINCOLOR_CREAM
+InvShade = 6
+ChatColor = V_GOLDMAP
+Accessible = 1
+
+Color SKINCOLOR_QUARRY
+Name = Quarry
+Ramp = 96,97,98,99,104,105,106,107,117,152,154,156,159,141,142,143
+InvColor = SKINCOLOR_AZURE
+InvShade = 8
+ChatColor = V_YELLOWMAP
+Accessible = 1
+
+Color SKINCOLOR_YELLOW
+Name = Yellow
+Ramp = 96,97,98,100,101,102,104,113,114,115,116,117,118,119,156,159
+InvColor = SKINCOLOR_AQUA
+InvShade = 8
+ChatColor = V_YELLOWMAP
+Accessible = 1
+
+Color SKINCOLOR_MUSTARD
+Name = Mustard
+Ramp = 96,98,99,112,113,114,114,106,106,107,107,108,108,109,110,111
+InvColor = SKINCOLOR_KETCHUP
+InvShade = 8
+ChatColor = V_YELLOWMAP
+Accessible = 1
+
+Color SKINCOLOR_CROCODILE
+Name = Crocodile
+Ramp = 120,96,97,98,176,113,114,106,115,107,108,109,110,174,175,31
+InvColor = SKINCOLOR_BUBBLEGUM
+InvShade = 8
+ChatColor = V_YELLOWMAP
+Accessible = 1
+
+Color SKINCOLOR_OLIVE
+Name = Olive
+Ramp = 98,101,104,105,106,115,107,108,182,109,183,110,174,111,30,31
+InvColor = SKINCOLOR_TEAL
+InvShade = 8
+ChatColor = V_YELLOWMAP
+Accessible = 1
+
+Color SKINCOLOR_VOMIT
+Name = Vomit
+Ramp = 0,121,122,144,71,84,114,115,107,108,109,183,223,207,30,246
+InvColor = SKINCOLOR_ROBOHOOD
+InvShade = 8
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_GARDEN
+Name = Garden
+Ramp = 98,99,112,101,113,114,106,179,180,180,181,182,183,173,174,175
+InvColor = SKINCOLOR_LAVENDER
+InvShade = 6
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_LIME
+Name = Lime
+Ramp = 120,96,97,98,99,176,177,163,164,166,168,170,223,207,243,31
+InvColor = SKINCOLOR_TANGERINE
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_HANDHELD
+Name = Handheld
+Ramp = 98,104,105,105,106,167,168,169,170,171,172,173,174,175,30,31
+InvColor = SKINCOLOR_CHERRY
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_TEA
+Name = Tea
+Ramp = 120,120,176,176,176,177,177,178,178,179,179,180,180,181,182,183
+InvColor = SKINCOLOR_SALMON
+InvShade = 8
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_PISTACHIO
+Name = Pistachio
+Ramp = 120,120,176,176,177,177,178,179,165,166,167,168,169,170,171,172
+InvColor = SKINCOLOR_PINK
+InvShade = 6
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_MOSS
+Name = Moss
+Ramp = 178,178,178,179,179,180,181,182,183,172,172,173,173,174,174,175
+InvColor = SKINCOLOR_ROSE
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_CAMOUFLAGE
+Name = Camouflage
+Ramp = 64,66,69,32,34,37,40,182,171,172,172,173,173,174,174,175
+InvColor = SKINCOLOR_WALNUT
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_ROBOHOOD
+Name = Robo-Hood
+Ramp = 120,176,160,165,167,168,169,182,182,171,60,61,63,29,30,31
+InvColor = SKINCOLOR_VOMIT
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_MINT
+Name = Mint
+Ramp = 120,176,176,176,177,163,164,165,167,221,221,222,223,207,207,31
+InvColor = SKINCOLOR_RASPBERRY
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_GREEN
+Name = Green
+Ramp = 160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175
+InvColor = SKINCOLOR_RED
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_PINETREE
+Name = Pinetree
+Ramp = 161,163,165,166,167,168,169,170,171,172,173,174,175,30,30,31
+InvColor = SKINCOLOR_CRIMSON
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_EMERALD
+Name = Emerald
+Ramp = 160,184,184,185,185,186,186,187,187,188,188,189,189,190,191,175
+InvColor = SKINCOLOR_PURPLE
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_SWAMP
+Name = Swamp
+Ramp = 160,184,185,186,187,188,189,190,191,191,29,29,30,30,31,31
+InvColor = SKINCOLOR_BYZANTIUM
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_DREAM
+Name = Dream
+Ramp = 120,120,80,80,81,177,162,164,228,228,204,204,205,205,206,207
+InvColor = SKINCOLOR_POMEGRANATE
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_PLAGUE
+Name = Plague
+Ramp = 97,176,160,184,185,186,187,229,229,205,206,207,28,29,30,31
+InvColor = SKINCOLOR_NOVA
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_ALGAE
+Name = Algae
+Ramp = 208,209,210,211,213,220,216,167,168,188,188,189,190,191,30,31
+InvColor = SKINCOLOR_SCARLET
+InvShade = 10
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_CARIBBEAN
+Name = Caribbean
+Ramp = 120,176,177,160,185,220,216,217,229,229,204,205,206,254,255,31
+InvColor = SKINCOLOR_FLAME
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_AZURE
+Name = Azure
+Ramp = 120,96,97,98,177,220,216,217,218,204,252,253,254,255,30,31
+InvColor = SKINCOLOR_QUARRY
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_AQUA
+Name = Aqua
+Ramp = 120,208,208,210,212,214,220,220,220,221,221,222,222,223,223,191
+InvColor = SKINCOLOR_YELLOW
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_TEAL
+Name = Teal
+Ramp = 210,213,220,220,220,216,216,221,221,221,222,222,223,223,191,31
+InvColor = SKINCOLOR_OLIVE
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_CYAN
+Name = Cyan
+Ramp = 120,120,208,208,209,210,211,212,213,215,216,217,218,219,222,223
+InvColor = SKINCOLOR_PEACH
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+# Oni's torment
+Color SKINCOLOR_JAWZ
+Name = Jawz
+Ramp = 120,120,208,209,210,226,215,216,217,229,229,205,205,206,207,31
+InvColor = SKINCOLOR_LILAC
+InvShade = 10
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_CERULEAN
+Name = Cerulean
+Ramp = 208,209,211,213,215,216,216,217,217,218,218,219,205,206,207,207
+InvColor = SKINCOLOR_CARAMEL
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_NAVY
+Name = Navy
+Ramp = 211,212,213,215,216,218,219,205,206,206,207,207,28,29,30,31
+InvColor = SKINCOLOR_ROSEWOOD
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_PLATINUM
+Name = Platinum
+Ramp = 120,0,0,200,200,201,11,14,17,218,222,223,238,240,243,246
+InvColor = SKINCOLOR_ROYAL
+InvShade = 8
+ChatColor = V_STEELMAP
+Accessible = 1
+
+Color SKINCOLOR_SLATE
+Name = Slate
+Ramp = 120,120,200,200,200,201,201,201,202,202,202,203,204,205,206,207
+InvColor = SKINCOLOR_GOLD
+InvShade = 10
+ChatColor = V_STEELMAP
+Accessible = 1
+
+Color SKINCOLOR_STEEL
+Name = Steel
+Ramp = 120,200,200,201,201,202,202,203,203,204,204,205,205,206,207,31
+InvColor = SKINCOLOR_BRONZE
+InvShade = 10
+ChatColor = V_STEELMAP
+Accessible = 1
+
+Color SKINCOLOR_THUNDER
+Name = Thunder
+Ramp = 96,97,98,112,113,114,11,203,204,205,205,237,239,241,243,246
+InvColor = SKINCOLOR_LEMONADE
+InvShade = 8
+ChatColor = V_GOLDMAP
+Accessible = 1
+
+Color SKINCOLOR_RUST
+Name = Rust
+Ramp = 64,66,68,70,32,34,36,203,204,205,24,25,26,28,29,31
+InvColor = SKINCOLOR_BRICK
+InvShade = 10
+ChatColor = V_BROWNMAP
+Accessible = 1
+
+Color SKINCOLOR_WRISTWATCH
+Name = Wristwatch
+Ramp = 81,72,76,48,51,55,252,205,205,206,240,241,242,243,244,246
+InvColor = SKINCOLOR_CINNAMON
+InvShade = 8
+ChatColor = V_BROWNMAP
+Accessible = 1
+
+Color SKINCOLOR_JET
+Name = Jet
+Ramp = 225,226,227,228,229,205,205,206,207,207,28,28,29,29,30,31
+InvColor = SKINCOLOR_BURGUNDY
+InvShade = 8
+ChatColor = V_GRAYMAP
+Accessible = 1
+
+# sweet mother, i cannot weave - slender aphrodite has overcome me with longing for a girl
+Color SKINCOLOR_SAPPHIRE
+Name = Sapphire
+Ramp = 208,209,211,213,215,217,229,230,232,234,236,238,240,242,244,246
+InvColor = SKINCOLOR_RUBY
+InvShade = 6
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_PERIWINKLE
+Name = Periwinkle
+Ramp = 120,120,224,225,226,202,227,228,229,230,231,233,235,237,239,241
+InvColor = SKINCOLOR_CREAMSICLE
+InvShade = 8
+ChatColor = V_BLUEMAP
+Accessible = 1
+
+Color SKINCOLOR_BLUE
+Name = Blue
+Ramp = 224,225,226,227,228,229,230,231,232,233,235,236,238,242,244,246
+InvColor = SKINCOLOR_ORANGE
+InvShade = 8
+ChatColor = V_BLUEMAP
+Accessible = 1
+
+Color SKINCOLOR_BLUEBERRY
+Name = Blueberry
+Ramp = 226,228,229,230,232,233,235,237,239,240,242,244,246,31,31,31
+InvColor = SKINCOLOR_PUMPKIN
+InvShade = 8
+ChatColor = V_BLUEMAP
+Accessible = 1
+
+Color SKINCOLOR_NOVA
+Name = Nova
+Ramp = 120,112,82,83,84,124,248,228,228,204,205,206,207,29,30,31
+InvColor = SKINCOLOR_PLAGUE
+InvShade = 10
+ChatColor = V_BLUEMAP
+Accessible = 1
+
+Color SKINCOLOR_PASTEL
+Name = Pastel
+Ramp = 120,208,209,210,211,226,202,249,194,195,196,197,198,199,255,30
+InvColor = SKINCOLOR_FUCHSIA
+InvShade = 11
+ChatColor = V_LAVENDERMAP
+Accessible = 1
+
+Color SKINCOLOR_MOONSLAM
+Name = Moonslam
+Ramp = 120,224,201,226,202,249,250,196,197,198,199,140,141,142,143,31
+InvColor = SKINCOLOR_SUNSET
+InvShade = 10
+ChatColor = V_LAVENDERMAP
+Accessible = 1
+
+Color SKINCOLOR_ULTRAVIOLET
+Name = Ultraviolet
+Ramp = 120,64,81,122,192,249,203,221,221,219,219,223,223,191,191,31
+InvColor = SKINCOLOR_MAUVE
+InvShade = 10
+ChatColor = V_PURPLEMAP
+Accessible = 1
+
+Color SKINCOLOR_DUSK
+Name = Dusk
+Ramp = 121,145,192,249,250,251,204,204,205,205,206,206,207,29,30,31
+InvColor = SKINCOLOR_DAWN
+InvShade = 6
+ChatColor = V_LAVENDERMAP
+Accessible = 1
+
+Color SKINCOLOR_BUBBLEGUM
+Name = Bubblegum
+Ramp = 120,96,64,121,67,144,123,192,193,194,195,196,197,198,199,30
+InvColor = SKINCOLOR_CROCODILE
+InvShade = 8
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_PURPLE
+Name = Purple
+Ramp = 121,145,192,192,193,194,195,196,196,197,197,198,198,199,30,31
+InvColor = SKINCOLOR_EMERALD
+InvShade = 8
+ChatColor = V_PURPLEMAP
+Accessible = 1
+
+Color SKINCOLOR_FUCHSIA
+Name = Fuchsia
+Ramp = 120,122,124,125,126,150,196,197,198,198,199,199,240,242,244,246
+InvColor = SKINCOLOR_PASTEL
+InvShade = 11
+ChatColor = V_PURPLEMAP
+Accessible = 1
+
+Color SKINCOLOR_TOXIC
+Name = Toxic
+Ramp = 120,120,176,176,177,6,8,10,249,250,196,197,198,199,143,31
+InvColor = SKINCOLOR_MAROON
+InvShade = 8
+ChatColor = V_LAVENDERMAP
+Accessible = 1
+
+Color SKINCOLOR_MAUVE
+Name = Mauve
+Ramp = 96,97,98,112,113,73,146,248,249,251,205,205,206,207,29,31
+InvColor = SKINCOLOR_ULTRAVIOLET
+InvShade = 8
+ChatColor = V_LAVENDERMAP
+Accessible = 1
+
+Color SKINCOLOR_LAVENDER
+Name = Lavender
+Ramp = 121,145,192,248,249,250,251,252,252,253,253,254,254,255,30,31
+InvColor = SKINCOLOR_GARDEN
+InvShade = 6
+ChatColor = V_LAVENDERMAP
+Accessible = 1
+
+Color SKINCOLOR_BYZANTIUM
+Name = Byzantium
+Ramp = 201,248,249,250,251,252,253,254,255,255,29,29,30,30,31,31
+InvColor = SKINCOLOR_SWAMP
+InvShade = 8
+ChatColor = V_LAVENDERMAP
+Accessible = 1
+
+Color SKINCOLOR_POMEGRANATE
+Name = Pomegranate
+Ramp = 144,145,146,147,148,149,150,251,251,252,252,253,254,255,29,30
+InvColor = SKINCOLOR_DREAM
+InvShade = 8
+ChatColor = V_LAVENDERMAP
+Accessible = 1
+
+Color SKINCOLOR_LILAC
+Name = Lilac
+Ramp = 120,120,120,121,121,122,122,123,192,248,249,250,251,252,253,254
+InvColor = SKINCOLOR_JAWZ
+InvShade = 6
+ChatColor = V_PINKMAP
+Accessible = 1
+
+# vanilla colors - shoutouts to Sonic Team Jr.
+Color SKINCOLOR_BONE
+Name = Bone
+Ramp = 120,120,0,1,3,5,7,10,12,14,16,19,22,24,26,29
+InvColor = SKINCOLOR_INK
+InvShade = 8
+ChatColor = 0
+Accessible = 1
+
+Color SKINCOLOR_CARBON
+Name = Carbon
+Ramp = 3,6,10,13,17,20,22,23,24,25,26,27,28,29,30,31
+InvColor = SKINCOLOR_MARBLE
+InvShade = 8
+ChatColor = V_GRAYMAP
+Accessible = 1
+
+Color SKINCOLOR_INK
+Name = Ink
+Ramp = 0,2,5,10,15,20,25,26,27,28,30,30,30,31,31,31
+InvColor = SKINCOLOR_BONE
+InvShade = 8
+ChatColor = V_GRAYMAP
+Accessible = 1
+
+Color SKINCOLOR_GHOST
+Name = Ghost
+Ramp = 120,120,0,1,1,224,225,225,226,202,203,204,205,206,207,29
+InvColor = SKINCOLOR_PEACHY
+InvShade = 12
+ChatColor = 0
+Accessible = 1
+
+Color SKINCOLOR_MARBLE
+Name = Marble
+Ramp = 120,1,4,6,8,10,202,202,203,203,204,204,205,205,206,207
+InvColor = SKINCOLOR_CARBON
+InvShade = 8
+ChatColor = V_STEELMAP
+Accessible = 1
+
+Color SKINCOLOR_BLUEBELL
+Name = Bluebell
+Ramp = 224,225,226,227,228,228,229,204,204,205,205,198,198,199,241,244
+InvColor = SKINCOLOR_LANTERN
+InvShade = 10
+ChatColor = V_STEELMAP
+Accessible = 1
+
+Color SKINCOLOR_CHOCOLATE
+Name = Chocolate
+Ramp = 77,48,49,52,55,57,59,60,61,25,26,27,28,29,30,31
+InvColor = SKINCOLOR_TAN
+InvShade = 8
+ChatColor = V_BROWNMAP
+Accessible = 1
+
+Color SKINCOLOR_TAN
+Name = Tan
+Ramp = 96,98,81,82,83,75,77,37,38,40,42,44,59,60,61,62
+InvColor = SKINCOLOR_CHOCOLATE
+InvShade = 12
+ChatColor = V_BROWNMAP
+Accessible = 1
+
+Color SKINCOLOR_PEACHY
+Name = Peachy
+Ramp = 64,66,68,82,83,72,74,146,147,148,149,150,151,135,137,139
+InvColor = SKINCOLOR_GHOST
+InvShade = 8
+ChatColor = V_PEACHMAP
+Accessible = 1
+
+Color SKINCOLOR_QUAIL
+Name = Quail
+Ramp = 68,70,72,74,76,78,148,149,251,252,253,254,255,29,30,31
+InvColor = SKINCOLOR_WAVE
+InvShade = 8
+ChatColor = V_PEACHMAP
+Accessible = 1
+
+Color SKINCOLOR_LANTERN
+Name = Lantern
+Ramp = 0,176,113,84,86,89,92,94,153,154,136,137,138,199,255,31
+InvColor = SKINCOLOR_BLUEBELL
+InvShade = 8
+ChatColor = V_GOLDMAP
+Accessible = 1
+
+Color SKINCOLOR_APRICOT
+Name = Apricot
+Ramp = 66,68,70,71,73,84,85,86,87,88,90,92,93,94,153,155
+InvColor = SKINCOLOR_FROST
+InvShade = 10
+ChatColor = V_ORANGEMAP
+Accessible = 1
+
+Color SKINCOLOR_SANDY
+Name = Sandy
+Ramp = 112,113,114,115,116,54,56,57,58,59,60,254,254,255,255,244
+InvColor = SKINCOLOR_PEACOCK
+InvShade = 8
+ChatColor = V_GOLDMAP
+Accessible = 1
+
+Color SKINCOLOR_BANANA
+Name = Banana
+Ramp = 96,98,99,100,102,103,113,105,106,107,108,109,183,110,63,111
+InvColor = SKINCOLOR_ICY
+InvShade = 8
+ChatColor = V_YELLOWMAP
+Accessible = 1
+
+Color SKINCOLOR_SUNFLOWER
+Name = Sunflower
+Ramp = 97,98,99,112,113,105,106,107,107,108,170,171,172,173,174,175
+InvColor = SKINCOLOR_MAGENTA
+InvShade = 8
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_OLIVINE
+Name = Olivine
+Ramp = 120,97,97,176,176,160,160,184,184,185,185,186,187,188,189,190
+InvColor = SKINCOLOR_VIOLET
+InvShade = 8
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_PERIDOT
+Name = Peridot
+Ramp = 176,176,177,105,105,106,106,107,107,108,182,182,183,183,173,191
+InvColor = SKINCOLOR_VIOLET
+InvShade = 8
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_APPLE
+Name = Apple
+Ramp = 99,101,113,105,106,107,107,168,169,170,171,171,172,173,174,175
+InvColor = SKINCOLOR_GEMSTONE
+InvShade = 8
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_SEAFOAM
+Name = Seafoam
+Ramp = 120,97,176,177,178,179,180,221,222,222,223,223,240,242,244,31
+InvColor = SKINCOLOR_PLUM
+InvShade = 10
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_FOREST
+Name = Forest
+Ramp = 164,166,167,168,169,170,171,172,173,174,174,175,175,31,31,31
+InvColor = SKINCOLOR_NEON
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_TOPAZ
+Name = Topaz
+Ramp = 120,208,209,211,211,161,161,162,162,163,163,165,167,169,171,173
+InvColor = SKINCOLOR_APRICOT
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_FROST
+Name = Frost
+Ramp = 120,0,208,247,247,211,213,220,216,217,221,222,223,173,174,175
+InvColor = SKINCOLOR_APRICOT
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_WAVE
+Name = Wave
+Ramp = 120,208,210,213,215,216,217,218,219,205,198,198,199,199,207,243
+InvColor = SKINCOLOR_QUAIL
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_ICY
+Name = Icy
+Ramp = 120,120,120,120,208,210,213,214,215,216,229,229,204,205,206,207
+InvColor = SKINCOLOR_BANANA
+InvShade = 10
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_PEACOCK
+Name = Peacock
+Ramp = 214,215,216,217,218,219,219,223,223,173,240,241,243,244,245,246
+InvColor = SKINCOLOR_SANDY
+InvShade = 8
+ChatColor = V_BLUEMAP
+Accessible = 1
+
+Color SKINCOLOR_VAPOR
+Name = Vapor
+Ramp = 209,211,212,213,214,215,227,228,229,204,197,197,198,198,199,255
+InvColor = SKINCOLOR_THISTLE
+InvShade = 8
+ChatColor = V_BLUEMAP
+Accessible = 1
+
+Color SKINCOLOR_GEMSTONE
+Name = Gemstone
+Ramp = 224,225,226,227,228,229,204,196,197,197,198,198,199,255,142,31
+InvColor = SKINCOLOR_APPLE
+InvShade = 8
+ChatColor = V_PURPLEMAP
+Accessible = 1
+
+Color SKINCOLOR_NEON
+Name = Neon
+Ramp = 192,193,194,195,196,197,197,198,198,199,199,255,255,29,30,31
+InvColor = SKINCOLOR_FOREST
+InvShade = 8
+ChatColor = V_PURPLEMAP
+Accessible = 1
+
+Color SKINCOLOR_PLUM
+Name = Plum
+Ramp = 145,147,148,149,150,151,197,197,198,198,199,199,140,141,142,143
+InvColor = SKINCOLOR_SEAFOAM
+InvShade = 10
+ChatColor = V_PURPLEMAP
+Accessible = 1
+
+Color SKINCOLOR_VIOLET
+Name = Violet
+Ramp = 64,122,123,146,147,149,151,196,197,198,198,199,199,241,243,245
+InvColor = SKINCOLOR_PERIDOT
+InvShade = 8
+ChatColor = V_LAVENDERMAP
+Accessible = 1
+
+Color SKINCOLOR_MAGENTA
+Name = Magenta
+Ramp = 120,121,122,123,124,125,149,150,151,197,197,198,198,199,140,141
+InvColor = SKINCOLOR_SUNFLOWER
+InvShade = 10
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_THISTLE
+Name = Thistle
+Ramp = 64,66,122,123,146,147,249,250,250,251,252,253,254,255,244,246
+InvColor = SKINCOLOR_VAPOR
+InvShade = 10
+ChatColor = V_PINKMAP
+Accessible = 1
+
+# custom color expansion begins here
+Color SKINCOLOR_DIAMOND
+Name = Diamond
+Ramp = 120,1,2,3,225,226,202,14,16,18,20,22,24,26,28,30
+InvColor = SKINCOLOR_EARTHWORM
+InvShade = 8
+ChatColor = 0
+Accessible = 1
+
+Color SKINCOLOR_RAVEN
+Name = Raven
+Ramp = 224,225,226,202,37,39,19,21,23,25,27,28,29,29,30,31
+InvColor = SKINCOLOR_CROW
+InvShade = 8
+ChatColor = V_GRAYMAP
+Accessible = 1
+
+Color SKINCOLOR_MUD
+Name = Mud
+Ramp = 34,37,39,41,43,44,45,46,47,61,62,63,28,29,30,31
+InvColor = SKINCOLOR_ONYX
+InvShade = 8
+ChatColor = V_BROWNMAP
+Accessible = 1
+
+Color SKINCOLOR_EARTHWORM
+Name = Earthworm
+Ramp = 0,121,122,145,146,147,37,38,40,42,44,46,47,62,63,174
+InvColor = SKINCOLOR_DIAMOND
+InvShade = 8
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_YOGURT
+Name = Yogurt
+Ramp = 0,80,65,66,68,70,145,124,147,148,149,150,151,152,154,156
+InvColor = SKINCOLOR_CHARTEUSE
+InvShade = 12
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_PEARL
+Name = Pearl
+Ramp = 120,0,0,64,64,121,67,144,145,146,147,148,149,150,151,133
+InvColor = SKINCOLOR_STORM
+InvShade = 8
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_STRAWBERRY
+Name = Strawberry
+Ramp = 120,96,97,98,176,81,144,124,126,129,132,134,136,138,139,140
+InvColor = SKINCOLOR_SLIME
+InvShade = 8
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_SODA
+Name = Soda
+Ramp = 81,82,83,74,76,88,90,130,132,134,155,158,140,141,142,143
+InvColor = SKINCOLOR_LEAF
+InvShade = 9
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_BLOODCELL
+Name = Bloodcell
+Ramp = 145,146,148,149,150,151,133,134,135,136,138,139,140,141,142,143
+InvColor = SKINCOLOR_INDIGO
+InvShade = 8
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_MAHOGANY
+Name = Mahogany
+Ramp = 133,134,135,136,137,138,139,139,140,141,142,142,143,143,30,31
+InvColor = SKINCOLOR_JUNGLE
+InvShade = 6
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_FIERY
+Name = Fiery
+Ramp = 80,81,83,85,86,88,90,130,132,133,135,137,138,140,141,142
+InvColor = SKINCOLOR_COMET
+InvShade = 8
+ChatColor = V_ORANGEMAP
+Accessible = 1
+
+Color SKINCOLOR_SPICE
+Name = Spice
+Ramp = 99,101,113,114,115,116,92,93,95,153,136,138,139,140,142,143
+InvColor = SKINCOLOR_DEPTHS
+InvShade = 8
+ChatColor = V_GOLDMAP
+Accessible = 1
+
+Color SKINCOLOR_KING
+Name = King
+Ramp = 96,97,99,176,113,114,77,149,151,153,155,157,159,140,142,31
+InvColor = SKINCOLOR_NEBULA
+InvShade = 8
+ChatColor = V_GOLDMAP
+Accessible = 1
+
+Color SKINCOLOR_HOTDOG
+Name = HotDog
+Ramp = 96,97,98,100,102,113,85,87,90,130,132,134,136,138,140,142
+InvColor = SKINCOLOR_LAPIS
+InvShade = 8
+ChatColor = V_GOLDMAP
+Accessible = 1
+
+Color SKINCOLOR_CARNATION
+Name = Carnation
+Ramp = 96,97,98,65,122,123,124,125,148,149,251,252,253,254,255,29
+InvColor = SKINCOLOR_VACATION
+InvShade = 8
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_CANDY
+Name = Candy
+Ramp = 81,122,123,124,125,149,150,151,252,253,254,199,255,243,245,31
+InvColor = SKINCOLOR_DIANNE
+InvShade = 8
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_NEBULA
+Name = Nebula
+Ramp = 65,122,145,248,249,250,53,55,58,60,61,199,255,29,30,31
+InvColor = SKINCOLOR_KING
+InvShade = 8
+ChatColor = V_LAVENDERMAP
+Accessible = 1
+
+Color SKINCOLOR_STEAMPUNK
+Name = Steampunk
+Ramp = 2,4,7,32,34,78,48,90,92,94,95,153,155,157,159,140
+InvColor = SKINCOLOR_PLASMA
+InvShade = 8
+ChatColor = V_BROWNMAP
+Accessible = 1
+
+Color SKINCOLOR_AMBER
+Name = Amber
+Ramp = 68,72,85,87,89,91,117,117,118,118,119,156,159,140,141,143
+InvColor = SKINCOLOR_MIDNIGHT
+InvShade = 8
+ChatColor = V_ORANGEMAP
+Accessible = 1
+
+Color SKINCOLOR_CARROT
+Name = Carrot
+Ramp = 80,67,83,84,85,77,116,108,170,171,190,173,173,174,191,175
+InvColor = SKINCOLOR_GRAPE
+InvShade = 8
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_CHEESE
+Name = Cheese
+Ramp = 80,81,82,83,84,75,78,49,52,55,57,59,60,61,62,63
+InvColor = SKINCOLOR_LIGHTNING
+InvShade = 8
+ChatColor = V_BROWNMAP
+Accessible = 1
+
+Color SKINCOLOR_DUNE
+Name = Dune
+Ramp = 120,96,80,81,82,70,72,75,79,91,93,152,154,156,158,140
+InvColor = SKINCOLOR_PEPPERMINT
+InvShade = 9
+ChatColor = V_BROWNMAP
+Accessible = 1
+
+Color SKINCOLOR_BRASS
+Name = Brass
+Ramp = 96,98,112,113,114,115,116,117,118,58,59,60,61,62,63,28
+InvColor = SKINCOLOR_LUNAR
+InvShade = 8
+ChatColor = V_GOLDMAP
+Accessible = 1
+
+Color SKINCOLOR_CITRINE
+Name = Citrine
+Ramp = 120,97,97,176,176,176,105,105,105,106,106,107,107,108,108,182
+InvColor = SKINCOLOR_BYZANTIUM
+InvShade = 8
+ChatColor = V_YELLOWMAP
+Accessible = 1
+
+Color SKINCOLOR_LEMON
+Name = Lemon
+Ramp = 120,120,96,96,97,98,99,100,101,113,105,106,107,108,109,110
+InvColor = SKINCOLOR_ORCA
+InvShade = 8
+ChatColor = V_YELLOWMAP
+Accessible = 1
+
+Color SKINCOLOR_CASKET
+Name = Casket
+Ramp = 104,105,106,107,107,108,108,182,109,183,110,63,191,111,30,31
+InvColor = SKINCOLOR_TURQUOISE
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_KHAKI
+Name = Khaki
+Ramp = 65,68,70,73,32,34,36,38,108,108,182,109,183,110,174,31
+InvColor = SKINCOLOR_SNOW
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_LIGHT
+Name = Light
+Ramp = 120,96,97,98,99,100,176,177,178,179,15,18,21,24,27,29
+InvColor = SKINCOLOR_COTTONCANDY
+InvShade = 10
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_PEPPERMINT
+Name = Peppermint
+Ramp = 120,120,96,96,97,176,177,178,165,167,221,222,223,173,174,175
+InvColor = SKINCOLOR_DUNE
+InvShade = 9
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_LASER
+Name = Laser
+Ramp = 96,98,100,102,104,160,184,185,186,187,188,222,223,239,242,244
+InvColor = SKINCOLOR_MULBERRY
+InvShade = 9
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_ASPARAGUS
+Name = Asparagus
+Ramp = 98,176,177,177,178,178,179,179,180,181,182,171,172,173,174,175
+InvColor = SKINCOLOR_IRIS
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_ARMY
+Name = Army
+Ramp = 97,98,176,177,178,179,180,181,20,22,24,25,27,29,30,31
+InvColor = SKINCOLOR_AMETHYST
+InvShade = 12
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_CROW
+Name = Crow
+Ramp = 1,4,7,179,180,181,108,42,44,23,24,26,27,28,29,31
+InvColor = SKINCOLOR_RAVEN
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_CHARTEUSE
+Name = Charteuse
+Ramp = 96,97,98,176,160,161,162,164,165,167,168,170,171,172,173,174
+InvColor = SKINCOLOR_YOGURT
+InvShade = 10
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_SLIME
+Name = Slime
+Ramp = 176,160,184,185,185,186,165,107,108,108,109,109,110,63,174,111
+InvColor = SKINCOLOR_STRAWBERRY
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_LEAF
+Name = Leaf
+Ramp = 176,160,184,184,185,186,187,168,169,170,171,172,173,174,175,31
+InvColor = SKINCOLOR_SODA
+InvShade = 9
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_JUNGLE
+Name = Jungle
+Ramp = 184,163,165,187,168,169,182,182,109,183,254,199,255,142,143,31
+InvColor = SKINCOLOR_MAHOGANY
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_EVERGREEN
+Name = Evergreen
+Ramp = 0,200,201,226,227,217,221,189,171,190,173,174,174,175,30,31
+InvColor = SKINCOLOR_PEGASUS
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_TROPIC
+Name = Tropic
+Ramp = 97,176,160,184,184,185,185,220,217,221,222,223,173,191,175,31
+InvColor = SKINCOLOR_DISCO
+InvShade = 12
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_IGUANA
+Name = Iguana
+Ramp = 177,161,163,164,165,166,221,221,219,219,206,206,240,242,244,246
+InvColor = SKINCOLOR_LAKESIDE
+InvShade = 6
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_SPEARMINT
+Name = Spearmint
+Ramp = 120,96,97,176,160,162,220,216,217,221,222,171,172,173,174,175
+InvColor = SKINCOLOR_CYBER
+InvShade = 12
+ChatColor = V_TEAMAP
+Accessible = 1
+
+Color SKINCOLOR_PATINA
+Name = Patina
+Ramp = 209,210,212,214,220,220,165,166,180,181,182,109,110,191,111,30
+InvColor = SKINCOLOR_MYSTIC
+InvShade = 10
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_LAKESIDE
+Name = Lakeside
+Ramp = 96,99,177,162,220,216,217,221,222,171,46,61,62,63,28,30
+InvColor = SKINCOLOR_IGUANA
+InvShade = 10
+ChatColor = V_BLUEMAP
+Accessible = 1
+
+Color SKINCOLOR_ELECTRIC
+Name = Electric
+Ramp = 120,120,0,0,208,208,247,247,211,213,220,217,221,222,223,174
+InvColor = SKINCOLOR_SAKURA
+InvShade = 10
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_TURQUOISE
+Name = Turquoise
+Ramp = 210,214,220,217,221,221,222,222,222,223,223,173,174,174,175,31
+InvColor = SKINCOLOR_CASKET
+InvShade = 7
+ChatColor = V_BLUEMAP
+Accessible = 1
+
+Color SKINCOLOR_PEGASUS
+Name = Pegasus
+Ramp = 120,120,0,1,200,200,209,211,213,215,216,217,221,222,223,207
+InvColor = SKINCOLOR_EVERGREEN
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_PLASMA
+Name = Plasma
+Ramp = 120,0,208,247,247,212,213,215,216,229,230,233,235,237,239,241
+InvColor = SKINCOLOR_STEAMPUNK
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_COMET
+Name = Comet
+Ramp = 120,120,0,208,247,247,213,215,216,217,218,204,205,206,207,28
+InvColor = SKINCOLOR_FIERY
+InvShade = 8
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_LIGHTNING
+Name = Lightning
+Ramp = 120,96,97,98,176,209,212,215,216,228,229,230,233,235,237,240
+InvColor = SKINCOLOR_CHEESE
+InvShade = 10
+ChatColor = V_SKYMAP
+Accessible = 1
+
+Color SKINCOLOR_VACATION
+Name = Vacation
+Ramp = 97,176,160,162,220,216,217,229,230,233,235,237,239,242,244,246
+InvColor = SKINCOLOR_CARNATION
+InvShade = 8
+ChatColor = V_GREENMAP
+Accessible = 1
+
+Color SKINCOLOR_ULTRAMARINE
+Name = Ultramarine
+Ramp = 224,209,211,213,215,216,228,229,204,205,205,206,239,242,244,31
+InvColor = SKINCOLOR_EXOTIC
+InvShade = 8
+ChatColor = V_BLUEMAP
+Accessible = 1
+
+Color SKINCOLOR_DEPTHS
+Name = Depths
+Ramp = 247,213,215,216,217,204,205,237,238,239,240,241,243,244,245,246
+InvColor = SKINCOLOR_SPICE
+InvShade = 8
+ChatColor = V_BLUEMAP
+Accessible = 1
+
+Color SKINCOLOR_DIANNE
+Name = Dianne
+Ramp = 0,3,6,9,12,203,218,222,222,223,25,26,27,28,29,30
+InvColor = SKINCOLOR_CANDY
+InvShade = 10
+ChatColor = V_STEELMAP
+Accessible = 1
+
+Color SKINCOLOR_EXOTIC
+Name = Exotic
+Ramp = 80,121,67,70,73,32,35,181,222,222,223,223,207,243,245,31
+InvColor = SKINCOLOR_ULTRAMARINE
+InvShade = 8
+ChatColor = V_PEACHMAP
+Accessible = 1
+
+Color SKINCOLOR_SNOW
+Name = Snow
+Ramp = 0,200,208,210,225,226,226,227,228,203,204,205,206,207,29,30
+InvColor = SKINCOLOR_KHAKI
+InvShade = 8
+ChatColor = 0
+Accessible = 1
+
+Color SKINCOLOR_MOON
+Name = Moon
+Ramp = 104,113,105,106,107,108,205,206,240,241,242,243,244,245,246,31
+InvColor = SKINCOLOR_BOYSENBERRY
+InvShade = 8
+ChatColor = V_YELLOWMAP
+Accessible = 1
+
+Color SKINCOLOR_LUNAR
+Name = Lunar
+Ramp = 225,226,202,203,204,205,206,238,239,241,242,243,244,245,246,31
+InvColor = SKINCOLOR_BRASS
+InvShade = 10
+ChatColor = V_STEELMAP
+Accessible = 1
+
+Color SKINCOLOR_ONYX
+Name = Onyx
+Ramp = 200,201,202,203,204,205,205,206,206,207,207,243,243,244,245,246
+InvColor = SKINCOLOR_MUD
+InvShade = 6
+ChatColor = V_STEELMAP
+Accessible = 1
+
+Color SKINCOLOR_LAPIS
+Name = Lapis
+Ramp = 210,212,214,216,229,230,231,233,234,235,236,238,240,242,244,246
+InvColor = SKINCOLOR_HOTDOG
+InvShade = 8
+ChatColor = V_BLUEMAP
+Accessible = 1
+
+Color SKINCOLOR_ORCA
+Name = Orca
+Ramp = 120,120,0,0,1,200,224,225,226,227,228,229,204,205,206,207
+InvColor = SKINCOLOR_LEMON
+InvShade = 10
+ChatColor = 0
+Accessible = 1
+
+Color SKINCOLOR_STORM
+Name = Storm
+Ramp = 0,1,2,4,201,202,202,228,229,230,232,234,236,238,240,242
+InvColor = SKINCOLOR_PEARL
+InvShade = 8
+ChatColor = V_STEELMAP
+Accessible = 1
+
+Color SKINCOLOR_MIDNIGHT
+Name = Midnight
+Ramp = 231,232,233,234,236,237,238,239,240,241,242,243,244,245,246,31
+InvColor = SKINCOLOR_AMBER
+InvShade = 6
+ChatColor = V_BLUEMAP
+Accessible = 1
+
+# this color was a pain to get right
+Color SKINCOLOR_COTTONCANDY
+Name = CottonCandy
+Ramp = 120,80,121,67,122,201,201,215,215,216,217,218,205,206,240,243
+InvColor = SKINCOLOR_LIGHT
+InvShade = 10
+ChatColor = V_SKYMAP
+Accessible = 1
+
+# this one too
+Color SKINCOLOR_CYBER
+Name = Cyber
+Ramp = 64,81,70,145,192,248,228,229,230,231,233,234,236,238,240,242
+InvColor = SKINCOLOR_SPEARMINT
+InvShade = 12
+ChatColor = V_LAVENDERMAP
+Accessible = 1
+
+Color SKINCOLOR_AMETHYST
+Name = Amethyst
+Ramp = 121,122,123,192,248,249,203,229,230,233,235,236,238,239,241,243
+InvColor = SKINCOLOR_ARMY
+InvShade = 10
+ChatColor = V_LAVENDERMAP
+Accessible = 1
+
+Color SKINCOLOR_IRIS
+Name = Iris
+Ramp = 0,208,210,225,226,202,249,250,251,252,253,254,199,255,29,31
+InvColor = SKINCOLOR_ASPARAGUS
+InvShade = 12
+ChatColor = V_LAVENDERMAP
+Accessible = 1
+
+Color SKINCOLOR_GOTHIC
+Name = Gothic
+Ramp = 208,209,225,227,203,204,252,253,137,139,140,255,255,244,245,246
+InvColor = SKINCOLOR_WICKED
+InvShade = 8
+ChatColor = V_STEELMAP
+Accessible = 1
+
+Color SKINCOLOR_GRAPE
+Name = Grape
+Ramp = 65,122,192,193,194,195,196,197,198,238,239,241,242,243,245,31
+InvColor = SKINCOLOR_CARROT
+InvShade = 10
+ChatColor = V_PURPLEMAP
+Accessible = 1
+
+Color SKINCOLOR_INDIGO
+Name = Indigo
+Ramp = 192,194,195,196,197,198,199,239,240,241,242,243,244,245,246,31
+InvColor = SKINCOLOR_BLOODCELL
+InvShade = 10
+ChatColor = V_PURPLEMAP
+Accessible = 1
+
+Color SKINCOLOR_SAKURA
+Name = Sakura
+Ramp = 64,66,122,123,192,193,193,194,130,131,133,134,136,137,199,255
+InvColor = SKINCOLOR_ELECTRIC
+InvShade = 9
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_DISCO
+Name = Disco
+Ramp = 192,193,194,195,196,197,136,137,138,139,140,141,142,143,30,31
+InvColor = SKINCOLOR_TROPIC
+InvShade = 8
+ChatColor = V_PURPLEMAP
+Accessible = 1
+
+Color SKINCOLOR_MULBERRY
+Name = Mulberry
+Ramp = 121,123,124,125,126,127,130,196,197,197,198,199,140,141,142,143
+InvColor = SKINCOLOR_LASER
+InvShade = 8
+ChatColor = V_PINKMAP
+Accessible = 1
+
+Color SKINCOLOR_BOYSENBERRY
+Name = Boysenberry
+Ramp = 123,125,127,130,132,134,198,198,199,199,255,255,244,245,246,31
+InvColor = SKINCOLOR_MOON
+InvShade = 10
+ChatColor = V_REDMAP
+Accessible = 1
+
+Color SKINCOLOR_MYSTIC
+Name = Mystic
+Ramp = 122,145,248,249,250,251,197,197,198,198,199,199,255,255,29,31
+InvColor = SKINCOLOR_PATINA
+InvShade = 8
+ChatColor = V_PURPLEMAP
+Accessible = 1
+
+Color SKINCOLOR_WICKED
+Name = Wicked
+Ramp = 121,5,10,15,20,253,254,254,255,255,29,245,245,246,246,31
+InvColor = SKINCOLOR_GOTHIC
+InvShade = 10
+ChatColor = V_STEELMAP
+Accessible = 1
+
+# Super special awesome Super flashing colors!
+# Super Sonic Yellow
+Color SKINCOLOR_SUPER1
+Name = SUPER1
+Ramp = 120,120,120,120,120,120,120,120,120,120,96,100,104,113,116,119
+InvColor = SKINCOLOR_PERIWINKLE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_SUPER2
+Name = SUPER2
+Ramp = 120,120,120,120,120,120,120,120,96,98,101,104,113,115,117,119
+InvColor = SKINCOLOR_PERIWINKLE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_SUPER3
+Name = SUPER3
+Ramp = 120,120,120,120,120,120,96,98,100,102,104,113,114,116,117,119
+InvColor = SKINCOLOR_PERIWINKLE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_SUPER4
+Name = SUPER4
+Ramp = 120,120,120,120,96,97,99,100,102,104,113,114,115,116,117,119
+InvColor = SKINCOLOR_PERIWINKLE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_SUPER5
+Name = SUPER5
+Ramp = 120,120,96,120,120,120,120,120,104,113,114,115,116,117,118,119
+InvColor = SKINCOLOR_PERIWINKLE
+InvShade = 8
+ChatColor = 0
+
+# Super Tails Orange
+Color SKINCOLOR_TSUPER1
+Name = TSUPER1
+Ramp = 120,120,120,120,120,120,120,120,120,120,80,82,85,115,117,119
+InvColor = SKINCOLOR_SAPPHIRE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_TSUPER2
+Name = TSUPER2
+Ramp = 120,120,120,120,120,120,120,120,80,81,83,85,115,116,117,119
+InvColor = SKINCOLOR_SAPPHIRE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_TSUPER3
+Name = TSUPER3
+Ramp = 120,120,120,120,120,120,80,81,82,83,85,115,116,117,118,119
+InvColor = SKINCOLOR_SAPPHIRE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_TSUPER4
+Name = TSUPER4
+Ramp = 120,120,120,120,80,81,82,83,84,85,115,115,116,117,118,119
+InvColor = SKINCOLOR_SAPPHIRE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_TSUPER5
+Name = TSUPER5
+Ramp = 120,120,80,80,81,82,83,84,85,115,115,116,117,117,118,119
+InvColor = SKINCOLOR_SAPPHIRE
+InvShade = 8
+ChatColor = 0
+
+# Super Knuckles Red
+Color SKINCOLOR_KSUPER1
+Name = KSUPER1
+Ramp = 120,120,120,120,120,120,120,120,120,120,121,123,125,127,129,132
+InvColor = SKINCOLOR_CYAN
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_KSUPER2
+Name = KSUPER2
+Ramp = 120,120,120,120,120,120,120,120,121,122,124,125,127,128,130,132
+InvColor = SKINCOLOR_CYAN
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_KSUPER3
+Name = KSUPER3
+Ramp = 120,120,120,120,120,120,121,122,123,124,125,127,128,129,130,132
+InvColor = SKINCOLOR_CYAN
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_KSUPER4
+Name = KSUPER4
+Ramp = 120,120,120,120,121,122,123,124,125,126,127,128,129,130,131,132
+InvColor = SKINCOLOR_CYAN
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_KSUPER5
+Name = KSUPER5
+Ramp = 120,120,121,121,122,123,124,125,126,126,127,128,129,130,131,132
+InvColor = SKINCOLOR_CYAN
+InvShade = 8
+ChatColor = 0
+
+# Hyper Sonic Pink
+Color SKINCOLOR_PSUPER1
+Name = PSUPER1
+Ramp = 120,120,120,120,120,120,120,120,120,120,0,122,124,248,251,255
+InvColor = SKINCOLOR_CYAN
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_PSUPER2
+Name = PSUPER2
+Ramp = 120,120,120,120,120,120,120,120,0,121,122,124,248,250,252,255
+InvColor = SKINCOLOR_CYAN
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_PSUPER3
+Name = PSUPER3
+Ramp = 120,120,120,120,120,120,0,121,122,123,124,248,249,251,253,255
+InvColor = SKINCOLOR_CYAN
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_PSUPER4
+Name = PSUPER4
+Ramp = 120,120,120,120,0,121,122,123,124,248,249,250,251,252,253,255
+InvColor = SKINCOLOR_CYAN
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_PSUPER5
+Name = PSUPER5
+Ramp = 120,120,0,121,122,123,124,248,248,249,250,251,252,253,254,255
+InvColor = SKINCOLOR_CYAN
+InvShade = 8
+ChatColor = 0
+
+# Hyper Sonic Blue
+Color SKINCOLOR_BSUPER1
+Name = BSUPER1
+Ramp = 120,120,120,120,120,120,120,120,120,120,224,225,227,228,230,232
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_BSUPER2
+Name = BSUPER2
+Ramp = 120,120,120,120,120,120,120,120,224,225,226,227,228,229,230,232
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_BSUPER3
+Name = BSUPER3
+Ramp = 120,120,120,120,120,120,224,224,225,226,227,228,229,230,231,232
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_BSUPER4
+Name = BSUPER4
+Ramp = 120,120,120,120,224,224,225,226,226,227,228,229,229,230,231,232
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_BSUPER5
+Name = BSUPER5
+Ramp = 120,120,224,224,225,225,226,227,227,228,228,229,230,230,231,232
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+# Aqua Super
+Color SKINCOLOR_ASUPER1
+Name = ASUPER1
+Ramp = 120,120,120,120,120,120,120,120,120,120,208,210,212,215,220,222
+InvColor = SKINCOLOR_RUST
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_ASUPER2
+Name = ASUPER2
+Ramp = 120,120,120,120,120,120,120,120,208,209,211,213,215,220,221,223
+InvColor = SKINCOLOR_RUST
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_ASUPER3
+Name = ASUPER3
+Ramp = 120,120,120,120,120,120,208,209,210,211,212,213,215,220,221,223
+InvColor = SKINCOLOR_RUST
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_ASUPER4
+Name = ASUPER4
+Ramp = 120,120,120,120,208,209,210,211,212,213,214,215,220,221,222,223
+InvColor = SKINCOLOR_RUST
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_ASUPER5
+Name = ASUPER5
+Ramp = 120,120,208,208,209,210,211,211,212,213,214,215,220,221,222,223
+InvColor = SKINCOLOR_RUST
+InvShade = 8
+ChatColor = 0
+
+# Hyper Sonic Green
+Color SKINCOLOR_GSUPER1
+Name = GSUPER1
+Ramp = 120,120,120,120,120,120,120,120,120,120,176,160,163,167,171,175
+InvColor = SKINCOLOR_BLUEBERRY
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_GSUPER2
+Name = GSUPER2
+Ramp = 120,120,120,120,120,120,120,120,176,176,160,163,166,169,172,175
+InvColor = SKINCOLOR_BLUEBERRY
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_GSUPER3
+Name = GSUPER3
+Ramp = 120,120,120,120,120,120,176,176,160,162,164,166,168,170,172,175
+InvColor = SKINCOLOR_BLUEBERRY
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_GSUPER4
+Name = GSUPER4
+Ramp = 120,120,120,120,176,176,176,160,161,163,165,167,169,171,173,175
+InvColor = SKINCOLOR_BLUEBERRY
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_GSUPER5
+Name = GSUPER5
+Ramp = 120,120,176,176,176,160,161,163,164,166,167,169,170,172,173,175
+InvColor = SKINCOLOR_BLUEBERRY
+InvShade = 8
+ChatColor = 0
+
+# Hyper Sonic White
+Color SKINCOLOR_WSUPER1
+Name = WSUPER1
+Ramp = 120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_WSUPER2
+Name = WSUPER2
+Ramp = 120,120,120,120,120,120,120,120,120,120,120,120,120,0,4,9
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_WSUPER3
+Name = WSUPER3
+Ramp = 120,120,120,120,120,120,120,120,120,120,0,2,4,6,8,11
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_WSUPER4
+Name = WSUPER4
+Ramp = 120,120,120,120,120,120,120,0,1,3,4,6,8,9,11,13
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_WSUPER5
+Name = WSUPER5
+Ramp = 120,120,120,120,0,1,2,4,5,6,8,9,10,12,13,15
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+# Creamy Super (Shadow?)
+Color SKINCOLOR_CSUPER1
+Name = CSUPER1
+Ramp = 120,120,120,120,120,120,120,120,120,120,96,98,99,81,73,79
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_CSUPER2
+Name = CSUPER2
+Ramp = 120,120,120,120,120,120,120,120,96,97,98,81,81,71,75,79
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_CSUPER3
+Name = CSUPER3
+Ramp = 120,120,120,120,120,120,96,97,98,99,81,81,70,73,76,79
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_CSUPER4
+Name = CSUPER4
+Ramp = 120,120,120,120,96,96,97,98,99,81,81,70,72,74,76,79
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
+
+Color SKINCOLOR_CSUPER5
+Name = CSUPER5
+Ramp = 120,120,96,96,97,98,98,99,81,81,69,71,73,75,77,79
+InvColor = SKINCOLOR_NONE
+InvShade = 8
+ChatColor = 0
