@@ -1232,7 +1232,7 @@ InvShade = 8
 ChatColor = V_GOLDMAP
 Accessible = 1
 
-Color SKINCOLOR_HOT DOG
+Color SKINCOLOR_HOTDOG
 Name = Hot Dog
 Ramp = 1,80,81,83,72,64,52,54,56,37,39,41,43,45,46,47
 InvColor = SKINCOLOR_LAPIS
@@ -1600,7 +1600,7 @@ InvShade = 8
 ChatColor = V_BLUEMAP
 Accessible = 1
 
-Color SKINCOLOR_COTTON CANDY
+Color SKINCOLOR_COTTONCANDY
 Name = Cotton Candy
 Ramp = 0,208,208,216,209,5,5,133,133,135,135,136,173,174,159,254
 InvColor = SKINCOLOR_LIGHT
