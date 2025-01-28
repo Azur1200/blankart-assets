@@ -246,6 +246,7 @@ State S_KART_SIGN
 SpriteName = SPR_PLAY
 SpriteFrame = SPR2_SIGN
 Duration = 1
+Var2 = 24
 Next = S_KART_SIGN
 
 # technically the player goes here but it's an infinite tic state
