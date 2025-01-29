@@ -271,7 +271,7 @@ ChatColor = V_ORANGEMAP
 Accessible = 1
 
 Color SKINCOLOR_SUNSET
-Name = Sunslam
+Name = Sunset
 Ramp = 82,72,73,64,51,53,55,213,214,195,195,173,174,175,253,254
 InvColor = SKINCOLOR_MOONSLAM
 InvShade = 8
@@ -801,7 +801,7 @@ ChatColor = V_PURPLEMAP
 Accessible = 1
 
 Color SKINCOLOR_MOONSLAM
-Name = Moonset
+Name = Moonslam
 Ramp = 0,144,145,146,170,162,163,184,184,207,207,44,45,46,47,31
 InvColor = SKINCOLOR_SUNSET
 InvShade = 10
