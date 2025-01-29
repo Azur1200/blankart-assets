@@ -22207,82 +22207,13 @@ State S_EGOORB
 SpriteName = SPR_EGOO
 Duration = 1
 
-State S_WATERTRAIL1
+State S_WATERTRAILS
 SpriteName = SPR_WTRL
-SpriteFrame = FF_PAPERSPRITE
+SpriteFrame = A|FF_PAPERSPRITE
 Duration = 2
 
-State S_WATERTRAIL2
-SpriteName = SPR_WTRL
-SpriteFrame = FF_PAPERSPRITE|1
+State S_WATERTRAILSUNDERLAY
+SpriteName = SPR_WTRU
+SpriteFrame = A|FF_TRANS50|FF_PAPERSPRITE
 Duration = 2
 
-State S_WATERTRAIL3
-SpriteName = SPR_WTRL
-SpriteFrame = FF_PAPERSPRITE|2
-Duration = 2
-
-State S_WATERTRAIL4
-SpriteName = SPR_WTRL
-SpriteFrame = FF_PAPERSPRITE|3
-Duration = 2
-
-State S_WATERTRAIL5
-SpriteName = SPR_WTRL
-SpriteFrame = FF_PAPERSPRITE|4
-Duration = 2
-
-State S_WATERTRAIL6
-SpriteName = SPR_WTRL
-SpriteFrame = FF_PAPERSPRITE|5
-Duration = 2
-
-State S_WATERTRAIL7
-SpriteName = SPR_WTRL
-SpriteFrame = FF_PAPERSPRITE|6
-Duration = 2
-
-State S_WATERTRAIL8
-SpriteName = SPR_WTRL
-SpriteFrame = FF_PAPERSPRITE|7
-Duration = 2
-
-State S_WATERTRAILUNDERLAY1
-SpriteName = SPR_WTRL
-SpriteFrame = FF_TRANS50|FF_PAPERSPRITE|8
-Duration = 2
-
-State S_WATERTRAILUNDERLAY2
-SpriteName = SPR_WTRL
-SpriteFrame = FF_TRANS50|FF_PAPERSPRITE|9
-Duration = 2
-
-State S_WATERTRAILUNDERLAY3
-SpriteName = SPR_WTRL
-SpriteFrame = FF_TRANS50|FF_PAPERSPRITE|10
-Duration = 2
-
-State S_WATERTRAILUNDERLAY4
-SpriteName = SPR_WTRL
-SpriteFrame = FF_TRANS50|FF_PAPERSPRITE|11
-Duration = 2
-
-State S_WATERTRAILUNDERLAY5
-SpriteName = SPR_WTRL
-SpriteFrame = FF_TRANS50|FF_PAPERSPRITE|12
-Duration = 2
-
-State S_WATERTRAILUNDERLAY6
-SpriteName = SPR_WTRL
-SpriteFrame = FF_TRANS50|FF_PAPERSPRITE|13
-Duration = 2
-
-State S_WATERTRAILUNDERLAY7
-SpriteName = SPR_WTRL
-SpriteFrame = FF_TRANS50|FF_PAPERSPRITE|14
-Duration = 2
-
-State S_WATERTRAILUNDERLAY8
-SpriteName = SPR_WTRL
-SpriteFrame = FF_TRANS50|FF_PAPERSPRITE|15
-Duration = 2
