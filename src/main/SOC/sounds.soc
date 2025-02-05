@@ -4,121 +4,100 @@ Sound sfx_None
 Sound sfx_altdi1
 Priority = 192
 Flags = 16
-SkinSound = SKSPLDET1
 Caption = Dying
 
 Sound sfx_altdi2
 Priority = 192
 Flags = 16
-SkinSound = SKSPLDET2
 Caption = Dying
 
 Sound sfx_altdi3
 Priority = 192
 Flags = 16
-SkinSound = SKSPLDET3
 Caption = Dying
 
 Sound sfx_altdi4
 Priority = 192
 Flags = 16
-SkinSound = SKSPLDET4
 Caption = Dying
 
 Sound sfx_altow1
 Priority = 192
 Flags = 16
-SkinSound = SKSPLPAN1
 Caption = Ring loss
 
 Sound sfx_altow2
 Priority = 192
 Flags = 16
-SkinSound = SKSPLPAN2
 Caption = Ring loss
 
 Sound sfx_altow3
 Priority = 192
 Flags = 16
-SkinSound = SKSPLPAN3
 Caption = Ring loss
 
 Sound sfx_altow4
 Priority = 192
 Flags = 16
-SkinSound = SKSPLPAN4
 Caption = Ring loss
 
 Sound sfx_victr1
 Priority = 64
 Flags = 16
-SkinSound = SKSPLVCT1
 Caption = /
 
 Sound sfx_victr2
 Priority = 64
 Flags = 16
-SkinSound = SKSPLVCT2
 Caption = /
 
 Sound sfx_victr3
 Priority = 64
 Flags = 16
-SkinSound = SKSPLVCT3
 Caption = /
 
 Sound sfx_victr4
 Priority = 64
 Flags = 16
-SkinSound = SKSPLVCT4
 Caption = /
 
 Sound sfx_gasp
 Priority = 64
-SkinSound = SKSGASP
 Caption = Bubble gasp
 
 Sound sfx_jump
 Priority = 140
-SkinSound = SKSJUMP
 Caption = Jump
 
 Sound sfx_pudpud
 Priority = 64
-SkinSound = SKSPUDPUD
 Caption = Tired flight
 
 Sound sfx_putput
 Priority = 64
-SkinSound = SKSPUTPUT
 Caption = Flight
 
 Sound sfx_spin
 Priority = 100
-SkinSound = SKSSPIN
 Caption = Spin
 
 Sound sfx_spndsh
 Priority = 64
 Flags = 1
-SkinSound = SKSSPNDSH
 Caption = Spindash
 
 Sound sfx_thok
 Priority = 96
-SkinSound = SKSTHOK
 Caption = Thok
 
 Sound sfx_zoom
 Priority = 120
 Flags = 1
-SkinSound = SKSZOOM
 Caption = Spin launch
 
 Sound sfx_skid
 Priority = 64
 Flags = 32
-SkinSound = SKSSKID
 Caption = Skid
 
 # Ambience/background objects/etc
