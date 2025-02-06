@@ -7985,7 +7985,7 @@ Duration = -1
 # Blue Crystal
 State S_BLUECRYSTAL1
 SpriteName = SPR_BCRY
-SpriteFrame = 32768
+SpriteFrame = FF_FULLBRIGHT
 Duration = -1
 
 # Kelp,
@@ -8802,7 +8802,7 @@ State S_PROXIMITY_TNT
 SpriteName = SPR_REMT
 Duration = 10
 Action = A_Look
-Var1 = 33554433
+Var1 = (512<<16)|1
 Next = S_PROXIMITY_TNT
 
 State S_PROXIMITY_TNT_TRIGGER1
@@ -19530,25 +19530,25 @@ Duration = -1
 # GBA Objects
 State S_GBA_BOO1
 SpriteName = SPR_GBAS
-SpriteFrame = 131072
+SpriteFrame = FF_TRANS20|0
 Duration = 12
 Next = S_GBA_BOO2
 
 State S_GBA_BOO2
 SpriteName = SPR_GBAS
-SpriteFrame = 196609
+SpriteFrame = FF_TRANS30|1
 Duration = 12
 Next = S_GBA_BOO3
 
 State S_GBA_BOO3
 SpriteName = SPR_GBAS
-SpriteFrame = 262146
+SpriteFrame = FF_TRANS40|2
 Duration = 12
 Next = S_GBA_BOO4
 
 State S_GBA_BOO4
 SpriteName = SPR_GBAS
-SpriteFrame = 196611
+SpriteFrame = FF_TRANS30|3
 Duration = 12
 Next = S_GBA_BOO1
 

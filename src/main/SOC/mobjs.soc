@@ -8619,70 +8619,70 @@ SeeState = S_BIGPUMA1
 ReactionTime = 8
 MeleeState = S_BIGPUMA4
 XDeathState = S_BIGPUMA6
-Radius = 1572864
-Height = 3145728
+Radius = 24*FRACUNIT
+Height = 48*FRACUNIT
 Mass = 100
-Flags = 4194305
+Flags = MF_SPECIAL|MF_ENEMY
 
 Mobj MT_APPLE
 SpawnState = S_APPLE1
 SpawnHealth = 1000
 SeeSound = 11
 PainChance = 255
-Radius = 2097152
-Height = 4194304
+Radius = 32*FRACUNIT
+Height = 64*FRACUNIT
 Mass = 1000
-Flags = 16
+Flags = MF_NOBLOCKMAP
 
 Mobj MT_DOOD_FLOWER1
 MapThingNum = 2805
 SpawnState = S_DOOD_FLOWER1
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 1048576
-Height = 2097152
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
 Mass = 100
-Flags = 33558528
+Flags = MF_NOCLIP|MF_STICKY
 
 Mobj MT_DOOD_FLOWER2
 MapThingNum = 2800
 SpawnState = S_DOOD_FLOWER2
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 1048576
-Height = 2621440
+Radius = 16*FRACUNIT
+Height = 40*FRACUNIT
 Mass = 100
-Flags = 33558528
+Flags = MF_NOCLIP|MF_STICKY
 
 Mobj MT_DOOD_FLOWER3
 MapThingNum = 2801
 SpawnState = S_DOOD_FLOWER4
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 1048576
-Height = 6291456
+Radius = 16*FRACUNIT
+Height = 96*FRACUNIT
 Mass = 100
-Flags = 33558528
+Flags = MF_NOCLIP|MF_STICKY
 
 Mobj MT_DOOD_FLOWER4
 MapThingNum = 2802
 SpawnState = S_DOOD_FLOWER6
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 524288
-Height = 2097152
+Radius = 8*FRACUNIT
+Height = 32*FRACUNIT
 Mass = 100
-Flags = 33558528
+Flags = MF_NOCLIP|MF_STICKY
 
 Mobj MT_DOOD_BOX
 MapThingNum = 2809
 SpawnState = S_DOOD_BOX1
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 1048576
-Height = 2097152
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
 Mass = 100
-Flags = 33554944
+Flags = MF_NOGRAVITY|MF_STICKY
 
 Mobj MT_DOOD_BALLOON
 MapThingNum = 2807
@@ -8738,10 +8738,10 @@ MapThingNum = 379
 SpawnState = S_GBA_BOO1
 SpawnHealth = -1
 ReactionTime = 8
-Radius = 1048576
-Height = 3670016
+Radius = 16*FRACUNIT
+Height = 56*FRACUNIT
 Mass = 100
-Flags = 33554944
+Flags = MF_NOGRAVITY|MF_STICKY
 
 Mobj MT_BUZZBOMBER
 MapThingNum = 2015
@@ -8752,10 +8752,10 @@ ReactionTime = 16
 PainChance = 200
 DeathSound = sfx_pop
 Speed = 10
-Radius = 1572864
-Height = 1572864
+Radius = 24*FRACUNIT
+Height = 24*FRACUNIT
 Mass = 100
-Flags = 16777733
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_PAIN
 
 Mobj MT_CHOMPER
 MapThingNum = 2500
@@ -8769,110 +8769,110 @@ Speed = 6
 Radius = 24*FRACUNIT
 Height = 48*FRACUNIT
 Mass = 100
-Flags = 16777221
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_PAIN
 
 Mobj MT_PALMTREE2
 MapThingNum = 2016
 SpawnState = S_PALMTREE2
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 1048576
-Height = 6291456
+Radius = 16*FRACUNIT
+Height = 96*FRACUNIT
 Mass = 100
-Flags = 33558528
+Flags = MF_NOCLIP|MF_STICKY
 
 Mobj MT_PURPLEFLOWER1
 MapThingNum = 3000
 SpawnState = S_PURPLEFLOWER1
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 1048576
-Height = 2621440
+Radius = 16*FRACUNIT
+Height = 40*FRACUNIT
 Mass = 100
-Flags = 33559040
+Flags = MF_NOGRAVITY|MF_NOCLIP|MF_STICKY
 
 Mobj MT_PURPLEFLOWER2
 MapThingNum = 3001
 SpawnState = S_PURPLEFLOWER2
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 1048576
-Height = 2621440
+Radius = 16*FRACUNIT
+Height = 40*FRACUNIT
 Mass = 100
-Flags = 33559040
+Flags = MF_NOGRAVITY|MF_NOCLIP|MF_STICKY
 
 Mobj MT_YELLOWFLOWER1
 MapThingNum = 3002
 SpawnState = S_YELLOWFLOWER1
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 1048576
-Height = 2621440
+Radius = 16*FRACUNIT
+Height = 40*FRACUNIT
 Mass = 100
-Flags = 33559040
+Flags = MF_NOGRAVITY|MF_NOCLIP|MF_STICKY
 
 Mobj MT_YELLOWFLOWER2
 MapThingNum = 3003
 SpawnState = S_YELLOWFLOWER2
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 1048576
-Height = 2621440
+Radius = 16*FRACUNIT
+Height = 40*FRACUNIT
 Mass = 100
-Flags = 33559040
+Flags = MF_NOGRAVITY|MF_NOCLIP|MF_STICKY
 
 Mobj MT_PLANT2
 MapThingNum = 4022
 SpawnState = S_PLANT2
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 1048576
-Height = 2621440
+Radius = 16*FRACUNIT
+Height = 40*FRACUNIT
 Mass = 100
-Flags = 33559040
+Flags = MF_NOGRAVITY|MF_NOCLIP|MF_STICKY
 
 Mobj MT_PLANT3
 MapThingNum = 4024
 SpawnState = S_PLANT3
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 1048576
-Height = 2621440
+Radius = 16*FRACUNIT
+Height = 40*FRACUNIT
 Mass = 100
-Flags = 33558528
+Flags = MF_NOCLIP|MF_STICKY
 
 Mobj MT_PLANT4
 MapThingNum = 4025
 SpawnState = S_PLANT4
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 1048576
-Height = 2621440
+Radius = 16*FRACUNIT
+Height = 40*FRACUNIT
 Mass = 100
-Flags = 33558528
+Flags = MF_NOCLIP|MF_STICKY
 
 Mobj MT_SKULL
 MapThingNum = 4026
 SpawnState = S_SKULL
 SpawnHealth = 1000
 ReactionTime = 8
-Speed = 1376256
-Radius = 1048576
-Height = 2621440
+Speed = 21*FRACUNIT
+Radius = 16*FRACUNIT
+Height = 40*FRACUNIT
 Mass = 100
 Damage = 1
 ActiveSound = 218
-Flags = 2114
+Flags = MF_SOLID|MF_PUSHABLE|MF_SLIDEME
 
 Mobj MT_PHANTREE
 MapThingNum = 4027
 SpawnState = S_PHANTREE
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 2097152
-Height = 9830400
+Radius = 32*FRACUNIT
+Height = 150*FRACUNIT
 Mass = 100
-Flags = 33558528
+Flags = MF_NOCLIP|MF_STICKY
 
 Mobj MT_FLYINGGARG
 MapThingNum = 4028
@@ -8880,30 +8880,30 @@ SpawnState = S_FLYINGGARG1
 SpawnHealth = 1
 ReactionTime = 8
 PainChance = 200
-Radius = 1310720
-Height = 11141120
+Radius = 20*FRACUNIT
+Height = 170*FRACUNIT
 Mass = 100
-Flags = 16777733
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_PAIN
 
 Mobj MT_LAMPPOST
 MapThingNum = 4029
 SpawnState = S_LAMPPOST
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 2097152
-Height = 9830400
+Radius = 32*FRACUNIT
+Height = 150*FRACUNIT
 Mass = 100
-Flags = 33558528
+Flags = MF_NOCLIP|MF_STICKY
 
 Mobj MT_MOSSYTREE
 MapThingNum = 4030
 SpawnState = S_MOSSYTREE
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 2097152
-Height = 9830400
+Radius = 32*FRACUNIT
+Height = 150*FRACUNIT
 Mass = 100
-Flags = 33558528
+Flags = MF_NOCLIP|MF_STICKY
 
 Mobj MT_BUMP
 SpawnState = S_BUMP1
