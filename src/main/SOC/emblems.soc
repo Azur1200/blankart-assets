@@ -1,0 +1,885 @@
+# GOLD DEV MEDALS
+# These values are directly lifted from the Champion ghost, through the power of hex editing!
+
+# Green Hills Zone - 1'26"31
+Emblem
+Type = Time
+MapNum = MAP01
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3021
+
+# Dark Race - 2'07"60
+Emblem
+Type = Time
+MapNum = MAP02
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4466
+
+# Northern District Zone - 2'03"91
+Emblem
+Type = Time
+MapNum = MAP03
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4337
+
+# Darkvile Garden Zone - 1'38"62
+Emblem
+Type = Time
+MapNum = MAP04
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3452
+
+# Daytona Speedway Zone - 1'40"71
+Emblem
+Type = Time
+MapNum = MAP05
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3525
+
+# Egg Zeppelin Zone - 1'55"62
+Emblem
+Type = Time
+MapNum = MAP06
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4047
+
+# Sonic Speedway Zone - 1'55"45
+Emblem
+Type = Time
+MapNum = MAP07
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4041
+
+# Hill Top Zone - 1'33"74
+Emblem
+Type = Time
+MapNum = MAP08
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3281
+
+# Misty Maze Zone - 2'16"11
+Emblem
+Type = Time
+MapNum = MAP09
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4764
+
+# Grand Metropolis - 2'05"08
+Emblem
+Type = Time
+MapNum = MAP10
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4378
+
+# Sunbeam Paradise Zone - 1'45"08
+Emblem
+Type = Time
+MapNum = MAP11
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3678
+
+# Diamond Square Zone - 1'52"22
+Emblem
+Type = Time
+MapNum = MAP12
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3928
+
+# Midnight Meadow Zone - 1'49"88
+Emblem
+Type = Time
+MapNum = MAP13
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3846
+
+# Twinkle Cart - 1'33"65
+Emblem
+Type = Time
+MapNum = MAP14
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3278
+
+# Pleasure Castle - 1'42"60
+Emblem
+Type = Time
+MapNum = MAP15
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3591
+
+# Paradise Hill Zone - 2'28"20
+Emblem
+Type = Time
+MapNum = MAP16
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 5187
+
+# Sub-Zero Peak Zone - 2'22"17
+Emblem
+Type = Time
+MapNum = MAP17
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4976
+
+# Sapphire Coast Zone - 1'45"60
+Emblem
+Type = Time
+MapNum = MAP18
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3696
+
+# Sand Valley Zone - 2'20"88
+Emblem
+Type = Time
+MapNum = MAP19
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4931
+
+# Megablock Castle Zone - 2'00"57
+Emblem
+Type = Time
+MapNum = MAP20
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4220
+
+# Canyon Rush Zone - 1'55"80
+Emblem
+Type = Time
+MapNum = MAP21
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4053
+
+# Casino Resort Zone - 1'43"22
+Emblem
+Type = Time
+MapNum = MAP22
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3613
+
+# Silvercloud Island Zone - 2'05"28
+Emblem
+Type = Time
+MapNum = MAP23
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4385
+
+# Blue Mountain Zone - 2'32"02
+Emblem
+Type = Time
+MapNum = MAP24
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 5321
+
+# Petroleum Refinery Zone - 2'07"88
+Emblem
+Type = Time
+MapNum = MAP25
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4476
+
+# Desert Palace Zone - 1'34"14
+Emblem
+Type = Time
+MapNum = MAP26
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3295
+
+# Aurora Atoll Zone - 2'16"14
+Emblem
+Type = Time
+MapNum = MAP27
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4765
+
+# Barren Badlands Zone - 2'13"42
+Emblem
+Type = Time
+MapNum = MAP28
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4670
+
+# Red Barrage Area - 2'48"22
+Emblem
+Type = Time
+MapNum = MAP29
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 5888
+
+# Midnight Channel - 1'55"62
+Emblem
+Type = Time
+MapNum = MAP30
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4047
+
+# Vanilla Hotel Zone - 2'21"25
+Emblem
+Type = Time
+MapNum = MAP31
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4944
+
+# Toxic Palace Zone - 2'12"51
+Emblem
+Type = Time
+MapNum = MAP32
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4638
+
+# Ancient Tomb Zone - 1'55"31
+Emblem
+Type = Time
+MapNum = MAP33
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4036
+
+# Cloud Cradle Zone K - 1'42"71
+Emblem
+Type = Time
+MapNum = MAP34
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3595
+
+# Volcanic Valley Zone - 2'14"42
+Emblem
+Type = Time
+MapNum = MAP35
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4705
+
+# Kodachrome Void Zone - 1'34"68
+Emblem
+Type = Time
+MapNum = MAP36
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3314
+
+# Boiling Bedrock Zone - 1'40"02
+Emblem
+Type = Time
+MapNum = MAP37
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3501
+
+# Egg Quarters - 2'20"57
+Emblem
+Type = Time
+MapNum = MAP38
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4920
+
+# Virtual Highway Zone - 2'03"37
+Emblem
+Type = Time
+MapNum = MAP39
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4318
+
+# Eggman's Nightclub Zone - 1'41"42
+Emblem
+Type = Time
+MapNum = MAP40
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3550
+
+# KKR Ganbare Dochu 2 - 1'13"48
+Emblem
+Type = Time
+MapNum = MAP41
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 2572
+
+# CK Chao Circuit 1 - 1'28"31
+Emblem
+Type = Time
+MapNum = MAP42
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3091
+
+# CK Chao Circuit 2 - 1'38"68
+Emblem
+Type = Time
+MapNum = MAP43
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3454
+
+# CK Cloud Tops 2 - 1'24"51
+Emblem
+Type = Time
+MapNum = MAP44
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 2958
+
+# CK Regal Raceway - 1'45"51
+Emblem
+Type = Time
+MapNum = MAP45
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3693
+
+# SD2 Balloon Panic - 1'38"20
+Emblem
+Type = Time
+MapNum = MAP46
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3437
+
+# SM Dimension Heist - 1'32"51
+Emblem
+Type = Time
+MapNum = MAP47
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3238
+
+# MKSC Sky Garden - 1'27"51
+Emblem
+Type = Time
+MapNum = MAP48
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3063
+
+# MKDS Peach Gardens - 1'25"14
+Emblem
+Type = Time
+MapNum = MAP49
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 2980
+
+# MKSC Rainbow Road - 1'23"25
+Emblem
+Type = Time
+MapNum = MAP50
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 2914
+
+# SMK Donut Plains 1 - 1'25"80
+Emblem
+Type = Time
+MapNum = MAP51
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 3003
+
+# SMK Mario Circuit 2 - 1'23"71
+Emblem
+Type = Time
+MapNum = MAP52
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 2930
+
+# SMK Ghost Valley 2 - 1'08"25
+Emblem
+Type = Time
+MapNum = MAP53
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 2389
+
+# SMK Bowser Castle 3 - 2'02"62
+Emblem
+Type = Time
+MapNum = MAP54
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 4292
+
+# SMK Vanilla Lake 2 - 1'07"02
+Emblem
+Type = Time
+MapNum = MAP55
+Sprite = A
+Color = SKINCOLOR_GOLD
+Var = 2346
+
+# SILVER NORMAL MEDALS
+# The general "guideline" of how good we want a player to be at a map.
+
+# Green Hills Zone - 1'50"00
+Emblem
+Type = Time
+MapNum = MAP01
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 110*TICRATE
+
+# Dark Race - 2'40"00
+Emblem
+Type = Time
+MapNum = MAP02
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 160*TICRATE
+
+# Northern District Zone - 2'40"00
+Emblem
+Type = Time
+MapNum = MAP03
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 160*TICRATE
+
+# Darkvile Garden Zone - 2'00"00
+Emblem
+Type = Time
+MapNum = MAP04
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 120*TICRATE
+
+# Daytona Speedway Zone - 2'10"00
+Emblem
+Type = Time
+MapNum = MAP05
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 130*TICRATE
+
+# Egg Zeppelin Zone - 2'20"00
+Emblem
+Type = Time
+MapNum = MAP06
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 140*TICRATE
+
+# Sonic Speedway Zone - 2'20"00
+Emblem
+Type = Time
+MapNum = MAP07
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 140*TICRATE
+
+# Hill Top Zone - 1'50"00
+Emblem
+Type = Time
+MapNum = MAP08
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 110*TICRATE
+
+# Misty Maze Zone - 2'50"00
+Emblem
+Type = Time
+MapNum = MAP09
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 170*TICRATE
+
+# Grand Metropolis - 2'20"00
+Emblem
+Type = Time
+MapNum = MAP10
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 140*TICRATE
+
+# Sunbeam Paradise Zone - 2'00"00
+Emblem
+Type = Time
+MapNum = MAP11
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 120*TICRATE
+
+# Diamond Square Zone - 2'10"00
+Emblem
+Type = Time
+MapNum = MAP12
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 130*TICRATE
+
+# Midnight Meadow Zone - 2'15"00
+Emblem
+Type = Time
+MapNum = MAP13
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 135*TICRATE
+
+# Twinkle Cart - 2'00"00
+Emblem
+Type = Time
+MapNum = MAP14
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 120*TICRATE
+
+# Pleasure Castle - 2'00"00
+Emblem
+Type = Time
+MapNum = MAP15
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 120*TICRATE
+
+# Paradise Hill Zone - 2'40"00
+Emblem
+Type = Time
+MapNum = MAP16
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 160*TICRATE
+
+# Sub-Zero Peak Zone - 2'50"00
+Emblem
+Type = Time
+MapNum = MAP17
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 170*TICRATE
+
+# Sapphire Coast Zone - 2'10"00
+Emblem
+Type = Time
+MapNum = MAP18
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 130*TICRATE
+
+# Sand Valley Zone - 2'50"00
+Emblem
+Type = Time
+MapNum = MAP19
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 170*TICRATE
+
+# Megablock Castle Zone - 2'25"00
+Emblem
+Type = Time
+MapNum = MAP20
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 145*TICRATE
+
+# Canyon Rush Zone - 2'20"00
+Emblem
+Type = Time
+MapNum = MAP21
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 140*TICRATE
+
+# Casino Resort Zone - 2'00"00
+Emblem
+Type = Time
+MapNum = MAP22
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 120*TICRATE
+
+# Silvercloud Island Zone - 2'30"00
+Emblem
+Type = Time
+MapNum = MAP23
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 150*TICRATE
+
+# Blue Mountain Zone - 2'50"00
+Emblem
+Type = Time
+MapNum = MAP24
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 170*TICRATE
+
+# Petroleum Refinery Zone - 2'30"00
+Emblem
+Type = Time
+MapNum = MAP25
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 150*TICRATE
+
+# Desert Palace Zone - 2'00"00
+Emblem
+Type = Time
+MapNum = MAP26
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 120*TICRATE
+
+# Aurora Atoll Zone - 2'40"00
+Emblem
+Type = Time
+MapNum = MAP27
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 160*TICRATE
+
+# Barren Badlands Zone - 2'30"00
+Emblem
+Type = Time
+MapNum = MAP28
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 150*TICRATE
+
+# Red Barrage Area - 2'50"00
+Emblem
+Type = Time
+MapNum = MAP29
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 170*TICRATE
+
+# Midnight Channel - 2'15"00
+Emblem
+Type = Time
+MapNum = MAP30
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 135*TICRATE
+
+# Vanilla Hotel Zone - 2'40"00
+Emblem
+Type = Time
+MapNum = MAP31
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 160*TICRATE
+
+# Toxic Palace Zone - 2'40"00
+Emblem
+Type = Time
+MapNum = MAP32
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 160*TICRATE
+
+# Ancient Tomb Zone - 2'30"00
+Emblem
+Type = Time
+MapNum = MAP33
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 150*TICRATE
+
+# Cloud Cradle Zone K - 2'00"00
+Emblem
+Type = Time
+MapNum = MAP34
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 120*TICRATE
+
+# Volcanic Valley Zone - 2'45"00
+Emblem
+Type = Time
+MapNum = MAP35
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 165*TICRATE
+
+# Kodachrome Void Zone - 1'50"00
+Emblem
+Type = Time
+MapNum = MAP36
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 110*TICRATE
+
+# Boiling Bedrock Zone - 2'10"00
+Emblem
+Type = Time
+MapNum = MAP37
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 130*TICRATE
+
+# Egg Quarters - 2'45"00
+Emblem
+Type = Time
+MapNum = MAP38
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 165*TICRATE
+
+# Virtual Highway Zone - 2'25"00
+Emblem
+Type = Time
+MapNum = MAP39
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 145*TICRATE
+
+# Eggman's Nightclub Zone - 2'00"00
+Emblem
+Type = Time
+MapNum = MAP40
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 120*TICRATE
+
+# KKR Ganbare Dochu 2 - 1'40"00
+Emblem
+Type = Time
+MapNum = MAP41
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 100*TICRATE
+
+# CK Chao Circuit 1 - 1'50"00
+Emblem
+Type = Time
+MapNum = MAP42
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 110*TICRATE
+
+# CK Chao Circuit 2 - 2'00"00
+Emblem
+Type = Time
+MapNum = MAP43
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 120*TICRATE
+
+# CK Cloud Tops 2 - 1'50"00
+Emblem
+Type = Time
+MapNum = MAP44
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 110*TICRATE
+
+# CK Regal Raceway - 2'10"00
+Emblem
+Type = Time
+MapNum = MAP45
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 130*TICRATE
+
+# SD2 Balloon Panic - 1'50"00
+Emblem
+Type = Time
+MapNum = MAP46
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 110*TICRATE
+
+# SM Dimension Heist - 2'10"00
+Emblem
+Type = Time
+MapNum = MAP47
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 130*TICRATE
+
+# MKSC Sky Garden - 1'50"00
+Emblem
+Type = Time
+MapNum = MAP48
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 110*TICRATE
+
+# MKDS Peach Gardens - 1'45"00
+Emblem
+Type = Time
+MapNum = MAP49
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 105*TICRATE
+
+# MKSC Rainbow Road - 2'00"00
+Emblem
+Type = Time
+MapNum = MAP50
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 120*TICRATE
+
+# SMK Donut Plains 1 - 1'40"00
+Emblem
+Type = Time
+MapNum = MAP51
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 100*TICRATE
+
+# SMK Mario Circuit 2 - 1'45"00
+Emblem
+Type = Time
+MapNum = MAP52
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 105*TICRATE
+
+# SMK Ghost Valley 2 - 1'30"00
+Emblem
+Type = Time
+MapNum = MAP53
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 90*TICRATE
+
+# SMK Bowser Castle 3 - 2'30"00
+Emblem
+Type = Time
+MapNum = MAP54
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 150*TICRATE
+
+# SMK Vanilla Lake 2 - 1'30"00
+Emblem
+Type = Time
+MapNum = MAP55
+Sprite = B
+Color = SKINCOLOR_GREY
+Var = 90*TICRATE
