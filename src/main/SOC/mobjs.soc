@@ -7550,6 +7550,16 @@ Mass = 1000
 Damage = 8
 Flags = MF_NOBLOCKMAP|MF_NOSECTOR|MF_NOGRAVITY|MF_NOCLIP
 
+Mobj MT_MINIMAPBOUND
+MapThingNum = 770
+SpawnState = S_INVISIBLE
+SpawnHealth = 1000
+ReactionTime = 8
+Radius = 12*FRACUNIT
+Height = 24*FRACUNIT
+Mass = 10
+Flags = MF_SCENERY|MF_NOBLOCKMAP|MF_NOGRAVITY
+
 # Skybox objects
 Mobj MT_SKYBOX
 MapThingNum = 780
