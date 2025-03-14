@@ -25,301 +25,361 @@ Source = Castlevania: Curse of Darkness
 
 Lump KMAP05
 Title = Let's Go Away
+Usage = Dayonta Speedway Zone
 Author = Takenobu Mitsuyoshi
 Source = Daytona USA
 
 Lump KMAP06
 Title = War Machine's Theme
+Usage = Egg Zeppelin Zone
 Author = Yuko Takehara, Masato Kouda
 Source = Marvel vs. Capcom
 
 Lump KMAP07
 Title = Green Grove Zone 1 (Remix)
+Usage = Sonic Speedway Zone
 Author = Tee Lopes
 OriginalComposers = Jun Senoue, Tatsuyuki Maeda
 Source = Sonic 3D Blast
 
 Lump KMAP08
 Title = Hill Top (Remix)
+Usage = Hill Top Zone
 Author = SeventhSentinel
 OriginalComposers = Masayuki Nagao, Saori Kobayashi
 Source = Sonic Drift 2
 
 Lump KMAP09
 Title = Misty Maze 1
+Usage = Misty Maze Zone
 Author = Team Megamix
 Source = Columns III
 
 Lump KMAP10
 Title = Dream Uneven Bars
+Usage = Grand Metropolis
 Author = Teruhiko Nakagawa
 Source = Mario & Sonic at the London 2012 Olympic Games
 
 Lump KMAP11
 Title = Moon Palace 2
+Usage = Sunbeam Paradise_Zone
 Author = Shin Jae-pyung, Lee Jang-won
 Source = Drift City
 
 Lump KMAP12
 Title = Touch And Go
+Usage = Diamond Square Zone
 Author = Satoru Kosaki
 Source = Tekken 4
 
 Lump KMAP13
 Title = Plant Man's Stage
+Usage = Midnight Meadow Zone
 Author = Yuko Takehara
 Source = Rockman 6 Complete Works
 
 Lump KMAP14
 Title = Twinkle Cart
+Usage = Twinkle Cart
 Author = Jun Senoue, Tomoya Ohtani, Fumie Kumatani, Kenichi Tokoi
 Source = Sonic Adventure
 
 Lump KMAP15
 Title = Pleasure Castle
+Usage = Pleasure Castle
 Author = Jun Senoue, Tomoya Ohtani, Fumie Kumatani, Kenichi Tokoi
 Source = Sonic Adventure
 
 Lump KMAP16
 Title = Horizon Heights 2
+Usage = Paradise Hill Zone
 Author = Funk Fiction, Andy Tunstall, Michael Staple, James Landino
 Source = Sonic: After the Sequel
 
 Lump KMAP17
 Title = Frost Man's Stage
+Usage = Sub-Zero Peak Zone
 Author = Shusaku Uchiyama
 Source = Mega Man 8
 
 Lump KMAP18
 Title = Foliage Furnace 1
+Usage = Sapphire Coast Zone
 Author = Funk Fiction, Andy Tunstall, Michael Staple, James Landino
 Source = Sonic: After the Sequel
 
 Lump KMAP19
 Title = Sand Ocean
+Usage = Sand Valley Zone
 Author = Yumiko Kanki, Naoto Ishida
 Source = F-Zero
 
 Lump KMAP20
 Title = El Anoir Field South
+Usage = Megablock Castle Zone
 Author = HyunTaek "DINY/INID" Yun
 Source = LaTale
 
 Lump KMAP21
 Title = Western GunRun
+Usage = Canyon Rush Zone
 Author = HyunTaek "DINY/INID" Yun
 Source = LaTale
 
 Lump KMAP22
 Title = Jr. Street
+Usage = Casino Resort Zone
 Author = Masayoshi Soken
 Source = Mario Hoops 3 on 3
 
 Lump KMAP23
 Title = Fight or Flight (Air Armada)
+Usage = Silvercloud Island Zone
 Author = flashygoodness
 Source = Rivals of Aether
 
 Lump KMAP24
 Title = White Land I
+Usage = Blue Mountain Zone
 Author = Yumiko Kanki, Naoto Ishida
 Source = F-Zero
 
 Lump KMAP25
 Title = Fear Factory (Remix)
+Usage = Petroleum Refinery Zone
 Author = Vincent Rubinetti
 OriginalComposers = David Wise
 Source = Donkey Kong Country
 
 Lump KMAP26
 Title = Desert Palace
+Usage = Desert Palace Zone
 Author = Brad Buxer, Sega Sound Team
 Source = Sonic the Hedgehog 3
 
 Lump KMAP27
 Title = Aurora Atoll Zone
+Usage = Aurora Atoll Zone
 Author = SeventhSentinel
 
 Lump KMAP28
 Title = Theme of Hol Horse
+Usage = Barren Badlands Zone
 Author = Setsuo Yamamoto, Yuko Takehara
 Source = JoJo's Bizarre Adventure (Arcade)
 
 Lump KMAP29
 Title = Red Barrage Area
+Usage = Red Barrage Area
 Author = Jun Senoue, Tomoya Ohtani, Fumie Kumatani, Kenichi Tokoi
 Source = Sonic Adventure
 
 Lump KMAP30
 Title = Reach Out To The Truth
+Usage = Midnight Channel
 Author = Atsushi Kitajoh, Shoji Meguro
 Source = Persona 4 Arena
 
 Lump KMAP31
 Title = Ave de Rapina
+Usage = Vanilla Hotel Zone
 Author = Shoichiro Hirata
 Source = Beatmania IIDX 7th Style
 
 Lump KMAP32
 Title = Atomic Waste Zone
+Usage = Toxic Palace Zone
 Author = Michael Staple
 
 Lump KMAP33
 Title = Desert Area
+Usage = Ancient Tomb Zone
 Author = HyunTaek "DINY/INID" Yun
 Source = LaTale
 
 Lump KMAP34
 Title = The Moon (Remix)
+Usage = Cloud Cradle Zone, Act K
 Author = Chris Holland, Luke Kwing
 OriginalComposers = Hiroshige Tonomura
 Source = DuckTales
 
 Lump KMAP35
 Title = Eggman Empire Zone
+Usage = Volcanic Valley Zone
 Author = Michael Staple
 
 Lump KMAP36
 Title = Shooting Star
+Usage = Kodachrome Void Zone
 Author = Elwood
 
 Lump KMAP37
 Title = Vigaku (Theme of Ein)
+Usage = Boiling Bedrock Zone
 Author = Makoto Hosoi
 Source = Dead or Alive 2
 
 Lump KMAP38
 Title = Lovely Gate 3
+Usage = Egg Quarters
 Author = Jun Senoue, Tomoya Ohtani, Fumie Kumatani, Kenichi Tokoi
 Source = Sonic Adventure 2
 
 Lump KMAP39
 Title = The Biggest Dreamer
+Usage = Virtual Highway Zone
 Source = Digimon Rumble Arena
 
 Lump KMAP40
 Title = Soft Collision
+Usage = Eggman's Nightclub Zone
 Author = Jake Kaufman
 Source = Mighty Switch Force 2
 
 Lump KMAP41
 Title = Ganbare Dochu
+Usage = KKR Ganbare Dochu 2
 Author = Sotaro Tojima
 Source = Konami Krazy Racers
 
 Lump KMAP42
 Title = Theme of 'CHAO'
+Usage = CK Chao Circuit 1
 Author = Jun Senoue, Tomoya Ohtani, Fumie Kumatani, Kenichi Tokoi
 Source = Sonic Adventure
 
 Lump KMAP43
 Title = Join Us 4 Happy Time
+Usage = CK Chao Circuit 2
 Author = Jun Senoue, Tomoya Ohtani, Fumie Kumatani, Kenichi Tokoi
 Source = Sonic Adventure
 
 Lump KMAP44
 Title = In the Midst (Search)
+Usage = CK Cloud Tops 2
 Author = Naoto Tanaka
 Source = Ace Attorney: Justice for All
 
 Lump KMAP45
 Title = Venezia, Italy
+Usage = CK Regal Raceway
 Author = Keiichi Okabe
 Source = Tekken
 
 Lump KMAP46
 Title = Balloon Panic
+Usage = SD2 Balloon Panic
 Author = Masayuki Nagao, Saori Kobayashi
 Source = Sonic Drift 2
 
 Lump KMAP47
 Title = Dimension Heist
+Usage = SM Special Stage 3
 Author = Tee Lopes
 Source = Sonic Mania
 
 Lump KMAP48
 Title = Sky Garden (MKDS Remix)
+Usage = MKSC Sky Garden
 Author = Minako Hamano, Masanobu Matsunaga, Shinobu Nagata
 Source = Mario Kart DS
 
 Lump KMAP49
 Title = Peach Gardens (MKW Remix)
+Usage = MKDS Peach Gardens
 Author = Shinobu Nagata, Asuka Hayazaki, Ryo Nagamatsu
 Source = Mario Kart Wii
 
 Lump KMAP50
 Title = Rainbow Road (Remix)
+Usage = MKSC Rainbow Road
 Author = Panman14
 OriginalComposers = Minako Hamano, Masanobu Matsunaga
 Source = Super Mario Kart Super Circuit
 
 Lump KMAP51
 Title = Donut Plains 1
+Usage = SMK Donut Plains 1
 Author = Soyo Oka
 Source = Super Mario Kart
 
 Lump KMAP52
 Title = Mario Circuit 2
+Usage = SMK Mario Circuit 2
 Author = Soyo Oka
 Source = Super Mario Kart
 
 Lump KMAP53
 Title = Ghost Valley 2
+Usage = SMK Ghost Valley 2
 Author = Soyo Oka
 Source = Super Mario Kart
 
 Lump KMAP54
 Title = Bowser Castle 3
+Usage = SMK Bowser Castle 3
 Author = Soyo Oka
 Source = Super Mario Kart
 
 Lump KMAP55
 Title = Vanilla Lake 2
+Usage = SMK Vanilla Lake 2
 Author = Soyo Oka
 Source = Super Mario Kart
 
 Lump KMAP56
 Title = Tyr's Stage (Fully Armored)
+Usage = Lake Margorite Zone
 Author = Hikoshi Hashimoto
 Source = Cosmic Carnage
 
 Lump KMAP57
 Title = Game Planet Starlight
+Usage = Coastal Temple Zone
 Author = Yasunori Mitsuda, Kenji Hiramatsu, Tomohiko Kira, Yoshitaka Hirota
 Source = Bomberman 64: The Second Attack
 
 Lump KMAP58
 Title = Egg Rocket (Remix)
+Usage = Kart Airlines Zone
 Author = Tatsuyuki Maeda, Yutaka Minobe, Jun Senoue
 Source = Sonic Generations
 
 Lump KMAP59
 Title = antiguo
+Usage = Opulence Zone
 Author = U2 Akiyama
 Source = Higurashi Daybreak
 
 Lump KMAP60
 Title = Agonizer's Return
+Usage = Crimson Core Zone
 Author = +TEK
 
 Lump KMAPH0
 Title = Neo City
+Usage = Crystal Abyss Zone
 Author = Shin Jae-pyung, Lee Jang-won
 Source = Drift City
 
 Lump KMAPH1
 Title = World Open Finals
+Usage = Peach's Castle
 Author = Motoi Sakuraba
 Source = Mario Power Tennis
 
 Lump KMAPH2
 Title = Arid Sands (Day)
+Usage = Arid Sands
 Author = Sega Sound Team
 Source = Sonic Unleashed
 
 Lump KMAPH4
 Title = Mean Bean 2P (Remix)
 OriginalComposers = Hideki Abe
+Usage = Chemical Facility Zone
 Author = Jonny Atma, The8BitDrummer
 Source = Dr. Robotnik's Mean Bean Machine / Puyo Puyo
 
@@ -327,60 +387,72 @@ Source = Dr. Robotnik's Mean Bean Machine / Puyo Puyo
 Lump KMAPH5
 Title = Living In One More City
 OriginalComposers = Richard Jacques, Daft Punk
+Usage = 3 Color Drive Zone
 Author = Nib Roc
 
 Lump KMAPH6
 Title = Scientific Detective (Ema Skye)
+Usage = CK Cloud Tops 1
 Author = Toshihiko Horiyama, Hideki Okugawa
 Source = Apollo Justice: Ace Attorney
 
 Lump KMAPH7
 Title = Fate Changed
+Usage = CK Dungeon Maze
 Author = Masakazu Sugimori, Yasumasa Kitagawa
 Source = Ghost Trick: Phantom Detective
 
 Lump KMAPH8
 Title = Water Melon Woman
+Usage = Diamond Square Classic
 Author = TECHNO'80
 Source = Pop'n Music
 
 Lump KMAPH9
 Title = Retro Maze
+Usage = PWR Retro Maze
 Author = Tommy Tallarico, Dweezil Zappa, Rod Abernethy
 Source = Pac-Man World Rally
 
 Lump KMAPHA
 Title = Midnight Freeze Zone
+Usage = SRB2 Frozen Night Zone
 Author = Arrow, SSNTails
 Source = Sonic Robo-Blast 2
 
 Lump KMAPHB
 Title = Queen of rose
+Usage = Black Bliss Zone
 Author = Daisuke Ishiwatari
 Source = Blazblue: Calamity Trigger
 
 Lump KMAPHC
 Title = Silence (Remix)
+Usage = FZ Silence
 Author = Tony Thai
 OriginalComposers = Yumiko Kanki, Naoto Ishida
 Source = F-Zero
 
 Lump KMAPHD
 Title = Rainbow Road
+Usage = SMK Rainbow Road
 Author = Soyo Oka
 Source = Super Mario Kart
 
 Lump KMAPHE
 Title = Meadow Match Zone
+Usage = SRB2 Meadow Match Zone
 Author = Arrow, SSNTails
 Source = Sonic Robo-Blast 2
 
 Lump KMAPHF
 Title = merge-break
+Usage = battal BOWL Match
 Author = xaki
 
 Lump KMAPHH
 Title = Walrus Cove
+Usage = Blue Mountain Classic
 Author = David Wise
 Source = Diddy Kong Racing
 
@@ -589,6 +661,7 @@ Source = F-Zero
 
 Lump KBWIN
 Usage = Battle Finish (Win)
+Title = Wild Charabom Defeated! (Edit)
 Author = VelocitOni
 Source = Bomberman Tournament
 
