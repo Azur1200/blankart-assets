@@ -1,0 +1,134 @@
+Menu OP_VIDEO
+X = 30
+Y = 30
+PrevMenu = OP_MAIN
+TitlePic = M_VIDEO
+DrawRoutine = MD_DrawVideoMenu
+MenuItem .
+Y = 10
+Text = Set Resolution...
+Call = MR_VideoModeMenu
+
+#if (defined (__unix__) && !defined (MSDOS)) || defined (UNIXCOMMON) || defined (HAVE_SDL)
+MenuItem .
+Y = 20
+Text = Fullscreen
+Cvar = fullscreen
+#endif
+
+#ifdef HWRENDER
+MenuItem .
+Y = 30
+Text = Renderer
+Cvar = renderer
+#else
+MenuItem .
+#Y = 30
+#Text = Renderer
+#IT_TRANSTEXT | IT_PAIR, "Software", cv_renderer
+#endif
+#
+MenuItem .
+Y = 50
+Text = Gamma
+CvarSlider = gamma
+
+MenuItem .
+Y = 60
+Text = Show FPS
+Cvar = showfps
+
+MenuItem .
+Y = 70
+Text = Vertical Sync
+Cvar = vid_wait
+
+MenuItem .
+Y = 80
+Text = FPS Cap
+Cvar = fpscap
+
+MenuItem .
+Y = 100
+Text = VHS Effect
+Cvar = vhspause
+
+MenuItem .
+Y = 110
+Text = Draw Distance
+Cvar = drawdist
+
+MenuItem .
+Y = 120
+Text = Weather Draw Distance
+Cvar = drawdist_precip
+
+MenuItem .
+Y = 130
+Text = Skyboxes
+Cvar = skybox
+
+MenuItem .
+Y = 140
+Text = Parallel Software
+Cvar = parallelsoftware
+
+#ifdef HWRENDER
+MenuItem .
+Y = 160
+Text = OpenGL Options...
+#Routine = MR_OpenGLOptionsMenu
+Submenu = OP_OPENGL
+#endif
+
+
+Menu OP_OPENGL
+X = 30
+Y = 30
+PrevMenu = OP_VIDEO
+TitlePic = M_VIDEO
+MenuItem .
+Y = 10
+Text = 3D Models
+Cvar = gr_models
+
+MenuItem .
+Y = 20
+Text = Model Interpolation
+Cvar = gr_modelinterpolation
+
+MenuItem .
+Y = 30
+Text = Model Lighting
+Cvar = gr_modellighting
+
+MenuItem .
+Y = 40
+Text = Shaders
+Cvar = gr_shaders
+
+MenuItem .
+Y = 60
+Text = Texture Quality
+Cvar = scr_depth
+
+MenuItem .
+Y = 70
+Text = Texture Filter
+Cvar = gr_filtermode
+
+MenuItem .
+Y = 80
+Text = Anisotropic
+Cvar = gr_anisotropicmode
+
+MenuItem .
+Y = 100
+Text = Sprite Billboarding
+Cvar = gr_spritebillboarding
+
+MenuItem .
+Y = 110
+Text = Software Perspective
+Cvar = gr_shearing
+

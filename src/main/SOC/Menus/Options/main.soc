@@ -1,0 +1,60 @@
+Menu OP_MAIN
+X = 60
+Y = 30
+PrevMenu = MAIN
+TitlePic = M_OPTTTL
+MenuItem .
+Y = 10
+Text = Control Setup...
+Submenu = OP_CHANGECONTROLS
+
+MenuItem .
+Y = 30
+Text = Video Options...
+Submenu = OP_VIDEO
+
+MenuItem .
+Y = 40
+Text = Sound Options...
+Submenu = OP_SOUND
+
+MenuItem .
+Y = 60
+Text = HUD Options...
+Submenu = OP_HUD
+
+MenuItem .
+Y = 70
+Text = Camera Options...
+Submenu = OP_CAMERA
+
+MenuItem .
+Y = 80
+Text = Gameplay Options...
+Submenu = OP_GAME
+
+MenuItem .
+Y = 90
+Text = Server Options...
+Submenu = OP_SERVER
+
+MenuItem .
+Y = 110
+Text = Data Options...
+Submenu = OP_DATA
+
+MenuItem .
+Y = 130
+Text = Tricks & Secrets (F1)
+Call = MR_Manual
+
+MenuItem .
+Y = 140
+Text = Play Kart Credits
+Call = MR_Credits
+
+MenuItem .
+Y = 150
+Text = Play BlanKart Credits
+Call = MR_BlanCredits
+

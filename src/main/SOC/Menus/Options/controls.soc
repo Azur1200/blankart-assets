@@ -1,0 +1,35 @@
+Menu OP_CHANGECONTROLS
+X = 60
+Y = 30
+PrevMenu = OP_MAIN
+TitlePic = M_CONTRO
+MenuItem .
+Y = 10
+Text = Player 1 Controls...
+Call = MR_Setup1PControlsMenu
+
+MenuItem .
+Y = 20
+Text = Player 2 Controls...
+Call = MR_Setup2PControlsMenu
+
+MenuItem .
+Y = 30
+Text = Player 3 Controls...
+Call = MR_Setup3PControlsMenu
+
+MenuItem .
+Y = 40
+Text = Player 4 Controls...
+Call = MR_Setup4PControlsMenu
+
+MenuItem .
+Y = 60
+Text = Controls per key
+Cvar = controlperkey
+
+MenuItem .
+Y = 70
+Text = Digital turn easing
+Cvar = turnsmoothing
+

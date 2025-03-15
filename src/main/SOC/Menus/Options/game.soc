@@ -1,0 +1,81 @@
+Menu OP_GAME
+X = 30
+Y = 30
+PrevMenu = OP_MAIN
+TitlePic = M_GAME
+MenuItem .
+Y = 10
+Text = Random Item Toggles...
+Submenu = OP_MONITORTOGGLE
+
+MenuItem .
+Y = 30
+Text = BlanKart Gameplay...
+Submenu = OP_BLANKARTGAME
+
+MenuItem .
+Y = 40
+Text = Race Game Speed
+Cvar = kartspeed
+
+MenuItem .
+Y = 50
+Text = Battle Game Speed
+Cvar = kartbattlespeed
+
+MenuItem .
+Y = 60
+Text = Frantic Items
+Cvar = kartfrantic
+
+MenuItem .
+Y = 70
+TextSecret = Encore Mode
+Cvar = kartencore
+
+MenuItem .
+Y = 90
+Text = Number of Laps
+Cvar = numlaps
+
+MenuItem .
+Y = 100
+Text = Exit Countdown Timer
+Cvar = countdowntime
+
+MenuItem .
+Y = 120
+Text = Time Limit
+Cvar = timelimit
+
+MenuItem .
+Y = 130
+Text = Starting Bumpers
+Cvar = kartbumpers
+
+MenuItem .
+Y = 140
+Text = Karma Comeback
+Cvar = kartcomeback
+
+MenuItem .
+Y = 160
+Text = Track Power Levels
+Cvar = kartusepwrlv
+
+
+Menu OP_BLANKARTGAME
+X = 30
+Y = 30
+PrevMenu = OP_GAME
+TitlePic = M_GAME
+MenuItem .
+Y = 10
+Text = Rings
+Cvar = kartrings
+
+MenuItem .
+Y = 20
+Text = Purple Drift
+Cvar = kartpurpledrift
+

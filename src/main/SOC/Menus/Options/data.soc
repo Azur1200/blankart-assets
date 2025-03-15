@@ -1,0 +1,76 @@
+Menu OP_DATA
+X = 60
+Y = 30
+PrevMenu = OP_MAIN
+TitlePic = M_DATA
+MenuItem .
+Y = 10
+Text = Screenshot Options...
+Call = MR_ScreenshotOptions
+
+MenuItem .
+Y = 20
+Text = Addon Options...
+Call = MR_AddonsOptions
+
+MenuItem .
+Y = 30
+Text = Replay Options...
+Submenu = MISC_REPLAY
+
+#ifdef HAVE_DISCORDRPC
+#MenuItem .
+#Y = 40
+#Text = Discord Options...
+#Submenu = &OP_DiscordOptionsDef
+#
+#MenuItem .
+#Y = 60
+#Text = Erase Data...
+#Submenu = &OP_EraseDataDef
+#
+#else
+MenuItem .
+Y = 50
+Text = Erase Data...
+Submenu = OP_ERASEDATA
+
+#endif
+
+
+Menu MISC_REPLAY
+X = 27
+Y = 40
+PrevMenu = OP_DATA
+TitlePic = M_REPOPT
+MenuItem .
+Y = 0
+Text = Record Replays
+Cvar = netdemo_record
+
+MenuItem .
+Y = 10
+Text = Sync Check Interval
+Cvar = netdemo_syncquality
+
+
+Menu OP_ERASEDATA
+X = 30
+Y = 30
+PrevMenu = OP_DATA
+TitlePic = M_DATA
+MenuItem .
+Y = 10
+Text = Erase Record Data
+Call = MR_EraseData
+
+MenuItem .
+Y = 20
+Text = Erase Unlockable Data
+Call = MR_EraseData
+
+MenuItem .
+Y = 40
+Text = \85Erase ALL Data
+Call = MR_EraseData
+
