@@ -18789,41 +18789,6 @@ SpriteFrame = FF_FULLBRIGHT|10
 Duration = 2
 Next = S_BUBBLESHIELDTRAP1
 
-State S_BUBBLESHIELDWAVE1
-SpriteName = SPR_BWVE
-SpriteFrame = FF_FULLBRIGHT
-Duration = 1
-Next = S_BUBBLESHIELDWAVE2
-
-State S_BUBBLESHIELDWAVE2
-SpriteName = SPR_BWVE
-SpriteFrame = FF_FULLBRIGHT|1
-Duration = 1
-Next = S_BUBBLESHIELDWAVE3
-
-State S_BUBBLESHIELDWAVE3
-SpriteName = SPR_BWVE
-SpriteFrame = FF_FULLBRIGHT|2
-Duration = 1
-Next = S_BUBBLESHIELDWAVE4
-
-State S_BUBBLESHIELDWAVE4
-SpriteName = SPR_BWVE
-SpriteFrame = FF_FULLBRIGHT|3
-Duration = 1
-Next = S_BUBBLESHIELDWAVE5
-
-State S_BUBBLESHIELDWAVE5
-SpriteName = SPR_BWVE
-SpriteFrame = FF_FULLBRIGHT|4
-Duration = 1
-Next = S_BUBBLESHIELDWAVE6
-
-State S_BUBBLESHIELDWAVE6
-SpriteName = SPR_BWVE
-SpriteFrame = FF_FULLBRIGHT|5
-Duration = 1
-
 # Flame Shield
 State S_FLAMESHIELD1
 SpriteName = SPR_FLMS
