@@ -2,7 +2,7 @@ Menu OP_SERVER
 X = 24
 Y = 30
 PrevMenu = OP_MAIN
-TitlePic = M_SERVER
+HeaderPic = M_SERVER
 MenuItem .
 Y = 10
 Text = Server Name
@@ -63,7 +63,7 @@ Menu OP_ADVANCEDSERVER
 X = 24
 Y = 30
 PrevMenu = OP_SERVER
-TitlePic = M_SERVER
+HeaderPic = M_SERVER
 MenuItem .
 Y = 10
 Text = Server Browser Address

@@ -2,7 +2,7 @@ Menu OP_VIDEO
 X = 30
 Y = 30
 PrevMenu = OP_MAIN
-TitlePic = M_VIDEO
+HeaderPic = M_VIDEO
 DrawRoutine = MD_DrawVideoMenu
 MenuItem .
 Y = 10
@@ -86,7 +86,7 @@ Menu OP_OPENGL
 X = 30
 Y = 30
 PrevMenu = OP_VIDEO
-TitlePic = M_VIDEO
+HeaderPic = M_VIDEO
 MenuItem .
 Y = 10
 Text = 3D Models

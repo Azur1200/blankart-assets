@@ -2,7 +2,7 @@ Menu OP_HUD
 X = 30
 Y = 30
 PrevMenu = OP_MAIN
-TitlePic = M_HUD
+HeaderPic = M_HUD
 DrawRoutine = MD_DrawHUDOptions
 MenuItem .
 Y = 20
@@ -61,7 +61,7 @@ Menu OP_CHAT
 X = 30
 Y = 30
 PrevMenu = OP_HUD
-TitlePic = M_HUD
+HeaderPic = M_HUD
 # will ANYONE who doesn't know how to use the console want to touch this one?
 # nonetheless...
 MenuItem .

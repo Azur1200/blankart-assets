@@ -2,7 +2,7 @@ Menu OP_CHANGECONTROLS
 X = 60
 Y = 30
 PrevMenu = OP_MAIN
-TitlePic = M_CONTRO
+HeaderPic = M_CONTRO
 MenuItem .
 Y = 10
 Text = Player 1 Controls...

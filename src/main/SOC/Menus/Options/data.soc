@@ -2,7 +2,7 @@ Menu OP_DATA
 X = 60
 Y = 30
 PrevMenu = OP_MAIN
-TitlePic = M_DATA
+HeaderPic = M_DATA
 MenuItem .
 Y = 10
 Text = Screenshot Options...
@@ -42,7 +42,7 @@ Menu MISC_REPLAY
 X = 27
 Y = 40
 PrevMenu = OP_DATA
-TitlePic = M_REPOPT
+HeaderPic = M_REPOPT
 MenuItem .
 Y = 0
 Text = Record Replays
@@ -58,7 +58,7 @@ Menu OP_ERASEDATA
 X = 30
 Y = 30
 PrevMenu = OP_DATA
-TitlePic = M_DATA
+HeaderPic = M_DATA
 MenuItem .
 Y = 10
 Text = Erase Record Data

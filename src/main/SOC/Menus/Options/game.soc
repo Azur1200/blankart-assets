@@ -2,7 +2,7 @@ Menu OP_GAME
 X = 30
 Y = 30
 PrevMenu = OP_MAIN
-TitlePic = M_GAME
+HeaderPic = M_GAME
 MenuItem .
 Y = 10
 Text = Random Item Toggles...
@@ -68,7 +68,7 @@ Menu OP_BLANKARTGAME
 X = 30
 Y = 30
 PrevMenu = OP_GAME
-TitlePic = M_GAME
+HeaderPic = M_GAME
 MenuItem .
 Y = 10
 Text = Rings
