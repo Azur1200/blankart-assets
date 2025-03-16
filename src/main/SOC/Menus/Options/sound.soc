@@ -57,7 +57,7 @@ Cvar = kartinvinsfx
 MenuItem .
 Y = 110
 Text = Sound Test
-KeyHandler = M_HandleSoundTest
+KeyHandler = MR_HandleSoundTest
 
 MenuItem .
 Y = 120

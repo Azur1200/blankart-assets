@@ -77,9 +77,19 @@ Cvar = parallelsoftware
 MenuItem .
 Y = 160
 Text = OpenGL Options...
-#Routine = MR_OpenGLOptionsMenu
-Submenu = OP_OPENGL
+Call = MR_OpenGLOptionsMenu
 #endif
+
+
+Menu OP_VIDEOMODE
+X = 48
+Y = 26
+PrevMenu = OP_VIDEO
+HeaderPic = M_VIDEO
+DrawRoutine = MD_DrawVideoMode
+# dummy menuitem for the control func
+MenuItem .
+KeyHandler = MR_HandleVideoMode
 
 
 Menu OP_OPENGL
