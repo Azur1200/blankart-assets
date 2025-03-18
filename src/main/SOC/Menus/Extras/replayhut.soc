@@ -1,0 +1,11 @@
+Menu MISC_REPLAYHUT
+X = 30
+Y = 80
+DrawRoutine = MD_DrawReplayHut
+QuitRoutine = MR_QuitReplayHut
+# Dummy menuitem for the replay list
+MenuItem .
+KeyHandler = MR_HandleReplayHutList
+
+# Dummy for handling wrapping to the top of the menu..
+MenuItem .

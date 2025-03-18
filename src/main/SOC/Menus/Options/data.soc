@@ -16,7 +16,7 @@ Call = MR_AddonsOptions
 MenuItem .
 Y = 30
 Text = Replay Options...
-Submenu = MISC_REPLAY
+Submenu = MISC_REPLAYOPTIONS
 
 #ifdef HAVE_DISCORDRPC
 #MenuItem .
@@ -38,7 +38,7 @@ Submenu = OP_ERASEDATA
 #endif
 
 
-Menu MISC_REPLAY
+Menu MISC_REPLAYOPTIONS
 X = 27
 Y = 40
 PrevMenu = OP_DATA

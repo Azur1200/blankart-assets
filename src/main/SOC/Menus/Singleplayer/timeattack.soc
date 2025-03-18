@@ -1,0 +1,153 @@
+Menu SP_TIMEATTACK
+X = 34
+Y = 40
+PrevMenu = MAIN
+HeaderPic = M_ATTACK
+DrawRoutine = MD_DrawTimeAttackMenu
+QuitRoutine = MR_QuitTimeAttackMenu
+MenuItem .
+Y = 0
+Text = Name
+CvarString = name
+
+MenuItem .
+Y = 13
+Text = Character
+Cvar = chooseskin
+
+MenuItem .
+Y = 26
+Text = Color
+Cvar = color
+
+MenuItem .
+Y = 78
+Text = Level
+Cvar = nextmap
+
+MenuItem .
+Y = 98
+TextDisabled = Guest...
+SubMenu = SP_GUESTREPLAY
+
+MenuItem .
+Y = 108
+TextDisabled = Replay...
+SubMenu = SP_REPLAY
+
+MenuItem .
+Y = 118
+TextWhite = Ghosts...
+SubMenu = SP_GHOST
+
+MenuItem .
+Y = 130
+TextWhite = Start
+CallNotModified = MR_ChooseTimeAttack
+
+
+Menu SP_GUESTREPLAY
+X = 34
+Y = 40
+PrevMenu = SP_TIMEATTACK
+HeaderPic = M_ATTACK
+DrawRoutine = MD_DrawTimeAttackMenu
+MenuItem .
+Y = 94
+TextWhite = Save Best Time as Guest
+Call = MR_SetGuestReplay
+
+MenuItem .
+Y = 102
+TextWhite = Save Best Lap as Guest
+Call = MR_SetGuestReplay
+
+MenuItem .
+Y = 110
+TextWhite = Save Last as Guest
+Call = MR_SetGuestReplay
+
+MenuItem .
+Y = 120
+TextWhite = Delete Guest Replay
+Call = MR_SetGuestReplay
+
+MenuItem .
+Y = 130
+TextWhite = Back
+SubMenu = SP_TIMEATTACK
+
+
+Menu SP_REPLAY
+X = 34
+Y = 40
+PrevMenu = SP_TIMEATTACK
+HeaderPic = M_ATTACK
+DrawRoutine = MD_DrawTimeAttackMenu
+MenuItem .
+Y = 90
+TextWhite = Replay Best Time
+Call = MR_ReplayTimeAttack
+
+MenuItem .
+Y = 98
+TextWhite = Replay Best Lap
+Call = MR_ReplayTimeAttack
+
+MenuItem .
+Y = 106
+TextWhite = Replay Last
+Call = MR_ReplayTimeAttack
+
+MenuItem .
+Y = 114
+TextWhite = Replay Guest
+Call = MR_ReplayTimeAttack
+
+MenuItem .
+Y = 122
+TextWhite = Replay Staff
+KeyHandler = MR_HandleStaffReplay
+
+MenuItem .
+Y = 130
+TextWhite = Back
+SubMenu = SP_TIMEATTACK
+
+
+Menu SP_GHOST
+X = 34
+Y = 40
+PrevMenu = SP_TIMEATTACK
+HeaderPic = M_ATTACK
+DrawRoutine = MD_DrawTimeAttackMenu
+MenuItem .
+Y = 88
+Text = Best Time
+Cvar = ghost_besttime
+
+MenuItem .
+Y = 96
+Text = Best Lop
+Cvar = ghost_bestlap
+
+MenuItem .
+Y = 104
+Text = Last
+Cvar = ghost_last
+
+MenuItem .
+Y = 112
+TextDisabled = Guest
+Cvar = ghost_guest
+
+MenuItem .
+Y = 120
+TextDisabled = Staff Attack
+Cvar = ghost_staff
+
+MenuItem .
+Y = 130
+TextWhite = Back
+SubMenu = SP_TIMEATTACK
+

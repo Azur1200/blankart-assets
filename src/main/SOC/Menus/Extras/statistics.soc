@@ -1,0 +1,9 @@
+Menu SP_LEVELSTATS
+X = 280
+Y = 185
+PrevMenu = SR_MAIN
+HeaderPic = M_STATS
+DrawRoutine = MD_DrawLevelStats
+# dummy menuitem for the control func
+MenuItem .
+KeyHandler = MR_HandleLevelStats

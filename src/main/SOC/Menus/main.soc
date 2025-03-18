@@ -1,0 +1,34 @@
+Menu MAIN
+X = 160
+Y = 72
+DrawRoutine = MD_DrawCenteredMenu
+MenuItem .
+Y = 76
+Text = Extras
+SubMenu = SR_MAIN
+
+MenuItem .
+Y = 84
+Text = 1 Player
+Call = MR_SinglePlayerMenu
+
+MenuItem .
+Y = 92
+Text = Multiplayer
+SubMenu = MP_MAIN
+
+MenuItem .
+Y = 100
+Text = Options
+Call = MR_Options
+
+# I don't think is useful at all...
+MenuItem .
+Y = 108
+Text = Addons
+Call = MR_Addons
+
+MenuItem .
+Y = 116
+Text = Quit  Game
+Call = MR_QuitSRB2

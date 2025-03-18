@@ -1,0 +1,34 @@
+Menu SP_GRANDPRIX
+X = 60
+Y = 30
+# should be SP_MAIN?
+PrevMenu = MAIN
+MenuItem .
+Y = 10
+Text = Character
+Cvar = chooseskin
+
+MenuItem .
+Y = 20
+Text = Color
+Cvar = color
+
+MenuItem .
+Y = 40
+Text = Difficulty
+Cvar = dummygpdifficulty
+
+MenuItem .
+Y = 50
+Text = Encore Mode
+Cvar = dummygpencore
+
+MenuItem .
+Y = 70
+Text = Cup
+Cvar = dummygpcup
+
+MenuItem .
+Y = 80
+Text = Start
+Call = MR_StartGrandPrix

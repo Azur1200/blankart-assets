@@ -1,0 +1,8 @@
+Menu AD_MAIN
+X = 50
+Y = 28
+PrevMenu = OP_DATA
+DrawRoutine = MD_DrawAddons
+# dummy menuitem for the control func
+MenuItem .
+KeyHandler = MR_HandleAddons

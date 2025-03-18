@@ -1,0 +1,147 @@
+Menu SR_MAIN
+X = 160
+Y = 72
+PrevMenu = MAIN
+DrawRoutine = MD_DrawCenteredMenu
+MenuItem .
+Y = 100
+Text = Unlockables
+SubMenu = SR_UNLOCKCHECKLIST
+
+MenuItem .
+Y = 108
+Text = Statistics
+CallNotModified = MR_Statistics
+
+MenuItem .
+Y = 116
+Text = Replay Hut
+Call = MR_ReplayHut
+
+# Custom1
+MenuItem .
+TextDisabled = 
+
+# Custom2
+MenuItem .
+TextDisabled = 
+
+# Custom3
+MenuItem .
+TextDisabled = 
+
+# Custom4
+MenuItem .
+TextDisabled = 
+
+# Custom5
+MenuItem .
+TextDisabled = 
+
+# Custom6
+MenuItem .
+TextDisabled = 
+
+# Custom7
+MenuItem .
+TextDisabled = 
+
+# Custom8
+MenuItem .
+TextDisabled = 
+
+# Custom9
+MenuItem .
+TextDisabled = 
+
+# Custom10
+MenuItem .
+TextDisabled = 
+
+# Custom11
+MenuItem .
+TextDisabled = 
+
+# Custom12
+MenuItem .
+TextDisabled = 
+
+# Custom13
+MenuItem .
+TextDisabled = 
+
+# Custom14
+MenuItem .
+TextDisabled = 
+
+# Custom15
+MenuItem .
+TextDisabled = 
+
+# Custom16
+MenuItem .
+TextDisabled = 
+
+# Custom17
+MenuItem .
+TextDisabled = 
+
+# Custom18
+MenuItem .
+TextDisabled = 
+
+# Custom19
+MenuItem .
+TextDisabled = 
+
+# Custom20
+MenuItem .
+TextDisabled = 
+
+# Custom21
+MenuItem .
+TextDisabled = 
+
+# Custom22
+MenuItem .
+TextDisabled = 
+
+# Custom23
+MenuItem .
+TextDisabled = 
+
+# Custom24
+MenuItem .
+TextDisabled = 
+
+# Custom25
+MenuItem .
+TextDisabled = 
+
+# Custom26
+MenuItem .
+TextDisabled = 
+
+# Custom27
+MenuItem .
+TextDisabled = 
+
+# Custom28
+MenuItem .
+TextDisabled = 
+
+# Custom29
+MenuItem .
+TextDisabled = 
+
+# Custom30
+MenuItem .
+TextDisabled = 
+
+# Custom31
+MenuItem .
+TextDisabled = 
+
+# Custom32
+MenuItem .
+TextDisabled = 
