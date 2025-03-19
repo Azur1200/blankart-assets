@@ -62,47 +62,47 @@ MenuItem .
 # space
 
 MenuItem .
-AlphaKey = gc_accelerate
+AlphaKey = GC_ACCELERATE
 Text2 = Accelerate
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_turnleft
+AlphaKey = GC_TURNLEFT
 Text2 = Turn Left
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_turnright
+AlphaKey = GC_TURNRIGHT
 Text2 = Turn Right
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_drift
+AlphaKey = GC_DRIFT
 Text2 = Drift
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_brake
+AlphaKey = GC_BRAKE
 Text2 = Brake
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_fire
+AlphaKey = GC_FIRE
 Text2 = Use/Throw Item
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_aimforward
+AlphaKey = GC_AIMFORWARD
 Text2 = Aim Forward
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_aimbackward
+AlphaKey = GC_AIMBACKWARD
 Text2 = Aim Backward
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_lookback
+AlphaKey = GC_LOOKBACK
 Text2 = Look Backward
 Call = MR_ChangeControl
 
@@ -113,57 +113,57 @@ MenuItem .
 # space
 
 MenuItem .
-AlphaKey = gc_talkkey
+AlphaKey = GC_TALKKEY
 Text2 = Chat
 Call = MR_ChangeControl
 
 #MenuItem .
-#AlphaKey = gc_teamkey
+#AlphaKey = GC_TEAMKEY
 #Text2 = Team Chat
 #Call = MR_ChangeControl
 #
 MenuItem .
-AlphaKey = gc_scores
+AlphaKey = GC_SCORES
 Text2 = Show Rankings
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_viewpoint
+AlphaKey = GC_VIEWPOINT
 Text2 = Change Viewpoint
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_camreset
+AlphaKey = GC_CAMRESET
 Text2 = Reset Camera
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_camtoggle
+AlphaKey = GC_CAMTOGGLE
 Text2 = Toggle Chasecam
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_pause
+AlphaKey = GC_PAUSE
 Text2 = Pause
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_screenshot
+AlphaKey = GC_SCREENSHOT
 Text2 = Screenshot
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_recordgif
+AlphaKey = GC_RECORDGIF
 Text2 = Record GIF
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_systemmenu
+AlphaKey = GC_SYSTEMMENU
 Text2 = Open/Close Menu
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_console
+AlphaKey = GC_CONSOLE
 Text2 = Open Console
 Call = MR_ChangeControl
 
@@ -174,22 +174,22 @@ MenuItem .
 # space
 
 MenuItem .
-AlphaKey = gc_spectate
+AlphaKey = GC_SPECTATE
 Text2 = Become Spectator
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_lookup
+AlphaKey = GC_LOOKUP
 Text2 = Look Up
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_lookdown
+AlphaKey = GC_LOOKDOWN
 Text2 = Look Down
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_centerview
+AlphaKey = GC_CENTERVIEW
 Text2 = Center View
 Call = MR_ChangeControl
 
@@ -200,17 +200,17 @@ MenuItem .
 # space
 
 MenuItem .
-AlphaKey = gc_custom1
+AlphaKey = GC_CUSTOM1
 Text2 = Custom Action 1
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_custom2
+AlphaKey = GC_CUSTOM2
 Text2 = Custom Action 2
 Call = MR_ChangeControl
 
 MenuItem .
-AlphaKey = gc_custom3
+AlphaKey = GC_CUSTOM3
 Text2 = Custom Action 3
 Call = MR_ChangeControl
 
