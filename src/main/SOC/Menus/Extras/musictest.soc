@@ -1,0 +1,7 @@
+Menu SR_SOUNDTEST
+X = 60
+Y = 150
+PrevMenu = OP_SOUND
+DrawRoutine = MD_DrawMusicTest
+MenuItem .
+KeyHandler = MR_HandleMusicTest

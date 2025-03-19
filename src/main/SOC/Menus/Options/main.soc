@@ -6,7 +6,7 @@ HeaderPic = M_OPTTTL
 MenuItem .
 Y = 10
 Text = Control Setup...
-Submenu = OP_CHANGECONTROLS
+Submenu = OP_CONTROLSETUP
 
 MenuItem .
 Y = 30

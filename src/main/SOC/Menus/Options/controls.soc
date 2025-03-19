@@ -1,4 +1,4 @@
-Menu OP_CHANGECONTROLS
+Menu OP_CONTROLSETUP
 X = 60
 Y = 30
 PrevMenu = OP_MAIN
@@ -33,3 +33,226 @@ Y = 70
 Text = Digital turn easing
 Cvar = turnsmoothing
 
+
+Menu OP_CHANGECONTROLS #is unusable since gcs aren't exposed yet
+X = 20
+Y = 40
+PrevMenu = OP_CONTROLSETUP
+HeaderPic = M_CONTRO
+DrawRoutine = MD_DrawControl
+MenuItem .
+Y = 0
+Text = Select Gamepad...
+Call = MR_Setup1PJoystickMenu
+
+MenuItem .
+Y = 8
+Text = Deadzone
+Cvar = deadzone
+
+MenuItem .
+Y = 16
+Text = Reset to defaults
+Call = MR_ResetControls
+
+MenuItem .
+TextHeader = Gameplay Controls
+
+MenuItem .
+# space
+
+MenuItem .
+AlphaKey = gc_accelerate
+Text2 = Accelerate
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_turnleft
+Text2 = Turn Left
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_turnright
+Text2 = Turn Right
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_drift
+Text2 = Drift
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_brake
+Text2 = Brake
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_fire
+Text2 = Use/Throw Item
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_aimforward
+Text2 = Aim Forward
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_aimbackward
+Text2 = Aim Backward
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_lookback
+Text2 = Look Backward
+Call = MR_ChangeControl
+
+MenuItem .
+TextHeader = Miscelleanous Controls
+
+MenuItem .
+# space
+
+MenuItem .
+AlphaKey = gc_talkkey
+Text2 = Chat
+Call = MR_ChangeControl
+
+#MenuItem .
+#AlphaKey = gc_teamkey
+#Text2 = Team Chat
+#Call = MR_ChangeControl
+#
+MenuItem .
+AlphaKey = gc_scores
+Text2 = Show Rankings
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_viewpoint
+Text2 = Change Viewpoint
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_camreset
+Text2 = Reset Camera
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_camtoggle
+Text2 = Toggle Chasecam
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_pause
+Text2 = Pause
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_screenshot
+Text2 = Screenshot
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_recordgif
+Text2 = Record GIF
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_systemmenu
+Text2 = Open/Close Menu
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_console
+Text2 = Open Console
+Call = MR_ChangeControl
+
+MenuItem .
+TextHeader = Spectator Controls
+
+MenuItem .
+# space
+
+MenuItem .
+AlphaKey = gc_spectate
+Text2 = Become Spectator
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_lookup
+Text2 = Look Up
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_lookdown
+Text2 = Look Down
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_centerview
+Text2 = Center View
+Call = MR_ChangeControl
+
+MenuItem .
+TextHeader = Custom Lua Actions
+
+MenuItem .
+# space
+
+MenuItem .
+AlphaKey = gc_custom1
+Text2 = Custom Action 1
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_custom2
+Text2 = Custom Action 2
+Call = MR_ChangeControl
+
+MenuItem .
+AlphaKey = gc_custom3
+Text2 = Custom Action 3
+Call = MR_ChangeControl
+
+
+Menu OP_JOYSTICKSET
+X = 50
+Y = 40
+PrevMenu = OP_CHANGECONTROLS
+HeaderPic = M_CONTRO
+DrawRoutine = MD_DrawJoystick
+MenuItem .
+Y = 16+5
+Call = MR_AssignJoystick
+
+MenuItem .
+Y = (16*2)+5
+Call = MR_AssignJoystick
+
+MenuItem .
+Y = (16*3)+5
+Call = MR_AssignJoystick
+
+MenuItem .
+Y = (16*4)+5
+Call = MR_AssignJoystick
+
+MenuItem .
+Y = (16*5)+5
+Call = MR_AssignJoystick
+
+MenuItem .
+Y = (16*6)+5
+Call = MR_AssignJoystick
+
+MenuItem .
+Y = (16*7)+5
+Call = MR_AssignJoystick
+
+MenuItem .
+Y = (16*8)+5
+Call = MR_AssignJoystick
+
+MenuItem .
+Y = (16*9)+5
+Call = MR_AssignJoystick

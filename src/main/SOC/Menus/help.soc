@@ -1,0 +1,73 @@
+Menu HELP
+X = 0
+Y = 0
+DrawRoutine = MD_DrawImageDef
+MenuItem .
+Y = 0
+Text = MANUAL00
+KeyHandler = MR_HandleImageDef
+
+MenuItem .
+Y = 1
+Text = MANUAL01
+KeyHandler = MR_HandleImageDef
+
+MenuItem .
+Y = 1
+Text = MANUAL02
+KeyHandler = MR_HandleImageDef
+
+MenuItem .
+Y = 1
+Text = MANUAL03
+KeyHandler = MR_HandleImageDef
+
+MenuItem .
+Y = 1
+Text = MANUAL04
+KeyHandler = MR_HandleImageDef
+
+MenuItem .
+Y = 1
+Text = MANUAL05
+KeyHandler = MR_HandleImageDef
+
+MenuItem .
+Y = 1
+Text = MANUAL06
+KeyHandler = MR_HandleImageDef
+
+MenuItem .
+Y = 1
+Text = MANUAL07
+KeyHandler = MR_HandleImageDef
+
+MenuItem .
+Y = 1
+Text = MANUAL08
+KeyHandler = MR_HandleImageDef
+
+MenuItem .
+Y = 1
+Text = MANUAL09
+KeyHandler = MR_HandleImageDef
+
+MenuItem .
+Y = 1
+Text = MANUAL10
+KeyHandler = MR_HandleImageDef
+
+MenuItem .
+Y = 1
+Text = MANUAL11
+KeyHandler = MR_HandleImageDef
+
+MenuItem .
+Y = 1
+Text = MANUAL12
+KeyHandler = MR_HandleImageDef
+
+MenuItem .
+Y = 0
+Text = MANUAL99
+KeyHandler = MR_HandleImageDef
