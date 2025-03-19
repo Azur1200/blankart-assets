@@ -3774,19 +3774,6 @@ Sound sfx_eggspr
 Priority = 64
 Flags = 16
 
-# SRB2Kart - Drop target sounds
-Sound sfx_kdtrg1
-Priority = 64
-Flags = 16
-
-Sound sfx_kdtrg2
-Priority = 64
-Flags = 16
-
-Sound sfx_kdtrg3
-Priority = 64
-Flags = 80
-
 # Shout message sound effect
 Sound sfx_sysmsg
 Priority = 60

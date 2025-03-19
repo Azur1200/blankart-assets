@@ -18185,16 +18185,6 @@ State S_LANDMINE_EXPLODE
 Duration = 1
 Action = A_LandMineExplode
 
-# Drop Target
-State S_DROPTARGET
-SpriteName = SPR_DTRG
-Duration = -1
-
-State S_DROPTARGET_SPIN
-SpriteName = SPR_DTRG
-SpriteFrame = 1
-Duration = -1
-
 # Ballhog
 State S_BALLHOG1
 SpriteName = SPR_BHOG
@@ -18903,6 +18893,78 @@ SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|18
 Duration = -1
 Next = S_FLAMESHIELDDASH
+
+State S_BARRIERSHIELD1
+SpriteName = SPR_PITS
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30
+Duration = 2
+Next = S_BARRIERSHIELD2
+
+State S_BARRIERSHIELD2
+SpriteName = SPR_PITS
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|1
+Duration = 2
+Next = S_BARRIERSHIELD3
+
+State S_BARRIERSHIELD3
+SpriteName = SPR_PITS
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|2
+Duration = 2
+Next = S_BARRIERSHIELD4
+
+State S_BARRIERSHIELD4
+SpriteName = SPR_PITS
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|3
+Duration = 2
+Next = S_BARRIERSHIELD5
+
+State S_BARRIERSHIELD5
+SpriteName = SPR_PITS
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|4
+Duration = 2
+Next = S_BARRIERSHIELD6
+
+State S_BARRIERSHIELD6
+SpriteName = SPR_PITS
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|5
+Duration = 2
+Next = S_BARRIERSHIELD7
+
+State S_BARRIERSHIELD7
+SpriteName = SPR_PITS
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|6
+Duration = 2
+Next = S_BARRIERSHIELD8
+
+State S_BARRIERSHIELD8
+SpriteName = SPR_PITS
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|7
+Duration = 2
+Next = S_BARRIERSHIELD9
+
+State S_BARRIERSHIELD9
+SpriteName = SPR_PITS
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|8
+Duration = 2
+Next = S_BARRIERSHIELD10
+
+State S_BARRIERSHIELD10
+SpriteName = SPR_PITS
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|9
+Duration = 2
+Next = S_BARRIERSHIELD11
+
+State S_BARRIERSHIELD11
+SpriteName = SPR_PITS
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|10
+Duration = 2
+Next = S_BARRIERSHIELD12
+
+State S_BARRIERSHIELD12
+SpriteName = SPR_PITS
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|11
+Duration = 2
+Next = S_BARRIERSHIELD1
 
 # The legend
 State S_SINK
