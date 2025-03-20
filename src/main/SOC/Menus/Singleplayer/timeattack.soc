@@ -5,7 +5,7 @@ PrevMenu = MAIN
 HeaderPic = M_ATTACK
 DrawRoutine = MD_DrawTimeAttackMenu
 QuitRoutine = MR_QuitTimeAttackMenu
-MenuItem .
+MenuItem NAME
 Y = 0
 Text = Name
 CvarString = name
@@ -20,27 +20,27 @@ Y = 26
 Text = Color
 Cvar = color
 
-MenuItem .
+MenuItem LEVEL
 Y = 78
 Text = Level
 Cvar = nextmap
 
-MenuItem .
+MenuItem GUEST
 Y = 98
 TextDisabled = Guest...
 SubMenu = SP_GUESTREPLAY
 
-MenuItem .
+MenuItem REPLAY
 Y = 108
 TextDisabled = Replay...
 SubMenu = SP_REPLAY
 
-MenuItem .
+MenuItem GHOST
 Y = 118
 TextWhite = Ghosts...
 SubMenu = SP_GHOST
 
-MenuItem .
+MenuItem START
 Y = 130
 TextWhite = Start
 CallNotModified = MR_ChooseTimeAttack
@@ -52,22 +52,22 @@ Y = 40
 PrevMenu = SP_TIMEATTACK
 HeaderPic = M_ATTACK
 DrawRoutine = MD_DrawTimeAttackMenu
-MenuItem .
+MenuItem STIME
 Y = 94
 TextWhite = Save Best Time as Guest
 Call = MR_SetGuestReplay
 
-MenuItem .
+MenuItem SLAP
 Y = 102
 TextWhite = Save Best Lap as Guest
 Call = MR_SetGuestReplay
 
-MenuItem .
+MenuItem SLAST
 Y = 110
 TextWhite = Save Last as Guest
 Call = MR_SetGuestReplay
 
-MenuItem .
+MenuItem DELETE
 Y = 120
 TextWhite = Delete Guest Replay
 Call = MR_SetGuestReplay
@@ -84,27 +84,27 @@ Y = 40
 PrevMenu = SP_TIMEATTACK
 HeaderPic = M_ATTACK
 DrawRoutine = MD_DrawTimeAttackMenu
-MenuItem .
+MenuItem RPTIME
 Y = 90
 TextWhite = Replay Best Time
 Call = MR_ReplayTimeAttack
 
-MenuItem .
+MenuItem RPLAP
 Y = 98
 TextWhite = Replay Best Lap
 Call = MR_ReplayTimeAttack
 
-MenuItem .
+MenuItem RPLAST
 Y = 106
 TextWhite = Replay Last
 Call = MR_ReplayTimeAttack
 
-MenuItem .
+MenuItem RPGUES
 Y = 114
 TextWhite = Replay Guest
 Call = MR_ReplayTimeAttack
 
-MenuItem .
+MenuItem RPSTAF
 Y = 122
 TextWhite = Replay Staff
 KeyHandler = MR_HandleStaffReplay
@@ -128,7 +128,7 @@ Cvar = ghost_besttime
 
 MenuItem .
 Y = 96
-Text = Best Lop
+Text = Best Lap
 Cvar = ghost_bestlap
 
 MenuItem .
@@ -136,12 +136,12 @@ Y = 104
 Text = Last
 Cvar = ghost_last
 
-MenuItem .
+MenuItem GUEST
 Y = 112
 TextDisabled = Guest
 Cvar = ghost_guest
 
-MenuItem .
+MenuItem STAFF
 Y = 120
 TextDisabled = Staff Attack
 Cvar = ghost_staff

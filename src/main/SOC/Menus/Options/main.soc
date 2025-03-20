@@ -28,12 +28,12 @@ Y = 70
 Text = Camera Options...
 Submenu = OP_CAMERA
 
-MenuItem .
+MenuItem GAMEPL
 Y = 80
 Text = Gameplay Options...
 Submenu = OP_GAME
 
-MenuItem .
+MenuItem SERVER
 Y = 90
 Text = Server Options...
 Submenu = OP_SERVER
@@ -48,12 +48,12 @@ Y = 130
 Text = Tricks & Secrets (F1)
 Call = MR_Manual
 
-MenuItem .
+MenuItem KCRED
 Y = 140
 Text = Play Kart Credits
 Call = MR_Credits
 
-MenuItem .
+MenuItem BCRED
 Y = 150
 Text = Play BlanKart Credits
 Call = MR_BlanCredits

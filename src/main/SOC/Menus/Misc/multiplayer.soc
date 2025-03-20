@@ -17,7 +17,7 @@ Menu CHANGETEAM
 X = 27
 Y = 40
 PrevMenu = MPAUSE
-MenuItem .
+MenuItem PLAYER
 Y = 30
 Text = Player
 Cvar = dummymenuplayer
@@ -37,7 +37,7 @@ Menu CHANGESPECTATE
 X = 27
 Y = 40
 PrevMenu = MPAUSE
-MenuItem .
+MenuItem PLAYER
 Y = 30
 Text = Player
 Cvar = dummymenuplayer

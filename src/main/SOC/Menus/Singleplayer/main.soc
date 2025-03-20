@@ -3,18 +3,18 @@ X = 160
 Y = 72
 PrevMenu = MAIN
 DrawRoutine = MD_DrawCenteredMenu
-MenuItem .
+MenuItem GP
 Y = 92
 Text = Grand Prix
 Call = MR_GrandPrixTemp
 
-MenuItem .
+MenuItem TA
 Y = 100
 #TextSecret = Time Attack # still waiting on menuitem names...
 Text = Time Attack
 Call = MR_TimeAttack
 
-MenuItem .
+MenuItem IT
 Y = 108
 #TextSecret = Item Breaker
 Text = Item Breaker

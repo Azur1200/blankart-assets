@@ -2,85 +2,85 @@ Menu PLAYBACK
 X = 72
 Y = 2
 DrawRoutine = MD_DrawPlaybackMenu
-MenuItem .
+MenuItem HIDE
 Y = 0
 Text = Hide Menu (Esc)
 Patch = M_PHIDE
 Call = MR_SelectableClearMenus
 
-MenuItem .
+MenuItem REWIND
 Y = 20
 Text = Rewind ([)
 Patch = M_PREW
 Call = MR_PlaybackRewind
 
-MenuItem .
+MenuItem PAUSE
 Y = 36
 Text = Pause (\\)
 Patch = M_PPAUSE
 Call = MR_PlaybackPause
 
-MenuItem .
+MenuItem FASTFW
 Y = 52
 Text = Fast-Forward (])
 Patch = M_PFFWD
 Call = MR_PlaybackFastForward
 
-MenuItem .
+MenuItem REWFRA
 Y = 20
 Text = Backup Frame ([)
 Patch = M_PSTEPB
 Call = MR_PlaybackRewind
 
-MenuItem .
+MenuItem RESUME
 Y = 36
 Text = Resume
 Patch = M_PRESUM
 Call = MR_PlaybackPause
 
-MenuItem .
+MenuItem ADVFRA
 Y = 52
 Text = Advance Frame (])
 Patch = M_PFADV
 Call = MR_PlaybackAdvance
 
-MenuItem .
+MenuItem NUMVIE
 Y = 72
 Text = View Count (- and =)
 Patch = M_PVIEWS
 Arrows = MR_PlaybackSetViews
 
-MenuItem .
+MenuItem VIEW1
 Y = 88
 Text = Viewpoint (1)
 Patch = M_PNVIEW
 Arrows = MR_PlaybackAdjustView
 
-MenuItem .
+MenuItem VIEW2
 Y = 104
 Text = Viewpoint 2 (2)
 Patch = M_PNVIEW
 Arrows = MR_PlaybackAdjustView
 
-MenuItem .
+MenuItem VIEW3
 Y = 120
 Text = Viewpoint 3 (3)
 Patch = M_PNVIEW
 Arrows = MR_PlaybackAdjustView
 
-MenuItem .
+MenuItem VIEW4
 Y = 136
 Text = Viewpoint 4 (4)
 Patch = M_PNVIEW
 Arrows = MR_PlaybackAdjustView
 
-MenuItem .
+MenuItem FRECAM
 Y = 156
 Text = Toggle Free Camera (')
 Patch = M_PVIEWS
 Call = MR_PlaybackToggleFreecam
 
-MenuItem .
+MenuItem QUIT
 Y = 172
 Text = Stop Playback
 Patch = M_PEXIT

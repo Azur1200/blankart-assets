@@ -28,7 +28,7 @@ Y = 60
 Text = Frantic Items
 Cvar = kartfrantic
 
-MenuItem .
+MenuItem ENCORE
 Y = 70
 TextSecret = Encore Mode
 Cvar = kartencore

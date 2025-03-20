@@ -14,7 +14,7 @@ Y = 10
 Text = Number of local players
 Cvar = splitplayers
 
-MenuItem .
+MenuItem PSETUP
 Y = 18
 Text = Player setup...
 KeyHandler = MR_SetupMultiHandler
@@ -23,12 +23,12 @@ MenuItem .
 Y = 100-24
 TextHeader = Host a game
 
-MenuItem .
+MenuItem STASRV
 Y = 110-24
 Text = Internet/LAN...
 Call = MR_StartServerMenu
 
-MenuItem .
+MenuItem OFLSRV
 Y = 118-24
 Text = Offline...
 Call = MR_StartOfflineServerMenu
@@ -42,7 +42,7 @@ Y = 142-24
 Text = Internet server browser...
 Call = MR_ConnectMenuModChecks
 
-MenuItem .
+MenuItem CONIP
 Y = 150-24
 Text = Specify IPv4 address:
 KeyHandler = MR_HandleConnectIP

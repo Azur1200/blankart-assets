@@ -40,12 +40,12 @@ Y = 40
 PrevMenu = OP_CONTROLSETUP
 HeaderPic = M_CONTRO
 DrawRoutine = MD_DrawControl
-MenuItem .
+MenuItem SETJOY
 Y = 0
 Text = Select Gamepad...
 Call = MR_Setup1PJoystickMenu
 
-MenuItem .
+MenuItem DEADZ
 Y = 8
 Text = Deadzone
 Cvar = deadzone
@@ -112,22 +112,22 @@ TextHeader = Miscelleanous Controls
 MenuItem .
 # space
 
-MenuItem .
+MenuItem TALK
 AlphaKey = GC_TALKKEY
 Text2 = Chat
 Call = MR_ChangeControl
 
-#MenuItem .
+#MenuItem TEAM
 #AlphaKey = GC_TEAMKEY
 #Text2 = Team Chat
 #Call = MR_ChangeControl
 #
-MenuItem .
+MenuItem SCORES
 AlphaKey = GC_SCORES
 Text2 = Show Rankings
 Call = MR_ChangeControl
 
-MenuItem .
+MenuItem VIEWPT
 AlphaKey = GC_VIEWPOINT
 Text2 = Change Viewpoint
 Call = MR_ChangeControl
@@ -142,27 +142,27 @@ AlphaKey = GC_CAMTOGGLE
 Text2 = Toggle Chasecam
 Call = MR_ChangeControl
 
-MenuItem .
+MenuItem PAUSE
 AlphaKey = GC_PAUSE
 Text2 = Pause
 Call = MR_ChangeControl
 
-MenuItem .
+MenuItem SCRSHT
 AlphaKey = GC_SCREENSHOT
 Text2 = Screenshot
 Call = MR_ChangeControl
 
-MenuItem .
+MenuItem RECGIF
 AlphaKey = GC_RECORDGIF
 Text2 = Record GIF
 Call = MR_ChangeControl
 
-MenuItem .
+MenuItem SYSMEN
 AlphaKey = GC_SYSTEMMENU
 Text2 = Open/Close Menu
 Call = MR_ChangeControl
 
-MenuItem .
+MenuItem CONSOL
 AlphaKey = GC_CONSOLE
 Text2 = Open Console
 Call = MR_ChangeControl
@@ -173,22 +173,22 @@ TextHeader = Spectator Controls
 MenuItem .
 # space
 
-MenuItem .
+MenuItem SPECTA
 AlphaKey = GC_SPECTATE
 Text2 = Become Spectator
 Call = MR_ChangeControl
 
-MenuItem .
+MenuItem LOOKUP
 AlphaKey = GC_LOOKUP
 Text2 = Look Up
 Call = MR_ChangeControl
 
-MenuItem .
+MenuItem LOOKDW
 AlphaKey = GC_LOOKDOWN
 Text2 = Look Down
 Call = MR_ChangeControl
 
-MenuItem .
+MenuItem CENTER
 AlphaKey = GC_CENTERVIEW
 Text2 = Center View
 Call = MR_ChangeControl

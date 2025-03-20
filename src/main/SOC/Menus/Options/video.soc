@@ -4,7 +4,7 @@ Y = 30
 PrevMenu = OP_MAIN
 HeaderPic = M_VIDEO
 DrawRoutine = MD_DrawVideoMenu
-MenuItem .
+MenuItem SETMOD
 Y = 10
 Text = Set Resolution...
 Call = MR_VideoModeMenu
@@ -68,13 +68,13 @@ Y = 130
 Text = Skyboxes
 Cvar = skybox
 
-MenuItem .
+MenuItem PARSOF
 Y = 140
 Text = Parallel Software
 Cvar = parallelsoftware
 
 #ifdef HWRENDER
-MenuItem .
+MenuItem OPENGL
 Y = 160
 Text = OpenGL Options...
 Call = MR_OpenGLOptionsMenu

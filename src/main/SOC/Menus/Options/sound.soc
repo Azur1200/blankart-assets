@@ -4,7 +4,7 @@ Y = 30
 PrevMenu = OP_MAIN
 HeaderPic = M_SOUND
 DrawRoutine = MD_DrawSkyRoom
-MenuItem .
+MenuItem SNDENA
 Y = 10
 Text = SFX
 Cvar = sounds
@@ -14,7 +14,7 @@ Y = 18
 Text = SFX Volume
 CvarSlider = soundvolume
 
-MenuItem .
+MenuItem MUSENA
 Y = 30
 Text = Music
 Cvar = music

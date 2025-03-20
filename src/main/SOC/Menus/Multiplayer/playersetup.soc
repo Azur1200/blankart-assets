@@ -4,23 +4,23 @@ Y = 14
 PrevMenu = MP_MAIN
 DrawRoutine = MD_DrawSetupMultiPlayerMenu
 QuitRoutine = MR_QuitMultiPlayerMenu
-MenuItem .
+MenuItem NAME
 Y = 0
 Text = Name
 KeyHandler = MR_HandleSetupMultiPlayer
 
 # Tails 01-18-2001
-MenuItem .
+MenuItem SKIN
 Y = 16
 Text = Character
 KeyHandler = MR_HandleSetupMultiPlayer
 
-MenuItem .
+MenuItem FOLLOW
 Y = 26
 Text = Follower
 KeyHandler = MR_HandleSetupMultiPlayer
 
-MenuItem .
+MenuItem COLOR
 Y = 152
 Text = Color
 KeyHandler = MR_HandleSetupMultiPlayer

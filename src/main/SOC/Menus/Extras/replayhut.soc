@@ -16,17 +16,17 @@ X = 30
 Y = 90
 PrevMenu = MISC_REPLAYHUT
 DrawRoutine = MD_DrawReplayStartMenu
-MenuItem .
+MenuItem LOADWA
 Y = 0
 Text = Load Addons and Watch
 Call = MR_HutStartReplay
 
-MenuItem .
+MenuItem NOLOAD
 Y = 10
 Text = Watch Without Addons
 Call = MR_HutStartReplay
 
-MenuItem .
+MenuItem WATCH
 Y = 10
 Text = Watch Replay
 Call = MR_HutStartReplay
