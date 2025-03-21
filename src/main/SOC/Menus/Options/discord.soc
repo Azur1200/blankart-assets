@@ -1,0 +1,55 @@
+DiscordOnly
+
+Menu MPAUSE
+MenuItem DISCRQ
+Y = 24
+Text = Ask To Join Requests...
+SubMenu = MISC_DISCORDREQUESTS
+
+
+Menu OP_DATA
+MenuItem DISCOR
+Y = 40
+Text = Discord Options...
+Submenu = OP_DISCORD
+
+MenuItem ERASE
+Y = 60
+
+
+Menu OP_DISCORD
+X = 30
+Y = 30
+PrevMenu = OP_DATA
+MenuItem .
+Y = 10
+Text = Rich Presence
+Cvar = discordrp
+
+MenuItem .
+Y = 30
+TextHeader = Rich Presence Settings
+
+MenuItem .
+Y = 40
+Text = Streamer Mode
+Cvar = discordstreamer
+
+MenuItem .
+Y = 60
+Text = Allow Ask To Join
+Cvar = discordasks
+
+MenuItem .
+Y = 70
+Text = Allow Invites
+Cvar = discordinvites
+
+
+Menu MISC_DISCORDREQUESTS
+X = 0
+Y = 0
+PrevMenu = MPAUSE
+DrawRoutine = MD_DrawDiscordRequests
+MenuItem .
+KeyHandler = MR_HandleDiscordRequests

@@ -83,12 +83,8 @@ Y = 24
 Text = Switch Map...
 Call = MR_MapChange
 
-#ifdef HAVE_DISCORDRPC
 MenuItem DISCRQ
-Y = 24
-Text = Ask To Join Requests...
-SubMenu = MISC_DISCORDREQUESTS
-#endif
+TextDisabled = 
 
 MenuItem CONTIN
 Y = 40

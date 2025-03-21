@@ -18,24 +18,13 @@ Y = 30
 Text = Replay Options...
 Submenu = MISC_REPLAYOPTIONS
 
-#ifdef HAVE_DISCORDRPC
-#MenuItem .
-#Y = 40
-#Text = Discord Options...
-#Submenu = &OP_DiscordOptionsDef
-#
-#MenuItem .
-#Y = 60
-#Text = Erase Data...
-#Submenu = &OP_EraseDataDef
-#
-#else
+MenuItem DISCOR
+TextDisabled = 
+
 MenuItem ERASE
 Y = 50
 Text = Erase Data...
 Submenu = OP_ERASEDATA
-
-#endif
 
 
 Menu MISC_REPLAYOPTIONS
