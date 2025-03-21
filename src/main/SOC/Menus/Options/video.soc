@@ -1,6 +1,6 @@
 Menu OP_VIDEO
 X = 30
-Y = 30
+Y = 15
 PrevMenu = OP_MAIN
 HeaderPic = M_VIDEO
 DrawRoutine = MD_DrawVideoMenu
@@ -50,8 +50,8 @@ Cvar = fpscap
 
 MenuItem .
 Y = 100
-Text = VHS Effect
-Cvar = vhspause
+Text = Visual Effects...
+SubMenu = OP_VISUAL
 
 MenuItem .
 Y = 110
@@ -142,3 +142,18 @@ Y = 110
 Text = Software Perspective
 Cvar = gr_shearing
 
+
+Menu OP_VISUAL
+X = 60
+Y = 30
+PrevMenu = OP_VIDEO
+HeaderPic = M_VIDEO
+MenuItem .
+Y = 10
+Text = VHS Effect
+Cvar = vhspause
+
+MenuItem .
+Y = 20
+Text = Player Slope Tilt
+Cvar = spritesloperoll

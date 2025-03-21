@@ -21,37 +21,27 @@ Submenu = OP_CHAT
 
 MenuItem .
 Y = 55
+Text = Game HUD options...
+Submenu = OP_GAMEHUD
+
+MenuItem .
+Y = 65
 Text = Background Glass
 Cvar = con_backcolor
 
 MenuItem .
-Y = 70
-Text = Minimap Visibility
-CvarSlider = kartminimap
-
-MenuItem .
 Y = 80
-Text = Speedometer Display
-Cvar = kartdisplayspeed
-
-MenuItem .
-Y = 90
-Text = Show "CHECK"
-Cvar = kartcheck
-
-MenuItem .
-Y = 105
 Text = Menu Highlights
 Cvar = menuhighlight
 # highlight info - (GOOD HIGHLIGHT, WARNING HIGHLIGHT) - 105 (see M_DrawHUDOptions)
 
 MenuItem .
-Y = 130
+Y = 105
 Text = Console Text Size
 Cvar = con_textsize
 
 MenuItem .
-Y = 145
+Y = 115
 Text = Show "FOCUS LOST"
 Cvar = showfocuslost
 
@@ -100,3 +90,53 @@ Y = 90
 Text = Local ping display
 Cvar = showping
 
+
+Menu OP_GAMEHUD
+X = 30
+Y = 30
+PrevMenu = OP_HUD
+HeaderPic = M_HUD
+MenuItem .
+Y = 10
+Text = Minimap Visibility
+CvarSlider = kartminimap
+
+MenuItem .
+Y = 25
+Text = Small Minimap Players
+Cvar = smallminimapplayers
+
+MenuItem .
+Y = 35
+Text = Minimap Nametags
+Cvar = showminimapnames
+
+MenuItem .
+Y = 45
+Text = Minimap Angle
+Cvar = showminimapangle
+
+MenuItem .
+Y = 55
+Text = Nametags
+Cvar = seenames
+
+MenuItem .
+Y = 65
+Text = Speedometer Display
+Cvar = kartdisplayspeed
+
+MenuItem .
+Y = 75
+Text = Speedometer Style
+Cvar = newspeedometer
+
+MenuItem .
+Y = 85
+Text = Input Display
+Cvar = showinput
+
+MenuItem .
+Y = 95
+Text = Show "CHECK"
+Cvar = kartcheck

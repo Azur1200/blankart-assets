@@ -79,6 +79,16 @@ Y = 20
 Text = Purple Drift
 Cvar = kartpurpledrift
 
+MenuItem .
+Y = 30
+Text = Bump Spark
+Cvar = kartbumpspark
+
+MenuItem .
+Y = 40
+Text = Bump Spring
+Cvar = kartbumpspring
+
 
 Menu OP_MONITORTOGGLE
 X = 30
