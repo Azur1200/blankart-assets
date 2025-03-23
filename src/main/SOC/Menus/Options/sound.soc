@@ -1,7 +1,6 @@
 Menu OP_SOUND
 X = 30
 Y = 30
-PrevMenu = OP_MAIN
 HeaderPic = M_SOUND
 DrawRoutine = MD_DrawSkyRoom
 MenuItem SNDENA

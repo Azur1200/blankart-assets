@@ -2,7 +2,6 @@ Menu MP_MAIN
 X = 42
 Y = 30
 HeaderPic = M_MULTI
-PrevMenu = MAIN
 DrawRoutine = MD_DrawMPMainMenu
 QuitRoutine = MR_CancelConnect
 MenuItem .

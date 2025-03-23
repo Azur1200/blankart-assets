@@ -1,7 +1,6 @@
 Menu SR_EMBLEMHINT
 X = 60
 Y = 150
-PrevMenu = SPAUSE
 DrawRoutine = MD_DrawEmblemHints
 MenuItem .
 Y = 10

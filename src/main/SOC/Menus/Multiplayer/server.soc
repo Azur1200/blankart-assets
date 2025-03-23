@@ -1,7 +1,6 @@
 Menu MP_SERVER
 X = 24
 Y = 40
-PrevMenu = MP_MAIN
 HeaderPic = M_MULTI
 DrawRoutine = MD_DrawServerMenu
 MenuItem .
@@ -38,7 +37,6 @@ Call = MR_StartServer
 Menu MP_OFFLINESERVER
 X = 24
 Y = 40
-PrevMenu = MP_MAIN
 HeaderPic = M_MULTI
 DrawRoutine = MD_DrawServerMenu
 MenuItem .

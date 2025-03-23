@@ -14,7 +14,6 @@ MenuItem .
 Menu MISC_REPLAYSTART
 X = 30
 Y = 90
-PrevMenu = MISC_REPLAYHUT
 DrawRoutine = MD_DrawReplayStartMenu
 MenuItem LOADWA
 Y = 0

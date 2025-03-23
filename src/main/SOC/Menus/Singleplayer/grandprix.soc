@@ -1,8 +1,6 @@
 Menu SP_GRANDPRIX
 X = 60
 Y = 30
-# should be SP_MAIN?
-PrevMenu = MAIN
 MenuItem .
 Y = 10
 Text = Character

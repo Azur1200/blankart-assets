@@ -1,7 +1,6 @@
 Menu SCRAMBLETEAM
 X = 27
 Y = 40
-PrevMenu = MPAUSE
 MenuItem .
 Y = 30
 Text = Scramble Method
@@ -16,7 +15,6 @@ Call = MR_ConfirmTeamScramble
 Menu CHANGETEAM
 X = 27
 Y = 40
-PrevMenu = MPAUSE
 MenuItem PLAYER
 Y = 30
 Text = Player
@@ -36,7 +34,6 @@ Call = MR_ConfirmTeamChange
 Menu CHANGESPECTATE
 X = 27
 Y = 40
-PrevMenu = MPAUSE
 MenuItem PLAYER
 Y = 30
 Text = Player
@@ -56,7 +53,6 @@ Call = MR_ConfirmSpectateChange
 Menu CHANGELEVEL
 X = 24
 Y = 40
-PrevMenu = MPAUSE
 DrawRoutine = MD_DrawServerMenu
 MenuItem .
 Y = 68

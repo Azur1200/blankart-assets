@@ -1,7 +1,6 @@
 Menu SR_UNLOCKCHECKLIST
 X = 280
 Y = 185
-PrevMenu = SR_MAIN
 DrawRoutine = MD_DrawCheckList
 MenuItem .
 Y = 192

@@ -1,7 +1,6 @@
 Menu OP_VIDEO
 X = 30
 Y = 15
-PrevMenu = OP_MAIN
 HeaderPic = M_VIDEO
 DrawRoutine = MD_DrawVideoMenu
 MenuItem SETMOD
@@ -84,7 +83,6 @@ Call = MR_OpenGLOptionsMenu
 Menu OP_VIDEOMODE
 X = 48
 Y = 26
-PrevMenu = OP_VIDEO
 HeaderPic = M_VIDEO
 DrawRoutine = MD_DrawVideoMode
 # dummy menuitem for the control func
@@ -95,7 +93,6 @@ KeyHandler = MR_HandleVideoMode
 Menu OP_OPENGL
 X = 30
 Y = 30
-PrevMenu = OP_VIDEO
 HeaderPic = M_VIDEO
 MenuItem .
 Y = 10
@@ -146,7 +143,6 @@ Cvar = gr_shearing
 Menu OP_VISUAL
 X = 60
 Y = 30
-PrevMenu = OP_VIDEO
 HeaderPic = M_VIDEO
 MenuItem .
 Y = 10

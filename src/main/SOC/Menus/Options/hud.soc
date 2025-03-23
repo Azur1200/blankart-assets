@@ -1,7 +1,6 @@
 Menu OP_HUD
 X = 30
 Y = 30
-PrevMenu = OP_MAIN
 HeaderPic = M_HUD
 DrawRoutine = MD_DrawHUDOptions
 MenuItem .
@@ -50,7 +49,6 @@ Cvar = showfocuslost
 Menu OP_CHAT
 X = 30
 Y = 30
-PrevMenu = OP_HUD
 HeaderPic = M_HUD
 # will ANYONE who doesn't know how to use the console want to touch this one?
 # nonetheless...
@@ -94,7 +92,6 @@ Cvar = showping
 Menu OP_GAMEHUD
 X = 30
 Y = 30
-PrevMenu = OP_HUD
 HeaderPic = M_HUD
 MenuItem .
 Y = 10

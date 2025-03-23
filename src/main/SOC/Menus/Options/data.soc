@@ -1,7 +1,6 @@
 Menu OP_DATA
 X = 60
 Y = 30
-PrevMenu = OP_MAIN
 HeaderPic = M_DATA
 MenuItem .
 Y = 10
@@ -30,7 +29,6 @@ Submenu = OP_ERASEDATA
 Menu MISC_REPLAYOPTIONS
 X = 27
 Y = 40
-PrevMenu = OP_DATA
 HeaderPic = M_REPOPT
 MenuItem .
 Y = 0
@@ -46,7 +44,6 @@ Cvar = netdemo_syncquality
 Menu OP_SCREENSHOTS
 X = 30
 Y = 30
-PrevMenu = OP_DATA
 HeaderPic = M_SCSHOT
 MenuItem .
 Y = 10
@@ -125,7 +122,6 @@ Cvar = apng_window_size
 Menu OP_ADDONS
 X = 30
 Y = 30
-PrevMenu = OP_DATA
 HeaderPic = M_ADDONS
 MenuItem .
 Y = 0
@@ -169,7 +165,6 @@ Cvar = addons_search_case
 Menu OP_ERASEDATA
 X = 30
 Y = 30
-PrevMenu = OP_DATA
 HeaderPic = M_DATA
 MenuItem .
 Y = 10

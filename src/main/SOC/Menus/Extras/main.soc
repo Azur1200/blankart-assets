@@ -1,7 +1,6 @@
 Menu SR_MAIN
 X = 160
 Y = 72
-PrevMenu = MAIN
 DrawRoutine = MD_DrawCenteredMenu
 MenuItem .
 Y = 100

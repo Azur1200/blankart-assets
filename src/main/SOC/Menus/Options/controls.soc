@@ -1,7 +1,6 @@
 Menu OP_CONTROLSETUP
 X = 60
 Y = 30
-PrevMenu = OP_MAIN
 HeaderPic = M_CONTRO
 MenuItem .
 Y = 10
@@ -37,7 +36,6 @@ Cvar = turnsmoothing
 Menu OP_CHANGECONTROLS #is unusable since gcs aren't exposed yet
 X = 20
 Y = 40
-PrevMenu = OP_CONTROLSETUP
 HeaderPic = M_CONTRO
 DrawRoutine = MD_DrawControl
 MenuItem SETJOY
@@ -218,7 +216,6 @@ Call = MR_ChangeControl
 Menu OP_JOYSTICKSET
 X = 50
 Y = 40
-PrevMenu = OP_CHANGECONTROLS
 HeaderPic = M_CONTRO
 DrawRoutine = MD_DrawJoystick
 MenuItem .

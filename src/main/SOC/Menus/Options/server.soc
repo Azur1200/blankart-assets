@@ -1,7 +1,6 @@
 Menu OP_SERVER
 X = 24
 Y = 30
-PrevMenu = OP_MAIN
 HeaderPic = M_SERVER
 MenuItem .
 Y = 10
@@ -62,7 +61,6 @@ Submenu = OP_ADVANCEDSERVER
 Menu OP_ADVANCEDSERVER
 X = 24
 Y = 30
-PrevMenu = OP_SERVER
 HeaderPic = M_SERVER
 MenuItem .
 Y = 10

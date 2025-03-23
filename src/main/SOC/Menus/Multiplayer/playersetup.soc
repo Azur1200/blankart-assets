@@ -1,7 +1,6 @@
 Menu MP_PLAYERSETUP
 X = 36
 Y = 14
-PrevMenu = MP_MAIN
 DrawRoutine = MD_DrawSetupMultiPlayerMenu
 QuitRoutine = MR_QuitMultiPlayerMenu
 MenuItem NAME

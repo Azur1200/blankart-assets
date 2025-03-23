@@ -1,7 +1,6 @@
 Menu OP_MAIN
 X = 60
 Y = 30
-PrevMenu = MAIN
 HeaderPic = M_OPTTTL
 MenuItem .
 Y = 10

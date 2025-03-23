@@ -1,7 +1,6 @@
 Menu SR_PANDORA
 X = 60
 Y = 40
-PrevMenu = SPAUSE
 HeaderPic = M_PANDRA
 QuitRoutine = MR_ExitPandorasBox
 MenuItem .

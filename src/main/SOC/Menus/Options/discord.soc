@@ -20,7 +20,6 @@ Y = 60
 Menu OP_DISCORD
 X = 30
 Y = 30
-PrevMenu = OP_DATA
 MenuItem .
 Y = 10
 Text = Rich Presence
@@ -49,7 +48,6 @@ Cvar = discordinvites
 Menu MISC_DISCORDREQUESTS
 X = 0
 Y = 0
-PrevMenu = MPAUSE
 DrawRoutine = MD_DrawDiscordRequests
 MenuItem .
 KeyHandler = MR_HandleDiscordRequests

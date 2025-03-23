@@ -1,7 +1,6 @@
 Menu SP_TIMEATTACK
 X = 34
 Y = 40
-PrevMenu = MAIN
 HeaderPic = M_ATTACK
 DrawRoutine = MD_DrawTimeAttackMenu
 QuitRoutine = MR_QuitTimeAttackMenu
@@ -49,7 +48,6 @@ CallNotModified = MR_ChooseTimeAttack
 Menu SP_GUESTREPLAY
 X = 34
 Y = 40
-PrevMenu = SP_TIMEATTACK
 HeaderPic = M_ATTACK
 DrawRoutine = MD_DrawTimeAttackMenu
 MenuItem STIME
@@ -81,7 +79,6 @@ SubMenu = SP_TIMEATTACK
 Menu SP_REPLAY
 X = 34
 Y = 40
-PrevMenu = SP_TIMEATTACK
 HeaderPic = M_ATTACK
 DrawRoutine = MD_DrawTimeAttackMenu
 MenuItem RPTIME
@@ -118,7 +115,6 @@ SubMenu = SP_TIMEATTACK
 Menu SP_GHOST
 X = 34
 Y = 40
-PrevMenu = SP_TIMEATTACK
 HeaderPic = M_ATTACK
 DrawRoutine = MD_DrawTimeAttackMenu
 MenuItem .
