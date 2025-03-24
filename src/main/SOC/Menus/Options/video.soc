@@ -8,25 +8,16 @@ Y = 10
 Text = Set Resolution...
 Call = MR_VideoModeMenu
 
-#if (defined (__unix__) && !defined (MSDOS)) || defined (UNIXCOMMON) || defined (HAVE_SDL)
 MenuItem .
 Y = 20
 Text = Fullscreen
 Cvar = fullscreen
-#endif
 
-#ifdef HWRENDER
 MenuItem .
 Y = 30
 Text = Renderer
 Cvar = renderer
-#else
-MenuItem .
-#Y = 30
-#Text = Renderer
-#IT_TRANSTEXT | IT_PAIR, "Software", cv_renderer
-#endif
-#
+
 MenuItem .
 Y = 50
 Text = Gamma
@@ -72,12 +63,10 @@ Y = 140
 Text = Parallel Software
 Cvar = parallelsoftware
 
-#ifdef HWRENDER
 MenuItem OPENGL
 Y = 160
 Text = OpenGL Options...
 Call = MR_OpenGLOptionsMenu
-#endif
 
 
 Menu OP_VIDEOMODE

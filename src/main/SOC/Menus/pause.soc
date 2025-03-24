@@ -33,11 +33,6 @@ Y = 24
 Text = Medal Hints...
 Call = MR_EmblemHints
 
-#MenuItem .
-#Y = 32
-#Text = Level Select...
-#Call = MR_LoadGameLevelSelect
-#
 MenuItem CONTIN
 Y = 48
 Text = Continue

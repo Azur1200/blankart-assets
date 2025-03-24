@@ -63,11 +63,6 @@ Y = 60
 Text = Camera Speed
 Cvar = cam_speed
 
-#MenuItem .
-#Y = 70
-#Text = Camera Speed
-#Cvar = cam_rotspeed
-#
 MenuItem .
 Y = 85
 Text = Third Person Camera
@@ -101,11 +96,6 @@ Y = 60
 Text = Camera Speed
 Cvar = cam2_speed
 
-#MenuItem .
-#Y = 70
-#Text = Camera Speed
-#Cvar = cam2_rotspeed
-#
 MenuItem .
 Y = 85
 Text = Third Person Camera
@@ -139,11 +129,6 @@ Y = 60
 Text = Camera Speed
 Cvar = cam3_speed
 
-#MenuItem .
-#Y = 70
-#Text = Camera Speed
-#Cvar = cam3_rotspeed
-#
 MenuItem .
 Y = 85
 Text = Third Person Camera
@@ -177,11 +162,6 @@ Y = 60
 Text = Camera Speed
 Cvar = cam4_speed
 
-#MenuItem .
-#Y = 70
-#Text = Camera Speed
-#Cvar = cam4_rotspeed
-#
 MenuItem .
 Y = 85
 Text = Third Person Camera

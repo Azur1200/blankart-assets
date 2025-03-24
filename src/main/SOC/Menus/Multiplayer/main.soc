@@ -45,13 +45,3 @@ MenuItem CONIP
 Y = 150-24
 Text = Specify IPv4 address:
 KeyHandler = MR_HandleConnectIP
-
-#MenuItem .
-#Y = 80
-#TextHeader = Player setup
-#
-#MenuItem .
-#Y = 90
-#Text = Name, character, color...
-#Call = MR_SetupMultiPlayer
-#

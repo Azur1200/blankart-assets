@@ -9,12 +9,10 @@ Call = MR_GrandPrixTemp
 
 MenuItem TA
 Y = 100
-#TextSecret = Time Attack # still waiting on menuitem names...
-Text = Time Attack
+TextSecret = Time Attack
 Call = MR_TimeAttack
 
 MenuItem IT
 Y = 108
-#TextSecret = Item Breaker
-Text = Item Breaker
+TextSecret = Item Breaker
 Call = MR_ItemBreaker

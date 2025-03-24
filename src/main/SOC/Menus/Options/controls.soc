@@ -33,7 +33,7 @@ Text = Digital turn easing
 Cvar = turnsmoothing
 
 
-Menu OP_CHANGECONTROLS #is unusable since gcs aren't exposed yet
+Menu OP_CHANGECONTROLS
 X = 20
 Y = 40
 HeaderPic = M_CONTRO
@@ -57,7 +57,7 @@ MenuItem .
 TextHeader = Gameplay Controls
 
 MenuItem .
-# space
+TextDisabled = 
 
 MenuItem .
 AlphaKey = GC_ACCELERATE
@@ -108,7 +108,7 @@ MenuItem .
 TextHeader = Miscelleanous Controls
 
 MenuItem .
-# space
+TextDisabled = 
 
 MenuItem TALK
 AlphaKey = GC_TALKKEY
@@ -169,7 +169,7 @@ MenuItem .
 TextHeader = Spectator Controls
 
 MenuItem .
-# space
+TextDisabled = 
 
 MenuItem SPECTA
 AlphaKey = GC_SPECTATE
@@ -195,7 +195,7 @@ MenuItem .
 TextHeader = Custom Lua Actions
 
 MenuItem .
-# space
+TextDisabled = 
 
 MenuItem .
 AlphaKey = GC_CUSTOM1
