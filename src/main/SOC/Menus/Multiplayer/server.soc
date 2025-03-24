@@ -34,7 +34,7 @@ TextWhite = Start
 Call = MR_StartServer
 
 
-Menu MP_OFFLINESERVER
+Menu MP_SPLITSCREEN
 X = 24
 Y = 40
 HeaderPic = M_MULTI
