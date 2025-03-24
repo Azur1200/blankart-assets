@@ -42,18 +42,28 @@ Y = 110
 Text = Data Options...
 Submenu = OP_DATA
 
+MenuItem CUSTOM
+Y = 120
+Text = Custom Options...
+Submenu = OP_CUSTOM
+
 MenuItem .
-Y = 130
+Y = 140
 Text = Tricks & Secrets (F1)
 Call = MR_Manual
 
 MenuItem KCRED
-Y = 140
+Y = 150
 Text = Play Kart Credits
 Call = MR_Credits
 
 MenuItem BCRED
-Y = 150
+Y = 160
 Text = Play BlanKart Credits
 Call = MR_BlanCredits
 
+
+Menu OP_CUSTOM
+X = 30
+Y = 20
+# nothing here, load some addons and you'll get menuitems!
