@@ -8,7 +8,7 @@ Y = 10
 Text = SFX
 Cvar = sounds
 
-MenuItem .
+MenuItem
 Y = 18
 Text = SFX Volume
 CvarSlider = soundvolume
@@ -18,57 +18,57 @@ Y = 30
 Text = Music
 Cvar = music
 
-MenuItem .
+MenuItem
 Y = 38
 Text = Music Volume
 CvarSlider = musicvolume
 
-#MenuItem .
+#MenuItem
 #Y = 50
 #Text = Restart Audio System
 #Routine = MR_RestartAudio
 #
-MenuItem .
+MenuItem
 Y = 50
 Text = Reverse L/R Channels
 Cvar = stereoreverse
 
-MenuItem .
+MenuItem
 Y = 60
 Text = Surround Sound
 Cvar = surround
 
-MenuItem .
+MenuItem
 Y = 75
 Text = Chat Notifications
 Cvar = chatnotifications
 
-MenuItem .
+MenuItem
 Y = 85
 Text = Character voices
 Cvar = kartvoices
 
-MenuItem .
+MenuItem
 Y = 95
 Text = Powerup Warning
 Cvar = kartinvinsfx
 
-MenuItem .
+MenuItem
 Y = 110
 Text = Sound Test
 KeyHandler = MR_HandleSoundTest
 
-MenuItem .
+MenuItem
 Y = 120
 Text = Music Test
 Call = MR_MusicTest
 
-MenuItem .
+MenuItem
 Y = 135
 Text = Play Music While Unfocused
 Cvar = playmusicifunfocused
 
-MenuItem .
+MenuItem
 Y = 145
 Text = Play SFX While Unfocused
 Cvar = playsoundifunfocused

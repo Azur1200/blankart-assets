@@ -20,26 +20,26 @@ Y = 60
 Menu OP_DISCORD
 X = 30
 Y = 30
-MenuItem .
+MenuItem
 Y = 10
 Text = Rich Presence
 Cvar = discordrp
 
-MenuItem .
+MenuItem
 Y = 30
 TextHeader = Rich Presence Settings
 
-MenuItem .
+MenuItem
 Y = 40
 Text = Streamer Mode
 Cvar = discordstreamer
 
-MenuItem .
+MenuItem
 Y = 60
 Text = Allow Ask To Join
 Cvar = discordasks
 
-MenuItem .
+MenuItem
 Y = 70
 Text = Allow Invites
 Cvar = discordinvites
@@ -49,5 +49,5 @@ Menu MISC_DISCORDREQUESTS
 X = 0
 Y = 0
 DrawRoutine = MD_DrawDiscordRequests
-MenuItem .
+MenuItem
 KeyHandler = MR_HandleDiscordRequests

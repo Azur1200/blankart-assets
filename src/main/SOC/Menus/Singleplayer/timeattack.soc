@@ -9,12 +9,12 @@ Y = 0
 Text = Name
 CvarString = name
 
-MenuItem .
+MenuItem
 Y = 13
 Text = Character
 Cvar = chooseskin
 
-MenuItem .
+MenuItem
 Y = 26
 Text = Color
 Cvar = color
@@ -70,7 +70,7 @@ Y = 120
 TextWhite = Delete Guest Replay
 Call = MR_SetGuestReplay
 
-MenuItem .
+MenuItem
 Y = 130
 TextWhite = Back
 SubMenu = SP_TIMEATTACK
@@ -106,7 +106,7 @@ Y = 122
 TextWhite = Replay Staff
 KeyHandler = MR_HandleStaffReplay
 
-MenuItem .
+MenuItem
 Y = 130
 TextWhite = Back
 SubMenu = SP_TIMEATTACK
@@ -117,17 +117,17 @@ X = 34
 Y = 40
 HeaderPic = M_ATTACK
 DrawRoutine = MD_DrawTimeAttackMenu
-MenuItem .
+MenuItem
 Y = 88
 Text = Best Time
 Cvar = ghost_besttime
 
-MenuItem .
+MenuItem
 Y = 96
 Text = Best Lap
 Cvar = ghost_bestlap
 
-MenuItem .
+MenuItem
 Y = 104
 Text = Last
 Cvar = ghost_last
@@ -142,7 +142,7 @@ Y = 120
 TextDisabled = Staff Attack
 Cvar = ghost_staff
 
-MenuItem .
+MenuItem
 Y = 130
 TextWhite = Back
 SubMenu = SP_TIMEATTACK

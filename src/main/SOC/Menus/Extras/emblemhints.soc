@@ -2,12 +2,12 @@ Menu SR_EMBLEMHINT
 X = 60
 Y = 150
 DrawRoutine = MD_DrawEmblemHints
-MenuItem .
+MenuItem
 Y = 10
 Text = Medal Radar
 Cvar = itemfinder
 
-MenuItem .
+MenuItem
 Y = 20
 TextWhite = Back
 SubMenu = SPAUSE

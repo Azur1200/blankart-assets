@@ -2,27 +2,27 @@ Menu OP_MAIN
 X = 60
 Y = 30
 HeaderPic = M_OPTTTL
-MenuItem .
+MenuItem
 Y = 10
 Text = Control Setup...
 Submenu = OP_CONTROLSETUP
 
-MenuItem .
+MenuItem
 Y = 30
 Text = Video Options...
 Submenu = OP_VIDEO
 
-MenuItem .
+MenuItem
 Y = 40
 Text = Sound Options...
 Submenu = OP_SOUND
 
-MenuItem .
+MenuItem
 Y = 60
 Text = HUD Options...
 Submenu = OP_HUD
 
-MenuItem .
+MenuItem
 Y = 70
 Text = Camera Options...
 Submenu = OP_CAMERA
@@ -37,7 +37,7 @@ Y = 90
 Text = Server Options...
 Submenu = OP_SERVER
 
-MenuItem .
+MenuItem
 Y = 110
 Text = Data Options...
 Submenu = OP_DATA
@@ -47,7 +47,7 @@ Y = 120
 Text = Custom Options...
 Submenu = OP_CUSTOM
 
-MenuItem .
+MenuItem
 Y = 140
 Text = Tricks & Secrets (F1)
 Call = MR_Manual

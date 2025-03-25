@@ -2,17 +2,17 @@ Menu OP_DATA
 X = 60
 Y = 30
 HeaderPic = M_DATA
-MenuItem .
+MenuItem
 Y = 10
 Text = Screenshot Options...
 Call = MR_ScreenshotOptions
 
-MenuItem .
+MenuItem
 Y = 20
 Text = Addon Options...
 Call = MR_AddonsOptions
 
-MenuItem .
+MenuItem
 Y = 30
 Text = Replay Options...
 Submenu = MISC_REPLAYOPTIONS
@@ -30,12 +30,12 @@ Menu MISC_REPLAYOPTIONS
 X = 27
 Y = 40
 HeaderPic = M_REPOPT
-MenuItem .
+MenuItem
 Y = 0
 Text = Record Replays
 Cvar = netdemo_record
 
-MenuItem .
+MenuItem
 Y = 10
 Text = Sync Check Interval
 Cvar = netdemo_syncquality
@@ -45,7 +45,7 @@ Menu OP_SCREENSHOTS
 X = 30
 Y = 30
 HeaderPic = M_SCSHOT
-MenuItem .
+MenuItem
 Y = 10
 Text = Storage Location
 Cvar = screenshot_option
@@ -55,35 +55,35 @@ Y = 20
 Text = Custom Folder
 CvarString = screenshot_folder
 
-MenuItem .
+MenuItem
 Y = 50
 TextHeader = Screenshots (F8)
 
-MenuItem .
+MenuItem
 Y = 60
 Text = Memory Level
 Cvar = png_memory_level
 
-MenuItem .
+MenuItem
 Y = 70
 Text = Compression Level
 Cvar = png_compress_level
 
-MenuItem .
+MenuItem
 Y = 80
 Text = Strategy
 Cvar = png_strategy
 
-MenuItem .
+MenuItem
 Y = 90
 Text = Window Size
 Cvar = png_window_size
 
-MenuItem .
+MenuItem
 Y = 105
 TextHeader = Movie Mode (F9)
 
-MenuItem .
+MenuItem
 Y = 115
 Text = Capture Mode
 Cvar = moviemode_mode
@@ -123,11 +123,11 @@ Menu OP_ADDONS
 X = 30
 Y = 30
 HeaderPic = M_ADDONS
-MenuItem .
+MenuItem
 Y = 0
 TextHeader = Menu
 
-MenuItem .
+MenuItem
 Y = 10
 Text = Location
 Cvar = addons_option
@@ -137,26 +137,26 @@ Y = 20
 Text = Custom Folder
 CvarString = addons_folder
 
-MenuItem .
+MenuItem
 Y = 48
 Text = Identify addons via
 Cvar = addons_md5
 
-MenuItem .
+MenuItem
 Y = 58
 Text = Show unsupported file types
 Cvar = addons_showall
 
-MenuItem .
+MenuItem
 Y = 76
 TextHeader = Search
 
-MenuItem .
+MenuItem
 Y = 86
 Text = Matching
 Cvar = addons_search_type
 
-MenuItem .
+MenuItem
 Y = 96
 Text = Case-sensitive
 Cvar = addons_search_case
@@ -166,17 +166,17 @@ Menu OP_ERASEDATA
 X = 30
 Y = 30
 HeaderPic = M_DATA
-MenuItem .
+MenuItem
 Y = 10
 Text = Erase Record Data
 Call = MR_EraseData
 
-MenuItem .
+MenuItem
 Y = 20
 Text = Erase Unlockable Data
 Call = MR_EraseData
 
-MenuItem .
+MenuItem
 Y = 40
 Text = \85Erase ALL Data
 Call = MR_EraseData
