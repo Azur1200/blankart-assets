@@ -9,12 +9,12 @@ Y = 0
 Text = Name
 CvarString = name
 
-MenuItem
+MenuItem SKIN
 Y = 13
 Text = Character
 Cvar = chooseskin
 
-MenuItem
+MenuItem COLOR
 Y = 26
 Text = Color
 Cvar = color
