@@ -1,0 +1,183 @@
+Menu OP_DATA
+X = 60
+Y = 30
+HeaderPic = M_DATA
+MenuItem
+Y = 10
+Text = Screenshot Options...
+Call = MR_ScreenshotOptions
+
+MenuItem
+Y = 20
+Text = Addon Options...
+Call = MR_AddonsOptions
+
+MenuItem
+Y = 30
+Text = Replay Options...
+Submenu = MISC_REPLAYOPTIONS
+
+MenuItem DISCOR
+TextDisabled = 
+
+MenuItem ERASE
+Y = 50
+Text = Erase Data...
+Submenu = OP_ERASEDATA
+
+
+Menu MISC_REPLAYOPTIONS
+X = 27
+Y = 40
+HeaderPic = M_REPOPT
+MenuItem
+Y = 0
+Text = Record Replays
+Cvar = netdemo_record
+
+MenuItem
+Y = 10
+Text = Sync Check Interval
+Cvar = netdemo_syncquality
+
+
+Menu OP_SCREENSHOTS
+X = 30
+Y = 30
+HeaderPic = M_SCSHOT
+MenuItem
+Y = 10
+Text = Storage Location
+Cvar = screenshot_option
+
+MenuItem FOLDER
+Y = 20
+Text = Custom Folder
+CvarString = screenshot_folder
+
+MenuItem
+Y = 50
+TextHeader = Screenshots (F8)
+
+MenuItem
+Y = 60
+Text = Memory Level
+Cvar = png_memory_level
+
+MenuItem
+Y = 70
+Text = Compression Level
+Cvar = png_compress_level
+
+MenuItem
+Y = 80
+Text = Strategy
+Cvar = png_strategy
+
+MenuItem
+Y = 90
+Text = Window Size
+Cvar = png_window_size
+
+MenuItem
+Y = 105
+TextHeader = Movie Mode (F9)
+
+MenuItem
+Y = 115
+Text = Capture Mode
+Cvar = moviemode_mode
+
+MenuItem GIFOPT
+Y = 125
+Text = Region Optimizing
+Cvar = gif_optimize
+
+MenuItem GIFDWN
+Y = 135
+Text = Downscaling
+Cvar = gif_downscale
+
+MenuItem APNMEM
+Y = 125
+Text = Memory Level
+Cvar = apng_memory_level
+
+MenuItem APNCMP
+Y = 135
+Text = Compression Level
+Cvar = apng_compress_level
+
+MenuItem APNSTR
+Y = 145
+Text = Strategy
+Cvar = apng_strategy
+
+MenuItem APNWIN
+Y = 155
+Text = Window Size
+Cvar = apng_window_size
+
+
+Menu OP_ADDONS
+X = 30
+Y = 30
+HeaderPic = M_ADDONS
+MenuItem
+Y = 0
+TextHeader = Menu
+
+MenuItem
+Y = 10
+Text = Location
+Cvar = addons_option
+
+MenuItem FOLDER
+Y = 20
+Text = Custom Folder
+CvarString = addons_folder
+
+MenuItem
+Y = 48
+Text = Identify addons via
+Cvar = addons_md5
+
+MenuItem
+Y = 58
+Text = Show unsupported file types
+Cvar = addons_showall
+
+MenuItem
+Y = 76
+TextHeader = Search
+
+MenuItem
+Y = 86
+Text = Matching
+Cvar = addons_search_type
+
+MenuItem
+Y = 96
+Text = Case-sensitive
+Cvar = addons_search_case
+
+
+Menu OP_ERASEDATA
+X = 30
+Y = 30
+HeaderPic = M_DATA
+MenuItem
+Y = 10
+Text = Erase Record Data
+Call = MR_EraseData
+
+MenuItem
+Y = 20
+Text = Erase Unlockable Data
+Call = MR_EraseData
+
+MenuItem
+Y = 40
+Text = \85Erase ALL Data
+Call = MR_EraseData
+

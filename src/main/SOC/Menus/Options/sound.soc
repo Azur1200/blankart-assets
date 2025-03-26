@@ -1,0 +1,75 @@
+Menu OP_SOUND
+X = 30
+Y = 30
+HeaderPic = M_SOUND
+DrawRoutine = MD_DrawSkyRoom
+MenuItem SNDENA
+Y = 10
+Text = SFX
+Cvar = sounds
+
+MenuItem
+Y = 18
+Text = SFX Volume
+CvarSlider = soundvolume
+
+MenuItem MUSENA
+Y = 30
+Text = Music
+Cvar = music
+
+MenuItem
+Y = 38
+Text = Music Volume
+CvarSlider = musicvolume
+
+#MenuItem
+#Y = 50
+#Text = Restart Audio System
+#Routine = MR_RestartAudio
+#
+MenuItem
+Y = 50
+Text = Reverse L/R Channels
+Cvar = stereoreverse
+
+MenuItem
+Y = 60
+Text = Surround Sound
+Cvar = surround
+
+MenuItem
+Y = 75
+Text = Chat Notifications
+Cvar = chatnotifications
+
+MenuItem
+Y = 85
+Text = Character voices
+Cvar = kartvoices
+
+MenuItem
+Y = 95
+Text = Powerup Warning
+Cvar = kartinvinsfx
+
+MenuItem
+Y = 110
+Text = Sound Test
+KeyHandler = MR_HandleSoundTest
+
+MenuItem
+Y = 120
+Text = Music Test
+Call = MR_MusicTest
+
+MenuItem
+Y = 135
+Text = Play Music While Unfocused
+Cvar = playmusicifunfocused
+
+MenuItem
+Y = 145
+Text = Play SFX While Unfocused
+Cvar = playsoundifunfocused
+

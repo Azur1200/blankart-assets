@@ -1,0 +1,139 @@
+Menu OP_HUD
+X = 30
+Y = 30
+HeaderPic = M_HUD
+DrawRoutine = MD_DrawHUDOptions
+MenuItem
+Y = 20
+Text = Show HUD (F3)
+Cvar = showhud
+
+MenuItem
+Y = 30
+Text = HUD Visibility
+CvarSlider = translucenthud
+
+MenuItem
+Y = 45
+Text = Online HUD options...
+Submenu = OP_CHAT
+
+MenuItem
+Y = 55
+Text = Game HUD options...
+Submenu = OP_GAMEHUD
+
+MenuItem
+Y = 65
+Text = Background Glass
+Cvar = con_backcolor
+
+MenuItem
+Y = 80
+Text = Menu Highlights
+Cvar = menuhighlight
+# highlight info - (GOOD HIGHLIGHT, WARNING HIGHLIGHT) - 105 (see M_DrawHUDOptions)
+
+MenuItem
+Y = 105
+Text = Console Text Size
+Cvar = con_textsize
+
+MenuItem
+Y = 115
+Text = Show "FOCUS LOST"
+Cvar = showfocuslost
+
+
+# Ok it's still called chatoptions but we'll put ping display in here to be clean
+Menu OP_CHAT
+X = 30
+Y = 30
+HeaderPic = M_HUD
+# will ANYONE who doesn't know how to use the console want to touch this one?
+# nonetheless...
+MenuItem
+Y = 10
+Text = Chat Mode
+Cvar = chatmode
+
+MenuItem
+Y = 25
+Text = Chat Box Width
+CvarSlider = chatwidth
+
+MenuItem
+Y = 35
+Text = Chat Box Height
+CvarSlider = chatheight
+
+MenuItem
+Y = 50
+Text = Chat Background Tint
+Cvar = chatbacktint
+
+MenuItem
+Y = 60
+Text = Message Fadeout Time
+Cvar = chattime
+
+MenuItem
+Y = 70
+Text = Spam Protection
+Cvar = chatspamprotection
+
+# shows ping next to framerate if we want to.
+MenuItem
+Y = 90
+Text = Local ping display
+Cvar = showping
+
+
+Menu OP_GAMEHUD
+X = 30
+Y = 30
+HeaderPic = M_HUD
+MenuItem
+Y = 10
+Text = Minimap Visibility
+CvarSlider = kartminimap
+
+MenuItem
+Y = 25
+Text = Small Minimap Players
+Cvar = smallminimapplayers
+
+MenuItem
+Y = 35
+Text = Minimap Nametags
+Cvar = showminimapnames
+
+MenuItem
+Y = 45
+Text = Minimap Angle
+Cvar = showminimapangle
+
+MenuItem
+Y = 55
+Text = Nametags
+Cvar = seenames
+
+MenuItem
+Y = 65
+Text = Speedometer Display
+Cvar = kartdisplayspeed
+
+MenuItem
+Y = 75
+Text = Speedometer Style
+Cvar = newspeedometer
+
+MenuItem
+Y = 85
+Text = Input Display
+Cvar = showinput
+
+MenuItem
+Y = 95
+Text = Show "CHECK"
+Cvar = kartcheck

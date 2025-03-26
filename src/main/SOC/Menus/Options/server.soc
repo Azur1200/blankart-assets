@@ -1,0 +1,119 @@
+Menu OP_SERVER
+X = 24
+Y = 30
+HeaderPic = M_SERVER
+MenuItem
+Y = 10
+Text = Server Name
+CvarString = servername
+
+MenuItem
+Y = 40
+Text = Intermission Timer
+Cvar = inttime
+
+MenuItem
+Y = 50
+Text = Map Progression
+Cvar = advancemap
+
+MenuItem
+Y = 60
+Text = Voting Timer
+Cvar = votetime
+
+MenuItem
+Y = 70
+Text = Voting Rule Changes
+Cvar = kartvoterulechanges
+
+MenuItem
+Y = 90
+Text = Max. Player Count
+Cvar = maxplayers
+
+MenuItem
+Y = 100
+Text = Allow Players to Join
+Cvar = allowjoin
+
+MenuItem
+Y = 110
+Text = Allow Addon Downloading
+Cvar = downloading
+
+MenuItem
+Y = 120
+Text = Pause Permission
+Cvar = pausepermission
+
+MenuItem
+Y = 130
+Text = Mute All Chat
+Cvar = mute
+
+MenuItem
+Y = 150
+Text = Advanced Options...
+Submenu = OP_ADVANCEDSERVER
+
+
+Menu OP_ADVANCEDSERVER
+X = 24
+Y = 30
+HeaderPic = M_SERVER
+MenuItem
+Y = 10
+Text = Server Browser Address
+CvarString = masterserver
+
+MenuItem
+Y = 40
+Text = Attempts to resynchronise
+Cvar = resynchattempts
+
+MenuItem
+Y = 50
+Text = Ping limit (ms)
+Cvar = maxdelay
+
+MenuItem
+Y = 60
+Text = Ping timeout (s)
+Cvar = maxdelaytimeout
+
+MenuItem
+Y = 70
+Text = Connection timeout (tics)
+Cvar = nettimeout
+
+MenuItem
+Y = 80
+Text = Join timeout (tics)
+Cvar = jointimeout
+
+MenuItem
+Y = 100
+Text = Max. file transfer send (KB)
+Cvar = maxsend
+
+MenuItem
+Y = 110
+Text = File transfer packet rate
+Cvar = downloadspeed
+
+MenuItem
+Y = 130
+Text = Log join addresses
+Cvar = showjoinaddress
+
+MenuItem
+Y = 140
+Text = Log resyncs
+Cvar = blamecfail
+
+MenuItem
+Y = 150
+Text = Log file transfers
+Cvar = noticedownload
+

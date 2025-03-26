@@ -1,0 +1,248 @@
+Menu OP_GAME
+X = 30
+Y = 30
+HeaderPic = M_GAME
+MenuItem
+Y = 10
+Text = Random Item Toggles...
+Submenu = OP_MONITORTOGGLE
+
+MenuItem
+Y = 30
+Text = BlanKart Gameplay...
+Submenu = OP_BLANKARTGAME
+
+MenuItem
+Y = 40
+Text = Race Game Speed
+Cvar = kartspeed
+
+MenuItem
+Y = 50
+Text = Battle Game Speed
+Cvar = kartbattlespeed
+
+MenuItem
+Y = 60
+Text = Frantic Items
+Cvar = kartfrantic
+
+MenuItem ENCORE
+Y = 70
+TextSecret = Encore Mode
+Cvar = kartencore
+
+MenuItem
+Y = 90
+Text = Number of Laps
+Cvar = numlaps
+
+MenuItem
+Y = 100
+Text = Exit Countdown Timer
+Cvar = countdowntime
+
+MenuItem
+Y = 120
+Text = Time Limit
+Cvar = timelimit
+
+MenuItem
+Y = 130
+Text = Starting Bumpers
+Cvar = kartbumpers
+
+MenuItem
+Y = 140
+Text = Karma Comeback
+Cvar = kartcomeback
+
+MenuItem
+Y = 160
+Text = Track Power Levels
+Cvar = kartusepwrlv
+
+
+Menu OP_BLANKARTGAME
+X = 30
+Y = 30
+HeaderPic = M_GAME
+MenuItem
+Y = 10
+Text = Rings
+Cvar = kartrings
+
+MenuItem
+Y = 20
+Text = Item Breaker
+Cvar = kartitembreaker
+
+MenuItem
+Y = 30
+Text = Purple Drift
+Cvar = kartpurpledrift
+
+MenuItem
+Y = 40
+Text = Bump Spark
+Cvar = kartbumpspark
+
+MenuItem
+Y = 50
+Text = Bump Spring
+Cvar = kartbumpspring
+
+
+Menu OP_MONITORTOGGLE
+X = 30
+Y = 30
+HeaderPic = M_GAME
+DrawRoutine = MD_DrawMonitorToggles
+# Mostly handled by the drawing function.
+# Instead of using this for dumb monitors, lets use the new item bools we have :V
+MenuItem
+AlphaKey = KITEM_SNEAKER
+Text = Sneakers
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KRITEM_TRIPLESNEAKER
+Text = Sneakers x3
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_ROCKETSNEAKER
+Text = Rocket Sneakers
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = 0
+Text = Toggle All
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_BANANA
+Text = Bananas
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KRITEM_TRIPLEBANANA
+Text = Bananas x3
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KRITEM_TENFOLDBANANA
+Text = Bananas x10
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_EGGMAN
+Text = Eggman Monitors
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_ORBINAUT
+Text = Orbinauts
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KRITEM_TRIPLEORBINAUT
+Text = Orbinauts x3
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KRITEM_QUADORBINAUT
+Text = Orbinauts x4
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_MINE
+Text = Mines
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_LANDMINE
+Text = Land Mines
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_JAWZ
+Text = Jawz
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KRITEM_DUALJAWZ
+Text = Jawz x2
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_BALLHOG
+Text = Ballhogs
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_SPB
+Text = Self-Propelled Bombs
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_INVINCIBILITY
+Text = Invinciblity
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_GROW
+Text = Grow
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_SHRINK
+Text = Shrink
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_THUNDERSHIELD
+Text = Thunder Shields
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_BUBBLESHIELD
+Text = Bubble Shields
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_FLAMESHIELD
+Text = Flame Shields
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_HYUDORO
+Text = Hyudoros
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_POGOSPRING
+Text = Pogo Springs
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_SUPERRING
+Text = Super Rings
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_KITCHENSINK
+Text = Kitchen Sinks
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
+AlphaKey = KITEM_DROPTARGET
+Text = Drop Target
+KeyHandler = MR_HandleMonitorToggles
+
+#ifdef ITEMTOGGLEBOTTOMRIGHT
+#MenuItem
+#AlphaKey = 255
+#Text = ---
+#KeyHandler = MR_HandleMonitorToggles
+#endif

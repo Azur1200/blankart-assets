@@ -1,0 +1,36 @@
+Menu MISC_REPLAYHUT
+X = 30
+Y = 80
+DrawRoutine = MD_DrawReplayHut
+QuitRoutine = MR_QuitReplayHut
+# Dummy menuitem for the replay list
+MenuItem
+KeyHandler = MR_HandleReplayHutList
+
+# Dummy for handling wrapping to the top of the menu..
+MenuItem
+
+
+Menu MISC_REPLAYSTART
+X = 30
+Y = 90
+DrawRoutine = MD_DrawReplayStartMenu
+MenuItem LOADWA
+Y = 0
+Text = Load Addons and Watch
+Call = MR_HutStartReplay
+
+MenuItem NOLOAD
+Y = 10
+Text = Watch Without Addons
+Call = MR_HutStartReplay
+
+MenuItem WATCH
+Y = 10
+Text = Watch Replay
+Call = MR_HutStartReplay
+
+MenuItem
+Y = 30
+Text = Back
+SubMenu = MISC_REPLAYHUT

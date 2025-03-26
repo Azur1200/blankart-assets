@@ -1,0 +1,69 @@
+Menu OP_MAIN
+X = 60
+Y = 30
+HeaderPic = M_OPTTTL
+MenuItem
+Y = 10
+Text = Control Setup...
+Submenu = OP_CONTROLSETUP
+
+MenuItem
+Y = 30
+Text = Video Options...
+Submenu = OP_VIDEO
+
+MenuItem
+Y = 40
+Text = Sound Options...
+Submenu = OP_SOUND
+
+MenuItem
+Y = 60
+Text = HUD Options...
+Submenu = OP_HUD
+
+MenuItem
+Y = 70
+Text = Camera Options...
+Submenu = OP_CAMERA
+
+MenuItem GAMEPL
+Y = 80
+Text = Gameplay Options...
+Submenu = OP_GAME
+
+MenuItem SERVER
+Y = 90
+Text = Server Options...
+Submenu = OP_SERVER
+
+MenuItem
+Y = 110
+Text = Data Options...
+Submenu = OP_DATA
+
+MenuItem CUSTOM
+Y = 120
+Text = Custom Options...
+Submenu = OP_CUSTOM
+
+MenuItem
+Y = 140
+Text = Tricks & Secrets (F1)
+Call = MR_Manual
+
+MenuItem KCRED
+Y = 150
+Text = Play Kart Credits
+Call = MR_Credits
+
+MenuItem BCRED
+Y = 160
+Text = Play BlanKart Credits
+Call = MR_BlanCredits
+
+
+Menu OP_CUSTOM
+X = 30
+Y = 20
+# nothing here, load some addons and you'll get menuitems!

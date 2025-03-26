@@ -1,0 +1,160 @@
+Menu MAPAUSE
+X = 40
+Y = 72
+DrawRoutine = MD_DrawPauseMenu
+MenuItem CONTIN
+Y = 48
+Text = Continue
+Call = MR_SelectableClearMenus
+
+MenuItem
+Y = 56
+Text = Retry
+Call = MR_ModeAttackRetry
+
+MenuItem
+Y = 64
+Text = Abort
+Call = MR_ModeAttackEndGame
+
+
+Menu SPAUSE
+X = 40
+Y = 72
+DrawRoutine = MD_DrawPauseMenu
+# Pandora's Box will be shifted up if both options are available
+MenuItem PANDOR
+Y = 16
+Text = Pandora's Box...
+Call = MR_PandorasBox
+
+MenuItem EMBLEM
+Y = 24
+Text = Medal Hints...
+Call = MR_EmblemHints
+
+MenuItem CONTIN
+Y = 48
+Text = Continue
+Call = MR_SelectableClearMenus
+
+MenuItem RETRY
+Y = 56
+Text = Retry
+Call = MR_Retry
+
+MenuItem
+Y = 64
+Text = Options
+Call = MR_Options
+
+MenuItem
+Y = 80
+Text = Return to Title
+Call = MR_EndGame
+
+MenuItem
+Y = 88
+Text = Quit Game
+Call = MR_QuitSRB2
+
+
+Menu MPAUSE
+X = 40
+Y = 72
+DrawRoutine = MD_DrawPauseMenu
+MenuItem ADDONS
+Y = 8
+Text = Addons...
+Call = MR_Addons
+
+MenuItem SCRMBL
+Y = 16
+Text = Scramble Teams...
+SubMenu = SCRAMBLETEAM
+
+MenuItem MAPCHG
+Y = 24
+Text = Switch Map...
+Call = MR_MapChange
+
+MenuItem DISCRQ
+TextDisabled = 
+
+MenuItem CONTIN
+Y = 40
+Text = Continue
+Call = MR_SelectableClearMenus
+
+# splitscreen
+MenuItem SETUP1
+Y = 48
+Text = P1 Setup...
+Call = MR_SetupMultiPlayer
+
+# splitscreen
+MenuItem SETUP2
+Y = 56
+Text = P2 Setup...
+Call = MR_SetupMultiPlayer2
+
+# splitscreen
+MenuItem SETUP3
+Y = 64
+Text = P3 Setup...
+Call = MR_SetupMultiPlayer3
+
+# splitscreen
+MenuItem SETUP4
+Y = 72
+Text = P4 Setup...
+Call = MR_SetupMultiPlayer4
+
+# alone
+MenuItem SPECTA
+Y = 48
+Text = Spectate
+Call = MR_ConfirmSpectate
+
+# alone
+MenuItem ENTER
+Y = 48
+Text = Enter Game
+Call = MR_ConfirmEnterGame
+
+# alone
+MenuItem CANCJO
+Y = 48
+Text = Cancel Join
+Call = MR_ConfirmSpectate
+
+MenuItem TEAMCH
+Y = 48
+Text = Switch Team...
+SubMenu = CHANGETEAM
+
+MenuItem SPECCH
+Y = 48
+Text = Enter/Spectate...
+SubMenu = CHANGESPECTATE
+
+# alone
+MenuItem PSETUP
+Y = 56
+Text = Player Setup...
+Call = MR_SetupMultiPlayer
+
+MenuItem OPTION
+Y = 64
+Text = Options
+Call = MR_Options
+
+MenuItem TITLE
+Y = 80
+Text = Return to Title
+Call = MR_EndGame
+
+MenuItem QUIT
+Y = 88
+Text = Quit Game
+Call = MR_QuitSRB2
