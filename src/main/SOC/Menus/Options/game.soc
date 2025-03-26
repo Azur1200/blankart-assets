@@ -92,6 +92,21 @@ Y = 50
 Text = Bump Spring
 Cvar = kartbumpspring
 
+MenuItem
+Y = 60
+Text = Boost Stacking
+Cvar = kartstacking
+
+MenuItem
+Y = 70
+Text = Boost Chaining
+Cvar = kartchaining
+
+MenuItem
+Y = 80
+Text = Chain Offroad
+Cvar = kartchaining
+
 
 Menu OP_MONITORTOGGLE
 X = 30

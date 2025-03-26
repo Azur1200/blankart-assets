@@ -140,5 +140,5 @@ Cvar = vhspause
 
 MenuItem
 Y = 20
-Text = Player Slope Tilt
+Text = Sprite Slope Tilt
 Cvar = spritesloperoll
