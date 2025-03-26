@@ -131,6 +131,11 @@ Text2 = Change Viewpoint
 Call = MR_ChangeControl
 
 MenuItem
+AlphaKey = GC_RESPAWN
+Text2 = Respawn
+Call = MR_ChangeControl
+
+MenuItem
 AlphaKey = GC_CAMRESET
 Text2 = Reset Camera
 Call = MR_ChangeControl

@@ -74,16 +74,21 @@ Cvar = kartrings
 
 MenuItem
 Y = 20
+Text = Item Breaker
+Cvar = kartitembreaker
+
+MenuItem
+Y = 30
 Text = Purple Drift
 Cvar = kartpurpledrift
 
 MenuItem
-Y = 30
+Y = 40
 Text = Bump Spark
 Cvar = kartbumpspark
 
 MenuItem
-Y = 40
+Y = 50
 Text = Bump Spring
 Cvar = kartbumpspring
 
