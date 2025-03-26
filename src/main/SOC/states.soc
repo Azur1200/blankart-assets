@@ -22159,6 +22159,11 @@ Duration = -1
 Var1 = 1
 Var2 = 1
 
+State S_BOOSTSTACK
+SpriteName = SPR_BSSS
+SpriteFrame = FF_PAPERSPRITE|FF_TRANS50
+Duration = 2
+
 State S_WAYPOINTORB
 SpriteName = SPR_WAYP
 Duration = 1
