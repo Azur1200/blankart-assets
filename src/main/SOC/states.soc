@@ -16766,6 +16766,354 @@ Duration = -1
 Var1 = 31
 Var2 = 1
 
+# SRB1 Badniks
+State S_SRB1_CRAWLA1
+SpriteName = SPR_SRBA
+Duration = 5
+Action = A_Look
+Next = S_SRB1_CRAWLA1
+
+State S_SRB1_CRAWLA2
+SpriteName = SPR_SRBA
+Duration = 3
+Action = A_Chase
+Next = S_SRB1_CRAWLA3
+
+State S_SRB1_CRAWLA3
+SpriteName = SPR_SRBA
+SpriteFrame = 1
+Duration = 3
+Action = A_Chase
+Next = S_SRB1_CRAWLA4
+
+State S_SRB1_CRAWLA4
+SpriteName = SPR_SRBA
+SpriteFrame = 2
+Duration = 3
+Action = A_Chase
+Next = S_SRB1_CRAWLA2
+
+State S_SRB1_BAT1
+SpriteName = SPR_SRBB
+Duration = 2
+Action = A_Look
+Next = S_SRB1_BAT2
+
+State S_SRB1_BAT2
+SpriteName = SPR_SRBB
+SpriteFrame = 1
+Duration = 2
+Action = A_Look
+Next = S_SRB1_BAT1
+
+State S_SRB1_BAT3
+SpriteName = SPR_SRBB
+Duration = 2
+Action = A_BuzzFly
+Next = S_SRB1_BAT4
+
+State S_SRB1_BAT4
+SpriteName = SPR_SRBB
+SpriteFrame = 1
+Duration = 2
+Action = A_BuzzFly
+Next = S_SRB1_BAT3
+
+State S_SRB1_ROBOFISH1
+SpriteName = SPR_SRBC
+Duration = 2
+Action = A_Look
+Next = S_SRB1_ROBOFISH1
+
+State S_SRB1_ROBOFISH2
+SpriteName = SPR_SRBC
+SpriteFrame = 1
+Duration = 2
+Action = A_BuzzFly
+Next = S_SRB1_ROBOFISH3
+
+State S_SRB1_ROBOFISH3
+SpriteName = SPR_SRBC
+Duration = 2
+Action = A_BuzzFly
+Next = S_SRB1_ROBOFISH2
+
+State S_SRB1_VOLCANOGUY1
+SpriteName = SPR_SRBD
+Duration = 2
+Action = A_Look
+Next = S_SRB1_VOLCANOGUY1
+
+State S_SRB1_VOLCANOGUY2
+SpriteName = SPR_SRBD
+Duration = 2
+Action = A_BuzzFly
+Next = S_SRB1_VOLCANOGUY2
+
+State S_SRB1_HOPPY1
+SpriteName = SPR_SRBE
+Duration = 2
+Action = A_BunnyHop
+Var1 = 7
+Var2 = 2
+Next = S_SRB1_HOPPY2
+
+State S_SRB1_HOPPY2
+SpriteName = SPR_SRBE
+SpriteFrame = 1
+Duration = 2
+Action = A_BunnyHop
+Var1 = 7
+Var2 = -2
+Next = S_SRB1_HOPPY1
+
+State S_SRB1_HOPPYWATER1
+SpriteName = SPR_SRBE
+Duration = 2
+Action = A_BunnyHop
+Var1 = 4
+Var2 = 2
+Next = S_SRB1_HOPPYWATER2
+
+State S_SRB1_HOPPYWATER2
+SpriteName = SPR_SRBE
+SpriteFrame = 1
+Duration = 2
+Action = A_BunnyHop
+Var1 = 4
+Var2 = -2
+Next = S_SRB1_HOPPYWATER1
+
+State S_SRB1_HOPPYSKYLAB1
+SpriteName = SPR_SRBF
+Duration = 2
+Action = A_BunnyHop
+Var1 = 7
+Next = S_SRB1_HOPPYSKYLAB1
+
+State S_SRB1_MMZFLYING1
+SpriteName = SPR_SRBG
+Duration = 16
+Action = A_MoveAbsolute
+Var2 = 5
+Next = S_SRB1_MMZFLYING2
+
+State S_SRB1_MMZFLYING2
+SpriteName = SPR_SRBG
+Duration = 16
+Action = A_MoveAbsolute
+Var1 = 180
+Var2 = 5
+Next = S_SRB1_MMZFLYING3
+
+State S_SRB1_MMZFLYING3
+SpriteName = SPR_SRBG
+Duration = 1
+Action = A_MoveAbsolute
+Var2 = 5
+Next = S_SRB1_MMZFLYING4
+
+State S_SRB1_MMZFLYING4
+SpriteName = SPR_SRBG
+Duration = 7
+Action = A_MoveAbsolute
+Var2 = 5
+Next = S_SRB1_MMZFLYING5
+
+State S_SRB1_MMZFLYING5
+SpriteName = SPR_SRBG
+Duration = 8
+Action = A_MoveAbsolute
+Var1 = 180
+Var2 = 5
+Next = S_SRB1_MMZFLYING1
+
+State S_SRB1_UFO1
+SpriteName = SPR_SRBH
+Duration = 16
+Action = A_MoveAbsolute
+Var1 = 180
+Var2 = 5
+Next = S_SRB1_UFO2
+
+State S_SRB1_UFO2
+SpriteName = SPR_SRBH
+Duration = 16
+Action = A_MoveAbsolute
+Var2 = 5
+Next = S_SRB1_UFO1
+
+State S_SRB1_GRAYBOT1
+SpriteName = SPR_SRBI
+Duration = 4
+Action = A_MoveAbsolute
+Var2 = 7
+Next = S_SRB1_GRAYBOT2
+
+State S_SRB1_GRAYBOT2
+SpriteName = SPR_SRBI
+SpriteFrame = 1
+Duration = 4
+Action = A_MoveAbsolute
+Var2 = 7
+Next = S_SRB1_GRAYBOT3
+
+State S_SRB1_GRAYBOT3
+SpriteName = SPR_SRBI
+Duration = 4
+Action = A_MoveAbsolute
+Var2 = 7
+Next = S_SRB1_GRAYBOT4
+
+State S_SRB1_GRAYBOT4
+SpriteName = SPR_SRBI
+SpriteFrame = 1
+Duration = 4
+Action = A_MoveAbsolute
+Var1 = 180
+Var2 = 7
+Next = S_SRB1_GRAYBOT5
+
+State S_SRB1_GRAYBOT5
+SpriteName = SPR_SRBI
+Duration = 4
+Action = A_MoveAbsolute
+Var1 = 180
+Var2 = 7
+Next = S_SRB1_GRAYBOT6
+
+State S_SRB1_GRAYBOT6
+SpriteName = SPR_SRBI
+SpriteFrame = 1
+Duration = 4
+Action = A_MoveAbsolute
+Var1 = 180
+Var2 = 7
+Next = S_SRB1_GRAYBOT1
+
+State S_SRB1_ROBOTOPOLIS1
+SpriteName = SPR_SRBJ
+Duration = 8
+Action = A_MoveAbsolute
+Var2 = 5
+Next = S_SRB1_ROBOTOPOLIS2
+
+State S_SRB1_ROBOTOPOLIS2
+SpriteName = SPR_SRBJ
+SpriteFrame = 1
+Duration = 8
+Action = A_MoveAbsolute
+Var2 = -5
+Next = S_SRB1_ROBOTOPOLIS1
+
+State S_SRB1_RBZBUZZ1
+SpriteName = SPR_SRBK
+Duration = 8
+Action = A_MoveAbsolute
+Var2 = 5
+Next = S_SRB1_RBZBUZZ2
+
+State S_SRB1_RBZBUZZ2
+SpriteName = SPR_SRBK
+SpriteFrame = 1
+Duration = 8
+Action = A_MoveAbsolute
+Var2 = -5
+Next = S_SRB1_RBZBUZZ1
+
+State S_SRB1_RBZSPIKES1
+SpriteName = SPR_SRBL
+Duration = 35
+Action = A_ZThrust
+Var1 = 4
+Var2 = FRACUNIT+1
+Next = S_SRB1_RBZSPIKES2
+
+State S_SRB1_RBZSPIKES2
+SpriteName = SPR_SRBL
+Duration = 35
+Action = A_ZThrust
+Var1 = -4
+Var2 = FRACUNIT+1
+Next = S_SRB1_RBZSPIKES1
+
+State S_SRB1_METALSONIC1
+SpriteName = SPR_SRBM
+Duration = 4
+Next = S_SRB1_METALSONIC2
+
+State S_SRB1_METALSONIC2
+SpriteName = SPR_SRBM
+SpriteFrame = 1
+Duration = 4
+Next = S_SRB1_METALSONIC3
+
+State S_SRB1_METALSONIC3
+SpriteName = SPR_SRBM
+SpriteFrame = 2
+Duration = 4
+Next = S_SRB1_METALSONIC1
+
+State S_SRB1_GOLDBOT1
+SpriteName = SPR_SRBN
+Duration = 2
+Action = A_MoveAbsolute
+Var2 = 7
+Next = S_SRB1_GOLDBOT2
+
+State S_SRB1_GOLDBOT2
+SpriteName = SPR_SRBN
+SpriteFrame = 1
+Duration = 2
+Action = A_MoveAbsolute
+Var2 = 7
+Next = S_SRB1_GOLDBOT3
+
+State S_SRB1_GOLDBOT3
+SpriteName = SPR_SRBN
+Duration = 2
+Action = A_MoveAbsolute
+Var2 = 7
+Next = S_SRB1_GOLDBOT4
+
+State S_SRB1_GOLDBOT4
+SpriteName = SPR_SRBN
+SpriteFrame = 1
+Duration = 2
+Action = A_MoveAbsolute
+Var1 = 180
+Var2 = 7
+Next = S_SRB1_GOLDBOT5
+
+State S_SRB1_GOLDBOT5
+SpriteName = SPR_SRBN
+Duration = 2
+Action = A_MoveAbsolute
+Var1 = 180
+Var2 = 7
+Next = S_SRB1_GOLDBOT6
+
+State S_SRB1_GOLDBOT6
+SpriteName = SPR_SRBN
+SpriteFrame = 1
+Duration = 2
+Action = A_MoveAbsolute
+Var1 = 180
+Var2 = 7
+Next = S_SRB1_GOLDBOT1
+
+State S_SRB1_GENREX1
+SpriteName = SPR_SRBO
+Duration = 2
+Action = A_Look
+Next = S_SRB1_GENREX1
+
+State S_SRB1_GENREX2
+SpriteName = SPR_SRBO
+Duration = 2
+Action = A_BuzzFly
+Next = S_SRB1_GENREX2
+
 #{ Random Item Box
 State S_RANDOMITEM1
 SpriteName = SPR_RNDM

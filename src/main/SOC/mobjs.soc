@@ -7872,6 +7872,244 @@ Mass = 100
 ActiveSound = sfx_crumbl
 Flags = MF_NOBLOCKMAP|MF_NOCLIPTHING|MF_RUNSPAWNFUNC|MF_NOCLIPHEIGHT|MF_SCENERY
 
+# SRB1 Badniks
+Mobj MT_SRB1_CRAWLA
+MapThingNum = 4000
+SpawnState = S_SRB1_CRAWLA1
+SpawnHealth = 1
+SeeState = S_SRB1_CRAWLA2
+ReactionTime = 32
+PainChance = 200
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = 3
+Radius = 20*FRACUNIT
+Height = 40*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY
+
+Mobj MT_SRB1_BAT
+MapThingNum = 4001
+SpawnState = S_SRB1_BAT1
+SpawnHealth = 1
+SeeState = S_SRB1_BAT3
+ReactionTime = 2
+PainChance = 3072
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = 4*FRACUNIT
+Radius = 17*FRACUNIT
+Height = 40*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY|MF_NOGRAVITY|MF_SLIDEME
+
+Mobj MT_SRB1_ROBOFISH
+MapThingNum = 4002
+SpawnState = S_SRB1_ROBOFISH1
+SpawnHealth = 1
+SeeState = S_SRB1_ROBOFISH2
+ReactionTime = 2
+PainChance = 3072
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = 4*FRACUNIT
+Radius = 22*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY|MF_NOGRAVITY|MF_SLIDEME
+
+Mobj MT_SRB1_VOLCANOGUY
+MapThingNum = 4003
+SpawnState = S_SRB1_VOLCANOGUY1
+SpawnHealth = 1
+SeeState = S_SRB1_VOLCANOGUY2
+ReactionTime = 2
+PainChance = 3072
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = 4*FRACUNIT
+Radius = 20*FRACUNIT
+Height = 40*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY|MF_NOGRAVITY|MF_SLIDEME
+
+Mobj MT_SRB1_HOPPY
+MapThingNum = 4004
+SpawnState = S_SRB1_HOPPY1
+SpawnHealth = 1
+SeeState = S_SRB1_HOPPY1
+ReactionTime = 2
+PainChance = 3072
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = FRACUNIT
+Radius = 20*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY
+
+Mobj MT_SRB1_HOPPYWATER
+MapThingNum = 4005
+SpawnState = S_SRB1_HOPPYWATER1
+SpawnHealth = 1
+SeeState = S_SRB1_HOPPYWATER1
+ReactionTime = 2
+PainChance = 3072
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = FRACUNIT
+Radius = 20*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY
+
+Mobj MT_SRB1_HOPPYSKYLAB
+MapThingNum = 4006
+SpawnState = S_SRB1_HOPPYSKYLAB1
+SpawnHealth = 1
+SeeState = S_SRB1_HOPPYSKYLAB1
+ReactionTime = 2
+PainChance = 3072
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = FRACUNIT
+Radius = 10*FRACUNIT
+Height = 34*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY
+
+Mobj MT_SRB1_MMZFLYING
+MapThingNum = 4007
+SpawnState = S_SRB1_MMZFLYING1
+SpawnHealth = 1
+SeeState = S_SRB1_MMZFLYING1
+ReactionTime = 32
+PainChance = 200
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = FRACUNIT
+Radius = 24*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY|MF_NOGRAVITY|MF_FLOAT
+
+Mobj MT_SRB1_UFO
+MapThingNum = 4008
+SpawnState = S_SRB1_UFO1
+SpawnHealth = 1
+SeeState = S_SRB1_UFO1
+ReactionTime = 32
+PainChance = 200
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = 3
+Radius = 24*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY|MF_NOGRAVITY|MF_FLOAT|MF_SPAWNCEILING
+
+Mobj MT_SRB1_GRAYBOT
+MapThingNum = 4009
+SpawnState = S_SRB1_GRAYBOT1
+SpawnHealth = 1
+SeeState = S_SRB1_GRAYBOT1
+ReactionTime = 32
+PainChance = 200
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = 3
+Radius = 21*FRACUNIT
+Height = 69*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY|MF_NOGRAVITY|MF_FLOAT
+
+Mobj MT_SRB1_ROBOTOPOLIS
+MapThingNum = 4010
+SpawnState = S_SRB1_ROBOTOPOLIS1
+SpawnHealth = 1
+SeeState = S_SRB1_ROBOTOPOLIS1
+ReactionTime = 32
+PainChance = 200
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = 3
+Radius = 36*FRACUNIT
+Height = 62*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY|MF_NOGRAVITY|MF_FLOAT
+
+Mobj MT_SRB1_RBZBUZZ
+MapThingNum = 4011
+SpawnState = S_SRB1_RBZBUZZ1
+SpawnHealth = 1
+SeeState = S_SRB1_RBZBUZZ1
+ReactionTime = 32
+PainChance = 200
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = 3
+Radius = 44*FRACUNIT
+Height = 45*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY|MF_NOGRAVITY|MF_FLOAT
+
+Mobj MT_SRB1_RBZSPIKES
+MapThingNum = 4012
+SpawnState = S_SRB1_RBZSPIKES1
+SpawnHealth = 1
+SeeState = S_SRB1_RBZSPIKES1
+ReactionTime = 32
+PainChance = 200
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = 3
+Radius = 10*FRACUNIT
+Height = 53*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SOLID|MF_ENEMY|MF_NOGRAVITY|MF_FLOAT
+
+Mobj MT_SRB1_METALSONIC
+MapThingNum = 4013
+SpawnState = S_SRB1_METALSONIC1
+SpawnHealth = 1000
+ReactionTime = 8
+Speed = 21*FRACUNIT
+Radius = 16*FRACUNIT
+Height = 40*FRACUNIT
+Mass = 100
+Damage = 1
+Flags = MF_SLIDEME|MF_SOLID|MF_PUSHABLE
+
+Mobj MT_SRB1_GOLDBOT
+MapThingNum = 4014
+SpawnState = S_SRB1_GOLDBOT1
+SpawnHealth = 1
+SeeState = S_SRB1_GOLDBOT1
+ReactionTime = 32
+PainChance = 200
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = 3
+Radius = 21*FRACUNIT
+Height = 69*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY|MF_NOGRAVITY|MF_FLOAT
+
+Mobj MT_SRB1_GENREX
+MapThingNum = 4015
+SpawnState = S_SRB1_GENREX1
+SpawnHealth = 1
+SeeState = S_SRB1_GENREX2
+ReactionTime = 2
+PainChance = 3072
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = 4*FRACUNIT
+Radius = 17*FRACUNIT
+Height = 40*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY|MF_NOGRAVITY|MF_SLIDEME
+
 # SRB2kart
 Mobj MT_RANDOMITEM
 MapThingNum = 2000
