@@ -1261,7 +1261,7 @@ Name = Nebula
 Ramp = 208,209,210,192,193,194,229,231,234,236,237,187,199,29,30,31
 InvColor = SKINCOLOR_KING
 InvShade = 8
-ChatColor =V_LAVENDERMAP
+ChatColor = V_LAVENDERMAP
 Accessible = 1
 
 Color SKINCOLOR_STEAMPUNK
@@ -1341,7 +1341,7 @@ Name = Khaki
 Ramp = 208,216,217,219,240,241,242,243,78,78,94,79,95,239,110,31
 InvColor = SKINCOLOR_SNOW
 InvShade = 8
-ChatColor =V_GREENMAP
+ChatColor = V_GREENMAP
 Accessible = 1
 
 Color SKINCOLOR_LIGHT
