@@ -1381,29 +1381,68 @@ Action = A_Look
 Var1 = 1
 Next = S_VULTURE_STND
 
-State S_VULTURE_DRIFT
+State S_VULTURE_VTOL1
 SpriteName = SPR_VLTR
 SpriteFrame = 4
-Duration = 3
-Action = A_VultureHover
-Next = S_VULTURE_DRIFT
+Duration = 1
+Action = A_VultureVtol
+Next = S_VULTURE_VTOL2
+
+State S_VULTURE_VTOL2
+SpriteName = SPR_VLTR
+SpriteFrame = 5
+Duration = 1
+Action = A_VultureVtol
+Next = S_VULTURE_VTOL3
+
+State S_VULTURE_VTOL3
+SpriteName = SPR_VLTR
+SpriteFrame = 6
+Duration = 1
+Action = A_VultureVtol
+Next = S_VULTURE_VTOL4
+
+State S_VULTURE_VTOL4
+SpriteName = SPR_VLTR
+SpriteFrame = 7
+Duration = 1
+Action = A_VultureVtol
+Next = S_VULTURE_VTOL1
 
 State S_VULTURE_ZOOM1
 SpriteName = SPR_VLTR
-Duration = 6
-Action = A_VultureBlast
+Duration = 1
+Action = A_Thrust
+Var1 = 30
+Var2 = 1
 Next = S_VULTURE_ZOOM2
 
 State S_VULTURE_ZOOM2
 SpriteName = SPR_VLTR
-Duration = 3
-Action = A_VultureFly
-Next = S_VULTURE_ZOOM2
+Duration = 1
+Action = A_VultureCheck
+Next = S_VULTURE_ZOOM3
 
-State S_VULTURE_STUNNED
+State S_VULTURE_ZOOM3
 SpriteName = SPR_VLTR
-Duration = 3*TICRATE
-Next = S_VULTURE_DRIFT
+SpriteFrame = 1
+Duration = 1
+Action = A_VultureCheck
+Next = S_VULTURE_ZOOM4
+
+State S_VULTURE_ZOOM4
+SpriteName = SPR_VLTR
+SpriteFrame = 2
+Duration = 1
+Action = A_VultureCheck
+Next = S_VULTURE_ZOOM5
+
+State S_VULTURE_ZOOM5
+SpriteName = SPR_VLTR
+SpriteFrame = 3
+Duration = 1
+Action = A_VultureCheck
+Next = S_VULTURE_ZOOM2
 
 # Pointy
 State S_POINTY1
@@ -1422,156 +1461,117 @@ Next = S_POINTYBALL1
 # Robo-Hood
 State S_ROBOHOOD_LOOK
 SpriteName = SPR_ARCH
-Duration = 4
+Duration = 14
 Action = A_Look
-Var1 = 2048<<FRACBITS
+Var1 = (512<<16)
 Next = S_ROBOHOOD_LOOK
 
-State S_ROBOHOOD_STAND
+State S_ROBOHOOD_STND
 SpriteName = SPR_ARCH
+SpriteFrame = 2
 Duration = 1
 Action = A_HoodThink
-Next = S_ROBOHOOD_STAND
+Next = S_ROBOHOOD_STND
 
-State S_ROBOHOOD_FIRE1
+State S_ROBOHOOD_SHOOT
 SpriteName = SPR_ARCH
-SpriteFrame = 2
-Duration = TICRATE
-Action = A_PlayActiveSound
-Next = S_ROBOHOOD_FIRE2
-
-State S_ROBOHOOD_FIRE2
-SpriteName = SPR_ARCH
-SpriteFrame = 2
-Duration = 20
-Action = A_HoodFire
+Duration = 35
+Action = A_FireShot
 Var1 = MT_ARROW
-Next = S_ROBOHOOD_STAND
+Var2 = -24
+Next = S_ROBOHOOD_STND
 
-State S_ROBOHOOD_JUMP1
+State S_ROBOHOOD_JUMP
 SpriteName = SPR_ARCH
 SpriteFrame = 1
 Duration = 1
-Action = A_FaceTarget
+Action = A_BunnyHop
+Var1 = 8
+Var2 = 5
 Next = S_ROBOHOOD_JUMP2
 
 State S_ROBOHOOD_JUMP2
 SpriteName = SPR_ARCH
 SpriteFrame = 1
 Duration = 1
-Action = A_BunnyHop
-Var1 = 4
-Var2 = -10
-Next = S_ROBOHOOD_JUMP3
+Action = A_HoodThink
+Next = S_ROBOHOOD_JUMP2
 
-State S_ROBOHOOD_JUMP3
+State S_ROBOHOOD_FALL
 SpriteName = SPR_ARCH
-SpriteFrame = 1
 Duration = 1
-Action = A_HoodFall
-Next = S_ROBOHOOD_JUMP3
+Action = A_HoodThink
+Next = S_ROBOHOOD_FALL
 
-# Castlebot Facestabber
+# CastleBot FaceStabber
 State S_FACESTABBER_STND1
 SpriteName = SPR_CBFS
 Duration = 1
-Action = A_Chase
+Action = A_FaceStabChase
 Next = S_FACESTABBER_STND2
 
 State S_FACESTABBER_STND2
 SpriteName = SPR_CBFS
 SpriteFrame = 1
 Duration = 1
-Action = A_Chase
+Action = A_FaceStabChase
 Next = S_FACESTABBER_STND3
 
 State S_FACESTABBER_STND3
 SpriteName = SPR_CBFS
 SpriteFrame = 2
 Duration = 1
-Action = A_Chase
+Action = A_FaceStabChase
 Next = S_FACESTABBER_STND4
 
 State S_FACESTABBER_STND4
 SpriteName = SPR_CBFS
 SpriteFrame = 3
 Duration = 1
-Action = A_Chase
+Action = A_FaceStabChase
 Next = S_FACESTABBER_STND5
 
 State S_FACESTABBER_STND5
 SpriteName = SPR_CBFS
 SpriteFrame = 4
 Duration = 1
-Action = A_Chase
+Action = A_FaceStabChase
 Next = S_FACESTABBER_STND6
 
 State S_FACESTABBER_STND6
 SpriteName = SPR_CBFS
 SpriteFrame = 5
 Duration = 1
-Action = A_Chase
+Action = A_FaceStabChase
 Next = S_FACESTABBER_STND1
 
 State S_FACESTABBER_CHARGE1
 SpriteName = SPR_CBFS
-Duration = 1
-Action = A_FaceStabRev
-Var1 = 20
-Var2 = S_FACESTABBER_CHARGE2
-Next = S_FACESTABBER_CHARGE1
+SpriteFrame = 6
+Duration = 14
+Action = A_PlayActiveSound
+Next = S_FACESTABBER_CHARGE2
 
 State S_FACESTABBER_CHARGE2
 SpriteName = SPR_CBFS
-Action = A_FaceTarget
+SpriteFrame = 6
+Action = A_PlayAttackSound
 Next = S_FACESTABBER_CHARGE3
 
 State S_FACESTABBER_CHARGE3
 SpriteName = SPR_CBFS
-SpriteFrame = 7
-Duration = 1
-Action = A_FaceStabHurl
-Var1 = 6
-Var2 = S_FACESTABBER_CHARGE4
-Next = S_FACESTABBER_CHARGE3
+SpriteFrame = 6
+Action = A_FaceTarget
+Next = S_FACESTABBER_CHARGE4
 
 State S_FACESTABBER_CHARGE4
 SpriteName = SPR_CBFS
 SpriteFrame = 7
-Duration = 1
-Action = A_FaceStabMiss
-Var2 = S_FACESTABBER_STND1
-Next = S_FACESTABBER_CHARGE4
-
-State S_FACESTABBER_PAIN
-SpriteName = SPR_CBFS
 Duration = 35
-Action = A_Pain
+Action = A_Thrust
+Var1 = 20
+Var2 = 1
 Next = S_FACESTABBER_STND1
-
-State S_FACESTABBER_DIE1
-SpriteName = SPR_CBFS
-Duration = 2
-Action = A_BossScream
-Var1 = 1
-Next = S_FACESTABBER_DIE2
-
-State S_FACESTABBER_DIE2
-Duration = 2
-Action = A_BossScream
-Var1 = 1
-Next = S_FACESTABBER_DIE3
-
-State S_FACESTABBER_DIE3
-Action = A_Repeat
-Var1 = 7
-Var2 = S_FACESTABBER_DIE1
-Next = S_XPLD_FLICKY
-
-State S_FACESTABBERSPEAR
-SpriteName = SPR_STAB
-SpriteFrame = FF_PAPERSPRITE|FF_TRANS50|FF_FULLBRIGHT
-Duration = -1
 
 # Egg Guard
 State S_EGGGUARD_STND
@@ -1660,10 +1660,6 @@ SpriteName = SPR_ESHI
 Duration = 8
 Action = A_EggShield
 Next = S_EGGSHIELD
-
-State S_EGGSHIELDBREAK
-SpriteName = SPR_ESHI
-Duration = TICRATE/2
 
 # Green Snapper
 State S_SNAPPER_SPAWN
@@ -7643,15 +7639,23 @@ Duration = -1
 # Arrow
 State S_ARROW
 SpriteName = SPR_AROW
-Duration = -1
+Duration = 1
+Action = A_ArrowCheck
+Next = S_ARROW
 
-State S_ARROWBONK
+State S_ARROWUP
 SpriteName = SPR_AROW
-SpriteFrame = FF_ANIMATE
-Duration = TICRATE
-Action = A_ArrowBonks
-Var1 = 7
-Var2 = 2
+SpriteFrame = 1
+Duration = 1
+Action = A_ArrowCheck
+Next = S_ARROWUP
+
+State S_ARROWDOWN
+SpriteName = SPR_AROW
+SpriteFrame = 2
+Duration = 1
+Action = A_ArrowCheck
+Next = S_ARROWDOWN
 
 # Glaregoyle Demon fire
 State S_DEMONFIRE
@@ -8450,10 +8454,6 @@ SpriteName = SPR_BANR
 SpriteFrame = FF_PAPERSPRITE|2
 Duration = -1
 
-State S_PINETREE
-SpriteName = SPR_PINE
-Duration = -1
-
 State S_CEZBUSH1
 SpriteName = SPR_CEZB
 Duration = -1
@@ -8637,481 +8637,24 @@ SpriteFrame = 7
 Duration = 5
 Next = S_LITTLETUMBLEWEED_ROLL1
 
-# Cacti
+# Cacti Sprites
 State S_CACTI1
 SpriteName = SPR_CACT
 Duration = -1
-Action = A_ConnectToGround
-Var1 = MT_CACTITINYSEG
 
 State S_CACTI2
 SpriteName = SPR_CACT
 SpriteFrame = 1
 Duration = -1
-Action = A_ConnectToGround
-Var1 = MT_CACTISMALLSEG
 
 State S_CACTI3
 SpriteName = SPR_CACT
 SpriteFrame = 2
 Duration = -1
-Action = A_ConnectToGround
-Var1 = MT_CACTITINYSEG
 
 State S_CACTI4
 SpriteName = SPR_CACT
 SpriteFrame = 3
-Duration = -1
-Action = A_ConnectToGround
-Var1 = MT_CACTISMALLSEG
-
-State S_CACTI5
-SpriteName = SPR_CACT
-SpriteFrame = 4
-Duration = -1
-
-State S_CACTI6
-SpriteName = SPR_CACT
-SpriteFrame = 5
-Duration = -1
-
-State S_CACTI7
-SpriteName = SPR_CACT
-SpriteFrame = 6
-Duration = -1
-
-State S_CACTI8
-SpriteName = SPR_CACT
-SpriteFrame = 7
-Duration = -1
-
-State S_CACTI9
-SpriteName = SPR_CACT
-SpriteFrame = 8
-Duration = -1
-
-State S_CACTI10
-SpriteName = SPR_CACT
-SpriteFrame = 9
-Duration = -1
-Action = A_ConnectToGround
-Var1 = MT_CACTITINYSEG
-
-State S_CACTI11
-SpriteName = SPR_CACT
-SpriteFrame = 10
-Duration = -1
-Action = A_ConnectToGround
-Var1 = MT_CACTISMALLSEG
-
-State S_CACTITINYSEG
-SpriteName = SPR_CACT
-SpriteFrame = 11
-Duration = -1
-
-State S_CACTISMALLSEG
-SpriteName = SPR_CACT
-SpriteFrame = 12
-Duration = -1
-
-# Warning signs
-State S_ARIDSIGN_CAUTION
-SpriteName = SPR_WWSG
-SpriteFrame = FF_PAPERSPRITE
-Duration = -1
-
-State S_ARIDSIGN_CACTI
-SpriteName = SPR_WWS2
-SpriteFrame = FF_PAPERSPRITE
-Duration = -1
-
-State S_ARIDSIGN_SHARPTURN
-SpriteName = SPR_WWS3
-SpriteFrame = FF_PAPERSPRITE
-Duration = -1
-
-# Oil lamp
-State S_OILLAMP
-SpriteName = SPR_OILL
-SpriteFrame = FF_FULLBRIGHT
-Duration = -1
-
-State S_OILLAMPFLARE
-SpriteName = SPR_OILF
-SpriteFrame = FF_TRANS90|FF_FULLBRIGHT
-Duration = -1
-
-# TNT barrel
-State S_TNTBARREL_STND1
-SpriteName = SPR_BARR
-Duration = -1
-
-State S_TNTBARREL_EXPL1
-SpriteName = SPR_BARX
-Action = A_RollAngle
-Var2 = 1
-Next = S_TNTBARREL_EXPL2
-
-State S_TNTBARREL_EXPL2
-SpriteName = SPR_BARX
-SpriteFrame = 0|FF_FULLBRIGHT
-Duration = 3
-Action = A_SetObjectFlags
-Var1 = MF_NOCLIP|MF_NOGRAVITY|MF_NOBLOCKMAP
-Next = S_TNTBARREL_EXPL3
-
-State S_TNTBARREL_EXPL3
-SpriteName = SPR_BARX
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 2
-Action = A_TNTExplode
-Var1 = MT_TNTDUST
-Next = S_TNTBARREL_EXPL4
-
-State S_TNTBARREL_EXPL4
-SpriteName = SPR_BARX
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 1
-Next = S_TNTBARREL_EXPL5
-
-State S_TNTBARREL_EXPL5
-SpriteName = SPR_BARX
-SpriteFrame = 2|FF_FULLBRIGHT
-Duration = 3
-Next = S_TNTBARREL_EXPL6
-
-State S_TNTBARREL_EXPL6
-SpriteName = SPR_BARX
-SpriteFrame = 3|FF_FULLBRIGHT
-Duration = 3
-Next = S_TNTBARREL_EXPL7
-
-State S_TNTBARREL_EXPL7
-Duration = 35
-
-State S_TNTBARREL_FLYING
-SpriteName = SPR_BARR
-SpriteFrame = 1
-Duration = 1
-Action = A_RollAngle
-Var1 = 14
-Next = S_TNTBARREL_FLYING
-
-# TNT proximity shell
-State S_PROXIMITY_TNT
-SpriteName = SPR_REMT
-Duration = 10
-Action = A_Look
-Var1 = (512<<16)|1
-Next = S_PROXIMITY_TNT
-
-State S_PROXIMITY_TNT_TRIGGER1
-SpriteName = SPR_REMT
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 1
-Action = A_PlayActiveSound
-Next = S_PROXIMITY_TNT_TRIGGER2
-
-State S_PROXIMITY_TNT_TRIGGER2
-SpriteName = SPR_REMT
-Duration = 16
-Next = S_PROXIMITY_TNT_TRIGGER3
-
-State S_PROXIMITY_TNT_TRIGGER3
-SpriteName = SPR_REMT
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 1
-Action = A_PlayActiveSound
-Next = S_PROXIMITY_TNT_TRIGGER4
-
-State S_PROXIMITY_TNT_TRIGGER4
-SpriteName = SPR_REMT
-Duration = 16
-Next = S_PROXIMITY_TNT_TRIGGER5
-
-State S_PROXIMITY_TNT_TRIGGER5
-SpriteName = SPR_REMT
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 1
-Action = A_PlayActiveSound
-Next = S_PROXIMITY_TNT_TRIGGER6
-
-State S_PROXIMITY_TNT_TRIGGER6
-SpriteName = SPR_REMT
-Duration = 4
-Next = S_PROXIMITY_TNT_TRIGGER7
-
-State S_PROXIMITY_TNT_TRIGGER7
-SpriteName = SPR_REMT
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 1
-Action = A_PlayActiveSound
-Next = S_PROXIMITY_TNT_TRIGGER8
-
-State S_PROXIMITY_TNT_TRIGGER8
-SpriteName = SPR_REMT
-Duration = 4
-Next = S_PROXIMITY_TNT_TRIGGER9
-
-State S_PROXIMITY_TNT_TRIGGER9
-SpriteName = SPR_REMT
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 1
-Action = A_PlayActiveSound
-Next = S_PROXIMITY_TNT_TRIGGER10
-
-State S_PROXIMITY_TNT_TRIGGER10
-SpriteName = SPR_REMT
-Duration = 4
-Next = S_PROXIMITY_TNT_TRIGGER11
-
-State S_PROXIMITY_TNT_TRIGGER11
-SpriteName = SPR_REMT
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 1
-Action = A_PlayActiveSound
-Next = S_PROXIMITY_TNT_TRIGGER12
-
-State S_PROXIMITY_TNT_TRIGGER12
-SpriteName = SPR_REMT
-Duration = 4
-Next = S_PROXIMITY_TNT_TRIGGER13
-
-State S_PROXIMITY_TNT_TRIGGER13
-SpriteName = SPR_REMT
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 1
-Action = A_PlayActiveSound
-Next = S_PROXIMITY_TNT_TRIGGER14
-
-State S_PROXIMITY_TNT_TRIGGER14
-SpriteName = SPR_REMT
-Duration = 2
-Next = S_PROXIMITY_TNT_TRIGGER15
-
-State S_PROXIMITY_TNT_TRIGGER15
-SpriteName = SPR_REMT
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 1
-Action = A_PlayActiveSound
-Next = S_PROXIMITY_TNT_TRIGGER16
-
-State S_PROXIMITY_TNT_TRIGGER16
-SpriteName = SPR_REMT
-Duration = 2
-Next = S_PROXIMITY_TNT_TRIGGER17
-
-State S_PROXIMITY_TNT_TRIGGER17
-SpriteName = SPR_REMT
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 1
-Action = A_PlayActiveSound
-Next = S_PROXIMITY_TNT_TRIGGER18
-
-State S_PROXIMITY_TNT_TRIGGER18
-SpriteName = SPR_REMT
-Duration = 2
-Next = S_PROXIMITY_TNT_TRIGGER19
-
-State S_PROXIMITY_TNT_TRIGGER19
-SpriteName = SPR_REMT
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 1
-Action = A_PlayActiveSound
-Next = S_PROXIMITY_TNT_TRIGGER20
-
-State S_PROXIMITY_TNT_TRIGGER20
-SpriteName = SPR_REMT
-Duration = 2
-Next = S_PROXIMITY_TNT_TRIGGER21
-
-State S_PROXIMITY_TNT_TRIGGER21
-SpriteName = SPR_REMT
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 1
-Action = A_PlayActiveSound
-Next = S_PROXIMITY_TNT_TRIGGER22
-
-State S_PROXIMITY_TNT_TRIGGER22
-SpriteName = SPR_REMT
-Duration = 2
-Next = S_PROXIMITY_TNT_TRIGGER23
-
-State S_PROXIMITY_TNT_TRIGGER23
-SpriteName = SPR_REMT
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 1
-Action = A_PlayActiveSound
-Next = S_TNTBARREL_EXPL1
-
-# Dust devil
-State S_DUSTDEVIL
-Duration = 1
-Next = S_DUSTDEVIL
-
-State S_DUSTLAYER1
-SpriteName = SPR_TAZD
-SpriteFrame = 1|FF_PAPERSPRITE|FF_TRANS70
-Duration = 2*TICRATE
-Next = S_DUSTLAYER2
-
-State S_DUSTLAYER2
-SpriteName = SPR_TAZD
-SpriteFrame = 1|FF_PAPERSPRITE|FF_TRANS70
-Duration = 5
-Next = S_DUSTLAYER3
-
-State S_DUSTLAYER3
-SpriteName = SPR_TAZD
-SpriteFrame = 1|FF_PAPERSPRITE|FF_TRANS80
-Duration = 5
-Next = S_DUSTLAYER4
-
-State S_DUSTLAYER4
-SpriteName = SPR_TAZD
-SpriteFrame = 1|FF_PAPERSPRITE|FF_TRANS80
-Duration = 5
-Next = S_DUSTLAYER5
-
-State S_DUSTLAYER5
-SpriteName = SPR_TAZD
-SpriteFrame = 1|FF_PAPERSPRITE|FF_TRANS90
-Duration = 5
-
-State S_ARIDDUST1
-SpriteName = SPR_ADST
-SpriteFrame = 0|FF_ANIMATE
-Duration = 24
-Var1 = 3
-Var2 = 8
-
-State S_ARIDDUST2
-SpriteName = SPR_ADST
-SpriteFrame = 3|FF_ANIMATE
-Duration = 24
-Var1 = 3
-Var2 = 8
-
-State S_ARIDDUST3
-SpriteName = SPR_ADST
-SpriteFrame = 6|FF_ANIMATE
-Duration = 24
-Var1 = 3
-Var2 = 8
-
-# Minecart
-State S_MINECART_IDLE
-Duration = 1
-Next = S_MINECART_IDLE
-
-State S_MINECART_DTH1
-Action = A_KillSegments
-Next = S_TNTBARREL_EXPL4
-
-State S_MINECARTEND
-SpriteName = SPR_MCRT
-SpriteFrame = 8|FF_PAPERSPRITE
-Duration = -1
-
-State S_MINECARTSEG_FRONT
-SpriteName = SPR_MCRT
-SpriteFrame = 0|FF_PAPERSPRITE
-Duration = -1
-
-State S_MINECARTSEG_BACK
-SpriteName = SPR_MCRT
-SpriteFrame = 1|FF_PAPERSPRITE
-Duration = -1
-
-State S_MINECARTSEG_LEFT
-SpriteName = SPR_MCRT
-SpriteFrame = 2|FF_PAPERSPRITE|FF_ANIMATE
-Duration = -1
-Var1 = 2
-Var2 = 3
-
-State S_MINECARTSEG_RIGHT
-SpriteName = SPR_MCRT
-SpriteFrame = 5|FF_PAPERSPRITE|FF_ANIMATE
-Duration = -1
-Var1 = 2
-Var2 = 3
-
-State S_MINECARTSIDEMARK1
-SpriteName = SPR_LCKN
-SpriteFrame = 2|FF_FULLBRIGHT
-Duration = 2
-
-State S_MINECARTSIDEMARK2
-SpriteName = SPR_LCKN
-SpriteFrame = 0|FF_FULLBRIGHT
-Duration = 2
-
-State S_MINECARTSPARK
-SpriteName = SPR_MCSP
-SpriteFrame = FF_FULLBRIGHT
-Duration = 1
-Action = A_MinecartSparkThink
-Next = S_MINECARTSPARK
-
-# Saloon door
-State S_SALOONDOOR
-SpriteName = SPR_SALD
-SpriteFrame = 0|FF_PAPERSPRITE
-Duration = -1
-
-State S_SALOONDOORCENTER
-Duration = -1
-Action = A_SaloonDoorSpawn
-Var1 = MT_SALOONDOOR
-Var2 = 48
-
-# Train cameo
-State S_TRAINCAMEOSPAWNER_1
-Duration = -1
-Next = S_TRAINCAMEOSPAWNER_2
-
-State S_TRAINCAMEOSPAWNER_2
-Duration = 14
-Action = A_TrainCameo
-Var1 = 20
-Var2 = 18
-Next = S_TRAINCAMEOSPAWNER_3
-
-State S_TRAINCAMEOSPAWNER_3
-Duration = 1
-Action = A_Repeat
-Var1 = 1
-Next = S_TRAINCAMEOSPAWNER_4
-
-State S_TRAINCAMEOSPAWNER_4
-Duration = 18
-Action = A_TrainCameo2
-Var1 = 20
-Var2 = 44
-Next = S_TRAINCAMEOSPAWNER_5
-
-State S_TRAINCAMEOSPAWNER_5
-Duration = 1
-Action = A_Repeat
-Var1 = 5
-Var2 = S_TRAINCAMEOSPAWNER_4
-
-State S_TRAINPUFFMAKER
-Duration = 2
-Action = A_SmokeTrailer
-Var1 = MT_SMOKE
-Next = S_TRAINPUFFMAKER
-
-# Train
-State S_TRAINDUST
-SpriteName = SPR_ADST
-SpriteFrame = FF_TRANS50
-Duration = -1
-
-State S_TRAINSTEAM
-SpriteName = SPR_STEA
-SpriteFrame = FF_TRANS50
 Duration = -1
 
 # Flame jet
@@ -21527,12 +21070,12 @@ Duration = -1
 Next = S_CDTREEBSP
 
 # Daytona Speedway
-State S_DAYTONAPINETREE
+State S_PINETREE
 SpriteName = SPR_PINE
 SpriteFrame = 1
 Duration = -1
 
-State S_DAYTONAPINETREE_SIDE
+State S_PINETREE_SIDE
 SpriteName = SPR_PINE
 SpriteFrame = FF_PAPERSPRITE
 Duration = -1

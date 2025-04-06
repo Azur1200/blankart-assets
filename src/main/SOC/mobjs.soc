@@ -453,51 +453,34 @@ Mobj MT_ROBOHOOD
 MapThingNum = 117
 SpawnState = S_ROBOHOOD_LOOK
 SpawnHealth = 1
-SeeState = S_ROBOHOOD_STAND
+SeeState = S_ROBOHOOD_STND
 ReactionTime = TICRATE
-AttackSound = sfx_ngjump
-MeleeState = S_ROBOHOOD_JUMP3
-MissileState = S_ROBOHOOD_FIRE1
+PainState = S_ROBOHOOD_JUMP
+MissileState = S_ROBOHOOD_SHOOT
 DeathState = S_XPLD_FLICKY
+XDeathState = S_ROBOHOOD_JUMP2
 DeathSound = sfx_pop
-Speed = 3
 Radius = 24*FRACUNIT
 Height = 32*FRACUNIT
 Mass = 100
-ActiveSound = sfx_s3k4a
 Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
-RaiseState = S_ROBOHOOD_JUMP1
+RaiseState = S_ROBOHOOD_FALL
 
 # Castlebot Facestabber
 Mobj MT_FACESTABBER
 MapThingNum = 118
 SpawnState = S_FACESTABBER_STND1
-SpawnHealth = 2
+SpawnHealth = 1
 SeeState = S_FACESTABBER_STND1
-ReactionTime = 70
-AttackSound = sfx_zoom
-PainState = S_FACESTABBER_PAIN
-PainSound = sfx_dmpain
+ReactionTime = 35
 MeleeState = S_FACESTABBER_CHARGE1
-MissileState = S_FACESTABBER_CHARGE1
-DeathState = S_FACESTABBER_DIE1
-DeathSound = sfx_s3kb4
+DeathState = S_XPLD_FLICKY
+DeathSound = sfx_pop
 Speed = 3
 Radius = 32*FRACUNIT
-Height = 72*FRACUNIT
+Height = 64*FRACUNIT
 Mass = 100
-ActiveSound = sfx_s3kc5s
-Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_SLIDEME
-
-# Castlebot Facestabber spear aura
-Mobj MT_FACESTABBERSPEAR
-SpawnState = S_FACESTABBERSPEAR
-SpawnHealth = 1
-ReactionTime = 35
-Radius = 32*FRACUNIT
-Height = 72*FRACUNIT
-Mass = DMG_NORMAL
-Flags = MF_PAIN|MF_NOGRAVITY|MF_NOCLIPHEIGHT
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
 
 # Egg Guard
 Mobj MT_EGGGUARD
@@ -516,7 +499,7 @@ Height = 48*FRACUNIT
 Mass = 100
 Flags = MF_ENEMY
 
-# Egg Guard's shield
+# Egg Shield for Egg Guard
 Mobj MT_EGGSHIELD
 SpawnState = S_EGGSHIELD
 SpawnHealth = 1
@@ -524,7 +507,7 @@ SeeState = S_EGGSHIELD
 ReactionTime = 35
 AttackSound = sfx_s3k7b
 PainSound = sfx_s3k7b
-DeathState = S_EGGSHIELDBREAK
+DeathState = S_XPLD1
 DeathSound = sfx_wbreak
 Speed = 3
 Radius = 24*FRACUNIT
@@ -3059,18 +3042,16 @@ Flags = MF_SOLID|MF_PUSHABLE|MF_SLIDEME
 Mobj MT_ARROW
 SpawnState = S_ARROW
 SpawnHealth = 1
-SeeSound = sfx_s3ka0
 ReactionTime = 32
 PainChance = 200
-DeathState = S_ARROWBONK
-DeathSound = sfx_s3k52
+XDeathState = S_ARROWDOWN
 Speed = 16*FRACUNIT
 Radius = 4*FRACUNIT
 Height = 8*FRACUNIT
-Mass = DMG_NORMAL
+Mass = 100
 Damage = 1
-ActiveSound = sfx_s3k51
-Flags = MF_NOBLOCKMAP|MF_MISSILE
+Flags = MF_NOBLOCKMAP|MF_MISSILE|MF_NOGRAVITY
+RaiseState = S_ARROWUP
 
 # Glaregoyle fire
 Mobj MT_DEMONFIRE
@@ -3836,17 +3817,6 @@ Height = 224*FRACUNIT
 Mass = 100
 Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
 
-# Pine Tree
-Mobj MT_PINETREE
-MapThingNum = 1114
-SpawnState = S_PINETREE
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 16*FRACUNIT
-Height = 628*FRACUNIT
-Mass = 100
-Flags = MF_NOGRAVITY|MF_SOLID|MF_SCENERY
-
 # Bush 1
 Mobj MT_CEZBUSH1
 MapThingNum = 1115
@@ -4030,370 +4000,45 @@ Damage = 1
 ActiveSound = sfx_s3k64
 Flags = MF_SPECIAL|MF_BOUNCE
 
-# Tiny Red Flower Cactus
 Mobj MT_CACTI1
 MapThingNum = 1203
 SpawnState = S_CACTI1
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 13*FRACUNIT
-Height = 24*FRACUNIT
-Mass = DMG_NORMAL
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
 Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
 
-# Small Red Flower Cactus
 Mobj MT_CACTI2
 MapThingNum = 1204
 SpawnState = S_CACTI2
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 15*FRACUNIT
-Height = 52*FRACUNIT
-Mass = DMG_NORMAL
+Radius = 16*FRACUNIT
+Height = 64*FRACUNIT
+Mass = 100
 Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
 
-# Tiny Blue Flower Cactus
 Mobj MT_CACTI3
 MapThingNum = 1205
 SpawnState = S_CACTI3
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 13*FRACUNIT
-Height = 24*FRACUNIT
-Mass = DMG_NORMAL
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
 Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
 
-# Small Blue Flower Cactus
 Mobj MT_CACTI4
 MapThingNum = 1206
 SpawnState = S_CACTI4
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 15*FRACUNIT
-Height = 52*FRACUNIT
-Mass = DMG_NORMAL
-Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
-
-# Prickly Pear
-Mobj MT_CACTI5
-MapThingNum = 1207
-SpawnState = S_CACTI5
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 32*FRACUNIT
-Height = 96*FRACUNIT
-Mass = DMG_NORMAL
-Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
-
-# Barrel Cactus
-Mobj MT_CACTI6
-MapThingNum = 1208
-SpawnState = S_CACTI6
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 20*FRACUNIT
-Height = 128*FRACUNIT
-Mass = DMG_NORMAL
-Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
-
-# Tall Barrel Cactus
-Mobj MT_CACTI7
-MapThingNum = 1209
-SpawnState = S_CACTI7
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 24*FRACUNIT
-Height = 224*FRACUNIT
-Mass = DMG_NORMAL
-Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
-
-# Armed Cactus
-Mobj MT_CACTI8
-MapThingNum = 1210
-SpawnState = S_CACTI8
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 24*FRACUNIT
-Height = 256*FRACUNIT
-Mass = DMG_NORMAL
-Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
-
-# Ball Cactus
-Mobj MT_CACTI9
-MapThingNum = 1211
-SpawnState = S_CACTI9
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 48*FRACUNIT
-Height = 96*FRACUNIT
-Mass = DMG_NORMAL
-Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
-
-# Tiny Cactus
-Mobj MT_CACTI10
-MapThingNum = 1230
-SpawnState = S_CACTI10
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 13*FRACUNIT
-Height = 28*FRACUNIT
-Mass = DMG_NORMAL
-Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
-
-# Small Cactus
-Mobj MT_CACTI11
-MapThingNum = 1231
-SpawnState = S_CACTI11
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 15*FRACUNIT
-Height = 60*FRACUNIT
-Mass = DMG_NORMAL
-Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
-
-# Tiny Cactus Segment
-Mobj MT_CACTITINYSEG
-SpawnState = S_CACTITINYSEG
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 13*FRACUNIT
-Height = 28*FRACUNIT
-Mass = DMG_NORMAL
-Flags = MF_NOTHINK|MF_SCENERY|MF_PAIN|MF_NOGRAVITY
-
-# Small Cactus Segment
-Mobj MT_CACTISMALLSEG
-SpawnState = S_CACTISMALLSEG
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 15*FRACUNIT
-Height = 60*FRACUNIT
-Mass = DMG_NORMAL
-Flags = MF_NOTHINK|MF_SCENERY|MF_PAIN|MF_NOGRAVITY
-
-# Caution Sign
-Mobj MT_ARIDSIGN_CAUTION
-MapThingNum = 1212
-SpawnState = S_ARIDSIGN_CAUTION
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 22*FRACUNIT
-Height = 64*FRACUNIT
-Mass = 100
-Flags = MF_SCENERY|MF_SOLID|MF_PAPERCOLLISION
-
-# Cacti Sign
-Mobj MT_ARIDSIGN_CACTI
-MapThingNum = 1213
-SpawnState = S_ARIDSIGN_CACTI
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 22*FRACUNIT
-Height = 64*FRACUNIT
-Mass = 100
-Flags = MF_SCENERY|MF_SOLID|MF_PAPERCOLLISION
-
-# Sharp Turn Sign
-Mobj MT_ARIDSIGN_SHARPTURN
-MapThingNum = 1214
-SpawnState = S_ARIDSIGN_SHARPTURN
-SpawnHealth = 1000
-ReactionTime = 8
 Radius = 16*FRACUNIT
-Height = 192*FRACUNIT
+Height = 80*FRACUNIT
 Mass = 100
-Flags = MF_SCENERY|MF_SOLID|MF_PAPERCOLLISION
-
-Mobj MT_OILLAMP
-MapThingNum = 1215
-SpawnState = S_OILLAMP
-SpawnHealth = 1
-Radius = 22*FRACUNIT
-Height = 64*FRACUNIT
-Mass = 100
-ActiveSound = sfx_s3k4b
-Flags = MF_SCENERY|MF_NOBLOCKMAP|MF_NOGRAVITY|MF_SPAWNCEILING
-
-Mobj MT_TNTBARREL
-MapThingNum = 1216
-SpawnState = S_TNTBARREL_STND1
-SpawnHealth = 1
-AttackSound = sfx_bowl
-PainState = S_TNTBARREL_EXPL1
-MissileState = S_TNTBARREL_FLYING
-DeathState = S_TNTBARREL_EXPL1
-DeathSound = sfx_s3k4e
-Radius = 24*FRACUNIT
-Height = 63*FRACUNIT
-Mass = 100
-Flags = MF_SOLID|MF_SHOOTABLE|MF_PUSHABLE
-
-Mobj MT_PROXIMITYTNT
-MapThingNum = 1217
-SpawnState = S_PROXIMITY_TNT
-SpawnHealth = 1
-SeeState = S_PROXIMITY_TNT_TRIGGER1
-SeeSound = sfx_s3k5c
-DeathSound = sfx_s3k4e
-Radius = 64*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-ActiveSound = sfx_s3k89
-Flags = MF_SOLID
-
-Mobj MT_DUSTDEVIL
-MapThingNum = 1218
-SpawnState = S_DUSTDEVIL
-SpawnHealth = 1
-Speed = 2
-Radius = 80*FRACUNIT
-Height = 416*FRACUNIT
-Mass = 100
-ActiveSound = sfx_s3k4b
-Flags = MF_NOBLOCKMAP|MF_NOGRAVITY
-
-Mobj MT_DUSTLAYER
-SpawnState = S_DUSTLAYER1
-SpawnHealth = 1
-Radius = 64*FRACUNIT
-Height = 256*FRACUNIT
-Mass = 100
-Flags = MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
-
-Mobj MT_ARIDDUST
-SpawnState = S_ARIDDUST1
-SpawnHealth = 1
-Radius = 16*FRACUNIT
-Height = 24*FRACUNIT
-Mass = 100
-Flags = MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOCLIPHEIGHT
-
-Mobj MT_MINECART
-SpawnState = S_MINECART_IDLE
-SpawnHealth = 1
-ReactionTime = 24*FRACUNIT
-PainSound = sfx_statu2
-DeathState = S_MINECART_DTH1
-DeathSound = sfx_s3k59
-Speed = 20*FRACUNIT
-Radius = 22*FRACUNIT
-Height = 32*FRACUNIT
-Mass = 100
-ActiveSound = sfx_s3k76
-Flags = MF_PUSHABLE
-RaiseState = MT_MINECARTSIDEMARK
-
-Mobj MT_MINECARTSEG
-SpawnState = S_INVISIBLE
-SpawnHealth = 1
-Radius = FRACUNIT
-Height = 32*FRACUNIT
-Mass = 100
-Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_NOCLIP
-
-Mobj MT_MINECARTSPAWNER
-MapThingNum = 1219
-SpawnState = S_INVISIBLE
-SpawnHealth = 1000
-Radius = 22*FRACUNIT
-Height = 16*FRACUNIT
-Mass = 100
-Flags = MF_SPECIAL
-
-Mobj MT_MINECARTEND
-MapThingNum = 1220
-SpawnState = S_MINECARTEND
-SpawnHealth = 1
-Radius = 32*FRACUNIT
-Height = 160*FRACUNIT
-Mass = 100
-Flags = MF_SPECIAL|MF_NOCLIPHEIGHT|MF_NOGRAVITY
-
-Mobj MT_MINECARTENDSOLID
-SpawnState = S_INVISIBLE
-SpawnHealth = 1
-Radius = 32*FRACUNIT
-Height = 32*FRACUNIT
-Mass = 100
-Flags = MF_SOLID|MF_PAPERCOLLISION|MF_NOCLIPHEIGHT|MF_NOGRAVITY
-
-Mobj MT_MINECARTSIDEMARK
-SpawnState = S_MINECARTSIDEMARK2
-SpawnHealth = 1
-Radius = 22*FRACUNIT
-Height = 32*FRACUNIT
-Mass = 100
-Flags = MF_NOBLOCKMAP|MF_NOGRAVITY
-
-Mobj MT_MINECARTSPARK
-SpawnState = S_MINECARTSPARK
-SpawnHealth = 1
-Radius = 2*FRACUNIT
-Height = 2*FRACUNIT
-Mass = 100
-Flags = MF_NOCLIPTHING|MF_GRENADEBOUNCE
-
-Mobj MT_SALOONDOOR
-SpawnState = S_SALOONDOOR
-SpawnHealth = 1
-Radius = 48*FRACUNIT
-Height = 160*FRACUNIT
-Mass = 100
-ActiveSound = sfx_s3k90
-Flags = MF_SOLID|MF_NOGRAVITY|MF_RUNSPAWNFUNC|MF_PAPERCOLLISION|MF_NOCLIPHEIGHT
-
-Mobj MT_SALOONDOORCENTER
-MapThingNum = 1221
-SpawnState = S_SALOONDOORCENTER
-SpawnHealth = 1
-Radius = 96*FRACUNIT
-Height = 160*FRACUNIT
-Mass = 100
-Flags = MF_SOLID|MF_NOGRAVITY|MF_RUNSPAWNFUNC|MF_PAPERCOLLISION|MF_NOCLIPHEIGHT
-
-Mobj MT_TRAINCAMEOSPAWNER
-MapThingNum = 1222
-SpawnState = S_TRAINCAMEOSPAWNER_1
-SpawnHealth = 1
-Radius = 28*FRACUNIT
-Height = 32*FRACUNIT
-Mass = 100
-Flags = MF_NOGRAVITY|MF_NOCLIP
-
-Mobj MT_TRAINSEG
-SpawnState = S_INVISIBLE
-SpawnHealth = 1
-Radius = FRACUNIT
-Height = FRACUNIT
-Mass = 100
-Flags = MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT
-
-Mobj MT_TRAINDUSTSPAWNER
-MapThingNum = 1223
-SpawnState = S_INVISIBLE
-SpawnHealth = 1
-Radius = FRACUNIT
-Height = FRACUNIT
-Mass = 100
-Flags = MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIP
-
-Mobj MT_TRAINSTEAMSPAWNER
-MapThingNum = 1224
-SpawnState = S_INVISIBLE
-SpawnHealth = 1
-Radius = FRACUNIT
-Height = FRACUNIT
-Mass = 100
-Flags = MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIP
-
-Mobj MT_MINECARTSWITCHPOINT
-MapThingNum = 1229
-SpawnState = S_INVISIBLE
-SpawnHealth = 1
-Radius = FRACUNIT
-Height = 160*FRACUNIT
-Mass = 100
-Flags = MF_SPECIAL|MF_NOCLIPHEIGHT|MF_NOGRAVITY
+Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
 
 # Red Volcano Scenery
 Mobj MT_FLAMEJET
@@ -9637,9 +9282,9 @@ Height = 20<<FRACBITS
 Flags = MF_SCENERY|MF_NOCLIP|MF_NOGRAVITY
 
 # Daytona Speedway
-Mobj MT_DAYTONAPINETREE
+Mobj MT_PINETREE
 MapThingNum = 3204
-SpawnState = S_DAYTONAPINETREE
+SpawnState = S_PINETREE
 SpawnHealth = 1000
 ReactionTime = 8
 Radius = 32<<FRACBITS
@@ -9647,8 +9292,8 @@ Height = 192<<FRACBITS
 Mass = 8
 Flags = MF_SOLID|MF_NOGRAVITY
 
-Mobj MT_DAYTONAPINETREE_SIDE
-SpawnState = S_DAYTONAPINETREE_SIDE
+Mobj MT_PINETREE_SIDE
+SpawnState = S_PINETREE_SIDE
 SpawnHealth = 1000
 ReactionTime = 8
 Radius = 32<<FRACBITS
