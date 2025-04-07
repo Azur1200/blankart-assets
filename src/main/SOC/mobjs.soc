@@ -281,92 +281,24 @@ Mass = 100
 Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
 RaiseState = MT_JETTBULLET
 
-# Spincushion
-Mobj MT_SPINCUSHION
+# Sharp
+Mobj MT_SHARP
 MapThingNum = 112
-SpawnState = S_SPINCUSHION_LOOK
+SpawnState = S_SHARP_ROAM1
 SpawnHealth = 1
-SeeState = S_SPINCUSHION_CHASE1
+SeeState = S_SHARP_ROAM2
 ReactionTime = 3*TICRATE
 AttackSound = sfx_s3kd8s
 PainChance = 5*TICRATE
-PainSound = sfx_shrpsp
-MeleeState = S_SPINCUSHION_STOP1
-MissileState = S_SPINCUSHION_AIM1
+MissileState = S_SHARP_AIM1
 DeathState = S_XPLD_FLICKY
-XDeathState = S_SPINCUSHION_STOP3
+XDeathState = S_SHARP_SPIN
 DeathSound = sfx_pop
 Speed = 2
 Radius = 16*FRACUNIT
 Height = 24*FRACUNIT
-Mass = DMG_NORMAL
-ActiveSound = sfx_s3kaa
-Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
-
-# Crushstacean
-Mobj MT_CRUSHSTACEAN
-MapThingNum = 126
-SpawnState = S_CRUSHSTACEAN_ROAM1
-SpawnHealth = 1
-ReactionTime = 32
-AttackSound = sfx_s3k6b
-MissileState = S_CRUSHSTACEAN_PUNCH1
-DeathState = S_XPLD_FLICKY
-DeathSound = sfx_pop
-Speed = 8
-Radius = 24*FRACUNIT
-Height = 32*FRACUNIT
-Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
-
-# Big meaty claw
-Mobj MT_CRUSHCLAW
-SpawnState = S_CRUSHCLAW_AIM
-SpawnHealth = 1
-ReactionTime = 16
-AttackSound = sfx_s3k6b
-MissileState = S_CRUSHCLAW_OUT
-DeathState = S_XPLD1
-DeathSound = sfx_pop
-Speed = 600
-Radius = 22*FRACUNIT
-Height = 24*FRACUNIT
-Mass = (sfx_s3k49<<8)
-ActiveSound = sfx_s3kd2l
-Flags = MF_PAIN|MF_NOGRAVITY|MF_NOCLIPHEIGHT
-RaiseState = MT_CRUSHCHAIN
-
-# Chain
-Mobj MT_CRUSHCHAIN
-SpawnState = S_CRUSHCHAIN
-Flags = MF_SCENERY|MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY
-
-# Banpyura
-Mobj MT_BANPYURA
-MapThingNum = 138
-SpawnState = S_BANPYURA_ROAM1
-SpawnHealth = 1
-ReactionTime = 32
-DeathState = S_XPLD_FLICKY
-DeathSound = sfx_pop
-Speed = 8
-Radius = 24*FRACUNIT
-Height = 32*FRACUNIT
-Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
-
-# Banpyura spring
-Mobj MT_BANPSPRING
-SpawnState = S_CDIAG1
-SpawnHealth = 1
-SeeState = S_CDIAG2
-PainSound = sfx_cdfm08
-DeathState = S_XPLD1
-Speed = 300
-Radius = 22*FRACUNIT
-Height = 22*FRACUNIT
-Mass = 11*FRACUNIT
-Damage = 11*FRACUNIT
-Flags = MF_SPRING|MF_NOGRAVITY
-RaiseState = S_CDIAG2
+Mass = 100
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_BOUNCE
 
 # Jet Jaw
 Mobj MT_JETJAW
@@ -518,38 +450,18 @@ Flags = MF_SPECIAL|MF_NOGRAVITY
 # Green Snapper
 Mobj MT_GSNAPPER
 MapThingNum = 120
-SpawnState = S_SNAPPER_SPAWN
+SpawnState = S_GSNAPPER_STND
 SpawnHealth = 1
 SeeState = S_GSNAPPER1
-ReactionTime = 10
+ReactionTime = 32
 PainChance = 200
-DeathState = S_SNAPPER_XPLD
+DeathState = S_XPLD1
 DeathSound = sfx_pop
-Speed = 4
+Speed = 3
 Radius = 24*FRACUNIT
-Height = 32*FRACUNIT
+Height = 24*FRACUNIT
 Mass = 100
-ActiveSound = sfx_s3k7e
 Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
-
-# Green Snapper leg
-Mobj MT_SNAPPER_LEG
-SpawnState = S_SNAPPER_LEG
-SpawnHealth = 1
-Radius = 6*FRACUNIT
-Height = 12*FRACUNIT
-Mass = 100
-Flags = MF_SCENERY|MF_PAIN|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOBLOCKMAP|MF_NOGRAVITY
-RaiseState = S_SNAPPER_LEGRAISE
-
-# Green Snapper head
-Mobj MT_SNAPPER_HEAD
-SpawnState = S_SNAPPER_HEAD
-SpawnHealth = 1
-Radius = 6*FRACUNIT
-Height = 12*FRACUNIT
-Mass = 100
-Flags = MF_PAIN|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOBLOCKMAP|MF_NOGRAVITY
 
 # Minus
 Mobj MT_MINUS
@@ -958,114 +870,6 @@ Speed = 1
 Radius = 10*FRACUNIT
 Height = 28*FRACUNIT
 Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY
-
-# Boss 5
-Mobj MT_FANG
-MapThingNum = 204
-SpawnState = S_FANG_SETUP
-SpawnHealth = 8
-SeeState = S_FANG_PATHINGSTART1
-AttackSound = sfx_skid
-PainState = S_FANG_PAIN1
-PainSound = sfx_s3k5d
-DeathState = S_FANG_DIE1
-XDeathState = S_FANG_KO
-DeathSound = sfx_s3k90
-Radius = 24*FRACUNIT
-Height = 60*FRACUNIT
-Damage = 3
-ActiveSound = sfx_boingf
-Flags = MF_RUNSPAWNFUNC|MF_SPECIAL|MF_BOSS|MF_SHOOTABLE|MF_GRENADEBOUNCE|MF_NOCLIPTHING
-
-Mobj MT_BROKENROBOT
-SpawnState = S_BROKENROBOTRANDOM
-SpawnHealth = 1000
-SeeSound = sfx_ambint
-PainChance = 255
-Radius = 8*FRACUNIT
-Height = 16*FRACUNIT
-Mass = 1000
-ActiveSound = sfx_crumbl
-Flags = MF_RUNSPAWNFUNC|MF_NOBLOCKMAP|MF_NOCLIPTHING|MF_SCENERY|MF_NOCLIPHEIGHT
-
-Mobj MT_VWREF
-SpawnState = S_VWREF
-SpawnHealth = 1
-PainChance = 3
-Radius = 42*FRACUNIT
-Height = 12*FRACUNIT
-DispOffset = 1
-Mass = 1000
-Damage = 8
-Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_SCENERY
-
-Mobj MT_VWREB
-SpawnState = S_VWREB
-SpawnHealth = 1
-PainChance = 3
-Radius = 42*FRACUNIT
-Height = 12*FRACUNIT
-DispOffset = -1
-Mass = 1000
-Damage = 8
-Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_SCENERY
-
-Mobj MT_PROJECTORLIGHT
-SpawnState = S_PROJECTORLIGHT1
-SpawnHealth = 1
-PainChance = 3
-Radius = 42*FRACUNIT
-Height = 52*FRACUNIT
-DispOffset = -1
-Mass = 1000
-Damage = 8
-Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_SCENERY
-
-Mobj MT_FBOMB
-SpawnState = S_FBOMB1
-SpawnHealth = 1
-SeeSound = sfx_s3k51
-DeathState = S_FBOMB_EXPL1
-DeathSound = sfx_s3k4e
-Speed = 20*FRACUNIT
-Radius = 24*FRACUNIT
-Height = 48*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_MISSILE
-
-# also used by barrel
-Mobj MT_TNTDUST
-SpawnState = S_TNTDUST_1
-SpawnHealth = 1
-Speed = 20*FRACUNIT
-Radius = 16*FRACUNIT
-Height = 32*FRACUNIT
-Mass = 100
-Flags = MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
-
-Mobj MT_FSGNA
-SpawnState = S_FSGNA
-SpawnHealth = 1
-DeathSound = sfx_mspogo
-Radius = 124*FRACUNIT
-Height = 124*FRACUNIT
-Flags = MF_NOGRAVITY|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_SCENERY
-
-Mobj MT_FSGNB
-SpawnState = S_FSGNB
-SpawnHealth = 1
-DeathState = S_FSGNC
-XDeathState = S_FSGND
-Radius = 74*FRACUNIT
-Height = 320*FRACUNIT
-Flags = MF_NOGRAVITY|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_SCENERY|MF_SOLID
-
-Mobj MT_FANGWAYPOINT
-MapThingNum = 294
-SpawnState = S_INVISIBLE
-SpawnHealth = 1000
-Radius = FRACUNIT
-Height = FRACUNIT
-Flags = MF_NOGRAVITY|MF_NOBLOCKMAP|MF_SCENERY
 
 # Black Eggman (Boss 7)
 Mobj MT_BLACKEGGMAN
