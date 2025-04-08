@@ -22535,3 +22535,21 @@ SpriteName = SPR_WTRU
 SpriteFrame = A|FF_TRANS50|FF_PAPERSPRITE
 Duration = 2
 
+# Slipdash drift sparks
+State S_SLIPSPARK1
+SpriteName = SPR_DRIF
+SpriteFrame = C|FF_FULLBRIGHT
+Duration = 2
+Next = S_SLIPSPARK2
+
+State S_SLIPSPARK2
+SpriteName = SPR_DRIF
+SpriteFrame = B|FF_FULLBRIGHT
+Duration = 1
+Next = S_SLIPSPARK3
+
+State S_SLIPSPARK3
+SpriteName = SPR_DRIF
+SpriteFrame = A|FF_FULLBRIGHT
+Duration = 1
+Next = S_NULL
