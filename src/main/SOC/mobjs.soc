@@ -154,6 +154,23 @@ Height = 40*FRACUNIT
 Mass = 100
 Flags = MF_SLIDEME|MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY
 
+# AquaBuzz for ATZ
+Mobj MT_AQUABUZZ
+MapThingNum = 124
+SpawnState = S_BBUZZFLY1
+SpawnHealth = 1
+SeeState = S_BBUZZFLY1
+ReactionTime = 2
+PainChance = TICRATE
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+Speed = 6*FRACUNIT
+Radius = 20*FRACUNIT
+Height = 24*FRACUNIT
+Mass = 100
+ActiveSound = sfx_gbeep
+Flags = MF_SLIDEME|MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY
+
 # Jetty-Syn Bomber
 Mobj MT_JETTBOMBER
 MapThingNum = 105
@@ -466,32 +483,23 @@ Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
 # Minus
 Mobj MT_MINUS
 MapThingNum = 121
-SpawnState = S_MINUS_INIT
+SpawnState = S_MINUS_STND
 SpawnHealth = 1
-SeeState = S_MINUS_DIGGING1
+SeeState = S_MINUS_DIGGING
 ReactionTime = 32
-AttackSound = sfx_s3kccs
+AttackSound = sfx_s3k82
 PainChance = 200
-MeleeState = S_MINUS_BURST0
+MeleeState = S_MINUS_DOWNWARD1
 MissileState = S_MINUS_POPUP
-DeathState = S_XPLD_FLICKY
+DeathState = S_XPLD1
 DeathSound = sfx_pop
-Speed = 17
+Speed = 12
 Radius = 24*FRACUNIT
 Height = 32*FRACUNIT
 Mass = 100
-ActiveSound = sfx_s3kd3s
-Flags = MF_ENEMY|MF_NOCLIPTHING
-RaiseState = S_MINUS_BURST1
-
-# Minus dirt
-Mobj MT_MINUSDIRT
-SpawnState = S_MINUSDIRT1
-SpawnHealth = 1
-Radius = 8*FRACUNIT
-Height = 8*FRACUNIT
-Mass = 100
-Flags = MF_NOBLOCKMAP|MF_NOCLIPTHING
+ActiveSound = sfx_mindig
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
+RaiseState = S_MINUS_UPWARD1
 
 # Spring Shell
 Mobj MT_SPRINGSHELL
@@ -1216,18 +1224,31 @@ Height = 24*FRACUNIT
 Mass = 100
 Flags = MF_SLIDEME|MF_SPECIAL|MF_NOGRAVITY|MF_NOCLIPHEIGHT
 
-# Special Stage token for special stage
-Mobj MT_TOKEN
+# emerald token for special stage
+Mobj MT_EMMY
 MapThingNum = 312
-SpawnState = S_TOKEN
+SpawnState = S_EMMY
 SpawnHealth = 1000
 ReactionTime = 8
 DeathState = S_SPRK1
-Radius = 16*FRACUNIT
-Height = 32*FRACUNIT
+DeathSound = sfx_token
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
 Mass = 100
 Damage = 1
-Flags = MF_SPECIAL|MF_NOGRAVITY|MF_NOCLIPHEIGHT
+Flags = MF_SPECIAL|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_DONTENCOREMAP
+
+# Special Stage Token (uncollectible part)
+Mobj MT_TOKEN
+SpawnState = S_TOKEN
+SpawnHealth = 1000
+SeeState = S_MOVINGTOKEN
+ReactionTime = 8
+Speed = 8
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+Mass = 100
+Flags = MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIP|MF_DONTENCOREMAP
 
 # Red CTF Flag
 Mobj MT_REDFLAG
@@ -1783,21 +1804,33 @@ Mass = 4
 Flags = MF_SPECIAL
 
 Mobj MT_BIGMINE
-MapThingNum = 1012
-SpawnState = S_BIGMINE_IDLE
+MapThingNum = 524
+SpawnState = S_BIGMINE1
 SpawnHealth = 1
-SeeState = S_BIGMINE_ALERT1
-SeeSound = sfx_s3k5c
 ReactionTime = 8
-PainSound = sfx_s3k86
-MeleeState = S_BIGMINE_SET1
-DeathState = S_BIGMINE_SET2
+PainChance = TICRATE
 Speed = 2*FRACUNIT
-Radius = 28*FRACUNIT
-Height = 56*FRACUNIT
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
 Mass = MT_UWEXPLODE
-ActiveSound = sfx_s3k9e
-Flags = MF_SPECIAL|MF_NOGRAVITY|MF_SHOOTABLE|MF_ENEMY
+Damage = 64*FRACUNIT
+ActiveSound = sfx_gbeep
+Flags = MF_SPECIAL|MF_NOGRAVITY
+
+Mobj MT_BIGAIRMINE
+MapThingNum = 527
+SpawnState = S_BIGMINE1
+SpawnHealth = 1
+ReactionTime = 8
+PainChance = TICRATE
+DeathSound = sfx_bexpld
+Speed = 2*FRACUNIT
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = MT_BOSSEXPLODE
+Damage = 64*FRACUNIT
+ActiveSound = sfx_gbeep
+Flags = MF_SPECIAL|MF_NOGRAVITY
 
 Mobj MT_BLASTEXECUTOR
 MapThingNum = 756
@@ -1811,7 +1844,7 @@ Mass = 4
 Flags = MF_SHOOTABLE|MF_NOGRAVITY|MF_NOCLIPTHING
 
 Mobj MT_CANNONLAUNCHER
-MapThingNum = 1123
+MapThingNum = 525
 SpawnState = S_CANNONLAUNCHER1
 SpawnHealth = 1
 ReactionTime = 2*TICRATE
@@ -1823,543 +1856,340 @@ Damage = 1
 ActiveSound = sfx_pop
 Flags = MF_NOGRAVITY|MF_NOSECTOR|MF_NOBLOCKMAP
 
-# Monitor miscellany
-Mobj MT_BOXSPARKLE
-SpawnState = S_BOXSPARKLE1
+# Monitor Boxes
+Mobj MT_SUPERRINGBOX
+MapThingNum = 400
+SpawnState = S_SUPERRINGBOX
 SpawnHealth = 1
 ReactionTime = 8
+PainState = S_SUPERRINGBOX
+DeathState = S_SUPERRINGBOX2
 DeathSound = sfx_pop
-Speed = 3*FRACUNIT
+Speed = MT_MONITOREXPLOSION
 Radius = 16*FRACUNIT
 Height = 32*FRACUNIT
 Mass = 100
-Flags = MF_NOGRAVITY|MF_SCENERY|MF_NOBLOCKMAP|MF_NOCLIPHEIGHT
+Damage = MT_RINGICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
 
-# Monitor boxes -- regular
-Mobj MT_RING_BOX
-MapThingNum = 400
-SpawnState = S_RING_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_RING_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_RING_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_PITY_BOX
-MapThingNum = 401
-SpawnState = S_PITY_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_PITY_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_PITY_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_ATTRACT_BOX
-MapThingNum = 402
-SpawnState = S_ATTRACT_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_ATTRACT_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_ATTRACT_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_FORCE_BOX
-MapThingNum = 403
-SpawnState = S_FORCE_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_FORCE_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_FORCE_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_ARMAGEDDON_BOX
-MapThingNum = 404
-SpawnState = S_ARMAGEDDON_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_ARMAGEDDON_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_ARMAGEDDON_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_WHIRLWIND_BOX
-MapThingNum = 405
-SpawnState = S_WHIRLWIND_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_WHIRLWIND_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_WHIRLWIND_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_ELEMENTAL_BOX
-MapThingNum = 406
-SpawnState = S_ELEMENTAL_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_ELEMENTAL_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_ELEMENTAL_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_SNEAKERS_BOX
-MapThingNum = 407
-SpawnState = S_SNEAKERS_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_SNEAKERS_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_SNEAKERS_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_INVULN_BOX
-MapThingNum = 408
-SpawnState = S_INVULN_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_INVULN_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_INVULN_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_1UP_BOX
-MapThingNum = 409
-SpawnState = S_1UP_BOX
-SpawnHealth = 1
-SeeState = S_INVISIBLE
-ReactionTime = 8
-PainState = S_1UP_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_1UP_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_EGGMAN_BOX
-MapThingNum = 410
-SpawnState = S_EGGMAN_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_EGGMAN_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_EGGMAN_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_MIXUP_BOX
-MapThingNum = 411
-SpawnState = S_MIXUP_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_MIXUP_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_MIXUP_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_MYSTERY_BOX
-MapThingNum = 412
-SpawnState = S_MYSTERY_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_MYSTERY_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_UNKNOWN
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_GRAVITY_BOX
-MapThingNum = 413
-SpawnState = S_GRAVITY_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_GRAVITY_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_GRAVITY_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_RECYCLER_BOX
-MapThingNum = 416
-SpawnState = S_RECYCLER_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_RECYCLER_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_RECYCLER_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_SCORE1K_BOX
-MapThingNum = 418
-SpawnState = S_SCORE1K_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_SCORE1K_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_SCORE1K_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_SCORE10K_BOX
-MapThingNum = 419
-SpawnState = S_SCORE10K_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_SCORE10K_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_SCORE10K_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_FLAMEAURA_BOX
-MapThingNum = 420
-SpawnState = S_FLAMEAURA_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_FLAMEAURA_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_FLAMEAURA_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_BUBBLEWRAP_BOX
-MapThingNum = 421
-SpawnState = S_BUBBLEWRAP_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_BUBBLEWRAP_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_BUBBLEWRAP_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-Mobj MT_THUNDERCOIN_BOX
-MapThingNum = 422
-SpawnState = S_THUNDERCOIN_BOX
-SpawnHealth = 1
-ReactionTime = 8
-PainState = S_THUNDERCOIN_BOX
-DeathState = S_BOX_POP1
-DeathSound = sfx_pop
-Speed = 1
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = MT_THUNDERCOIN_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
-
-# Monitor boxes -- repeating (big) boxes
-Mobj MT_PITY_GOLDBOX
-MapThingNum = 431
-SpawnState = S_PITY_GOLDBOX
-SpawnHealth = 1
-ReactionTime = 8
-AttackSound = sfx_monton
-PainState = S_PITY_GOLDBOX
-DeathState = S_GOLDBOX_OFF1
-DeathSound = sfx_pop
-Radius = 20*FRACUNIT
-Height = 44*FRACUNIT
-Mass = 100
-Damage = MT_PITY_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_GRENADEBOUNCE
-
-Mobj MT_ATTRACT_GOLDBOX
-MapThingNum = 432
-SpawnState = S_ATTRACT_GOLDBOX
-SpawnHealth = 1
-ReactionTime = 8
-AttackSound = sfx_monton
-PainState = S_ATTRACT_GOLDBOX
-DeathState = S_GOLDBOX_OFF1
-DeathSound = sfx_pop
-Radius = 20*FRACUNIT
-Height = 44*FRACUNIT
-Mass = 100
-Damage = MT_ATTRACT_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_GRENADEBOUNCE
-
-Mobj MT_FORCE_GOLDBOX
-MapThingNum = 433
-SpawnState = S_FORCE_GOLDBOX
-SpawnHealth = 1
-ReactionTime = 8
-AttackSound = sfx_monton
-PainState = S_FORCE_GOLDBOX
-DeathState = S_GOLDBOX_OFF1
-DeathSound = sfx_pop
-Radius = 20*FRACUNIT
-Height = 44*FRACUNIT
-Mass = 100
-Damage = MT_FORCE_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_GRENADEBOUNCE
-
-Mobj MT_ARMAGEDDON_GOLDBOX
-MapThingNum = 434
-SpawnState = S_ARMAGEDDON_GOLDBOX
-SpawnHealth = 1
-ReactionTime = 8
-AttackSound = sfx_monton
-PainState = S_ARMAGEDDON_GOLDBOX
-DeathState = S_GOLDBOX_OFF1
-DeathSound = sfx_pop
-Radius = 20*FRACUNIT
-Height = 44*FRACUNIT
-Mass = 100
-Damage = MT_ARMAGEDDON_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_GRENADEBOUNCE
-
-Mobj MT_WHIRLWIND_GOLDBOX
-MapThingNum = 435
-SpawnState = S_WHIRLWIND_GOLDBOX
-SpawnHealth = 1
-ReactionTime = 8
-AttackSound = sfx_monton
-PainState = S_WHIRLWIND_GOLDBOX
-DeathState = S_GOLDBOX_OFF1
-DeathSound = sfx_pop
-Radius = 20*FRACUNIT
-Height = 44*FRACUNIT
-Mass = 100
-Damage = MT_WHIRLWIND_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_GRENADEBOUNCE
-
-Mobj MT_ELEMENTAL_GOLDBOX
-MapThingNum = 436
-SpawnState = S_ELEMENTAL_GOLDBOX
-SpawnHealth = 1
-ReactionTime = 8
-AttackSound = sfx_monton
-PainState = S_ELEMENTAL_GOLDBOX
-DeathState = S_GOLDBOX_OFF1
-DeathSound = sfx_pop
-Radius = 20*FRACUNIT
-Height = 44*FRACUNIT
-Mass = 100
-Damage = MT_ELEMENTAL_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_GRENADEBOUNCE
-
-Mobj MT_SNEAKERS_GOLDBOX
-MapThingNum = 437
-SpawnState = S_SNEAKERS_GOLDBOX
-SpawnHealth = 1
-ReactionTime = 8
-AttackSound = sfx_monton
-PainState = S_SNEAKERS_GOLDBOX
-DeathState = S_GOLDBOX_OFF1
-DeathSound = sfx_pop
-Radius = 20*FRACUNIT
-Height = 44*FRACUNIT
-Mass = 100
-Damage = MT_SNEAKERS_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_GRENADEBOUNCE
-
-Mobj MT_INVULN_GOLDBOX
-MapThingNum = 438
-SpawnState = S_INVULN_GOLDBOX
-SpawnHealth = 1
-ReactionTime = 8
-AttackSound = sfx_monton
-PainState = S_INVULN_GOLDBOX
-DeathState = S_GOLDBOX_OFF1
-DeathSound = sfx_pop
-Radius = 20*FRACUNIT
-Height = 44*FRACUNIT
-Mass = 100
-Damage = MT_INVULN_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_GRENADEBOUNCE
-
-Mobj MT_EGGMAN_GOLDBOX
-MapThingNum = 440
-SpawnState = S_EGGMAN_GOLDBOX
-SpawnHealth = 1
-ReactionTime = 8
-AttackSound = sfx_monton
-PainState = S_EGGMAN_GOLDBOX
-DeathState = S_GOLDBOX_OFF1
-DeathSound = sfx_pop
-Radius = 20*FRACUNIT
-Height = 44*FRACUNIT
-Mass = 100
-Damage = MT_EGGMAN_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_GRENADEBOUNCE
-
-Mobj MT_GRAVITY_GOLDBOX
-MapThingNum = 443
-SpawnState = S_GRAVITY_GOLDBOX
-SpawnHealth = 1
-ReactionTime = 8
-AttackSound = sfx_monton
-PainState = S_GRAVITY_GOLDBOX
-DeathState = S_GOLDBOX_OFF1
-DeathSound = sfx_pop
-Radius = 20*FRACUNIT
-Height = 44*FRACUNIT
-Mass = 100
-Damage = MT_GRAVITY_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_GRENADEBOUNCE
-
-Mobj MT_FLAMEAURA_GOLDBOX
-MapThingNum = 450
-SpawnState = S_FLAMEAURA_GOLDBOX
-SpawnHealth = 1
-ReactionTime = 8
-AttackSound = sfx_monton
-PainState = S_FLAMEAURA_GOLDBOX
-DeathState = S_GOLDBOX_OFF1
-DeathSound = sfx_pop
-Radius = 20*FRACUNIT
-Height = 44*FRACUNIT
-Mass = 100
-Damage = MT_FLAMEAURA_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_GRENADEBOUNCE
-
-Mobj MT_BUBBLEWRAP_GOLDBOX
-MapThingNum = 451
-SpawnState = S_BUBBLEWRAP_GOLDBOX
-SpawnHealth = 1
-ReactionTime = 8
-AttackSound = sfx_monton
-PainState = S_BUBBLEWRAP_GOLDBOX
-DeathState = S_GOLDBOX_OFF1
-DeathSound = sfx_pop
-Radius = 20*FRACUNIT
-Height = 44*FRACUNIT
-Mass = 100
-Damage = MT_BUBBLEWRAP_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_GRENADEBOUNCE
-
-Mobj MT_THUNDERCOIN_GOLDBOX
-MapThingNum = 452
-SpawnState = S_THUNDERCOIN_GOLDBOX
-SpawnHealth = 1
-ReactionTime = 8
-AttackSound = sfx_monton
-PainState = S_THUNDERCOIN_GOLDBOX
-DeathState = S_GOLDBOX_OFF1
-DeathSound = sfx_pop
-Radius = 20*FRACUNIT
-Height = 44*FRACUNIT
-Mass = 100
-Damage = MT_THUNDERCOIN_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_GRENADEBOUNCE
-
-# Monitor boxes -- special
-Mobj MT_RING_REDBOX
+Mobj MT_REDRINGBOX
 MapThingNum = 414
-SpawnState = S_RING_REDBOX1
+SpawnState = S_REDRINGBOX
 SpawnHealth = 1
 ReactionTime = 8
-PainState = S_RING_REDBOX1
-DeathState = S_REDBOX_POP1
+PainState = S_REDRINGBOX
+DeathState = S_SUPERRINGBOX2
 DeathSound = sfx_pop
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
+Speed = MT_REDMONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
 Mass = 100
-Damage = MT_RING_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
+Damage = MT_RINGICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
 
-Mobj MT_RING_BLUEBOX
+Mobj MT_BLUERINGBOX
 MapThingNum = 415
-SpawnState = S_RING_BLUEBOX1
+SpawnState = S_BLUERINGBOX
 SpawnHealth = 1
 ReactionTime = 8
-PainState = S_RING_BLUEBOX1
-DeathState = S_BLUEBOX_POP1
+PainState = S_BLUERINGBOX
+DeathState = S_SUPERRINGBOX2
 DeathSound = sfx_pop
-Radius = 18*FRACUNIT
-Height = 40*FRACUNIT
+Speed = MT_BLUEMONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
 Mass = 100
-Damage = MT_RING_ICON
-Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
+Damage = MT_RINGICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
 
-# Monitor icons
-Mobj MT_RING_ICON
-SpawnState = S_RING_ICON1
+Mobj MT_SNEAKERTV
+MapThingNum = 407
+SpawnState = S_SHTV
+SpawnHealth = 1
+ReactionTime = 8
+PainState = S_SHTV
+DeathState = S_SHTV2
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_SHOESICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+Mobj MT_INV
+MapThingNum = 408
+SpawnState = S_PINV
+SpawnHealth = 1
+ReactionTime = 8
+PainState = S_PINV
+DeathState = S_PINV2
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_INVCICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+# 1up Box
+Mobj MT_PRUP
+MapThingNum = 409
+SpawnState = S_PRUP
+SpawnHealth = 1
+SeeState = S_PLAY_BOX1
+ReactionTime = 8
+PainState = S_PRUP
+DeathState = S_PRUP2
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_1UPICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_RUNSPAWNFUNC|MF_DONTENCOREMAP
+
+Mobj MT_YELLOWTV
+MapThingNum = 402
+SpawnState = S_YLTV
+SpawnHealth = 1
+ReactionTime = 8
+PainState = S_YLTV
+DeathState = S_YLTV2
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_YSHIELDICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+Mobj MT_BLUETV
+MapThingNum = 403
+SpawnState = S_BLTV1
+SpawnHealth = 1
+ReactionTime = 8
+PainState = S_BLTV1
+DeathState = S_BLTV3
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_BSHIELDICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+# Bomb shield TV
+Mobj MT_BLACKTV
+MapThingNum = 404
+SpawnState = S_BKTV1
+SpawnHealth = 1
+ReactionTime = 8
+PainState = S_BKTV1
+DeathState = S_BKTV3
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_KSHIELDICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+# Jump shield TV
+Mobj MT_WHITETV
+MapThingNum = 405
+SpawnState = S_WHTV1
+SpawnHealth = 1
+ReactionTime = 8
+PainState = S_WHTV1
+DeathState = S_WHTV3
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_WSHIELDICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+Mobj MT_GREENTV
+MapThingNum = 406
+SpawnState = S_GRTV
+SpawnHealth = 1
+ReactionTime = 8
+PainState = S_GRTV
+DeathState = S_GRTV2
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_GSHIELDICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+# Pity Shield TV
+Mobj MT_PITYTV
+MapThingNum = 401
+SpawnState = S_PITV1
+SpawnHealth = 1
+ReactionTime = 8
+PainState = S_PITV1
+DeathState = S_PITV3
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_PITYSHIELDICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+Mobj MT_EGGMANBOX
+MapThingNum = 410
+SpawnState = S_EGGTV1
+SpawnHealth = 1
+ReactionTime = 8
+PainState = S_EGGTV1
+DeathState = S_EGGTV3
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_EGGMANICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+Mobj MT_MIXUPBOX
+MapThingNum = 411
+SpawnState = S_MIXUPBOX1
+SpawnHealth = 1
+ReactionTime = 8
+PainState = S_MIXUPBOX1
+DeathState = S_MIXUPBOX3
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_MIXUPICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+Mobj MT_RECYCLETV
+MapThingNum = 416
+SpawnState = S_RECYCLETV1
+SpawnHealth = 1
+ReactionTime = 8
+PainState = S_RECYCLETV1
+DeathState = S_RECYCLETV3
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_RECYCLEICO
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+Mobj MT_RECYCLEICO
+SpawnState = S_RECYCLETV3
+SpawnHealth = 1
+ReactionTime = 8
+Speed = 2*FRACUNIT
+Radius = 8*FRACUNIT
+Height = 14*FRACUNIT
+Mass = 100
+Damage = 62*FRACUNIT
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
+
+Mobj MT_QUESTIONBOX
+MapThingNum = 412
+SpawnState = S_RANDOMBOX1
+SpawnHealth = 1
+ReactionTime = 8
+PainState = S_RANDOMBOX1
+DeathState = S_RANDOMBOX3
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+Mobj MT_GRAVITYBOX
+MapThingNum = 413
+SpawnState = S_GBTV1
+SpawnHealth = 1
+ReactionTime = 8
+PainState = S_GBTV1
+DeathState = S_GBTV3
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_GRAVITYICO
+ActiveSound = sfx_cgot
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+Mobj MT_SCORETVSMALL
+MapThingNum = 418
+SpawnState = S_SCORETVA1
+SpawnHealth = 1
+SeeSound = sfx_token
+ReactionTime = 8
+PainState = S_SCORETVA1
+DeathState = S_SCORETVA3
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_SCOREICOSMALL
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+Mobj MT_SCORETVLARGE
+MapThingNum = 419
+SpawnState = S_SCORETVB1
+SpawnHealth = 1
+SeeSound = sfx_token
+ReactionTime = 8
+PainState = S_SCORETVB1
+DeathState = S_SCORETVB3
+DeathSound = sfx_pop
+Speed = MT_MONITOREXPLOSION
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = MT_SCOREICOLARGE
+Flags = MF_SOLID|MF_SHOOTABLE|MF_MONITOR|MF_DONTENCOREMAP
+
+# Monitor miscellany
+Mobj MT_MONITOREXPLOSION
+SpawnState = S_MONITOREXPLOSION1
+ReactionTime = 8
+PainState = S_XPLD1
+Radius = 8*FRACUNIT
+Height = 8*FRACUNIT
+Mass = MT_EXPLODE
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_DONTENCOREMAP
+
+Mobj MT_REDMONITOREXPLOSION
+SpawnState = S_REDMONITOREXPLOSION1
+ReactionTime = 8
+PainState = S_XPLD1
+Radius = 8*FRACUNIT
+Height = 8*FRACUNIT
+Mass = MT_EXPLODE
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_DONTENCOREMAP
+
+Mobj MT_BLUEMONITOREXPLOSION
+SpawnState = S_BLUEMONITOREXPLOSION1
+ReactionTime = 8
+PainState = S_XPLD1
+Radius = 8*FRACUNIT
+Height = 8*FRACUNIT
+Mass = MT_EXPLODE
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_DONTENCOREMAP
+
+Mobj MT_RINGICO
+SpawnState = S_SUPERRINGBOX2
 SpawnHealth = 1
 SeeSound = sfx_itemup
 ReactionTime = 10
@@ -2368,10 +2198,44 @@ Radius = 8*FRACUNIT
 Height = 14*FRACUNIT
 Mass = 100
 Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
 
-Mobj MT_PITY_ICON
-SpawnState = S_PITY_ICON1
+Mobj MT_SHOESICO
+SpawnState = S_SHTV2
+SpawnHealth = 1
+ReactionTime = 8
+Speed = 2*FRACUNIT
+Radius = 8*FRACUNIT
+Height = 14*FRACUNIT
+Mass = 100
+Damage = 62*FRACUNIT
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
+
+Mobj MT_INVCICO
+SpawnState = S_PINV2
+SpawnHealth = 1
+ReactionTime = 8
+Speed = 2*FRACUNIT
+Radius = 8*FRACUNIT
+Height = 14*FRACUNIT
+Mass = 100
+Damage = 62*FRACUNIT
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
+
+Mobj MT_1UPICO
+SpawnState = S_PRUP2
+SpawnHealth = 1
+SeeState = S_PLAY_ICON1
+ReactionTime = 8
+Speed = 2*FRACUNIT
+Radius = 8*FRACUNIT
+Height = 14*FRACUNIT
+Mass = 100
+Damage = 62*FRACUNIT
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
+
+Mobj MT_YSHIELDICO
+SpawnState = S_YLTV2
 SpawnHealth = 1
 SeeSound = sfx_shield
 ReactionTime = 8
@@ -2380,81 +2244,70 @@ Radius = 8*FRACUNIT
 Height = 14*FRACUNIT
 Mass = 100
 Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
 
-Mobj MT_ATTRACT_ICON
-SpawnState = S_ATTRACT_ICON1
+Mobj MT_BSHIELDICO
+SpawnState = S_BLTV3
 SpawnHealth = 1
-SeeSound = sfx_attrsg
+SeeSound = sfx_shield
 ReactionTime = 8
 Speed = 2*FRACUNIT
 Radius = 8*FRACUNIT
 Height = 14*FRACUNIT
 Mass = 100
 Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
 
-Mobj MT_FORCE_ICON
-SpawnState = S_FORCE_ICON1
+Mobj MT_KSHIELDICO
+SpawnState = S_BKTV3
 SpawnHealth = 1
-SeeSound = sfx_forcsg
+SeeSound = sfx_shield
 ReactionTime = 8
 Speed = 2*FRACUNIT
 Radius = 8*FRACUNIT
 Height = 14*FRACUNIT
 Mass = 100
 Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
 
-Mobj MT_ARMAGEDDON_ICON
-SpawnState = S_ARMAGEDDON_ICON1
+Mobj MT_WSHIELDICO
+SpawnState = S_WHTV3
 SpawnHealth = 1
-SeeSound = sfx_armasg
+SeeSound = sfx_shield
 ReactionTime = 8
 Speed = 2*FRACUNIT
 Radius = 8*FRACUNIT
 Height = 14*FRACUNIT
 Mass = 100
 Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
 
-Mobj MT_WHIRLWIND_ICON
-SpawnState = S_WHIRLWIND_ICON1
+Mobj MT_GSHIELDICO
+SpawnState = S_GRTV2
 SpawnHealth = 1
-SeeSound = sfx_wirlsg
+SeeSound = sfx_shield
 ReactionTime = 8
 Speed = 2*FRACUNIT
 Radius = 8*FRACUNIT
 Height = 14*FRACUNIT
 Mass = 100
 Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
 
-Mobj MT_ELEMENTAL_ICON
-SpawnState = S_ELEMENTAL_ICON1
+Mobj MT_PITYSHIELDICO
+SpawnState = S_PITV3
 SpawnHealth = 1
-SeeSound = sfx_elemsg
+SeeSound = sfx_shield
 ReactionTime = 8
 Speed = 2*FRACUNIT
 Radius = 8*FRACUNIT
 Height = 14*FRACUNIT
 Mass = 100
 Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
 
-Mobj MT_SNEAKERS_ICON
-SpawnState = S_SNEAKERS_ICON1
-SpawnHealth = 1
-ReactionTime = 8
-Speed = 2*FRACUNIT
-Radius = 8*FRACUNIT
-Height = 14*FRACUNIT
-Mass = 100
-Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
-
-Mobj MT_INVULN_ICON
-SpawnState = S_INVULN_ICON1
+Mobj MT_EGGMANICO
+SpawnState = S_EGGTV3
 SpawnHealth = 1
 ReactionTime = 8
 Speed = 2*FRACUNIT
@@ -2462,22 +2315,10 @@ Radius = 8*FRACUNIT
 Height = 14*FRACUNIT
 Mass = 100
 Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
 
-Mobj MT_1UP_ICON
-SpawnState = S_1UP_ICON1
-SpawnHealth = 1
-SeeState = S_INVISIBLE
-ReactionTime = 8
-Speed = 2*FRACUNIT
-Radius = 8*FRACUNIT
-Height = 14*FRACUNIT
-Mass = 100
-Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
-
-Mobj MT_EGGMAN_ICON
-SpawnState = S_EGGMAN_ICON1
+Mobj MT_MIXUPICO
+SpawnState = S_MIXUPBOX3
 SpawnHealth = 1
 ReactionTime = 8
 Speed = 2*FRACUNIT
@@ -2485,21 +2326,10 @@ Radius = 8*FRACUNIT
 Height = 14*FRACUNIT
 Mass = 100
 Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
 
-Mobj MT_MIXUP_ICON
-SpawnState = S_MIXUP_ICON1
-SpawnHealth = 1
-ReactionTime = 8
-Speed = 2*FRACUNIT
-Radius = 8*FRACUNIT
-Height = 14*FRACUNIT
-Mass = 100
-Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
-
-Mobj MT_GRAVITY_ICON
-SpawnState = S_GRAVITY_ICON1
+Mobj MT_GRAVITYICO
+SpawnState = S_GBTV3
 SpawnHealth = 1
 ReactionTime = 20*TICRATE
 Speed = 2*FRACUNIT
@@ -2507,78 +2337,31 @@ Radius = 8*FRACUNIT
 Height = 14*FRACUNIT
 Mass = 100
 Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
 
-Mobj MT_RECYCLER_ICON
-SpawnState = S_RECYCLER_ICON1
+Mobj MT_SCOREICOSMALL
+SpawnState = S_SCORETVA3
 SpawnHealth = 1
-ReactionTime = 8
-Speed = 2*FRACUNIT
-Radius = 8*FRACUNIT
-Height = 14*FRACUNIT
-Mass = 100
-Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
-
-Mobj MT_SCORE1K_ICON
-SpawnState = S_SCORE1K_ICON1
-SpawnHealth = 1
-SeeSound = sfx_chchng
+SeeSound = sfx_token
 ReactionTime = 1000
 Speed = 2*FRACUNIT
 Radius = 8*FRACUNIT
 Height = 14*FRACUNIT
 Mass = 100
 Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
 
-Mobj MT_SCORE10K_ICON
-SpawnState = S_SCORE10K_ICON1
+Mobj MT_SCOREICOLARGE
+SpawnState = S_SCORETVB3
 SpawnHealth = 1
-SeeSound = sfx_chchng
+SeeSound = sfx_token
 ReactionTime = 10000
 Speed = 2*FRACUNIT
 Radius = 8*FRACUNIT
 Height = 14*FRACUNIT
 Mass = 100
 Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
-
-Mobj MT_FLAMEAURA_ICON
-SpawnState = S_FLAMEAURA_ICON1
-SpawnHealth = 1
-SeeSound = sfx_s3k3e
-ReactionTime = 8
-Speed = 2*FRACUNIT
-Radius = 8*FRACUNIT
-Height = 14*FRACUNIT
-Mass = 100
-Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
-
-Mobj MT_BUBBLEWRAP_ICON
-SpawnState = S_BUBBLEWRAP_ICON1
-SpawnHealth = 1
-SeeSound = sfx_s3k3f
-ReactionTime = 8
-Speed = 2*FRACUNIT
-Radius = 8*FRACUNIT
-Height = 14*FRACUNIT
-Mass = 100
-Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
-
-Mobj MT_THUNDERCOIN_ICON
-SpawnState = S_THUNDERCOIN_ICON1
-SpawnHealth = 1
-SeeSound = sfx_s3k41
-ReactionTime = 8
-Speed = 2*FRACUNIT
-Radius = 8*FRACUNIT
-Height = 14*FRACUNIT
-Mass = 100
-Damage = 62*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCOREMAP
 
 # Projectiles
 Mobj MT_ROCKET
@@ -3307,9 +3090,9 @@ Flags = MF_NOGRAVITY|MF_MISSILE|MF_FIRE|MF_PAIN|MF_NOBLOCKMAP|MF_RUNSPAWNFUNC
 # Egg Rock Scenery
 
 # Azure Temple Scenery
-Mobj MT_GLAREGOYLE
+Mobj MT_TRAPGOYLE
 MapThingNum = 1500
-SpawnState = S_GLAREGOYLE
+SpawnState = S_TRAPGOYLE
 SpawnHealth = 1000
 ReactionTime = 8
 Speed = 21*FRACUNIT
@@ -3320,9 +3103,9 @@ Damage = 1
 ActiveSound = sfx_statu2
 Flags = MF_SLIDEME|MF_SOLID|MF_PUSHABLE
 
-Mobj MT_GLAREGOYLEUP
+Mobj MT_TRAPGOYLEUP
 MapThingNum = 1501
-SpawnState = S_GLAREGOYLEUP
+SpawnState = S_TRAPGOYLEUP
 SpawnHealth = 1000
 ReactionTime = 8
 Speed = 21*FRACUNIT
@@ -3333,9 +3116,9 @@ Damage = 1
 ActiveSound = sfx_statu2
 Flags = MF_SLIDEME|MF_SOLID|MF_PUSHABLE
 
-Mobj MT_GLAREGOYLEDOWN
+Mobj MT_TRAPGOYLEDOWN
 MapThingNum = 1502
-SpawnState = S_GLAREGOYLEDOWN
+SpawnState = S_TRAPGOYLEDOWN
 SpawnHealth = 1000
 ReactionTime = 8
 Speed = 21*FRACUNIT
@@ -3346,9 +3129,9 @@ Damage = 1
 ActiveSound = sfx_statu2
 Flags = MF_SLIDEME|MF_SOLID|MF_PUSHABLE
 
-Mobj MT_GLAREGOYLELONG
+Mobj MT_TRAPGOYLELONG
 MapThingNum = 1503
-SpawnState = S_GLAREGOYLELONG
+SpawnState = S_TRAPGOYLELONG
 SpawnHealth = 1000
 ReactionTime = 8
 Speed = 21*FRACUNIT

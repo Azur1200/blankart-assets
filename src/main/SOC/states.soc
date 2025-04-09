@@ -445,6 +445,18 @@ Duration = 2
 Action = A_BuzzFly
 Next = S_RBUZZFLY1
 
+# AquaBuzz
+State S_BBUZZFLY1
+SpriteName = SPR_BBUZ
+Duration = 2
+Next = S_BBUZZFLY2
+
+State S_BBUZZFLY2
+SpriteName = SPR_BBUZ
+SpriteFrame = 1
+Duration = 2
+Next = S_BBUZZFLY1
+
 # Jetty-Syn Bomber
 State S_JETBLOOK1
 SpriteName = SPR_JETB
@@ -1417,173 +1429,134 @@ Action = A_Chase
 Next = S_GSNAPPER1
 
 # Minus
-State S_MINUS_INIT
-SpriteName = SPR_MNUD
-Duration = 1
-Next = S_MINUS_STND
-
 State S_MINUS_STND
-Duration = 10
+Duration = 1
 Action = A_Look
 Next = S_MINUS_STND
 
-State S_MINUS_DIGGING1
+State S_MINUS_DIGGING
+SpriteName = SPR_MNUS
+SpriteFrame = 16
 Duration = 1
 Action = A_MinusDigging
-Var1 = 1
-Next = S_MINUS_DIGGING2
-
-State S_MINUS_DIGGING2
-Duration = 1
-Action = A_MinusDigging
-Next = S_MINUS_DIGGING3
-
-State S_MINUS_DIGGING3
-Duration = 1
-Action = A_MinusDigging
-Next = S_MINUS_DIGGING4
-
-State S_MINUS_DIGGING4
-Duration = 1
-Action = A_MinusDigging
-Next = S_MINUS_DIGGING1
-
-State S_MINUS_BURST0
-Duration = 25
-Next = S_MINUS_POPUP
-
-State S_MINUS_BURST1
-SpriteName = SPR_MNUD
-SpriteFrame = FF_ANIMATE
-Duration = 5
-Var1 = 1
-Var2 = 2
-Next = S_MINUS_BURST2
-
-State S_MINUS_BURST2
-SpriteName = SPR_MNUD
-SpriteFrame = 1|FF_ANIMATE
-Duration = 5
-Var1 = 1
-Var2 = 2
-Next = S_MINUS_BURST3
-
-State S_MINUS_BURST3
-SpriteName = SPR_MNUD
-SpriteFrame = 2|FF_ANIMATE
-Duration = 5
-Var1 = 1
-Var2 = 2
-Next = S_MINUS_BURST4
-
-State S_MINUS_BURST4
-SpriteName = SPR_MNUD
-SpriteFrame = 3|FF_ANIMATE
-Duration = 5
-Var1 = 1
-Var2 = 2
-Next = S_MINUS_BURST5
-
-State S_MINUS_BURST5
-SpriteName = SPR_MNUD
-SpriteFrame = 4|FF_ANIMATE
-Duration = 5
-Var1 = 1
-Var2 = 2
-Next = S_MINUSDIRT2
+Next = S_MINUS_DIGGING
 
 State S_MINUS_POPUP
 SpriteName = SPR_MNUS
-SpriteFrame = 3
 Duration = 1
 Action = A_MinusPopup
-Next = S_MINUS_AERIAL1
+Next = S_MINUS_UPWARD1
 
-State S_MINUS_AERIAL1
+State S_MINUS_UPWARD1
 SpriteName = SPR_MNUS
 Duration = 1
 Action = A_MinusCheck
-Var2 = 1
-Next = S_MINUS_AERIAL2
+Next = S_MINUS_UPWARD2
 
-State S_MINUS_AERIAL2
+State S_MINUS_UPWARD2
 SpriteName = SPR_MNUS
 SpriteFrame = 1
 Duration = 1
 Action = A_MinusCheck
-Var2 = 1
-Next = S_MINUS_AERIAL3
+Next = S_MINUS_UPWARD3
 
-State S_MINUS_AERIAL3
+State S_MINUS_UPWARD3
 SpriteName = SPR_MNUS
 SpriteFrame = 2
 Duration = 1
 Action = A_MinusCheck
-Var2 = 1
-Next = S_MINUS_AERIAL4
+Next = S_MINUS_UPWARD4
 
-State S_MINUS_AERIAL4
+State S_MINUS_UPWARD4
 SpriteName = SPR_MNUS
 SpriteFrame = 3
 Duration = 1
 Action = A_MinusCheck
-Var2 = 1
-Next = S_MINUS_AERIAL1
+Next = S_MINUS_UPWARD5
 
-# Minus dirt
-State S_MINUSDIRT1
-SpriteName = SPR_MNUD
-SpriteFrame = FF_ANIMATE
-Duration = 6
-Var1 = 1
-Var2 = 5
-Next = S_MINUSDIRT2
-
-State S_MINUSDIRT2
-SpriteName = SPR_MNUD
-SpriteFrame = 5
-Duration = 8
-Var1 = 3
-Var2 = 5
-Next = S_MINUSDIRT3
-
-State S_MINUSDIRT3
-SpriteName = SPR_MNUD
+State S_MINUS_UPWARD5
+SpriteName = SPR_MNUS
 SpriteFrame = 4
-Duration = 8
-Var1 = 3
-Var2 = 5
-Next = S_MINUSDIRT4
+Duration = 1
+Action = A_MinusCheck
+Next = S_MINUS_UPWARD6
 
-State S_MINUSDIRT4
-SpriteName = SPR_MNUD
-SpriteFrame = 3
-Duration = 8
-Var1 = 3
-Var2 = 5
-Next = S_MINUSDIRT5
+State S_MINUS_UPWARD6
+SpriteName = SPR_MNUS
+SpriteFrame = 5
+Duration = 1
+Action = A_MinusCheck
+Next = S_MINUS_UPWARD7
 
-State S_MINUSDIRT5
-SpriteName = SPR_MNUD
-SpriteFrame = 2
-Duration = 8
-Var1 = 3
-Var2 = 5
-Next = S_MINUSDIRT6
+State S_MINUS_UPWARD7
+SpriteName = SPR_MNUS
+SpriteFrame = 6
+Duration = 1
+Action = A_MinusCheck
+Next = S_MINUS_UPWARD8
 
-State S_MINUSDIRT6
-SpriteName = SPR_MNUD
-SpriteFrame = 1
-Duration = 8
-Var1 = 3
-Var2 = 5
-Next = S_MINUSDIRT7
+State S_MINUS_UPWARD8
+SpriteName = SPR_MNUS
+SpriteFrame = 7
+Duration = 1
+Action = A_MinusCheck
+Next = S_MINUS_UPWARD1
 
-State S_MINUSDIRT7
-SpriteName = SPR_MNUD
-Duration = 8
-Var1 = 3
-Var2 = 5
+State S_MINUS_DOWNWARD1
+SpriteName = SPR_MNUS
+SpriteFrame = 8
+Duration = 1
+Action = A_MinusCheck
+Next = S_MINUS_DOWNWARD2
+
+State S_MINUS_DOWNWARD2
+SpriteName = SPR_MNUS
+SpriteFrame = 9
+Duration = 1
+Action = A_MinusCheck
+Next = S_MINUS_DOWNWARD3
+
+State S_MINUS_DOWNWARD3
+SpriteName = SPR_MNUS
+SpriteFrame = 10
+Duration = 1
+Action = A_MinusCheck
+Next = S_MINUS_DOWNWARD4
+
+State S_MINUS_DOWNWARD4
+SpriteName = SPR_MNUS
+SpriteFrame = 11
+Duration = 1
+Action = A_MinusCheck
+Next = S_MINUS_DOWNWARD5
+
+State S_MINUS_DOWNWARD5
+SpriteName = SPR_MNUS
+SpriteFrame = 12
+Duration = 1
+Action = A_MinusCheck
+Next = S_MINUS_DOWNWARD6
+
+State S_MINUS_DOWNWARD6
+SpriteName = SPR_MNUS
+SpriteFrame = 13
+Duration = 1
+Action = A_MinusCheck
+Next = S_MINUS_DOWNWARD7
+
+State S_MINUS_DOWNWARD7
+SpriteName = SPR_MNUS
+SpriteFrame = 14
+Duration = 1
+Action = A_MinusCheck
+Next = S_MINUS_DOWNWARD8
+
+State S_MINUS_DOWNWARD8
+SpriteName = SPR_MNUS
+SpriteFrame = 15
+Duration = 1
+Action = A_MinusCheck
+Next = S_MINUS_DOWNWARD1
 
 # Spring Shell
 State S_SSHELL_STND
@@ -4659,13 +4632,26 @@ Var2 = 1
 Next = S_TEAMRING
 
 # Special Stage Token
-State S_TOKEN
-SpriteName = SPR_TOKE
+State S_EMMY
+SpriteName = SPR_EMMY
 SpriteFrame = FF_ANIMATE|FF_FULLBRIGHT
 Duration = -1
-Var1 = 19
-Var2 = 1
-Next = S_TOKEN
+Var1 = 6
+Var2 = 2
+Next = S_EMMY
+
+# Special Stage Token
+State S_TOKEN
+SpriteName = SPR_TOKE
+SpriteFrame = FF_TRANS50|FF_FULLBRIGHT
+Duration = -1
+
+State S_MOVINGTOKEN
+SpriteName = SPR_TOKE
+SpriteFrame = FF_TRANS50|FF_FULLBRIGHT
+Duration = 1
+Action = A_CapeChase
+Next = S_MOVINGTOKEN
 
 # CTF Flags
 State S_REDFLAG
@@ -5275,86 +5261,52 @@ Var2 = 1
 Next = S_STARPOST_FLASH
 
 # Big floating mine
-State S_BIGMINE_IDLE
+State S_BIGMINE1
 SpriteName = SPR_BMNE
-Duration = 2
-Action = A_Look
-Var1 = ((224<<FRACBITS)|1)
-Next = S_BIGMINE_IDLE
+Duration = 5
+Next = S_BIGMINE2
 
-State S_BIGMINE_ALERT1
+State S_BIGMINE2
 SpriteName = SPR_BMNE
 SpriteFrame = 1
-Duration = 2
-Action = A_MineRange
-Var1 = 112
-Next = S_BIGMINE_ALERT2
+Duration = 5
+Next = S_BIGMINE3
 
-State S_BIGMINE_ALERT2
+State S_BIGMINE3
 SpriteName = SPR_BMNE
 SpriteFrame = 2
-Duration = 2
-Action = A_MineRange
-Var1 = 112
-Next = S_BIGMINE_ALERT3
+Duration = 5
+Next = S_BIGMINE4
 
-State S_BIGMINE_ALERT3
-SpriteName = SPR_BMNE
-Duration = 1
-Action = A_Look
-Var1 = ((224<<FRACBITS)|1)
-Var2 = 1
-Next = S_BIGMINE_IDLE
-
-State S_BIGMINE_SET1
+State S_BIGMINE4
 SpriteName = SPR_BMNE
 SpriteFrame = 3
-Duration = 25
-Action = A_Pain
-Next = S_BIGMINE_SET2
+Duration = 5
+Next = S_BIGMINE5
 
-State S_BIGMINE_SET2
+State S_BIGMINE5
 SpriteName = SPR_BMNE
-SpriteFrame = 3
-Duration = 10
-Action = A_SetObjectFlags
-Var1 = MF_SHOOTABLE
-Var2 = 1
-Next = S_BIGMINE_SET3
+SpriteFrame = 4
+Duration = 5
+Next = S_BIGMINE6
 
-State S_BIGMINE_SET3
+State S_BIGMINE6
 SpriteName = SPR_BMNE
-SpriteFrame = 3
-Duration = 1
-Action = A_MineExplode
-Next = S_BIGMINE_BLAST1
+SpriteFrame = 5
+Duration = 5
+Next = S_BIGMINE7
 
-State S_BIGMINE_BLAST1
-SpriteName = SPR_BMNB
-SpriteFrame = FF_FULLBRIGHT
-Duration = 2
-Next = S_BIGMINE_BLAST2
+State S_BIGMINE7
+SpriteName = SPR_BMNE
+SpriteFrame = 6
+Duration = 5
+Next = S_BIGMINE8
 
-State S_BIGMINE_BLAST2
-SpriteName = SPR_BMNB
-SpriteFrame = 1|FF_FULLBRIGHT
-Duration = 2
-Next = S_BIGMINE_BLAST3
-
-State S_BIGMINE_BLAST3
-SpriteName = SPR_BMNB
-SpriteFrame = 2|FF_FULLBRIGHT
-Duration = 1
-Next = S_BIGMINE_BLAST4
-
-State S_BIGMINE_BLAST4
-SpriteName = SPR_BMNB
-SpriteFrame = 3|FF_FULLBRIGHT
-Duration = 1
-Next = S_BIGMINE_BLAST5
-
-State S_BIGMINE_BLAST5
-Duration = 35
+State S_BIGMINE8
+SpriteName = SPR_BMNE
+SpriteFrame = 7
+Duration = 5
+Next = S_BIGMINE1
 
 # Cannon Launcher
 State S_CANNONLAUNCHER1
@@ -5377,566 +5329,752 @@ Var1 = TICRATE/2
 Var2 = 3*TICRATE
 Next = S_CANNONLAUNCHER1
 
-# Monitor Miscellany
-State S_BOXSPARKLE1
-SpriteName = SPR_NSPK
-Duration = 16
-Next = S_BOXSPARKLE2
+# Super Ring Box
+State S_SUPERRINGBOX
+SpriteName = SPR_SRBX
+Duration = 2
+Next = S_SUPERRINGBOX1
 
-State S_BOXSPARKLE2
-SpriteName = SPR_NSPK
-SpriteFrame = 1
-Duration = 12
-Next = S_BOXSPARKLE3
-
-State S_BOXSPARKLE3
-SpriteName = SPR_NSPK
-SpriteFrame = 2
-Duration = 8
-Next = S_BOXSPARKLE4
-
-State S_BOXSPARKLE4
-SpriteName = SPR_NSPK
-SpriteFrame = 3
-Duration = 4
-
-State S_BOX_FLICKER
-SpriteName = SPR_MSTV
+State S_SUPERRINGBOX1
+SpriteName = SPR_MTEX
 Duration = 1
-Next = S_SPAWNSTATE
+Next = S_SUPERRINGBOX
 
-State S_BOX_POP1
-SpriteName = SPR_MSTV
+State S_SUPERRINGBOX2
+SpriteName = SPR_SRBX
+SpriteFrame = 1
 Duration = 4
-Next = S_BOX_POP2
+Action = A_MonitorPop
+Next = S_SUPERRINGBOX3
 
-State S_BOX_POP2
-SpriteName = SPR_MSTV
-SpriteFrame = 1
-Duration = -1
-
-State S_GOLDBOX_FLICKER
-SpriteName = SPR_XLTV
-Duration = 1
-Next = S_SPAWNSTATE
-
-State S_GOLDBOX_OFF1
-SpriteName = SPR_XLTV
-SpriteFrame = 1
-Duration = 89
-Next = S_GOLDBOX_OFF2
-
-State S_GOLDBOX_OFF2
-SpriteName = SPR_XLTV
+State S_SUPERRINGBOX3
+SpriteName = SPR_YLTV
 SpriteFrame = 2
 Duration = 4
-Next = S_GOLDBOX_OFF3
+Next = S_SUPERRINGBOX4
 
-State S_GOLDBOX_OFF3
-SpriteName = SPR_XLTV
+State S_SUPERRINGBOX4
+SpriteName = SPR_YLTV
 SpriteFrame = 3
 Duration = 4
-Next = S_GOLDBOX_OFF4
+Next = S_SUPERRINGBOX5
 
-State S_GOLDBOX_OFF4
-SpriteName = SPR_XLTV
+State S_SUPERRINGBOX5
+SpriteName = SPR_YLTV
 SpriteFrame = 4
 Duration = 4
-Next = S_GOLDBOX_OFF5
+Next = S_SUPERRINGBOX6
 
-State S_GOLDBOX_OFF5
-SpriteName = SPR_XLTV
-SpriteFrame = 5
-Duration = 2
-Next = S_GOLDBOX_OFF6
-
-State S_GOLDBOX_OFF6
-SpriteName = SPR_XLTV
-SpriteFrame = 6
-Duration = 2
-Next = S_GOLDBOX_OFF7
-
-State S_GOLDBOX_OFF7
-SpriteName = SPR_XLTV
-SpriteFrame = 6
-Next = S_SPAWNSTATE
-
-# Monitor States (one per box)
-State S_MYSTERY_BOX
-SpriteName = SPR_TVMY
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_RING_BOX
-SpriteName = SPR_TVRI
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_PITY_BOX
-SpriteName = SPR_TVPI
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_ATTRACT_BOX
-SpriteName = SPR_TVAT
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_FORCE_BOX
-SpriteName = SPR_TVFO
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_ARMAGEDDON_BOX
-SpriteName = SPR_TVAR
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_WHIRLWIND_BOX
-SpriteName = SPR_TVWW
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_ELEMENTAL_BOX
-SpriteName = SPR_TVEL
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_SNEAKERS_BOX
-SpriteName = SPR_TVSS
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_INVULN_BOX
-SpriteName = SPR_TVIV
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_1UP_BOX
-SpriteName = SPR_TV1U
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_EGGMAN_BOX
-SpriteName = SPR_TVEG
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_MIXUP_BOX
-SpriteName = SPR_TVMX
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_GRAVITY_BOX
-SpriteName = SPR_TVGV
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_RECYCLER_BOX
-SpriteName = SPR_TVRC
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_SCORE1K_BOX
-SpriteName = SPR_TV1K
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_SCORE10K_BOX
-SpriteName = SPR_TVTK
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_FLAMEAURA_BOX
-SpriteName = SPR_TVFL
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_BUBBLEWRAP_BOX
-SpriteName = SPR_TVBB
-Duration = 2
-Next = S_BOX_FLICKER
-
-State S_THUNDERCOIN_BOX
-SpriteName = SPR_TVZP
-Duration = 2
-Next = S_BOX_FLICKER
-
-# Gold Repeat Monitor States (one per box)
-State S_PITY_GOLDBOX
-SpriteName = SPR_TVPI
+State S_SUPERRINGBOX6
+SpriteName = SPR_SRBX
 SpriteFrame = 1
-Duration = 2
-Next = S_GOLDBOX_FLICKER
+Duration = 18
+Action = A_RingBox
 
-State S_ATTRACT_GOLDBOX
-SpriteName = SPR_TVAT
-SpriteFrame = 1
+# Red Team Ring Box
+State S_REDRINGBOX
+SpriteName = SPR_RRBX
 Duration = 2
-Next = S_GOLDBOX_FLICKER
+Next = S_REDRINGBOX1
 
-State S_FORCE_GOLDBOX
-SpriteName = SPR_TVFO
-SpriteFrame = 1
-Duration = 2
-Next = S_GOLDBOX_FLICKER
-
-State S_ARMAGEDDON_GOLDBOX
-SpriteName = SPR_TVAR
-SpriteFrame = 1
-Duration = 2
-Next = S_GOLDBOX_FLICKER
-
-State S_WHIRLWIND_GOLDBOX
-SpriteName = SPR_TVWW
-SpriteFrame = 1
-Duration = 2
-Next = S_GOLDBOX_FLICKER
-
-State S_ELEMENTAL_GOLDBOX
-SpriteName = SPR_TVEL
-SpriteFrame = 1
-Duration = 2
-Next = S_GOLDBOX_FLICKER
-
-State S_SNEAKERS_GOLDBOX
-SpriteName = SPR_TVSS
-SpriteFrame = 1
-Duration = 2
-Next = S_GOLDBOX_FLICKER
-
-State S_INVULN_GOLDBOX
-SpriteName = SPR_TVIV
-SpriteFrame = 1
-Duration = 2
-Next = S_GOLDBOX_FLICKER
-
-State S_EGGMAN_GOLDBOX
-SpriteName = SPR_TVEG
-SpriteFrame = 1
-Duration = 2
-Next = S_GOLDBOX_FLICKER
-
-State S_GRAVITY_GOLDBOX
-SpriteName = SPR_TVGV
-SpriteFrame = 1
-Duration = 2
-Next = S_GOLDBOX_FLICKER
-
-State S_FLAMEAURA_GOLDBOX
-SpriteName = SPR_TVFL
-SpriteFrame = 1
-Duration = 2
-Next = S_GOLDBOX_FLICKER
-
-State S_BUBBLEWRAP_GOLDBOX
-SpriteName = SPR_TVBB
-SpriteFrame = 1
-Duration = 2
-Next = S_GOLDBOX_FLICKER
-
-State S_THUNDERCOIN_GOLDBOX
-SpriteName = SPR_TVZP
-SpriteFrame = 1
-Duration = 2
-Next = S_GOLDBOX_FLICKER
-
-# Team Ring Boxes (these are special)
-State S_RING_REDBOX1
-SpriteName = SPR_TRRI
-Duration = 2
-Next = S_RING_REDBOX2
-
-State S_RING_REDBOX2
-SpriteName = SPR_TRRI
+State S_REDRINGBOX1
+SpriteName = SPR_RRBX
 SpriteFrame = 1
 Duration = 1
-Next = S_RING_REDBOX1
+Next = S_REDRINGBOX
 
-State S_REDBOX_POP1
-SpriteName = SPR_TRRI
-SpriteFrame = 1
-Duration = 4
-Next = S_REDBOX_POP2
-
-State S_REDBOX_POP2
-SpriteName = SPR_TRRI
-SpriteFrame = 2
-Duration = -1
-
-State S_RING_BLUEBOX1
-SpriteName = SPR_TBRI
+# Blue Team Ring Box
+State S_BLUERINGBOX
+SpriteName = SPR_BRBX
 Duration = 2
-Next = S_RING_BLUEBOX2
+Next = S_BLUERINGBOX1
 
-State S_RING_BLUEBOX2
-SpriteName = SPR_TBRI
+State S_BLUERINGBOX1
+SpriteName = SPR_BRBX
 SpriteFrame = 1
 Duration = 1
-Next = S_RING_BLUEBOX1
+Next = S_BLUERINGBOX
 
-State S_BLUEBOX_POP1
-SpriteName = SPR_TBRI
+# Super Sneakers Box
+State S_SHTV
+SpriteName = SPR_SHTV
+Duration = 2
+Next = S_SHTV1
+
+State S_SHTV1
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_SHTV
+
+State S_SHTV2
+SpriteName = SPR_SHTV
 SpriteFrame = 1
 Duration = 4
-Next = S_BLUEBOX_POP2
+Action = A_MonitorPop
+Next = S_SHTV3
 
-State S_BLUEBOX_POP2
-SpriteName = SPR_TBRI
+State S_SHTV3
+SpriteName = SPR_YLTV
 SpriteFrame = 2
-Duration = -1
+Duration = 4
+Next = S_SHTV4
 
-# Box Icons -- 2 states each, animation and action
-State S_RING_ICON1
-SpriteName = SPR_TVRI
-SpriteFrame = FF_ANIMATE|2
+State S_SHTV4
+SpriteName = SPR_YLTV
+SpriteFrame = 3
+Duration = 4
+Next = S_SHTV5
+
+State S_SHTV5
+SpriteName = SPR_YLTV
+SpriteFrame = 4
+Duration = 4
+Next = S_SHTV6
+
+State S_SHTV6
+SpriteName = SPR_SHTV
+SpriteFrame = 1
 Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_RING_ICON2
+Action = A_SuperSneakers
 
-State S_RING_ICON2
-SpriteName = SPR_TVRI
+# Invincibility Box
+State S_PINV
+SpriteName = SPR_PINV
+Duration = 2
+Next = S_PINV1
+
+State S_PINV1
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_PINV
+
+State S_PINV2
+SpriteName = SPR_PINV
+SpriteFrame = 1
+Duration = 4
+Action = A_MonitorPop
+Next = S_PINV3
+
+State S_PINV3
+SpriteName = SPR_PINV
 SpriteFrame = 2
-Duration = 18
+Duration = 4
+Next = S_PINV4
 
-State S_PITY_ICON1
-SpriteName = SPR_TVPI
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_PITY_ICON2
+State S_PINV4
+SpriteName = SPR_PINV
+SpriteFrame = 3
+Duration = 4
+Next = S_PINV5
 
-State S_PITY_ICON2
-SpriteName = SPR_TVPI
+State S_PINV5
+SpriteName = SPR_PINV
+SpriteFrame = 4
+Duration = 4
+Next = S_PINV6
+
+State S_PINV6
+SpriteName = SPR_PINV
+SpriteFrame = 1
+Duration = 18
+Action = A_Invincibility
+
+# 1up Box
+State S_PRUP
+SpriteName = SPR_PRUP
 SpriteFrame = 2
-Duration = 18
+Duration = 2
+Action = A_1upThinker
+Next = S_PRUP1
 
-State S_ATTRACT_ICON1
-SpriteName = SPR_TVAT
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_ATTRACT_ICON2
+State S_PRUP1
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_PRUP
 
-State S_ATTRACT_ICON2
-SpriteName = SPR_TVAT
+State S_PRUP2
+SpriteName = SPR_PRUP
+SpriteFrame = 3
+Duration = 4
+Action = A_MonitorPop
+Next = S_PRUP3
+
+State S_PRUP3
+SpriteName = SPR_PINV
 SpriteFrame = 2
-Duration = 18
+Duration = 4
+Next = S_PRUP4
 
-State S_FORCE_ICON1
-SpriteName = SPR_TVFO
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_FORCE_ICON2
+State S_PRUP4
+SpriteName = SPR_PINV
+SpriteFrame = 3
+Duration = 4
+Next = S_PRUP5
 
-State S_FORCE_ICON2
-SpriteName = SPR_TVFO
+State S_PRUP5
+SpriteName = SPR_PINV
+SpriteFrame = 4
+Duration = 4
+Next = S_PRUP6
+
+State S_PRUP6
+SpriteName = SPR_PRUP
+SpriteFrame = 3
+Duration = 18
+Action = A_ExtraLife
+
+# Ring Shield Box
+State S_YLTV
+SpriteName = SPR_YLTV
+Duration = 2
+Next = S_YLTV1
+
+State S_YLTV1
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_YLTV
+
+State S_YLTV2
+SpriteName = SPR_YLTV
+SpriteFrame = 1
+Duration = 4
+Action = A_MonitorPop
+Next = S_YLTV3
+
+State S_YLTV3
+SpriteName = SPR_YLTV
 SpriteFrame = 2
-Duration = 18
+Duration = 4
+Next = S_YLTV4
 
-State S_ARMAGEDDON_ICON1
-SpriteName = SPR_TVAR
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_ARMAGEDDON_ICON2
+State S_YLTV4
+SpriteName = SPR_YLTV
+SpriteFrame = 3
+Duration = 4
+Next = S_YLTV5
 
-State S_ARMAGEDDON_ICON2
-SpriteName = SPR_TVAR
+State S_YLTV5
+SpriteName = SPR_YLTV
+SpriteFrame = 4
+Duration = 4
+Next = S_YLTV6
+
+State S_YLTV6
+SpriteName = SPR_YLTV
+SpriteFrame = 1
+Duration = 18
+Action = A_RingShield
+
+# Force Shield Box
+State S_BLTV1
+SpriteName = SPR_BLTV
+Duration = 2
+Next = S_BLTV2
+
+State S_BLTV2
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_BLTV1
+
+State S_BLTV3
+SpriteName = SPR_BLTV
+SpriteFrame = 1
+Duration = 4
+Action = A_MonitorPop
+Next = S_BLTV4
+
+State S_BLTV4
+SpriteName = SPR_BLTV
 SpriteFrame = 2
-Duration = 18
+Duration = 4
+Next = S_BLTV5
 
-State S_WHIRLWIND_ICON1
-SpriteName = SPR_TVWW
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_WHIRLWIND_ICON2
+State S_BLTV5
+SpriteName = SPR_BLTV
+SpriteFrame = 3
+Duration = 4
+Next = S_BLTV6
 
-State S_WHIRLWIND_ICON2
-SpriteName = SPR_TVWW
+State S_BLTV6
+SpriteName = SPR_BLTV
+SpriteFrame = 4
+Duration = 4
+Next = S_BLTV7
+
+State S_BLTV7
+SpriteName = SPR_BLTV
+SpriteFrame = 1
+Duration = 18
+Action = A_ForceShield
+
+# Bomb Shield Box
+State S_BKTV1
+SpriteName = SPR_BKTV
+Duration = 2
+Next = S_BKTV2
+
+State S_BKTV2
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_BKTV1
+
+State S_BKTV3
+SpriteName = SPR_BKTV
+SpriteFrame = 1
+Duration = 4
+Action = A_MonitorPop
+Next = S_BKTV4
+
+State S_BKTV4
+SpriteName = SPR_BKTV
 SpriteFrame = 2
-Duration = 18
+Duration = 4
+Next = S_BKTV5
 
-State S_ELEMENTAL_ICON1
-SpriteName = SPR_TVEL
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_ELEMENTAL_ICON2
+State S_BKTV5
+SpriteName = SPR_BKTV
+SpriteFrame = 3
+Duration = 4
+Next = S_BKTV6
 
-State S_ELEMENTAL_ICON2
-SpriteName = SPR_TVEL
+State S_BKTV6
+SpriteName = SPR_BKTV
+SpriteFrame = 4
+Duration = 4
+Next = S_BKTV7
+
+State S_BKTV7
+SpriteName = SPR_BKTV
+SpriteFrame = 1
+Duration = 18
+Action = A_BombShield
+
+# Jump Shield Box
+State S_WHTV1
+SpriteName = SPR_WHTV
+Duration = 2
+Next = S_WHTV2
+
+State S_WHTV2
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_WHTV1
+
+State S_WHTV3
+SpriteName = SPR_WHTV
+SpriteFrame = 1
+Duration = 4
+Action = A_MonitorPop
+Next = S_WHTV4
+
+State S_WHTV4
+SpriteName = SPR_WHTV
 SpriteFrame = 2
-Duration = 18
+Duration = 4
+Next = S_WHTV5
 
-State S_SNEAKERS_ICON1
-SpriteName = SPR_TVSS
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_SNEAKERS_ICON2
+State S_WHTV5
+SpriteName = SPR_WHTV
+SpriteFrame = 3
+Duration = 4
+Next = S_WHTV6
 
-State S_SNEAKERS_ICON2
-SpriteName = SPR_TVSS
+State S_WHTV6
+SpriteName = SPR_WHTV
+SpriteFrame = 4
+Duration = 4
+Next = S_WHTV7
+
+State S_WHTV7
+SpriteName = SPR_WHTV
+SpriteFrame = 1
+Duration = 18
+Action = A_JumpShield
+
+# Water Shield Box
+State S_GRTV
+SpriteName = SPR_ELTV
+Duration = 2
+Next = S_GRTV1
+
+State S_GRTV1
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_GRTV
+
+State S_GRTV2
+SpriteName = SPR_ELTV
+SpriteFrame = 1
+Duration = 4
+Action = A_MonitorPop
+Next = S_GRTV3
+
+State S_GRTV3
+SpriteName = SPR_ELTV
 SpriteFrame = 2
-Duration = 18
+Duration = 4
+Next = S_GRTV4
 
-State S_INVULN_ICON1
-SpriteName = SPR_TVIV
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_INVULN_ICON2
+State S_GRTV4
+SpriteName = SPR_ELTV
+SpriteFrame = 3
+Duration = 4
+Next = S_GRTV5
 
-State S_INVULN_ICON2
-SpriteName = SPR_TVIV
+State S_GRTV5
+SpriteName = SPR_ELTV
+SpriteFrame = 4
+Duration = 4
+Next = S_GRTV6
+
+State S_GRTV6
+SpriteName = SPR_ELTV
+SpriteFrame = 1
+Duration = 18
+Action = A_WaterShield
+
+# Pity Shield Box
+State S_PITV1
+SpriteName = SPR_GRTV
+Duration = 2
+Next = S_PITV2
+
+State S_PITV2
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_PITV1
+
+State S_PITV3
+SpriteName = SPR_GRTV
+SpriteFrame = 1
+Duration = 4
+Action = A_MonitorPop
+Next = S_PITV4
+
+State S_PITV4
+SpriteName = SPR_GRTV
 SpriteFrame = 2
-Duration = 18
+Duration = 4
+Next = S_PITV5
 
-State S_1UP_ICON1
-SpriteName = SPR_TV1U
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_1UP_ICON2
+State S_PITV5
+SpriteName = SPR_GRTV
+SpriteFrame = 3
+Duration = 4
+Next = S_PITV6
 
-State S_1UP_ICON2
-SpriteName = SPR_TV1U
+State S_PITV6
+SpriteName = SPR_GRTV
+SpriteFrame = 4
+Duration = 4
+Next = S_PITV7
+
+State S_PITV7
+SpriteName = SPR_GRTV
+SpriteFrame = 1
+Duration = 18
+Action = A_PityShield
+
+# Eggman Box
+State S_EGGTV1
+SpriteName = SPR_EGGB
+Duration = 2
+Next = S_EGGTV2
+
+State S_EGGTV2
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_EGGTV1
+
+State S_EGGTV3
+SpriteName = SPR_EGGB
+SpriteFrame = 1
+Duration = 4
+Action = A_MonitorPop
+Next = S_EGGTV4
+
+State S_EGGTV4
+SpriteName = SPR_BKTV
 SpriteFrame = 2
-Duration = 18
+Duration = 4
+Next = S_EGGTV5
 
-State S_EGGMAN_ICON1
-SpriteName = SPR_TVEG
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_EGGMAN_ICON2
+State S_EGGTV5
+SpriteName = SPR_BKTV
+SpriteFrame = 3
+Duration = 4
+Next = S_EGGTV6
 
-State S_EGGMAN_ICON2
-SpriteName = SPR_TVEG
-SpriteFrame = 2
+State S_EGGTV6
+SpriteName = SPR_BKTV
+SpriteFrame = 4
+Duration = 4
+Next = S_EGGTV7
+
+State S_EGGTV7
+SpriteName = SPR_EGGB
+SpriteFrame = 1
 Duration = 18
 Action = A_EggmanBox
 
-State S_MIXUP_ICON1
-SpriteName = SPR_TVMX
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_MIXUP_ICON2
+# Teleport Box
+State S_MIXUPBOX1
+SpriteName = SPR_MIXU
+Duration = 2
+Next = S_MIXUPBOX2
 
-State S_MIXUP_ICON2
-SpriteName = SPR_TVMX
+State S_MIXUPBOX2
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_MIXUPBOX1
+
+State S_MIXUPBOX3
+SpriteName = SPR_MIXU
+SpriteFrame = 1
+Duration = 4
+Action = A_MonitorPop
+Next = S_MIXUPBOX4
+
+State S_MIXUPBOX4
+SpriteName = SPR_WHTV
 SpriteFrame = 2
+Duration = 4
+Next = S_MIXUPBOX5
+
+State S_MIXUPBOX5
+SpriteName = SPR_WHTV
+SpriteFrame = 3
+Duration = 4
+Next = S_MIXUPBOX6
+
+State S_MIXUPBOX6
+SpriteName = SPR_WHTV
+SpriteFrame = 4
+Duration = 4
+Next = S_MIXUPBOX7
+
+State S_MIXUPBOX7
+SpriteName = SPR_MIXU
+SpriteFrame = 1
 Duration = 18
 Action = A_MixUp
 
-State S_GRAVITY_ICON1
-SpriteName = SPR_TVGV
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_GRAVITY_ICON2
+# Recycler Box
+State S_RECYCLETV1
+SpriteName = SPR_RECY
+Duration = 2
+Next = S_RECYCLETV2
 
-State S_GRAVITY_ICON2
-SpriteName = SPR_TVGV
+State S_RECYCLETV2
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_RECYCLETV1
+
+State S_RECYCLETV3
+SpriteName = SPR_RECY
+SpriteFrame = 1
+Duration = 4
+Action = A_MonitorPop
+Next = S_RECYCLETV4
+
+State S_RECYCLETV4
+SpriteName = SPR_GRTV
 SpriteFrame = 2
-Duration = 18
+Duration = 4
+Next = S_RECYCLETV5
 
-State S_RECYCLER_ICON1
-SpriteName = SPR_TVRC
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_RECYCLER_ICON2
+State S_RECYCLETV5
+SpriteName = SPR_GRTV
+SpriteFrame = 3
+Duration = 4
+Next = S_RECYCLETV6
 
-State S_RECYCLER_ICON2
-SpriteName = SPR_TVRC
+State S_RECYCLETV6
+SpriteName = SPR_GRTV
+SpriteFrame = 4
+Duration = 4
+Next = S_RECYCLETV7
+
+State S_RECYCLETV7
+SpriteName = SPR_RECY
+SpriteFrame = 1
+Duration = 18
+Action = A_RecyclePowers
+
+# Question Box
+State S_RANDOMBOX1
+SpriteName = SPR_QUES
+Duration = 2
+Next = S_RANDOMBOX2
+
+State S_RANDOMBOX2
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_RANDOMBOX1
+
+State S_RANDOMBOX3
+SpriteName = SPR_QUES
+Duration = 1
+Action = A_MonitorPop
+
+# Gravity Boots Box
+State S_GBTV1
+SpriteName = SPR_GBTV
+Duration = 2
+Next = S_GBTV2
+
+State S_GBTV2
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_GBTV1
+
+State S_GBTV3
+SpriteName = SPR_GBTV
+SpriteFrame = 1
+Duration = 4
+Action = A_MonitorPop
+Next = S_GBTV4
+
+State S_GBTV4
+SpriteName = SPR_BLTV
 SpriteFrame = 2
-Duration = 18
+Duration = 4
+Next = S_GBTV5
 
-State S_SCORE1K_ICON1
-SpriteName = SPR_TV1K
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_SCORE1K_ICON2
+State S_GBTV5
+SpriteName = SPR_BLTV
+SpriteFrame = 3
+Duration = 4
+Next = S_GBTV6
 
-State S_SCORE1K_ICON2
-SpriteName = SPR_TV1K
+State S_GBTV6
+SpriteName = SPR_BLTV
+SpriteFrame = 4
+Duration = 4
+Next = S_GBTV7
+
+State S_GBTV7
+SpriteName = SPR_GBTV
+SpriteFrame = 1
+Duration = 18
+Action = A_GravityBox
+
+# Score boxes
+State S_SCORETVA1
+SpriteName = SPR_PTTV
+Duration = 2
+Next = S_SCORETVA2
+
+State S_SCORETVA2
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_SCORETVA1
+
+State S_SCORETVA3
+SpriteName = SPR_PTTV
+SpriteFrame = 1
+Duration = 4
+Action = A_MonitorPop
+Next = S_SCORETVA4
+
+State S_SCORETVA4
+SpriteName = SPR_PTTV
 SpriteFrame = 2
+Duration = 4
+Next = S_SCORETVA5
+
+State S_SCORETVA5
+SpriteName = SPR_PTTV
+SpriteFrame = 3
+Duration = 4
+Next = S_SCORETVA6
+
+State S_SCORETVA6
+SpriteName = SPR_PTTV
+SpriteFrame = 4
+Duration = 4
+Next = S_SCORETVA7
+
+State S_SCORETVA7
+SpriteName = SPR_PTTV
+SpriteFrame = 1
 Duration = 18
 Action = A_AwardScore
 
-State S_SCORE10K_ICON1
-SpriteName = SPR_TVTK
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_SCORE10K_ICON2
+State S_SCORETVB1
+SpriteName = SPR_PTTV
+SpriteFrame = 5
+Duration = 2
+Next = S_SCORETVB2
 
-State S_SCORE10K_ICON2
-SpriteName = SPR_TVTK
-SpriteFrame = 2
+State S_SCORETVB2
+SpriteName = SPR_MTEX
+Duration = 1
+Next = S_SCORETVB1
+
+State S_SCORETVB3
+SpriteName = SPR_PTTV
+SpriteFrame = 6
+Duration = 4
+Action = A_MonitorPop
+Next = S_SCORETVB4
+
+State S_SCORETVB4
+SpriteName = SPR_PTTV
+SpriteFrame = 7
+Duration = 4
+Next = S_SCORETVB5
+
+State S_SCORETVB5
+SpriteName = SPR_PTTV
+SpriteFrame = 8
+Duration = 4
+Next = S_SCORETVB6
+
+State S_SCORETVB6
+SpriteName = SPR_PTTV
+SpriteFrame = 9
+Duration = 4
+Next = S_SCORETVB7
+
+State S_SCORETVB7
+SpriteName = SPR_PTTV
+SpriteFrame = 6
 Duration = 18
 Action = A_AwardScore
 
-State S_FLAMEAURA_ICON1
-SpriteName = SPR_TVFL
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_FLAMEAURA_ICON2
+# Monitor Explosion
+State S_MONITOREXPLOSION1
+SpriteName = SPR_MTEX
+Duration = 4
+Next = S_MONITOREXPLOSION2
 
-State S_FLAMEAURA_ICON2
-SpriteName = SPR_TVFL
+State S_MONITOREXPLOSION2
+SpriteName = SPR_MTEX
+SpriteFrame = 1
+Duration = -1
+
+State S_REDMONITOREXPLOSION1
+SpriteName = SPR_RRBX
+SpriteFrame = 1
+Duration = 4
+Next = S_REDMONITOREXPLOSION2
+
+State S_REDMONITOREXPLOSION2
+SpriteName = SPR_RRBX
 SpriteFrame = 2
-Duration = 18
+Duration = -1
 
-State S_BUBBLEWRAP_ICON1
-SpriteName = SPR_TVBB
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_BUBBLEWRAP_ICON2
+State S_BLUEMONITOREXPLOSION1
+SpriteName = SPR_BRBX
+SpriteFrame = 1
+Duration = 4
+Next = S_BLUEMONITOREXPLOSION2
 
-State S_BUBBLEWRAP_ICON2
-SpriteName = SPR_TVBB
+State S_BLUEMONITOREXPLOSION2
+SpriteName = SPR_BRBX
 SpriteFrame = 2
-Duration = 18
-
-State S_THUNDERCOIN_ICON1
-SpriteName = SPR_TVZP
-SpriteFrame = FF_ANIMATE|2
-Duration = 18
-Var1 = 3
-Var2 = 4
-Next = S_THUNDERCOIN_ICON2
-
-State S_THUNDERCOIN_ICON2
-SpriteName = SPR_TVZP
-SpriteFrame = 2
-Duration = 18
+Duration = -1
 
 # ---
 State S_ROCKET
@@ -6964,206 +7102,158 @@ Duration = (12*7)
 Var1 = 7
 Var2 = 12
 
-# Glaregoyles
-State S_GLAREGOYLE
-SpriteName = SPR_BGAR
-Duration = 22
-Next = S_GLAREGOYLE_CHARGE
+# Trapgoyles
+State S_TRAPGOYLE
+SpriteName = SPR_GARG
+Duration = 67
+Next = S_TRAPGOYLE_CHECK
 
-State S_GLAREGOYLE_CHARGE
-SpriteName = SPR_BGAR
-SpriteFrame = 2
-Duration = 6
-Next = S_GLAREGOYLE_BLINK
+State S_TRAPGOYLE_CHECK
+SpriteName = SPR_GARG
+Duration = 3
+Next = S_TRAPGOYLE_FIRE1
 
-State S_GLAREGOYLE_BLINK
-SpriteName = SPR_BGAR
-SpriteFrame = FF_ANIMATE|1
-Duration = 18
-Var1 = 1
-Var2 = 3
-Next = S_GLAREGOYLE_HOLD
-
-State S_GLAREGOYLE_HOLD
-SpriteName = SPR_BGAR
-SpriteFrame = 1
-Duration = 9
-Next = S_GLAREGOYLE_FIRE
-
-State S_GLAREGOYLE_FIRE
-SpriteName = SPR_BGAR
-SpriteFrame = 1
+State S_TRAPGOYLE_FIRE1
+SpriteName = SPR_GARG
 Duration = 1
 Action = A_TrapShot
 Var1 = (16<<16)+MT_DEMONFIRE
 Var2 = (30<<16)
-Next = S_GLAREGOYLE_LOOP
+Next = S_TRAPGOYLE_FIRE2
 
-State S_GLAREGOYLE_LOOP
-SpriteName = SPR_BGAR
-SpriteFrame = 1
-Action = A_Repeat
-Var1 = 3
-Var2 = S_GLAREGOYLE_FIRE
-Next = S_GLAREGOYLE_COOLDOWN
+State S_TRAPGOYLE_FIRE2
+SpriteName = SPR_GARG
+Duration = 1
+Action = A_TrapShot
+Var1 = (16<<16)+MT_DEMONFIRE
+Var2 = (30<<16)
+Next = S_TRAPGOYLE_FIRE3
 
-State S_GLAREGOYLE_COOLDOWN
-SpriteName = SPR_BGAR
-SpriteFrame = FF_ANIMATE|1
-Duration = 15
-Var1 = 1
-Var2 = 9
-Next = S_GLAREGOYLE
+State S_TRAPGOYLE_FIRE3
+SpriteName = SPR_GARG
+Duration = 1
+Action = A_TrapShot
+Var1 = (16<<16)+MT_DEMONFIRE
+Var2 = (30<<16)
+Next = S_TRAPGOYLE
 
-State S_GLAREGOYLEUP
-SpriteName = SPR_BGAR
-Duration = 22
-Next = S_GLAREGOYLEUP_CHARGE
+State S_TRAPGOYLEUP
+SpriteName = SPR_GARG
+Duration = 67
+Next = S_TRAPGOYLEUP_CHECK
 
-State S_GLAREGOYLEUP_CHARGE
-SpriteName = SPR_BGAR
-SpriteFrame = 2
-Duration = 6
-Next = S_GLAREGOYLEUP_BLINK
+State S_TRAPGOYLEUP_CHECK
+SpriteName = SPR_GARG
+Duration = 3
+Next = S_TRAPGOYLEUP_FIRE1
 
-State S_GLAREGOYLEUP_BLINK
-SpriteName = SPR_BGAR
-SpriteFrame = FF_ANIMATE|1
-Duration = 18
-Var1 = 1
-Var2 = 3
-Next = S_GLAREGOYLEUP_HOLD
-
-State S_GLAREGOYLEUP_HOLD
-SpriteName = SPR_BGAR
-SpriteFrame = 1
-Duration = 9
-Next = S_GLAREGOYLEUP_FIRE
-
-State S_GLAREGOYLEUP_FIRE
-SpriteName = SPR_BGAR
-SpriteFrame = 1
+State S_TRAPGOYLEUP_FIRE1
+SpriteName = SPR_GARG
 Duration = 1
 Action = A_TrapShot
 Var1 = (16<<16)+MT_DEMONFIRE
 Var2 = (30<<16)+45
-Next = S_GLAREGOYLEUP_LOOP
+Next = S_TRAPGOYLEUP_FIRE2
 
-State S_GLAREGOYLEUP_LOOP
-SpriteName = SPR_BGAR
-SpriteFrame = 1
-Action = A_Repeat
-Var1 = 3
-Var2 = S_GLAREGOYLEUP_FIRE
-Next = S_GLAREGOYLEUP_COOLDOWN
+State S_TRAPGOYLEUP_FIRE2
+SpriteName = SPR_GARG
+Duration = 1
+Action = A_TrapShot
+Var1 = (16<<16)+MT_DEMONFIRE
+Var2 = (30<<16)+45
+Next = S_TRAPGOYLEUP_FIRE3
 
-State S_GLAREGOYLEUP_COOLDOWN
-SpriteName = SPR_BGAR
-SpriteFrame = FF_ANIMATE|1
-Duration = 15
-Var1 = 1
-Var2 = 9
-Next = S_GLAREGOYLEUP
+State S_TRAPGOYLEUP_FIRE3
+SpriteName = SPR_GARG
+Duration = 1
+Action = A_TrapShot
+Var1 = (16<<16)+MT_DEMONFIRE
+Var2 = (30<<16)+45
+Next = S_TRAPGOYLEUP
 
-State S_GLAREGOYLEDOWN
-SpriteName = SPR_BGAR
-Duration = 22
-Next = S_GLAREGOYLEDOWN_CHARGE
+State S_TRAPGOYLEDOWN
+SpriteName = SPR_GARG
+Duration = 67
+Next = S_TRAPGOYLEDOWN_CHECK
 
-State S_GLAREGOYLEDOWN_CHARGE
-SpriteName = SPR_BGAR
-SpriteFrame = 2
-Duration = 6
-Next = S_GLAREGOYLEDOWN_BLINK
+State S_TRAPGOYLEDOWN_CHECK
+SpriteName = SPR_GARG
+Duration = 3
+Next = S_TRAPGOYLEDOWN_FIRE1
 
-State S_GLAREGOYLEDOWN_BLINK
-SpriteName = SPR_BGAR
-SpriteFrame = FF_ANIMATE|1
-Duration = 18
-Var1 = 1
-Var2 = 3
-Next = S_GLAREGOYLEDOWN_HOLD
-
-State S_GLAREGOYLEDOWN_HOLD
-SpriteName = SPR_BGAR
-SpriteFrame = 1
-Duration = 9
-Next = S_GLAREGOYLEDOWN_FIRE
-
-State S_GLAREGOYLEDOWN_FIRE
-SpriteName = SPR_BGAR
-SpriteFrame = 1
+State S_TRAPGOYLEDOWN_FIRE1
+SpriteName = SPR_GARG
 Duration = 1
 Action = A_TrapShot
 Var1 = (16<<16)+MT_DEMONFIRE
 Var2 = (30<<16)+315
-Next = S_GLAREGOYLEDOWN_LOOP
+Next = S_TRAPGOYLEDOWN_FIRE2
 
-State S_GLAREGOYLEDOWN_LOOP
-SpriteName = SPR_BGAR
-SpriteFrame = 1
-Action = A_Repeat
-Var1 = 3
-Var2 = S_GLAREGOYLEDOWN_FIRE
-Next = S_GLAREGOYLEDOWN_COOLDOWN
+State S_TRAPGOYLEDOWN_FIRE2
+SpriteName = SPR_GARG
+Duration = 1
+Action = A_TrapShot
+Var1 = (16<<16)+MT_DEMONFIRE
+Var2 = (30<<16)+315
+Next = S_TRAPGOYLEDOWN_FIRE3
 
-State S_GLAREGOYLEDOWN_COOLDOWN
-SpriteName = SPR_BGAR
-SpriteFrame = FF_ANIMATE|1
-Duration = 15
-Var1 = 1
-Var2 = 9
-Next = S_GLAREGOYLEDOWN
+State S_TRAPGOYLEDOWN_FIRE3
+SpriteName = SPR_GARG
+Duration = 1
+Action = A_TrapShot
+Var1 = (16<<16)+MT_DEMONFIRE
+Var2 = (30<<16)+315
+Next = S_TRAPGOYLEDOWN
 
-State S_GLAREGOYLELONG
-SpriteName = SPR_BGAR
-Duration = 90
-Next = S_GLAREGOYLELONG_CHARGE
+State S_TRAPGOYLELONG
+SpriteName = SPR_GARG
+Duration = 135
+Next = S_TRAPGOYLELONG_CHECK
 
-State S_GLAREGOYLELONG_CHARGE
-SpriteName = SPR_BGAR
-SpriteFrame = 2
-Duration = 6
-Next = S_GLAREGOYLELONG_BLINK
+State S_TRAPGOYLELONG_CHECK
+SpriteName = SPR_GARG
+Duration = 3
+Next = S_TRAPGOYLELONG_FIRE1
 
-State S_GLAREGOYLELONG_BLINK
-SpriteName = SPR_BGAR
-SpriteFrame = FF_ANIMATE|1
-Duration = 18
-Var1 = 1
-Var2 = 3
-Next = S_GLAREGOYLELONG_HOLD
-
-State S_GLAREGOYLELONG_HOLD
-SpriteName = SPR_BGAR
-SpriteFrame = 1
-Duration = 9
-Next = S_GLAREGOYLELONG_FIRE
-
-State S_GLAREGOYLELONG_FIRE
-SpriteName = SPR_BGAR
-SpriteFrame = 1
+State S_TRAPGOYLELONG_FIRE1
+SpriteName = SPR_GARG
 Duration = 1
 Action = A_TrapShot
 Var1 = (16<<16)+MT_DEMONFIRE
 Var2 = (30<<16)
-Next = S_GLAREGOYLELONG_LOOP
+Next = S_TRAPGOYLELONG_FIRE2
 
-State S_GLAREGOYLELONG_LOOP
-SpriteName = SPR_BGAR
-SpriteFrame = 1
-Action = A_Repeat
-Var1 = 5
-Var2 = S_GLAREGOYLELONG_FIRE
-Next = S_GLAREGOYLELONG_COOLDOWN
+State S_TRAPGOYLELONG_FIRE2
+SpriteName = SPR_GARG
+Duration = 1
+Action = A_TrapShot
+Var1 = (16<<16)+MT_DEMONFIRE
+Var2 = (30<<16)
+Next = S_TRAPGOYLELONG_FIRE3
 
-State S_GLAREGOYLELONG_COOLDOWN
-SpriteName = SPR_BGAR
-SpriteFrame = FF_ANIMATE|1
-Duration = 15
-Var1 = 1
-Var2 = 9
-Next = S_GLAREGOYLELONG
+State S_TRAPGOYLELONG_FIRE3
+SpriteName = SPR_GARG
+Duration = 1
+Action = A_TrapShot
+Var1 = (16<<16)+MT_DEMONFIRE
+Var2 = (30<<16)
+Next = S_TRAPGOYLELONG_FIRE4
+
+State S_TRAPGOYLELONG_FIRE4
+SpriteName = SPR_GARG
+Duration = 1
+Action = A_TrapShot
+Var1 = (16<<16)+MT_DEMONFIRE
+Var2 = (30<<16)
+Next = S_TRAPGOYLELONG_FIRE5
+
+State S_TRAPGOYLELONG_FIRE5
+SpriteName = SPR_GARG
+Duration = 1
+Action = A_TrapShot
+Var1 = (16<<16)+MT_DEMONFIRE
+Var2 = (30<<16)
+Next = S_TRAPGOYLELONG
 
 # ATZ's Red Crystal/Target
 State S_TARGET_IDLE
