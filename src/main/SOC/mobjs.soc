@@ -4130,7 +4130,6 @@ Mass = 16
 Flags = MF_NOCLIPTHING
 
 Mobj MT_FLICKY_04_CENTER
-MapThingNum = 2203
 SpawnState = S_FLICKY_04_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4154,7 +4153,6 @@ Flags = MF_NOCLIPTHING
 RaiseState = S_FLICKY_BUBBLE
 
 Mobj MT_FLICKY_05_CENTER
-MapThingNum = 2204
 SpawnState = S_FLICKY_05_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4178,7 +4176,6 @@ Flags = MF_NOCLIPTHING
 RaiseState = S_FLICKY_BUBBLE
 
 Mobj MT_FLICKY_06_CENTER
-MapThingNum = 2205
 SpawnState = S_FLICKY_06_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4202,7 +4199,6 @@ Mass = 16
 Flags = MF_NOCLIPTHING
 
 Mobj MT_FLICKY_07_CENTER
-MapThingNum = 2206
 SpawnState = S_FLICKY_07_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4226,7 +4222,6 @@ Mass = 16
 Flags = MF_NOCLIPTHING
 
 Mobj MT_FLICKY_08_CENTER
-MapThingNum = 2207
 SpawnState = S_FLICKY_08_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4250,7 +4245,6 @@ Flags = MF_NOCLIPTHING
 RaiseState = S_FLICKY_BUBBLE
 
 Mobj MT_FLICKY_09_CENTER
-MapThingNum = 2208
 SpawnState = S_FLICKY_09_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4274,7 +4268,6 @@ Flags = MF_NOCLIPTHING
 RaiseState = S_FLICKY_BUBBLE
 
 Mobj MT_FLICKY_10_CENTER
-MapThingNum = 2209
 SpawnState = S_FLICKY_10_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4298,7 +4291,6 @@ Flags = MF_NOCLIPTHING
 RaiseState = S_FLICKY_BUBBLE
 
 Mobj MT_FLICKY_11_CENTER
-MapThingNum = 2210
 SpawnState = S_FLICKY_11_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4322,7 +4314,6 @@ Flags = MF_NOCLIPTHING
 RaiseState = S_FLICKY_BUBBLE
 
 Mobj MT_FLICKY_12_CENTER
-MapThingNum = 2211
 SpawnState = S_FLICKY_12_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4346,7 +4337,6 @@ Flags = MF_NOCLIPTHING
 RaiseState = S_FLICKY_BUBBLE
 
 Mobj MT_FLICKY_13_CENTER
-MapThingNum = 2212
 SpawnState = S_FLICKY_13_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4370,7 +4360,6 @@ Flags = MF_NOCLIPTHING
 RaiseState = S_FLICKY_BUBBLE
 
 Mobj MT_FLICKY_14_CENTER
-MapThingNum = 2213
 SpawnState = S_FLICKY_14_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4394,7 +4383,6 @@ Flags = MF_NOCLIPTHING
 RaiseState = S_FLICKY_BUBBLE
 
 Mobj MT_FLICKY_15_CENTER
-MapThingNum = 2214
 SpawnState = S_FLICKY_15_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4418,7 +4406,6 @@ Flags = MF_NOCLIPTHING
 RaiseState = S_FLICKY_BUBBLE
 
 Mobj MT_FLICKY_16_CENTER
-MapThingNum = 2215
 SpawnState = S_FLICKY_16_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4442,7 +4429,6 @@ Flags = MF_NOCLIPTHING
 RaiseState = S_FLICKY_BUBBLE
 
 Mobj MT_SECRETFLICKY_01_CENTER
-MapThingNum = 2216
 SpawnState = S_SECRETFLICKY_01_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -4466,7 +4452,6 @@ Flags = MF_NOCLIPTHING
 RaiseState = S_FLICKY_BUBBLE
 
 Mobj MT_SECRETFLICKY_02_CENTER
-MapThingNum = 2217
 SpawnState = S_SECRETFLICKY_02_CENTER
 SpawnHealth = 1000
 ReactionTime = 8
@@ -5950,63 +5935,6 @@ Height = 16*FRACUNIT
 Mass = 1000
 ActiveSound = sfx_crumbl
 Flags = MF_NOBLOCKMAP|MF_NOCLIPTHING|MF_SCENERY|MF_NOCLIPHEIGHT
-
-# Level debris
-Mobj MT_GFZDEBRIS
-SpawnState = S_GFZDEBRIS
-SpawnHealth = 1
-Radius = 32*FRACUNIT
-Height = 64*FRACUNIT
-Mass = 100
-ActiveSound = sfx_crumbl
-Flags = MF_NOBLOCKMAP|MF_NOCLIPTHING|MF_RUNSPAWNFUNC|MF_NOCLIPHEIGHT|MF_SCENERY
-
-Mobj MT_BRICKDEBRIS
-SpawnState = S_BRICKDEBRIS
-SpawnHealth = 1
-Radius = 16*FRACUNIT
-Height = 16*FRACUNIT
-Mass = 100
-Flags = MF_NOBLOCKMAP|MF_NOCLIPTHING|MF_RUNSPAWNFUNC|MF_NOCLIPHEIGHT|MF_SCENERY
-
-Mobj MT_WOODDEBRIS
-SpawnState = S_WOODDEBRIS
-SpawnHealth = 1
-Radius = 16*FRACUNIT
-Height = 16*FRACUNIT
-Mass = 100
-ActiveSound = sfx_wbreak
-Flags = MF_NOBLOCKMAP|MF_NOCLIPTHING|MF_RUNSPAWNFUNC|MF_NOCLIPHEIGHT|MF_SCENERY
-
-# for CEZ3
-Mobj MT_REDBRICKDEBRIS
-SpawnState = S_REDBRICKDEBRIS
-SpawnHealth = 1
-Radius = 32*FRACUNIT
-Height = 64*FRACUNIT
-Mass = 100
-ActiveSound = sfx_crumbl
-Flags = MF_NOBLOCKMAP|MF_NOCLIPTHING|MF_RUNSPAWNFUNC|MF_NOCLIPHEIGHT|MF_SCENERY
-
-# for CEZ3
-Mobj MT_BLUEBRICKDEBRIS
-SpawnState = S_BLUEBRICKDEBRIS
-SpawnHealth = 1
-Radius = 32*FRACUNIT
-Height = 64*FRACUNIT
-Mass = 100
-ActiveSound = sfx_crumbl
-Flags = MF_NOBLOCKMAP|MF_NOCLIPTHING|MF_RUNSPAWNFUNC|MF_NOCLIPHEIGHT|MF_SCENERY
-
-# for CEZ3
-Mobj MT_YELLOWBRICKDEBRIS
-SpawnState = S_YELLOWBRICKDEBRIS
-SpawnHealth = 1
-Radius = 32*FRACUNIT
-Height = 64*FRACUNIT
-Mass = 100
-ActiveSound = sfx_crumbl
-Flags = MF_NOBLOCKMAP|MF_NOCLIPTHING|MF_RUNSPAWNFUNC|MF_NOCLIPHEIGHT|MF_SCENERY
 
 # SRB1 Badniks
 Mobj MT_SRB1_CRAWLA

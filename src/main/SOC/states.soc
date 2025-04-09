@@ -13343,54 +13343,6 @@ Duration = -1
 Var1 = 7
 Var2 = 2
 
-# Level debris
-State S_GFZDEBRIS
-SpriteName = SPR_GFZD
-SpriteFrame = FF_ANIMATE|FF_RANDOMANIM
-Duration = -1
-Var1 = 31
-Var2 = 1
-
-State S_BRICKDEBRIS
-SpriteName = SPR_BRIC
-SpriteFrame = FF_ANIMATE
-Duration = -1
-Action = A_DebrisRandom
-Var1 = 7
-Var2 = 2
-
-State S_WOODDEBRIS
-SpriteName = SPR_WDDB
-SpriteFrame = FF_ANIMATE
-Duration = -1
-Action = A_DebrisRandom
-Var1 = 7
-Var2 = 2
-
-# for CEZ3
-State S_REDBRICKDEBRIS
-SpriteName = SPR_BRIR
-SpriteFrame = FF_ANIMATE|FF_RANDOMANIM
-Duration = -1
-Var1 = 31
-Var2 = 1
-
-# for CEZ3
-State S_BLUEBRICKDEBRIS
-SpriteName = SPR_BRIB
-SpriteFrame = FF_ANIMATE|FF_RANDOMANIM
-Duration = -1
-Var1 = 31
-Var2 = 1
-
-# for CEZ3
-State S_YELLOWBRICKDEBRIS
-SpriteName = SPR_BRIY
-SpriteFrame = FF_ANIMATE|FF_RANDOMANIM
-Duration = -1
-Var1 = 31
-Var2 = 1
-
 # SRB1 Badniks
 State S_SRB1_CRAWLA1
 SpriteName = SPR_SRBA
