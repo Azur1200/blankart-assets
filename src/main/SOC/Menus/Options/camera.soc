@@ -7,7 +7,7 @@ TextHeader = Camera Options
 
 MenuItem
 Y = 20
-Text = Camera Tiling
+Text = Camera Tilting
 Cvar = tilting
 
 MenuItem

@@ -39,8 +39,13 @@ Y = 118
 TextWhite = Ghosts...
 SubMenu = SP_GHOST
 
+MenuItem MODS
+Y = 128
+TextWhite = Modifiers...
+SubMenu = SP_MODS
+
 MenuItem START
-Y = 130
+Y = 140
 TextWhite = Start
 CallNotModified = MR_ChooseTimeAttack
 
@@ -144,6 +149,42 @@ Cvar = ghost_staff
 
 MenuItem
 Y = 130
+TextWhite = Back
+SubMenu = SP_TIMEATTACK
+
+
+Menu SP_MODS
+X = 34
+Y = 40
+HeaderPic = M_ATTACK
+DrawRoutine = MD_DrawTimeAttackMenu
+MenuItem SRING
+Y = 94
+Text = Rings
+Cvar = dummyattackingrings
+
+MenuItem SSTCK
+Y = 104
+Text = Stacking
+Cvar = dummyattackingstacking
+
+MenuItem SCHN
+Y = 112
+Text = Chaining
+Cvar = dummyattackingchaining
+
+MenuItem SSLD
+Y = 120
+Text = Slipdash
+Cvar = dummyattackingslipdash
+
+MenuItem SPRD
+Y = 130
+Text = Purple Drift
+Cvar = dummyattackingpurpledrift
+
+MenuItem
+Y = 150
 TextWhite = Back
 SubMenu = SP_TIMEATTACK
 
