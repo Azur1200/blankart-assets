@@ -10307,23 +10307,6 @@ State S_STEAM8
 Duration = 18
 Next = S_STEAM1
 
-# Bumpers
-State S_BUMPER
-SpriteName = SPR_BUMP
-SpriteFrame = FF_ANIMATE|FF_GLOBALANIM
-Duration = -1
-Var1 = 3
-Var2 = 4
-
-State S_BUMPERHIT
-SpriteName = SPR_BUMP
-SpriteFrame = FF_ANIMATE|4
-Duration = 12
-Action = A_Pain
-Var1 = 1
-Var2 = 3
-Next = S_BUMPER
-
 # Balloons
 State S_BALLOON
 SpriteName = SPR_BLON
@@ -10645,64 +10628,6 @@ SpriteName = SPR_SSWG
 SpriteFrame = 2
 Duration = 4
 Next = S_GHORIZ1
-
-# Booster
-State S_BOOSTERSOUND
-Duration = 1
-Action = A_Pain
-Next = S_INVISIBLE
-
-State S_YELLOWBOOSTERROLLER
-SpriteName = SPR_BSTY
-SpriteFrame = FF_ANIMATE
-Duration = -1
-Var1 = 2
-Var2 = 1
-
-State S_YELLOWBOOSTERSEG_LEFT
-SpriteName = SPR_BSTY
-SpriteFrame = 3|FF_PAPERSPRITE|FF_ANIMATE
-Duration = -1
-Var1 = 2
-Var2 = 3
-
-State S_YELLOWBOOSTERSEG_RIGHT
-SpriteName = SPR_BSTY
-SpriteFrame = 6|FF_PAPERSPRITE|FF_ANIMATE
-Duration = -1
-Var1 = 2
-Var2 = 3
-
-State S_YELLOWBOOSTERSEG_FACE
-SpriteName = SPR_BSTY
-SpriteFrame = 9|FF_PAPERSPRITE
-Duration = -1
-
-State S_REDBOOSTERROLLER
-SpriteName = SPR_BSTR
-SpriteFrame = FF_ANIMATE
-Duration = -1
-Var1 = 2
-Var2 = 1
-
-State S_REDBOOSTERSEG_LEFT
-SpriteName = SPR_BSTR
-SpriteFrame = 3|FF_PAPERSPRITE|FF_ANIMATE
-Duration = -1
-Var1 = 2
-Var2 = 3
-
-State S_REDBOOSTERSEG_RIGHT
-SpriteName = SPR_BSTR
-SpriteFrame = 6|FF_PAPERSPRITE|FF_ANIMATE
-Duration = -1
-Var1 = 2
-Var2 = 3
-
-State S_REDBOOSTERSEG_FACE
-SpriteName = SPR_BSTR
-SpriteFrame = 9|FF_PAPERSPRITE
-Duration = -1
 
 # Rain
 State S_RAIN1

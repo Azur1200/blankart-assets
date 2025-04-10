@@ -1277,7 +1277,6 @@ Mass = 16
 Flags = MF_SPECIAL
 
 Mobj MT_EMBLEM
-MapThingNum = 322
 SpawnState = S_EMBLEM1
 SpawnHealth = 1000
 ReactionTime = 8
@@ -1396,7 +1395,7 @@ Flags = MF_SPECIAL|MF_NOGRAVITY
 
 # Emerald spawner w/ delay
 Mobj MT_EMERALDSPAWN
-MapThingNum = 321
+MapThingNum = 323
 SpawnState = S_INVISIBLE
 SpawnHealth = 1000
 Radius = 8
@@ -1438,19 +1437,6 @@ Radius = 32*FRACUNIT
 Height = 1*FRACUNIT
 Mass = 20*FRACUNIT
 Flags = MF_SOLID
-
-Mobj MT_BUMPER
-MapThingNum = 542
-SpawnState = S_BUMPER
-SpawnHealth = 1000
-ReactionTime = 5
-PainChance = -1
-PainSound = sfx_s3kaa
-Radius = 32*FRACUNIT
-Height = 64*FRACUNIT
-Mass = 16*FRACUNIT
-Flags = MF_SPRING|MF_NOGRAVITY
-RaiseState = S_BUMPERHIT
 
 Mobj MT_BALLOON
 MapThingNum = 462
@@ -1657,46 +1643,6 @@ Height = 16*FRACUNIT
 Damage = 12*FRACUNIT
 Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
 RaiseState = S_GHORIZ2
-
-Mobj MT_BOOSTERSEG
-SpawnState = S_INVISIBLE
-SpawnHealth = 1
-Radius = 28*FRACUNIT
-Height = 16*FRACUNIT
-Mass = 100
-Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_NOCLIP
-
-Mobj MT_BOOSTERROLLER
-SpawnState = S_INVISIBLE
-SpawnHealth = 1
-Radius = 14*FRACUNIT
-Height = 32*FRACUNIT
-Mass = 100
-Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_NOCLIP
-
-Mobj MT_YELLOWBOOSTER
-MapThingNum = 544
-SpawnState = S_INVISIBLE
-SpawnHealth = 1
-PainChance = 3
-PainSound = sfx_cdfm62
-Radius = 28*FRACUNIT
-Height = FRACUNIT
-Damage = 36*FRACUNIT
-Flags = MF_SPRING|MF_NOGRAVITY
-RaiseState = S_BOOSTERSOUND
-
-Mobj MT_REDBOOSTER
-MapThingNum = 545
-SpawnState = S_INVISIBLE
-SpawnHealth = 1
-PainChance = 3
-PainSound = sfx_cdfm62
-Radius = 28*FRACUNIT
-Height = FRACUNIT
-Damage = 72*FRACUNIT
-Flags = MF_SPRING|MF_NOGRAVITY
-RaiseState = S_BOOSTERSOUND
 
 # Interactive Objects
 # Bubble source
