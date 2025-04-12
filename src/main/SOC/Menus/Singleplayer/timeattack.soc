@@ -42,7 +42,7 @@ SubMenu = SP_GHOST
 MenuItem MODS
 Y = 128
 TextWhite = Modifiers...
-SubMenu = SP_MODS
+SubMenu = SP_PRES
 
 MenuItem START
 Y = 140
@@ -153,6 +153,37 @@ TextWhite = Back
 SubMenu = SP_TIMEATTACK
 
 
+Menu SP_PRES
+X = 34
+Y = 40
+HeaderPic = M_ATTACK
+DrawRoutine = MD_DrawTimeAttackMenu
+MenuItem SRB2K
+Y = 94
+TextWhite = SRB2Kart Mode
+Call = MR_SRB2KartPreset
+
+MenuItem TECH
+Y = 104
+TextWhite = Tech Mode
+Call = MR_TechPreset
+
+MenuItem BLAN
+Y = 114
+TextWhite = BlanKart Mode
+Call = MR_BlanKartPreset
+
+MenuItem CUST
+Y = 124
+TextWhite = Custom...
+SubMenu = SP_MODS
+
+MenuItem
+Y = 150
+TextWhite = Back
+SubMenu = SP_TIMEATTACK
+
+
 Menu SP_MODS
 X = 34
 Y = 40
@@ -169,22 +200,22 @@ Text = Stacking
 Cvar = dummyattackingstacking
 
 MenuItem SCHN
-Y = 112
+Y = 114
 Text = Chaining
 Cvar = dummyattackingchaining
 
 MenuItem SSLD
-Y = 120
+Y = 124
 Text = Slipdash
 Cvar = dummyattackingslipdash
 
 MenuItem SPRD
-Y = 130
+Y = 134
 Text = Purple Drift
 Cvar = dummyattackingpurpledrift
 
 MenuItem
 Y = 150
 TextWhite = Back
-SubMenu = SP_TIMEATTACK
+SubMenu = SP_PRES
 
