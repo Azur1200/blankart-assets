@@ -12141,124 +12141,92 @@ SpriteFrame = 3
 Duration = 3
 Next = S_FIREFLOWER1
 
-State S_FIREBALL
+State S_FIREBALL1
 SpriteName = SPR_FBLL
 SpriteFrame = FF_FULLBRIGHT
-Duration = 1
-Action = A_SpawnObjectRelative
-Var2 = MT_FIREBALLTRAIL
-Next = S_FIREBALL
+Duration = 3
+Next = S_FIREBALL2
 
-State S_FIREBALLTRAIL1
+State S_FIREBALL2
 SpriteName = SPR_FBLL
-SpriteFrame = 1|FF_FULLBRIGHT|FF_TRANS50
-Duration = 1
-Action = A_SetScale
-Var1 = FRACUNIT*3/4
-Next = S_FIREBALLTRAIL2
+SpriteFrame = FF_FULLBRIGHT|1
+Duration = 3
+Next = S_FIREBALL3
 
-State S_FIREBALLTRAIL2
+State S_FIREBALL3
 SpriteName = SPR_FBLL
-SpriteFrame = 1|FF_FULLBRIGHT|FF_TRANS50
-Duration = 8
-Action = A_SetScale
-Var1 = FRACUNIT/6
-Var2 = 1
+SpriteFrame = FF_FULLBRIGHT|2
+Duration = 3
+Next = S_FIREBALL4
+
+State S_FIREBALL4
+SpriteName = SPR_FBLL
+SpriteFrame = FF_FULLBRIGHT|3
+Duration = 3
+Next = S_FIREBALL1
+
+State S_FIREBALLEXP1
+SpriteName = SPR_FBLL
+SpriteFrame = FF_FULLBRIGHT|4
+Duration = 3
+Next = S_FIREBALLEXP2
+
+State S_FIREBALLEXP2
+SpriteName = SPR_FBLL
+SpriteFrame = FF_FULLBRIGHT|5
+Duration = 3
+Next = S_FIREBALLEXP3
+
+State S_FIREBALLEXP3
+SpriteName = SPR_FBLL
+SpriteFrame = FF_FULLBRIGHT|6
+Duration = 3
 
 State S_SHELL
 SpriteName = SPR_SHLL
 Duration = -1
 
-State S_PUMA_START1
-SpriteName = SPR_PUMA
-SpriteFrame = FF_FULLBRIGHT|2
-Duration = 1
-Action = A_FishJump
-Var2 = MT_PUMATRAIL
-Next = S_PUMA_START2
-
-State S_PUMA_START2
-SpriteName = SPR_PUMA
-SpriteFrame = FF_FULLBRIGHT|2
-Duration = 1
-Action = A_PlaySound
-Var1 = sfx_s3k70
-Var2 = 1+(1<<16)
-Next = S_PUMA_UP1
-
-State S_PUMA_UP1
+State S_PUMA1
 SpriteName = SPR_PUMA
 SpriteFrame = FF_FULLBRIGHT
-Duration = 2
+Duration = 3
 Action = A_FishJump
-Var2 = MT_PUMATRAIL
-Next = S_PUMA_UP2
+Next = S_PUMA2
 
-State S_PUMA_UP2
+State S_PUMA2
 SpriteName = SPR_PUMA
 SpriteFrame = FF_FULLBRIGHT|1
-Duration = 2
+Duration = 3
 Action = A_FishJump
-Var2 = MT_PUMATRAIL
-Next = S_PUMA_UP3
+Next = S_PUMA3
 
-State S_PUMA_UP3
+State S_PUMA3
 SpriteName = SPR_PUMA
 SpriteFrame = FF_FULLBRIGHT|2
-Duration = 2
+Duration = 3
 Action = A_FishJump
-Var2 = MT_PUMATRAIL
-Next = S_PUMA_UP1
+Next = S_PUMA1
 
-State S_PUMA_DOWN1
+State S_PUMA4
 SpriteName = SPR_PUMA
 SpriteFrame = FF_FULLBRIGHT|3
-Duration = 2
+Duration = 3
 Action = A_FishJump
-Var2 = MT_PUMATRAIL
-Next = S_PUMA_DOWN2
+Next = S_PUMA5
 
-State S_PUMA_DOWN2
+State S_PUMA5
 SpriteName = SPR_PUMA
 SpriteFrame = FF_FULLBRIGHT|4
-Duration = 2
+Duration = 3
 Action = A_FishJump
-Var2 = MT_PUMATRAIL
-Next = S_PUMA_DOWN3
+Next = S_PUMA6
 
-State S_PUMA_DOWN3
+State S_PUMA6
 SpriteName = SPR_PUMA
 SpriteFrame = FF_FULLBRIGHT|5
-Duration = 2
-Action = A_FishJump
-Var2 = MT_PUMATRAIL
-Next = S_PUMA_DOWN1
-
-State S_PUMATRAIL1
-SpriteName = SPR_PUMA
-SpriteFrame = FF_FULLBRIGHT|FF_TRANS20|6
-Duration = 4
-Next = S_PUMATRAIL2
-
-State S_PUMATRAIL2
-SpriteName = SPR_PUMA
-SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|6
-Duration = 5
-Action = A_SetScale
-Var1 = FRACUNIT
-Var2 = 1
-Next = S_PUMATRAIL3
-
-State S_PUMATRAIL3
-SpriteName = SPR_PUMA
-SpriteFrame = FF_FULLBRIGHT|FF_TRANS50|7
-Duration = 4
-Next = S_PUMATRAIL4
-
-State S_PUMATRAIL4
-SpriteName = SPR_PUMA
-SpriteFrame = FF_FULLBRIGHT|FF_TRANS60|8
 Duration = 3
+Action = A_FishJump
+Next = S_PUMA4
 
 State S_HAMMER
 SpriteName = SPR_HAMM

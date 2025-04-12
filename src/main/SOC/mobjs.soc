@@ -5031,24 +5031,22 @@ Mass = 100
 Flags = MF_SPECIAL
 
 Mobj MT_FIREBALL
-SpawnState = S_FIREBALL
+SpawnState = S_FIREBALL1
 SpawnHealth = 1000
+SeeState = S_FIREBALLEXP1
 ReactionTime = 8
-Speed = 40*FRACUNIT
+PainState = 0
+MeleeState = S_FIREBALLEXP1
+MissileState = S_FIREBALLEXP1
+DeathState = S_FIREBALLEXP1
+XDeathState = S_FIREBALLEXP1
+DeathSound = sfx_mario1
+Speed = 10*FRACUNIT
 Radius = 4*FRACUNIT
 Height = 8*FRACUNIT
-Mass = DMG_NORMAL
+Mass = 100
 Damage = 1
-Flags = MF_FIRE|MF_BOUNCE|MF_MISSILE
-
-Mobj MT_FIREBALLTRAIL
-SpawnState = S_FIREBALLTRAIL1
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 16*FRACUNIT
-Height = 16*FRACUNIT
-Damage = 1
-Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_NOCLIP|MF_RUNSPAWNFUNC
+Flags = MF_NOBLOCKMAP|MF_FIRE|MF_MISSILE
 
 Mobj MT_SHELL
 MapThingNum = 1804
@@ -5064,16 +5062,15 @@ Flags = MF_SPECIAL|MF_SHOOTABLE|MF_BOUNCE
 
 Mobj MT_PUMA
 MapThingNum = 1805
-SpawnState = S_PUMA_START1
+SpawnState = S_PUMA1
 SpawnHealth = 1000
-SeeState = S_PUMA_START1
+SeeState = S_PUMA1
 ReactionTime = 8
-MeleeState = S_PUMA_DOWN1
-XDeathState = S_PUMA_DOWN3
-Speed = 2000*FRACUNIT
+MeleeState = S_PUMA4
+XDeathState = S_PUMA6
 Radius = 8*FRACUNIT
 Height = 16*FRACUNIT
-Mass = DMG_NORMAL
+Mass = 100
 Flags = MF_PAIN|MF_FIRE
 
 Mobj MT_PUMATRAIL
