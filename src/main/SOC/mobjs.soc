@@ -660,7 +660,7 @@ MeleeState = S_EGGMOBILE_LATK1
 MissileState = S_EGGMOBILE_RATK1
 DeathState = S_EGGMOBILE_DIE1
 XDeathState = S_EGGMOBILE_FLEE1
-DeathSound = sfx_s3kb4
+DeathSound = sfx_cybdth
 Speed = 4
 Radius = 24*FRACUNIT
 Height = 76*FRACUNIT
@@ -726,7 +726,7 @@ MeleeState = S_EGGMOBILE2_PAIN2
 MissileState = MT_EGGMOBILE2_POGO
 DeathState = S_EGGMOBILE2_DIE1
 XDeathState = S_EGGMOBILE2_FLEE1
-DeathSound = sfx_s3kb4
+DeathSound = sfx_cybdth
 Speed = 2*FRACUNIT
 Radius = 24*FRACUNIT
 Height = 76*FRACUNIT
@@ -741,8 +741,38 @@ SpawnHealth = 1000
 Radius = 15*FRACUNIT
 Height = 28*FRACUNIT
 ActiveSound = sfx_spring
-Flags = MF_SPECIAL|MF_NOGRAVITY|MF_NOCLIP|MF_NOCLIPHEIGHT
+Flags = MF_SPECIAL|MF_NOGRAVITY|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOCLIPTHING
 RaiseState = S_EGGMOBILE2_POGO5
+
+Mobj MT_BOSSTANK1
+SpawnState = S_BOSSTANK1
+SpawnHealth = 1
+ReactionTime = 8
+Radius = 8*FRACUNIT
+Height = 64*FRACUNIT
+Mass = 100
+Damage = 1
+Flags = MF_NOBLOCKMAP
+
+Mobj MT_BOSSTANK2
+SpawnState = S_BOSSTANK2
+SpawnHealth = 1
+ReactionTime = 8
+Radius = 8*FRACUNIT
+Height = 64*FRACUNIT
+Mass = 100
+Damage = 1
+Flags = MF_NOBLOCKMAP
+
+Mobj MT_BOSSSPIGOT
+SpawnState = S_BOSSSPIGOT
+SpawnHealth = 1
+ReactionTime = 8
+Radius = 8*FRACUNIT
+Height = 24*FRACUNIT
+Mass = 100
+Damage = 1
+Flags = MF_NOBLOCKMAP
 
 Mobj MT_GOOP
 SpawnState = S_GOOP1
@@ -753,18 +783,8 @@ MeleeState = S_GOOP3
 Speed = 1
 Radius = 4*FRACUNIT
 Height = 4*FRACUNIT
-Mass = DMG_NORMAL
-Flags = MF_PAIN
-
-Mobj MT_GOOPTRAIL
-SpawnState = S_GOOPTRAIL
-SpawnHealth = 1000
-ReactionTime = 8
-Speed = 3
-Radius = 4*FRACUNIT
-Height = 4*FRACUNIT
 Mass = 4
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY
+Flags = MF_PAIN
 
 # Boss 3
 Mobj MT_EGGMOBILE3
@@ -772,12 +792,12 @@ MapThingNum = 202
 SpawnState = S_EGGMOBILE3_STND
 SpawnHealth = 8
 PainState = S_EGGMOBILE3_PAIN
-PainChance = MT_NULL
+PainChance = MT_PROPELLER
 PainSound = sfx_dmpain
-MissileState = S_EGGMOBILE3_SHOCK
+MissileState = S_EGGMOBILE3_ATK1
 DeathState = S_EGGMOBILE3_DIE1
 XDeathState = S_EGGMOBILE3_FLEE1
-DeathSound = sfx_s3kb4
+DeathSound = sfx_cybdth
 Speed = 8*FRACUNIT
 Radius = 32*FRACUNIT
 Height = 116*FRACUNIT
@@ -785,47 +805,45 @@ Mass = MT_FAKEMOBILE
 Damage = 3
 ActiveSound = sfx_telept
 Flags = MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_BOSS|MF_NOCLIPHEIGHT
-RaiseState = S_EGGMOBILE3_ROFL
+RaiseState = S_EGGMOBILE3_LAUGH20
+
+Mobj MT_PROPELLER
+SpawnState = S_PROPELLER1
+SpawnHealth = 1000
+ReactionTime = 8
+Speed = 1
+Radius = 4*FRACUNIT
+Height = 4*FRACUNIT
+Mass = 4
+Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_NOCLIP|MF_NOCLIPHEIGHT
 
 Mobj MT_FAKEMOBILE
 SpawnState = S_FAKEMOBILE_INIT
 SpawnHealth = 1000
-PainChance = MT_NULL
+PainChance = MT_PROPELLER
 PainSound = sfx_s3k7b
 MissileState = S_FAKEMOBILE_ATK1
-DeathState = S_FAKEMOBILE_DIE1
-DeathSound = sfx_mswarp
+DeathState = S_XPLD1
+DeathSound = sfx_pop
 Speed = 8*FRACUNIT
 Radius = 32*FRACUNIT
 Height = 116*FRACUNIT
 Damage = 3
 Flags = MF_SPECIAL|MF_NOGRAVITY|MF_RUNSPAWNFUNC|MF_NOCLIPHEIGHT
 
-Mobj MT_SHOCKWAVE
-SpawnState = S_SHOCKWAVE1
-SpawnHealth = 1000
-SeeSound = sfx_s3k5e
-PainChance = 8*TICRATE
-DeathState = S_SPRK1
-Speed = 12*FRACUNIT
-Radius = 48*FRACUNIT
-Height = 8*FRACUNIT
-Mass = DMG_NORMAL|(sfx_buzz2<<8)
-Damage = 3
-Flags = MF_NOBLOCKMAP|MF_MISSILE|MF_PAIN|MF_NOGRAVITY|MF_PAPERCOLLISION
-
+# Boss 4
 # Boss 4
 Mobj MT_EGGMOBILE4
 MapThingNum = 203
 SpawnState = S_EGGMOBILE4_STND
 SpawnHealth = 8
-PainState = S_EGGMOBILE4_PAIN1
+PainState = S_EGGMOBILE4_PAIN
 PainSound = sfx_dmpain
 MeleeState = S_EGGMOBILE4_LATK1
 MissileState = S_EGGMOBILE4_RATK1
 DeathState = S_EGGMOBILE4_DIE1
 XDeathState = S_EGGMOBILE4_FLEE1
-DeathSound = sfx_s3kb4
+DeathSound = sfx_cybdth
 Radius = 24*FRACUNIT
 Height = 76*FRACUNIT
 Damage = 3
@@ -836,48 +854,25 @@ Mobj MT_EGGMOBILE4_MACE
 SpawnState = S_EGGMOBILE4_MACE
 SpawnHealth = 1000
 ReactionTime = 8
-DeathState = S_EGGMOBILE4_MACE_DIE1
+DeathState = S_BPLD1
+DeathSound = sfx_cybdth
 Speed = 48*FRACUNIT
 Radius = 34*FRACUNIT
 Height = 68*FRACUNIT
-Mass = DMG_NORMAL
+Mass = 100
 Damage = 1
 ActiveSound = sfx_mswing
 Flags = MF_PAIN|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY
 
 Mobj MT_JETFLAME
-SpawnState = S_JETFLAME
+SpawnState = S_JETFLAME1
 SpawnHealth = 1000
 ReactionTime = 8
 Speed = 1
 Radius = 20*FRACUNIT
 Height = 32*FRACUNIT
-Mass = DMG_NORMAL
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY
-
-Mobj MT_EGGROBO1
-MapThingNum = 1127
-SpawnState = S_EGGROBO1_STND
-SpawnHealth = 1000
-SeeSound = sfx_s3ka0
-ReactionTime = 8
-AttackSound = sfx_bsnipe
-MeleeState = S_EGGROBO1_BSLAP1
-DeathState = S_EGGROBO1_PISSED
-DeathSound = sfx_s3ka0
-Speed = 12*FRACUNIT
-Radius = 20*FRACUNIT
-Height = 72*FRACUNIT
-Flags = MF_SPECIAL|MF_NOGRAVITY|MF_NOCLIPHEIGHT
-
-Mobj MT_EGGROBO1JET
-SpawnState = S_EGGROBOJET
-SpawnHealth = 1000
-ReactionTime = 8
-Speed = 1
-Radius = 10*FRACUNIT
-Height = 28*FRACUNIT
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY
+Mass = 4
+Flags = MF_NOGRAVITY|MF_PAIN|MF_FIRE
 
 # Black Eggman (Boss 7)
 Mobj MT_BLACKEGGMAN
@@ -1083,12 +1078,13 @@ Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOGRAVITY|MF_SCENERY
 # Metal Sonic (Boss 9)
 Mobj MT_METALSONIC_RACE
 MapThingNum = 207
-SpawnState = S_METALSONIC_RACE
+SpawnState = S_METALSONIC_STAND
 SpawnHealth = 8
-DeathState = S_KART_SPINOUT
+SeeState = S_METALSONIC_WALK1
+MeleeState = S_METALSONIC_RUN1
 Radius = 16*FRACUNIT
 Height = 48*FRACUNIT
-Flags = MF_NOGRAVITY|MF_NOCLIPHEIGHT
+Flags = MF_SCENERY|MF_NOGRAVITY|MF_NOCLIPHEIGHT
 
 Mobj MT_METALSONIC_BATTLE
 MapThingNum = 208
@@ -1096,18 +1092,19 @@ SpawnState = S_METALSONIC_FLOAT
 SpawnHealth = 8
 SeeState = S_METALSONIC_DASH
 SeeSound = sfx_s3k54
-AttackSound = sfx_bechrg
+AttackSound = sfx_trpowr
 PainState = S_METALSONIC_PAIN
 PainChance = S_METALSONIC_VECTOR
 PainSound = sfx_dmpain
-MeleeState = S_METALSONIC_BADBOUNCE
+MeleeState = S_METALSONIC_BLOCK
 MissileState = S_METALSONIC_SHOOT
-DeathState = S_METALSONIC_DEATH1
+DeathState = S_METALSONIC_DEATH
 XDeathState = S_METALSONIC_FLEE1
-DeathSound = sfx_s3kb4
+DeathSound = sfx_s3k6e
 Speed = MT_ENERGYBALL
 Radius = 16*FRACUNIT
 Height = 48*FRACUNIT
+Mass = sfx_mspogo
 Damage = 3
 ActiveSound = sfx_mswarp
 Flags = MF_NOGRAVITY|MF_BOSS|MF_SLIDEME
@@ -1117,8 +1114,7 @@ Mobj MT_MSSHIELD_FRONT
 SpawnState = S_MSSHIELD_F1
 SpawnHealth = 1
 Radius = 32*FRACUNIT
-Height = 52*FRACUNIT
-DispOffset = 1
+Height = 64*FRACUNIT
 Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY
 
 Mobj MT_MSGATHER
@@ -2326,13 +2322,12 @@ SpawnState = S_LASER
 SpawnHealth = 1000
 SeeSound = sfx_rlaunc
 ReactionTime = 8
-MeleeState = S_LASERFLASH
-MissileState = S_LASER2
 Speed = 20*FRACUNIT
 Radius = 11*FRACUNIT
 Height = 8*FRACUNIT
+Mass = 100
 Damage = 20
-Flags = MF_MISSILE|MF_NOGRAVITY
+Flags = MF_NOBLOCKMAP|MF_MISSILE|MF_NOGRAVITY
 
 Mobj MT_TORPEDO
 SpawnState = S_TORPEDO

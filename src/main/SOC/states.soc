@@ -1737,25 +1737,19 @@ Duration = 4
 
 State S_JETFUME1
 SpriteName = SPR_JETF
-SpriteFrame = FF_ANIMATE|FF_FULLBRIGHT
-Duration = -1
-Var1 = 2
-Var2 = 1
+SpriteFrame = FF_FULLBRIGHT
+Duration = 1
+Next = S_JETFUME2
+
+State S_JETFUME2
+Duration = 1
+Next = S_JETFUME1
 
 # Boss 1
 State S_EGGMOBILE_STND
 SpriteName = SPR_EGGM
 Duration = 1
 Action = A_Boss1Chase
-Next = S_EGGMOBILE_STND
-
-State S_EGGMOBILE_ROFL
-SpriteName = SPR_EGGM
-SpriteFrame = FF_ANIMATE|17
-Duration = 35
-Action = A_FaceTarget
-Var1 = 1
-Var2 = 2
 Next = S_EGGMOBILE_STND
 
 State S_EGGMOBILE_LATK1
@@ -1775,298 +1769,312 @@ State S_EGGMOBILE_LATK3
 SpriteName = SPR_EGGM
 SpriteFrame = 3
 Duration = 2
+Action = A_FaceTarget
 Next = S_EGGMOBILE_LATK4
 
 State S_EGGMOBILE_LATK4
 SpriteName = SPR_EGGM
 SpriteFrame = 4
-Duration = 2
-Action = A_FaceTarget
+Duration = 1
 Next = S_EGGMOBILE_LATK5
 
 State S_EGGMOBILE_LATK5
 SpriteName = SPR_EGGM
-SpriteFrame = 6
-Action = A_PrepareRepeat
-Var1 = 45
+SpriteFrame = 5
+Duration = 1
 Next = S_EGGMOBILE_LATK6
 
 State S_EGGMOBILE_LATK6
 SpriteName = SPR_EGGM
-SpriteFrame = 5
+SpriteFrame = 6
 Duration = 1
-Action = A_Boss1Laser
-Var1 = MT_LASER
 Next = S_EGGMOBILE_LATK7
 
 State S_EGGMOBILE_LATK7
 SpriteName = SPR_EGGM
-SpriteFrame = 6
+SpriteFrame = 7
 Duration = 1
-Action = A_Boss1Laser
-Var1 = MT_LASER
-Var2 = (1<<16)
 Next = S_EGGMOBILE_LATK8
 
 State S_EGGMOBILE_LATK8
 SpriteName = SPR_EGGM
-SpriteFrame = 5
-Action = A_Repeat
-Var1 = 45
-Var2 = S_EGGMOBILE_LATK6
+SpriteFrame = 8
+Duration = 45
+Action = A_Boss1Laser
+Var1 = MT_LASER
 Next = S_EGGMOBILE_LATK9
 
 State S_EGGMOBILE_LATK9
 SpriteName = SPR_EGGM
-SpriteFrame = 8
+SpriteFrame = 9
+Duration = 10
+Next = S_EGGMOBILE_LATK10
+
+State S_EGGMOBILE_LATK10
+SpriteName = SPR_EGGM
+SpriteFrame = 10
 Duration = 2
-Next = S_EGGMOBILE_ROFL
+Next = S_EGGMOBILE_STND
 
 State S_EGGMOBILE_RATK1
 SpriteName = SPR_EGGM
-SpriteFrame = 9
+SpriteFrame = 11
 Duration = 3
 Action = A_FaceTarget
 Next = S_EGGMOBILE_RATK2
 
 State S_EGGMOBILE_RATK2
 SpriteName = SPR_EGGM
-SpriteFrame = 10
+SpriteFrame = 12
 Duration = 15
 Next = S_EGGMOBILE_RATK3
 
 State S_EGGMOBILE_RATK3
 SpriteName = SPR_EGGM
-SpriteFrame = 11
+SpriteFrame = 13
 Duration = 2
+Action = A_FaceTarget
 Next = S_EGGMOBILE_RATK4
 
 State S_EGGMOBILE_RATK4
 SpriteName = SPR_EGGM
-SpriteFrame = 12
-Duration = 2
-Action = A_FaceTarget
+SpriteFrame = 14
+Duration = 1
 Next = S_EGGMOBILE_RATK5
 
 State S_EGGMOBILE_RATK5
 SpriteName = SPR_EGGM
-SpriteFrame = 14
-Action = A_PrepareRepeat
-Var1 = 45
+SpriteFrame = 15
+Duration = 1
 Next = S_EGGMOBILE_RATK6
 
 State S_EGGMOBILE_RATK6
 SpriteName = SPR_EGGM
-SpriteFrame = 13
+SpriteFrame = 16
 Duration = 1
-Action = A_Boss1Laser
-Var1 = MT_LASER
-Var2 = 1
 Next = S_EGGMOBILE_RATK7
 
 State S_EGGMOBILE_RATK7
 SpriteName = SPR_EGGM
-SpriteFrame = 14
+SpriteFrame = 17
 Duration = 1
-Action = A_Boss1Laser
-Var1 = MT_LASER
-Var2 = 1|(1<<16)
 Next = S_EGGMOBILE_RATK8
 
 State S_EGGMOBILE_RATK8
 SpriteName = SPR_EGGM
-SpriteFrame = 13
-Action = A_Repeat
-Var1 = 45
-Var2 = S_EGGMOBILE_RATK6
+SpriteFrame = 18
+Duration = 45
+Action = A_Boss1Laser
+Var1 = MT_LASER
+Var2 = 1
 Next = S_EGGMOBILE_RATK9
 
 State S_EGGMOBILE_RATK9
 SpriteName = SPR_EGGM
-SpriteFrame = 16
+SpriteFrame = 19
+Duration = 10
+Next = S_EGGMOBILE_RATK10
+
+State S_EGGMOBILE_RATK10
+SpriteName = SPR_EGGM
+SpriteFrame = 20
 Duration = 2
-Next = S_EGGMOBILE_ROFL
+Next = S_EGGMOBILE_STND
 
 State S_EGGMOBILE_PANIC1
 SpriteName = SPR_EGGM
-Action = A_PrepareRepeat
-Var1 = 45
+SpriteFrame = 3
+Duration = 12
 Next = S_EGGMOBILE_PANIC2
 
 State S_EGGMOBILE_PANIC2
 SpriteName = SPR_EGGM
-SpriteFrame = FF_ANIMATE|1
-Duration = 16
-Action = A_FaceTarget
-Var1 = 3
+SpriteFrame = 4
+Duration = 4
+Action = A_Boss1Spikeballs
 Var2 = 4
 Next = S_EGGMOBILE_PANIC3
 
 State S_EGGMOBILE_PANIC3
 SpriteName = SPR_EGGM
-SpriteFrame = 7
-Duration = 1
-Action = A_Boss1Laser
-Var1 = MT_LASER
-Var2 = 2
+SpriteFrame = 3
+Duration = 5
 Next = S_EGGMOBILE_PANIC4
 
 State S_EGGMOBILE_PANIC4
 SpriteName = SPR_EGGM
-SpriteFrame = 6
-Duration = 1
-Action = A_Boss1Laser
-Var1 = MT_LASER
-Var2 = 2|(1<<16)
+SpriteFrame = 4
+Duration = 4
+Action = A_Boss1Spikeballs
+Var1 = 1
+Var2 = 4
 Next = S_EGGMOBILE_PANIC5
 
 State S_EGGMOBILE_PANIC5
 SpriteName = SPR_EGGM
-SpriteFrame = 6
-Action = A_Repeat
-Var1 = 45
-Var2 = S_EGGMOBILE_PANIC3
+SpriteFrame = 3
+Duration = 5
 Next = S_EGGMOBILE_PANIC6
 
 State S_EGGMOBILE_PANIC6
 SpriteName = SPR_EGGM
-Action = A_PrepareRepeat
-Var1 = 45
+SpriteFrame = 4
+Duration = 4
+Action = A_Boss1Spikeballs
+Var1 = 2
+Var2 = 4
 Next = S_EGGMOBILE_PANIC7
 
 State S_EGGMOBILE_PANIC7
 SpriteName = SPR_EGGM
-SpriteFrame = FF_ANIMATE|9
-Duration = 16
-Action = A_FaceTarget
-Var1 = 3
-Var2 = 4
+SpriteFrame = 3
+Duration = 5
 Next = S_EGGMOBILE_PANIC8
 
 State S_EGGMOBILE_PANIC8
 SpriteName = SPR_EGGM
-SpriteFrame = 15
-Duration = 1
-Action = A_Boss1Laser
-Var1 = MT_LASER
-Var2 = 2
+SpriteFrame = 4
+Duration = 4
+Action = A_Boss1Spikeballs
+Var1 = 3
+Var2 = 4
 Next = S_EGGMOBILE_PANIC9
 
 State S_EGGMOBILE_PANIC9
 SpriteName = SPR_EGGM
-SpriteFrame = 14
-Duration = 1
-Action = A_Boss1Laser
-Var1 = MT_LASER
-Var2 = 2|(1<<16)
+SpriteFrame = 3
+Duration = 5
 Next = S_EGGMOBILE_PANIC10
 
 State S_EGGMOBILE_PANIC10
 SpriteName = SPR_EGGM
-SpriteFrame = 14
-Action = A_Repeat
-Var1 = 45
-Var2 = S_EGGMOBILE_PANIC8
-Next = S_EGGMOBILE_PANIC11
-
-State S_EGGMOBILE_PANIC11
-SpriteName = SPR_EGGM
-Action = A_PrepareRepeat
-Var1 = 45
-Next = S_EGGMOBILE_PANIC12
-
-State S_EGGMOBILE_PANIC12
-SpriteName = SPR_EGGM
-SpriteFrame = FF_ANIMATE|1
-Duration = 16
-Action = A_FaceTarget
-Var1 = 3
-Var2 = 4
-Next = S_EGGMOBILE_PANIC13
-
-State S_EGGMOBILE_PANIC13
-SpriteName = SPR_EGGM
-SpriteFrame = 7
-Duration = 1
-Action = A_Boss1Laser
-Var1 = MT_LASER
-Var2 = 2
-Next = S_EGGMOBILE_PANIC14
-
-State S_EGGMOBILE_PANIC14
-SpriteName = SPR_EGGM
-SpriteFrame = 6
-Duration = 1
-Action = A_Boss1Laser
-Var1 = MT_LASER
-Var2 = 2|(1<<16)
-Next = S_EGGMOBILE_PANIC15
-
-State S_EGGMOBILE_PANIC15
-SpriteName = SPR_EGGM
-SpriteFrame = 6
-Action = A_Repeat
-Var1 = 45
-Var2 = S_EGGMOBILE_PANIC13
-Next = S_EGGMOBILE_ROFL
+Duration = 35
+Action = A_SkullAttack
+Next = S_EGGMOBILE_STND
 
 State S_EGGMOBILE_PAIN
 SpriteName = SPR_EGGM
-SpriteFrame = 19
+SpriteFrame = 21
 Duration = 24
 Action = A_Pain
 Next = S_EGGMOBILE_PAIN2
 
 State S_EGGMOBILE_PAIN2
 SpriteName = SPR_EGGM
-SpriteFrame = 19
+SpriteFrame = 21
 Duration = 16
 Action = A_SkullAttack
-Var1 = 3
+Var1 = 1
 Var2 = 1
 Next = S_EGGMOBILE_STND
 
 State S_EGGMOBILE_DIE1
 SpriteName = SPR_EGGM
-SpriteFrame = 20
-Duration = 2
+SpriteFrame = 22
+Duration = 8
 Action = A_Fall
-Var1 = 17
 Next = S_EGGMOBILE_DIE2
 
 State S_EGGMOBILE_DIE2
 SpriteName = SPR_EGGM
-SpriteFrame = 20
-Duration = 2
+SpriteFrame = 22
+Duration = 8
 Action = A_BossScream
 Next = S_EGGMOBILE_DIE3
 
 State S_EGGMOBILE_DIE3
 SpriteName = SPR_EGGM
-SpriteFrame = 20
-Action = A_Repeat
-Var1 = 17
-Var2 = S_EGGMOBILE_DIE2
+SpriteFrame = 22
+Duration = 8
+Action = A_BossScream
 Next = S_EGGMOBILE_DIE4
 
 State S_EGGMOBILE_DIE4
 SpriteName = SPR_EGGM
-SpriteFrame = 20
+SpriteFrame = 22
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE_DIE5
+
+State S_EGGMOBILE_DIE5
+SpriteName = SPR_EGGM
+SpriteFrame = 22
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE_DIE6
+
+State S_EGGMOBILE_DIE6
+SpriteName = SPR_EGGM
+SpriteFrame = 22
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE_DIE7
+
+State S_EGGMOBILE_DIE7
+SpriteName = SPR_EGGM
+SpriteFrame = 22
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE_DIE8
+
+State S_EGGMOBILE_DIE8
+SpriteName = SPR_EGGM
+SpriteFrame = 22
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE_DIE9
+
+State S_EGGMOBILE_DIE9
+SpriteName = SPR_EGGM
+SpriteFrame = 22
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE_DIE10
+
+State S_EGGMOBILE_DIE10
+SpriteName = SPR_EGGM
+SpriteFrame = 22
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE_DIE11
+
+State S_EGGMOBILE_DIE11
+SpriteName = SPR_EGGM
+SpriteFrame = 22
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE_DIE12
+
+State S_EGGMOBILE_DIE12
+SpriteName = SPR_EGGM
+SpriteFrame = 22
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE_DIE13
+
+State S_EGGMOBILE_DIE13
+SpriteName = SPR_EGGM
+SpriteFrame = 22
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE_DIE14
+
+State S_EGGMOBILE_DIE14
+SpriteName = SPR_EGGM
+SpriteFrame = 22
 Duration = -1
 Action = A_BossDeath
 
 State S_EGGMOBILE_FLEE1
 SpriteName = SPR_EGGM
-SpriteFrame = 21
-Duration = 2
-Action = A_BossScream
+SpriteFrame = 23
+Duration = 5
 Next = S_EGGMOBILE_FLEE2
 
 State S_EGGMOBILE_FLEE2
 SpriteName = SPR_EGGM
-SpriteFrame = 22
-Duration = 2
-Action = A_BossScream
+SpriteFrame = 24
+Duration = 5
 Next = S_EGGMOBILE_FLEE1
 
 State S_EGGMOBILE_BALL
@@ -2081,15 +2089,6 @@ State S_EGGMOBILE_TARGET
 Duration = 1
 Action = A_FocusTarget
 Next = S_EGGMOBILE_TARGET
-
-State S_BOSSEGLZ1
-SpriteName = SPR_EGLZ
-Duration = 35
-
-State S_BOSSEGLZ2
-SpriteName = SPR_EGLZ
-SpriteFrame = 1
-Duration = 35
 
 # Boss 2
 State S_EGGMOBILE2_STND
@@ -2160,26 +2159,95 @@ Next = S_EGGMOBILE2_POGO4
 State S_EGGMOBILE2_DIE1
 SpriteName = SPR_EGGN
 SpriteFrame = 5
-Duration = 2
+Duration = 8
 Action = A_Fall
 Next = S_EGGMOBILE2_DIE2
 
 State S_EGGMOBILE2_DIE2
 SpriteName = SPR_EGGN
 SpriteFrame = 5
-Duration = 2
+Duration = 8
 Action = A_BossScream
 Next = S_EGGMOBILE2_DIE3
 
 State S_EGGMOBILE2_DIE3
 SpriteName = SPR_EGGN
 SpriteFrame = 5
-Action = A_Repeat
-Var1 = 17
-Var2 = S_EGGMOBILE2_DIE2
+Duration = 8
+Action = A_BossScream
 Next = S_EGGMOBILE2_DIE4
 
 State S_EGGMOBILE2_DIE4
+SpriteName = SPR_EGGN
+SpriteFrame = 5
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE2_DIE5
+
+State S_EGGMOBILE2_DIE5
+SpriteName = SPR_EGGN
+SpriteFrame = 5
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE2_DIE6
+
+State S_EGGMOBILE2_DIE6
+SpriteName = SPR_EGGN
+SpriteFrame = 5
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE2_DIE7
+
+State S_EGGMOBILE2_DIE7
+SpriteName = SPR_EGGN
+SpriteFrame = 5
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE2_DIE8
+
+State S_EGGMOBILE2_DIE8
+SpriteName = SPR_EGGN
+SpriteFrame = 5
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE2_DIE9
+
+State S_EGGMOBILE2_DIE9
+SpriteName = SPR_EGGN
+SpriteFrame = 5
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE2_DIE10
+
+State S_EGGMOBILE2_DIE10
+SpriteName = SPR_EGGN
+SpriteFrame = 5
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE2_DIE11
+
+State S_EGGMOBILE2_DIE11
+SpriteName = SPR_EGGN
+SpriteFrame = 5
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE2_DIE12
+
+State S_EGGMOBILE2_DIE12
+SpriteName = SPR_EGGN
+SpriteFrame = 5
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE2_DIE13
+
+State S_EGGMOBILE2_DIE13
+SpriteName = SPR_EGGN
+SpriteFrame = 5
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE2_DIE14
+
+State S_EGGMOBILE2_DIE14
 SpriteName = SPR_EGGN
 SpriteFrame = 5
 Duration = -1
@@ -2188,45 +2256,37 @@ Action = A_BossDeath
 State S_EGGMOBILE2_FLEE1
 SpriteName = SPR_EGGN
 SpriteFrame = 6
-Duration = 2
-Action = A_BossScream
+Duration = 5
 Next = S_EGGMOBILE2_FLEE2
 
 State S_EGGMOBILE2_FLEE2
 SpriteName = SPR_EGGN
 SpriteFrame = 7
-Duration = 2
-Action = A_BossScream
+Duration = 5
 Next = S_EGGMOBILE2_FLEE1
 
 State S_BOSSTANK1
-SpriteName = SPR_TANK
+SpriteName = SPR_TNKA
 Duration = 35
 
 State S_BOSSTANK2
-SpriteName = SPR_TANK
-SpriteFrame = 1
+SpriteName = SPR_TNKB
 Duration = 35
 
 State S_BOSSSPIGOT
-SpriteName = SPR_TANK
-SpriteFrame = 2
+SpriteName = SPR_SPNK
 Duration = 35
 
 # Boss 2 Goop
 State S_GOOP1
 SpriteName = SPR_GOOP
 Duration = 2
-Action = A_SpawnObjectRelative
-Var2 = MT_GOOPTRAIL
 Next = S_GOOP2
 
 State S_GOOP2
 SpriteName = SPR_GOOP
 SpriteFrame = 1
 Duration = 2
-Action = A_SpawnObjectRelative
-Var2 = MT_GOOPTRAIL
 Next = S_GOOP1
 
 State S_GOOP3
@@ -2234,33 +2294,16 @@ SpriteName = SPR_GOOP
 SpriteFrame = 2
 Duration = -1
 
-State S_GOOPTRAIL
-SpriteName = SPR_GOOP
-SpriteFrame = FF_ANIMATE|3
-Duration = 11
-Var1 = 2
-Var2 = 6
-
 # Boss 3
 State S_EGGMOBILE3_STND
 SpriteName = SPR_EGGO
 Duration = 1
 Next = S_EGGMOBILE3_STND
 
-State S_EGGMOBILE3_SHOCK
-SpriteName = SPR_EGGO
-SpriteFrame = FF_ANIMATE
-Duration = 24
-Var1 = 1
-Var2 = 2
-Next = S_EGGMOBILE3_ATK2
-
 State S_EGGMOBILE3_ATK1
 SpriteName = SPR_EGGO
-SpriteFrame = 6|FF_ANIMATE
-Duration = 24
-Var1 = 1
-Var2 = 2
+SpriteFrame = 1
+Duration = 2
 Next = S_EGGMOBILE3_ATK2
 
 State S_EGGMOBILE3_ATK2
@@ -2315,14 +2358,126 @@ State S_EGGMOBILE3_ATK5
 SpriteName = SPR_EGGO
 SpriteFrame = 5
 Duration = 2
-Next = S_EGGMOBILE3_ROFL
+Next = S_EGGMOBILE3_LAUGH1
 
-State S_EGGMOBILE3_ROFL
+State S_EGGMOBILE3_LAUGH1
 SpriteName = SPR_EGGO
-SpriteFrame = 6|FF_ANIMATE
-Duration = 60
-Var1 = 1
-Var2 = 2
+SpriteFrame = 6
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH2
+
+State S_EGGMOBILE3_LAUGH2
+SpriteName = SPR_EGGO
+SpriteFrame = 7
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH3
+
+State S_EGGMOBILE3_LAUGH3
+SpriteName = SPR_EGGO
+SpriteFrame = 6
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH4
+
+State S_EGGMOBILE3_LAUGH4
+SpriteName = SPR_EGGO
+SpriteFrame = 7
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH5
+
+State S_EGGMOBILE3_LAUGH5
+SpriteName = SPR_EGGO
+SpriteFrame = 6
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH6
+
+State S_EGGMOBILE3_LAUGH6
+SpriteName = SPR_EGGO
+SpriteFrame = 7
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH7
+
+State S_EGGMOBILE3_LAUGH7
+SpriteName = SPR_EGGO
+SpriteFrame = 6
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH8
+
+State S_EGGMOBILE3_LAUGH8
+SpriteName = SPR_EGGO
+SpriteFrame = 7
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH9
+
+State S_EGGMOBILE3_LAUGH9
+SpriteName = SPR_EGGO
+SpriteFrame = 6
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH10
+
+State S_EGGMOBILE3_LAUGH10
+SpriteName = SPR_EGGO
+SpriteFrame = 7
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH11
+
+State S_EGGMOBILE3_LAUGH11
+SpriteName = SPR_EGGO
+SpriteFrame = 6
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH12
+
+State S_EGGMOBILE3_LAUGH12
+SpriteName = SPR_EGGO
+SpriteFrame = 7
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH13
+
+State S_EGGMOBILE3_LAUGH13
+SpriteName = SPR_EGGO
+SpriteFrame = 6
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH14
+
+State S_EGGMOBILE3_LAUGH14
+SpriteName = SPR_EGGO
+SpriteFrame = 7
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH15
+
+State S_EGGMOBILE3_LAUGH15
+SpriteName = SPR_EGGO
+SpriteFrame = 6
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH16
+
+State S_EGGMOBILE3_LAUGH16
+SpriteName = SPR_EGGO
+SpriteFrame = 7
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH17
+
+State S_EGGMOBILE3_LAUGH17
+SpriteName = SPR_EGGO
+SpriteFrame = 6
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH18
+
+State S_EGGMOBILE3_LAUGH18
+SpriteName = SPR_EGGO
+SpriteFrame = 7
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH19
+
+State S_EGGMOBILE3_LAUGH19
+SpriteName = SPR_EGGO
+SpriteFrame = 6
+Duration = 4
+Next = S_EGGMOBILE3_LAUGH20
+
+State S_EGGMOBILE3_LAUGH20
+SpriteName = SPR_EGGO
+SpriteFrame = 7
+Duration = 4
 Next = S_EGGMOBILE3_STND
 
 State S_EGGMOBILE3_PAIN
@@ -2342,26 +2497,95 @@ Next = S_EGGMOBILE3_STND
 State S_EGGMOBILE3_DIE1
 SpriteName = SPR_EGGO
 SpriteFrame = 9
-Duration = 2
+Duration = 8
 Action = A_Fall
 Next = S_EGGMOBILE3_DIE2
 
 State S_EGGMOBILE3_DIE2
 SpriteName = SPR_EGGO
 SpriteFrame = 9
-Duration = 2
+Duration = 8
 Action = A_BossScream
 Next = S_EGGMOBILE3_DIE3
 
 State S_EGGMOBILE3_DIE3
 SpriteName = SPR_EGGO
 SpriteFrame = 9
-Action = A_Repeat
-Var1 = 17
-Var2 = S_EGGMOBILE3_DIE2
+Duration = 8
+Action = A_BossScream
 Next = S_EGGMOBILE3_DIE4
 
 State S_EGGMOBILE3_DIE4
+SpriteName = SPR_EGGO
+SpriteFrame = 9
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE3_DIE5
+
+State S_EGGMOBILE3_DIE5
+SpriteName = SPR_EGGO
+SpriteFrame = 9
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE3_DIE6
+
+State S_EGGMOBILE3_DIE6
+SpriteName = SPR_EGGO
+SpriteFrame = 9
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE3_DIE7
+
+State S_EGGMOBILE3_DIE7
+SpriteName = SPR_EGGO
+SpriteFrame = 9
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE3_DIE8
+
+State S_EGGMOBILE3_DIE8
+SpriteName = SPR_EGGO
+SpriteFrame = 9
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE3_DIE9
+
+State S_EGGMOBILE3_DIE9
+SpriteName = SPR_EGGO
+SpriteFrame = 9
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE3_DIE10
+
+State S_EGGMOBILE3_DIE10
+SpriteName = SPR_EGGO
+SpriteFrame = 9
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE3_DIE11
+
+State S_EGGMOBILE3_DIE11
+SpriteName = SPR_EGGO
+SpriteFrame = 9
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE3_DIE12
+
+State S_EGGMOBILE3_DIE12
+SpriteName = SPR_EGGO
+SpriteFrame = 9
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE3_DIE13
+
+State S_EGGMOBILE3_DIE13
+SpriteName = SPR_EGGO
+SpriteFrame = 9
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE3_DIE14
+
+State S_EGGMOBILE3_DIE14
 SpriteName = SPR_EGGO
 SpriteFrame = 9
 Duration = -1
@@ -2370,21 +2594,63 @@ Action = A_BossDeath
 State S_EGGMOBILE3_FLEE1
 SpriteName = SPR_EGGO
 SpriteFrame = 10
-Duration = 2
-Action = A_BossScream
+Duration = 5
 Next = S_EGGMOBILE3_FLEE2
 
 State S_EGGMOBILE3_FLEE2
 SpriteName = SPR_EGGO
 SpriteFrame = 11
-Duration = 2
-Action = A_BossScream
+Duration = 5
 Next = S_EGGMOBILE3_FLEE1
+
+# Boss 3 Propeller
+State S_PROPELLER1
+SpriteName = SPR_PRPL
+Duration = 1
+Next = S_PROPELLER2
+
+State S_PROPELLER2
+SpriteName = SPR_PRPL
+SpriteFrame = 1
+Duration = 1
+Next = S_PROPELLER3
+
+State S_PROPELLER3
+SpriteName = SPR_PRPL
+SpriteFrame = 2
+Duration = 1
+Next = S_PROPELLER4
+
+State S_PROPELLER4
+SpriteName = SPR_PRPL
+SpriteFrame = 3
+Duration = 1
+Next = S_PROPELLER5
+
+State S_PROPELLER5
+SpriteName = SPR_PRPL
+SpriteFrame = 4
+Duration = 1
+Next = S_PROPELLER6
+
+State S_PROPELLER6
+SpriteName = SPR_PRPL
+SpriteFrame = 5
+Duration = 1
+Next = S_PROPELLER7
+
+State S_PROPELLER7
+SpriteName = SPR_PRPL
+SpriteFrame = 6
+Duration = 1
+Next = S_PROPELLER1
 
 # Boss 3 Pinch
 State S_FAKEMOBILE_INIT
 SpriteName = SPR_FAKE
 Duration = 1
+Action = A_BossJetFume
+Var1 = 1
 Next = S_FAKEMOBILE
 
 State S_FAKEMOBILE
@@ -2395,7 +2661,7 @@ Next = S_FAKEMOBILE
 
 State S_FAKEMOBILE_ATK1
 SpriteName = SPR_FAKE
-Duration = 22
+Duration = 2
 Next = S_FAKEMOBILE_ATK2
 
 State S_FAKEMOBILE_ATK2
@@ -2433,45 +2699,17 @@ Duration = 2
 Action = A_BossFireShot
 Var1 = MT_TORPEDO2
 Var2 = 5
-Next = S_FAKEMOBILE
+Next = S_FAKEMOBILE_ATK4
 
-State S_FAKEMOBILE_DIE1
+State S_FAKEMOBILE_ATK4
 SpriteName = SPR_FAKE
-SpriteFrame = 1
-Duration = 1
-Next = S_FAKEMOBILE_DIE2
+Duration = 2
+Next = S_FAKEMOBILE_ATK5
 
-State S_FAKEMOBILE_DIE2
-Duration = 1
-Next = S_FAKEMOBILE_DIE1
-
-State S_BOSSSEBH1
-SpriteName = SPR_SEBH
-Duration = 35
-
-State S_BOSSSEBH2
-SpriteName = SPR_SEBH
-SpriteFrame = 1
-Duration = 35
-
-# Boss 3 Shockwave
-State S_SHOCKWAVE1
-SpriteName = SPR_SHCK
-SpriteFrame = FF_FULLBRIGHT|FF_PAPERSPRITE|FF_ANIMATE
-Duration = 8
-Action = A_Boss3ShockThink
-Var1 = 4
-Var2 = 2
-Next = S_SHOCKWAVE2
-
-State S_SHOCKWAVE2
-SpriteName = SPR_SHCK
-SpriteFrame = 3|FF_FULLBRIGHT|FF_PAPERSPRITE|FF_ANIMATE
-Duration = 8
-Action = A_Boss3ShockThink
-Var1 = 4
-Var2 = 2
-Next = S_SHOCKWAVE1
+State S_FAKEMOBILE_ATK5
+SpriteName = SPR_FAKE
+Duration = 2
+Next = S_FAKEMOBILE
 
 # Boss 4
 State S_EGGMOBILE4_STND
@@ -2499,12 +2737,12 @@ Next = S_EGGMOBILE4_LATK4
 State S_EGGMOBILE4_LATK4
 SpriteName = SPR_EGGP
 SpriteFrame = 4
-Duration = 2
+Duration = 4
 Next = S_EGGMOBILE4_LATK5
 
 State S_EGGMOBILE4_LATK5
 SpriteName = SPR_EGGP
-SpriteFrame = 5
+SpriteFrame = 4
 Duration = 50
 Action = A_Boss4Reverse
 Var1 = sfx_mswing
@@ -2512,37 +2750,37 @@ Next = S_EGGMOBILE4_LATK6
 
 State S_EGGMOBILE4_LATK6
 SpriteName = SPR_EGGP
-SpriteFrame = 6
+SpriteFrame = 5
 Duration = 2
 Next = S_EGGMOBILE4_STND
 
 State S_EGGMOBILE4_RATK1
 SpriteName = SPR_EGGP
-SpriteFrame = 7
+SpriteFrame = 6
 Duration = 3
 Next = S_EGGMOBILE4_RATK2
 
 State S_EGGMOBILE4_RATK2
 SpriteName = SPR_EGGP
-SpriteFrame = 8
+SpriteFrame = 7
 Duration = 15
 Next = S_EGGMOBILE4_RATK3
 
 State S_EGGMOBILE4_RATK3
 SpriteName = SPR_EGGP
-SpriteFrame = 9
+SpriteFrame = 8
 Duration = 2
 Next = S_EGGMOBILE4_RATK4
 
 State S_EGGMOBILE4_RATK4
 SpriteName = SPR_EGGP
-SpriteFrame = 10
-Duration = 2
+SpriteFrame = 9
+Duration = 4
 Next = S_EGGMOBILE4_RATK5
 
 State S_EGGMOBILE4_RATK5
 SpriteName = SPR_EGGP
-SpriteFrame = 11
+SpriteFrame = 9
 Duration = 150
 Action = A_Boss4SpeedUp
 Var1 = sfx_mswing
@@ -2550,13 +2788,12 @@ Next = S_EGGMOBILE4_RATK6
 
 State S_EGGMOBILE4_RATK6
 SpriteName = SPR_EGGP
-SpriteFrame = 12
+SpriteFrame = 10
 Duration = 2
 Next = S_EGGMOBILE4_STND
 
 State S_EGGMOBILE4_RAISE1
 SpriteName = SPR_EGGP
-SpriteFrame = 13
 Duration = 20
 Action = A_Boss4Raise
 Var1 = sfx_doord1
@@ -2564,130 +2801,190 @@ Next = S_EGGMOBILE4_RAISE2
 
 State S_EGGMOBILE4_RAISE2
 SpriteName = SPR_EGGP
-SpriteFrame = 15|FF_ANIMATE
-Duration = -1
-Var1 = 1
-Var2 = 10
+SpriteFrame = 13
+Duration = 10
+Next = S_EGGMOBILE4_RAISE3
 
-State S_EGGMOBILE4_PAIN1
+State S_EGGMOBILE4_RAISE3
+SpriteName = SPR_EGGP
+SpriteFrame = 14
+Duration = 10
+Next = S_EGGMOBILE4_RAISE4
+
+State S_EGGMOBILE4_RAISE4
 SpriteName = SPR_EGGP
 SpriteFrame = 13
-Action = A_Boss4Reverse
-Var1 = sfx_alarm
-Var2 = sfx_s3k60
-Next = S_EGGMOBILE4_PAIN2
+Duration = 10
+Next = S_EGGMOBILE4_RAISE5
 
-State S_EGGMOBILE4_PAIN2
+State S_EGGMOBILE4_RAISE5
+SpriteName = SPR_EGGP
+SpriteFrame = 14
+Duration = 10
+Next = S_EGGMOBILE4_RAISE6
+
+State S_EGGMOBILE4_RAISE6
 SpriteName = SPR_EGGP
 SpriteFrame = 13
+Duration = 10
+Next = S_EGGMOBILE4_RAISE7
+
+State S_EGGMOBILE4_RAISE7
+SpriteName = SPR_EGGP
+SpriteFrame = 14
+Duration = 10
+Next = S_EGGMOBILE4_RAISE8
+
+State S_EGGMOBILE4_RAISE8
+SpriteName = SPR_EGGP
+SpriteFrame = 13
+Duration = 10
+Next = S_EGGMOBILE4_RAISE9
+
+State S_EGGMOBILE4_RAISE9
+SpriteName = SPR_EGGP
+SpriteFrame = 14
+Duration = 10
+Next = S_EGGMOBILE4_RAISE10
+
+State S_EGGMOBILE4_RAISE10
+SpriteName = SPR_EGGP
+SpriteFrame = 13
+Duration = 10
+Next = S_EGGMOBILE4_STND
+
+State S_EGGMOBILE4_PAIN
+SpriteName = SPR_EGGP
+SpriteFrame = 11
 Duration = 24
 Action = A_Pain
 Next = S_EGGMOBILE4_STND
 
 State S_EGGMOBILE4_DIE1
 SpriteName = SPR_EGGP
-SpriteFrame = 14
-Duration = 2
+SpriteFrame = 12
+Duration = 8
 Action = A_Fall
 Next = S_EGGMOBILE4_DIE2
 
 State S_EGGMOBILE4_DIE2
 SpriteName = SPR_EGGP
-SpriteFrame = 14
-Duration = 2
+SpriteFrame = 12
+Duration = 8
 Action = A_BossScream
 Next = S_EGGMOBILE4_DIE3
 
 State S_EGGMOBILE4_DIE3
 SpriteName = SPR_EGGP
-SpriteFrame = 14
-Action = A_Repeat
-Var1 = 17
-Var2 = S_EGGMOBILE4_DIE2
+SpriteFrame = 12
+Duration = 8
+Action = A_BossScream
 Next = S_EGGMOBILE4_DIE4
 
 State S_EGGMOBILE4_DIE4
 SpriteName = SPR_EGGP
-SpriteFrame = 14
+SpriteFrame = 12
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE4_DIE5
+
+State S_EGGMOBILE4_DIE5
+SpriteName = SPR_EGGP
+SpriteFrame = 12
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE4_DIE6
+
+State S_EGGMOBILE4_DIE6
+SpriteName = SPR_EGGP
+SpriteFrame = 12
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE4_DIE7
+
+State S_EGGMOBILE4_DIE7
+SpriteName = SPR_EGGP
+SpriteFrame = 12
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE4_DIE8
+
+State S_EGGMOBILE4_DIE8
+SpriteName = SPR_EGGP
+SpriteFrame = 12
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE4_DIE9
+
+State S_EGGMOBILE4_DIE9
+SpriteName = SPR_EGGP
+SpriteFrame = 12
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE4_DIE10
+
+State S_EGGMOBILE4_DIE10
+SpriteName = SPR_EGGP
+SpriteFrame = 12
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE4_DIE11
+
+State S_EGGMOBILE4_DIE11
+SpriteName = SPR_EGGP
+SpriteFrame = 12
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE4_DIE12
+
+State S_EGGMOBILE4_DIE12
+SpriteName = SPR_EGGP
+SpriteFrame = 12
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE4_DIE13
+
+State S_EGGMOBILE4_DIE13
+SpriteName = SPR_EGGP
+SpriteFrame = 12
+Duration = 8
+Action = A_BossScream
+Next = S_EGGMOBILE4_DIE14
+
+State S_EGGMOBILE4_DIE14
+SpriteName = SPR_EGGP
+SpriteFrame = 12
 Duration = -1
 Action = A_BossDeath
 
 State S_EGGMOBILE4_FLEE1
 SpriteName = SPR_EGGP
-SpriteFrame = 15
-Duration = 2
-Action = A_BossScream
+SpriteFrame = 13
+Duration = 5
 Next = S_EGGMOBILE4_FLEE2
 
 State S_EGGMOBILE4_FLEE2
 SpriteName = SPR_EGGP
-SpriteFrame = 16
-Duration = 2
-Action = A_BossScream
+SpriteFrame = 14
+Duration = 5
 Next = S_EGGMOBILE4_FLEE1
 
 State S_EGGMOBILE4_MACE
 SpriteName = SPR_BMCE
 Duration = -1
 
-State S_EGGMOBILE4_MACE_DIE1
-SpriteName = SPR_BMCE
-Duration = 2
-Action = A_BossScream
-Var1 = 1
-Next = S_EGGMOBILE4_MACE_DIE2
-
-State S_EGGMOBILE4_MACE_DIE2
-Duration = 2
-Action = A_BossScream
-Var1 = 1
-Next = S_EGGMOBILE4_MACE_DIE3
-
-State S_EGGMOBILE4_MACE_DIE3
-Action = A_Repeat
-Var1 = 7
-Var2 = S_EGGMOBILE4_MACE_DIE1
-Next = S_SONIC3KBOSSEXPLOSION1
-
 # Boss 4 jet flame
-State S_JETFLAME
+State S_JETFLAME1
 SpriteName = SPR_EFIR
-SpriteFrame = FF_FULLBRIGHT|FF_ANIMATE
-Duration = -1
-Var1 = 1
-Var2 = 1
+SpriteFrame = FF_FULLBRIGHT
+Duration = 1
+Next = S_JETFLAME2
 
-# Boss 4 Spectator Eggrobo
-State S_EGGROBO1_STND
-SpriteName = SPR_EGR1
-Duration = -1
-
-State S_EGGROBO1_BSLAP1
-SpriteName = SPR_EGR1
-SpriteFrame = 5
-Duration = 2
-Next = S_EGGROBO1_BSLAP2
-
-State S_EGGROBO1_BSLAP2
-SpriteName = SPR_EGR1
-SpriteFrame = FF_ANIMATE|6
-Duration = 35
-Var1 = 1
-Var2 = 2
-Next = S_EGGROBO1_STND
-
-State S_EGGROBO1_PISSED
-SpriteName = SPR_EGR1
-SpriteFrame = FF_ANIMATE|3
-Duration = -1
-Var1 = 1
-Var2 = 2
-
-# Boss 4 Spectator Eggrobo jet flame
-State S_EGGROBOJET
+State S_JETFLAME2
 SpriteName = SPR_EFIR
-SpriteFrame = FF_FULLBRIGHT|2
-Duration = -1
+SpriteFrame = FF_FULLBRIGHT|1
+Duration = 1
+Next = S_JETFLAME1
 
 # Black Eggman (Boss 7)
 State S_BLACKEGG_STND
@@ -4167,11 +4464,98 @@ Action = A_BossScream
 Next = S_CYBRAKDEMONVILEEXPLOSION1
 
 # Metal Sonic (Race)
-State S_METALSONIC_RACE
-SpriteName = SPR_PLAY
-SpriteFrame = SPR2_STIL
-Duration = -1
-Next = S_METALSONIC_RACE
+# S_PLAY_STND
+State S_METALSONIC_STAND
+SpriteName = SPR_METL
+Duration = 35
+Next = S_METALSONIC_WAIT1
+
+# S_PLAY_TAP1
+State S_METALSONIC_WAIT1
+SpriteName = SPR_METL
+SpriteFrame = 1
+Duration = 8
+Next = S_METALSONIC_WAIT2
+
+State S_METALSONIC_WAIT2
+SpriteName = SPR_METL
+SpriteFrame = 2
+Duration = 8
+Next = S_METALSONIC_WAIT1
+
+# S_PLAY_RUN1
+State S_METALSONIC_WALK1
+SpriteName = SPR_METL
+SpriteFrame = 3
+Duration = 4
+Next = S_METALSONIC_WALK2
+
+State S_METALSONIC_WALK2
+SpriteName = SPR_METL
+SpriteFrame = 4
+Duration = 4
+Next = S_METALSONIC_WALK3
+
+State S_METALSONIC_WALK3
+SpriteName = SPR_METL
+SpriteFrame = 5
+Duration = 4
+Next = S_METALSONIC_WALK4
+
+State S_METALSONIC_WALK4
+SpriteName = SPR_METL
+SpriteFrame = 6
+Duration = 4
+Next = S_METALSONIC_WALK5
+
+State S_METALSONIC_WALK5
+SpriteName = SPR_METL
+SpriteFrame = 7
+Duration = 4
+Next = S_METALSONIC_WALK6
+
+State S_METALSONIC_WALK6
+SpriteName = SPR_METL
+SpriteFrame = 6
+Duration = 4
+Next = S_METALSONIC_WALK7
+
+State S_METALSONIC_WALK7
+SpriteName = SPR_METL
+SpriteFrame = 5
+Duration = 4
+Next = S_METALSONIC_WALK8
+
+State S_METALSONIC_WALK8
+SpriteName = SPR_METL
+SpriteFrame = 4
+Duration = 4
+Next = S_METALSONIC_WALK1
+
+# S_PLAY_SPD1
+State S_METALSONIC_RUN1
+SpriteName = SPR_METL
+SpriteFrame = 8
+Duration = 2
+Next = S_METALSONIC_RUN2
+
+State S_METALSONIC_RUN2
+SpriteName = SPR_METL
+SpriteFrame = 9
+Duration = 2
+Next = S_METALSONIC_RUN3
+
+State S_METALSONIC_RUN3
+SpriteName = SPR_METL
+SpriteFrame = 10
+Duration = 2
+Next = S_METALSONIC_RUN4
+
+State S_METALSONIC_RUN4
+SpriteName = SPR_METL
+SpriteFrame = 9
+Duration = 2
+Next = S_METALSONIC_RUN1
 
 # Metal Sonic (Battle)
 State S_METALSONIC_FLOAT
@@ -4181,114 +4565,156 @@ Duration = -1
 
 State S_METALSONIC_VECTOR
 SpriteName = SPR_METL
-SpriteFrame = 16|FF_FULLBRIGHT
+SpriteFrame = 12
 Duration = -1
 Next = S_METALSONIC_STUN
 
 State S_METALSONIC_STUN
 SpriteName = SPR_METL
-SpriteFrame = 15
 Duration = -1
 Next = S_METALSONIC_FLOAT
 
+State S_METALSONIC_BLOCK
+SpriteName = SPR_METL
+SpriteFrame = 13
+Duration = -1
+
 State S_METALSONIC_RAISE
 SpriteName = SPR_METL
-SpriteFrame = 17
-Duration = 20
+SpriteFrame = 13
+Duration = 40
 Next = S_METALSONIC_GATHER
 
 State S_METALSONIC_GATHER
 SpriteName = SPR_METL
-SpriteFrame = 18
+SpriteFrame = 14
 Duration = -1
 
 State S_METALSONIC_DASH
 SpriteName = SPR_METL
-SpriteFrame = 6|FF_FULLBRIGHT|FF_ANIMATE|FF_GLOBALANIM
+SpriteFrame = 9
 Duration = -1
-Var1 = 1
-Var2 = 2
 Next = S_METALSONIC_BOUNCE
 
 State S_METALSONIC_BOUNCE
-SpriteName = SPR_METL
-SpriteFrame = 18|FF_FULLBRIGHT|FF_ANIMATE|FF_GLOBALANIM
-Duration = -1
-Var1 = 1
-Var2 = 2
-
-State S_METALSONIC_BADBOUNCE
 SpriteName = SPR_METL
 SpriteFrame = 14
 Duration = -1
 
 State S_METALSONIC_SHOOT
 SpriteName = SPR_METL
-SpriteFrame = 17
+SpriteFrame = 13
 Duration = -1
 Next = S_METALSONIC_GATHER
 
 State S_METALSONIC_PAIN
 SpriteName = SPR_METL
-SpriteFrame = 15
+SpriteFrame = 11
 Duration = 40
 Action = A_Pain
 Next = S_METALSONIC_FLOAT
 
-State S_METALSONIC_DEATH1
+State S_METALSONIC_DEATH
 SpriteName = SPR_METL
-SpriteFrame = 17
-Duration = 2
-Action = A_Fall
-Next = S_METALSONIC_DEATH2
-
-State S_METALSONIC_DEATH2
-SpriteName = SPR_METL
-SpriteFrame = 17
-Duration = 4
-Action = A_BossScream
-Next = S_METALSONIC_DEATH3
-
-State S_METALSONIC_DEATH3
-SpriteName = SPR_METL
-SpriteFrame = 17
-Action = A_Repeat
-Var1 = 17
-Var2 = S_METALSONIC_DEATH2
-Next = S_METALSONIC_DEATH4
-
-State S_METALSONIC_DEATH4
-SpriteName = SPR_METL
-SpriteFrame = 17
 Duration = -1
 Action = A_BossDeath
 
 State S_METALSONIC_FLEE1
 SpriteName = SPR_METL
-SpriteFrame = 15
-Duration = 1
-Action = A_BossScream
+SpriteFrame = 3
+Duration = 4
 Next = S_METALSONIC_FLEE2
 
 State S_METALSONIC_FLEE2
 SpriteName = SPR_METL
-SpriteFrame = 15
-Duration = 7
+SpriteFrame = 4
+Duration = 4
+Action = A_BossScream
+Next = S_METALSONIC_FLEE3
+
+State S_METALSONIC_FLEE3
+SpriteName = SPR_METL
+SpriteFrame = 5
+Duration = 4
+Next = S_METALSONIC_FLEE4
+
+State S_METALSONIC_FLEE4
+SpriteName = SPR_METL
+SpriteFrame = 4
+Duration = 4
 Next = S_METALSONIC_FLEE1
 
 State S_MSSHIELD_F1
 SpriteName = SPR_MSCF
-SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|FF_ANIMATE
-Duration = -1
-Var1 = 11
-Var2 = 1
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|0
+Duration = 1
+Next = S_MSSHIELD_F2
 
 State S_MSSHIELD_F2
 SpriteName = SPR_MSCF
-SpriteFrame = FF_FULLBRIGHT|FF_ANIMATE|12
-Duration = -1
-Var1 = 8
-Var2 = 2
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|1
+Duration = 1
+Next = S_MSSHIELD_F3
+
+State S_MSSHIELD_F3
+SpriteName = SPR_MSCF
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|2
+Duration = 1
+Next = S_MSSHIELD_F4
+
+State S_MSSHIELD_F4
+SpriteName = SPR_MSCF
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|3
+Duration = 1
+Next = S_MSSHIELD_F5
+
+State S_MSSHIELD_F5
+SpriteName = SPR_MSCF
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|4
+Duration = 1
+Next = S_MSSHIELD_F6
+
+State S_MSSHIELD_F6
+SpriteName = SPR_MSCF
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|5
+Duration = 1
+Next = S_MSSHIELD_F7
+
+State S_MSSHIELD_F7
+SpriteName = SPR_MSCF
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|6
+Duration = 1
+Next = S_MSSHIELD_F8
+
+State S_MSSHIELD_F8
+SpriteName = SPR_MSCF
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|7
+Duration = 1
+Next = S_MSSHIELD_F9
+
+State S_MSSHIELD_F9
+SpriteName = SPR_MSCF
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|8
+Duration = 1
+Next = S_MSSHIELD_F10
+
+State S_MSSHIELD_F10
+SpriteName = SPR_MSCF
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|9
+Duration = 1
+Next = S_MSSHIELD_F11
+
+State S_MSSHIELD_F11
+SpriteName = SPR_MSCF
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|10
+Duration = 1
+Next = S_MSSHIELD_F12
+
+State S_MSSHIELD_F12
+SpriteName = SPR_MSCF
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30|11
+Duration = 1
+Next = S_MSSHIELD_F1
 
 # Ring
 State S_RING
@@ -6086,57 +6512,9 @@ Var1 = MT_SMOKE
 Next = S_ROCKET
 
 State S_LASER
-SpriteName = SPR_LASR
-SpriteFrame = FF_FULLBRIGHT|0
+SpriteName = SPR_MISL
+SpriteFrame = FF_FULLBRIGHT
 Duration = 2
-
-State S_LASER2
-SpriteName = SPR_LASR
-SpriteFrame = FF_FULLBRIGHT|1
-Duration = 2
-
-State S_LASERFLASH
-SpriteName = SPR_LASR
-SpriteFrame = FF_FULLBRIGHT|2
-Duration = 2
-
-State S_LASERFLAME1
-SpriteName = SPR_LASF
-SpriteFrame = FF_FULLBRIGHT|0
-Duration = 2
-Next = S_LASERFLAME2
-
-State S_LASERFLAME2
-SpriteName = SPR_LASF
-SpriteFrame = FF_FULLBRIGHT|1
-Duration = 1
-Action = A_ChangeHeight
-Var1 = 156*FRACUNIT
-Var2 = 3
-Next = S_LASERFLAME3
-
-State S_LASERFLAME3
-SpriteName = SPR_LASF
-SpriteFrame = FF_FULLBRIGHT|2
-Action = A_ChangeHeight
-Var1 = 32*FRACUNIT
-Var2 = 3
-Next = S_LASERFLAME4
-
-State S_LASERFLAME4
-SpriteName = SPR_LASF
-SpriteFrame = FF_ANIMATE|FF_PAPERSPRITE|FF_FULLBRIGHT|2
-Duration = 4
-Var1 = 1
-Var2 = 2
-Next = S_LASERFLAME5
-
-State S_LASERFLAME5
-SpriteName = SPR_LASF
-SpriteFrame = FF_ANIMATE|FF_PAPERSPRITE|FF_FULLBRIGHT|4
-Duration = 28
-Var1 = 2
-Var2 = 2
 
 State S_TORPEDO
 SpriteName = SPR_TORP
