@@ -3243,7 +3243,6 @@ Height = 32*FRACUNIT
 Mass = 16
 Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
 
-# normal
 Mobj MT_SNOWMAN
 MapThingNum = 1852
 SpawnState = S_SNOWMAN
@@ -3256,7 +3255,6 @@ Mass = 100
 Damage = 1
 Flags = MF_SLIDEME|MF_SOLID|MF_PUSHABLE
 
-# with hat + scarf
 Mobj MT_SNOWMANHAT
 MapThingNum = 1853
 SpawnState = S_SNOWMANHAT
@@ -3269,7 +3267,6 @@ Mass = 100
 Damage = 1
 Flags = MF_SLIDEME|MF_SOLID|MF_PUSHABLE
 
-# normal
 Mobj MT_LAMPPOST1
 MapThingNum = 1854
 SpawnState = S_LAMPPOST1
@@ -3279,9 +3276,8 @@ Radius = 8*FRACUNIT
 Height = 120*FRACUNIT
 Mass = 100
 Damage = 1
-Flags = MF_SOLID
+Flags = MF_SOLID|MF_SCENERY
 
-# with snow
 Mobj MT_LAMPPOST2
 MapThingNum = 1855
 SpawnState = S_LAMPPOST2
@@ -3291,60 +3287,18 @@ Radius = 8*FRACUNIT
 Height = 120*FRACUNIT
 Mass = 100
 Damage = 1
-Flags = MF_SOLID
+Flags = MF_SOLID|MF_SCENERY
 
 Mobj MT_HANGSTAR
 MapThingNum = 1856
 SpawnState = S_HANGSTAR
 SpawnHealth = 1000
 ReactionTime = 8
-Radius = 4*FRACUNIT
+Radius = FRACUNIT
 Height = 80*FRACUNIT
 Mass = 100
 Damage = 1
 Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SPAWNCEILING|MF_NOGRAVITY|MF_SCENERY
-
-Mobj MT_MISTLETOE
-MapThingNum = 2105
-SpawnState = S_MISTLETOE
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 52*FRACUNIT
-Height = 106*FRACUNIT
-Mass = 100
-Damage = 1
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SPAWNCEILING|MF_NOGRAVITY|MF_SCENERY
-
-# Xmas GFZ bushes
-Mobj MT_XMASBLUEBERRYBUSH
-MapThingNum = 1859
-SpawnState = S_XMASBLUEBERRYBUSH
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 16*FRACUNIT
-Height = 32*FRACUNIT
-Mass = 100
-Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
-
-Mobj MT_XMASBERRYBUSH
-MapThingNum = 1857
-SpawnState = S_XMASBERRYBUSH
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 16*FRACUNIT
-Height = 32*FRACUNIT
-Mass = 100
-Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
-
-Mobj MT_XMASBUSH
-MapThingNum = 1858
-SpawnState = S_XMASBUSH
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 16*FRACUNIT
-Height = 32*FRACUNIT
-Mass = 100
-Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
 
 # Botanic Serenity scenery
 Mobj MT_BSZTALLFLOWER_RED

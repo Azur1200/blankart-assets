@@ -7745,23 +7745,19 @@ State S_CANDYCANE
 SpriteName = SPR_XMS2
 Duration = -1
 
-# normal
 State S_SNOWMAN
 SpriteName = SPR_XMS3
 Duration = -1
 
-# with hat + scarf
 State S_SNOWMANHAT
 SpriteName = SPR_XMS3
 SpriteFrame = 1
 Duration = -1
 
-# normal
 State S_LAMPPOST1
 SpriteName = SPR_XMS4
 Duration = -1
 
-# with snow
 State S_LAMPPOST2
 SpriteName = SPR_XMS4
 SpriteFrame = 1
@@ -7769,26 +7765,6 @@ Duration = -1
 
 State S_HANGSTAR
 SpriteName = SPR_XMS5
-Duration = -1
-
-State S_MISTLETOE
-SpriteName = SPR_XMS6
-Duration = -1
-
-# Xmas GFZ bushes
-State S_XMASBLUEBERRYBUSH
-SpriteName = SPR_BUS3
-SpriteFrame = 1
-Duration = -1
-
-State S_XMASBERRYBUSH
-SpriteName = SPR_BUS1
-SpriteFrame = 1
-Duration = -1
-
-State S_XMASBUSH
-SpriteName = SPR_BUS2
-SpriteFrame = 1
 Duration = -1
 
 # Botanic Serenity's loads of scenery states
