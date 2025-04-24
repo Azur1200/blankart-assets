@@ -1699,6 +1699,48 @@ Action = A_UnidusBall
 Var1 = 1
 Next = S_UNIDUS_BALL
 
+# Boss Explosion
+State S_BPLD1
+SpriteName = SPR_BOM2
+SpriteFrame = FF_FULLBRIGHT
+Duration = 5
+Next = S_BPLD2
+
+State S_BPLD2
+SpriteName = SPR_BOM2
+SpriteFrame = FF_FULLBRIGHT|1
+Duration = 5
+Next = S_BPLD3
+
+State S_BPLD3
+SpriteName = SPR_BOM2
+SpriteFrame = FF_FULLBRIGHT|2
+Duration = 5
+Next = S_BPLD4
+
+State S_BPLD4
+SpriteName = SPR_BOM2
+SpriteFrame = FF_FULLBRIGHT|3
+Duration = 5
+Next = S_BPLD5
+
+State S_BPLD5
+SpriteName = SPR_BOM2
+SpriteFrame = FF_FULLBRIGHT|4
+Duration = 5
+Next = S_BPLD6
+
+State S_BPLD6
+SpriteName = SPR_BOM2
+SpriteFrame = FF_FULLBRIGHT|5
+Duration = 5
+Next = S_BPLD7
+
+State S_BPLD7
+SpriteName = SPR_BOM2
+SpriteFrame = FF_FULLBRIGHT|6
+Duration = 5
+
 # S3&K Boss Explosion
 State S_SONIC3KBOSSEXPLOSION1
 SpriteName = SPR_BOM3
@@ -3837,7 +3879,7 @@ SpriteFrame = FF_FULLBRIGHT
 Duration = 1
 Action = A_SetFuse
 Var1 = 10*TICRATE
-Next = S_FLAMEREST
+Next = S_FLAME1
 
 State S_CYBRAKDEMONELECTRICBARRIER_INIT1
 SpriteName = SPR_ELEC
@@ -4797,213 +4839,13 @@ Duration = 1
 Next = S_FASTRING1
 
 # Blue Sphere for special stages
-State S_BLUESPHERE
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|2
-Duration = TICRATE
-Next = S_BLUESPHERE_BOUNCE1
+State S_BLUEBALL
+SpriteName = SPR_BBAL
+Duration = -1
 
-State S_BLUESPHERE_SPAWN
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|2
-Duration = TICRATE
-Action = A_SetRandomTics
-Var1 = 1
-Var2 = TICRATE
-Next = S_BLUESPHERE_BOUNCE1
-
-State S_BLUESPHERE_BOUNCE1
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT
-Duration = 1
-Next = S_BLUESPHERE_BOUNCE2
-
-State S_BLUESPHERE_BOUNCE2
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|4
-Duration = 1
-Next = S_BLUESPHERE_BOUNCE3
-
-State S_BLUESPHERE_BOUNCE3
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT
-Duration = 1
-Next = S_BLUESPHERE_BOUNCE4
-
-State S_BLUESPHERE_BOUNCE4
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|4
-Duration = 1
-Next = S_BLUESPHERE_BOUNCE5
-
-State S_BLUESPHERE_BOUNCE5
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT
-Duration = 1
-Next = S_BLUESPHERE_BOUNCE6
-
-State S_BLUESPHERE_BOUNCE6
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|2
-Duration = 1
-Next = S_BLUESPHERE_BOUNCE7
-
-State S_BLUESPHERE_BOUNCE7
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|4
-Duration = 1
-Next = S_BLUESPHERE_BOUNCE8
-
-State S_BLUESPHERE_BOUNCE8
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|2
-Duration = 1
-Next = S_BLUESPHERE_BOUNCE9
-
-State S_BLUESPHERE_BOUNCE9
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT
-Duration = 1
-Next = S_BLUESPHERE_BOUNCE10
-
-State S_BLUESPHERE_BOUNCE10
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|2
-Duration = 1
-Next = S_BLUESPHERE_BOUNCE11
-
-State S_BLUESPHERE_BOUNCE11
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|4
-Duration = 1
-Next = S_BLUESPHERE_BOUNCE12
-
-State S_BLUESPHERE_BOUNCE12
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|2
-Duration = 1
-Next = S_BLUESPHERE_BOUNCE13
-
-State S_BLUESPHERE_BOUNCE13
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT
-Duration = 2
-Next = S_BLUESPHERE_BOUNCE14
-
-State S_BLUESPHERE_BOUNCE14
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|1
-Duration = 2
-Next = S_BLUESPHERE_BOUNCE15
-
-State S_BLUESPHERE_BOUNCE15
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|2
-Duration = 2
-Next = S_BLUESPHERE_BOUNCE16
-
-State S_BLUESPHERE_BOUNCE16
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|3
-Duration = 2
-Next = S_BLUESPHERE_BOUNCE17
-
-State S_BLUESPHERE_BOUNCE17
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|4
-Duration = 2
-Next = S_BLUESPHERE_BOUNCE18
-
-State S_BLUESPHERE_BOUNCE18
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|3
-Duration = 4
-Next = S_BLUESPHERE_BOUNCE19
-
-State S_BLUESPHERE_BOUNCE19
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|2
-Duration = 4
-Next = S_BLUESPHERE_BOUNCE20
-
-State S_BLUESPHERE_BOUNCE20
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|1
-Duration = 4
-Next = S_BLUESPHERE_BOUNCE21
-
-State S_BLUESPHERE_BOUNCE21
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT
-Duration = 6
-Next = S_BLUESPHERE_BOUNCE22
-
-State S_BLUESPHERE_BOUNCE22
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|1
-Duration = 6
-Next = S_BLUESPHERE_BOUNCE23
-
-State S_BLUESPHERE_BOUNCE23
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|2
-Duration = 6
-Next = S_BLUESPHERE_BOUNCE24
-
-State S_BLUESPHERE_BOUNCE24
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|3
-Duration = 9
-Next = S_BLUESPHERE_BOUNCE25
-
-State S_BLUESPHERE_BOUNCE25
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|4
-Duration = 9
-Next = S_BLUESPHERE_BOUNCE26
-
-State S_BLUESPHERE_BOUNCE26
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|3
-Duration = 9
-Next = S_BLUESPHERE_BOUNCE27
-
-State S_BLUESPHERE_BOUNCE27
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|2
-Duration = 9
-Next = S_BLUESPHERE_BOUNCE28
-
-State S_BLUESPHERE_BOUNCE28
-SpriteName = SPR_BSPH
-SpriteFrame = FF_SEMIBRIGHT|1
-Duration = 9
-Next = S_BLUESPHERE
-
-# Bomb Sphere
-State S_BOMBSPHERE1
-SpriteName = SPR_BSPH
-SpriteFrame = FF_FULLBRIGHT|3
-Duration = 2
-Next = S_BOMBSPHERE2
-
-State S_BOMBSPHERE2
-SpriteName = SPR_BSPH
-SpriteFrame = FF_FULLBRIGHT|4
-Duration = 1
-Next = S_BOMBSPHERE3
-
-State S_BOMBSPHERE3
-SpriteName = SPR_BSPH
-SpriteFrame = FF_FULLBRIGHT|5
-Duration = 2
-Next = S_BOMBSPHERE4
-
-State S_BOMBSPHERE4
-SpriteName = SPR_BSPH
-SpriteFrame = FF_FULLBRIGHT|4
-Duration = 1
-Next = S_BOMBSPHERE1
+State S_BLUEBALLSPARK
+SpriteName = SPR_BBAL
+Duration = 20
 
 # NiGHTS Chip
 State S_NIGHTSCHIP
@@ -5047,7 +4889,7 @@ SpriteFrame = FF_ANIMATE
 Duration = -1
 Var1 = 2
 Var2 = 1
-
+z
 # Individual Team Rings
 State S_TEAMRING
 SpriteName = SPR_TRNG
@@ -5252,21 +5094,6 @@ Duration = -1
 State S_CEMG7
 SpriteName = SPR_CEMG
 SpriteFrame = FF_FULLBRIGHT|6
-Duration = -1
-
-# Emerald hunt shards
-State S_SHRD1
-SpriteName = SPR_SHRD
-Duration = -1
-
-State S_SHRD2
-SpriteName = SPR_SHRD
-SpriteFrame = 1
-Duration = -1
-
-State S_SHRD3
-SpriteName = SPR_SHRD
-SpriteFrame = 2
 Duration = -1
 
 # Bubble Source
@@ -5861,7 +5688,6 @@ State S_SHTV6
 SpriteName = SPR_SHTV
 SpriteFrame = 1
 Duration = 18
-Action = A_SuperSneakers
 
 # Invincibility Box
 State S_PINV
@@ -5903,14 +5729,12 @@ State S_PINV6
 SpriteName = SPR_PINV
 SpriteFrame = 1
 Duration = 18
-Action = A_Invincibility
 
 # 1up Box
 State S_PRUP
 SpriteName = SPR_PRUP
 SpriteFrame = 2
 Duration = 2
-Action = A_1upThinker
 Next = S_PRUP1
 
 State S_PRUP1
@@ -5947,7 +5771,6 @@ State S_PRUP6
 SpriteName = SPR_PRUP
 SpriteFrame = 3
 Duration = 18
-Action = A_ExtraLife
 
 # Ring Shield Box
 State S_YLTV
@@ -5989,7 +5812,6 @@ State S_YLTV6
 SpriteName = SPR_YLTV
 SpriteFrame = 1
 Duration = 18
-Action = A_RingShield
 
 # Force Shield Box
 State S_BLTV1
@@ -6031,7 +5853,6 @@ State S_BLTV7
 SpriteName = SPR_BLTV
 SpriteFrame = 1
 Duration = 18
-Action = A_ForceShield
 
 # Bomb Shield Box
 State S_BKTV1
@@ -6073,7 +5894,6 @@ State S_BKTV7
 SpriteName = SPR_BKTV
 SpriteFrame = 1
 Duration = 18
-Action = A_BombShield
 
 # Jump Shield Box
 State S_WHTV1
@@ -6115,7 +5935,6 @@ State S_WHTV7
 SpriteName = SPR_WHTV
 SpriteFrame = 1
 Duration = 18
-Action = A_JumpShield
 
 # Water Shield Box
 State S_GRTV
@@ -6157,7 +5976,6 @@ State S_GRTV6
 SpriteName = SPR_ELTV
 SpriteFrame = 1
 Duration = 18
-Action = A_WaterShield
 
 # Pity Shield Box
 State S_PITV1
@@ -6199,7 +6017,6 @@ State S_PITV7
 SpriteName = SPR_GRTV
 SpriteFrame = 1
 Duration = 18
-Action = A_PityShield
 
 # Eggman Box
 State S_EGGTV1
@@ -6325,7 +6142,6 @@ State S_RECYCLETV7
 SpriteName = SPR_RECY
 SpriteFrame = 1
 Duration = 18
-Action = A_RecyclePowers
 
 # Question Box
 State S_RANDOMBOX1
@@ -6383,7 +6199,6 @@ State S_GBTV7
 SpriteName = SPR_GBTV
 SpriteFrame = 1
 Duration = 18
-Action = A_GravityBox
 
 # Score boxes
 State S_SCORETVA1
@@ -6876,363 +6691,8 @@ SpriteName = SPR_BMCH
 SpriteFrame = 1
 Duration = -1
 
-# Yellow spring on a ball
-State S_YELLOWSPRINGBALL
-SpriteName = SPR_YSPB
-Duration = -1
-
-State S_YELLOWSPRINGBALL2
-SpriteName = SPR_YSPB
-SpriteFrame = 4
-Duration = 4
-Action = A_Pain
-Next = S_YELLOWSPRINGBALL3
-
-State S_YELLOWSPRINGBALL3
-SpriteName = SPR_YSPB
-SpriteFrame = 3
-Duration = 1
-Next = S_YELLOWSPRINGBALL4
-
-State S_YELLOWSPRINGBALL4
-SpriteName = SPR_YSPB
-SpriteFrame = 2
-Duration = 1
-Next = S_YELLOWSPRINGBALL5
-
-State S_YELLOWSPRINGBALL5
-SpriteName = SPR_YSPB
-SpriteFrame = 1
-Duration = 1
-Next = S_YELLOWSPRINGBALL
-
-# Red spring on a ball
-State S_REDSPRINGBALL
-SpriteName = SPR_RSPB
-Duration = -1
-
-State S_REDSPRINGBALL2
-SpriteName = SPR_RSPB
-SpriteFrame = 4
-Duration = 4
-Action = A_Pain
-Next = S_REDSPRINGBALL3
-
-State S_REDSPRINGBALL3
-SpriteName = SPR_RSPB
-SpriteFrame = 3
-Duration = 1
-Next = S_REDSPRINGBALL4
-
-State S_REDSPRINGBALL4
-SpriteName = SPR_RSPB
-SpriteFrame = 2
-Duration = 1
-Next = S_REDSPRINGBALL5
-
-State S_REDSPRINGBALL5
-SpriteName = SPR_RSPB
-SpriteFrame = 1
-Duration = 1
-Next = S_REDSPRINGBALL
-
-# Small Firebar
-State S_SMALLFIREBAR1
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT
-Duration = 1
-Next = S_SMALLFIREBAR2
-
-State S_SMALLFIREBAR2
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|1
-Duration = 1
-Next = S_SMALLFIREBAR3
-
-State S_SMALLFIREBAR3
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|2
-Duration = 1
-Action = A_FlameParticle
-Next = S_SMALLFIREBAR4
-
-State S_SMALLFIREBAR4
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|3
-Duration = 1
-Next = S_SMALLFIREBAR5
-
-State S_SMALLFIREBAR5
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|4
-Duration = 1
-Next = S_SMALLFIREBAR6
-
-State S_SMALLFIREBAR6
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|5
-Duration = 1
-Next = S_SMALLFIREBAR7
-
-State S_SMALLFIREBAR7
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|6
-Duration = 1
-Action = A_FlameParticle
-Next = S_SMALLFIREBAR8
-
-State S_SMALLFIREBAR8
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|7
-Duration = 1
-Next = S_SMALLFIREBAR9
-
-State S_SMALLFIREBAR9
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|8
-Duration = 1
-Next = S_SMALLFIREBAR10
-
-State S_SMALLFIREBAR10
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|9
-Duration = 1
-Next = S_SMALLFIREBAR11
-
-State S_SMALLFIREBAR11
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|10
-Duration = 1
-Action = A_FlameParticle
-Next = S_SMALLFIREBAR12
-
-State S_SMALLFIREBAR12
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|11
-Duration = 1
-Next = S_SMALLFIREBAR13
-
-State S_SMALLFIREBAR13
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|12
-Duration = 1
-Next = S_SMALLFIREBAR14
-
-State S_SMALLFIREBAR14
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|13
-Duration = 1
-Next = S_SMALLFIREBAR15
-
-State S_SMALLFIREBAR15
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|14
-Duration = 1
-Action = A_FlameParticle
-Next = S_SMALLFIREBAR16
-
-State S_SMALLFIREBAR16
-SpriteName = SPR_SFBR
-SpriteFrame = FF_FULLBRIGHT|15
-Duration = 1
-Next = S_SMALLFIREBAR1
-
-# Big Firebar
-State S_BIGFIREBAR1
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT
-Duration = 1
-Next = S_BIGFIREBAR2
-
-State S_BIGFIREBAR2
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|1
-Duration = 1
-Next = S_BIGFIREBAR3
-
-State S_BIGFIREBAR3
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|2
-Duration = 1
-Action = A_FlameParticle
-Next = S_BIGFIREBAR4
-
-State S_BIGFIREBAR4
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|3
-Duration = 1
-Next = S_BIGFIREBAR5
-
-State S_BIGFIREBAR5
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|4
-Duration = 1
-Next = S_BIGFIREBAR6
-
-State S_BIGFIREBAR6
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|5
-Duration = 1
-Next = S_BIGFIREBAR7
-
-State S_BIGFIREBAR7
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|6
-Duration = 1
-Action = A_FlameParticle
-Next = S_BIGFIREBAR8
-
-State S_BIGFIREBAR8
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|7
-Duration = 1
-Next = S_BIGFIREBAR9
-
-State S_BIGFIREBAR9
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|8
-Duration = 1
-Next = S_BIGFIREBAR10
-
-State S_BIGFIREBAR10
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|9
-Duration = 1
-Next = S_BIGFIREBAR11
-
-State S_BIGFIREBAR11
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|10
-Duration = 1
-Action = A_FlameParticle
-Next = S_BIGFIREBAR12
-
-State S_BIGFIREBAR12
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|11
-Duration = 1
-Next = S_BIGFIREBAR13
-
-State S_BIGFIREBAR13
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|12
-Duration = 1
-Next = S_BIGFIREBAR14
-
-State S_BIGFIREBAR14
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|13
-Duration = 1
-Next = S_BIGFIREBAR15
-
-State S_BIGFIREBAR15
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|14
-Duration = 1
-Action = A_FlameParticle
-Next = S_BIGFIREBAR16
-
-State S_BIGFIREBAR16
-SpriteName = SPR_BFBR
-SpriteFrame = FF_FULLBRIGHT|15
-Duration = 1
-Next = S_BIGFIREBAR1
-
 State S_CEZFLOWER
 SpriteName = SPR_FWR4
-Duration = -1
-
-State S_CEZPOLE
-SpriteName = SPR_BANR
-Duration = -1
-
-State S_CEZBANNER1
-SpriteName = SPR_BANR
-SpriteFrame = FF_PAPERSPRITE|1
-Duration = -1
-
-State S_CEZBANNER2
-SpriteName = SPR_BANR
-SpriteFrame = FF_PAPERSPRITE|2
-Duration = -1
-
-State S_CEZBUSH1
-SpriteName = SPR_CEZB
-Duration = -1
-
-State S_CEZBUSH2
-SpriteName = SPR_CEZB
-SpriteFrame = 1
-Duration = -1
-
-State S_CANDLE
-SpriteName = SPR_CNDL
-SpriteFrame = FF_FULLBRIGHT
-Duration = -1
-
-State S_CANDLEPRICKET
-SpriteName = SPR_CNDL
-SpriteFrame = FF_FULLBRIGHT|1
-Duration = -1
-
-State S_FLAMEHOLDER
-SpriteName = SPR_FLMH
-Duration = -1
-
-State S_FIRETORCH
-SpriteName = SPR_CTRC
-SpriteFrame = FF_FULLBRIGHT|FF_ANIMATE
-Duration = 8*3
-Action = A_FlameParticle
-Var1 = 3
-Var2 = 3
-Next = S_FIRETORCH
-
-State S_WAVINGFLAG
-SpriteName = SPR_CFLG
-Duration = -1
-
-State S_WAVINGFLAGSEG1
-SpriteName = SPR_CFLG
-SpriteFrame = FF_PAPERSPRITE|1
-Duration = -1
-
-State S_WAVINGFLAGSEG2
-SpriteName = SPR_CFLG
-SpriteFrame = FF_PAPERSPRITE|2
-Duration = -1
-
-State S_CRAWLASTATUE
-SpriteName = SPR_CSTA
-Duration = -1
-
-State S_FACESTABBERSTATUE
-SpriteName = SPR_CBBS
-Duration = -1
-
-State S_SUSPICIOUSFACESTABBERSTATUE_WAIT
-SpriteName = SPR_CBBS
-Duration = 5
-Action = A_Look
-Var1 = 768*FRACUNIT
-Next = S_SUSPICIOUSFACESTABBERSTATUE_WAIT
-
-State S_SUSPICIOUSFACESTABBERSTATUE_BURST1
-SpriteName = SPR_CBBS
-SpriteFrame = FF_ANIMATE
-Duration = 23
-Var1 = 6
-Var2 = 1
-Next = S_SUSPICIOUSFACESTABBERSTATUE_BURST2
-
-State S_SUSPICIOUSFACESTABBERSTATUE_BURST2
-Duration = 40
-Action = A_StatueBurst
-Var1 = MT_FACESTABBER
-Var2 = S_FACESTABBER_CHARGE2
-
-State S_BRAMBLES
-SpriteName = SPR_CABR
 Duration = -1
 
 # Big Tumbleweed
@@ -7670,21 +7130,6 @@ Action = A_SetObjectFlags
 Var1 = MF_PUSHABLE
 Var2 = 1
 Next = S_TARGET_ALLDONE
-
-# ATZ's green flame
-State S_GREENFLAME
-SpriteName = SPR_CFLM
-SpriteFrame = FF_FULLBRIGHT|FF_ANIMATE|FF_RANDOMANIM
-Duration = -1
-Var1 = 7
-Var2 = 3
-Next = S_GREENFLAME
-
-# ATZ Blue Gargoyle
-State S_BLUEGARGOYLE
-SpriteName = SPR_BGAR
-SpriteFrame = 3
-Duration = -1
 
 # Stalagmites
 State S_STG0
@@ -9008,61 +8453,61 @@ Duration = 2
 Next = S_PITY1
 
 State S_FIRS1
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40
 Duration = 2
 Next = S_FIRS2
 
 State S_FIRS2
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|1
 Duration = 2
 Next = S_FIRS3
 
 State S_FIRS3
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|2
 Duration = 2
 Next = S_FIRS4
 
 State S_FIRS4
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|3
 Duration = 2
 Next = S_FIRS5
 
 State S_FIRS5
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|4
 Duration = 2
 Next = S_FIRS6
 
 State S_FIRS6
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|5
 Duration = 2
 Next = S_FIRS7
 
 State S_FIRS7
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|6
 Duration = 2
 Next = S_FIRS8
 
 State S_FIRS8
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|7
 Duration = 2
 Next = S_FIRS9
 
 State S_FIRS9
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|8
 Duration = 2
 Next = S_FIRS1
 
 State S_FIRS10
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|18
 Duration = 1
 Next = S_FIRS11
@@ -9072,55 +8517,55 @@ Duration = 1
 Next = S_FIRS1
 
 State S_FIRSB1
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|9
 Duration = 2
 Next = S_FIRSB2
 
 State S_FIRSB2
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|10
 Duration = 2
 Next = S_FIRSB3
 
 State S_FIRSB3
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|11
 Duration = 2
 Next = S_FIRSB4
 
 State S_FIRSB4
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|12
 Duration = 2
 Next = S_FIRSB5
 
 State S_FIRSB5
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|13
 Duration = 2
 Next = S_FIRSB6
 
 State S_FIRSB6
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|14
 Duration = 2
 Next = S_FIRSB7
 
 State S_FIRSB7
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|15
 Duration = 2
 Next = S_FIRSB8
 
 State S_FIRSB8
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|16
 Duration = 2
 Next = S_FIRSB9
 
 State S_FIRSB9
-SpriteName = SPR_FIRS
+SpriteName = SPR_FLMS
 SpriteFrame = FF_FULLBRIGHT|FF_TRANS40|17
 Duration = 2
 Next = S_FIRSB1
@@ -10573,6 +10018,11 @@ Var1 = MT_SECRETFLICKY_02
 Var2 = 384*FRACUNIT
 Next = S_SECRETFLICKY_02_CENTER
 
+# Emeralds (for hunt)
+State S_EMER1
+SpriteName = SPR_EMER
+Duration = -1
+
 # Fan
 State S_FAN
 SpriteName = SPR_FANS
@@ -10703,96 +10153,124 @@ State S_BALLOONPOP6
 Action = A_SpawnFreshCopy
 
 # Yellow Spring
-State S_YELLOWSPRING1
+State S_YELLOWSPRING
 SpriteName = SPR_SPRY
 Duration = -1
 
 State S_YELLOWSPRING2
 SpriteName = SPR_SPRY
-SpriteFrame = 1
-Duration = 1
+SpriteFrame = 4
+Duration = 4
 Action = A_Pain
 Next = S_YELLOWSPRING3
 
 State S_YELLOWSPRING3
 SpriteName = SPR_SPRY
+SpriteFrame = 3
 Duration = 1
 Next = S_YELLOWSPRING4
 
 State S_YELLOWSPRING4
 SpriteName = SPR_SPRY
 SpriteFrame = 2
-Duration = 4
-Next = S_YELLOWSPRING1
+Duration = 1
+Next = S_YELLOWSPRING5
+
+State S_YELLOWSPRING5
+SpriteName = SPR_SPRY
+SpriteFrame = 1
+Duration = 1
+Next = S_YELLOWSPRING
 
 # Red Spring
-State S_REDSPRING1
+State S_REDSPRING
 SpriteName = SPR_SPRR
 Duration = -1
 
 State S_REDSPRING2
 SpriteName = SPR_SPRR
-SpriteFrame = 1
-Duration = 1
+SpriteFrame = 4
+Duration = 4
 Action = A_Pain
 Next = S_REDSPRING3
 
 State S_REDSPRING3
 SpriteName = SPR_SPRR
+SpriteFrame = 3
 Duration = 1
 Next = S_REDSPRING4
 
 State S_REDSPRING4
 SpriteName = SPR_SPRR
 SpriteFrame = 2
-Duration = 4
-Next = S_REDSPRING1
+Duration = 1
+Next = S_REDSPRING5
+
+State S_REDSPRING5
+SpriteName = SPR_SPRR
+SpriteFrame = 1
+Duration = 1
+Next = S_REDSPRING
 
 # Blue Spring
-State S_BLUESPRING1
+State S_BLUESPRING
 SpriteName = SPR_SPRB
 Duration = -1
 
 State S_BLUESPRING2
 SpriteName = SPR_SPRB
-SpriteFrame = 1
-Duration = 1
+SpriteFrame = 4
+Duration = 4
 Action = A_Pain
 Next = S_BLUESPRING3
 
 State S_BLUESPRING3
 SpriteName = SPR_SPRB
+SpriteFrame = 3
 Duration = 1
 Next = S_BLUESPRING4
 
 State S_BLUESPRING4
 SpriteName = SPR_SPRB
 SpriteFrame = 2
-Duration = 4
-Next = S_BLUESPRING1
+Duration = 1
+Next = S_BLUESPRING5
+
+State S_BLUESPRING5
+SpriteName = SPR_SPRB
+SpriteFrame = 1
+Duration = 1
+Next = S_BLUESPRING
 
 # Grey Spring
-State S_GREYSPRING1
+State S_GRAYSPRING
 SpriteName = SPR_SPRG
 Duration = -1
 
-State S_GREYSPRING2
+State S_GRAYSPRING2
+SpriteName = SPR_SPRG
+SpriteFrame = 4
+Duration = 4
+Action = A_Pain
+Next = S_GRAYSPRING3
+
+State S_GRAYSPRING3
+SpriteName = SPR_SPRG
+SpriteFrame = 3
+Duration = 1
+Next = S_GRAYSPRING4
+
+State S_GRAYSPRING4
+SpriteName = SPR_SPRG
+SpriteFrame = 2
+Duration = 1
+Next = S_GRAYSPRING5
+
+State S_GRAYSPRING5
 SpriteName = SPR_SPRG
 SpriteFrame = 1
 Duration = 1
-Action = A_Pain
-Next = S_GREYSPRING3
-
-State S_GREYSPRING3
-SpriteName = SPR_SPRG
-Duration = 1
-Next = S_GREYSPRING4
-
-State S_GREYSPRING4
-SpriteName = SPR_SPRG
-SpriteFrame = 2
-Duration = 4
-Next = S_GREYSPRING1
+Next = S_GRAYSPRING
 
 State S_INVISSPRING
 Duration = 1
@@ -10868,121 +10346,6 @@ SpriteFrame = 2
 Duration = 4
 Next = S_BDIAG1
 
-# Grey Diagonal Spring
-State S_GDIAG1
-SpriteName = SPR_GSPR
-Duration = -1
-
-State S_GDIAG2
-SpriteName = SPR_GSPR
-SpriteFrame = 1
-Duration = 1
-Action = A_Pain
-Next = S_GDIAG3
-
-State S_GDIAG3
-SpriteName = SPR_GSPR
-Duration = 1
-Next = S_GDIAG4
-
-State S_GDIAG4
-SpriteName = SPR_GSPR
-SpriteFrame = 2
-Duration = 4
-Next = S_GDIAG1
-
-# Yellow Horizontal Spring
-State S_YHORIZ1
-SpriteName = SPR_SSWY
-Duration = -1
-
-State S_YHORIZ2
-SpriteName = SPR_SSWY
-SpriteFrame = 1
-Duration = 1
-Action = A_Pain
-Next = S_YHORIZ3
-
-State S_YHORIZ3
-SpriteName = SPR_SSWY
-Duration = 1
-Next = S_YHORIZ4
-
-State S_YHORIZ4
-SpriteName = SPR_SSWY
-SpriteFrame = 2
-Duration = 4
-Next = S_YHORIZ1
-
-# Red Horizontal Spring
-State S_RHORIZ1
-SpriteName = SPR_SSWR
-Duration = -1
-
-State S_RHORIZ2
-SpriteName = SPR_SSWR
-SpriteFrame = 1
-Duration = 1
-Action = A_Pain
-Next = S_RHORIZ3
-
-State S_RHORIZ3
-SpriteName = SPR_SSWR
-Duration = 1
-Next = S_RHORIZ4
-
-State S_RHORIZ4
-SpriteName = SPR_SSWR
-SpriteFrame = 2
-Duration = 4
-Next = S_RHORIZ1
-
-# Blue Horizontal Spring
-State S_BHORIZ1
-SpriteName = SPR_SSWB
-Duration = -1
-
-State S_BHORIZ2
-SpriteName = SPR_SSWB
-SpriteFrame = 1
-Duration = 1
-Action = A_Pain
-Next = S_BHORIZ3
-
-State S_BHORIZ3
-SpriteName = SPR_SSWB
-Duration = 1
-Next = S_BHORIZ4
-
-State S_BHORIZ4
-SpriteName = SPR_SSWB
-SpriteFrame = 2
-Duration = 4
-Next = S_BHORIZ1
-
-# Grey Horizontal Spring
-State S_GHORIZ1
-SpriteName = SPR_SSWG
-Duration = -1
-
-State S_GHORIZ2
-SpriteName = SPR_SSWG
-SpriteFrame = 1
-Duration = 1
-Action = A_Pain
-Next = S_GHORIZ3
-
-State S_GHORIZ3
-SpriteName = SPR_SSWG
-Duration = 1
-Next = S_GHORIZ4
-
-State S_GHORIZ4
-SpriteName = SPR_SSWG
-SpriteFrame = 2
-Duration = 4
-Next = S_GHORIZ1
-
 # Rain
 State S_RAIN1
 SpriteName = SPR_RAIN
@@ -11003,21 +10366,6 @@ Duration = -1
 
 State S_SNOW3
 SpriteName = SPR_SNO1
-SpriteFrame = 2
-Duration = -1
-
-# Blizzard Snowball
-State S_BLIZZARDSNOW1
-SpriteName = SPR_SNO2
-Duration = -1
-
-State S_BLIZZARDSNOW2
-SpriteName = SPR_SNO2
-SpriteFrame = 1
-Duration = -1
-
-State S_BLIZZARDSNOW3
-SpriteName = SPR_SNO2
 SpriteFrame = 2
 Duration = -1
 
@@ -11558,15 +10906,6 @@ Duration = 2
 State S_FINISHFLAG
 SpriteName = SPR_FNSF
 SpriteFrame = FF_TRANS30
-Duration = -1
-
-State S_CORK
-SpriteName = SPR_CORK
-Duration = -1
-
-State S_LHRT
-SpriteName = SPR_LHRT
-SpriteFrame = FF_FULLBRIGHT
 Duration = -1
 
 # Red Ring
@@ -16859,14 +16198,6 @@ SpriteName = SPR_ISTB
 SpriteFrame = FF_FULLBRIGHT|6
 Duration = 2
 
-# Grow/Invinc clash VFX
-State S_POWERCLASH
-SpriteName = SPR_PWCL
-SpriteFrame = FF_FULLBRIGHT|FF_ANIMATE|FF_PAPERSPRITE
-Duration = 10
-Var1 = 9
-Var2 = 1
-
 # Above player arrow
 State S_PLAYERARROW
 SpriteName = SPR_ARRO
@@ -17822,7 +17153,7 @@ SpriteName = SPR_SBUS
 Duration = -1
 
 # Marble Zone
-State S_MARBLEFLAMEPARTICLE
+State S_FLAMEPARTICLE
 SpriteName = SPR_MARB
 SpriteFrame = FF_FULLBRIGHT|FF_ANIMATE|5
 Duration = TICRATE

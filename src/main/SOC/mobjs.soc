@@ -347,26 +347,23 @@ Height = 48*FRACUNIT
 Mass = 100
 Flags = MF_SLIDEME|MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY
 
-# BASH
+# Vulture
 Mobj MT_VULTURE
 MapThingNum = 115
 SpawnState = S_VULTURE_STND
 SpawnHealth = 1
-SeeState = S_VULTURE_DRIFT
-ReactionTime = TICRATE/2
-AttackSound = sfx_s3k60
-PainState = S_VULTURE_STUNNED
+SeeState = S_VULTURE_VTOL1
+ReactionTime = 2
 PainChance = S_NULL
-PainSound = sfx_s3k96
 MissileState = S_VULTURE_ZOOM1
-DeathState = S_XPLD_FLICKY
+DeathState = S_XPLD1
 DeathSound = sfx_pop
-Speed = 5
+Speed = 3
 Radius = 12*FRACUNIT
 Height = 24*FRACUNIT
 Mass = TICRATE
 ActiveSound = sfx_jet
-Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_SLIDEME
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY
 
 # Pointy
 Mobj MT_POINTY
@@ -569,7 +566,7 @@ Flags = MF_PAIN|MF_NOGRAVITY|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOCLIPTHING
 
 # Generic Boss Items
 Mobj MT_BOSSEXPLODE
-SpawnState = S_BOSSEXPLODE
+SpawnState = S_BPLD1
 SpawnHealth = 1000
 ReactionTime = 8
 Speed = 1
@@ -635,17 +632,6 @@ Height = 4*FRACUNIT
 Mass = 4
 Flags = MF_NOBLOCKMAP|MF_NOSECTOR|MF_NOGRAVITY
 
-Mobj MT_BOSSJUNK
-SpawnState = S_BOSSEGLZ1
-SpawnHealth = 1
-ReactionTime = 8
-Radius = 8*FRACUNIT
-Height = 64*FRACUNIT
-DispOffset = 2
-Mass = 100
-Damage = 1
-Flags = MF_SCENERY|MF_NOBLOCKMAP|MF_NOCLIPHEIGHT
-
 # Boss 1
 Mobj MT_EGGMOBILE
 MapThingNum = 200
@@ -700,16 +686,14 @@ Speed = 2*FRACUNIT
 Flags = MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY
 
 Mobj MT_EGGMOBILE_FIRE
-SpawnState = S_LASERFLAME1
+SpawnState = S_SPINFIRE1
 SpawnHealth = 1
-SeeSound = sfx_s3kc2s
 ReactionTime = 8
-PainSound = sfx_s3k8d
-Radius = 24*FRACUNIT
-Height = 84*FRACUNIT
-Mass = DMG_NORMAL
+Radius = 8*FRACUNIT
+Height = 14*FRACUNIT
+Mass = 100
 Damage = 1
-Flags = MF_NOGRAVITY|MF_FIRE|MF_PAIN
+Flags = MF_NOBLOCKMAP|MF_MISSILE|MF_NOGRAVITY|MF_FIRE
 
 # Boss 2
 Mobj MT_EGGMOBILE2
@@ -918,7 +902,7 @@ Mobj MT_BLACKEGGMAN_MISSILE
 SpawnState = S_BLACKEGG_MISSILE
 SpawnHealth = 1000
 ReactionTime = 8
-DeathState = S_BOSSEXPLODE
+DeathState = S_BPLD1
 DeathSound = sfx_bexpld
 Speed = 10*FRACUNIT
 Radius = 24*FRACUNIT
@@ -1005,7 +989,7 @@ Mobj MT_CYBRAKDEMON_TARGET_RETICULE
 SpawnState = S_CYBRAKDEMONTARGETRETICULE1
 SpawnHealth = 1000
 ReactionTime = 8
-DeathState = S_BOSSEXPLODE
+DeathState = S_BPLD1
 Speed = 10*FRACUNIT
 Radius = 32*FRACUNIT
 Height = 64*FRACUNIT
@@ -1017,7 +1001,7 @@ Mobj MT_CYBRAKDEMON_TARGET_DOT
 SpawnState = S_CYBRAKDEMONTARGETDOT
 SpawnHealth = 1000
 ReactionTime = 8
-DeathState = S_BOSSEXPLODE
+DeathState = S_BPLD1
 Speed = 10*FRACUNIT
 Radius = 32*FRACUNIT
 Height = 64*FRACUNIT
@@ -1154,38 +1138,13 @@ Height = 48*FRACUNIT
 Mass = 100
 Flags = MF_SPECIAL|MF_DONTENCOREMAP
 
-# Blue sphere for special stages
-Mobj MT_BLUESPHERE
-SpawnState = S_BLUESPHERE_SPAWN
-SpawnHealth = 1000
-ReactionTime = MT_FLINGBLUESPHERE
-DeathSound = sfx_s3k65
-Speed = 38*FRACUNIT
-Radius = 48*FRACUNIT
-Height = 48*FRACUNIT
-Mass = 100
-Flags = MF_RUNSPAWNFUNC|MF_SPECIAL|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_DONTENCOREMAP
-
-# Lost blue sphere
-Mobj MT_FLINGBLUESPHERE
-SpawnState = S_BLUESPHERE_SPAWN
-SpawnHealth = 1000
-ReactionTime = MT_FLINGBLUESPHERE
-PainChance = MT_BLUESPHERE
-DeathSound = sfx_s3k65
-Speed = 38*FRACUNIT
-Radius = 16*FRACUNIT
-Height = 24*FRACUNIT
-Mass = 100
-Flags = MF_SLIDEME|MF_SPECIAL
-
-Mobj MT_BOMBSPHERE
-MapThingNum = 520
-SpawnState = S_BOMBSPHERE1
+# Blue sphere replacement for special stages
+Mobj MT_BLUEBALL
+SpawnState = S_BLUEBALL
 SpawnHealth = 1000
 ReactionTime = MT_NULL
-DeathState = S_SONIC3KBOSSEXPLOSION1
-DeathSound = sfx_cybdth
+DeathState = S_BLUEBALLSPARK
+DeathSound = sfx_s3k65
 Speed = 38*FRACUNIT
 Radius = 16*FRACUNIT
 Height = 24*FRACUNIT
@@ -1378,7 +1337,7 @@ Flags = MF_NOGRAVITY|MF_SPECIAL
 # Emerald Hunt
 Mobj MT_EMERHUNT
 MapThingNum = 320
-SpawnState = S_SHRD1
+SpawnState = S_EMER1
 SpawnHealth = 1000
 ReactionTime = 8
 DeathState = S_SPRK1
@@ -1410,6 +1369,11 @@ Radius = 16*FRACUNIT
 Height = 48*FRACUNIT
 Mass = 100
 Flags = MF_SLIDEME|MF_SPECIAL
+
+# Emeralds (for hunt)
+State S_EMER1
+SpriteName = SPR_EMER
+Duration = -1
 
 # Springs and others
 Mobj MT_FAN
@@ -1449,7 +1413,7 @@ RaiseState = S_BALLOONPOP1
 
 Mobj MT_YELLOWSPRING
 MapThingNum = 550
-SpawnState = S_YELLOWSPRING1
+SpawnState = S_YELLOWSPRING
 SpawnHealth = 1000
 SeeState = S_YELLOWSPRING2
 ReactionTime = 8
@@ -1463,7 +1427,7 @@ RaiseState = S_YELLOWSPRING2
 
 Mobj MT_REDSPRING
 MapThingNum = 551
-SpawnState = S_REDSPRING1
+SpawnState = S_REDSPRING
 SpawnHealth = 1000
 SeeState = S_REDSPRING2
 ReactionTime = 8
@@ -1477,7 +1441,7 @@ RaiseState = S_REDSPRING2
 
 Mobj MT_BLUESPRING
 MapThingNum = 552
-SpawnState = S_BLUESPRING1
+SpawnState = S_BLUESPRING
 SpawnHealth = 1000
 SeeState = S_BLUESPRING2
 ReactionTime = 8
@@ -1489,11 +1453,11 @@ Mass = 14*FRACUNIT
 Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
 RaiseState = S_BLUESPRING2
 
-Mobj MT_GREYSPRING
+Mobj MT_GRAYSPRING
 MapThingNum = 553
-SpawnState = S_GREYSPRING1
+SpawnState = S_GRAYSPRING
 SpawnHealth = 1000
-SeeState = S_GREYSPRING2
+SeeState = S_GRAYSPRING2
 ReactionTime = 8
 PainChance = SKINCOLOR_POPCORN
 PainSound = sfx_s3kb1
@@ -1501,7 +1465,7 @@ Radius = 20*FRACUNIT
 Height = 16*FRACUNIT
 Mass = 6*FRACUNIT
 Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
-RaiseState = S_GREYSPRING2
+RaiseState = S_GRAYSPRING2
 
 Mobj MT_INVISSPRING
 MapThingNum = 554
@@ -1563,82 +1527,6 @@ Mass = 14*FRACUNIT
 Damage = 14*FRACUNIT
 Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
 RaiseState = S_BDIAG2
-
-# Grey Diagonal Spring
-Mobj MT_GREYDIAG
-MapThingNum = 2171
-SpawnState = S_GDIAG1
-SpawnHealth = 1
-SeeState = S_GDIAG2
-ReactionTime = 8
-PainChance = SKINCOLOR_POPCORN
-PainSound = sfx_s3kb1
-Radius = 48*FRACUNIT
-Height = 56*FRACUNIT
-Mass = 6*FRACUNIT
-Damage = 6*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
-RaiseState = S_GDIAG2
-
-# Yellow Horizontal Spring
-Mobj MT_YELLOWHORIZ
-MapThingNum = 2172
-SpawnState = S_YHORIZ1
-SpawnHealth = 1
-SeeState = S_YHORIZ2
-ReactionTime = 8
-PainChance = SKINCOLOR_YELLOW
-PainSound = sfx_s3kb1
-Radius = 52*FRACUNIT
-Height = 52*FRACUNIT
-Damage = 72*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
-RaiseState = S_YHORIZ2
-
-# Red Horizontal Spring
-Mobj MT_REDHORIZ
-MapThingNum = 2173
-SpawnState = S_RHORIZ1
-SpawnHealth = 1
-SeeState = S_RHORIZ2
-ReactionTime = 8
-PainChance = SKINCOLOR_RASPBERRY
-PainSound = sfx_s3kb1
-Radius = 16*FRACUNIT
-Height = 16*FRACUNIT
-Damage = 80*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
-RaiseState = S_RHORIZ2
-
-# Blue Horizontal Spring
-Mobj MT_BLUEHORIZ
-MapThingNum = 2174
-SpawnState = S_BHORIZ1
-SpawnHealth = 1
-SeeState = S_BHORIZ2
-ReactionTime = 8
-PainChance = SKINCOLOR_PASTEL
-PainSound = sfx_s3kb1
-Radius = 16*FRACUNIT
-Height = 16*FRACUNIT
-Damage = 28*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
-RaiseState = S_BHORIZ2
-
-# Grey Horizontal Spring
-Mobj MT_GREYHORIZ
-MapThingNum = 2175
-SpawnState = S_GHORIZ1
-SpawnHealth = 1
-SeeState = S_GHORIZ2
-ReactionTime = 8
-PainChance = SKINCOLOR_POPCORN
-PainSound = sfx_s3kb1
-Radius = 16*FRACUNIT
-Height = 16*FRACUNIT
-Damage = 12*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
-RaiseState = S_GHORIZ2
 
 # Interactive Objects
 # Bubble source
@@ -1879,7 +1767,6 @@ Mobj MT_PRUP
 MapThingNum = 409
 SpawnState = S_PRUP
 SpawnHealth = 1
-SeeState = S_PLAY_BOX1
 ReactionTime = 8
 PainState = S_PRUP
 DeathState = S_PRUP2
@@ -2167,7 +2054,6 @@ Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOGRAVITY|MF_BOXICON|MF_DONTENCORE
 Mobj MT_1UPICO
 SpawnState = S_PRUP2
 SpawnHealth = 1
-SeeState = S_PLAY_ICON1
 ReactionTime = 8
 Speed = 2*FRACUNIT
 Radius = 8*FRACUNIT
@@ -2687,17 +2573,6 @@ Height = 1*FRACUNIT
 Mass = 10000
 Flags = MF_NOBLOCKMAP|MF_NOSECTOR|MF_NOCLIP|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_SCENERY
 
-# Spring ball point
-Mobj MT_SPRINGBALLPOINT
-MapThingNum = 1106
-SpawnState = S_INVISIBLE
-SpawnHealth = 1000
-Speed = 10*FRACUNIT
-Radius = 128*FRACUNIT
-Height = 1*FRACUNIT
-Mass = 10000
-Flags = MF_NOBLOCKMAP|MF_NOSECTOR|MF_NOCLIP|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_SCENERY
-
 # Mace chain
 Mobj MT_CHAINPOINT
 MapThingNum = 1107
@@ -2718,17 +2593,6 @@ Speed = 10*FRACUNIT
 Radius = 8*FRACUNIT
 Height = 8*FRACUNIT
 Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_SCENERY
-
-# Firebar
-Mobj MT_FIREBARPOINT
-MapThingNum = 1109
-SpawnState = S_INVISIBLE
-SpawnHealth = 1000
-Speed = 10*FRACUNIT
-Radius = 128*FRACUNIT
-Height = 1*FRACUNIT
-Mass = 200
-Flags = MF_NOBLOCKMAP|MF_NOSECTOR|MF_NOCLIP|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_SCENERY
 
 # Custom mace
 Mobj MT_CUSTOMMACEPOINT
@@ -2816,67 +2680,6 @@ Height = 68*FRACUNIT
 Mass = 100
 Damage = 1
 Flags = MF_SCENERY|MF_SPECIAL|MF_NOGRAVITY
-
-# Yellow spring on a ball
-Mobj MT_YELLOWSPRINGBALL
-MapThingNum = 1134
-SpawnState = S_YELLOWSPRINGBALL
-SpawnHealth = 1000
-SeeState = S_YELLOWSPRINGBALL2
-PainSound = sfx_spring
-Speed = 24*FRACUNIT
-Radius = 17*FRACUNIT
-Height = 34*FRACUNIT
-DispOffset = 1
-Mass = 20*FRACUNIT
-ActiveSound = sfx_mswing
-Flags = MF_SCENERY|MF_SPRING|MF_NOGRAVITY
-RaiseState = S_YELLOWSPRINGBALL2
-
-# Red spring on a ball
-Mobj MT_REDSPRINGBALL
-MapThingNum = 1135
-SpawnState = S_REDSPRINGBALL
-SpawnHealth = 1000
-SeeState = S_REDSPRINGBALL2
-PainSound = sfx_spring
-Speed = 24*FRACUNIT
-Radius = 17*FRACUNIT
-Height = 34*FRACUNIT
-DispOffset = 1
-Mass = 32*FRACUNIT
-ActiveSound = sfx_mswing
-Flags = MF_SCENERY|MF_SPRING|MF_NOGRAVITY
-RaiseState = S_REDSPRINGBALL2
-
-# Small Firebar
-Mobj MT_SMALLFIREBAR
-MapThingNum = 1136
-SpawnState = S_SMALLFIREBAR1
-SpawnHealth = 1000
-ReactionTime = 8
-PainChance = MT_FLAMEPARTICLE
-Speed = 24*FRACUNIT
-Radius = 17*FRACUNIT
-Height = 34*FRACUNIT
-Mass = DMG_NORMAL
-Damage = 1
-Flags = MF_SCENERY|MF_PAIN|MF_FIRE|MF_NOGRAVITY
-
-# Big Firebar
-Mobj MT_BIGFIREBAR
-MapThingNum = 1137
-SpawnState = S_BIGFIREBAR1
-SpawnHealth = 1000
-ReactionTime = 8
-PainChance = MT_FLAMEPARTICLE
-Speed = 48*FRACUNIT
-Radius = 34*FRACUNIT
-Height = 68*FRACUNIT
-DispOffset = 1
-Mass = DMG_NORMAL
-Damage = 1
-Flags = MF_SCENERY|MF_PAIN|MF_FIRE|MF_NOGRAVITY
 
 # Flower
 Mobj MT_CEZFLOWER
@@ -3096,29 +2899,6 @@ Radius = 24*FRACUNIT
 Height = 32*FRACUNIT
 Mass = 100
 Flags = MF_SPECIAL|MF_SHOOTABLE
-
-Mobj MT_GREENFLAME
-MapThingNum = 1505
-SpawnState = S_GREENFLAME
-SpawnHealth = 1000
-ReactionTime = 8
-PainChance = MT_NULL
-Radius = 8*FRACUNIT
-Height = 32*FRACUNIT
-Flags = MF_NOGRAVITY|MF_PAIN
-
-Mobj MT_BLUEGARGOYLE
-MapThingNum = 1506
-SpawnState = S_BLUEGARGOYLE
-SpawnHealth = 1000
-ReactionTime = 8
-Speed = 21*FRACUNIT
-Radius = 16*FRACUNIT
-Height = 40*FRACUNIT
-Mass = 100
-Damage = 1
-ActiveSound = sfx_statu2
-Flags = MF_SLIDEME|MF_SOLID|MF_PUSHABLE
 
 # Stalagmites
 Mobj MT_STALAGMITE0
@@ -4389,16 +4169,6 @@ Height = 4*FRACUNIT
 Damage = 2
 Flags = MF_NOBLOCKMAP
 
-# Blizzard Snowball
-Mobj MT_BLIZZARDSNOW
-SpawnState = S_BLIZZARDSNOW1
-SpawnHealth = 1000
-Speed = 24*FRACUNIT
-Radius = 4*FRACUNIT
-Height = 4*FRACUNIT
-Damage = 2
-Flags = MF_NOBLOCKMAP
-
 # Water splish!
 Mobj MT_SPLISH
 SpawnState = S_SPLISH1
@@ -4632,29 +4402,6 @@ Radius = 16*FRACUNIT
 Height = 16*FRACUNIT
 Mass = 100
 Flags = MF_NOBLOCKMAP|MF_NOSECTOR|MF_NOGRAVITY|MF_AMBIENT
-
-Mobj MT_CORK
-SpawnState = S_CORK
-SpawnHealth = 1000
-SeeSound = sfx_corkp
-DeathState = S_SMOKE1
-DeathSound = sfx_corkh
-Speed = 60*FRACUNIT
-Radius = 16*FRACUNIT
-Height = 16*FRACUNIT
-Damage = 1
-Flags = MF_NOBLOCKMAP|MF_MISSILE|MF_NOGRAVITY
-
-Mobj MT_LHRT
-SpawnState = S_LHRT
-SpawnHealth = 1000
-DeathState = S_SPRK1
-XDeathState = S_SPRK1
-Speed = 60*FRACUNIT
-Radius = 16*FRACUNIT
-Height = 16*FRACUNIT
-Damage = 1
-Flags = MF_NOBLOCKMAP|MF_MISSILE
 
 # Ring Weapons
 Mobj MT_REDRING
@@ -5021,15 +4768,6 @@ Radius = 8*FRACUNIT
 Height = 16*FRACUNIT
 Mass = 100
 Flags = MF_PAIN|MF_FIRE
-
-Mobj MT_PUMATRAIL
-SpawnState = S_PUMATRAIL1
-SpawnHealth = 1000
-ReactionTime = 8
-Radius = 2*FRACUNIT
-Height = 4*FRACUNIT
-Mass = 100
-Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY
 
 Mobj MT_HAMMER
 SpawnState = S_HAMMER
@@ -7150,18 +6888,6 @@ DispOffset = 2
 Mass = 100
 Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_DONTENCOREMAP
 
-# Grow/Invinc clash VFX
-Mobj MT_POWERCLASH
-SpawnState = S_POWERCLASH
-SpawnHealth = 1000
-ReactionTime = 8
-Speed = 8
-Radius = 8*FRACUNIT
-Height = 8*FRACUNIT
-DispOffset = 2
-Mass = 100
-Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_DONTENCOREMAP
-
 Mobj MT_PLAYERARROW
 SpawnState = S_PLAYERARROW
 SpawnHealth = 1000
@@ -7238,8 +6964,8 @@ Height = 922*FRACUNIT
 Flags = MF_NOTHINK|MF_SOLID
 
 # Marble Zone
-Mobj MT_MARBLEFLAMEPARTICLE
-SpawnState = S_MARBLEFLAMEPARTICLE
+Mobj MT_FLAMEPARTICLE
+SpawnState = S_FLAMEPARTICLE
 SpawnHealth = 1000
 ReactionTime = 8
 Radius = FRACUNIT
@@ -7251,7 +6977,7 @@ MapThingNum = 1969
 SpawnState = S_MARBLETORCH
 SpawnHealth = 1000
 ReactionTime = 8
-PainChance = MT_MARBLEFLAMEPARTICLE
+PainChance = MT_FLAMEPARTICLE
 Radius = 12*FRACUNIT
 Height = 45*FRACUNIT
 Flags = MF_SCENERY|MF_NOGRAVITY|MF_PAIN
@@ -8290,7 +8016,7 @@ Mass = 100
 Flags = MF_NOCLIPTHING|MF_NOGRAVITY|MF_NOCLIP|MF_NOCLIPHEIGHT
 
 Mobj MT_WATERTRAIL
-SpawnState = S_WATERTRAIL1
+SpawnState = S_WATERTRAILS
 SpawnHealth = 1000
 ReactionTime = 8
 Radius = 48*FRACUNIT
@@ -8301,7 +8027,7 @@ Damage = 1
 Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOGRAVITY|MF_SCENERY|MF_DONTENCOREMAP
 
 Mobj MT_WATERTRAILUNDERLAY
-SpawnState = S_WATERTRAILUNDERLAY1
+SpawnState = S_WATERTRAILSUNDERLAY
 SpawnHealth = 1000
 ReactionTime = 8
 Radius = 48*FRACUNIT
