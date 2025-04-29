@@ -14560,12 +14560,16 @@ SpriteName = SPR_SSMN
 SpriteFrame = 3
 Duration = 1
 Action = A_SSMineExplode
-Next = S_SSMINE_EXPLODE2
+Var1 = MT_MINEEXPLOSION
 
-State S_SSMINE_EXPLODE2
-Duration = 12
-Action = A_SSMineExplode
-Var1 = 1
+State S_MINEEXPLOSION1
+Duration = 6
+Next = S_MINEEXPLOSION2
+
+State S_MINEEXPLOSION2
+SpriteFrame = 1
+Duration = 22
+Action = A_ForceStop
 
 # New explosion
 State S_QUICKBOOM1
@@ -18094,14 +18098,8 @@ Next = S_EBARREL18
 State S_EBARREL18
 SpriteName = SPR_BRRR
 SpriteFrame = 16
-Duration = 1
 Action = A_SSMineExplode
-Next = S_EBARREL19
-
-State S_EBARREL19
-Duration = 12
-Action = A_SSMineExplode
-Var1 = 1
+Var1 = MT_MINEEXPLOSION
 
 State S_MERRYHORSE
 SpriteName = SPR_HRSE
