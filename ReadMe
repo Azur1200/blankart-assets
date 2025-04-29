@@ -5,5 +5,6 @@ This contains everything to create main.pk3.
 Requriements:
 python3
 zopfil (or zlib although hashes were made with zopfil in mind)
+xxhash (For printing the checksum after file is made)
 
 Thanks to GenericHeroGuy for creating this very handy Pk3 build system!
