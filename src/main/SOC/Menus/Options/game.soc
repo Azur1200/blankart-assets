@@ -84,26 +84,31 @@ Cvar = kartpurpledrift
 
 MenuItem
 Y = 40
+Text = Slipdash
+Cvar = kartslipdash
+
+MenuItem
+Y = 50
 Text = Bump Spark
 Cvar = kartbumpspark
 
 MenuItem
-Y = 50
+Y = 60
 Text = Bump Spring
 Cvar = kartbumpspring
 
 MenuItem
-Y = 60
+Y = 70
 Text = Boost Stacking
 Cvar = kartstacking
 
 MenuItem
-Y = 70
+Y = 80
 Text = Boost Chaining
 Cvar = kartchaining
 
 MenuItem
-Y = 80
+Y = 90
 Text = Chain Offroad
 Cvar = kartchaining_chainoffroad
 
