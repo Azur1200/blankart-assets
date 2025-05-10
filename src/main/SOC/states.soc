@@ -14700,16 +14700,6 @@ State S_LANDMINE_EXPLODE
 Duration = 1
 Action = A_LandMineExplode
 
-# Drop Target
-State S_DROPTARGET
-SpriteName = SPR_DTRG
-Duration = -1
-
-State S_DROPTARGET_SPIN
-SpriteName = SPR_DTRG
-SpriteFrame = 1
-Duration = -1
-
 # Ballhog
 State S_BALLHOG1
 SpriteName = SPR_BHOG

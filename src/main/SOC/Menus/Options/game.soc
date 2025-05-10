@@ -126,18 +126,23 @@ Text = Sneakers
 KeyHandler = MR_HandleMonitorToggles
 
 MenuItem
+AlphaKey = KRITEM_DUALSNEAKER
+Text = Sneakers x2
+KeyHandler = MR_HandleMonitorToggles
+
+MenuItem
 AlphaKey = KRITEM_TRIPLESNEAKER
 Text = Sneakers x3
 KeyHandler = MR_HandleMonitorToggles
 
 MenuItem
-AlphaKey = KITEM_ROCKETSNEAKER
-Text = Rocket Sneakers
+AlphaKey = 0
+Text = Toggle All
 KeyHandler = MR_HandleMonitorToggles
 
 MenuItem
-AlphaKey = 0
-Text = Toggle All
+AlphaKey = KITEM_ROCKETSNEAKER
+Text = Rocket Sneakers
 KeyHandler = MR_HandleMonitorToggles
 
 MenuItem
@@ -253,11 +258,6 @@ KeyHandler = MR_HandleMonitorToggles
 MenuItem
 AlphaKey = KITEM_KITCHENSINK
 Text = Kitchen Sinks
-KeyHandler = MR_HandleMonitorToggles
-
-MenuItem
-AlphaKey = KITEM_DROPTARGET
-Text = Drop Target
 KeyHandler = MR_HandleMonitorToggles
 
 #ifdef ITEMTOGGLEBOTTOMRIGHT
