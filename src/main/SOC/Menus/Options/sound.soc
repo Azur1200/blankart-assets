@@ -39,37 +39,66 @@ Text = Surround Sound
 Cvar = surround
 
 MenuItem
+Text = Audio Effects...
 Y = 75
-Text = Chat Notifications
-Cvar = chatnotifications
+SubMenu = OP_SNDEFX
 
 MenuItem
-Y = 85
-Text = Character voices
-Cvar = kartvoices
-
-MenuItem
-Y = 95
-Text = Powerup Warning
-Cvar = kartinvinsfx
-
-MenuItem
-Y = 110
+Y = 90
 Text = Sound Test
 KeyHandler = MR_HandleSoundTest
 
 MenuItem
-Y = 120
+Y = 100
 Text = Music Test
 Call = MR_MusicTest
 
 MenuItem
-Y = 135
+Y = 115
 Text = Play Music While Unfocused
 Cvar = playmusicifunfocused
 
 MenuItem
-Y = 145
+Y = 125
 Text = Play SFX While Unfocused
 Cvar = playsoundifunfocused
 
+
+Menu OP_SNDEFX
+X = 60
+Y = 30
+HeaderPic = M_SOUND
+MenuItem
+Y = 10
+Text = Chat Notifications
+Cvar = chatnotifications
+
+MenuItem
+Y = 20
+Text = Character voices
+Cvar = kartvoices
+
+MenuItem
+Y = 30
+Text = Powerup Warning
+Cvar = kartinvinsfx
+
+MenuItem
+Y = 40
+Text = Invincibility Music
+Cvar = supermusic
+
+MenuItem
+Y = 50
+Text = Grow Music
+Cvar = growmusic
+
+MenuItem
+Y = 60
+Text = New Drift Sounds
+Cvar = kartdriftsounds
+
+MenuItem
+Y = 70
+Text = Sneaker Stack Sound
+Cvar = kartstacking_sneakerstacksound

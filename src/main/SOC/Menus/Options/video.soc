@@ -142,3 +142,18 @@ MenuItem
 Y = 20
 Text = Sprite Slope Tilt
 Cvar = spritesloperoll
+
+MenuItem
+Y = 30
+Text = Driftspark Pulse
+Cvar = driftsparkpulse
+
+MenuItem
+Y = 40
+Text = New Drift Effects
+Cvar = kartdriftefx
+
+MenuItem
+Y = 50
+Text = Flame Stack Coloring
+Cvar = kartstacking_colorflame

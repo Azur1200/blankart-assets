@@ -48,8 +48,13 @@ Y = 8
 Text = Deadzone
 Cvar = deadzone
 
-MenuItem
+MenuItem DEAZS
 Y = 16
+Text = Deadzone Style
+Cvar = deadzonestyle
+
+MenuItem
+Y = 32
 Text = Reset to defaults
 Call = MR_ResetControls
 
