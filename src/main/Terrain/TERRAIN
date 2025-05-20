@@ -1,0 +1,181 @@
+// A recreation of hardcode offroad dust.
+Footstep OffroadDefault
+{
+    MobjType MT_WIPEOUTTRAIL
+    SFX DSCDFM70
+	CONE 20
+    PUSHH 0.3
+    PUSHV 0
+    SPREAD 0
+}
+
+defaultOffroadFootstep OffroadDefault
+
+Splash SplashDefault
+{
+    MobjType MT_WIPEOUTTRAIL
+    SFX DSS3K4C
+	NUMPARTICLES 10
+	PushH 1
+	PushV 3
+}
+
+Terrain Default
+{
+    Splash SplashDefault
+}
+
+DefaultTerrain Default
+
+Terrain NoRemap
+{
+	Remap false
+}
+
+Terrain Offroad
+{
+    Splash SplashDefault
+	Offroad 2
+}
+
+Terrain Offroad-Strong
+{
+    Splash SplashDefault
+	Offroad 3
+}
+
+Terrain SneakerPanel
+{
+	SneakerPanel true
+	Remap false
+}
+
+Terrain WaterRunPanel
+{
+	WaterRunPanel true
+	Remap false
+}
+
+Terrain Tripwire
+{
+    Tripwire true
+	Remap false
+}
+
+// Pogo Springs
+Terrain PogoSpring-Red
+{
+    PogoSpring 1
+	Remap false
+}
+
+Terrain PogoSpring-Yellow
+{
+    PogoSpring 2
+	Remap false
+}
+
+// Scaled Stength Pogos
+Terrain PogoSpring-RedNormal
+{
+	PogoSpring 1
+	SpringStrength 2
+	Remap false
+}
+
+Terrain PogoSpring-RedStrong
+{
+	PogoSpring 1
+	SpringStrength 3
+	Remap false
+}
+
+Terrain PogoSpring-RedSuperStrong
+{
+	PogoSpring 1
+	SpringStrength 4
+	Remap false
+}
+
+Terrain PogoSpring-YellowNormal
+{
+	PogoSpring 2
+	SpringStrength 2
+	Remap false
+}
+
+Terrain PogoSpring-YellowStrong
+{
+	PogoSpring 2
+	SpringStrength 3
+	Remap false
+}
+
+Terrain PogoSpring-YellowSuperStrong
+{
+	PogoSpring 2
+	SpringStrength 4
+	Remap false
+}
+
+// Damage types
+Terrain Damage
+{
+    DamageType DMG_NORMAL
+}
+
+Terrain WipeoutDamage
+{
+    DamageType DMG_WIPEOUT
+}
+
+// You must die
+Terrain DeathPit
+{
+    DamageType DMG_DEATHPIT
+}
+
+Terrain InstaKill
+{
+    DamageType DMG_INSTAKILL
+}
+
+// Offroad
+Terrain Offroad-Weak
+{
+    Splash SplashDefault
+	Offroad 1
+}
+
+// Regular Springs
+Terrain Spring-Weak 
+{
+	SpringStrength 1
+	Remap false
+}
+
+Terrain Spring-Normal 
+{
+	SpringStrength 2
+	Remap false
+}
+
+Terrain Spring-Strong
+{
+	SpringStrength 3
+	Remap false
+}
+
+Terrain Spring-SuperStrong
+{
+	SpringStrength 4
+	Remap false
+}
+
+// Fast as fuck
+Terrain ChargerPanel
+{
+	SneakerPanel true
+	OutRun 160
+	Remap false
+}
