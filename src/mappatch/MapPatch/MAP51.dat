@@ -165,7 +165,6 @@ thing	// 14
 	type = 2001;
 	arg0 = 15;
 	arg1 = 160;
-	arg3 = 4;
 }
 
 thing	// 15
