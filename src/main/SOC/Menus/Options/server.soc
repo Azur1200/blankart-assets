@@ -1,6 +1,6 @@
 Menu OP_SERVER
 X = 24
-Y = 30
+Y = 15
 HeaderPic = M_SERVER
 MenuItem
 Y = 10
@@ -24,36 +24,46 @@ Cvar = votetime
 
 MenuItem
 Y = 70
+Text = Voting Row Amount
+Cvar = votemaxrows
+
+MenuItem
+Y = 80
 Text = Voting Rule Changes
 Cvar = kartvoterulechanges
 
 MenuItem
 Y = 90
+Text = Voting Encore Rules
+Cvar = kartencorevotes
+
+MenuItem
+Y = 110
 Text = Max. Player Count
 Cvar = maxplayers
 
 MenuItem
-Y = 100
+Y = 120
 Text = Allow Players to Join
 Cvar = allowjoin
 
 MenuItem
-Y = 110
+Y = 130
 Text = Allow Addon Downloading
 Cvar = downloading
 
 MenuItem
-Y = 120
+Y = 140
 Text = Pause Permission
 Cvar = pausepermission
 
 MenuItem
-Y = 130
+Y = 150
 Text = Mute All Chat
 Cvar = mute
 
 MenuItem
-Y = 150
+Y = 170
 Text = Advanced Options...
 Submenu = OP_ADVANCEDSERVER
 

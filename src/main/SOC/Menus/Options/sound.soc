@@ -1,6 +1,6 @@
 Menu OP_SOUND
 X = 30
-Y = 30
+Y = 20
 HeaderPic = M_SOUND
 DrawRoutine = MD_DrawSkyRoom
 MenuItem SNDENA
@@ -23,11 +23,6 @@ Y = 38
 Text = Music Volume
 CvarSlider = musicvolume
 
-#MenuItem
-#Y = 50
-#Text = Restart Audio System
-#Routine = MR_RestartAudio
-#
 MenuItem
 Y = 50
 Text = Reverse L/R Channels
@@ -63,6 +58,21 @@ Y = 125
 Text = Play SFX While Unfocused
 Cvar = playsoundifunfocused
 
+MenuItem
+Y = 145
+Text = Music Resync Threshold
+Cvar = music_resync_threshold
+
+MenuItem
+Y = 155
+Text = Only Resync Power Music
+Cvar = music_resync_powerups_only
+
+MenuItem
+Y = 165
+Text = Restart Audio System
+Call = MR_RestartAudio
+
 
 Menu OP_SNDEFX
 X = 60
@@ -95,10 +105,15 @@ Cvar = growmusic
 
 MenuItem
 Y = 60
+Text = Reset Special Music
+Cvar = resetspecialmusic
+
+MenuItem
+Y = 70
 Text = New Drift Sounds
 Cvar = kartdriftsounds
 
 MenuItem
-Y = 70
+Y = 80
 Text = Sneaker Stack Sound
 Cvar = kartstacking_sneakerstacksound

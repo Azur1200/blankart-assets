@@ -1,64 +1,69 @@
 Menu OP_GAME
 X = 30
-Y = 30
+Y = 10
 HeaderPic = M_GAME
 MenuItem
-Y = 10
+Y = 20
 Text = Random Item Toggles...
 Submenu = OP_MONITORTOGGLE
 
 MenuItem
 Y = 30
-Text = BlanKart Gameplay...
+Text = Gameplay Mods...
 Submenu = OP_BLANKARTGAME
 
 MenuItem
 Y = 40
+Text = Bots...
+Submenu = OP_BLANKARTBOT
+
+MenuItem
+Y = 50
 Text = Race Game Speed
 Cvar = kartspeed
 
 MenuItem
-Y = 50
+Y = 60
 Text = Battle Game Speed
 Cvar = kartbattlespeed
 
 MenuItem
-Y = 60
+Y = 70
 Text = Frantic Items
 Cvar = kartfrantic
 
 MenuItem ENCORE
-Y = 70
+Y = 80
 TextSecret = Encore Mode
 Cvar = kartencore
 
 MenuItem
-Y = 90
+Y = 100
 Text = Number of Laps
 Cvar = numlaps
 
 MenuItem
-Y = 100
+Y = 110
 Text = Exit Countdown Timer
 Cvar = countdowntime
 
 MenuItem
-Y = 120
+Y = 130
 Text = Time Limit
 Cvar = timelimit
 
 MenuItem
-Y = 130
+Y = 140
 Text = Starting Bumpers
 Cvar = kartbumpers
 
 MenuItem
-Y = 140
+Y = 160
 Text = Karma Comeback
 Cvar = kartcomeback
 
 MenuItem
-Y = 160
+Y = 170
 Text = Track Power Levels
 Cvar = kartusepwrlv
 
@@ -111,6 +116,27 @@ MenuItem
 Y = 90
 Text = Chain Offroad
 Cvar = kartchaining_chainoffroad
+
+
+Menu OP_BLANKARTBOT
+X = 30
+Y = 30
+HeaderPic = M_GAME
+MenuItem
+Y = 10
+Text = Bot Difficulty
+Cvar = kartbot
+
+MenuItem
+Y = 20
+Text = Base Complexity
+Cvar = kartbot_basetrackcomplexity
+
+MenuItem
+Y = 30
+Text = Max Complexity Modifier
+Cvar = kartbot_modifiermax
+
 
 
 Menu OP_MONITORTOGGLE
