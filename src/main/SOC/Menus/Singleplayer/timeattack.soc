@@ -169,17 +169,20 @@ DrawRoutine = MD_DrawTimeAttackMenu
 MenuItem SRB2KART
 Y = 94
 TextWhite = SRB2Kart Mode
-Call = MR_SRB2KartPreset
+Argument = 0
+Call = MR_TimeAttackPreset
 
 MenuItem TECH
 Y = 104
 TextWhite = Tech Mode
-Call = MR_TechPreset
+Argument = 1
+Call = MR_TimeAttackPreset
 
 MenuItem BLANKART
 Y = 114
 TextWhite = BlanKart Mode
-Call = MR_BlanKartPreset
+Argument = 2
+Call = MR_TimeAttackPreset
 
 MenuItem CUSTOM
 Y = 124

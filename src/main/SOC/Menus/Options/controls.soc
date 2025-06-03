@@ -5,22 +5,26 @@ HeaderPic = M_CONTRO
 MenuItem P1CONTROLS
 Y = 10
 Text = Player 1 Controls...
-Call = MR_Setup1PControlsMenu
+Argument = 0
+Call = MR_SetupControlsMenu
 
 MenuItem P2CONTROLS
 Y = 20
 Text = Player 2 Controls...
-Call = MR_Setup2PControlsMenu
+Argument = 1
+Call = MR_SetupControlsMenu
 
 MenuItem P3CONTROLS
 Y = 30
 Text = Player 3 Controls...
-Call = MR_Setup3PControlsMenu
+Argument = 2
+Call = MR_SetupControlsMenu
 
 MenuItem P4CONTROLS
 Y = 40
 Text = Player 4 Controls...
-Call = MR_Setup4PControlsMenu
+Argument = 3
+Call = MR_SetupControlsMenu
 
 MenuItem CONTROLPERKEY
 Y = 60
@@ -41,7 +45,8 @@ DrawRoutine = MD_DrawControl
 MenuItem SETJOY
 Y = 0
 Text = Select Gamepad...
-Call = MR_Setup1PJoystickMenu
+Argument = 0
+Call = MR_SetupJoystickMenu
 
 MenuItem DEADZ
 Y = 8
