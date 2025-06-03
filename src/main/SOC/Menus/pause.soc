@@ -22,17 +22,6 @@ Menu SPAUSE
 X = 40
 Y = 72
 DrawRoutine = MD_DrawPauseMenu
-# Pandora's Box will be shifted up if both options are available
-MenuItem PANDORA
-Y = 16
-Text = Pandora's Box...
-Call = MR_PandorasBox
-
-MenuItem EMBLEMS
-Y = 24
-Text = Medal Hints...
-Call = MR_EmblemHints
-
 MenuItem CONTINUE
 Y = 48
 Text = Continue
