@@ -1,3 +1,7 @@
+// SMK Donut Plains 1
+// Waypoints: GenericHeroGuy
+// Rings: GenericHeroGuy
+
 namespace = "blankart-patch";
 version = 1;
 checksum = "4eae859b70186593";

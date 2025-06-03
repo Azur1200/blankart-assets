@@ -1,3 +1,7 @@
+// Toxic Palace Zone
+// Waypoints: NepDisk
+// Rings: NepDisk
+
 namespace = "blankart-patch";
 version = 1;
 checksum = "fb3b23cace27b0c2";

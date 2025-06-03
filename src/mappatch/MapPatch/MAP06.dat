@@ -1,5 +1,5 @@
 // Egg Zeppelin Zone
-// Waypoints: based on Playerbots by Sonic1983, modified by Frank and GenericHeroGuy
+// Waypoints: Sonic1983 (PB), SinosTH (PB), Frank, GenericHeroGuy
 
 namespace = "blankart-patch";
 version = 1;

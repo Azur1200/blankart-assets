@@ -1,3 +1,6 @@
+// SM Special Stage 3
+// Waypoints: GenericHeroGuy
+
 namespace = "blankart-patch";
 version = 1;
 checksum = "282cf77c0aad00c2";

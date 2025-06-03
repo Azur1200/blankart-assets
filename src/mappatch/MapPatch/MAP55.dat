@@ -1,3 +1,6 @@
+// SMK Vanilla Lake 2
+// Waypoints: GenericHeroGuy
+
 namespace = "blankart-patch";
 version = 1;
 checksum = "bd965a1a53b4250f";
