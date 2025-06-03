@@ -3,32 +3,32 @@ X = 24
 Y = 40
 HeaderPic = M_MULTI
 DrawRoutine = MD_DrawServerMenu
-MenuItem
+MenuItem MAXPLAYERS
 Y = 10
 Text = Max. Player Count
 Cvar = maxplayers
 
-MenuItem
+MenuItem ADVERTISE
 Y = 20
 Text = Advertise
 Cvar = advertise
 
-MenuItem
+MenuItem SERVERNAME
 Y = 30
 Text = Server Name
 CvarString = servername
 
-MenuItem
+MenuItem GAMETYPE
 Y = 68
 Text = Game Type
 Cvar = newgametype
 
-MenuItem
+MenuItem LEVEL
 Y = 78
 Text = Level
 Cvar = nextmap
 
-MenuItem
+MenuItem START
 Y = 130
 TextWhite = Start
 Call = MR_StartServer
@@ -39,17 +39,17 @@ X = 24
 Y = 40
 HeaderPic = M_MULTI
 DrawRoutine = MD_DrawServerMenu
-MenuItem
+MenuItem GAMETYPE
 Y = 68
 Text = Game Type
 Cvar = newgametype
 
-MenuItem
+MenuItem LEVEL
 Y = 78
 Text = Level
 Cvar = nextmap
 
-MenuItem
+MenuItem START
 Y = 130
 TextWhite = Start
 Call = MR_StartServer

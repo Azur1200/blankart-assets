@@ -3,72 +3,72 @@ X = 30
 Y = 20
 HeaderPic = M_SOUND
 DrawRoutine = MD_DrawSkyRoom
-MenuItem SNDENA
+MenuItem SOUND
 Y = 10
 Text = SFX
 Cvar = sounds
 
-MenuItem
+MenuItem SOUNDVOLUME
 Y = 18
 Text = SFX Volume
 CvarSlider = soundvolume
 
-MenuItem MUSENA
+MenuItem MUSIC
 Y = 30
 Text = Music
 Cvar = music
 
-MenuItem
+MenuItem MUSICVOLUME
 Y = 38
 Text = Music Volume
 CvarSlider = musicvolume
 
-MenuItem
+MenuItem REVERSE
 Y = 50
 Text = Reverse L/R Channels
 Cvar = stereoreverse
 
-MenuItem
+MenuItem SURROUND
 Y = 60
 Text = Surround Sound
 Cvar = surround
 
-MenuItem
+MenuItem AUDIOEFFECTS
 Text = Audio Effects...
 Y = 75
 SubMenu = OP_SNDEFX
 
-MenuItem
+MenuItem SOUNDTEST
 Y = 90
 Text = Sound Test
 KeyHandler = MR_HandleSoundTest
 
-MenuItem
+MenuItem MUSICTEST
 Y = 100
 Text = Music Test
 Call = MR_MusicTest
 
-MenuItem
+MenuItem MUSICUNFOCUSED
 Y = 115
 Text = Play Music While Unfocused
 Cvar = playmusicifunfocused
 
-MenuItem
+MenuItem SOUNDUNFOCUSED
 Y = 125
 Text = Play SFX While Unfocused
 Cvar = playsoundifunfocused
 
-MenuItem
+MenuItem MUSICRESYNC
 Y = 145
 Text = Music Resync Threshold
 Cvar = music_resync_threshold
 
-MenuItem
+MenuItem RESYNCPOWERUPS
 Y = 155
 Text = Only Resync Power Music
 Cvar = music_resync_powerups_only
 
-MenuItem
+MenuItem RESTARTAUDIO
 Y = 165
 Text = Restart Audio System
 Call = MR_RestartAudio
@@ -78,42 +78,42 @@ Menu OP_SNDEFX
 X = 60
 Y = 30
 HeaderPic = M_SOUND
-MenuItem
+MenuItem CHATNOTIFICATIONS
 Y = 10
 Text = Chat Notifications
 Cvar = chatnotifications
 
-MenuItem
+MenuItem VOICES
 Y = 20
 Text = Character voices
 Cvar = kartvoices
 
-MenuItem
+MenuItem POWERUPS
 Y = 30
 Text = Powerup Warning
 Cvar = kartinvinsfx
 
-MenuItem
+MenuItem INVINCIBILITY
 Y = 40
 Text = Invincibility Music
 Cvar = supermusic
 
-MenuItem
+MenuItem GROW
 Y = 50
 Text = Grow Music
 Cvar = growmusic
 
-MenuItem
+MenuItem RESETSPECIAL
 Y = 60
 Text = Reset Special Music
 Cvar = resetspecialmusic
 
-MenuItem
+MenuItem DRIFTSOUNDS
 Y = 70
 Text = New Drift Sounds
 Cvar = kartdriftsounds
 
-MenuItem
+MenuItem SNEAKERSTACK
 Y = 80
 Text = Sneaker Stack Sound
 Cvar = kartstacking_sneakerstacksound

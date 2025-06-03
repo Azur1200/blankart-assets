@@ -1,36 +1,36 @@
 Menu OP_CAMERA
 X = 30
 Y = 30
-MenuItem
+MenuItem HEADER
 Y = 0
 TextHeader = Camera Options
 
-MenuItem
+MenuItem TILTING
 Y = 20
 Text = Camera Tilting
 Cvar = tilting
 
-MenuItem
+MenuItem LAGLESS
 Y = 30
 Text = Lagless Camera
 Cvar = laglesscamera
 
-MenuItem
+MenuItem P1CAMERA
 Y = 50
 Text = Player 1 Camera options...
 Submenu = OP_P1CAMERA
 
-MenuItem
+MenuItem P2CAMERA
 Y = 60
 Text = Player 2 Camera options...
 Submenu = OP_P2CAMERA
 
-MenuItem
+MenuItem P3CAMERA
 Y = 70
 Text = Player 3 Camera options...
 Submenu = OP_P3CAMERA
 
-MenuItem
+MenuItem P4CAMERA
 Y = 80
 Text = Player 4 Camera options...
 Submenu = OP_P4CAMERA
@@ -39,31 +39,31 @@ Submenu = OP_P4CAMERA
 Menu OP_P1CAMERA
 X = 30
 Y = 30
-MenuItem
+MenuItem HEADER
 Y = 0
 TextHeader = Player 1 Camera Options
 
-MenuItem
+MenuItem FLIPCAM
 Y = 30
 Text = Flipcam
 Cvar = flipcam
 
-MenuItem
+MenuItem CAMDISTANCE
 Y = 40
 Text = Camera Distance
 CvarInteger = cam_dist
 
-MenuItem
+MenuItem CAMHEIGHT
 Y = 50
 Text = Camera Height
 CvarInteger = cam_height
 
-MenuItem
+MenuItem CAMSPEED
 Y = 60
 Text = Camera Speed
 Cvar = cam_speed
 
-MenuItem
+MenuItem CHASECAM
 Y = 85
 Text = Third Person Camera
 Cvar = chasecam

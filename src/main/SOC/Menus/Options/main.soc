@@ -2,32 +2,32 @@ Menu OP_MAIN
 X = 60
 Y = 30
 HeaderPic = M_OPTTTL
-MenuItem
+MenuItem CONTROLS
 Y = 10
 Text = Control Setup...
 Submenu = OP_CONTROLSETUP
 
-MenuItem
+MenuItem VIDEO
 Y = 30
 Text = Video Options...
 Submenu = OP_VIDEO
 
-MenuItem
+MenuItem SOUND
 Y = 40
 Text = Sound Options...
 Submenu = OP_SOUND
 
-MenuItem
+MenuItem HUD
 Y = 60
 Text = HUD Options...
 Submenu = OP_HUD
 
-MenuItem
+MenuItem CAMERA
 Y = 70
 Text = Camera Options...
 Submenu = OP_CAMERA
 
-MenuItem GAMEPL
+MenuItem GAMEPLAY
 Y = 80
 Text = Gameplay Options...
 Submenu = OP_GAME
@@ -37,7 +37,7 @@ Y = 90
 Text = Server Options...
 Submenu = OP_SERVER
 
-MenuItem
+MenuItem DATA
 Y = 110
 Text = Data Options...
 Submenu = OP_DATA
@@ -47,17 +47,17 @@ Y = 120
 Text = Custom Options...
 Submenu = OP_CUSTOM
 
-MenuItem
+MenuItem MANUAL
 Y = 140
 Text = Tricks & Secrets (F1)
 Call = MR_Manual
 
-MenuItem KCRED
+MenuItem KARTCREDITS
 Y = 150
 Text = Play Kart Credits
 Call = MR_Credits
 
-MenuItem BCRED
+MenuItem BLANCREDITS
 Y = 160
 Text = Play BlanKart Credits
 Call = MR_BlanCredits

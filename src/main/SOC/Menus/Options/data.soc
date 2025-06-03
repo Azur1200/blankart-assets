@@ -2,22 +2,22 @@ Menu OP_DATA
 X = 60
 Y = 30
 HeaderPic = M_DATA
-MenuItem
+MenuItem SCREENSHOTS
 Y = 10
 Text = Screenshot Options...
 Call = MR_ScreenshotOptions
 
-MenuItem
+MenuItem ADDONS
 Y = 20
 Text = Addon Options...
 Call = MR_AddonsOptions
 
-MenuItem
+MenuItem REPLAYS
 Y = 30
 Text = Replay Options...
 Submenu = MISC_REPLAYOPTIONS
 
-MenuItem DISCOR
+MenuItem DISCORD
 TextDisabled = 
 
 MenuItem ERASE
@@ -30,12 +30,12 @@ Menu MISC_REPLAYOPTIONS
 X = 27
 Y = 40
 HeaderPic = M_REPOPT
-MenuItem
+MenuItem RECORD
 Y = 0
 Text = Record Replays
 Cvar = netdemo_record
 
-MenuItem
+MenuItem SYNCQUALITY
 Y = 10
 Text = Sync Check Interval
 Cvar = netdemo_syncquality
@@ -45,7 +45,7 @@ Menu OP_SCREENSHOTS
 X = 30
 Y = 30
 HeaderPic = M_SCSHOT
-MenuItem
+MenuItem LOCATION
 Y = 10
 Text = Storage Location
 Cvar = screenshot_option
@@ -55,65 +55,65 @@ Y = 20
 Text = Custom Folder
 CvarString = screenshot_folder
 
-MenuItem
+MenuItem SCREENSHOTHEADER
 Y = 50
 TextHeader = Screenshots (F8)
 
-MenuItem
+MenuItem MEMORY
 Y = 60
 Text = Memory Level
 Cvar = png_memory_level
 
-MenuItem
+MenuItem COMPRESSION
 Y = 70
 Text = Compression Level
 Cvar = png_compress_level
 
-MenuItem
+MenuItem STRATEGY
 Y = 80
 Text = Strategy
 Cvar = png_strategy
 
-MenuItem
+MenuItem WINDOWSIZE
 Y = 90
 Text = Window Size
 Cvar = png_window_size
 
-MenuItem
+MenuItem MOVIEHEADER
 Y = 105
 TextHeader = Movie Mode (F9)
 
-MenuItem
+MenuItem MOVIEMODE
 Y = 115
 Text = Capture Mode
 Cvar = moviemode_mode
 
-MenuItem GIFOPT
+MenuItem GIFOPTIMIZE
 Y = 125
 Text = Region Optimizing
 Cvar = gif_optimize
 
-MenuItem GIFDWN
+MenuItem GIFDOWNSCALE
 Y = 135
 Text = Downscaling
 Cvar = gif_downscale
 
-MenuItem APNMEM
+MenuItem APNGMEMORY
 Y = 125
 Text = Memory Level
 Cvar = apng_memory_level
 
-MenuItem APNCMP
+MenuItem APNGCOMPRESSION
 Y = 135
 Text = Compression Level
 Cvar = apng_compress_level
 
-MenuItem APNSTR
+MenuItem APNGSTRATEGY
 Y = 145
 Text = Strategy
 Cvar = apng_strategy
 
-MenuItem APNWIN
+MenuItem APNGWINDOW
 Y = 155
 Text = Window Size
 Cvar = apng_window_size
@@ -123,11 +123,11 @@ Menu OP_ADDONS
 X = 30
 Y = 30
 HeaderPic = M_ADDONS
-MenuItem
+MenuItem HEADER
 Y = 0
 TextHeader = Menu
 
-MenuItem
+MenuItem LOCATION
 Y = 10
 Text = Location
 Cvar = addons_option
@@ -137,26 +137,26 @@ Y = 20
 Text = Custom Folder
 CvarString = addons_folder
 
-MenuItem
+MenuItem USEHASH
 Y = 48
 Text = Identify addons via
 Cvar = addons_md5
 
-MenuItem
+MenuItem SHOWALL
 Y = 58
 Text = Show unsupported file types
 Cvar = addons_showall
 
-MenuItem
+MenuItem SEARCHHEADER
 Y = 76
 TextHeader = Search
 
-MenuItem
+MenuItem SEARCHTYPE
 Y = 86
 Text = Matching
 Cvar = addons_search_type
 
-MenuItem
+MenuItem SEARCHCASE
 Y = 96
 Text = Case-sensitive
 Cvar = addons_search_case
@@ -166,18 +166,21 @@ Menu OP_ERASEDATA
 X = 30
 Y = 30
 HeaderPic = M_DATA
-MenuItem
+MenuItem RECORDS
 Y = 10
 Text = Erase Record Data
+Argument = 0
 Call = MR_EraseData
 
-MenuItem
+MenuItem UNLOCKABLES
 Y = 20
 Text = Erase Unlockable Data
+Argument = 1
 Call = MR_EraseData
 
-MenuItem
+MenuItem EVERYTHING
 Y = 40
 Text = \85Erase ALL Data
+Argument = 2
 Call = MR_EraseData
 

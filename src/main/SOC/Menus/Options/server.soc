@@ -2,67 +2,67 @@ Menu OP_SERVER
 X = 24
 Y = 15
 HeaderPic = M_SERVER
-MenuItem
+MenuItem NAME
 Y = 10
 Text = Server Name
 CvarString = servername
 
-MenuItem
+MenuItem INTERTIME
 Y = 40
 Text = Intermission Timer
 Cvar = inttime
 
-MenuItem
+MenuItem ADVANCEMAP
 Y = 50
 Text = Map Progression
 Cvar = advancemap
 
-MenuItem
+MenuItem VOTETIME
 Y = 60
 Text = Voting Timer
 Cvar = votetime
 
-MenuItem
+MenuItem VOTEROWS
 Y = 70
 Text = Voting Row Amount
 Cvar = votemaxrows
 
-MenuItem
+MenuItem VOTECHANGES
 Y = 80
 Text = Voting Rule Changes
 Cvar = kartvoterulechanges
 
-MenuItem
+MenuItem VOTEENCORE
 Y = 90
 Text = Voting Encore Rules
 Cvar = kartencorevotes
 
-MenuItem
+MenuItem MAXPLAYERS
 Y = 110
 Text = Max. Player Count
 Cvar = maxplayers
 
-MenuItem
+MenuItem ALLOWJOIN
 Y = 120
 Text = Allow Players to Join
 Cvar = allowjoin
 
-MenuItem
+MenuItem DOWNLOADING
 Y = 130
 Text = Allow Addon Downloading
 Cvar = downloading
 
-MenuItem
+MenuItem PAUSING
 Y = 140
 Text = Pause Permission
 Cvar = pausepermission
 
-MenuItem
+MenuItem MUTECHAT
 Y = 150
 Text = Mute All Chat
 Cvar = mute
 
-MenuItem
+MenuItem ADVANCED
 Y = 170
 Text = Advanced Options...
 Submenu = OP_ADVANCEDSERVER
@@ -72,57 +72,57 @@ Menu OP_ADVANCEDSERVER
 X = 24
 Y = 30
 HeaderPic = M_SERVER
-MenuItem
+MenuItem MASTERSERVER
 Y = 10
 Text = Server Browser Address
 CvarString = masterserver
 
-MenuItem
+MenuItem RESYNCHATTEMPTS
 Y = 40
 Text = Attempts to resynchronise
 Cvar = resynchattempts
 
-MenuItem
+MenuItem MAXDELAY
 Y = 50
 Text = Ping limit (ms)
 Cvar = maxdelay
 
-MenuItem
+MenuItem MAXDELAYTIMEOUT
 Y = 60
 Text = Ping timeout (s)
 Cvar = maxdelaytimeout
 
-MenuItem
+MenuItem NETTIMEOUT
 Y = 70
 Text = Connection timeout (tics)
 Cvar = nettimeout
 
-MenuItem
+MenuItem JOINTIMEOUT
 Y = 80
 Text = Join timeout (tics)
 Cvar = jointimeout
 
-MenuItem
+MenuItem MAXSEND
 Y = 100
 Text = Max. file transfer send (KB)
 Cvar = maxsend
 
-MenuItem
+MenuItem DOWNLOADSPEED
 Y = 110
 Text = File transfer packet rate
 Cvar = downloadspeed
 
-MenuItem
+MenuItem SHOWJOINADDRESS
 Y = 130
 Text = Log join addresses
 Cvar = showjoinaddress
 
-MenuItem
+MenuItem BLAMECFAIL
 Y = 140
 Text = Log resyncs
 Cvar = blamecfail
 
-MenuItem
+MenuItem NOTICEDOWNLOAD
 Y = 150
 Text = Log file transfers
 Cvar = noticedownload

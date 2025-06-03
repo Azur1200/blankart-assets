@@ -1,14 +1,14 @@
 DiscordOnly
 
 Menu MPAUSE
-MenuItem DISCRQ
+MenuItem DISCORDREQUESTS
 Y = 24
 Text = Ask To Join Requests...
 SubMenu = MISC_DISCORDREQUESTS
 
 
 Menu OP_DATA
-MenuItem DISCOR
+MenuItem DISCORD
 Y = 40
 Text = Discord Options...
 Submenu = OP_DISCORD
@@ -20,26 +20,26 @@ Y = 60
 Menu OP_DISCORD
 X = 30
 Y = 30
-MenuItem
+MenuItem RICHPRESENCE
 Y = 10
 Text = Rich Presence
 Cvar = discordrp
 
-MenuItem
+MenuItem HEADER
 Y = 30
 TextHeader = Rich Presence Settings
 
-MenuItem
+MenuItem STREAMER
 Y = 40
 Text = Streamer Mode
 Cvar = discordstreamer
 
-MenuItem
+MenuItem ASKTOJOIN
 Y = 60
 Text = Allow Ask To Join
 Cvar = discordasks
 
-MenuItem
+MenuItem INVITES
 Y = 70
 Text = Allow Invites
 Cvar = discordinvites
@@ -49,5 +49,5 @@ Menu MISC_DISCORDREQUESTS
 X = 0
 Y = 0
 DrawRoutine = MD_DrawDiscordRequests
-MenuItem
+MenuItem .
 KeyHandler = MR_HandleDiscordRequests

@@ -2,32 +2,32 @@ Menu OP_GAME
 X = 30
 Y = 10
 HeaderPic = M_GAME
-MenuItem
+MenuItem ITEMOPTIONS
 Y = 20
 Text = Random Item Toggles...
 Submenu = OP_MONITORTOGGLE
 
-MenuItem
+MenuItem BLANKARTOPTIONS
 Y = 30
 Text = Gameplay Mods...
 Submenu = OP_BLANKARTGAME
 
-MenuItem
+MenuItem BOTOPTIONS
 Y = 40
 Text = Bots...
 Submenu = OP_BLANKARTBOT
 
-MenuItem
+MenuItem RACESPEED
 Y = 50
 Text = Race Game Speed
 Cvar = kartspeed
 
-MenuItem
+MenuItem BATTLESPEED
 Y = 60
 Text = Battle Game Speed
 Cvar = kartbattlespeed
 
-MenuItem
+MenuItem FRANTICITEMS
 Y = 70
 Text = Frantic Items
 Cvar = kartfrantic
@@ -37,32 +37,32 @@ Y = 80
 TextSecret = Encore Mode
 Cvar = kartencore
 
-MenuItem
+MenuItem NUMLAPS
 Y = 100
 Text = Number of Laps
 Cvar = numlaps
 
-MenuItem
+MenuItem COUNTDOWN
 Y = 110
 Text = Exit Countdown Timer
 Cvar = countdowntime
 
-MenuItem
+MenuItem TIMELIMIT
 Y = 130
 Text = Time Limit
 Cvar = timelimit
 
-MenuItem
+MenuItem NUMBUMPERS
 Y = 140
 Text = Starting Bumpers
 Cvar = kartbumpers
 
-MenuItem
+MenuItem KARMA
 Y = 160
 Text = Karma Comeback
 Cvar = kartcomeback
 
-MenuItem
+MenuItem POWERLEVELS
 Y = 170
 Text = Track Power Levels
 Cvar = kartusepwrlv
@@ -72,47 +72,47 @@ Menu OP_BLANKARTGAME
 X = 30
 Y = 30
 HeaderPic = M_GAME
-MenuItem
+MenuItem RINGS
 Y = 10
 Text = Rings
 Cvar = kartrings
 
-MenuItem
+MenuItem ITEMBREAKER
 Y = 20
 Text = Item Breaker
 Cvar = kartitembreaker
 
-MenuItem
+MenuItem PURPLEDRIFT
 Y = 30
 Text = Purple Drift
 Cvar = kartpurpledrift
 
-MenuItem
+MenuItem SLIPDASH
 Y = 40
 Text = Slipdash
 Cvar = kartslipdash
 
-MenuItem
+MenuItem BUMPSPARK
 Y = 50
 Text = Bump Spark
 Cvar = kartbumpspark
 
-MenuItem
+MenuItem BUMPSPRING
 Y = 60
 Text = Bump Spring
 Cvar = kartbumpspring
 
-MenuItem
+MenuItem STACKING
 Y = 70
 Text = Boost Stacking
 Cvar = kartstacking
 
-MenuItem
+MenuItem CHAINING
 Y = 80
 Text = Boost Chaining
 Cvar = kartchaining
 
-MenuItem
+MenuItem CHAINOFFROAD
 Y = 90
 Text = Chain Offroad
 Cvar = kartchaining_chainoffroad
@@ -122,17 +122,17 @@ Menu OP_BLANKARTBOT
 X = 30
 Y = 30
 HeaderPic = M_GAME
-MenuItem
+MenuItem DIFFICULTY
 Y = 10
 Text = Bot Difficulty
 Cvar = kartbot
 
-MenuItem
+MenuItem COMPLEXITY
 Y = 20
 Text = Base Complexity
 Cvar = kartbot_basetrackcomplexity
 
-MenuItem
+MenuItem MODIFIER
 Y = 30
 Text = Max Complexity Modifier
 Cvar = kartbot_modifiermax
@@ -146,149 +146,149 @@ HeaderPic = M_GAME
 DrawRoutine = MD_DrawMonitorToggles
 # Mostly handled by the drawing function.
 # Instead of using this for dumb monitors, lets use the new item bools we have :V
-MenuItem
-AlphaKey = KITEM_SNEAKER
+MenuItem SNEAKER
+Argument = KITEM_SNEAKER
 Text = Sneakers
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KRITEM_DUALSNEAKER
+MenuItem SNEAKER2
+Argument = KRITEM_DUALSNEAKER
 Text = Sneakers x2
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KRITEM_TRIPLESNEAKER
+MenuItem SNEAKER3
+Argument = KRITEM_TRIPLESNEAKER
 Text = Sneakers x3
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = 0
+MenuItem TOGGLEALL
+Argument = 0
 Text = Toggle All
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_ROCKETSNEAKER
+MenuItem ROCKETSNEAKER
+Argument = KITEM_ROCKETSNEAKER
 Text = Rocket Sneakers
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_BANANA
+MenuItem BANANA
+Argument = KITEM_BANANA
 Text = Bananas
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KRITEM_TRIPLEBANANA
+MenuItem BANANA3
+Argument = KRITEM_TRIPLEBANANA
 Text = Bananas x3
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KRITEM_TENFOLDBANANA
+MenuItem BANANA10
+Argument = KRITEM_TENFOLDBANANA
 Text = Bananas x10
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_EGGMAN
+MenuItem EGGMAN
+Argument = KITEM_EGGMAN
 Text = Eggman Monitors
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_ORBINAUT
+MenuItem ORBINAUT
+Argument = KITEM_ORBINAUT
 Text = Orbinauts
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KRITEM_TRIPLEORBINAUT
+MenuItem ORBINAUT3
+Argument = KRITEM_TRIPLEORBINAUT
 Text = Orbinauts x3
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KRITEM_QUADORBINAUT
+MenuItem ORBINAUT4
+Argument = KRITEM_QUADORBINAUT
 Text = Orbinauts x4
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_MINE
+MenuItem MINE
+Argument = KITEM_MINE
 Text = Mines
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_LANDMINE
+MenuItem LANDMINE
+Argument = KITEM_LANDMINE
 Text = Land Mines
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_JAWZ
+MenuItem JAWZ
+Argument = KITEM_JAWZ
 Text = Jawz
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KRITEM_DUALJAWZ
+MenuItem JAWZ2
+Argument = KRITEM_DUALJAWZ
 Text = Jawz x2
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_BALLHOG
+MenuItem BALLHOG
+Argument = KITEM_BALLHOG
 Text = Ballhogs
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_SPB
+MenuItem SPB
+Argument = KITEM_SPB
 Text = Self-Propelled Bombs
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_INVINCIBILITY
+MenuItem INVINCIBILITY
+Argument = KITEM_INVINCIBILITY
 Text = Invinciblity
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_GROW
+MenuItem GROW
+Argument = KITEM_GROW
 Text = Grow
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_SHRINK
+MenuItem SHRINK
+Argument = KITEM_SHRINK
 Text = Shrink
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_THUNDERSHIELD
+MenuItem THUNDERSHIELD
+Argument = KITEM_THUNDERSHIELD
 Text = Thunder Shields
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_BUBBLESHIELD
+MenuItem BUBBLESHIELD
+Argument = KITEM_BUBBLESHIELD
 Text = Bubble Shields
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_FLAMESHIELD
+MenuItem FLAMESHIELD
+Argument = KITEM_FLAMESHIELD
 Text = Flame Shields
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_HYUDORO
+MenuItem HYUDORO
+Argument = KITEM_HYUDORO
 Text = Hyudoros
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_POGOSPRING
+MenuItem POGOSPRING
+Argument = KITEM_POGOSPRING
 Text = Pogo Springs
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_SUPERRING
+MenuItem SUPERRING
+Argument = KITEM_SUPERRING
 Text = Super Rings
 KeyHandler = MR_HandleMonitorToggles
 
-MenuItem
-AlphaKey = KITEM_KITCHENSINK
+MenuItem KITCHENSINK
+Argument = KITEM_KITCHENSINK
 Text = Kitchen Sinks
 KeyHandler = MR_HandleMonitorToggles
 
 #ifdef ITEMTOGGLEBOTTOMRIGHT
-#MenuItem
-#AlphaKey = 255
+#MenuItem ITSFREE
+#Argument = 255
 #Text = ---
 #KeyHandler = MR_HandleMonitorToggles
 #endif

@@ -3,32 +3,32 @@ X = 60
 Y = 40
 HeaderPic = M_PANDRA
 QuitRoutine = MR_ExitPandorasBox
-MenuItem
+MenuItem RINGS
 Y = 20
 Text = Rings
 Cvar = dummyrings
 
-MenuItem
+MenuItem LIVES
 Y = 30
 Text = Lives
 Cvar = dummylives
 
-MenuItem
+MenuItem GRAVITY
 Y = 60
 Text = Gravity
 Cvar = gravity
 
-MenuItem
+MenuItem ALLEMERALDS
 Y = 90
 Text = Get All Emeralds
 Call = MR_GetAllEmeralds
 
-MenuItem
+MenuItem DESTROYROBOTS
 Y = 100
 Text = Destroy All Robots
 Call = MR_DestroyRobots
 
-MenuItem
+MenuItem ULTIMATE
 Y = 130
 Text = Ultimate Cheat
 Call = MR_UltimateCheat

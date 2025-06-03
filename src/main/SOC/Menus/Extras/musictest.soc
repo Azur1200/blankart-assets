@@ -2,5 +2,5 @@ Menu SR_SOUNDTEST
 X = 60
 Y = 150
 DrawRoutine = MD_DrawMusicTest
-MenuItem
+MenuItem .
 KeyHandler = MR_HandleMusicTest

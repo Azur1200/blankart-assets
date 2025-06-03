@@ -14,7 +14,7 @@ Y = 16
 Text = Character
 KeyHandler = MR_HandleSetupMultiPlayer
 
-MenuItem FOLLOW
+MenuItem FOLLOWER
 Y = 26
 Text = Follower
 KeyHandler = MR_HandleSetupMultiPlayer

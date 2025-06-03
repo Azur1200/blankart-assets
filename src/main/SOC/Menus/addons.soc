@@ -3,5 +3,5 @@ X = 50
 Y = 28
 DrawRoutine = MD_DrawAddons
 # dummy menuitem for the control func
-MenuItem
+MenuItem .
 KeyHandler = MR_HandleAddons

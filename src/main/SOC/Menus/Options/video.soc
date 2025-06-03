@@ -3,62 +3,62 @@ X = 30
 Y = 15
 HeaderPic = M_VIDEO
 DrawRoutine = MD_DrawVideoMenu
-MenuItem SETMOD
+MenuItem SETMODE
 Y = 10
 Text = Set Resolution...
 Call = MR_VideoModeMenu
 
-MenuItem
+MenuItem FULLSCREEN
 Y = 20
 Text = Fullscreen
 Cvar = fullscreen
 
-MenuItem
+MenuItem RENDERER
 Y = 30
 Text = Renderer
 Cvar = renderer
 
-MenuItem
+MenuItem GAMMA
 Y = 50
 Text = Gamma
 CvarSlider = gamma
 
-MenuItem
+MenuItem SHOWFPS
 Y = 60
 Text = Show FPS
 Cvar = showfps
 
-MenuItem
+MenuItem VSYNC
 Y = 70
 Text = Vertical Sync
 Cvar = vid_wait
 
-MenuItem
+MenuItem FPSCAP
 Y = 80
 Text = FPS Cap
 Cvar = fpscap
 
-MenuItem
+MenuItem VISUAL
 Y = 100
 Text = Visual Effects...
 SubMenu = OP_VISUAL
 
-MenuItem
+MenuItem DRAWDIST
 Y = 110
 Text = Draw Distance
 Cvar = drawdist
 
-MenuItem
+MenuItem DRAWDISTPRECIP
 Y = 120
 Text = Weather Draw Distance
 Cvar = drawdist_precip
 
-MenuItem
+MenuItem SKYBOX
 Y = 130
 Text = Skyboxes
 Cvar = skybox
 
-MenuItem PARSOF
+MenuItem PARALLEL
 Y = 140
 Text = Parallel Software
 Cvar = parallelsoftware
@@ -75,7 +75,7 @@ Y = 26
 HeaderPic = M_VIDEO
 DrawRoutine = MD_DrawVideoMode
 # dummy menuitem for the control func
-MenuItem
+MenuItem .
 KeyHandler = MR_HandleVideoMode
 
 
@@ -83,47 +83,47 @@ Menu OP_OPENGL
 X = 30
 Y = 30
 HeaderPic = M_VIDEO
-MenuItem
+MenuItem MODELS
 Y = 10
 Text = 3D Models
 Cvar = gr_models
 
-MenuItem
+MenuItem MODELINTERPOLATION
 Y = 20
 Text = Model Interpolation
 Cvar = gr_modelinterpolation
 
-MenuItem
+MenuItem MODELLIGHTING
 Y = 30
 Text = Model Lighting
 Cvar = gr_modellighting
 
-MenuItem
+MenuItem SHADERS
 Y = 40
 Text = Shaders
 Cvar = gr_shaders
 
-MenuItem
+MenuItem TEXTUREDEPTH
 Y = 60
 Text = Texture Quality
 Cvar = scr_depth
 
-MenuItem
+MenuItem FILTERING
 Y = 70
 Text = Texture Filter
 Cvar = gr_filtermode
 
-MenuItem
+MenuItem ANISOTROPIC
 Y = 80
 Text = Anisotropic
 Cvar = gr_anisotropicmode
 
-MenuItem
+MenuItem BILLBOARDING
 Y = 100
 Text = Sprite Billboarding
 Cvar = gr_spritebillboarding
 
-MenuItem
+MenuItem SHEARING
 Y = 110
 Text = Software Perspective
 Cvar = gr_shearing
@@ -133,27 +133,27 @@ Menu OP_VISUAL
 X = 60
 Y = 30
 HeaderPic = M_VIDEO
-MenuItem
+MenuItem VHSPAUSE
 Y = 10
 Text = VHS Effect
 Cvar = vhspause
 
-MenuItem
+MenuItem SLOPEROLL
 Y = 20
 Text = Sprite Slope Tilt
 Cvar = spritesloperoll
 
-MenuItem
+MenuItem SPARKPULSE
 Y = 30
 Text = Driftspark Pulse
 Cvar = driftsparkpulse
 
-MenuItem
+MenuItem DRIFTEFX
 Y = 40
 Text = New Drift Effects
 Cvar = kartdriftefx
 
-MenuItem
+MenuItem COLORFLAME
 Y = 50
 Text = Flame Stack Coloring
 Cvar = kartstacking_colorflame

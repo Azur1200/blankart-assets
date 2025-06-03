@@ -4,7 +4,7 @@ Y = 24
 HeaderPic = M_MULTI
 DrawRoutine = MD_DrawConnectMenu
 QuitRoutine = MR_CancelConnect
-MenuItem
+MenuItem SORTING
 Y = 4
 Text = Sort By
 Cvar = serversort
@@ -14,51 +14,62 @@ Y = 12
 Text = Page
 KeyHandler = MR_HandleServerPage
 
-MenuItem
+MenuItem REFRESH
 Y = 20
 Text = Refresh
 Call = MR_Refresh
 
-MenuItem FIRLIN
+MenuItem LINE1
 Y = 36
+Argument = 0
 Call = MR_Connect
 
-MenuItem
+MenuItem LINE2
 Y = 48
+Argument = 1
 Call = MR_Connect
 
-MenuItem
+MenuItem LINE3
 Y = 60
+Argument = 2
 Call = MR_Connect
 
-MenuItem
+MenuItem LINE4
 Y = 72
+Argument = 3
 Call = MR_Connect
 
-MenuItem
+MenuItem LINE5
 Y = 84
+Argument = 4
 Call = MR_Connect
 
-MenuItem
+MenuItem LINE6
 Y = 96
+Argument = 5
 Call = MR_Connect
 
-MenuItem
+MenuItem LINE7
 Y = 108
+Argument = 6
 Call = MR_Connect
 
-MenuItem
+MenuItem LINE8
 Y = 120
+Argument = 7
 Call = MR_Connect
 
-MenuItem
+MenuItem LINE9
 Y = 132
+Argument = 8
 Call = MR_Connect
 
-MenuItem
+MenuItem LINE10
 Y = 144
+Argument = 9
 Call = MR_Connect
 
-MenuItem LASLIN
+MenuItem LINEMAX
 Y = 156
+Argument = 10
 Call = MR_Connect

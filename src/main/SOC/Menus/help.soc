@@ -2,72 +2,72 @@ Menu HELP
 X = 0
 Y = 0
 DrawRoutine = MD_DrawImageDef
-MenuItem
-Y = 0
+MenuItem PAGE0
+Argument = 0
 Text = MANUAL00
 KeyHandler = MR_HandleImageDef
 
-MenuItem
-Y = 1
+MenuItem PAGE1
+Argument = 1
 Text = MANUAL01
 KeyHandler = MR_HandleImageDef
 
-MenuItem
-Y = 1
+MenuItem PAGE2
+Argument = 1
 Text = MANUAL02
 KeyHandler = MR_HandleImageDef
 
-MenuItem
-Y = 1
+MenuItem PAGE3
+Argument = 1
 Text = MANUAL03
 KeyHandler = MR_HandleImageDef
 
-MenuItem
-Y = 1
+MenuItem PAGE4
+Argument = 1
 Text = MANUAL04
 KeyHandler = MR_HandleImageDef
 
-MenuItem
-Y = 1
+MenuItem PAGE5
+Argument = 1
 Text = MANUAL05
 KeyHandler = MR_HandleImageDef
 
-MenuItem
-Y = 1
+MenuItem PAGE6
+Argument = 1
 Text = MANUAL06
 KeyHandler = MR_HandleImageDef
 
-MenuItem
-Y = 1
+MenuItem PAGE7
+Argument = 1
 Text = MANUAL07
 KeyHandler = MR_HandleImageDef
 
-MenuItem
-Y = 1
+MenuItem PAGE8
+Argument = 1
 Text = MANUAL08
 KeyHandler = MR_HandleImageDef
 
-MenuItem
-Y = 1
+MenuItem PAGE9
+Argument = 1
 Text = MANUAL09
 KeyHandler = MR_HandleImageDef
 
-MenuItem
-Y = 1
+MenuItem PAGE10
+Argument = 1
 Text = MANUAL10
 KeyHandler = MR_HandleImageDef
 
-MenuItem
-Y = 1
+MenuItem PAGE11
+Argument = 1
 Text = MANUAL11
 KeyHandler = MR_HandleImageDef
 
-MenuItem
-Y = 1
+MenuItem PAGE12
+Argument = 1
 Text = MANUAL12
 KeyHandler = MR_HandleImageDef
 
-MenuItem
+MenuItem PAGE13
 Y = 0
 Text = MANUAL99
 KeyHandler = MR_HandleImageDef

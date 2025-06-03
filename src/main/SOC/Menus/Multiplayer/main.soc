@@ -4,44 +4,44 @@ Y = 30
 HeaderPic = M_MULTI
 DrawRoutine = MD_DrawMPMainMenu
 QuitRoutine = MR_CancelConnect
-MenuItem
+MenuItem PLAYERSHEADER
 Y = 0
 TextHeader = Players
 
-MenuItem
+MenuItem LOCALPLAYERS
 Y = 10
 Text = Number of local players
 Cvar = splitplayers
 
-MenuItem PSETUP
+MenuItem PLAYERSETUP
 Y = 18
 Text = Player setup...
 KeyHandler = MR_SetupMultiHandler
 
-MenuItem
+MenuItem HOSTHEADER
 Y = 100-24
 TextHeader = Host a game
 
-MenuItem STASRV
+MenuItem STARTSERVER
 Y = 110-24
 Text = Internet/LAN...
 Call = MR_StartServerMenu
 
-MenuItem OFLSRV
+MenuItem OFFLINESERVER
 Y = 118-24
 Text = Offline...
 Call = MR_StartOfflineServerMenu
 
-MenuItem
+MenuItem JOINHEADER
 Y = 132-24
 TextHeader = Join a game
 
-MenuItem
+MenuItem BROWSER
 Y = 142-24
 Text = Internet server browser...
 Call = MR_ConnectMenuModChecks
 
-MenuItem CONIP
+MenuItem CONNECTIP
 Y = 150-24
 Text = Specify IPv4 address:
 KeyHandler = MR_HandleConnectIP
