@@ -9,12 +9,12 @@ Call = MR_GrandPrixTemp
 
 MenuItem TIMEATTACK
 Y = 100
-TextSecret = Time Attack
+Text = Time Attack
 Argument = 0
 Call = MR_TimeAttack
 
 MenuItem ITEMBREAKER
 Y = 108
-TextSecret = Item Breaker
+Text = Item Breaker
 Argument = 1
 Call = MR_TimeAttack

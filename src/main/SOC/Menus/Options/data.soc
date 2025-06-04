@@ -18,7 +18,6 @@ Text = Replay Options...
 Submenu = MISC_REPLAYOPTIONS
 
 MenuItem DISCORD
-TextDisabled = 
 
 MenuItem ERASE
 Y = 50

@@ -26,12 +26,12 @@ Cvar = nextmap
 
 MenuItem GUEST
 Y = 98
-TextDisabled = Guest...
+TextWhite = Guest...
 SubMenu = SP_GUESTREPLAY
 
 MenuItem REPLAY
 Y = 108
-TextDisabled = Replay...
+TextWhite = Replay...
 SubMenu = SP_REPLAY
 
 MenuItem GHOSTS
@@ -147,12 +147,12 @@ Cvar = ghost_last
 
 MenuItem GUEST
 Y = 112
-TextDisabled = Guest
+Text = Guest
 Cvar = ghost_guest
 
 MenuItem STAFF
 Y = 120
-TextDisabled = Staff Attack
+Text = Staff Attack
 Cvar = ghost_staff
 
 MenuItem BACK

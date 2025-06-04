@@ -34,7 +34,7 @@ Cvar = kartfrantic
 
 MenuItem ENCORE
 Y = 80
-TextSecret = Encore Mode
+Text = Encore Mode
 Cvar = kartencore
 
 MenuItem NUMLAPS

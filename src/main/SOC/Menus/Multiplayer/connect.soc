@@ -21,55 +21,66 @@ Call = MR_Refresh
 
 MenuItem LINE1
 Y = 36
+Text = 
 Argument = 0
 Call = MR_Connect
 
 MenuItem LINE2
 Y = 48
+Text = 
 Argument = 1
 Call = MR_Connect
 
 MenuItem LINE3
 Y = 60
+Text = 
 Argument = 2
 Call = MR_Connect
 
 MenuItem LINE4
 Y = 72
+Text = 
 Argument = 3
 Call = MR_Connect
 
 MenuItem LINE5
 Y = 84
+Text = 
 Argument = 4
 Call = MR_Connect
 
 MenuItem LINE6
 Y = 96
+Text = 
 Argument = 5
 Call = MR_Connect
 
 MenuItem LINE7
 Y = 108
+Text = 
 Argument = 6
 Call = MR_Connect
 
 MenuItem LINE8
 Y = 120
+Text = 
 Argument = 7
 Call = MR_Connect
 
 MenuItem LINE9
 Y = 132
+Text = 
 Argument = 8
 Call = MR_Connect
 
 MenuItem LINE10
 Y = 144
+Text = 
 Argument = 9
 Call = MR_Connect
 
 MenuItem LINEMAX
 Y = 156
+Text = 
 Argument = 10
 Call = MR_Connect

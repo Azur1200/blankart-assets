@@ -67,7 +67,6 @@ MenuItem GAMEBUTTONS
 TextHeader = Gameplay Controls
 
 MenuItem GAMEBUTTONS_
-TextDisabled = 
 
 MenuItem ACCEL
 Argument = GC_ACCELERATE
@@ -118,7 +117,6 @@ MenuItem MISCBUTTONS
 TextHeader = Miscelleanous Controls
 
 MenuItem MISCBUTTONS_
-TextDisabled = 
 
 MenuItem TALK
 Argument = GC_TALKKEY
@@ -184,7 +182,6 @@ MenuItem SPECTATORBUTTONS
 TextHeader = Spectator Controls
 
 MenuItem SPECTATORBUTTONS_
-TextDisabled = 
 
 MenuItem SPECTATE
 Argument = GC_SPECTATE
@@ -210,7 +207,6 @@ MenuItem LUABUTTONS
 TextHeader = Custom Lua Actions
 
 MenuItem LUABUTTONS_
-TextDisabled = 
 
 MenuItem CUSTOM1
 Argument = GC_CUSTOM1

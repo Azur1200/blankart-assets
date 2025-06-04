@@ -68,7 +68,6 @@ Text = Switch Map...
 Call = MR_MapChange
 
 MenuItem DISCORDREQUESTS
-TextDisabled = 
 
 MenuItem CONTINUE
 Y = 40
