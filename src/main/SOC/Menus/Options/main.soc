@@ -2,6 +2,7 @@ Menu OP_MAIN
 X = 60
 Y = 30
 HeaderPic = M_OPTTTL
+EnterRoutine = MR_Options
 MenuItem CONTROLS
 Y = 10
 Text = Control Setup...
@@ -50,7 +51,7 @@ Submenu = OP_CUSTOM
 MenuItem MANUAL
 Y = 140
 Text = Tricks & Secrets (F1)
-Call = MR_Manual
+SubMenu = HELP
 
 MenuItem KARTCREDITS
 Y = 150

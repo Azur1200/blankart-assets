@@ -6,25 +6,25 @@ MenuItem P1CONTROLS
 Y = 10
 Text = Player 1 Controls...
 Argument = 0
-Call = MR_SetupControlsMenu
+SubMenu = OP_CHANGECONTROLS
 
 MenuItem P2CONTROLS
 Y = 20
 Text = Player 2 Controls...
 Argument = 1
-Call = MR_SetupControlsMenu
+SubMenu = OP_CHANGECONTROLS
 
 MenuItem P3CONTROLS
 Y = 30
 Text = Player 3 Controls...
 Argument = 2
-Call = MR_SetupControlsMenu
+SubMenu = OP_CHANGECONTROLS
 
 MenuItem P4CONTROLS
 Y = 40
 Text = Player 4 Controls...
 Argument = 3
-Call = MR_SetupControlsMenu
+SubMenu = OP_CHANGECONTROLS
 
 MenuItem CONTROLPERKEY
 Y = 60
@@ -42,11 +42,12 @@ X = 20
 Y = 40
 HeaderPic = M_CONTRO
 DrawRoutine = MD_DrawControl
+EnterRoutine = MR_SetupControlsMenu
 MenuItem SETJOY
 Y = 0
 Text = Select Gamepad...
 Argument = 0
-Call = MR_SetupJoystickMenu
+SubMenu = OP_JOYSTICKSET
 
 MenuItem DEADZ
 Y = 8
@@ -229,6 +230,7 @@ X = 50
 Y = 40
 HeaderPic = M_CONTRO
 DrawRoutine = MD_DrawJoystick
+EnterRoutine = MR_SetupJoystickMenu
 MenuItem JOY1
 Y = 16+5
 Argument = 0

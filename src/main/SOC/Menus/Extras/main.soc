@@ -10,9 +10,9 @@ SubMenu = SR_UNLOCKCHECKLIST
 MenuItem STATISTICS
 Y = 108
 Text = Statistics
-CallNotModified = MR_Statistics
+SubMenu = SP_LEVELSTATS
 
 MenuItem REPLAYHUT
 Y = 116
 Text = Replay Hut
-Call = MR_ReplayHut
+SubMenu = MISC_REPLAYHUT

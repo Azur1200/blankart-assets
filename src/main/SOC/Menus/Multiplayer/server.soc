@@ -3,6 +3,7 @@ X = 24
 Y = 40
 HeaderPic = M_MULTI
 DrawRoutine = MD_DrawServerMenu
+EnterRoutine = MR_StartServerMenu
 MenuItem MAXPLAYERS
 Y = 10
 Text = Max. Player Count
@@ -39,6 +40,7 @@ X = 24
 Y = 40
 HeaderPic = M_MULTI
 DrawRoutine = MD_DrawServerMenu
+EnterRoutine = MR_StartServerMenu
 MenuItem GAMETYPE
 Y = 68
 Text = Game Type

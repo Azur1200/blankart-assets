@@ -3,6 +3,7 @@ X = 280
 Y = 185
 HeaderPic = M_STATS
 DrawRoutine = MD_DrawLevelStats
+EnterRoutine = MR_Statistics
 # dummy menuitem for the control func
 MenuItem .
 KeyHandler = MR_HandleLevelStats

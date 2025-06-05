@@ -46,7 +46,7 @@ KeyHandler = MR_HandleSoundTest
 MenuItem MUSICTEST
 Y = 100
 Text = Music Test
-Call = MR_MusicTest
+SubMenu = SR_SOUNDTEST
 
 MenuItem MUSICUNFOCUSED
 Y = 115

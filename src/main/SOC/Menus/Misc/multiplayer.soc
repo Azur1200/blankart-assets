@@ -54,6 +54,7 @@ Menu CHANGELEVEL
 X = 24
 Y = 40
 DrawRoutine = MD_DrawServerMenu
+EnterRoutine = MR_MapChange
 MenuItem GAMETYPE
 Y = 68
 Text = Game Type

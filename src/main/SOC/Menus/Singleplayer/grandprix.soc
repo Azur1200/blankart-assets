@@ -1,6 +1,7 @@
 Menu SP_GRANDPRIX
 X = 60
 Y = 30
+EnterRoutine = MR_GrandPrixTemp
 MenuItem SKIN
 Y = 10
 Text = Character

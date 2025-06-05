@@ -5,12 +5,12 @@ HeaderPic = M_DATA
 MenuItem SCREENSHOTS
 Y = 10
 Text = Screenshot Options...
-Call = MR_ScreenshotOptions
+SubMenu = OP_SCREENSHOTS
 
 MenuItem ADDONS
 Y = 20
 Text = Addon Options...
-Call = MR_AddonsOptions
+SubMenu = OP_ADDONS
 
 MenuItem REPLAYS
 Y = 30
@@ -44,6 +44,7 @@ Menu OP_SCREENSHOTS
 X = 30
 Y = 30
 HeaderPic = M_SCSHOT
+EnterRoutine = MR_ScreenshotOptions
 MenuItem LOCATION
 Y = 10
 Text = Storage Location
@@ -122,6 +123,7 @@ Menu OP_ADDONS
 X = 30
 Y = 30
 HeaderPic = M_ADDONS
+EnterRoutine = MR_AddonsOptions
 MenuItem HEADER
 Y = 0
 TextHeader = Menu

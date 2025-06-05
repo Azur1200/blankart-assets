@@ -25,12 +25,12 @@ TextHeader = Host a game
 MenuItem STARTSERVER
 Y = 110-24
 Text = Internet/LAN...
-Call = MR_StartServerMenu
+SubMenu = MP_SERVER
 
 MenuItem OFFLINESERVER
 Y = 118-24
 Text = Offline...
-Call = MR_StartOfflineServerMenu
+SubMenu = MP_SPLITSCREEN
 
 MenuItem JOINHEADER
 Y = 132-24

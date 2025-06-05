@@ -6,7 +6,7 @@ DrawRoutine = MD_DrawVideoMenu
 MenuItem SETMODE
 Y = 10
 Text = Set Resolution...
-Call = MR_VideoModeMenu
+SubMenu = OP_VIDEOMODE
 
 MenuItem FULLSCREEN
 Y = 20
@@ -66,7 +66,7 @@ Cvar = parallelsoftware
 MenuItem OPENGL
 Y = 160
 Text = OpenGL Options...
-Call = MR_OpenGLOptionsMenu
+SubMenu = OP_OPENGL
 
 
 Menu OP_VIDEOMODE
@@ -74,6 +74,7 @@ X = 48
 Y = 26
 HeaderPic = M_VIDEO
 DrawRoutine = MD_DrawVideoMode
+EnterRoutine = MR_VideoModeMenu
 # dummy menuitem for the control func
 MenuItem .
 KeyHandler = MR_HandleVideoMode
@@ -83,6 +84,7 @@ Menu OP_OPENGL
 X = 30
 Y = 30
 HeaderPic = M_VIDEO
+EnterRoutine = MR_OpenGLOptionsMenu
 MenuItem MODELS
 Y = 10
 Text = 3D Models

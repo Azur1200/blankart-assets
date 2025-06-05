@@ -2,6 +2,7 @@ Menu MISC_REPLAYHUT
 X = 30
 Y = 80
 DrawRoutine = MD_DrawReplayHut
+EnterRoutine = MR_ReplayHut
 QuitRoutine = MR_QuitReplayHut
 # Dummy menuitem for the replay list
 MenuItem .

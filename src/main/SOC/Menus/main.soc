@@ -10,7 +10,7 @@ SubMenu = SR_MAIN
 MenuItem SINGLEPLAYER
 Y = 84
 Text = 1 Player
-Call = MR_SinglePlayerMenu
+SubMenu = SP_MAIN
 
 MenuItem MULTIPLAYER
 Y = 92
@@ -20,13 +20,13 @@ SubMenu = MP_MAIN
 MenuItem OPTIONS
 Y = 100
 Text = Options
-Call = MR_Options
+SubMenu = OP_MAIN
 
 # I don't think is useful at all...
 MenuItem ADDONS
 Y = 108
 Text = Addons
-Call = MR_Addons
+SubMenu = AD_MAIN
 
 MenuItem QUITGAME
 Y = 116
