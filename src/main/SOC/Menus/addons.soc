@@ -3,6 +3,7 @@ X = 50
 Y = 28
 DrawRoutine = MD_DrawAddons
 EnterRoutine = MR_Addons
+QuitRoutine = MR_QuitAddons
 # dummy menuitem for the control func
 MenuItem .
 KeyHandler = MR_HandleAddons

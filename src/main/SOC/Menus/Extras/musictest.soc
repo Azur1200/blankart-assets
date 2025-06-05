@@ -3,5 +3,6 @@ X = 60
 Y = 150
 DrawRoutine = MD_DrawMusicTest
 EnterRoutine = MR_MusicTest
+QuitRoutine = MR_QuitMusicTest
 MenuItem .
 KeyHandler = MR_HandleMusicTest
