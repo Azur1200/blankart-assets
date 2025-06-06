@@ -90,6 +90,7 @@ Menu SP_REPLAY
 X = 34
 Y = 40
 HeaderPic = M_ATTACK
+KeyHandler = MR_HandleStaffReplay
 DrawRoutine = MD_DrawTimeAttackMenu
 MenuItem REPLAYTIME
 Y = 90
@@ -118,7 +119,7 @@ Call = MR_ReplayTimeAttack
 MenuItem REPLAYSTAFF
 Y = 122
 TextWhite = Replay Staff
-KeyHandler = MR_HandleStaffReplay
+Dummy = True
 
 MenuItem BACK
 Y = 130

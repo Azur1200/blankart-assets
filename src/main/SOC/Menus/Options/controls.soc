@@ -41,6 +41,7 @@ Menu OP_CHANGECONTROLS
 X = 20
 Y = 40
 HeaderPic = M_CONTRO
+KeyHandler = MR_HandleControlsMenu
 DrawRoutine = MD_DrawControl
 EnterRoutine = MR_SetupControlsMenu
 MenuItem SETJOY
@@ -71,47 +72,47 @@ MenuItem GAMEBUTTONS_
 
 MenuItem ACCEL
 Argument = GC_ACCELERATE
-Text2 = Accelerate
+Text = Accelerate
 Call = MR_ChangeControl
 
 MenuItem TURNLEFT
 Argument = GC_TURNLEFT
-Text2 = Turn Left
+Text = Turn Left
 Call = MR_ChangeControl
 
 MenuItem TURNRIGHT
 Argument = GC_TURNRIGHT
-Text2 = Turn Right
+Text = Turn Right
 Call = MR_ChangeControl
 
 MenuItem DRIFT
 Argument = GC_DRIFT
-Text2 = Drift
+Text = Drift
 Call = MR_ChangeControl
 
 MenuItem BRAKE
 Argument = GC_BRAKE
-Text2 = Brake
+Text = Brake
 Call = MR_ChangeControl
 
 MenuItem ITEM
 Argument = GC_FIRE
-Text2 = Use/Throw Item
+Text = Use/Throw Item
 Call = MR_ChangeControl
 
 MenuItem AIMFORWARD
 Argument = GC_AIMFORWARD
-Text2 = Aim Forward
+Text = Aim Forward
 Call = MR_ChangeControl
 
 MenuItem AIMBACKWARD
 Argument = GC_AIMBACKWARD
-Text2 = Aim Backward
+Text = Aim Backward
 Call = MR_ChangeControl
 
 MenuItem LOOKBACK
 Argument = GC_LOOKBACK
-Text2 = Look Backward
+Text = Look Backward
 Call = MR_ChangeControl
 
 MenuItem MISCBUTTONS
@@ -121,62 +122,62 @@ MenuItem MISCBUTTONS_
 
 MenuItem TALK
 Argument = GC_TALKKEY
-Text2 = Chat
+Text = Chat
 Call = MR_ChangeControl
 
 #MenuItem TEAM
 #Argument = GC_TEAMKEY
-#Text2 = Team Chat
+#Text = Team Chat
 #Call = MR_ChangeControl
 #
 MenuItem SCORES
 Argument = GC_SCORES
-Text2 = Show Rankings
+Text = Show Rankings
 Call = MR_ChangeControl
 
 MenuItem VIEWPOINT
 Argument = GC_VIEWPOINT
-Text2 = Change Viewpoint
+Text = Change Viewpoint
 Call = MR_ChangeControl
 
 MenuItem RESPAWN
 Argument = GC_RESPAWN
-Text2 = Respawn
+Text = Respawn
 Call = MR_ChangeControl
 
 MenuItem CAMRESET
 Argument = GC_CAMRESET
-Text2 = Reset Camera
+Text = Reset Camera
 Call = MR_ChangeControl
 
 MenuItem CAMTOGGLE
 Argument = GC_CAMTOGGLE
-Text2 = Toggle Chasecam
+Text = Toggle Chasecam
 Call = MR_ChangeControl
 
 MenuItem PAUSE
 Argument = GC_PAUSE
-Text2 = Pause
+Text = Pause
 Call = MR_ChangeControl
 
 MenuItem SCREENSHOT
 Argument = GC_SCREENSHOT
-Text2 = Screenshot
+Text = Screenshot
 Call = MR_ChangeControl
 
 MenuItem RECORDGIF
 Argument = GC_RECORDGIF
-Text2 = Record GIF
+Text = Record GIF
 Call = MR_ChangeControl
 
 MenuItem SYSTEMMENU
 Argument = GC_SYSTEMMENU
-Text2 = Open/Close Menu
+Text = Open/Close Menu
 Call = MR_ChangeControl
 
 MenuItem CONSOLE
 Argument = GC_CONSOLE
-Text2 = Open Console
+Text = Open Console
 Call = MR_ChangeControl
 
 MenuItem SPECTATORBUTTONS
@@ -186,22 +187,22 @@ MenuItem SPECTATORBUTTONS_
 
 MenuItem SPECTATE
 Argument = GC_SPECTATE
-Text2 = Become Spectator
+Text = Become Spectator
 Call = MR_ChangeControl
 
 MenuItem LOOKUP
 Argument = GC_LOOKUP
-Text2 = Look Up
+Text = Look Up
 Call = MR_ChangeControl
 
 MenuItem LOOKDOWN
 Argument = GC_LOOKDOWN
-Text2 = Look Down
+Text = Look Down
 Call = MR_ChangeControl
 
 MenuItem CENTERVIEW
 Argument = GC_CENTERVIEW
-Text2 = Center View
+Text = Center View
 Call = MR_ChangeControl
 
 MenuItem LUABUTTONS
@@ -211,17 +212,17 @@ MenuItem LUABUTTONS_
 
 MenuItem CUSTOM1
 Argument = GC_CUSTOM1
-Text2 = Custom Action 1
+Text = Custom Action 1
 Call = MR_ChangeControl
 
 MenuItem CUSTOM2
 Argument = GC_CUSTOM2
-Text2 = Custom Action 2
+Text = Custom Action 2
 Call = MR_ChangeControl
 
 MenuItem CUSTOM3
 Argument = GC_CUSTOM3
-Text2 = Custom Action 3
+Text = Custom Action 3
 Call = MR_ChangeControl
 
 

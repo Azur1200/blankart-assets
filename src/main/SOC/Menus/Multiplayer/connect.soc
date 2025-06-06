@@ -2,6 +2,7 @@ Menu MP_CONNECT
 X = 27
 Y = 24
 HeaderPic = M_MULTI
+KeyHandler = MR_HandleServerPage
 DrawRoutine = MD_DrawConnectMenu
 QuitRoutine = MR_CancelConnect
 MenuItem SORTING
@@ -12,7 +13,7 @@ Cvar = serversort
 MenuItem PAGE
 Y = 12
 Text = Page
-KeyHandler = MR_HandleServerPage
+Dummy = True
 
 MenuItem REFRESH
 Y = 20

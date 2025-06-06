@@ -48,6 +48,5 @@ Cvar = discordinvites
 Menu MISC_DISCORDREQUESTS
 X = 0
 Y = 0
-DrawRoutine = MD_DrawDiscordRequests
-MenuItem .
 KeyHandler = MR_HandleDiscordRequests
+DrawRoutine = MD_DrawDiscordRequests

@@ -1,9 +1,7 @@
 Menu AD_MAIN
 X = 50
 Y = 28
+KeyHandler = MR_HandleAddons
 DrawRoutine = MD_DrawAddons
 EnterRoutine = MR_Addons
 QuitRoutine = MR_QuitAddons
-# dummy menuitem for the control func
-MenuItem .
-KeyHandler = MR_HandleAddons
