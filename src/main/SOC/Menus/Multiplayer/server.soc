@@ -2,7 +2,6 @@ Menu MP_SERVER
 X = 24
 Y = 40
 HeaderPic = M_MULTI
-DrawRoutine = MD_DrawServerMenu
 EnterRoutine = MR_StartServerMenu
 MenuItem MAXPLAYERS
 Y = 10
@@ -39,7 +38,6 @@ Menu MP_SPLITSCREEN
 X = 24
 Y = 40
 HeaderPic = M_MULTI
-DrawRoutine = MD_DrawServerMenu
 EnterRoutine = MR_StartServerMenu
 MenuItem GAMETYPE
 Y = 68

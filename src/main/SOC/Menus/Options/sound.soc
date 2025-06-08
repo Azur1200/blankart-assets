@@ -2,7 +2,6 @@ Menu OP_SOUND
 X = 30
 Y = 20
 HeaderPic = M_SOUND
-KeyHandler = MR_HandleSoundTest
 DrawRoutine = MD_DrawSkyRoom
 MenuItem SOUND
 Y = 10
@@ -43,6 +42,7 @@ MenuItem SOUNDTEST
 Y = 90
 Text = Sound Test
 Cvar = soundtest
+Call = MR_PlaySound
 
 MenuItem MUSICTEST
 Y = 100

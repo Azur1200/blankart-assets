@@ -48,7 +48,7 @@ SubMenu = SP_PRES
 MenuItem START
 Y = 140
 TextWhite = Start
-CallNotModified = MR_ChooseTimeAttack
+Call = MR_ChooseTimeAttack
 
 
 Menu SP_GUESTREPLAY
@@ -90,7 +90,6 @@ Menu SP_REPLAY
 X = 34
 Y = 40
 HeaderPic = M_ATTACK
-KeyHandler = MR_HandleStaffReplay
 DrawRoutine = MD_DrawTimeAttackMenu
 MenuItem REPLAYTIME
 Y = 90
@@ -119,7 +118,8 @@ Call = MR_ReplayTimeAttack
 MenuItem REPLAYSTAFF
 Y = 122
 TextWhite = Replay Staff
-Dummy = True
+Cvar = dummystaff
+Call = MR_ReplayStaff
 
 MenuItem BACK
 Y = 130

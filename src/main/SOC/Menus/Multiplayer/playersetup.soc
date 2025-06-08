@@ -8,21 +8,21 @@ QuitRoutine = MR_QuitMultiPlayerMenu
 MenuItem NAME
 Y = 0
 Text = Name
-Dummy = True
+CvarString = dummyname
 
 # Tails 01-18-2001
 MenuItem SKIN
 Y = 16
 Text = Character
-Dummy = True
+Cvar = chooseskin
 
 MenuItem FOLLOWER
 Y = 26
 Text = Follower
-Dummy = True
+Cvar = dummyfollower
 
 MenuItem COLOR
 Y = 152
 Text = Color
-Dummy = True
+Cvar = dummycolor
 

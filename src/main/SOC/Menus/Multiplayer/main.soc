@@ -2,7 +2,6 @@ Menu MP_MAIN
 X = 42
 Y = 30
 HeaderPic = M_MULTI
-KeyHandler = MR_HandleMPMainMenu
 DrawRoutine = MD_DrawMPMainMenu
 QuitRoutine = MR_CancelConnect
 MenuItem PLAYERSHEADER
@@ -17,7 +16,8 @@ Cvar = splitplayers
 MenuItem PLAYERSETUP
 Y = 18
 Text = Player setup...
-Dummy = True
+Cvar = dummymultiplayer
+SubMenu = MN_MP_PLAYERSETUP
 
 MenuItem HOSTHEADER
 Y = 100-24
@@ -45,4 +45,5 @@ Call = MR_ConnectMenuModChecks
 MenuItem CONNECTIP
 Y = 150-24
 Text = Specify IPv4 address:
-Dummy = True
+CvarString = dummyip
+Call = MR_ConnectIP
