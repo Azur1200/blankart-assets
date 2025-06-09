@@ -2,7 +2,6 @@ Menu OP_SOUND
 X = 30
 Y = 20
 HeaderPic = M_SOUND
-DrawRoutine = MD_DrawSkyRoom
 MenuItem SOUND
 Y = 10
 Text = SFX

@@ -4,57 +4,45 @@ Y = 0
 KeyHandler = MR_HandleImageDef
 DrawRoutine = MD_DrawImageDef
 MenuItem PAGE0
-Argument = 0
+Argument = 1
 Text = MANUAL00
 
 MenuItem PAGE1
-Argument = 1
 Text = MANUAL01
 
 MenuItem PAGE2
-Argument = 1
 Text = MANUAL02
 
 MenuItem PAGE3
-Argument = 1
 Text = MANUAL03
 
 MenuItem PAGE4
-Argument = 1
 Text = MANUAL04
 
 MenuItem PAGE5
-Argument = 1
 Text = MANUAL05
 
 MenuItem PAGE6
-Argument = 1
 Text = MANUAL06
 
 MenuItem PAGE7
-Argument = 1
 Text = MANUAL07
 
 MenuItem PAGE8
-Argument = 1
 Text = MANUAL08
 
 MenuItem PAGE9
-Argument = 1
 Text = MANUAL09
 
 MenuItem PAGE10
-Argument = 1
 Text = MANUAL10
 
 MenuItem PAGE11
-Argument = 1
 Text = MANUAL11
 
 MenuItem PAGE12
-Argument = 1
 Text = MANUAL12
 
 MenuItem PAGE13
-Y = 0
+Argument = 1
 Text = MANUAL99
