@@ -1,7 +1,6 @@
 Menu MP_PLAYERSETUP
 X = 36
 Y = 14
-KeyHandler = MR_HandleSetupMultiPlayer
 DrawRoutine = MD_DrawSetupMultiPlayerMenu
 EnterRoutine = MR_SetupMultiPlayer
 QuitRoutine = MR_QuitMultiPlayerMenu

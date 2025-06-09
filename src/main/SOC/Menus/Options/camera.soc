@@ -18,30 +18,35 @@ Cvar = laglesscamera
 MenuItem P1CAMERA
 Y = 50
 Text = Player 1 Camera options...
-Submenu = OP_P1CAMERA
+Argument = 0
+Submenu = OP_CAMERASETUP
 
 MenuItem P2CAMERA
 Y = 60
 Text = Player 2 Camera options...
-Submenu = OP_P2CAMERA
+Argument = 1
+Submenu = OP_CAMERASETUP
 
 MenuItem P3CAMERA
 Y = 70
 Text = Player 3 Camera options...
-Submenu = OP_P3CAMERA
+Argument = 2
+Submenu = OP_CAMERASETUP
 
 MenuItem P4CAMERA
 Y = 80
 Text = Player 4 Camera options...
-Submenu = OP_P4CAMERA
+Argument = 3
+Submenu = OP_CAMERASETUP
 
 
-Menu OP_P1CAMERA
+Menu OP_CAMERASETUP
 X = 30
 Y = 30
+EnterRoutine = MR_CameraSetup
 MenuItem HEADER
 Y = 0
-TextHeader = Player 1 Camera Options
+TextHeader = Camera Options
 
 MenuItem FLIPCAM
 Y = 30
@@ -67,103 +72,4 @@ MenuItem CHASECAM
 Y = 85
 Text = Third Person Camera
 Cvar = chasecam
-
-
-Menu OP_P2CAMERA
-X = 30
-Y = 30
-MenuItem
-Y = 0
-TextHeader = Player 2 Camera Options
-
-MenuItem
-Y = 30
-Text = Flipcam
-Cvar = flipcam2
-
-MenuItem
-Y = 40
-Text = Camera Distance
-CvarInteger = cam2_dist
-
-MenuItem
-Y = 50
-Text = Camera Height
-CvarInteger = cam2_height
-
-MenuItem
-Y = 60
-Text = Camera Speed
-Cvar = cam2_speed
-
-MenuItem
-Y = 85
-Text = Third Person Camera
-Cvar = chasecam2
-
-
-Menu OP_P3CAMERA
-X = 30
-Y = 30
-MenuItem
-Y = 0
-TextHeader = Player 3 Camera Options
-
-MenuItem
-Y = 30
-Text = Flipcam
-Cvar = flipcam3
-
-MenuItem
-Y = 40
-Text = Camera Distance
-CvarInteger = cam3_dist
-
-MenuItem
-Y = 50
-Text = Camera Height
-CvarInteger = cam3_height
-
-MenuItem
-Y = 60
-Text = Camera Speed
-Cvar = cam3_speed
-
-MenuItem
-Y = 85
-Text = Third Person Camera
-Cvar = chasecam3
-
-
-Menu OP_P4CAMERA
-X = 30
-Y = 30
-MenuItem
-Y = 0
-TextHeader = Player 4 Camera Options
-
-MenuItem
-Y = 30
-Text = Flipcam
-Cvar = flipcam4
-
-MenuItem
-Y = 40
-Text = Camera Distance
-CvarInteger = cam4_dist
-
-MenuItem
-Y = 50
-Text = Camera Height
-CvarInteger = cam4_height
-
-MenuItem
-Y = 60
-Text = Camera Speed
-Cvar = cam4_speed
-
-MenuItem
-Y = 85
-Text = Third Person Camera
-Cvar = chasecam4
 
