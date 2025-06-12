@@ -53,7 +53,7 @@ Cvar = screenshot_option
 MenuItem FOLDER
 Y = 20
 Text = Custom Folder
-CvarString = screenshot_folder
+Cvar = screenshot_folder
 
 MenuItem SCREENSHOTHEADER
 Y = 50
@@ -136,7 +136,7 @@ Cvar = addons_option
 MenuItem FOLDER
 Y = 20
 Text = Custom Folder
-CvarString = addons_folder
+Cvar = addons_folder
 
 MenuItem USEHASH
 Y = 48

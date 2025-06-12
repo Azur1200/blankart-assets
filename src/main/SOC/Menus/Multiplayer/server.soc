@@ -16,7 +16,7 @@ Cvar = advertise
 MenuItem SERVERNAME
 Y = 30
 Text = Server Name
-CvarString = servername
+Cvar = servername
 
 MenuItem GAMETYPE
 Y = 68

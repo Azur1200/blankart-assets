@@ -8,7 +8,7 @@ QuitRoutine = MR_QuitTimeAttackMenu
 MenuItem NAME
 Y = 0
 Text = Name
-CvarString = name
+Cvar = name
 
 MenuItem SKIN
 Y = 13

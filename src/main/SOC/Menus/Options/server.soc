@@ -5,7 +5,7 @@ HeaderPic = M_SERVER
 MenuItem NAME
 Y = 10
 Text = Server Name
-CvarString = servername
+Cvar = servername
 
 MenuItem INTERTIME
 Y = 40
@@ -75,7 +75,7 @@ HeaderPic = M_SERVER
 MenuItem MASTERSERVER
 Y = 10
 Text = Server Browser Address
-CvarString = masterserver
+Cvar = masterserver
 
 MenuItem RESYNCHATTEMPTS
 Y = 40

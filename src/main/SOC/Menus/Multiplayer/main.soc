@@ -45,5 +45,5 @@ Call = MR_ConnectMenuModChecks
 MenuItem CONNECTIP
 Y = 150-24
 Text = Specify IPv4 address:
-CvarString = dummyip
+Cvar = dummyip
 Call = MR_ConnectIP

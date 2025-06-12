@@ -7,7 +7,7 @@ QuitRoutine = MR_QuitMultiPlayerMenu
 MenuItem NAME
 Y = 0
 Text = Name
-CvarString = dummyname
+Cvar = dummyname
 
 # Tails 01-18-2001
 MenuItem SKIN

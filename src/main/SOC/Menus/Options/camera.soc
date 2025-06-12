@@ -56,12 +56,14 @@ Cvar = flipcam
 MenuItem CAMDISTANCE
 Y = 40
 Text = Camera Distance
-CvarInteger = cam_dist
+Argument = FRACUNIT
+Cvar = cam_dist
 
 MenuItem CAMHEIGHT
 Y = 50
 Text = Camera Height
-CvarInteger = cam_height
+Argument = FRACUNIT
+Cvar = cam_height
 
 MenuItem CAMSPEED
 Y = 60
