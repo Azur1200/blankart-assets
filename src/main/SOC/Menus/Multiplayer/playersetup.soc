@@ -25,3 +25,45 @@ Y = 152
 Text = Color
 Cvar = dummycolor
 
+# decorative stuff below
+MenuItem ACCELERATION
+X = 146
+Y = 62
+Style = thin
+TextWhite = Acceleration
+
+MenuItem MAXSPEED
+X = 221
+Y = 62
+Style = thin
+TextWhite = Max Speed
+
+MenuItem HANDLING
+X = 130
+Y = 74
+Style = thin
+TextWhite = Handling
+
+MenuItem WEIGHT
+X = 137
+Y = 139
+Style = thin
+TextWhite = Weight
+
+MenuItem ARROWLR
+X = 194
+Y = 62
+Style = patch-highlight
+Patch = K_STATLR
+
+MenuItem ARROWUD
+X = 154
+Y = 84
+Style = patch-highlight
+Patch = K_STATUD
+
+MenuItem STATBG
+X = 164
+Y = 72
+Style = patch
+Patch = K_STATBG

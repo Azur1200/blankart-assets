@@ -2,7 +2,6 @@ Menu OP_VIDEO
 X = 30
 Y = 15
 HeaderPic = M_VIDEO
-DrawRoutine = MD_DrawVideoMenu
 MenuItem SETMODE
 Y = 10
 Text = Set Resolution...

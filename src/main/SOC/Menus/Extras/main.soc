@@ -1,18 +1,20 @@
 Menu SR_MAIN
 X = 160
 Y = 72
-DrawRoutine = MD_DrawCenteredMenu
 MenuItem UNLOCKABLES
 Y = 100
+Style = center
 Text = Unlockables
 SubMenu = SR_UNLOCKCHECKLIST
 
 MenuItem STATISTICS
 Y = 108
+Style = center
 Text = Statistics
 SubMenu = SP_LEVELSTATS
 
 MenuItem REPLAYHUT
 Y = 116
+Style = center
 Text = Replay Hut
 SubMenu = MISC_REPLAYHUT

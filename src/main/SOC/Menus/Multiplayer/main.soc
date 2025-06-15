@@ -26,11 +26,13 @@ TextHeader = Host a game
 MenuItem STARTSERVER
 Y = 110-24
 Text = Internet/LAN...
+Patch = (2-16 players)
 SubMenu = MP_SERVER
 
 MenuItem OFFLINESERVER
 Y = 118-24
 Text = Offline...
+Patch = (2-4 players)
 SubMenu = MP_SPLITSCREEN
 
 MenuItem JOINHEADER

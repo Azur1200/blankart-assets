@@ -2,7 +2,6 @@ Menu OP_HUD
 X = 30
 Y = 30
 HeaderPic = M_HUD
-DrawRoutine = MD_DrawHUDOptions
 MenuItem SHOWHUD
 Y = 20
 Text = Show HUD (F3)

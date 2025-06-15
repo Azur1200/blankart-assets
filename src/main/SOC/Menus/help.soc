@@ -4,45 +4,59 @@ Y = 0
 KeyHandler = MR_HandleImageDef
 DrawRoutine = MD_DrawImageDef
 MenuItem PAGE0
+Style = patch-small
+Patch = MANUAL00
 Argument = 1
-Text = MANUAL00
 
 MenuItem PAGE1
-Text = MANUAL01
+Style = patch-small
+Patch = MANUAL01
 
 MenuItem PAGE2
-Text = MANUAL02
+Style = patch-small
+Patch = MANUAL02
 
 MenuItem PAGE3
-Text = MANUAL03
+Style = patch
+Patch = MANUAL03
 
 MenuItem PAGE4
-Text = MANUAL04
+Style = patch
+Patch = MANUAL04
 
 MenuItem PAGE5
-Text = MANUAL05
+Style = patch
+Patch = MANUAL05
 
 MenuItem PAGE6
-Text = MANUAL06
+Style = patch
+Patch = MANUAL06
 
 MenuItem PAGE7
-Text = MANUAL07
+Style = patch
+Patch = MANUAL07
 
 MenuItem PAGE8
-Text = MANUAL08
+Style = patch
+Patch = MANUAL08
 
 MenuItem PAGE9
-Text = MANUAL09
+Style = patch
+Patch = MANUAL09
 
 MenuItem PAGE10
-Text = MANUAL10
+Style = patch
+Patch = MANUAL10
 
 MenuItem PAGE11
-Text = MANUAL11
+Style = patch
+Patch = MANUAL11
 
 MenuItem PAGE12
-Text = MANUAL12
+Style = patch
+Patch = MANUAL12
 
-MenuItem PAGE13
+MenuItem PAGE99
+Style = patch-small
+Patch = MANUAL99
 Argument = 1
-Text = MANUAL99

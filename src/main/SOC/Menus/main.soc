@@ -1,34 +1,39 @@
 Menu MAIN
 X = 160
 Y = 72
-DrawRoutine = MD_DrawCenteredMenu
 MenuItem EXTRAS
 Y = 76
+Style = center
 Text = Extras
 SubMenu = SR_MAIN
 
 MenuItem SINGLEPLAYER
 Y = 84
+Style = center
 Text = 1 Player
 SubMenu = SP_MAIN
 
 MenuItem MULTIPLAYER
 Y = 92
+Style = center
 Text = Multiplayer
 SubMenu = MP_MAIN
 
 MenuItem OPTIONS
 Y = 100
+Style = center
 Text = Options
 SubMenu = OP_MAIN
 
 # I don't think is useful at all...
 MenuItem ADDONS
 Y = 108
+Style = center
 Text = Addons
 SubMenu = AD_MAIN
 
 MenuItem QUITGAME
 Y = 116
+Style = center
 Text = Quit  Game
 Call = MR_QuitSRB2
