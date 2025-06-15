@@ -71,7 +71,8 @@ MenuItem GAMEBUTTONS
 TempOffset = True
 OfsX = 9
 OfsY = -2
-TextHeader = Gameplay Controls
+Style = header
+Text = Gameplay Controls
 
 MenuItem ACCEL
 Argument = GC_ACCELERATE
@@ -124,7 +125,8 @@ MenuItem MISCBUTTONS
 TempOffset = True
 OfsX = 9
 OfsY = -2
-TextHeader = Miscelleanous Controls
+Style = header
+Text = Miscelleanous Controls
 
 MenuItem TALK
 Argument = GC_TALKKEY
@@ -192,7 +194,8 @@ MenuItem SPECTATORBUTTONS
 TempOffset = True
 OfsX = 9
 OfsY = -2
-TextHeader = Spectator Controls
+Style = header
+Text = Spectator Controls
 
 MenuItem SPECTATE
 Argument = GC_SPECTATE
@@ -220,7 +223,8 @@ MenuItem LUABUTTONS
 TempOffset = True
 OfsX = 9
 OfsY = -2
-TextHeader = Custom Lua Actions
+Style = header
+Text = Custom Lua Actions
 
 MenuItem CUSTOM1
 Argument = GC_CUSTOM1

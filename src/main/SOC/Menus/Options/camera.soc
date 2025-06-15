@@ -3,7 +3,8 @@ X = 30
 Y = 30
 MenuItem HEADER
 Y = 0
-TextHeader = Camera Options
+Style = header
+Text = Camera Options
 
 MenuItem TILTING
 Y = 20
@@ -46,7 +47,8 @@ Y = 30
 EnterRoutine = MR_CameraSetup
 MenuItem HEADER
 Y = 0
-TextHeader = Camera Options
+Style = header
+Text = Camera Options
 
 MenuItem FLIPCAM
 Y = 30

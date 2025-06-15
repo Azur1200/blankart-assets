@@ -27,27 +27,32 @@ Cvar = nextmap
 
 MenuItem GUEST
 Y = 98
-TextWhite = Guest...
+Style = highlight
+Text = Guest...
 SubMenu = SP_GUESTREPLAY
 
 MenuItem REPLAY
 Y = 108
-TextWhite = Replay...
+Style = highlight
+Text = Replay...
 SubMenu = SP_REPLAY
 
 MenuItem GHOSTS
 Y = 118
-TextWhite = Ghosts...
+Style = highlight
+Text = Ghosts...
 SubMenu = SP_GHOST
 
 MenuItem MODIFIERS
 Y = 128
-TextWhite = Modifiers...
+Style = highlight
+Text = Modifiers...
 SubMenu = SP_PRES
 
 MenuItem START
 Y = 140
-TextWhite = Start
+Style = highlight
+Text = Start
 Call = MR_ChooseTimeAttack
 
 
@@ -58,31 +63,36 @@ HeaderPic = M_ATTACK
 DrawRoutine = MD_DrawTimeAttackMenu
 MenuItem SAVETIME
 Y = 94
-TextWhite = Save Best Time as Guest
+Style = highlight
+Text = Save Best Time as Guest
 Argument = 0
 Call = MR_SetGuestReplay
 
 MenuItem SAVELAP
 Y = 102
-TextWhite = Save Best Lap as Guest
+Style = highlight
+Text = Save Best Lap as Guest
 Argument = 1
 Call = MR_SetGuestReplay
 
 MenuItem SAVELAST
 Y = 110
-TextWhite = Save Last as Guest
+Style = highlight
+Text = Save Last as Guest
 Argument = 2
 Call = MR_SetGuestReplay
 
 MenuItem DELETE
 Y = 120
-TextWhite = Delete Guest Replay
+Style = highlight
+Text = Delete Guest Replay
 Argument = 3
 Call = MR_SetGuestReplay
 
 MenuItem BACK
 Y = 130
-TextWhite = Back
+Style = highlight
+Text = Back
 SubMenu = SP_TIMEATTACK
 
 
@@ -93,37 +103,43 @@ HeaderPic = M_ATTACK
 DrawRoutine = MD_DrawTimeAttackMenu
 MenuItem REPLAYTIME
 Y = 90
-TextWhite = Replay Best Time
+Style = highlight
+Text = Replay Best Time
 Argument = 0
 Call = MR_ReplayTimeAttack
 
 MenuItem REPLAYLAP
 Y = 98
-TextWhite = Replay Best Lap
+Style = highlight
+Text = Replay Best Lap
 Argument = 1
 Call = MR_ReplayTimeAttack
 
 MenuItem REPLAYLAST
 Y = 106
-TextWhite = Replay Last
+Style = highlight
+Text = Replay Last
 Argument = 2
 Call = MR_ReplayTimeAttack
 
 MenuItem REPLAYGUEST
 Y = 114
-TextWhite = Replay Guest
+Style = highlight
+Text = Replay Guest
 Argument = 3
 Call = MR_ReplayTimeAttack
 
 MenuItem REPLAYSTAFF
 Y = 122
-TextWhite = Replay Staff
+Style = highlight
+Text = Replay Staff
 Cvar = dummystaff
 Call = MR_ReplayStaff
 
 MenuItem BACK
 Y = 130
-TextWhite = Back
+Style = highlight
+Text = Back
 SubMenu = SP_TIMEATTACK
 
 
@@ -159,7 +175,8 @@ Cvar = ghost_staff
 
 MenuItem BACK
 Y = 130
-TextWhite = Back
+Style = highlight
+Text = Back
 SubMenu = SP_TIMEATTACK
 
 
@@ -170,30 +187,35 @@ HeaderPic = M_ATTACK
 DrawRoutine = MD_DrawTimeAttackMenu
 MenuItem SRB2KART
 Y = 94
-TextWhite = SRB2Kart Mode
+Style = highlight
+Text = SRB2Kart Mode
 Argument = 0
 Call = MR_TimeAttackPreset
 
 MenuItem TECH
 Y = 104
-TextWhite = Tech Mode
+Style = highlight
+Text = Tech Mode
 Argument = 1
 Call = MR_TimeAttackPreset
 
 MenuItem BLANKART
 Y = 114
-TextWhite = BlanKart Mode
+Style = highlight
+Text = BlanKart Mode
 Argument = 2
 Call = MR_TimeAttackPreset
 
 MenuItem CUSTOM
 Y = 124
-TextWhite = Custom...
+Style = highlight
+Text = Custom...
 SubMenu = SP_MODS
 
 MenuItem BACK
 Y = 150
-TextWhite = Back
+Style = highlight
+Text = Back
 SubMenu = SP_TIMEATTACK
 
 
@@ -229,6 +251,7 @@ Cvar = dummyattackingpurpledrift
 
 MenuItem BACK
 Y = 150
-TextWhite = Back
+Style = highlight
+Text = Back
 SubMenu = SP_PRES
 

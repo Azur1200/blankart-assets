@@ -30,7 +30,8 @@ Cvar = nextmap
 
 MenuItem START
 Y = 130
-TextWhite = Start
+Style = highlight
+Text = Start
 Call = MR_StartServer
 
 
@@ -51,5 +52,6 @@ Cvar = nextmap
 
 MenuItem START
 Y = 130
-TextWhite = Start
+Style = highlight
+Text = Start
 Call = MR_StartServer

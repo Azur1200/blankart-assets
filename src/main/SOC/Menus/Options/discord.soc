@@ -27,7 +27,8 @@ Cvar = discordrp
 
 MenuItem HEADER
 Y = 30
-TextHeader = Rich Presence Settings
+Style = header
+Text = Rich Presence Settings
 
 MenuItem STREAMER
 Y = 40
