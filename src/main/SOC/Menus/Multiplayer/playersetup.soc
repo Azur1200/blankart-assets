@@ -29,25 +29,25 @@ Cvar = dummycolor
 MenuItem ACCELERATION
 X = 146
 Y = 62
-Style = thin-highlight
+Style = thin2-highlight
 Text = Acceleration
 
 MenuItem MAXSPEED
 X = 221
 Y = 62
-Style = thin-highlight
+Style = thin2-highlight
 Text = Max Speed
 
 MenuItem HANDLING
 X = 130
 Y = 74
-Style = thin-highlight
+Style = thin2-highlight
 Text = Handling
 
 MenuItem WEIGHT
 X = 137
 Y = 139
-Style = thin-highlight
+Style = thin2-highlight
 Text = Weight
 
 MenuItem ARROWLR

@@ -20,7 +20,7 @@ Cvar = renderer
 MenuItem GAMMA
 Y = 50
 Text = Gamma
-CvarSlider = gamma
+Slider = gamma
 
 MenuItem SHOWFPS
 Y = 60

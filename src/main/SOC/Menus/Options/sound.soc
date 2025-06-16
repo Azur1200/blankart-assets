@@ -10,7 +10,7 @@ Cvar = sounds
 MenuItem SOUNDVOLUME
 Y = 18
 Text = SFX Volume
-CvarSlider = soundvolume
+Slider = soundvolume
 
 MenuItem MUSIC
 Y = 30
@@ -20,7 +20,7 @@ Cvar = music
 MenuItem MUSICVOLUME
 Y = 38
 Text = Music Volume
-CvarSlider = musicvolume
+Slider = musicvolume
 
 MenuItem REVERSE
 Y = 50

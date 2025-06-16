@@ -10,7 +10,7 @@ Cvar = showhud
 MenuItem TRANSLUCENT
 Y = 30
 Text = HUD Visibility
-CvarSlider = translucenthud
+Slider = translucenthud
 
 MenuItem CHATHUD
 Y = 45
@@ -64,12 +64,12 @@ Cvar = chatmode
 MenuItem CHATWIDTH
 Y = 25
 Text = Chat Box Width
-CvarSlider = chatwidth
+Slider = chatwidth
 
 MenuItem CHATHEIGHT
 Y = 35
 Text = Chat Box Height
-CvarSlider = chatheight
+Slider = chatheight
 
 MenuItem CHATBACKTINT
 Y = 50
@@ -100,7 +100,7 @@ HeaderPic = M_HUD
 MenuItem MINIMAP
 Y = 10
 Text = Minimap Visibility
-CvarSlider = kartminimap
+Slider = kartminimap
 
 MenuItem COLORIZE
 Y = 25
