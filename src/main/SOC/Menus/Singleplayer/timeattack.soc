@@ -4,6 +4,8 @@ BackgroundName = SRB2BACK
 ScrollXSpeed = 0
 ScrollYSpeed = 0
 FadeStrength = 1
+EnterWipe = 0
+ExitWipe = 0
 X = 34
 Y = 40
 HeaderPic = M_ATTACK
@@ -98,7 +100,7 @@ MenuItem BACK
 Y = 130
 Style = highlight
 Text = Back
-SubMenu = SP_TIMEATTACK
+Call = MR_GoBack
 
 
 Menu SP_REPLAY
@@ -145,7 +147,7 @@ MenuItem BACK
 Y = 130
 Style = highlight
 Text = Back
-SubMenu = SP_TIMEATTACK
+Call = MR_GoBack
 
 
 Menu SP_GHOST
@@ -182,7 +184,7 @@ MenuItem BACK
 Y = 130
 Style = highlight
 Text = Back
-SubMenu = SP_TIMEATTACK
+Call = MR_GoBack
 
 
 Menu SP_PRES
@@ -221,7 +223,7 @@ MenuItem BACK
 Y = 150
 Style = highlight
 Text = Back
-SubMenu = SP_TIMEATTACK
+Call = MR_GoBack
 
 
 Menu SP_MODS
@@ -258,5 +260,5 @@ MenuItem BACK
 Y = 150
 Style = highlight
 Text = Back
-SubMenu = SP_PRES
+Call = MR_GoBack
 

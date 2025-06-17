@@ -4,6 +4,8 @@ BackgroundName = SRB2BACK
 ScrollXSpeed = 0
 ScrollYSpeed = 0
 FadeStrength = 1
+EnterWipe = 0
+ExitWipe = 0
 X = 30
 Y = 80
 KeyHandler = MR_HandleReplayHutList
@@ -34,4 +36,4 @@ Call = MR_HutStartReplay
 MenuItem BACK
 Y = 30
 Text = Back
-SubMenu = MISC_REPLAYHUT
+Call = MR_GoBack
