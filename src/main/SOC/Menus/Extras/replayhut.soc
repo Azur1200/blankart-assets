@@ -1,5 +1,9 @@
 Menu MISC_REPLAYHUT
 Music = replst
+BackgroundName = SRB2BACK
+ScrollXSpeed = 0
+ScrollYSpeed = 0
+FadeStrength = 1
 X = 30
 Y = 80
 KeyHandler = MR_HandleReplayHutList

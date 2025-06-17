@@ -1,4 +1,5 @@
 Menu PLAYBACK
+FadeStrength = 1
 X = 72
 Y = 2
 DrawRoutine = MD_DrawPlaybackMenu
