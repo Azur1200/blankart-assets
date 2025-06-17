@@ -1,4 +1,5 @@
 Menu MISC_REPLAYHUT
+Music = replst
 X = 30
 Y = 80
 KeyHandler = MR_HandleReplayHutList

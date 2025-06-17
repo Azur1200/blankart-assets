@@ -1,4 +1,5 @@
 Menu SR_SOUNDTEST
+NoMusic = True
 X = 60
 Y = 150
 KeyHandler = MR_HandleMusicTest

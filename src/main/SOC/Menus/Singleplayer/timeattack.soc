@@ -1,4 +1,5 @@
 Menu SP_TIMEATTACK
+Music = racent
 X = 34
 Y = 40
 HeaderPic = M_ATTACK
