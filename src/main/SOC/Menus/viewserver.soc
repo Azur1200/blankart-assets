@@ -1,0 +1,83 @@
+Menu VIEWSERVER
+X = 0
+Y = 0
+EnterRoutine = MR_EnterViewServer
+DrawRoutine = MD_DrawViewServer
+QuitRoutine = MR_QuitViewServer
+KeyHandler = MR_HandleViewServer
+MenuItem TopBoxXY
+X = 8
+Y = 16
+
+MenuItem TopBoxWH
+X = BASEVIDWIDTH - 16
+Y = 54
+
+MenuItem Thumbnail
+X = 10
+Y = 18
+Style = mapthumbnail
+
+MenuItem ServerName
+X = 92
+Y = 18
+Style = thin2
+
+MenuItem ServerPing
+X = 92
+Y = 28
+Style = thin2
+
+MenuItem ServerMap
+X = 92
+Y = 38
+Style = thin2
+Text = ServerMap
+
+MenuItem ServerGametype
+X = 92
+Y = 48
+Style = thin2
+
+MenuItem ServerAddon
+X = 92
+Y = 58
+Style = thin2-recommendedhighlight
+
+MenuItem ServerDedicated
+X = 310
+Y = 58
+Style = thin2-right-recommendedhighlight
+
+MenuItem ServerCheats
+X = 310
+Y = 48
+Style = thin2-right-warninghighlight
+
+MenuItem MidBoxXY
+X = 8
+Y = 72
+
+MenuItem MidBoxWH
+X = BASEVIDWIDTH - 16
+Y = 112
+
+MenuItem BotBoxXY
+X = 8
+Y = BASEVIDHEIGHT - 14
+
+MenuItem BotBoxWH
+X = BASEVIDWIDTH - 16
+Y = 13
+
+MenuItem Button1
+X = 16
+Y = BASEVIDHEIGHT - 11
+
+MenuItem Button2
+X = BASEVIDWIDTH/2
+Y = BASEVIDHEIGHT - 11
+
+MenuItem Button3
+X = BASEVIDWIDTH - 12
+Y = BASEVIDHEIGHT - 11
