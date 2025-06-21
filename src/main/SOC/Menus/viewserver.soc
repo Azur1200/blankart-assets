@@ -5,13 +5,23 @@ EnterRoutine = MR_EnterViewServer
 DrawRoutine = MD_DrawViewServer
 QuitRoutine = MR_QuitViewServer
 KeyHandler = MR_HandleViewServer
-MenuItem TopBoxXY
+MenuItem TOPBOX
 X = 8
 Y = 16
+Style = fill
+Patch = 304x54,159
 
-MenuItem TopBoxWH
-X = BASEVIDWIDTH - 16
-Y = 54
+MenuItem MIDBOX
+X = 8
+Y = 72
+Style = fill
+Patch = 304x112,159
+
+MenuItem BOTBOX
+X = 8
+Y = BASEVIDHEIGHT - 14
+Style = fill
+Patch = 304x13,159
 
 MenuItem Thumbnail
 X = 10
@@ -54,30 +64,26 @@ X = 310
 Y = 48
 Style = thin2-right-warninghighlight
 
-MenuItem MidBoxXY
-X = 8
-Y = 72
-
-MenuItem MidBoxWH
-X = BASEVIDWIDTH - 16
-Y = 112
-
-MenuItem BotBoxXY
-X = 8
-Y = BASEVIDHEIGHT - 14
-
-MenuItem BotBoxWH
-X = BASEVIDWIDTH - 16
-Y = 13
-
-MenuItem Button1
+MenuItem EXITBUTTON
 X = 16
 Y = BASEVIDHEIGHT - 11
+Style = thin2
+Text = [^2ESC^0] = Return
 
-MenuItem Button2
+MenuItem TOGGLEBUTTON1
 X = BASEVIDWIDTH/2
 Y = BASEVIDHEIGHT - 11
+Style = thin2-center
+Text = [^2SPACE^0] = Players
 
-MenuItem Button3
+MenuItem TOGGLEBUTTON2
+X = BASEVIDWIDTH/2
+Y = BASEVIDHEIGHT - 11
+Style = thin2-center
+Text = [^2SPACE^0] = Addons
+
+MenuItem JOINBUTTON
 X = BASEVIDWIDTH - 12
 Y = BASEVIDHEIGHT - 11
+Style = thin2-right
+Text = [^2ENTER^0] = Join

@@ -84,3 +84,9 @@ Y = 156
 Text = 
 Argument = 10
 Call = MR_Connect
+
+MenuItem HORIZONTALLINE
+X = -26
+Y = 32
+Style = fill
+Patch = 318x1,0

@@ -250,45 +250,63 @@ DrawRoutine = MD_DrawJoystick
 EnterRoutine = MR_SetupJoystickMenu
 MenuItem JOY1
 Y = 16*0
+Style = fill
+Patch = 230x14,159,-3,-3
 Argument = 0
 Call = MR_AssignJoystick
 
 MenuItem JOY2
 Y = 16*1
+Style = fill
+Patch = 230x14,159,-3,-3
 Argument = 1
 Call = MR_AssignJoystick
 
 MenuItem JOY3
 Y = 16*2
+Style = fill
+Patch = 230x14,159,-3,-3
 Argument = 2
 Call = MR_AssignJoystick
 
 MenuItem JOY4
 Y = 16*3
+Style = fill
+Patch = 230x14,159,-3,-3
 Argument = 3
 Call = MR_AssignJoystick
 
 MenuItem JOY5
 Y = 16*4
+Style = fill
+Patch = 230x14,159,-3,-3
 Argument = 4
 Call = MR_AssignJoystick
 
 MenuItem JOY6
 Y = 16*5
+Style = fill
+Patch = 230x14,159,-3,-3
 Argument = 5
 Call = MR_AssignJoystick
 
 MenuItem JOY7
 Y = 16*6
+Style = fill
+Patch = 230x14,159,-3,-3
 Argument = 6
 Call = MR_AssignJoystick
 
 MenuItem JOY8
 Y = 16*7
+Style = fill
+Patch = 230x14,159,-3,-3
 Argument = 7
 Call = MR_AssignJoystick
 
 MenuItem JOY9
 Y = 16*8
+Style = fill
+Patch = 230x14,159,-3,-3
 Argument = 8
 Call = MR_AssignJoystick
