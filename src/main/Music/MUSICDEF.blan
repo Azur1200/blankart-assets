@@ -706,3 +706,17 @@ Title = Air
 Author = circle[P-M]
 Source = compilation：free
 Volume = 130
+
+Lump SRVMS1
+Usage = Viewing Server Info
+Title = Nazca
+Author = DEKU
+Source = SUGURI Realism.
+Volume = 70
+
+Lump SRVMS2
+Usage = Downloading...
+Title = Nazca
+Author = DEKU
+Source = SUGURI Realism.
+Volume = 70
