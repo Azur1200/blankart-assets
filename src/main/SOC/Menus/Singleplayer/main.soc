@@ -1,22 +1,19 @@
 Menu SP_MAIN
 X = 160
-Y = 72
+Y = 164
 EnterRoutine = MR_SinglePlayerMenu
 MenuItem GRANDPRIX
-Y = 92
 Style = center
 Text = Grand Prix
 SubMenu = SP_GRANDPRIX
 
 MenuItem TIMEATTACK
-Y = 100
 Style = center
 Text = Time Attack
 Argument = 0
 SubMenu = SP_TIMEATTACK
 
 MenuItem ITEMBREAKER
-Y = 108
 Style = center
 Text = Item Breaker
 Argument = 1

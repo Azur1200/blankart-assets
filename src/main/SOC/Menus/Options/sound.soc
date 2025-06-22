@@ -1,119 +1,107 @@
 Menu OP_SOUND
 X = 30
-Y = 20
+Y = 30
+LineHeight = 10
 HeaderPic = M_SOUND
 MenuItem SOUND
-Y = 10
 Text = SFX
 Cvar = sounds
 
 MenuItem SOUNDVOLUME
-Y = 18
+OfsY = -2
 Text = SFX Volume
 Slider = soundvolume
 
 MenuItem MUSIC
-Y = 30
+OfsY = 2
 Text = Music
 Cvar = music
 
 MenuItem MUSICVOLUME
-Y = 38
+OfsY = -2
 Text = Music Volume
 Slider = musicvolume
 
 MenuItem REVERSE
-Y = 50
+OfsY = 2
 Text = Reverse L/R Channels
 Cvar = stereoreverse
 
 MenuItem SURROUND
-Y = 60
 Text = Surround Sound
 Cvar = surround
 
 MenuItem AUDIOEFFECTS
 Text = Audio Effects...
-Y = 75
+OfsY = 5
 SubMenu = OP_SNDEFX
 
 MenuItem SOUNDTEST
-Y = 90
+OfsY = 5
 Text = Sound Test
 Cvar = soundtest
 Call = MR_PlaySound
 
 MenuItem MUSICTEST
-Y = 100
 Text = Music Test
 SubMenu = SR_SOUNDTEST
 
 MenuItem MUSICUNFOCUSED
-Y = 115
+OfsY = 5
 Text = Play Music While Unfocused
 Cvar = playmusicifunfocused
 
 MenuItem SOUNDUNFOCUSED
-Y = 125
 Text = Play SFX While Unfocused
 Cvar = playsoundifunfocused
 
 MenuItem MUSICRESYNC
-Y = 145
+OfsY = 10
 Text = Music Resync Threshold
 Cvar = music_resync_threshold
 
 MenuItem RESYNCPOWERUPS
-Y = 155
 Text = Only Resync Power Music
 Cvar = music_resync_powerups_only
 
 MenuItem RESTARTAUDIO
-Y = 165
 Text = Restart Audio System
 Call = MR_RestartAudio
 
 
 Menu OP_SNDEFX
 X = 60
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_SOUND
 MenuItem CHATNOTIFICATIONS
-Y = 10
 Text = Chat Notifications
 Cvar = chatnotifications
 
 MenuItem VOICES
-Y = 20
 Text = Character voices
 Cvar = kartvoices
 
 MenuItem POWERUPS
-Y = 30
 Text = Powerup Warning
 Cvar = kartinvinsfx
 
 MenuItem INVINCIBILITY
-Y = 40
 Text = Invincibility Music
 Cvar = supermusic
 
 MenuItem GROW
-Y = 50
 Text = Grow Music
 Cvar = growmusic
 
 MenuItem RESETSPECIAL
-Y = 60
 Text = Reset Special Music
 Cvar = resetspecialmusic
 
 MenuItem DRIFTSOUNDS
-Y = 70
 Text = New Drift Sounds
 Cvar = kartdriftsounds
 
 MenuItem SNEAKERSTACK
-Y = 80
 Text = Sneaker Stack Sound
 Cvar = kartstacking_sneakerstacksound

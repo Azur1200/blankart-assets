@@ -1,50 +1,74 @@
 Menu OP_HUD
 X = 30
-Y = 30
+Y = 50
+LineHeight = 10
 HeaderPic = M_HUD
 MenuItem SHOWHUD
-Y = 20
 Text = Show HUD (F3)
 Cvar = showhud
 
 MenuItem TRANSLUCENT
-Y = 30
 Text = HUD Visibility
 Slider = translucenthud
 
 MenuItem CHATHUD
-Y = 45
+OfsY = 5
 Text = Online HUD options...
 Submenu = OP_CHAT
 
 MenuItem GAMEHUD
-Y = 55
 Text = Game HUD options...
 Submenu = OP_GAMEHUD
 
 MenuItem BACKCOLOR
-Y = 65
 Text = Background Glass
 Cvar = con_backcolor
 
 MenuItem HIGHLIGHT
-Y = 80
+OfsY = 5
 Text = Menu Highlights
 Cvar = menuhighlight
-# highlight info - (GOOD HIGHLIGHT, WARNING HIGHLIGHT) - 105 (see M_DrawHUDOptions)
+
+MenuItem HLTEST1
+X = -2
+Style = highlight
+Text = (
+
+MenuItem HLTEST2
+X = 6
+OfsY = -10
+Style = recommendedhighlight
+Text = Good highlight
+
+MenuItem HLTEST3
+X = 114
+OfsY = -10
+Style = highlight
+Text = ,
+
+MenuItem HLTEST4
+X = 122
+OfsY = -10
+Style = warninghighlight
+Text = Warning highlight
+
+MenuItem HLTEST5
+X = 254
+OfsY = -10
+Style = highlight
+Text = )
 
 MenuItem MENUCAPS
-Y = 105
+OfsX = -254
+OfsY = 5
 Text = Uppercase Menus
 Cvar = menucaps
 
 MenuItem TEXTSIZE
-Y = 115
 Text = Console Text Size
 Cvar = con_textsize
 
 MenuItem FOCUSLOST
-Y = 125
 Text = Show "FOCUS LOST"
 Cvar = showfocuslost
 
@@ -52,43 +76,40 @@ Cvar = showfocuslost
 # Ok it's still called chatoptions but we'll put ping display in here to be clean
 Menu OP_CHAT
 X = 30
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_HUD
 # will ANYONE who doesn't know how to use the console want to touch this one?
 # nonetheless...
 MenuItem CHATMODE
-Y = 10
 Text = Chat Mode
 Cvar = chatmode
 
 MenuItem CHATWIDTH
-Y = 25
+OfsY = 5
 Text = Chat Box Width
 Slider = chatwidth
 
 MenuItem CHATHEIGHT
-Y = 35
 Text = Chat Box Height
 Slider = chatheight
 
 MenuItem CHATBACKTINT
-Y = 50
+OfsY = 5
 Text = Chat Background Tint
 Cvar = chatbacktint
 
 MenuItem CHATTIME
-Y = 60
 Text = Message Fadeout Time
 Cvar = chattime
 
 MenuItem CHATSPAM
-Y = 70
 Text = Spam Protection
 Cvar = chatspamprotection
 
 # shows ping next to framerate if we want to.
 MenuItem SHOWPING
-Y = 90
+OfsY = 10
 Text = Local ping display
 Cvar = showping
 
@@ -96,74 +117,62 @@ Cvar = showping
 Menu OP_GAMEHUD
 X = 30
 Y = 30
+LineHeight = 10
 HeaderPic = M_HUD
 MenuItem MINIMAP
-Y = 10
 Text = Minimap Visibility
 Slider = kartminimap
 
 MenuItem COLORIZE
-Y = 25
+OfsY = 5
 Text = Colorized HUD
 Cvar = colorizedhud
 
 MenuItem COLORIZECOLOR
-Y = 35
 Text = Colorized HUD Color
 Cvar = colorizedhudcolor
 
 MenuItem COLORIZEITEMBOX
-Y = 45
 Text = Colorized Itembox
 Cvar = colorizeditembox
 
 MenuItem DARKITEMBOX
-Y = 55
 Text = Darken Itembox
 Cvar = darkitembox
 
 MenuItem MINIFINISHED
-Y = 65
 Text = Finished Minimap Players
 Cvar = showfinishedplayers
 
 MenuItem MININAMETAGS
-Y = 75
 Text = Minimap Nametags
 Cvar = showminimapnames
 
 MenuItem MINIANGLE
-Y = 85
 Text = Minimap Angle
 Cvar = showminimapangle
 
 MenuItem NAMETAGS
-Y = 95
 Text = Nametags
 Cvar = seenames
 
 MenuItem SPEEDOMETER
-Y = 105
 Text = Speedometer Display
 Cvar = kartdisplayspeed
 
 MenuItem SPEEDSTYLE
-Y = 115
 Text = Speedometer Style
 Cvar = newspeedometer
 
 MenuItem SHOWINPUT
-Y = 125
 Text = Input Display
 Cvar = showinput
 
 MenuItem CHECK
-Y = 135
 Text = Show "CHECK"
 Cvar = kartcheck
 
 MenuItem OFFSETS
-Y = 145
 Text = HUD Offsets...
 Submenu = OP_OFFSET
 
@@ -171,130 +180,105 @@ Submenu = OP_OFFSET
 Menu OP_OFFSET
 X = 30
 Y = 30
+LineHeight = 10
 ScrollHeight = 144
 HeaderPic = M_HUD
 MenuItem ITEMX
-Y = 10
 Text = Itembox X Offset
 Cvar = hud_item_xoffset
 
 MenuItem ITEMY
-Y = 20
 Text = Itembox Y Offset
 Cvar = hud_item_yoffset
 
 MenuItem TIMERX
-Y = 30
 Text = Timer X Offset
 Cvar = hud_time_xoffset
 
 MenuItem TIMERY
-Y = 40
 Text = Timer Y Offset
 Cvar = hud_time_yoffset
 
 MenuItem LAPSX
-Y = 50
 Text = Laps X Offset
 Cvar = hud_laps_xoffset
 
 MenuItem LAPSY
-Y = 60
 Text = Laps Y Offset
 Cvar = hud_laps_yoffset
 
 MenuItem RINGSX
-Y = 70
 Text = Rings X Offset
 Cvar = hud_rings_xoffset
 
 MenuItem RINGSY
-Y = 80
 Text = Rings Y Offset
 Cvar = hud_rings_yoffset
 
 MenuItem COUNTDOWNX
-Y = 90
 Text = Ending Countdown X Offset
 Cvar = hud_dnft_xoffset
 
 MenuItem COUNTDOWNY
-Y = 100
 Text = Ending Countdown Y Offset
 Cvar = hud_dnft_yoffset
 
 MenuItem SPEEDX
-Y = 110
 Text = Speedometer X Offset
 Cvar = hud_speed_xoffset
 
 MenuItem SPEEDY
-Y = 120
 Text = Speedometer Y Offset
 Cvar = hud_speed_yoffset
 
 MenuItem ACCESSX
-Y = 130
 Text = Accessibility X Offset
 Cvar = hud_acce_xoffset
 
 MenuItem ACCESSY
-Y = 140
 Text = Accessibility Y Offset
 Cvar = hud_acce_yoffset
 
 MenuItem POSITIONX
-Y = 150
 Text = Position X Offset
 Cvar = hud_posi_xoffset
 
 MenuItem POSITIONY
-Y = 160
 Text = Position Y Offset
 Cvar = hud_posi_yoffset
 
 MenuItem RANKINGX
-Y = 170
 Text = Miniranking X Offset
 Cvar = hud_posi_xoffset
 
 MenuItem RANKINGY
-Y = 180
 Text = Miniranking Y Offset
 Cvar = hud_posi_yoffset
 
 MenuItem STARTX
-Y = 190
 Text = Start Countdown X Offset
 Cvar = hud_stcd_xoffset
 
 MenuItem STARTY
-Y = 200
 Text = Start Countdown Y Offset
 Cvar = hud_stcd_yoffset
 
 MenuItem CHECKY
-Y = 210
 Text = Check Y Offset
 Cvar = hud_chek_yoffset
 
 MenuItem MINIX
-Y = 220
 Text = Minimap X Offset
 Cvar = hud_mini_xoffset
 
 MenuItem MINIY
-Y = 230
 Text = Minimap Y Offset
 Cvar = hud_mini_yoffset
 
 MenuItem WANTEDX
-Y = 240
 Text = Wanted X Offset
 Cvar = hud_want_xoffset
 
 MenuItem WANTEDY
-Y = 250
 Text = Wanted Y Offset
 Cvar = hud_want_yoffset
-

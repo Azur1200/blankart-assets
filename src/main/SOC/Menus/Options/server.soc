@@ -1,129 +1,112 @@
 Menu OP_SERVER
 X = 24
-Y = 15
+Y = 25
+LineHeight = 10
 HeaderPic = M_SERVER
 MenuItem NAME
-Y = 10
 Text = Server Name
 Cvar = servername
 
 MenuItem INTERTIME
-Y = 40
+OfsY = 20
 Text = Intermission Timer
 Cvar = inttime
 
 MenuItem ADVANCEMAP
-Y = 50
 Text = Map Progression
 Cvar = advancemap
 
 MenuItem VOTETIME
-Y = 60
 Text = Voting Timer
 Cvar = votetime
 
 MenuItem VOTEROWS
-Y = 70
 Text = Voting Row Amount
 Cvar = votemaxrows
 
 MenuItem VOTECHANGES
-Y = 80
 Text = Voting Rule Changes
 Cvar = kartvoterulechanges
 
 MenuItem VOTEENCORE
-Y = 90
 Text = Voting Encore Rules
 Cvar = kartencorevotes
 
 MenuItem MAXPLAYERS
-Y = 110
+OfsY = 10
 Text = Max. Player Count
 Cvar = maxplayers
 
 MenuItem ALLOWJOIN
-Y = 120
 Text = Allow Players to Join
 Cvar = allowjoin
 
 MenuItem DOWNLOADING
-Y = 130
 Text = Allow Addon Downloading
 Cvar = downloading
 
 MenuItem PAUSING
-Y = 140
 Text = Pause Permission
 Cvar = pausepermission
 
 MenuItem MUTECHAT
-Y = 150
 Text = Mute All Chat
 Cvar = mute
 
 MenuItem ADVANCED
-Y = 170
+OfsY = 10
 Text = Advanced Options...
 Submenu = OP_ADVANCEDSERVER
 
 
 Menu OP_ADVANCEDSERVER
 X = 24
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_SERVER
 MenuItem MASTERSERVER
-Y = 10
 Text = Server Browser Address
 Cvar = masterserver
 
 MenuItem RESYNCHATTEMPTS
-Y = 40
+OfsY = 20
 Text = Attempts to resynchronise
 Cvar = resynchattempts
 
 MenuItem MAXDELAY
-Y = 50
 Text = Ping limit (ms)
 Cvar = maxdelay
 
 MenuItem MAXDELAYTIMEOUT
-Y = 60
 Text = Ping timeout (s)
 Cvar = maxdelaytimeout
 
 MenuItem NETTIMEOUT
-Y = 70
 Text = Connection timeout (tics)
 Cvar = nettimeout
 
 MenuItem JOINTIMEOUT
-Y = 80
 Text = Join timeout (tics)
 Cvar = jointimeout
 
 MenuItem MAXSEND
-Y = 100
+OfsY = 10
 Text = Max. file transfer send (KB)
 Cvar = maxsend
 
 MenuItem DOWNLOADSPEED
-Y = 110
 Text = File transfer packet rate
 Cvar = downloadspeed
 
 MenuItem SHOWJOINADDRESS
-Y = 130
+OfsY = 10
 Text = Log join addresses
 Cvar = showjoinaddress
 
 MenuItem BLAMECFAIL
-Y = 140
 Text = Log resyncs
 Cvar = blamecfail
 
 MenuItem NOTICEDOWNLOAD
-Y = 150
 Text = Log file transfers
 Cvar = noticedownload
-

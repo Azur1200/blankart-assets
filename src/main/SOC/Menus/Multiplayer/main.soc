@@ -5,50 +5,46 @@ HeaderPic = M_MULTI
 DrawRoutine = MD_DrawMPMainMenu
 QuitRoutine = MR_CancelConnect
 MenuItem PLAYERSHEADER
-Y = 0
 Style = header
 Text = Players
 
 MenuItem LOCALPLAYERS
-Y = 10
+OfsY = 2
 Text = Number of local players
 Cvar = splitplayers
 
 MenuItem PLAYERSETUP
-Y = 18
 Text = Player setup...
 Cvar = dummymultiplayer
 SubMenu = MN_MP_PLAYERSETUP
 
 MenuItem HOSTHEADER
-Y = 100-24
+OfsY = 50
 Style = header
 Text = Host a game
 
 MenuItem STARTSERVER
-Y = 110-24
+OfsY = 2
 Text = Internet/LAN...
 Patch = (2-16 players)
 SubMenu = MP_SERVER
 
 MenuItem OFFLINESERVER
-Y = 118-24
 Text = Offline...
 Patch = (2-4 players)
 SubMenu = MP_SPLITSCREEN
 
 MenuItem JOINHEADER
-Y = 132-24
+OfsY = 6
 Style = header
 Text = Join a game
 
 MenuItem BROWSER
-Y = 142-24
+OfsY = 2
 Text = Internet server browser...
 Call = MR_ConnectMenuModChecks
 
 MenuItem CONNECTIP
-Y = 150-24
 Text = Specify IPv4 address:
 Cvar = dummyip
 Call = MR_ConnectIP

@@ -1,0 +1,16 @@
+Menu MISC_DISCORDREQUESTS
+X = 100
+Y = 133
+KeyHandler = MR_HandleDiscordRequests
+DrawRoutine = MD_DrawDiscordRequests
+MenuItem WANT
+Y = 10
+Style = thin2
+Sticker = True
+Text = ...would like to join!
+
+MenuItem CONTROL
+Y = 24
+Style = thin2
+Sticker = True
+Text = ^2ENTER^0 - Accept    ^2ESC^0 - Decline

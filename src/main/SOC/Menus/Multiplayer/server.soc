@@ -1,35 +1,32 @@
 Menu MP_SERVER
 X = 24
-Y = 40
+Y = 50
+LineHeight = 10
 HeaderPic = M_MULTI
 EnterRoutine = MR_StartServerMenu
 MenuItem MAXPLAYERS
-Y = 10
 Text = Max. Player Count
 Cvar = maxplayers
 
 MenuItem ADVERTISE
-Y = 20
 Text = Advertise
 Cvar = advertise
 
 MenuItem SERVERNAME
-Y = 30
 Text = Server Name
 Cvar = servername
 
 MenuItem GAMETYPE
-Y = 68
+OfsY = 28
 Text = Game Type
 Cvar = newgametype
 
 MenuItem LEVEL
-Y = 78
 Text = Level
 Cvar = nextmap
 
 MenuItem START
-Y = 130
+OfsY = 42
 Style = highlight
 Text = Start
 Call = MR_StartServer
@@ -37,21 +34,20 @@ Call = MR_StartServer
 
 Menu MP_SPLITSCREEN
 X = 24
-Y = 40
+Y = 108
+LineHeight = 10
 HeaderPic = M_MULTI
 EnterRoutine = MR_StartServerMenu
 MenuItem GAMETYPE
-Y = 68
 Text = Game Type
 Cvar = newgametype
 
 MenuItem LEVEL
-Y = 78
 Text = Level
 Cvar = nextmap
 
 MenuItem START
-Y = 130
+OfsY = 42
 Style = highlight
 Text = Start
 Call = MR_StartServer

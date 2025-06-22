@@ -1,139 +1,120 @@
 Menu OP_GAME
 X = 30
-Y = 10
+Y = 30
+LineHeight = 10
 HeaderPic = M_GAME
 MenuItem ITEMOPTIONS
-Y = 20
 Text = Random Item Toggles...
 Submenu = OP_MONITORTOGGLE
 
 MenuItem BLANKARTOPTIONS
-Y = 30
 Text = Gameplay Mods...
 Submenu = OP_BLANKARTGAME
 
 MenuItem BOTOPTIONS
-Y = 40
 Text = Bots...
 Submenu = OP_BLANKARTBOT
 
 MenuItem RACESPEED
-Y = 50
 Text = Race Game Speed
 Cvar = kartspeed
 
 MenuItem BATTLESPEED
-Y = 60
 Text = Battle Game Speed
 Cvar = kartbattlespeed
 
 MenuItem FRANTICITEMS
-Y = 70
 Text = Frantic Items
 Cvar = kartfrantic
 
 MenuItem ENCORE
-Y = 80
 Text = Encore Mode
 Cvar = kartencore
 
 MenuItem NUMLAPS
-Y = 100
+OfsY = 10
 Text = Number of Laps
 Cvar = numlaps
 
 MenuItem COUNTDOWN
-Y = 110
 Text = Exit Countdown Timer
 Cvar = countdowntime
 
 MenuItem TIMELIMIT
-Y = 130
+OfsY = 10
 Text = Time Limit
 Cvar = timelimit
 
 MenuItem NUMBUMPERS
-Y = 140
 Text = Starting Bumpers
 Cvar = kartbumpers
 
 MenuItem KARMA
-Y = 160
+OfsY = 10
 Text = Karma Comeback
 Cvar = kartcomeback
 
 MenuItem POWERLEVELS
-Y = 170
 Text = Track Power Levels
 Cvar = kartusepwrlv
 
 
 Menu OP_BLANKARTGAME
 X = 30
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_GAME
 MenuItem RINGS
-Y = 10
 Text = Rings
 Cvar = kartrings
 
 MenuItem ITEMBREAKER
-Y = 20
 Text = Item Breaker
 Cvar = kartitembreaker
 
 MenuItem PURPLEDRIFT
-Y = 30
 Text = Purple Drift
 Cvar = kartpurpledrift
 
 MenuItem SLIPDASH
-Y = 40
 Text = Slipdash
 Cvar = kartslipdash
 
 MenuItem BUMPSPARK
-Y = 50
 Text = Bump Spark
 Cvar = kartbumpspark
 
 MenuItem BUMPSPRING
-Y = 60
 Text = Bump Spring
 Cvar = kartbumpspring
 
 MenuItem STACKING
-Y = 70
 Text = Boost Stacking
 Cvar = kartstacking
 
 MenuItem CHAINING
-Y = 80
 Text = Boost Chaining
 Cvar = kartchaining
 
 MenuItem CHAINOFFROAD
-Y = 90
 Text = Chain Offroad
 Cvar = kartchaining_chainoffroad
 
 
 Menu OP_BLANKARTBOT
 X = 30
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_GAME
 MenuItem DIFFICULTY
-Y = 10
 Text = Bot Difficulty
 Cvar = kartbot
 
 MenuItem COMPLEXITY
-Y = 20
 Text = Base Complexity
 Cvar = kartbot_basetrackcomplexity
 
 MenuItem MODIFIER
-Y = 30
 Text = Max Complexity Modifier
 Cvar = kartbot_modifiermax
 

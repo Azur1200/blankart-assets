@@ -5,4 +5,4 @@ DrawRoutine = MD_DrawCheckList
 MenuItem NEXT
 Y = 192
 Text = NEXT
-SubMenu = MAIN
+Call = MR_GoBack

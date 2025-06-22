@@ -1,70 +1,63 @@
 Menu OP_MAIN
 X = 60
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_OPTTTL
 EnterRoutine = MR_Options
 MenuItem CONTROLS
-Y = 10
 Text = Control Setup...
 Submenu = OP_CONTROLSETUP
 
 MenuItem VIDEO
-Y = 30
+OfsY = 10
 Text = Video Options...
 Submenu = OP_VIDEO
 
 MenuItem SOUND
-Y = 40
 Text = Sound Options...
 Submenu = OP_SOUND
 
 MenuItem HUD
-Y = 60
+OfsY = 10
 Text = HUD Options...
 Submenu = OP_HUD
 
 MenuItem CAMERA
-Y = 70
 Text = Camera Options...
 Submenu = OP_CAMERA
 
 MenuItem GAMEPLAY
-Y = 80
 Text = Gameplay Options...
 Submenu = OP_GAME
 
 MenuItem SERVER
-Y = 90
 Text = Server Options...
 Submenu = OP_SERVER
 
 MenuItem DATA
-Y = 110
+OfsY = 10
 Text = Data Options...
 Submenu = OP_DATA
 
 MenuItem CUSTOM
-Y = 120
 Text = Custom Options...
 Submenu = OP_CUSTOM
 
 MenuItem MANUAL
-Y = 140
+OfsY = 10
 Text = Tricks & Secrets (F1)
 SubMenu = HELP
 
 MenuItem KARTCREDITS
-Y = 150
 Text = Play Kart Credits
 Call = MR_Credits
 
 MenuItem BLANCREDITS
-Y = 160
 Text = Play BlanKart Credits
 Call = MR_BlanCredits
 
 
 Menu OP_CUSTOM
 X = 30
-Y = 20
+Y = 30
 # nothing here, load some addons and you'll get menuitems!

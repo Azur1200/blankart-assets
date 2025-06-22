@@ -1,26 +1,26 @@
 Menu OP_DATA
 X = 60
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_DATA
 MenuItem SCREENSHOTS
-Y = 10
 Text = Screenshot Options...
 SubMenu = OP_SCREENSHOTS
 
 MenuItem ADDONS
-Y = 20
 Text = Addon Options...
 SubMenu = OP_ADDONS
 
 MenuItem REPLAYS
-Y = 30
 Text = Replay Options...
 Submenu = MISC_REPLAYOPTIONS
 
 MenuItem DISCORD
+Text = Discord Options...
+Submenu = OP_DISCORD
 
 MenuItem ERASE
-Y = 50
+OfsY = 10
 Text = Erase Data...
 Submenu = OP_ERASEDATA
 
@@ -28,95 +28,82 @@ Submenu = OP_ERASEDATA
 Menu MISC_REPLAYOPTIONS
 X = 27
 Y = 40
+LineHeight = 10
 HeaderPic = M_REPOPT
 MenuItem RECORD
-Y = 0
 Text = Record Replays
 Cvar = netdemo_record
 
 MenuItem SYNCQUALITY
-Y = 10
 Text = Sync Check Interval
 Cvar = netdemo_syncquality
 
 
 Menu OP_SCREENSHOTS
 X = 30
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_SCSHOT
 EnterRoutine = MR_ScreenshotOptions
 MenuItem LOCATION
-Y = 10
 Text = Storage Location
 Cvar = screenshot_option
 
 MenuItem FOLDER
-Y = 20
 Text = Custom Folder
 Cvar = screenshot_folder
 
 MenuItem SCREENSHOTHEADER
-Y = 50
+OfsY = 20
 Style = header
 Text = Screenshots (F8)
 
 MenuItem MEMORY
-Y = 60
 Text = Memory Level
 Cvar = png_memory_level
 
 MenuItem COMPRESSION
-Y = 70
 Text = Compression Level
 Cvar = png_compress_level
 
 MenuItem STRATEGY
-Y = 80
 Text = Strategy
 Cvar = png_strategy
 
 MenuItem WINDOWSIZE
-Y = 90
 Text = Window Size
 Cvar = png_window_size
 
 MenuItem MOVIEHEADER
-Y = 105
+OfsY = 5
 Style = header
 Text = Movie Mode (F9)
 
 MenuItem MOVIEMODE
-Y = 115
 Text = Capture Mode
 Cvar = moviemode_mode
 
 MenuItem GIFOPTIMIZE
-Y = 125
 Text = Region Optimizing
 Cvar = gif_optimize
 
 MenuItem GIFDOWNSCALE
-Y = 135
 Text = Downscaling
 Cvar = gif_downscale
 
 MenuItem APNGMEMORY
-Y = 125
 Text = Memory Level
 Cvar = apng_memory_level
 
 MenuItem APNGCOMPRESSION
-Y = 135
 Text = Compression Level
 Cvar = apng_compress_level
 
 MenuItem APNGSTRATEGY
-Y = 145
 Text = Strategy
 Cvar = apng_strategy
 
 MenuItem APNGWINDOW
-Y = 155
 Text = Window Size
 Cvar = apng_window_size
 
@@ -124,68 +111,88 @@ Cvar = apng_window_size
 Menu OP_ADDONS
 X = 30
 Y = 30
+LineHeight = 10
 HeaderPic = M_ADDONS
 EnterRoutine = MR_AddonsOptions
 MenuItem HEADER
-Y = 0
 Style = header
 Text = Menu
 
 MenuItem LOCATION
-Y = 10
 Text = Location
 Cvar = addons_option
 
 MenuItem FOLDER
-Y = 20
 Text = Custom Folder
 Cvar = addons_folder
 
 MenuItem USEHASH
-Y = 48
+OfsY = 18
 Text = Identify addons via
 Cvar = addons_md5
 
 MenuItem SHOWALL
-Y = 58
 Text = Show unsupported file types
 Cvar = addons_showall
 
 MenuItem SEARCHHEADER
-Y = 76
+OfsY = 8
 Style = header
 Text = Search
 
 MenuItem SEARCHTYPE
-Y = 86
 Text = Matching
 Cvar = addons_search_type
 
 MenuItem SEARCHCASE
-Y = 96
 Text = Case-sensitive
 Cvar = addons_search_case
 
 
+Menu OP_DISCORD
+X = 30
+Y = 40
+LineHeight = 10
+MenuItem RICHPRESENCE
+Text = Rich Presence
+Cvar = discordrp
+
+MenuItem HEADER
+OfsY = 10
+Style = header
+Text = Rich Presence Settings
+
+MenuItem STREAMER
+Text = Streamer Mode
+Cvar = discordstreamer
+
+MenuItem ASKTOJOIN
+OfsY = 10
+Text = Allow Ask To Join
+Cvar = discordasks
+
+MenuItem INVITES
+Text = Allow Invites
+Cvar = discordinvites
+
+
 Menu OP_ERASEDATA
 X = 30
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_DATA
 MenuItem RECORDS
-Y = 10
 Text = Erase Record Data
 Argument = 0
 Call = MR_EraseData
 
 MenuItem UNLOCKABLES
-Y = 20
 Text = Erase Unlockable Data
 Argument = 1
 Call = MR_EraseData
 
 MenuItem EVERYTHING
-Y = 40
+OfsY = 10
 Text = \85Erase ALL Data
 Argument = 2
 Call = MR_EraseData
-

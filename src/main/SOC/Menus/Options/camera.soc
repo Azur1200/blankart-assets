@@ -1,41 +1,37 @@
 Menu OP_CAMERA
 X = 30
 Y = 30
+LineHeight = 10
 MenuItem HEADER
-Y = 0
 Style = header
 Text = Camera Options
 
 MenuItem TILTING
-Y = 20
+OfsY = 10
 Text = Camera Tilting
 Cvar = tilting
 
 MenuItem LAGLESS
-Y = 30
 Text = Lagless Camera
 Cvar = laglesscamera
 
 MenuItem P1CAMERA
-Y = 50
+OfsY = 10
 Text = Player 1 Camera options...
 Argument = 0
 Submenu = OP_CAMERASETUP
 
 MenuItem P2CAMERA
-Y = 60
 Text = Player 2 Camera options...
 Argument = 1
 Submenu = OP_CAMERASETUP
 
 MenuItem P3CAMERA
-Y = 70
 Text = Player 3 Camera options...
 Argument = 2
 Submenu = OP_CAMERASETUP
 
 MenuItem P4CAMERA
-Y = 80
 Text = Player 4 Camera options...
 Argument = 3
 Submenu = OP_CAMERASETUP
@@ -44,36 +40,32 @@ Submenu = OP_CAMERASETUP
 Menu OP_CAMERASETUP
 X = 30
 Y = 30
+LineHeight = 10
 EnterRoutine = MR_CameraSetup
 MenuItem HEADER
-Y = 0
 Style = header
 Text = Camera Options
 
 MenuItem FLIPCAM
-Y = 30
+OfsY = 20
 Text = Flipcam
 Cvar = flipcam
 
 MenuItem CAMDISTANCE
-Y = 40
 Text = Camera Distance
 Argument = FRACUNIT
 Cvar = cam_dist
 
 MenuItem CAMHEIGHT
-Y = 50
 Text = Camera Height
 Argument = FRACUNIT
 Cvar = cam_height
 
 MenuItem CAMSPEED
-Y = 60
 Text = Camera Speed
 Cvar = cam_speed
 
 MenuItem CHASECAM
-Y = 85
+OfsY = 5
 Text = Third Person Camera
 Cvar = chasecam
-
