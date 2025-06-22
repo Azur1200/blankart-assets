@@ -1,13 +1,13 @@
 Menu SCRAMBLETEAM
 X = 27
-Y = 40
+Y = 70
+LineHeight = 10
 MenuItem SCRAMBLE
-Y = 30
 Text = Scramble Method
 Cvar = dummyscramble
 
 MenuItem CONFIRM
-Y = 90
+OfsY = 50
 Style = highlight
 Text = Confirm
 Call = MR_ConfirmTeamScramble
@@ -15,19 +15,18 @@ Call = MR_ConfirmTeamScramble
 
 Menu CHANGETEAM
 X = 27
-Y = 40
+Y = 70
+LineHeight = 10
 MenuItem PLAYER
-Y = 30
 Text = Player
 Cvar = dummymenuplayer
 
 MenuItem TEAM
-Y = 40
 Text = Team
 Cvar = dummyteam
 
 MenuItem CONFIRM
-Y = 90
+OfsY = 40
 Style = highlight
 Text = Confirm
 Call = MR_ConfirmTeamChange
@@ -35,19 +34,18 @@ Call = MR_ConfirmTeamChange
 
 Menu CHANGESPECTATE
 X = 27
-Y = 40
+Y = 70
+LineHeight = 10
 MenuItem PLAYER
-Y = 30
 Text = Player
 Cvar = dummymenuplayer
 
 MenuItem STATUS
-Y = 40
 Text = Status
 Cvar = dummyspectate
 
 MenuItem CONFIRM
-Y = 90
+OfsY = 40
 Style = highlight
 Text = Confirm
 Call = MR_ConfirmSpectateChange
