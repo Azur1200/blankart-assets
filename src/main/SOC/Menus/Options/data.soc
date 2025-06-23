@@ -54,7 +54,7 @@ Text = Custom Folder
 Cvar = screenshot_folder
 
 MenuItem SCREENSHOTHEADER
-OfsY = 20
+Y = 40
 Style = header
 Text = Screenshots (F8)
 
@@ -127,7 +127,7 @@ Text = Custom Folder
 Cvar = addons_folder
 
 MenuItem USEHASH
-OfsY = 18
+Y = 48
 Text = Identify addons via
 Cvar = addons_md5
 

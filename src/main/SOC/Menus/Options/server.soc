@@ -8,7 +8,7 @@ Text = Server Name
 Cvar = servername
 
 MenuItem INTERTIME
-OfsY = 20
+OfsY = 4
 Text = Intermission Timer
 Cvar = inttime
 
@@ -69,7 +69,7 @@ Text = Server Browser Address
 Cvar = masterserver
 
 MenuItem RESYNCHATTEMPTS
-OfsY = 20
+OfsY = 4
 Text = Attempts to resynchronise
 Cvar = resynchattempts
 

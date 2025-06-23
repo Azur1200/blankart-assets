@@ -17,7 +17,7 @@ Text = Server Name
 Cvar = servername
 
 MenuItem GAMETYPE
-OfsY = 28
+OfsY = 12
 Text = Game Type
 Cvar = newgametype
 
