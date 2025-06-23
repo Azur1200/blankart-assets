@@ -1,119 +1,107 @@
 Menu OP_SOUND
 X = 30
-Y = 20
+Y = 30
+LineHeight = 10
 HeaderPic = M_SOUND
-DrawRoutine = MD_DrawSkyRoom
-MenuItem SNDENA
-Y = 10
+MenuItem SOUND
 Text = SFX
 Cvar = sounds
 
-MenuItem
-Y = 18
+MenuItem SOUNDVOLUME
+OfsY = -2
 Text = SFX Volume
-CvarSlider = soundvolume
+Slider = soundvolume
 
-MenuItem MUSENA
-Y = 30
+MenuItem MUSIC
+OfsY = 2
 Text = Music
 Cvar = music
 
-MenuItem
-Y = 38
+MenuItem MUSICVOLUME
+OfsY = -2
 Text = Music Volume
-CvarSlider = musicvolume
+Slider = musicvolume
 
-MenuItem
-Y = 50
+MenuItem REVERSE
+OfsY = 2
 Text = Reverse L/R Channels
 Cvar = stereoreverse
 
-MenuItem
-Y = 60
+MenuItem SURROUND
 Text = Surround Sound
 Cvar = surround
 
-MenuItem
+MenuItem AUDIOEFFECTS
 Text = Audio Effects...
-Y = 75
+OfsY = 5
 SubMenu = OP_SNDEFX
 
-MenuItem
-Y = 90
+MenuItem SOUNDTEST
+OfsY = 5
 Text = Sound Test
-KeyHandler = MR_HandleSoundTest
+Cvar = soundtest
+Call = MR_PlaySound
 
-MenuItem
-Y = 100
+MenuItem MUSICTEST
 Text = Music Test
-Call = MR_MusicTest
+SubMenu = SR_SOUNDTEST
 
-MenuItem
-Y = 115
+MenuItem MUSICUNFOCUSED
+OfsY = 5
 Text = Play Music While Unfocused
 Cvar = playmusicifunfocused
 
-MenuItem
-Y = 125
+MenuItem SOUNDUNFOCUSED
 Text = Play SFX While Unfocused
 Cvar = playsoundifunfocused
 
-MenuItem
-Y = 145
+MenuItem MUSICRESYNC
+OfsY = 10
 Text = Music Resync Threshold
 Cvar = music_resync_threshold
 
-MenuItem
-Y = 155
+MenuItem RESYNCPOWERUPS
 Text = Only Resync Power Music
 Cvar = music_resync_powerups_only
 
-MenuItem
-Y = 165
+MenuItem RESTARTAUDIO
 Text = Restart Audio System
 Call = MR_RestartAudio
 
 
 Menu OP_SNDEFX
 X = 60
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_SOUND
-MenuItem
-Y = 10
+MenuItem CHATNOTIFICATIONS
 Text = Chat Notifications
 Cvar = chatnotifications
 
-MenuItem
-Y = 20
+MenuItem VOICES
 Text = Character voices
 Cvar = kartvoices
 
-MenuItem
-Y = 30
+MenuItem POWERUPS
 Text = Powerup Warning
 Cvar = kartinvinsfx
 
-MenuItem
-Y = 40
+MenuItem INVINCIBILITY
 Text = Invincibility Music
 Cvar = supermusic
 
-MenuItem
-Y = 50
+MenuItem GROW
 Text = Grow Music
 Cvar = growmusic
 
-MenuItem
-Y = 60
+MenuItem RESETSPECIAL
 Text = Reset Special Music
 Cvar = resetspecialmusic
 
-MenuItem
-Y = 70
+MenuItem DRIFTSOUNDS
 Text = New Drift Sounds
 Cvar = kartdriftsounds
 
-MenuItem
-Y = 80
+MenuItem SNEAKERSTACK
 Text = Sneaker Stack Sound
 Cvar = kartstacking_sneakerstacksound

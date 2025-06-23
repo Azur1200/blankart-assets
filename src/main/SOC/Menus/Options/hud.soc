@@ -1,51 +1,74 @@
 Menu OP_HUD
 X = 30
-Y = 30
+Y = 50
+LineHeight = 10
 HeaderPic = M_HUD
-DrawRoutine = MD_DrawHUDOptions
-MenuItem
-Y = 20
+MenuItem SHOWHUD
 Text = Show HUD (F3)
 Cvar = showhud
 
-MenuItem
-Y = 30
+MenuItem TRANSLUCENT
 Text = HUD Visibility
-CvarSlider = translucenthud
+Slider = translucenthud
 
-MenuItem
-Y = 45
+MenuItem CHATHUD
+OfsY = 5
 Text = Online HUD options...
 Submenu = OP_CHAT
 
-MenuItem
-Y = 55
+MenuItem GAMEHUD
 Text = Game HUD options...
 Submenu = OP_GAMEHUD
 
-MenuItem
-Y = 65
+MenuItem BACKCOLOR
 Text = Background Glass
 Cvar = con_backcolor
 
-MenuItem
-Y = 80
+MenuItem HIGHLIGHT
+OfsY = 5
 Text = Menu Highlights
 Cvar = menuhighlight
-# highlight info - (GOOD HIGHLIGHT, WARNING HIGHLIGHT) - 105 (see M_DrawHUDOptions)
 
-MenuItem
-Y = 105
+MenuItem HLTEST1
+X = -2
+Style = highlight
+Text = (
+
+MenuItem HLTEST2
+X = 6
+OfsY = -10
+Style = recommendedhighlight
+Text = Good highlight
+
+MenuItem HLTEST3
+X = 114
+OfsY = -10
+Style = highlight
+Text = ,
+
+MenuItem HLTEST4
+X = 122
+OfsY = -10
+Style = warninghighlight
+Text = Warning highlight
+
+MenuItem HLTEST5
+X = 254
+OfsY = -10
+Style = highlight
+Text = )
+
+MenuItem MENUCAPS
+OfsX = -254
+OfsY = 5
 Text = Uppercase Menus
 Cvar = menucaps
 
-MenuItem
-Y = 115
+MenuItem TEXTSIZE
 Text = Console Text Size
 Cvar = con_textsize
 
-MenuItem
-Y = 125
+MenuItem FOCUSLOST
 Text = Show "FOCUS LOST"
 Cvar = showfocuslost
 
@@ -53,43 +76,40 @@ Cvar = showfocuslost
 # Ok it's still called chatoptions but we'll put ping display in here to be clean
 Menu OP_CHAT
 X = 30
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_HUD
 # will ANYONE who doesn't know how to use the console want to touch this one?
 # nonetheless...
-MenuItem
-Y = 10
+MenuItem CHATMODE
 Text = Chat Mode
 Cvar = chatmode
 
-MenuItem
-Y = 25
+MenuItem CHATWIDTH
+OfsY = 5
 Text = Chat Box Width
-CvarSlider = chatwidth
+Slider = chatwidth
 
-MenuItem
-Y = 35
+MenuItem CHATHEIGHT
 Text = Chat Box Height
-CvarSlider = chatheight
+Slider = chatheight
 
-MenuItem
-Y = 50
+MenuItem CHATBACKTINT
+OfsY = 5
 Text = Chat Background Tint
 Cvar = chatbacktint
 
-MenuItem
-Y = 60
+MenuItem CHATTIME
 Text = Message Fadeout Time
 Cvar = chattime
 
-MenuItem
-Y = 70
+MenuItem CHATSPAM
 Text = Spam Protection
 Cvar = chatspamprotection
 
 # shows ping next to framerate if we want to.
-MenuItem
-Y = 90
+MenuItem SHOWPING
+OfsY = 10
 Text = Local ping display
 Cvar = showping
 
@@ -97,74 +117,62 @@ Cvar = showping
 Menu OP_GAMEHUD
 X = 30
 Y = 30
+LineHeight = 10
 HeaderPic = M_HUD
-MenuItem
-Y = 10
+MenuItem MINIMAP
 Text = Minimap Visibility
-CvarSlider = kartminimap
+Slider = kartminimap
 
-MenuItem
-Y = 25
+MenuItem COLORIZE
+OfsY = 5
 Text = Colorized HUD
 Cvar = colorizedhud
 
-MenuItem
-Y = 35
+MenuItem COLORIZECOLOR
 Text = Colorized HUD Color
 Cvar = colorizedhudcolor
 
-MenuItem
-Y = 45
+MenuItem COLORIZEITEMBOX
 Text = Colorized Itembox
 Cvar = colorizeditembox
 
-MenuItem
-Y = 55
+MenuItem DARKITEMBOX
 Text = Darken Itembox
 Cvar = darkitembox
 
-MenuItem
-Y = 65
+MenuItem MINIFINISHED
 Text = Finished Minimap Players
 Cvar = showfinishedplayers
 
-MenuItem
-Y = 75
+MenuItem MININAMETAGS
 Text = Minimap Nametags
 Cvar = showminimapnames
 
-MenuItem
-Y = 85
+MenuItem MINIANGLE
 Text = Minimap Angle
 Cvar = showminimapangle
 
-MenuItem
-Y = 95
+MenuItem NAMETAGS
 Text = Nametags
 Cvar = seenames
 
-MenuItem
-Y = 105
+MenuItem SPEEDOMETER
 Text = Speedometer Display
 Cvar = kartdisplayspeed
 
-MenuItem
-Y = 115
+MenuItem SPEEDSTYLE
 Text = Speedometer Style
 Cvar = newspeedometer
 
-MenuItem
-Y = 125
+MenuItem SHOWINPUT
 Text = Input Display
 Cvar = showinput
 
-MenuItem
-Y = 135
+MenuItem CHECK
 Text = Show "CHECK"
 Cvar = kartcheck
 
-MenuItem
-Y = 145
+MenuItem OFFSETS
 Text = HUD Offsets...
 Submenu = OP_OFFSET
 
@@ -172,130 +180,105 @@ Submenu = OP_OFFSET
 Menu OP_OFFSET
 X = 30
 Y = 30
+LineHeight = 10
+ScrollHeight = 144
 HeaderPic = M_HUD
-DrawRoutine = MD_DrawGenericScrollMenu
-MenuItem
-Y = 5
+MenuItem ITEMX
 Text = Itembox X Offset
 Cvar = hud_item_xoffset
 
-MenuItem
-Y = 10
+MenuItem ITEMY
 Text = Itembox Y Offset
 Cvar = hud_item_yoffset
 
-MenuItem
-Y = 15
+MenuItem TIMERX
 Text = Timer X Offset
 Cvar = hud_time_xoffset
 
-MenuItem
-Y = 20
+MenuItem TIMERY
 Text = Timer Y Offset
 Cvar = hud_time_yoffset
 
-MenuItem
-Y = 25
+MenuItem LAPSX
 Text = Laps X Offset
 Cvar = hud_laps_xoffset
 
-MenuItem
-Y = 30
+MenuItem LAPSY
 Text = Laps Y Offset
 Cvar = hud_laps_yoffset
 
-MenuItem
-Y = 35
+MenuItem RINGSX
 Text = Rings X Offset
 Cvar = hud_rings_xoffset
 
-MenuItem
-Y = 40
+MenuItem RINGSY
 Text = Rings Y Offset
 Cvar = hud_rings_yoffset
 
-MenuItem
-Y = 45
+MenuItem COUNTDOWNX
 Text = Ending Countdown X Offset
 Cvar = hud_dnft_xoffset
 
-MenuItem
-Y = 50
+MenuItem COUNTDOWNY
 Text = Ending Countdown Y Offset
 Cvar = hud_dnft_yoffset
 
-MenuItem
-Y = 55
+MenuItem SPEEDX
 Text = Speedometer X Offset
 Cvar = hud_speed_xoffset
 
-MenuItem
-Y = 60
+MenuItem SPEEDY
 Text = Speedometer Y Offset
 Cvar = hud_speed_yoffset
 
-MenuItem
-Y = 65
+MenuItem ACCESSX
 Text = Accessibility X Offset
 Cvar = hud_acce_xoffset
 
-MenuItem
-Y = 70
+MenuItem ACCESSY
 Text = Accessibility Y Offset
 Cvar = hud_acce_yoffset
 
-MenuItem
-Y = 75
+MenuItem POSITIONX
 Text = Position X Offset
 Cvar = hud_posi_xoffset
 
-MenuItem
-Y = 80
+MenuItem POSITIONY
 Text = Position Y Offset
 Cvar = hud_posi_yoffset
 
-MenuItem
-Y = 85
+MenuItem RANKINGX
 Text = Miniranking X Offset
 Cvar = hud_posi_xoffset
 
-MenuItem
-Y = 90
+MenuItem RANKINGY
 Text = Miniranking Y Offset
 Cvar = hud_posi_yoffset
 
-MenuItem
-Y = 95
+MenuItem STARTX
 Text = Start Countdown X Offset
 Cvar = hud_stcd_xoffset
 
-MenuItem
-Y = 100
+MenuItem STARTY
 Text = Start Countdown Y Offset
 Cvar = hud_stcd_yoffset
 
-MenuItem
-Y = 105
+MenuItem CHECKY
 Text = Check Y Offset
 Cvar = hud_chek_yoffset
 
-MenuItem
-Y = 110
+MenuItem MINIX
 Text = Minimap X Offset
 Cvar = hud_mini_xoffset
 
-MenuItem
-Y = 115
+MenuItem MINIY
 Text = Minimap Y Offset
 Cvar = hud_mini_yoffset
 
-MenuItem
-Y = 120
+MenuItem WANTEDX
 Text = Wanted X Offset
 Cvar = hud_want_xoffset
 
-MenuItem
-Y = 125
+MenuItem WANTEDY
 Text = Wanted Y Offset
 Cvar = hud_want_yoffset
-

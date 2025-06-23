@@ -2,25 +2,68 @@ Menu MP_PLAYERSETUP
 X = 36
 Y = 14
 DrawRoutine = MD_DrawSetupMultiPlayerMenu
+EnterRoutine = MR_SetupMultiPlayer
 QuitRoutine = MR_QuitMultiPlayerMenu
 MenuItem NAME
 Y = 0
 Text = Name
-KeyHandler = MR_HandleSetupMultiPlayer
+Cvar = dummyname
 
 # Tails 01-18-2001
 MenuItem SKIN
 Y = 16
 Text = Character
-KeyHandler = MR_HandleSetupMultiPlayer
+Cvar = chooseskin
 
-MenuItem FOLLOW
+MenuItem FOLLOWER
 Y = 26
 Text = Follower
-KeyHandler = MR_HandleSetupMultiPlayer
+Cvar = dummyfollower
 
 MenuItem COLOR
 Y = 152
 Text = Color
-KeyHandler = MR_HandleSetupMultiPlayer
+Cvar = dummycolor
 
+# decorative stuff below
+MenuItem ACCELERATION
+X = 146
+Y = 62
+Style = thin2-highlight
+Text = Acceleration
+
+MenuItem MAXSPEED
+X = 221
+Y = 62
+Style = thin2-highlight
+Text = Max Speed
+
+MenuItem HANDLING
+X = 130
+Y = 74
+Style = thin2-highlight
+Text = Handling
+
+MenuItem WEIGHT
+X = 137
+Y = 139
+Style = thin2-highlight
+Text = Weight
+
+MenuItem ARROWLR
+X = 194
+Y = 62
+Style = patch-highlight
+Patch = K_STATLR
+
+MenuItem ARROWUD
+X = 154
+Y = 84
+Style = patch-highlight
+Patch = K_STATUD
+
+MenuItem STATBG
+X = 164
+Y = 72
+Style = patch
+Patch = K_STATBG

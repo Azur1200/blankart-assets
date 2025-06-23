@@ -1,169 +1,71 @@
 Menu OP_CAMERA
 X = 30
 Y = 30
-MenuItem
-Y = 0
-TextHeader = Camera Options
+LineHeight = 10
+MenuItem HEADER
+Style = header
+Text = Camera Options
 
-MenuItem
-Y = 20
+MenuItem TILTING
+OfsY = 10
 Text = Camera Tilting
 Cvar = tilting
 
-MenuItem
-Y = 30
+MenuItem LAGLESS
 Text = Lagless Camera
 Cvar = laglesscamera
 
-MenuItem
-Y = 50
+MenuItem P1CAMERA
+OfsY = 10
 Text = Player 1 Camera options...
-Submenu = OP_P1CAMERA
+Argument = 0
+Submenu = OP_CAMERASETUP
 
-MenuItem
-Y = 60
+MenuItem P2CAMERA
 Text = Player 2 Camera options...
-Submenu = OP_P2CAMERA
+Argument = 1
+Submenu = OP_CAMERASETUP
 
-MenuItem
-Y = 70
+MenuItem P3CAMERA
 Text = Player 3 Camera options...
-Submenu = OP_P3CAMERA
+Argument = 2
+Submenu = OP_CAMERASETUP
 
-MenuItem
-Y = 80
+MenuItem P4CAMERA
 Text = Player 4 Camera options...
-Submenu = OP_P4CAMERA
+Argument = 3
+Submenu = OP_CAMERASETUP
 
 
-Menu OP_P1CAMERA
+Menu OP_CAMERASETUP
 X = 30
 Y = 30
-MenuItem
-Y = 0
-TextHeader = Player 1 Camera Options
+LineHeight = 10
+EnterRoutine = MR_CameraSetup
+MenuItem HEADER
+Style = header
+Text = Camera Options
 
-MenuItem
-Y = 30
+MenuItem FLIPCAM
+OfsY = 20
 Text = Flipcam
 Cvar = flipcam
 
-MenuItem
-Y = 40
+MenuItem CAMDISTANCE
 Text = Camera Distance
-CvarInteger = cam_dist
+Argument = FRACUNIT
+Cvar = cam_dist
 
-MenuItem
-Y = 50
+MenuItem CAMHEIGHT
 Text = Camera Height
-CvarInteger = cam_height
+Argument = FRACUNIT
+Cvar = cam_height
 
-MenuItem
-Y = 60
+MenuItem CAMSPEED
 Text = Camera Speed
 Cvar = cam_speed
 
-MenuItem
-Y = 85
+MenuItem CHASECAM
+OfsY = 5
 Text = Third Person Camera
 Cvar = chasecam
-
-
-Menu OP_P2CAMERA
-X = 30
-Y = 30
-MenuItem
-Y = 0
-TextHeader = Player 2 Camera Options
-
-MenuItem
-Y = 30
-Text = Flipcam
-Cvar = flipcam2
-
-MenuItem
-Y = 40
-Text = Camera Distance
-CvarInteger = cam2_dist
-
-MenuItem
-Y = 50
-Text = Camera Height
-CvarInteger = cam2_height
-
-MenuItem
-Y = 60
-Text = Camera Speed
-Cvar = cam2_speed
-
-MenuItem
-Y = 85
-Text = Third Person Camera
-Cvar = chasecam2
-
-
-Menu OP_P3CAMERA
-X = 30
-Y = 30
-MenuItem
-Y = 0
-TextHeader = Player 3 Camera Options
-
-MenuItem
-Y = 30
-Text = Flipcam
-Cvar = flipcam3
-
-MenuItem
-Y = 40
-Text = Camera Distance
-CvarInteger = cam3_dist
-
-MenuItem
-Y = 50
-Text = Camera Height
-CvarInteger = cam3_height
-
-MenuItem
-Y = 60
-Text = Camera Speed
-Cvar = cam3_speed
-
-MenuItem
-Y = 85
-Text = Third Person Camera
-Cvar = chasecam3
-
-
-Menu OP_P4CAMERA
-X = 30
-Y = 30
-MenuItem
-Y = 0
-TextHeader = Player 4 Camera Options
-
-MenuItem
-Y = 30
-Text = Flipcam
-Cvar = flipcam4
-
-MenuItem
-Y = 40
-Text = Camera Distance
-CvarInteger = cam4_dist
-
-MenuItem
-Y = 50
-Text = Camera Height
-CvarInteger = cam4_height
-
-MenuItem
-Y = 60
-Text = Camera Speed
-Cvar = cam4_speed
-
-MenuItem
-Y = 85
-Text = Third Person Camera
-Cvar = chasecam4
-

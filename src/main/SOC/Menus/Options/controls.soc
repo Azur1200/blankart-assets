@@ -1,34 +1,34 @@
 Menu OP_CONTROLSETUP
 X = 60
-Y = 30
-HeaderPic = M_CONTRO
-MenuItem
-Y = 10
-Text = Player 1 Controls...
-Call = MR_Setup1PControlsMenu
-
-MenuItem
-Y = 20
-Text = Player 2 Controls...
-Call = MR_Setup2PControlsMenu
-
-MenuItem
-Y = 30
-Text = Player 3 Controls...
-Call = MR_Setup3PControlsMenu
-
-MenuItem
 Y = 40
-Text = Player 4 Controls...
-Call = MR_Setup4PControlsMenu
+LineHeight = 10
+HeaderPic = M_CONTRO
+MenuItem P1CONTROLS
+Text = Player 1 Controls...
+Argument = 0
+SubMenu = OP_CHANGECONTROLS
 
-MenuItem
-Y = 60
+MenuItem P2CONTROLS
+Text = Player 2 Controls...
+Argument = 1
+SubMenu = OP_CHANGECONTROLS
+
+MenuItem P3CONTROLS
+Text = Player 3 Controls...
+Argument = 2
+SubMenu = OP_CHANGECONTROLS
+
+MenuItem P4CONTROLS
+Text = Player 4 Controls...
+Argument = 3
+SubMenu = OP_CHANGECONTROLS
+
+MenuItem CONTROLPERKEY
+OfsY = 10
 Text = Controls per key
 Cvar = controlperkey
 
-MenuItem
-Y = 70
+MenuItem TURNSMOOTHING
 Text = Digital turn easing
 Cvar = turnsmoothing
 
@@ -36,230 +36,269 @@ Cvar = turnsmoothing
 Menu OP_CHANGECONTROLS
 X = 20
 Y = 40
+ScrollHeight = 144
+CursorOffset = 6
 HeaderPic = M_CONTRO
-DrawRoutine = MD_DrawControl
+KeyHandler = MR_HandleControlsMenu
+EnterRoutine = MR_SetupControlsMenu
+MenuItem WHICH1
+Overlay = True
+X = 160
+Y = 28
+Style = center
+Text = ^6Press ^2ENTER^6 to change, ^2BACKSPACE^6 to clear
+
 MenuItem SETJOY
-Y = 0
 Text = Select Gamepad...
-Call = MR_Setup1PJoystickMenu
+Argument = 0
+SubMenu = OP_JOYSTICKSET
 
 MenuItem DEADZ
-Y = 8
 Text = Deadzone
 Cvar = deadzone
 
 MenuItem DEAZS
-Y = 16
 Text = Deadzone Style
 Cvar = deadzonestyle
 
-MenuItem
-Y = 32
+MenuItem DEFAULTS
 Text = Reset to defaults
 Call = MR_ResetControls
 
-MenuItem
-TextHeader = Gameplay Controls
+MenuItem GAMEBUTTONS_
 
-MenuItem
-TextDisabled = 
+MenuItem GAMEBUTTONS
+TempOffset = True
+OfsX = 9
+OfsY = -2
+Style = header
+Text = Gameplay Controls
 
-MenuItem
-AlphaKey = GC_ACCELERATE
-Text2 = Accelerate
+MenuItem ACCEL
+Argument = GC_ACCELERATE
+Text = Accelerate
 Call = MR_ChangeControl
 
-MenuItem
-AlphaKey = GC_TURNLEFT
-Text2 = Turn Left
+MenuItem TURNLEFT
+Argument = GC_TURNLEFT
+Text = Turn Left
 Call = MR_ChangeControl
 
-MenuItem
-AlphaKey = GC_TURNRIGHT
-Text2 = Turn Right
+MenuItem TURNRIGHT
+Argument = GC_TURNRIGHT
+Text = Turn Right
 Call = MR_ChangeControl
 
-MenuItem
-AlphaKey = GC_DRIFT
-Text2 = Drift
+MenuItem DRIFT
+Argument = GC_DRIFT
+Text = Drift
 Call = MR_ChangeControl
 
-MenuItem
-AlphaKey = GC_BRAKE
-Text2 = Brake
+MenuItem BRAKE
+Argument = GC_BRAKE
+Text = Brake
 Call = MR_ChangeControl
 
-MenuItem
-AlphaKey = GC_FIRE
-Text2 = Use/Throw Item
+MenuItem ITEM
+Argument = GC_FIRE
+Text = Use/Throw Item
 Call = MR_ChangeControl
 
-MenuItem
-AlphaKey = GC_AIMFORWARD
-Text2 = Aim Forward
+MenuItem AIMFORWARD
+Argument = GC_AIMFORWARD
+Text = Aim Forward
 Call = MR_ChangeControl
 
-MenuItem
-AlphaKey = GC_AIMBACKWARD
-Text2 = Aim Backward
+MenuItem AIMBACKWARD
+Argument = GC_AIMBACKWARD
+Text = Aim Backward
 Call = MR_ChangeControl
 
-MenuItem
-AlphaKey = GC_LOOKBACK
-Text2 = Look Backward
+MenuItem LOOKBACK
+Argument = GC_LOOKBACK
+Text = Look Backward
 Call = MR_ChangeControl
 
-MenuItem
-TextHeader = Miscelleanous Controls
+MenuItem MISCBUTTONS_
 
-MenuItem
-TextDisabled = 
+MenuItem MISCBUTTONS
+TempOffset = True
+OfsX = 9
+OfsY = -2
+Style = header
+Text = Miscelleanous Controls
 
 MenuItem TALK
-AlphaKey = GC_TALKKEY
-Text2 = Chat
+Argument = GC_TALKKEY
+Text = Chat
 Call = MR_ChangeControl
 
 #MenuItem TEAM
-#AlphaKey = GC_TEAMKEY
-#Text2 = Team Chat
+#Argument = GC_TEAMKEY
+#Text = Team Chat
 #Call = MR_ChangeControl
 #
 MenuItem SCORES
-AlphaKey = GC_SCORES
-Text2 = Show Rankings
+Argument = GC_SCORES
+Text = Show Rankings
 Call = MR_ChangeControl
 
-MenuItem VIEWPT
-AlphaKey = GC_VIEWPOINT
-Text2 = Change Viewpoint
+MenuItem VIEWPOINT
+Argument = GC_VIEWPOINT
+Text = Change Viewpoint
 Call = MR_ChangeControl
 
-MenuItem
-AlphaKey = GC_RESPAWN
-Text2 = Respawn
+MenuItem RESPAWN
+Argument = GC_RESPAWN
+Text = Respawn
 Call = MR_ChangeControl
 
-MenuItem
-AlphaKey = GC_CAMRESET
-Text2 = Reset Camera
+MenuItem CAMRESET
+Argument = GC_CAMRESET
+Text = Reset Camera
 Call = MR_ChangeControl
 
-MenuItem
-AlphaKey = GC_CAMTOGGLE
-Text2 = Toggle Chasecam
+MenuItem CAMTOGGLE
+Argument = GC_CAMTOGGLE
+Text = Toggle Chasecam
 Call = MR_ChangeControl
 
 MenuItem PAUSE
-AlphaKey = GC_PAUSE
-Text2 = Pause
+Argument = GC_PAUSE
+Text = Pause
 Call = MR_ChangeControl
 
-MenuItem SCRSHT
-AlphaKey = GC_SCREENSHOT
-Text2 = Screenshot
+MenuItem SCREENSHOT
+Argument = GC_SCREENSHOT
+Text = Screenshot
 Call = MR_ChangeControl
 
-MenuItem RECGIF
-AlphaKey = GC_RECORDGIF
-Text2 = Record GIF
+MenuItem RECORDGIF
+Argument = GC_RECORDGIF
+Text = Record GIF
 Call = MR_ChangeControl
 
-MenuItem SYSMEN
-AlphaKey = GC_SYSTEMMENU
-Text2 = Open/Close Menu
+MenuItem SYSTEMMENU
+Argument = GC_SYSTEMMENU
+Text = Open/Close Menu
 Call = MR_ChangeControl
 
-MenuItem CONSOL
-AlphaKey = GC_CONSOLE
-Text2 = Open Console
+MenuItem CONSOLE
+Argument = GC_CONSOLE
+Text = Open Console
 Call = MR_ChangeControl
 
-MenuItem
-TextHeader = Spectator Controls
+MenuItem SPECTATORBUTTONS_
 
-MenuItem
-TextDisabled = 
+MenuItem SPECTATORBUTTONS
+TempOffset = True
+OfsX = 9
+OfsY = -2
+Style = header
+Text = Spectator Controls
 
-MenuItem SPECTA
-AlphaKey = GC_SPECTATE
-Text2 = Become Spectator
+MenuItem SPECTATE
+Argument = GC_SPECTATE
+Text = Become Spectator
 Call = MR_ChangeControl
 
 MenuItem LOOKUP
-AlphaKey = GC_LOOKUP
-Text2 = Look Up
+Argument = GC_LOOKUP
+Text = Look Up
 Call = MR_ChangeControl
 
-MenuItem LOOKDW
-AlphaKey = GC_LOOKDOWN
-Text2 = Look Down
+MenuItem LOOKDOWN
+Argument = GC_LOOKDOWN
+Text = Look Down
 Call = MR_ChangeControl
 
-MenuItem CENTER
-AlphaKey = GC_CENTERVIEW
-Text2 = Center View
+MenuItem CENTERVIEW
+Argument = GC_CENTERVIEW
+Text = Center View
 Call = MR_ChangeControl
 
-MenuItem
-TextHeader = Custom Lua Actions
+MenuItem LUABUTTONS_
 
-MenuItem
-TextDisabled = 
+MenuItem LUABUTTONS
+TempOffset = True
+OfsX = 9
+OfsY = -2
+Style = header
+Text = Custom Lua Actions
 
-MenuItem
-AlphaKey = GC_CUSTOM1
-Text2 = Custom Action 1
+MenuItem CUSTOM1
+Argument = GC_CUSTOM1
+Text = Custom Action 1
 Call = MR_ChangeControl
 
-MenuItem
-AlphaKey = GC_CUSTOM2
-Text2 = Custom Action 2
+MenuItem CUSTOM2
+Argument = GC_CUSTOM2
+Text = Custom Action 2
 Call = MR_ChangeControl
 
-MenuItem
-AlphaKey = GC_CUSTOM3
-Text2 = Custom Action 3
+MenuItem CUSTOM3
+Argument = GC_CUSTOM3
+Text = Custom Action 3
 Call = MR_ChangeControl
 
 
 Menu OP_JOYSTICKSET
 X = 50
 Y = 40
+LineHeight = 16
 HeaderPic = M_CONTRO
 DrawRoutine = MD_DrawJoystick
-MenuItem
-Y = 16+5
+EnterRoutine = MR_SetupJoystickMenu
+MenuItem JOY1
+Style = fill
+Patch = 230x14,159,-3,-3
+Argument = 0
 Call = MR_AssignJoystick
 
-MenuItem
-Y = (16*2)+5
+MenuItem JOY2
+Style = fill
+Patch = 230x14,159,-3,-3
+Argument = 1
 Call = MR_AssignJoystick
 
-MenuItem
-Y = (16*3)+5
+MenuItem JOY3
+Style = fill
+Patch = 230x14,159,-3,-3
+Argument = 2
 Call = MR_AssignJoystick
 
-MenuItem
-Y = (16*4)+5
+MenuItem JOY4
+Style = fill
+Patch = 230x14,159,-3,-3
+Argument = 3
 Call = MR_AssignJoystick
 
-MenuItem
-Y = (16*5)+5
+MenuItem JOY5
+Style = fill
+Patch = 230x14,159,-3,-3
+Argument = 4
 Call = MR_AssignJoystick
 
-MenuItem
-Y = (16*6)+5
+MenuItem JOY6
+Style = fill
+Patch = 230x14,159,-3,-3
+Argument = 5
 Call = MR_AssignJoystick
 
-MenuItem
-Y = (16*7)+5
+MenuItem JOY7
+Style = fill
+Patch = 230x14,159,-3,-3
+Argument = 6
 Call = MR_AssignJoystick
 
-MenuItem
-Y = (16*8)+5
+MenuItem JOY8
+Style = fill
+Patch = 230x14,159,-3,-3
+Argument = 7
 Call = MR_AssignJoystick
 
-MenuItem
-Y = (16*9)+5
+MenuItem JOY9
+Style = fill
+Patch = 230x14,159,-3,-3
+Argument = 8
 Call = MR_AssignJoystick

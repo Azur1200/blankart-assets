@@ -1,26 +1,29 @@
 Menu MISC_REPLAYHUT
+Music = replst
+BackgroundName = SRB2BACK
+ScrollXSpeed = 0
+ScrollYSpeed = 0
+FadeStrength = 1
+EnterWipe = 0
+ExitWipe = 0
 X = 30
 Y = 80
-DrawRoutine = MD_DrawReplayHut
-QuitRoutine = MR_QuitReplayHut
-# Dummy menuitem for the replay list
-MenuItem
 KeyHandler = MR_HandleReplayHutList
-
-# Dummy for handling wrapping to the top of the menu..
-MenuItem
+DrawRoutine = MD_DrawReplayHut
+EnterRoutine = MR_ReplayHut
+QuitRoutine = MR_QuitReplayHut
 
 
 Menu MISC_REPLAYSTART
 X = 30
 Y = 90
 DrawRoutine = MD_DrawReplayStartMenu
-MenuItem LOADWA
+MenuItem LOADWATCH
 Y = 0
 Text = Load Addons and Watch
 Call = MR_HutStartReplay
 
-MenuItem NOLOAD
+MenuItem NOLOADWATCH
 Y = 10
 Text = Watch Without Addons
 Call = MR_HutStartReplay
@@ -30,7 +33,7 @@ Y = 10
 Text = Watch Replay
 Call = MR_HutStartReplay
 
-MenuItem
+MenuItem BACK
 Y = 30
 Text = Back
-SubMenu = MISC_REPLAYHUT
+Call = MR_GoBack

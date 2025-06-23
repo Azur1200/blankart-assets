@@ -1,70 +1,72 @@
 Menu SCRAMBLETEAM
 X = 27
-Y = 40
-MenuItem
-Y = 30
+Y = 70
+LineHeight = 10
+MenuItem SCRAMBLE
 Text = Scramble Method
 Cvar = dummyscramble
 
-MenuItem
-Y = 90
-TextWhite = Confirm
+MenuItem CONFIRM
+OfsY = 50
+Style = highlight
+Text = Confirm
 Call = MR_ConfirmTeamScramble
 
 
 Menu CHANGETEAM
 X = 27
-Y = 40
+Y = 70
+LineHeight = 10
 MenuItem PLAYER
-Y = 30
 Text = Player
 Cvar = dummymenuplayer
 
-MenuItem
-Y = 40
+MenuItem TEAM
 Text = Team
 Cvar = dummyteam
 
-MenuItem
-Y = 90
-TextWhite = Confirm
+MenuItem CONFIRM
+OfsY = 40
+Style = highlight
+Text = Confirm
 Call = MR_ConfirmTeamChange
 
 
 Menu CHANGESPECTATE
 X = 27
-Y = 40
+Y = 70
+LineHeight = 10
 MenuItem PLAYER
-Y = 30
 Text = Player
 Cvar = dummymenuplayer
 
-MenuItem
-Y = 40
+MenuItem STATUS
 Text = Status
 Cvar = dummyspectate
 
-MenuItem
-Y = 90
-TextWhite = Confirm
+MenuItem CONFIRM
+OfsY = 40
+Style = highlight
+Text = Confirm
 Call = MR_ConfirmSpectateChange
 
 
 Menu CHANGELEVEL
 X = 24
 Y = 40
-DrawRoutine = MD_DrawServerMenu
-MenuItem
+EnterRoutine = MR_MapChange
+MenuItem GAMETYPE
 Y = 68
 Text = Game Type
 Cvar = newgametype
 
-MenuItem
+MenuItem LEVEL
 Y = 78
 Text = Level
 Cvar = nextmap
 
-MenuItem
+MenuItem CHANGELEVEL
 Y = 130
-TextWhite = Change Level
+Style = highlight
+Text = Change Level
 Call = MR_ChangeLevel

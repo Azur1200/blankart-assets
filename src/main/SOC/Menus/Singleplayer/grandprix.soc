@@ -1,32 +1,30 @@
 Menu SP_GRANDPRIX
 X = 60
-Y = 30
-MenuItem
-Y = 10
+Y = 40
+LineHeight = 10
+EnterRoutine = MR_GrandPrixTemp
+MenuItem SKIN
 Text = Character
 Cvar = chooseskin
 
-MenuItem
-Y = 20
+MenuItem COLOR
 Text = Color
 Cvar = color
 
-MenuItem
-Y = 40
+MenuItem DIFFICULTY
+OfsY = 10
 Text = Difficulty
 Cvar = dummygpdifficulty
 
-MenuItem
-Y = 50
+MenuItem ENCORE
 Text = Encore Mode
 Cvar = dummygpencore
 
-MenuItem
-Y = 70
+MenuItem CUP
+OfsY = 10
 Text = Cup
 Cvar = dummygpcup
 
-MenuItem
-Y = 80
+MenuItem START
 Text = Start
 Call = MR_StartGrandPrix

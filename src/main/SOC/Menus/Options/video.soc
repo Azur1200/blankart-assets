@@ -1,159 +1,139 @@
 Menu OP_VIDEO
 X = 30
-Y = 15
+Y = 25
+LineHeight = 10
 HeaderPic = M_VIDEO
-DrawRoutine = MD_DrawVideoMenu
-MenuItem SETMOD
-Y = 10
+MenuItem SETMODE
 Text = Set Resolution...
-Call = MR_VideoModeMenu
+SubMenu = OP_VIDEOMODE
 
-MenuItem
-Y = 20
+MenuItem FULLSCREEN
 Text = Fullscreen
 Cvar = fullscreen
 
-MenuItem
-Y = 30
+MenuItem RENDERER
 Text = Renderer
 Cvar = renderer
 
-MenuItem
-Y = 50
+MenuItem GAMMA
+OfsY = 10
 Text = Gamma
-CvarSlider = gamma
+Slider = gamma
 
-MenuItem
-Y = 60
+MenuItem SHOWFPS
 Text = Show FPS
 Cvar = showfps
 
-MenuItem
-Y = 70
+MenuItem VSYNC
 Text = Vertical Sync
 Cvar = vid_wait
 
-MenuItem
-Y = 80
+MenuItem FPSCAP
 Text = FPS Cap
 Cvar = fpscap
 
-MenuItem
-Y = 100
+MenuItem VISUAL
+OfsY = 10
 Text = Visual Effects...
 SubMenu = OP_VISUAL
 
-MenuItem
-Y = 110
+MenuItem DRAWDIST
 Text = Draw Distance
 Cvar = drawdist
 
-MenuItem
-Y = 120
+MenuItem DRAWDISTPRECIP
 Text = Weather Draw Distance
 Cvar = drawdist_precip
 
-MenuItem
-Y = 130
+MenuItem SKYBOX
 Text = Skyboxes
 Cvar = skybox
 
-MenuItem PARSOF
-Y = 140
+MenuItem PARALLEL
 Text = Parallel Software
 Cvar = parallelsoftware
 
 MenuItem OPENGL
-Y = 160
+OfsY = 10
 Text = OpenGL Options...
-Call = MR_OpenGLOptionsMenu
+SubMenu = OP_OPENGL
 
 
 Menu OP_VIDEOMODE
 X = 48
 Y = 26
 HeaderPic = M_VIDEO
-DrawRoutine = MD_DrawVideoMode
-# dummy menuitem for the control func
-MenuItem
 KeyHandler = MR_HandleVideoMode
+DrawRoutine = MD_DrawVideoMode
+EnterRoutine = MR_VideoModeMenu
 
 
 Menu OP_OPENGL
 X = 30
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_VIDEO
-MenuItem
-Y = 10
+EnterRoutine = MR_OpenGLOptionsMenu
+MenuItem MODELS
 Text = 3D Models
 Cvar = gr_models
 
-MenuItem
-Y = 20
+MenuItem MODELINTERPOLATION
 Text = Model Interpolation
 Cvar = gr_modelinterpolation
 
-MenuItem
-Y = 30
+MenuItem MODELLIGHTING
 Text = Model Lighting
 Cvar = gr_modellighting
 
-MenuItem
-Y = 40
+MenuItem SHADERS
 Text = Shaders
 Cvar = gr_shaders
 
-MenuItem
-Y = 60
+MenuItem TEXTUREDEPTH
+OfsY = 10
 Text = Texture Quality
 Cvar = scr_depth
 
-MenuItem
-Y = 70
+MenuItem FILTERING
 Text = Texture Filter
 Cvar = gr_filtermode
 
-MenuItem
-Y = 80
+MenuItem ANISOTROPIC
 Text = Anisotropic
 Cvar = gr_anisotropicmode
 
-MenuItem
-Y = 100
+MenuItem BILLBOARDING
+OfsY = 10
 Text = Sprite Billboarding
 Cvar = gr_spritebillboarding
 
-MenuItem
-Y = 110
+MenuItem SHEARING
 Text = Software Perspective
 Cvar = gr_shearing
 
 
 Menu OP_VISUAL
 X = 60
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_VIDEO
-MenuItem
-Y = 10
+MenuItem VHSPAUSE
 Text = VHS Effect
 Cvar = vhspause
 
-MenuItem
-Y = 20
+MenuItem SLOPEROLL
 Text = Sprite Slope Tilt
 Cvar = spritesloperoll
 
-MenuItem
-Y = 30
+MenuItem SPARKPULSE
 Text = Driftspark Pulse
 Cvar = driftsparkpulse
 
-MenuItem
-Y = 40
+MenuItem DRIFTEFX
 Text = New Drift Effects
 Cvar = kartdriftefx
 
-MenuItem
-Y = 50
+MenuItem COLORFLAME
 Text = Flame Stack Coloring
 Cvar = kartstacking_colorflame

@@ -1,129 +1,112 @@
 Menu OP_SERVER
 X = 24
-Y = 15
+Y = 25
+LineHeight = 10
 HeaderPic = M_SERVER
-MenuItem
-Y = 10
+MenuItem NAME
 Text = Server Name
-CvarString = servername
+Cvar = servername
 
-MenuItem
-Y = 40
+MenuItem INTERTIME
+OfsY = 4
 Text = Intermission Timer
 Cvar = inttime
 
-MenuItem
-Y = 50
+MenuItem ADVANCEMAP
 Text = Map Progression
 Cvar = advancemap
 
-MenuItem
-Y = 60
+MenuItem VOTETIME
 Text = Voting Timer
 Cvar = votetime
 
-MenuItem
-Y = 70
+MenuItem VOTEROWS
 Text = Voting Row Amount
 Cvar = votemaxrows
 
-MenuItem
-Y = 80
+MenuItem VOTECHANGES
 Text = Voting Rule Changes
 Cvar = kartvoterulechanges
 
-MenuItem
-Y = 90
+MenuItem VOTEENCORE
 Text = Voting Encore Rules
 Cvar = kartencorevotes
 
-MenuItem
-Y = 110
+MenuItem MAXPLAYERS
+OfsY = 10
 Text = Max. Player Count
 Cvar = maxplayers
 
-MenuItem
-Y = 120
+MenuItem ALLOWJOIN
 Text = Allow Players to Join
 Cvar = allowjoin
 
-MenuItem
-Y = 130
+MenuItem DOWNLOADING
 Text = Allow Addon Downloading
 Cvar = downloading
 
-MenuItem
-Y = 140
+MenuItem PAUSING
 Text = Pause Permission
 Cvar = pausepermission
 
-MenuItem
-Y = 150
+MenuItem MUTECHAT
 Text = Mute All Chat
 Cvar = mute
 
-MenuItem
-Y = 170
+MenuItem ADVANCED
+OfsY = 10
 Text = Advanced Options...
 Submenu = OP_ADVANCEDSERVER
 
 
 Menu OP_ADVANCEDSERVER
 X = 24
-Y = 30
-HeaderPic = M_SERVER
-MenuItem
-Y = 10
-Text = Server Browser Address
-CvarString = masterserver
-
-MenuItem
 Y = 40
+LineHeight = 10
+HeaderPic = M_SERVER
+MenuItem MASTERSERVER
+Text = Server Browser Address
+Cvar = masterserver
+
+MenuItem RESYNCHATTEMPTS
+OfsY = 4
 Text = Attempts to resynchronise
 Cvar = resynchattempts
 
-MenuItem
-Y = 50
+MenuItem MAXDELAY
 Text = Ping limit (ms)
 Cvar = maxdelay
 
-MenuItem
-Y = 60
+MenuItem MAXDELAYTIMEOUT
 Text = Ping timeout (s)
 Cvar = maxdelaytimeout
 
-MenuItem
-Y = 70
+MenuItem NETTIMEOUT
 Text = Connection timeout (tics)
 Cvar = nettimeout
 
-MenuItem
-Y = 80
+MenuItem JOINTIMEOUT
 Text = Join timeout (tics)
 Cvar = jointimeout
 
-MenuItem
-Y = 100
+MenuItem MAXSEND
+OfsY = 10
 Text = Max. file transfer send (KB)
 Cvar = maxsend
 
-MenuItem
-Y = 110
+MenuItem DOWNLOADSPEED
 Text = File transfer packet rate
 Cvar = downloadspeed
 
-MenuItem
-Y = 130
+MenuItem SHOWJOINADDRESS
+OfsY = 10
 Text = Log join addresses
 Cvar = showjoinaddress
 
-MenuItem
-Y = 140
+MenuItem BLAMECFAIL
 Text = Log resyncs
 Cvar = blamecfail
 
-MenuItem
-Y = 150
+MenuItem NOTICEDOWNLOAD
 Text = Log file transfers
 Cvar = noticedownload
-

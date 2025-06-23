@@ -1,73 +1,62 @@
 Menu HELP
 X = 0
 Y = 0
+KeyHandler = MR_HandleImageDef
 DrawRoutine = MD_DrawImageDef
-MenuItem
-Y = 0
-Text = MANUAL00
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE0
+Style = patch-small
+Patch = MANUAL00
+Argument = 1
 
-MenuItem
-Y = 1
-Text = MANUAL01
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE1
+Style = patch-small
+Patch = MANUAL01
 
-MenuItem
-Y = 1
-Text = MANUAL02
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE2
+Style = patch-small
+Patch = MANUAL02
 
-MenuItem
-Y = 1
-Text = MANUAL03
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE3
+Style = patch
+Patch = MANUAL03
 
-MenuItem
-Y = 1
-Text = MANUAL04
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE4
+Style = patch
+Patch = MANUAL04
 
-MenuItem
-Y = 1
-Text = MANUAL05
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE5
+Style = patch
+Patch = MANUAL05
 
-MenuItem
-Y = 1
-Text = MANUAL06
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE6
+Style = patch
+Patch = MANUAL06
 
-MenuItem
-Y = 1
-Text = MANUAL07
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE7
+Style = patch
+Patch = MANUAL07
 
-MenuItem
-Y = 1
-Text = MANUAL08
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE8
+Style = patch
+Patch = MANUAL08
 
-MenuItem
-Y = 1
-Text = MANUAL09
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE9
+Style = patch
+Patch = MANUAL09
 
-MenuItem
-Y = 1
-Text = MANUAL10
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE10
+Style = patch
+Patch = MANUAL10
 
-MenuItem
-Y = 1
-Text = MANUAL11
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE11
+Style = patch
+Patch = MANUAL11
 
-MenuItem
-Y = 1
-Text = MANUAL12
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE12
+Style = patch
+Patch = MANUAL12
 
-MenuItem
-Y = 0
-Text = MANUAL99
-KeyHandler = MR_HandleImageDef
+MenuItem PAGE99
+Style = patch-small
+Patch = MANUAL99
+Argument = 1

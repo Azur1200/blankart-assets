@@ -1,27 +1,26 @@
 Menu OP_DATA
 X = 60
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_DATA
-MenuItem
-Y = 10
+MenuItem SCREENSHOTS
 Text = Screenshot Options...
-Call = MR_ScreenshotOptions
+SubMenu = OP_SCREENSHOTS
 
-MenuItem
-Y = 20
+MenuItem ADDONS
 Text = Addon Options...
-Call = MR_AddonsOptions
+SubMenu = OP_ADDONS
 
-MenuItem
-Y = 30
+MenuItem REPLAYS
 Text = Replay Options...
 Submenu = MISC_REPLAYOPTIONS
 
-MenuItem DISCOR
-TextDisabled = 
+MenuItem DISCORD
+Text = Discord Options...
+Submenu = OP_DISCORD
 
 MenuItem ERASE
-Y = 50
+OfsY = 10
 Text = Erase Data...
 Submenu = OP_ERASEDATA
 
@@ -29,92 +28,82 @@ Submenu = OP_ERASEDATA
 Menu MISC_REPLAYOPTIONS
 X = 27
 Y = 40
+LineHeight = 10
 HeaderPic = M_REPOPT
-MenuItem
-Y = 0
+MenuItem RECORD
 Text = Record Replays
 Cvar = netdemo_record
 
-MenuItem
-Y = 10
+MenuItem SYNCQUALITY
 Text = Sync Check Interval
 Cvar = netdemo_syncquality
 
 
 Menu OP_SCREENSHOTS
 X = 30
-Y = 30
+Y = 40
+LineHeight = 10
 HeaderPic = M_SCSHOT
-MenuItem
-Y = 10
+EnterRoutine = MR_ScreenshotOptions
+MenuItem LOCATION
 Text = Storage Location
 Cvar = screenshot_option
 
 MenuItem FOLDER
-Y = 20
 Text = Custom Folder
-CvarString = screenshot_folder
+Cvar = screenshot_folder
 
-MenuItem
-Y = 50
-TextHeader = Screenshots (F8)
+MenuItem SCREENSHOTHEADER
+Y = 40
+Style = header
+Text = Screenshots (F8)
 
-MenuItem
-Y = 60
+MenuItem MEMORY
 Text = Memory Level
 Cvar = png_memory_level
 
-MenuItem
-Y = 70
+MenuItem COMPRESSION
 Text = Compression Level
 Cvar = png_compress_level
 
-MenuItem
-Y = 80
+MenuItem STRATEGY
 Text = Strategy
 Cvar = png_strategy
 
-MenuItem
-Y = 90
+MenuItem WINDOWSIZE
 Text = Window Size
 Cvar = png_window_size
 
-MenuItem
-Y = 105
-TextHeader = Movie Mode (F9)
+MenuItem MOVIEHEADER
+OfsY = 5
+Style = header
+Text = Movie Mode (F9)
 
-MenuItem
-Y = 115
+MenuItem MOVIEMODE
 Text = Capture Mode
 Cvar = moviemode_mode
 
-MenuItem GIFOPT
-Y = 125
+MenuItem GIFOPTIMIZE
 Text = Region Optimizing
 Cvar = gif_optimize
 
-MenuItem GIFDWN
-Y = 135
+MenuItem GIFDOWNSCALE
 Text = Downscaling
 Cvar = gif_downscale
 
-MenuItem APNMEM
-Y = 125
+MenuItem APNGMEMORY
 Text = Memory Level
 Cvar = apng_memory_level
 
-MenuItem APNCMP
-Y = 135
+MenuItem APNGCOMPRESSION
 Text = Compression Level
 Cvar = apng_compress_level
 
-MenuItem APNSTR
-Y = 145
+MenuItem APNGSTRATEGY
 Text = Strategy
 Cvar = apng_strategy
 
-MenuItem APNWIN
-Y = 155
+MenuItem APNGWINDOW
 Text = Window Size
 Cvar = apng_window_size
 
@@ -122,62 +111,88 @@ Cvar = apng_window_size
 Menu OP_ADDONS
 X = 30
 Y = 30
+LineHeight = 10
 HeaderPic = M_ADDONS
-MenuItem
-Y = 0
-TextHeader = Menu
+EnterRoutine = MR_AddonsOptions
+MenuItem HEADER
+Style = header
+Text = Menu
 
-MenuItem
-Y = 10
+MenuItem LOCATION
 Text = Location
 Cvar = addons_option
 
 MenuItem FOLDER
-Y = 20
 Text = Custom Folder
-CvarString = addons_folder
+Cvar = addons_folder
 
-MenuItem
+MenuItem USEHASH
 Y = 48
 Text = Identify addons via
 Cvar = addons_md5
 
-MenuItem
-Y = 58
+MenuItem SHOWALL
 Text = Show unsupported file types
 Cvar = addons_showall
 
-MenuItem
-Y = 76
-TextHeader = Search
+MenuItem SEARCHHEADER
+OfsY = 8
+Style = header
+Text = Search
 
-MenuItem
-Y = 86
+MenuItem SEARCHTYPE
 Text = Matching
 Cvar = addons_search_type
 
-MenuItem
-Y = 96
+MenuItem SEARCHCASE
 Text = Case-sensitive
 Cvar = addons_search_case
 
 
+Menu OP_DISCORD
+X = 30
+Y = 40
+LineHeight = 10
+MenuItem RICHPRESENCE
+Text = Rich Presence
+Cvar = discordrp
+
+MenuItem HEADER
+OfsY = 10
+Style = header
+Text = Rich Presence Settings
+
+MenuItem STREAMER
+Text = Streamer Mode
+Cvar = discordstreamer
+
+MenuItem ASKTOJOIN
+OfsY = 10
+Text = Allow Ask To Join
+Cvar = discordasks
+
+MenuItem INVITES
+Text = Allow Invites
+Cvar = discordinvites
+
+
 Menu OP_ERASEDATA
 X = 30
-Y = 30
-HeaderPic = M_DATA
-MenuItem
-Y = 10
-Text = Erase Record Data
-Call = MR_EraseData
-
-MenuItem
-Y = 20
-Text = Erase Unlockable Data
-Call = MR_EraseData
-
-MenuItem
 Y = 40
-Text = \85Erase ALL Data
+LineHeight = 10
+HeaderPic = M_DATA
+MenuItem RECORDS
+Text = Erase Record Data
+Argument = 0
 Call = MR_EraseData
 
+MenuItem UNLOCKABLES
+Text = Erase Unlockable Data
+Argument = 1
+Call = MR_EraseData
+
+MenuItem EVERYTHING
+OfsY = 10
+Text = \85Erase ALL Data
+Argument = 2
+Call = MR_EraseData

@@ -1,6 +1,8 @@
 Menu SR_SOUNDTEST
+NoMusic = True
 X = 60
 Y = 150
-DrawRoutine = MD_DrawMusicTest
-MenuItem
 KeyHandler = MR_HandleMusicTest
+DrawRoutine = MD_DrawMusicTest
+EnterRoutine = MR_MusicTest
+QuitRoutine = MR_QuitMusicTest
