@@ -72,6 +72,14 @@ MenuItem FOCUSLOST
 Text = Show "FOCUS LOST"
 Cvar = showfocuslost
 
+MenuItem ALLMAPS
+Text = Show All Maps
+Cvar = showallmaps
+
+MenuItem TRCKADDN
+Text = Show Track Addon
+Cvar = showtrackaddon
+
 
 # Ok it's still called chatoptions but we'll put ping display in here to be clean
 Menu OP_CHAT
