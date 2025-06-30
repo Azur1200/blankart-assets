@@ -3167,24 +3167,16 @@ Sound sfx_dbgsal
 Priority = 255
 Flags = 8
 
-Sound sfx_typri1
-Priority = 64
-Flags = 16
-
-Sound sfx_typri2
-Priority = 64
-Flags = 16
-
-Sound sfx_eggspr
-Priority = 64
-Flags = 16
-
 # Chaining Sound
 Sound sfx_bstchn
 Priority = 64
 
 # Low Ring Sound
 Sound sfx_ringlw
+Priority = 64
+
+# Flip Over Sound
+Sound sfx_flipos
 Priority = 64
 
 # Shout message sound effect
