@@ -1538,7 +1538,7 @@ Priority = 64
 Caption = Splash
 
 Sound sfx_s3k3a
-Priority = 64
+Priority = 96
 Caption = Shield
 
 Sound sfx_s3k3b
@@ -1591,7 +1591,7 @@ Caption = Transformation
 
 Sound sfx_s3k47
 Priority = 64
-Caption = Rising dust
+Caption = /
 
 Sound sfx_s3k48
 Priority = 64
@@ -1619,6 +1619,7 @@ Caption = Firing bullet
 
 Sound sfx_s3k4e
 Priority = 64
+Flags = 8
 Caption = Big explosion
 
 Sound sfx_s3k4f
@@ -1675,7 +1676,7 @@ Priority = 64
 Caption = Menu beep
 
 Sound sfx_s3k5c
-Priority = 64
+Priority = 96
 Caption = Mine Tick
 
 Sound sfx_s3k5d
@@ -1726,7 +1727,7 @@ Caption = Firing missile
 
 Sound sfx_s3k68
 Priority = 64
-Caption = Discovery
+Caption = Final Lap!
 
 Sound sfx_s3k69
 Priority = 64
@@ -1734,7 +1735,7 @@ Caption = Switch click
 
 Sound sfx_s3k6a
 Priority = 64
-Caption = Special stage clear
+Caption = FINISH!
 
 Sound sfx_s3k6b
 Priority = 64
@@ -1801,8 +1802,9 @@ Priority = 64
 Caption = Rising from lava
 
 Sound sfx_s3k7b
+Flags = 16
 Priority = 64
-Caption = Soft bounce
+Caption = Successful Hit
 
 Sound sfx_s3k7c
 Priority = 64
@@ -1894,7 +1896,8 @@ Caption = Closed
 
 Sound sfx_s3k92
 Priority = 64
-Caption = Ghost
+Flags = 8
+Caption = Hyudoro
 
 Sound sfx_s3k93
 Priority = 64
@@ -1909,8 +1912,8 @@ Priority = 64
 Caption = Lava burst
 
 Sound sfx_s3k96
-Priority = 64
-Caption = Landing
+Priority = 128
+Caption = Orbinaut
 
 Sound sfx_s3k97
 Priority = 64
@@ -2149,8 +2152,9 @@ Priority = 64
 Caption = Turbine
 
 Sound sfx_s3kc0s
-Priority = 64
-Caption = Turbine
+Priority = 192
+Flags = 8
+Caption = Jawz Chase
 
 Sound sfx_s3kc0l
 Priority = 64
