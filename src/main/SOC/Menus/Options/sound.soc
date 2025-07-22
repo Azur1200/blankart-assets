@@ -82,6 +82,10 @@ MenuItem VOICES
 Text = Character voices
 Cvar = kartvoices
 
+MenuItem HITEM
+Text = HitEm Dialog
+Cvar = karthitemdialog
+
 MenuItem POWERUPS
 Text = Powerup Warning
 Cvar = kartinvinsfx
