@@ -126,6 +126,10 @@ MenuItem SLOPEROLL
 Text = Sprite Slope Tilt
 Cvar = spritesloperoll
 
+MenuItem SLIPTILT
+Text = Sliptide Tilt
+Cvar = sliptidetilt
+
 MenuItem SPARKPULSE
 Text = Driftspark Pulse
 Cvar = driftsparkpulse

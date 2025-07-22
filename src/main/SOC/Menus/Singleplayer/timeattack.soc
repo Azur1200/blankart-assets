@@ -232,29 +232,34 @@ Y = 40
 HeaderPic = M_ATTACK
 DrawRoutine = MD_DrawTimeAttackMenu
 MenuItem RINGS
-Y = 94
+Y = 88
 Text = Rings
 Cvar = dummyattackingrings
 
 MenuItem STACKING
-Y = 104
+Y = 98
 Text = Stacking
 Cvar = dummyattackingstacking
 
 MenuItem CHAINING
-Y = 114
+Y = 108
 Text = Chaining
 Cvar = dummyattackingchaining
 
 MenuItem SLIPDASH
-Y = 124
+Y = 118
 Text = Slipdash
 Cvar = dummyattackingslipdash
 
 MenuItem PURPLEDRIFT
-Y = 134
+Y = 128
 Text = Purple Drift
 Cvar = dummyattackingpurpledrift
+
+MenuItem SLOPEBOOST
+Y = 138
+Text = Slope Boost
+Cvar = dummyattackingslopeboost
 
 MenuItem BACK
 Y = 150
