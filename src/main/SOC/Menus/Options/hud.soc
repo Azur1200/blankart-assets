@@ -180,6 +180,14 @@ MenuItem CHECK
 Text = Show "CHECK"
 Cvar = kartcheck
 
+MenuItem POSSCALE
+Text = Postion Scaling
+Cvar = smoothposition
+
+MenuItem FANCYJIN
+Text = Fancy Roulette
+Cvar = fancyroulette
+
 MenuItem OFFSETS
 Text = HUD Offsets...
 Submenu = OP_OFFSET
