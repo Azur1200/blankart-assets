@@ -39,7 +39,6 @@ Y = 40
 ScrollHeight = 144
 CursorOffset = 6
 HeaderPic = M_CONTRO
-KeyHandler = MR_HandleControlsMenu
 EnterRoutine = MR_SetupControlsMenu
 MenuItem WHICH1
 Overlay = True
