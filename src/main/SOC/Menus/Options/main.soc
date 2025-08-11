@@ -1,4 +1,5 @@
 Menu OP_MAIN
+FadeStrength = 16
 X = 60
 Y = 40
 LineHeight = 10
