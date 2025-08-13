@@ -9,30 +9,36 @@ Text = Camera Options
 MenuItem TILTING
 OfsY = 10
 Text = Camera Tilting
+Tooltip = Camera rotation during gameplay.
 Cvar = tilting
 
-MenuItem LAGLESS
-Text = Lagless Camera
-Cvar = laglesscamera
+MenuItem NATURAL
+Text = Natural Camera
+Tooltip = Makes the camera zoom out based on current speed.
+Cvar = naturalcamera
 
 MenuItem P1CAMERA
 OfsY = 10
 Text = Player 1 Camera options...
+Tooltip = Adjust Camera options of player 1.
 Argument = 0
 Submenu = OP_CAMERASETUP
 
 MenuItem P2CAMERA
 Text = Player 2 Camera options...
+Tooltip = Adjust Camera options of player 2.
 Argument = 1
 Submenu = OP_CAMERASETUP
 
 MenuItem P3CAMERA
 Text = Player 3 Camera options...
+Tooltip = Adjust Camera options of player 3.
 Argument = 2
 Submenu = OP_CAMERASETUP
 
 MenuItem P4CAMERA
 Text = Player 4 Camera options...
+Tooltip = Adjust Camera options of player 4.
 Argument = 3
 Submenu = OP_CAMERASETUP
 
@@ -49,23 +55,28 @@ Text = Camera Options
 MenuItem FLIPCAM
 OfsY = 20
 Text = Flipcam
+Tooltip = Should the Camera flip on gravity flipped sections?
 Cvar = flipcam
 
 MenuItem CAMDISTANCE
 Text = Camera Distance
+Tooltip = Camera distance relative to the Player.
 Argument = FRACUNIT
 Cvar = cam_dist
 
 MenuItem CAMHEIGHT
 Text = Camera Height
+Tooltip = Height of the Camera.
 Argument = FRACUNIT
 Cvar = cam_height
 
 MenuItem CAMSPEED
 Text = Camera Speed
+Tooltip = Speed of the Camera.
 Cvar = cam_speed
 
 MenuItem CHASECAM
 OfsY = 5
 Text = Third Person Camera
+Tooltip = Toggle between Third or First Person camera.
 Cvar = chasecam

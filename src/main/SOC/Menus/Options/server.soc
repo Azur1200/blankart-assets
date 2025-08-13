@@ -5,57 +5,69 @@ LineHeight = 10
 HeaderPic = M_SERVER
 MenuItem NAME
 Text = Server Name
+Tooltip = Name of server.
 Cvar = servername
 
 MenuItem INTERTIME
 OfsY = 4
 Text = Intermission Timer
+Tooltip = Length of intermission after races.
 Cvar = inttime
 
 MenuItem ADVANCEMAP
 Text = Map Progression
+Tooltip = How the next map to be played is choosen.
 Cvar = advancemap
 
 MenuItem VOTETIME
 Text = Voting Timer
+Tooltip = How long map voting is.
 Cvar = votetime
 
 MenuItem VOTEROWS
 Text = Voting Row Amount
+Tooltip = Maximum rows shown during voting.
 Cvar = votemaxrows
 
 MenuItem VOTECHANGES
 Text = Voting Rule Changes
+Tooltip = How often should other gamemodes appear.
 Cvar = kartvoterulechanges
 
 MenuItem VOTEENCORE
 Text = Voting Encore Rules
+Tooltip = How should encore function.
 Cvar = kartencorevotes
 
 MenuItem MAXPLAYERS
 OfsY = 10
 Text = Max. Player Count
+Tooltip = Max amount of players allowed in this server.
 Cvar = maxplayers
 
 MenuItem ALLOWJOIN
 Text = Allow Players to Join
+Tooltip = Allow players to join this server.
 Cvar = allowjoin
 
 MenuItem DOWNLOADING
 Text = Allow Addon Downloading
+Tooltip = Allow players to download addons.
 Cvar = downloading
 
 MenuItem PAUSING
 Text = Pause Permission
+Tooltip = Who has permission to pause the server?
 Cvar = pausepermission
 
 MenuItem MUTECHAT
 Text = Mute All Chat
+Tooltip = Completely mute in game chat.
 Cvar = mute
 
 MenuItem ADVANCED
-OfsY = 10
 Text = Advanced Options...
+Tooltip = Options for advanced server settings.
 Submenu = OP_ADVANCEDSERVER
 
 
@@ -66,47 +78,58 @@ LineHeight = 10
 HeaderPic = M_SERVER
 MenuItem MASTERSERVER
 Text = Server Browser Address
+Tooltip = Server used for master server.
 Cvar = masterserver
 
 MenuItem RESYNCHATTEMPTS
 OfsY = 4
 Text = Attempts to resynchronise
+Tooltip = Attempts to resynchronise player to server.
 Cvar = resynchattempts
 
 MenuItem MAXDELAY
 Text = Ping limit (ms)
+Tooltip = Maximum allowed delay.
 Cvar = maxdelay
 
 MenuItem MAXDELAYTIMEOUT
 Text = Ping timeout (s)
+Tooltip = Delay timeout in seconds.
 Cvar = maxdelaytimeout
 
 MenuItem NETTIMEOUT
 Text = Connection timeout (tics)
+Tooltip = Connection timeout in tics.
 Cvar = nettimeout
 
 MenuItem JOINTIMEOUT
 Text = Join timeout (tics)
+Tooltip = Join timeout in tics
 Cvar = jointimeout
 
 MenuItem MAXSEND
 OfsY = 10
 Text = Max. file transfer send (KB)
+Tooltip = Max file size sent in kilobytes.
 Cvar = maxsend
 
 MenuItem DOWNLOADSPEED
 Text = File transfer packet rate
+Tooltip = Packet rate for file transfers.
 Cvar = downloadspeed
 
 MenuItem SHOWJOINADDRESS
 OfsY = 10
 Text = Log join addresses
+Tooltip = Log ip addresses of players who join.
 Cvar = showjoinaddress
 
 MenuItem BLAMECFAIL
 Text = Log resyncs
+Tooltip = Log player resync attempts.
 Cvar = blamecfail
 
 MenuItem NOTICEDOWNLOAD
 Text = Log file transfers
+Tooltip = Log player file transfers.
 Cvar = noticedownload

@@ -1,32 +1,38 @@
 Menu OP_HUD
 X = 30
-Y = 50
+Y = 40
 LineHeight = 10
 HeaderPic = M_HUD
 MenuItem SHOWHUD
 Text = Show HUD (F3)
+Tooltip = Should in-game HUD be shown?
 Cvar = showhud
 
 MenuItem TRANSLUCENT
 Text = HUD Visibility
+Tooltip = How translucent are HUD elements?
 Slider = translucenthud
 
 MenuItem CHATHUD
 OfsY = 5
 Text = Online HUD options...
+Tooltip = Online HUD options.
 Submenu = OP_CHAT
 
 MenuItem GAMEHUD
 Text = Game HUD options...
+Tooltip = Gameplay HUD options.
 Submenu = OP_GAMEHUD
 
 MenuItem BACKCOLOR
 Text = Background Glass
+Tooltip = Console and chat background color.
 Cvar = con_backcolor
 
 MenuItem HIGHLIGHT
 OfsY = 5
 Text = Menu Highlights
+Tooltip = Menu hightlight color.
 Cvar = menuhighlight
 
 MenuItem HLTEST1
@@ -62,22 +68,27 @@ MenuItem MENUCAPS
 OfsX = -254
 OfsY = 5
 Text = Uppercase Menus
+Tooltip = Should menus be in all caps?
 Cvar = menucaps
 
 MenuItem TEXTSIZE
 Text = Console Text Size
+Tooltip = Size of console text.
 Cvar = con_textsize
 
 MenuItem FOCUSLOST
 Text = Show "FOCUS LOST"
+Tooltip = Show "FOCUS LOST" when window is not active.
 Cvar = showfocuslost
 
 MenuItem ALLMAPS
 Text = Show All Maps
+Tooltip = Show all maps (including hell maps) in the menu.
 Cvar = showallmaps
 
 MenuItem TRCKADDN
 Text = Show Track Addon
+Tooltip = Show what addon a track comes from.
 Cvar = showtrackaddon
 
 
@@ -91,34 +102,41 @@ HeaderPic = M_HUD
 # nonetheless...
 MenuItem CHATMODE
 Text = Chat Mode
+Tooltip = Determine how chat display looks in game.
 Cvar = chatmode
 
 MenuItem CHATWIDTH
 OfsY = 5
 Text = Chat Box Width
+Tooltip = Width of chat box window.
 Slider = chatwidth
 
 MenuItem CHATHEIGHT
 Text = Chat Box Height
+Tooltip = Height of chat box window.
 Slider = chatheight
 
 MenuItem CHATBACKTINT
 OfsY = 5
 Text = Chat Background Tint
+Tooltip = Background on chat box window.
 Cvar = chatbacktint
 
 MenuItem CHATTIME
 Text = Message Fadeout Time
+Tooltip = Time until chat message fades out.
 Cvar = chattime
 
 MenuItem CHATSPAM
 Text = Spam Protection
+Tooltip = Prevents chat spam.
 Cvar = chatspamprotection
 
 # shows ping next to framerate if we want to.
 MenuItem SHOWPING
 OfsY = 10
 Text = Local ping display
+Tooltip = Shows current ping when online.
 Cvar = showping
 
 
@@ -126,70 +144,87 @@ Menu OP_GAMEHUD
 X = 30
 Y = 30
 LineHeight = 10
+ScrollHeight = 144
 HeaderPic = M_HUD
 MenuItem MINIMAP
 Text = Minimap Visibility
+Tooltip = How translucent is the minimap?
 Slider = kartminimap
 
 MenuItem COLORIZE
 OfsY = 5
 Text = Colorized HUD
+Tooltip = Enable colourized hud.
 Cvar = colorizedhud
 
 MenuItem COLORIZECOLOR
 Text = Colorized HUD Color
+Tooltip = The color to use instead of the player color when\ncolourized hud is enabled.
 Cvar = colorizedhudcolor
 
 MenuItem COLORIZEITEMBOX
 Text = Colorized Itembox
+Tooltip = Enable the colourized itembox when colourized hud is enabled.
 Cvar = colorizeditembox
 
 MenuItem DARKITEMBOX
 Text = Darken Itembox
+Tooltip = Darken the itembox when certain items are inside it.
 Cvar = darkitembox
 
 MenuItem MINIFINISHED
 Text = Finished Minimap Players
+Tooltip = Show finished players on the minimap.
 Cvar = showfinishedplayers
 
 MenuItem MININAMETAGS
 Text = Minimap Nametags
+Tooltip = Show the names of players on the minimap.
 Cvar = showminimapnames
 
 MenuItem MINIANGLE
 Text = Minimap Angle
+Tooltip = Show the angle of the current player on the minimap.
 Cvar = showminimapangle
 
 MenuItem NAMETAGS
 Text = Nametags
+Tooltip = Show the name of players online.
 Cvar = seenames
 
 MenuItem SPEEDOMETER
 Text = Speedometer Display
+Tooltip = Display the current speed on the screen.
 Cvar = kartdisplayspeed
 
 MenuItem SPEEDSTYLE
 Text = Speedometer Style
+Tooltip = Change the visual style of the speedometer.
 Cvar = newspeedometer
 
 MenuItem SHOWINPUT
 Text = Input Display
+Tooltip = Show player inputs.
 Cvar = showinput
 
 MenuItem CHECK
 Text = Show "CHECK"
+Tooltip = Show the "CHECK" graphic when some is behind the player.
 Cvar = kartcheck
 
 MenuItem POSSCALE
 Text = Postion Scaling
+Tooltip = Make the position number smoothly scale.
 Cvar = smoothposition
 
 MenuItem FANCYJIN
 Text = Fancy Roulette
+Tooltip = Make the roulette do a fancy animation.
 Cvar = fancyroulette
 
 MenuItem OFFSETS
 Text = HUD Offsets...
+Tooltip = Adjust HUD offsets.
 Submenu = OP_OFFSET
 
 

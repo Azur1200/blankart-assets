@@ -5,31 +5,37 @@ LineHeight = 10
 HeaderPic = M_CONTRO
 MenuItem P1CONTROLS
 Text = Player 1 Controls...
+Tooltip = Setup player 1 controls.
 Argument = 0
 SubMenu = OP_CHANGECONTROLS
 
 MenuItem P2CONTROLS
 Text = Player 2 Controls...
+Tooltip = Setup player 2 controls.
 Argument = 1
 SubMenu = OP_CHANGECONTROLS
 
 MenuItem P3CONTROLS
 Text = Player 3 Controls...
+Tooltip = Setup player 3 controls.
 Argument = 2
 SubMenu = OP_CHANGECONTROLS
 
 MenuItem P4CONTROLS
 Text = Player 4 Controls...
+Tooltip = Setup player 4 controls.
 Argument = 3
 SubMenu = OP_CHANGECONTROLS
 
 MenuItem CONTROLPERKEY
 OfsY = 10
 Text = Controls per key
+Tooltip = Allowed amount of controls per key.
 Cvar = controlperkey
 
 MenuItem TURNSMOOTHING
 Text = Digital turn easing
+Tooltip = Turn smoothing for non-analog turning.
 Cvar = turnsmoothing
 
 

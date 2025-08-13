@@ -5,23 +5,28 @@ LineHeight = 10
 HeaderPic = M_DATA
 MenuItem SCREENSHOTS
 Text = Screenshot Options...
+Tooltip = Adjust the options of taking screenshots.
 SubMenu = OP_SCREENSHOTS
 
 MenuItem ADDONS
 Text = Addon Options...
+Tooltip = Adjust the settings of addon loading.
 SubMenu = OP_ADDONS
 
 MenuItem REPLAYS
 Text = Replay Options...
+Tooltip = Adjust replay options.
 Submenu = MISC_REPLAYOPTIONS
 
 MenuItem DISCORD
 Text = Discord Options...
+Tooltip = Adjust Discord options.
 Submenu = OP_DISCORD
 
 MenuItem ERASE
 OfsY = 10
 Text = Erase Data...
+Tooltip = Erase data of many types.
 Submenu = OP_ERASEDATA
 
 
@@ -32,10 +37,12 @@ LineHeight = 10
 HeaderPic = M_REPOPT
 MenuItem RECORD
 Text = Record Replays
+Tooltip = Record online replays.
 Cvar = netdemo_record
 
 MenuItem SYNCQUALITY
 Text = Sync Check Interval
+Tooltip = interval to record sync checks.
 Cvar = netdemo_syncquality
 
 
@@ -47,10 +54,12 @@ HeaderPic = M_SCSHOT
 EnterRoutine = MR_ScreenshotOptions
 MenuItem LOCATION
 Text = Storage Location
+Tooltip = Location of screenshots.
 Cvar = screenshot_option
 
 MenuItem FOLDER
 Text = Custom Folder
+Tooltip = Path to screenshot folder.
 Cvar = screenshot_folder
 
 MenuItem SCREENSHOTHEADER
@@ -60,18 +69,22 @@ Text = Screenshots (F8)
 
 MenuItem MEMORY
 Text = Memory Level
+Tooltip = Amount of memory used by PNG screenshots 
 Cvar = png_memory_level
 
 MenuItem COMPRESSION
 Text = Compression Level
+Tooltip = PNG compression level of screenshots.
 Cvar = png_compress_level
 
 MenuItem STRATEGY
 Text = Strategy
+Tooltip = PNG Strategy.
 Cvar = png_strategy
 
 MenuItem WINDOWSIZE
 Text = Window Size
+Tooltip = PNG Image size.
 Cvar = png_window_size
 
 MenuItem MOVIEHEADER
@@ -81,30 +94,37 @@ Text = Movie Mode (F9)
 
 MenuItem MOVIEMODE
 Text = Capture Mode
+Tooltip = How movies are captured.
 Cvar = moviemode_mode
 
 MenuItem GIFOPTIMIZE
 Text = Region Optimizing
+Tooltip = GIF optimization.
 Cvar = gif_optimize
 
 MenuItem GIFDOWNSCALE
 Text = Downscaling
+Tooltip = Should GIFs be downscaled?
 Cvar = gif_downscale
 
 MenuItem APNGMEMORY
 Text = Memory Level
+Tooltip = Amount of memory used by APNG movies 
 Cvar = apng_memory_level
 
 MenuItem APNGCOMPRESSION
 Text = Compression Level
+Tooltip = APNG compression level of movies.
 Cvar = apng_compress_level
 
 MenuItem APNGSTRATEGY
 Text = Strategy
+Tooltip = APNG Strategy.
 Cvar = apng_strategy
 
 MenuItem APNGWINDOW
 Text = Window Size
+Tooltip = APNG Image size.
 Cvar = apng_window_size
 
 
@@ -124,15 +144,18 @@ Cvar = addons_option
 
 MenuItem FOLDER
 Text = Custom Folder
+Tooltip = Path of custom folder.
 Cvar = addons_folder
 
 MenuItem USEHASH
 Y = 48
 Text = Identify addons via
+Tooltip = How should addons be determined.
 Cvar = addons_md5
 
 MenuItem SHOWALL
 Text = Show unsupported file types
+Tooltip = Show unsupported file types.
 Cvar = addons_showall
 
 MenuItem SEARCHHEADER
@@ -142,10 +165,12 @@ Text = Search
 
 MenuItem SEARCHTYPE
 Text = Matching
+Tooltip = Search type.
 Cvar = addons_search_type
 
 MenuItem SEARCHCASE
 Text = Case-sensitive
+Tooltip = Case use for searching.
 Cvar = addons_search_case
 
 
@@ -155,6 +180,7 @@ Y = 40
 LineHeight = 10
 MenuItem RICHPRESENCE
 Text = Rich Presence
+Tooltip = Discord Rich Presence.
 Cvar = discordrp
 
 MenuItem HEADER
@@ -164,15 +190,18 @@ Text = Rich Presence Settings
 
 MenuItem STREAMER
 Text = Streamer Mode
+Tooltip = Hides certain discord info while streaming.
 Cvar = discordstreamer
 
 MenuItem ASKTOJOIN
 OfsY = 10
 Text = Allow Ask To Join
+Tooltip = Allow being asked to join.
 Cvar = discordasks
 
 MenuItem INVITES
 Text = Allow Invites
+Tooltip = Allow invites.
 Cvar = discordinvites
 
 
@@ -183,16 +212,19 @@ LineHeight = 10
 HeaderPic = M_DATA
 MenuItem RECORDS
 Text = Erase Record Data
+Tooltip = Erase record data.
 Argument = 0
 Call = MR_EraseData
 
 MenuItem UNLOCKABLES
 Text = Erase Unlockable Data
+Tooltip = Erase earned unlock data.
 Argument = 1
 Call = MR_EraseData
 
 MenuItem EVERYTHING
 OfsY = 10
 Text = \85Erase ALL Data
+Tooltip = Destruction of the world as we know it.
 Argument = 2
 Call = MR_EraseData
