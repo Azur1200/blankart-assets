@@ -207,6 +207,11 @@ Argument = GC_SPECTATE
 Text = Become Spectator
 Call = MR_ChangeControl
 
+MenuItem DIRECTOR
+Argument = GC_DIRECTOR
+Text = Toggle Director
+Call = MR_ChangeControl
+
 MenuItem LOOKUP
 Argument = GC_LOOKUP
 Text = Look Up
