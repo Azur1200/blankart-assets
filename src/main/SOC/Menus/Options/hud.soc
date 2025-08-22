@@ -146,13 +146,36 @@ Y = 30
 LineHeight = 10
 ScrollHeight = 144
 HeaderPic = M_HUD
-MenuItem MINIMAP
+MenuItem MINIMAPHEAD
+Style = header
+Text = Minimap
+
+MenuItem MINIVISI
 Text = Minimap Visibility
 Tooltip = How translucent is the minimap?
 Slider = kartminimap
 
+MenuItem MININAMETAGS
+Text = Minimap Nametags
+Tooltip = Show the names of players on the minimap.
+Cvar = showminimapnames
+
+MenuItem MINIANGLE
+Text = Minimap Angle
+Tooltip = Show the angle of the current player on the minimap.
+Cvar = showminimapangle
+
+MenuItem MINIFINISHED
+Text = Finished Minimap Players
+Tooltip = Show finished players on the minimap.
+Cvar = showfinishedplayers
+
+MenuItem COLORHUDHEAD
+OfsY = 10
+Style = header
+Text = Color HUD
+
 MenuItem COLORIZE
-OfsY = 5
 Text = Colorized HUD
 Tooltip = Enable colourized hud.
 Cvar = colorizedhud
@@ -172,25 +195,20 @@ Text = Darken Itembox
 Tooltip = Darken the itembox when certain items are inside it.
 Cvar = darkitembox
 
-MenuItem MINIFINISHED
-Text = Finished Minimap Players
-Tooltip = Show finished players on the minimap.
-Cvar = showfinishedplayers
-
-MenuItem MININAMETAGS
-Text = Minimap Nametags
-Tooltip = Show the names of players on the minimap.
-Cvar = showminimapnames
-
-MenuItem MINIANGLE
-Text = Minimap Angle
-Tooltip = Show the angle of the current player on the minimap.
-Cvar = showminimapangle
+MenuItem NAMETAGHEAD
+OfsY = 10
+Style = header
+Text = Nametags
 
 MenuItem NAMETAGS
 Text = Nametags
 Tooltip = Show the name of players online.
 Cvar = seenames
+
+MenuItem SPEEDOMETERHEAD
+OfsY = 10
+Style = header
+Text = Speedometer
 
 MenuItem SPEEDOMETER
 Text = Speedometer Display
@@ -201,6 +219,26 @@ MenuItem SPEEDSTYLE
 Text = Speedometer Style
 Tooltip = Change the visual style of the speedometer.
 Cvar = newspeedometer
+
+MenuItem DRIFTGAUGEHEAD
+OfsY = 10
+Style = header
+Text = Drift Gauge
+
+MenuItem DRIFTGAUGE
+Text = Drift Gauge
+Tooltip = Display how much drift you have.
+Cvar = kartdriftgauge
+
+MenuItem DRIFTGAUGEOFS
+Text = Drift Gauge Offset
+Tooltip = Adjust Drift Gauge offset.
+Cvar = kartdriftgaugeoffset
+
+MenuItem MISCHEAD
+OfsY = 10
+Style = header
+Text = Misc
 
 MenuItem SHOWINPUT
 Text = Input Display
@@ -223,6 +261,7 @@ Tooltip = Make the roulette do a fancy animation.
 Cvar = fancyroulette
 
 MenuItem OFFSETS
+OfsY = 10
 Text = HUD Offsets...
 Tooltip = Adjust HUD offsets.
 Submenu = OP_OFFSET

@@ -49,6 +49,11 @@ Text = Exit Countdown Timer
 Tooltip = Countdown for other players when people finish.
 Cvar = countdowntime
 
+MenuItem ELIMINATE
+Text = Eliminate Last
+Tooltip = Last explodes when the standings are complete.
+Cvar = karteliminatelast
+
 MenuItem TIMELIMIT
 OfsY = 10
 Text = Time Limit
@@ -61,7 +66,6 @@ Tooltip = Number of bumpers to start with in battle mode.
 Cvar = kartbumpers
 
 MenuItem KARMA
-OfsY = 10
 Text = Karma Comeback
 Tooltip = Allow players to come back via karma in battle mode.
 Cvar = kartcomeback
@@ -74,18 +78,19 @@ Cvar = kartusepwrlv
 
 Menu OP_BLANKARTGAME
 X = 30
-Y = 40
+Y = 30
 LineHeight = 10
+ScrollHeight = 134
 HeaderPic = M_GAME
+MenuItem MECHANICHEAD
+OfsY = 10
+Style = header
+Text = Gameplay Mechanics
+
 MenuItem RINGS
 Text = Rings
 Tooltip = Pick up Rings to use as a on demand speedboost!
 Cvar = kartrings
-
-MenuItem ITEMBREAKER
-Text = Item Breaker
-Tooltip = Single-Player mode for battle. Collect itemboxes to win!
-Cvar = kartitembreaker
 
 MenuItem PURPLEDRIFT
 Text = Purple Drift
@@ -96,16 +101,6 @@ MenuItem SLIPDASH
 Text = Slipdash
 Tooltip = Get better turning during a sliptide and a boost afterwards!
 Cvar = kartslipdash
-
-MenuItem BUMPSPARK
-Text = Bump Spark
-Tooltip = Don't lose driftspark after wallbump.
-Cvar = kartbumpspark
-
-MenuItem BUMPSPRING
-Text = Bump Spring
-Tooltip = Don't lose pogospring state after wallbump.
-Cvar = kartbumpspring
 
 MenuItem STACKING
 Text = Boost Stacking
@@ -126,6 +121,26 @@ MenuItem SLOPEBOOST
 Text = Slope Boost
 Tooltip = When you go down slopes you go faster!
 Cvar = kartslopeboost
+
+MenuItem QOLHEAD
+OfsY = 10
+Style = header
+Text = Quality of Life
+
+MenuItem BUMPSPARK
+Text = Bump Spark
+Tooltip = Don't lose driftspark after wallbump.
+Cvar = kartbumpspark
+
+MenuItem BUMPSPRING
+Text = Bump Spring
+Tooltip = Don't lose pogospring state after wallbump.
+Cvar = kartbumpspring
+
+MenuItem BALANCEHEAD
+OfsY = 10
+Style = header
+Text = Balance Changes
 
 MenuItem IVINTYPE
 Text = Invincibility Type

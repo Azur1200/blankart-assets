@@ -704,7 +704,7 @@ Lump BLANCD
 Usage = BlanKart Credits
 Title = Air
 Author = circle[P-M]
-Source = compilation：free
+Source = compilation free
 Volume = 130
 
 Lump SRVMS1
@@ -719,4 +719,4 @@ Usage = Downloading...
 Title = Nazca
 Author = DEKU
 Source = SUGURI Realism.
-Volume = 65
+Volume = 62
