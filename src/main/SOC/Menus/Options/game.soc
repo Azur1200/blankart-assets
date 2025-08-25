@@ -122,6 +122,11 @@ Text = Slope Boost
 Tooltip = When you go down slopes you go faster!
 Cvar = kartslopeboost
 
+MenuItem DRAFTING
+Text = Drafting
+Tooltip = When you trail behind someone you get a speedboost!
+Cvar = kartdrafting
+
 MenuItem QOLHEAD
 OfsY = 10
 Style = header
@@ -146,6 +151,16 @@ MenuItem IVINTYPE
 Text = Invincibility Type
 Tooltip = Alternative Invincibility balance. \n Alternative used as "powergap" catchup.
 Cvar = kartinvintype
+
+MenuItem MISCHEAD
+OfsY = 10
+Style = header
+Text = Misc
+
+MenuItem ITEMBREAKER
+Text = Item Breaker
+Tooltip = When in single player battle, Item Breaker will start. Smash the item boxes fast to win.
+Cvar = kartitembreaker
 
 
 Menu OP_BLANKARTBOT

@@ -134,6 +134,11 @@ Text = Software Perspective
 Tooltip = Recreates the look of software mode camera perspective.
 Cvar = gr_shearing
 
+MenuItem SECBRIGHT
+Text = Sector Brightness
+Tooltip = Raises the minimum brightness on dark sectors.
+Cvar = gr_secbright
+
 
 Menu OP_VISUAL
 X = 60
