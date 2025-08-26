@@ -218,9 +218,12 @@ async def main(args):
 		os.makedirs(dirs, exist_ok=True)
 
 	if not args.comment:
+		args.comment = "Built with pk3make.py"
+		"""
 		p = await asyncio.create_subprocess_shell("git rev-parse --short --verify HEAD", stdout=PIPE, stderr=PIPE)
 		stdout, stderr = await p.communicate()
 		args.comment = stdout.decode().strip() if not stderr else "unknown"
+		"""
 
 	# maintain order of files, according to input
 	indices = {}
