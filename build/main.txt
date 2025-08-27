@@ -1,4 +1,4 @@
-$basepath src/main
+$basepath src/main/
 $output out/main.pk3
 
 # these two must load before discord.soc

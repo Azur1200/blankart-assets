@@ -119,9 +119,8 @@ async def DoFiles(files, base, level, threads, usezlib):
 		i += 1
 		if matchcount <= 0:
 			continue
-		zipname = name.removeprefix(base).removeprefix(os.sep)
+		zipname = name.removeprefix(base).removeprefix("/")
 		print(end="\033[2K")
-		print(name)
 		print(f"[{i}/{total}]", zipname, end="\r")
 
 		await sem.acquire()
@@ -148,8 +147,8 @@ def FindCentralEnd(f):
 	raise ValueError("No central directory found")
 
 def SetBasePath(args, new):
-	if not new.endswith(os.sep):
-		new += os.sep
+	if not new.endswith("/"):
+		new += "/"
 	args.basepath = new
 
 async def main(args):
