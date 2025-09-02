@@ -53,9 +53,23 @@ MenuItem KARTCREDITS
 Text = Play Kart Credits
 Call = MR_Credits
 
+MenuItem EXTRAREDITS
+Text = BlanKart Credits...
+Submenu = OP_EXTRACREDITS
+
+
+Menu OP_EXTRACREDITS
+X = 60
+Y = 40
+LineHeight = 10
+HeaderPic = M_OPTTTL
 MenuItem BLANCREDITS
 Text = Play BlanKart Credits
 Call = MR_BlanCredits
+
+MenuItem SECRETCREDS
+Text = Play Full Credits
+Call = MR_SecretCredits
 
 
 Menu OP_CUSTOM

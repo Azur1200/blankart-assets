@@ -707,6 +707,13 @@ Author = circle[P-M]
 Source = compilation free
 Volume = 130
 
+Lump BLNCDS
+Usage = Full Credits
+Title = Staff Credits
+Author = Shinobu Tanaka
+Source = Mario Kart DS
+Volume = 85
+
 Lump SRVMS1
 Usage = Viewing Server Info
 Title = Nazca
