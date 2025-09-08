@@ -4,6 +4,8 @@ Y = 14
 DrawRoutine = MD_DrawSetupMultiPlayerMenu
 EnterRoutine = MR_SetupMultiPlayer
 QuitRoutine = MR_QuitMultiPlayerMenu
+KeyHandler = MR_HandleSetupMultiPlayerMenu
+
 MenuItem NAME
 Y = 0
 Text = Name
