@@ -254,20 +254,6 @@ State S_OBJPLACE_DUMMY
 Duration = -1
 Next = S_OBJPLACE_DUMMY
 
-State S_KART_LEFTOVER
-SpriteName = SPR_KART
-Duration = 1
-Action = A_DeathSpin
-Var1 = ANG15
-Next = S_KART_LEFTOVER
-
-State S_KART_TIRE
-SpriteName = SPR_TIRE
-Duration = 1
-Action = A_DeathSpin
-Var1 = ANG30
-Next = S_KART_TIRE
-
 # Blue Crawla
 State S_POSS_STND
 SpriteName = SPR_POSS
