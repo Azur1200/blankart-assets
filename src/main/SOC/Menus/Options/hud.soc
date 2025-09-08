@@ -260,6 +260,16 @@ Text = Fancy Roulette
 Tooltip = Make the roulette do a fancy animation.
 Cvar = fancyroulette
 
+MenuItem CSSSTYLE
+Text = Skin Select Menu
+Tooltip = Use a different style of Skin Select.
+Cvar = skinselectstyle
+
+MenuItem CSSSORT
+Text = Skin Select Sorting
+Tooltip = Changes the sorting order in the Grid Skin Select
+Cvar = skinselectsort
+
 MenuItem OFFSETS
 OfsY = 10
 Text = HUD Offsets...
