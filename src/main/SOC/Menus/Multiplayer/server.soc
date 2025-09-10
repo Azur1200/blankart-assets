@@ -34,11 +34,37 @@ Call = MR_StartServer
 
 Menu MP_SPLITSCREEN
 X = 24
-Y = 108
+Y = 30
 LineHeight = 10
-HeaderPic = M_MULTI
 EnterRoutine = MR_StartServerMenu
+MenuItem RACERS
+Text = Racers
+cvar = kartbot_cap
+
+MenuItem CPULEVEL
+Text = CPU Level
+Cvar = kartbot
+
+MenuItem RACESPEED
+OfsY = 6
+Text = Race Speed
+Cvar = kartspeed
+
+MenuItem BATTLESPEED
+Text = Battle Speed
+Cvar = kartbattlespeed
+
+MenuItem FRANTICITEMS
+Text = Frantic Items
+Cvar = kartfrantic
+
+MenuItem MOREOPTIONS
+OfsY = 6
+Text = More Options...
+SubMenu = OP_GAME
+
 MenuItem GAMETYPE
+OfsY = 6
 Text = Game Type
 Cvar = newgametype
 
