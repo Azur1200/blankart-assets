@@ -5,7 +5,6 @@ DrawRoutine = MD_DrawSetupMultiPlayerMenu
 EnterRoutine = MR_SetupMultiPlayer
 QuitRoutine = MR_QuitMultiPlayerMenu
 KeyHandler = MR_HandleSetupMultiPlayerMenu
-
 MenuItem NAME
 Y = 0
 Text = Name
@@ -69,3 +68,11 @@ X = 164
 Y = 72
 Style = patch
 Patch = K_STATBG
+
+# grid style stat backer
+MenuItem STATBAR
+X = 44
+Y = 47
+Style = patch
+Overlay = True
+Patch = K_STATBR
