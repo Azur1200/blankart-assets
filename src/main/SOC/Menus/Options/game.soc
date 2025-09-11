@@ -168,9 +168,14 @@ X = 30
 Y = 40
 LineHeight = 10
 HeaderPic = M_GAME
+MenuItem CAP
+Text = Bot Cap
+Tooltip = Add bots to the race until the player count reaches this value.
+Cvar = kartbot_cap
+
 MenuItem DIFFICULTY
 Text = Bot Difficulty
-Tooltip = How difficult should bots be?
+Tooltip = How difficult should bots be? "Off" disables bots.
 Cvar = kartbot
 
 MenuItem COMPLEXITY
