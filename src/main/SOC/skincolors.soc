@@ -1732,7 +1732,7 @@ ChatColor = V_REDMAP
 Accessible = 1
 
 Color SKINCOLOR_BLOODCELL
-Name = BLoodcell
+Name = Bloodcell
 Ramp = 211,212,213,214,215,41,42,43,44,45,71,46,47,28,29,31
 InvColor = SKINCOLOR_ARMY
 InvShade = 8
