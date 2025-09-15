@@ -382,3 +382,11 @@ Cvar = hud_want_xoffset
 MenuItem WANTEDY
 Text = Wanted Y Offset
 Cvar = hud_want_yoffset
+
+MenuItem LAPEMBLEMX
+Text = Lap Emblem X Offset
+Cvar = hud_lapem_xoffset
+
+MenuItem LAPEMBLEMY
+Text = Lap Emblem Y Offset
+Cvar = hud_lapem_yoffset
