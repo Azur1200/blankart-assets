@@ -162,6 +162,20 @@ Text = Item Breaker
 Tooltip = When in single player battle, Item Breaker will start. Smash the item boxes fast to win.
 Cvar = kartitembreaker
 
+MenuItem RINGSTART
+Text = Starting Rings
+Tooltip = Amount of rings a player starts with when starting a game.
+Cvar = kartringsstart
+
+MenuItem RINGCAPMAX
+Text = Maximum Rings
+Tooltip = Maximum amount of rings a player can carry.
+Cvar = kartringsmax
+
+MenuItem RINGCAPMIN
+Text = Minimum Rings
+Tooltip = Amount of rings a player can enter ring debt into.
+Cvar = kartringsmin
 
 Menu OP_BLANKARTBOT
 X = 30
