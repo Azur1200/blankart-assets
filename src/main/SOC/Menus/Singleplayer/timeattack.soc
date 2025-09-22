@@ -228,41 +228,45 @@ Call = MR_GoBack
 
 Menu SP_MODS
 X = 34
-Y = 40
+Y = 128
+LineHeight = 10
+ScrollHeight = 52
 HeaderPic = M_ATTACK
 DrawRoutine = MD_DrawTimeAttackMenu
 MenuItem RINGS
-Y = 88
 Text = Rings
 Cvar = dummyattackingrings
 
 MenuItem STACKING
-Y = 98
 Text = Stacking
 Cvar = dummyattackingstacking
 
 MenuItem CHAINING
-Y = 108
 Text = Chaining
 Cvar = dummyattackingchaining
 
 MenuItem SLIPDASH
-Y = 118
 Text = Slipdash
 Cvar = dummyattackingslipdash
 
 MenuItem PURPLEDRIFT
-Y = 128
 Text = Purple Drift
 Cvar = dummyattackingpurpledrift
 
 MenuItem SLOPEBOOST
-Y = 138
 Text = Slope Boost
 Cvar = dummyattackingslopeboost
 
+MenuItem AIRDROP
+Text = Air Drop
+Cvar = dummyattackingairdrop
+
+MenuItem BUMPSPARK
+Text = Bump Spark
+Cvar = dummyattackingbumpspark
+
 MenuItem BACK
-Y = 150
+OfsY = 2
 Style = highlight
 Text = Back
 Call = MR_GoBack

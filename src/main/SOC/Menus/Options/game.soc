@@ -152,6 +152,11 @@ Text = Invincibility Type
 Tooltip = Alternative Invincibility balance. \n Alternative used as "powergap" catchup.
 Cvar = kartinvintype
 
+MenuItem AIRDROP
+Text = Air Drop
+Tooltip = When you brake in the air, you fall faster! Rings make it stronger.
+Cvar = kartairdrop
+
 MenuItem MISCHEAD
 OfsY = 10
 Style = header
