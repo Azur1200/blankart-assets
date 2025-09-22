@@ -261,6 +261,11 @@ Y = 138
 Text = Slope Boost
 Cvar = dummyattackingslopeboost
 
+MenuItem AIRDROP
+Y = 148
+Text = Air Drop
+Cvar = dummyattackingairdrop
+
 MenuItem BACK
 Y = 150
 Style = highlight

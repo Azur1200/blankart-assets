@@ -127,6 +127,11 @@ Text = Drafting
 Tooltip = When you trail behind someone you get a speedboost!
 Cvar = kartdrafting
 
+MenuItem AIRDROP
+Text = Air Drop
+Tooltip = When you hold brake in the air you fall faster! Rings make it even stronger
+Cvar = kartairdrop
+
 MenuItem QOLHEAD
 OfsY = 10
 Style = header
@@ -134,12 +139,12 @@ Text = Quality of Life
 
 MenuItem BUMPSPARK
 Text = Bump Spark
-Tooltip = Don't lose driftspark after wallbump.
+Tooltip = Don't lose driftspark after a wall bump.
 Cvar = kartbumpspark
 
 MenuItem BUMPSPRING
 Text = Bump Spring
-Tooltip = Don't lose pogospring state after wallbump.
+Tooltip = Don't lose pogo spring state after a wallbump.
 Cvar = kartbumpspring
 
 MenuItem BALANCEHEAD
@@ -149,7 +154,7 @@ Text = Balance Changes
 
 MenuItem IVINTYPE
 Text = Invincibility Type
-Tooltip = Alternative Invincibility balance. \n Alternative used as "powergap" catchup.
+Tooltip = Alternative Invincibility balance.\n Alternative used as "powergap" catchup.
 Cvar = kartinvintype
 
 MenuItem MISCHEAD
@@ -177,6 +182,7 @@ Text = Minimum Rings
 Tooltip = Amount of rings a player can enter ring debt into.
 Cvar = kartringsmin
 
+
 Menu OP_BLANKARTBOT
 X = 30
 Y = 40
@@ -191,17 +197,6 @@ MenuItem DIFFICULTY
 Text = Bot Difficulty
 Tooltip = How difficult should bots be? "Off" disables bots.
 Cvar = kartbot
-
-MenuItem COMPLEXITY
-Text = Base Complexity
-Tooltip = Force a track complexity value. Uses map default otherwise.
-Cvar = kartbot_basetrackcomplexity
-
-MenuItem MODIFIER
-Text = Max Complexity Modifier
-Tooltip = Force a max track complexity value. Uses map default otherwise.
-Cvar = kartbot_modifiermax
-
 
 
 Menu OP_MONITORTOGGLE
