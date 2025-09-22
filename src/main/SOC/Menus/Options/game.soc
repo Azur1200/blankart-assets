@@ -177,6 +177,7 @@ Text = Minimum Rings
 Tooltip = Amount of rings a player can enter ring debt into.
 Cvar = kartringsmin
 
+
 Menu OP_BLANKARTBOT
 X = 30
 Y = 40
@@ -191,17 +192,6 @@ MenuItem DIFFICULTY
 Text = Bot Difficulty
 Tooltip = How difficult should bots be? "Off" disables bots.
 Cvar = kartbot
-
-MenuItem COMPLEXITY
-Text = Base Complexity
-Tooltip = Force a track complexity value. Uses map default otherwise.
-Cvar = kartbot_basetrackcomplexity
-
-MenuItem MODIFIER
-Text = Max Complexity Modifier
-Tooltip = Force a max track complexity value. Uses map default otherwise.
-Cvar = kartbot_modifiermax
-
 
 
 Menu OP_MONITORTOGGLE
