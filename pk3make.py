@@ -5,7 +5,7 @@ import sys
 from struct import Struct
 from glob import glob
 import zlib
-from asyncio.subprocess import PIPE
+import subprocess
 import os
 import asyncio
 
@@ -67,21 +67,20 @@ class PkFile:
 		return self.name
 
 async def Deflate(filename, zipname, level, i, usezlib):
-	f = open(filename, "rb")
+	with open(filename, "rb") as f:
+		fdata = f.read()
+
 	file = PkFile()
-	file.crc = zlib.crc32(f.read())
-	file.size = f.seek(0, 1)
+	file.crc = zlib.crc32(fdata)
+	file.size = len(fdata)
 
 	if usezlib:
-		f.seek(0, 0)
 		obj = zlib.compressobj(level = 9, wbits = -15)
-		file.data = obj.compress(f.read())
+		file.data = obj.compress(fdata)
 		file.data += obj.flush()
-		f.close()
 	else: # zopfli
-		f.close()
 		# zopfli does not accept input from stdin
-		p = await asyncio.create_subprocess_shell(f'zopfli -c --deflate --i{level} "{filename}"', stdout=PIPE, stderr=PIPE)
+		p = await asyncio.create_subprocess_exec("zopfli", "-c", "--deflate", f"--i{level}", filename, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 		file.data, stderr = await p.communicate()
 		# zopfli doesn't set exit code on error
 		if stderr:
@@ -151,6 +150,21 @@ def SetBasePath(args, new):
 		new += "/"
 	args.basepath = new
 
+def CheckNewlines(files):
+	# get a list of text files to check from git
+	p = subprocess.run(["git", "grep", "-Il", "."], text=True, capture_output=True)
+	if p.returncode != 0:
+		return
+	print("Checking line endings...")
+
+	for name, matchcount in files.items():
+		if name not in p.stdout or matchcount <= 0:
+			continue
+		with open(name, "rb") as f:
+			if b"\x0d\x0a" in f.read():
+				print(f"ERROR: {name} contains CRLF newlines")
+				sys.exit()
+
 async def main(args):
 	try:
 		if args.listfile == "-":
@@ -165,9 +179,9 @@ async def main(args):
 	# detect zopfli?
 	if not args.zlib:
 		# just run it and see if it works
-		p = await asyncio.create_subprocess_shell("zopfli -h", stdout=PIPE, stderr=PIPE)
-		await p.wait()
-		if p.returncode != 0:
+		try:
+			subprocess.run("zopfli", capture_output=True)
+		except:
 			print("WARNING: Zopfli not found, falling back to zlib")
 			args.zlib = True
 
@@ -219,11 +233,6 @@ async def main(args):
 
 	if not args.comment:
 		args.comment = "Built with pk3make.py"
-		"""
-		p = await asyncio.create_subprocess_shell("git rev-parse --short --verify HEAD", stdout=PIPE, stderr=PIPE)
-		stdout, stderr = await p.communicate()
-		args.comment = stdout.decode().strip() if not stderr else "unknown"
-		"""
 
 	# maintain order of files, according to input
 	indices = {}
@@ -301,6 +310,8 @@ async def main(args):
 		if i != args.basepath + pa.name:
 			orderchanged = True
 			break
+
+	CheckNewlines(infiles)
 
 	# compress all the input files
 	output = await asyncio.create_task(DoFiles(infiles, args.basepath, args.level, int(args.jobs), args.zlib))
