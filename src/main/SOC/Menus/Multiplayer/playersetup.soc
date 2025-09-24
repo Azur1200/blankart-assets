@@ -71,8 +71,8 @@ Patch = K_STATBG
 
 # grid style stat backer
 MenuItem STATBAR
-X = 44
-Y = 47
+X = 43
+Y = 48
 Style = patch
 Overlay = True
 Patch = K_STATBR
