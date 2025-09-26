@@ -245,6 +245,11 @@ Text = Input Display
 Tooltip = Show player inputs.
 Cvar = showinput
 
+MenuItem SHOWTIMER
+Text = Item Timers
+Tooltip = Show duration of boosts.
+Cvar = itemtimers
+
 MenuItem CHECK
 Text = Show "CHECK"
 Tooltip = Show the "CHECK" graphic when some is behind the player.
