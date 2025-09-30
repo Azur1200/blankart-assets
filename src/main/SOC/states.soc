@@ -15280,6 +15280,57 @@ SpriteFrame = FF_FULLBRIGHT|10
 Duration = 2
 Next = S_BUBBLESHIELDTRAP1
 
+# Bubble Shield damage and debris
+State S_BUBLSHLD_DMG_1
+SpriteName = SPR_BUBC
+SpriteFrame = FF_FULLBRIGHT|FF_ADD|FF_TRANS50
+Duration = -1
+
+State S_BUBLSHLD_DMG_2
+SpriteName = SPR_BUBC
+SpriteFrame = FF_FULLBRIGHT|FF_ADD|FF_TRANS50|1
+Duration = -1
+
+State S_BUBLSHLD_DMG_3
+SpriteName = SPR_BUBC
+SpriteFrame = FF_FULLBRIGHT|FF_ADD|FF_TRANS50|2
+Duration = -1
+
+State S_BUBLSHLD_DMG_4
+SpriteName = SPR_BUBC
+SpriteFrame = FF_FULLBRIGHT|FF_ADD|FF_TRANS50|3
+Duration = -1
+
+State S_BUBBLEDEBRIS_1
+SpriteName = SPR_BSDB
+SpriteFrame = FF_FULLBRIGHT
+Duration = -1
+Next = S_BUBBLEDEBRIS_1
+
+State S_BUBBLEDEBRIS_2
+SpriteName = SPR_BSDB
+SpriteFrame = FF_FULLBRIGHT|1
+Duration = -1
+Next = S_BUBBLEDEBRIS_2
+
+State S_BUBBLEDEBRIS_3
+SpriteName = SPR_BSDB
+SpriteFrame = FF_FULLBRIGHT|2
+Duration = -1
+Next = S_BUBBLEDEBRIS_3
+
+State S_BUBBLEDEBRIS_4
+SpriteName = SPR_BSDB
+SpriteFrame = FF_FULLBRIGHT|3
+Duration = -1
+Next = S_BUBBLEDEBRIS_4
+
+State S_BUBBLEDEBRIS_5
+SpriteName = SPR_BSDB
+SpriteFrame = FF_FULLBRIGHT|4
+Duration = -1
+Next = S_BUBBLEDEBRIS_5
+
 # Flame Shield
 State S_FLAMESHIELD1
 SpriteName = SPR_FLMS
