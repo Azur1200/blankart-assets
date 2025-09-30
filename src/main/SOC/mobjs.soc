@@ -6299,6 +6299,17 @@ DispOffset = 2
 Mass = 16
 Flags = MF_SPECIAL|MF_NOGRAVITY|MF_DONTENCOREMAP
 
+Mobj MT_BUBBLESHLD_DEBRIS
+SpawnState = S_BUBBLEDEBRIS_1
+SpawnHealth = 1000
+ReactionTime = 8
+Speed = 8<<FRACBITS
+Radius = 16<<FRACBITS
+Height = 16<<FRACBITS
+Mass = 100
+ActiveSound = sfx_s3k94
+Flags = MF_SPECIAL|MF_BOUNCE
+
 # Kitchen Sink Stuff
 Mobj MT_SINK
 SpawnState = S_SINK
