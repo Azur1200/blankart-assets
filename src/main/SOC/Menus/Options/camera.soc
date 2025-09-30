@@ -58,6 +58,12 @@ Text = Flipcam
 Tooltip = Should the Camera flip on gravity flipped sections?
 Cvar = flipcam
 
+MenuItem CAMFOV
+Text = Camera FOV
+Tooltip = Camera field of view.
+Argument = FRACUNIT
+Cvar = fov
+
 MenuItem CAMDISTANCE
 Text = Camera Distance
 Tooltip = Camera distance relative to the Player.
