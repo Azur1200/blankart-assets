@@ -245,6 +245,16 @@ Text = Input Display
 Tooltip = Show player inputs.
 Cvar = showinput
 
+MenuItem SHOWTIMER
+Text = Item Timers
+Tooltip = Show duration of boosts.
+Cvar = itemtimers
+
+MenuItem SHOWDRAFT
+Text = Drafting Indicator
+Tooltip = Show progress of drafting.
+Cvar = draftindicator
+
 MenuItem CHECK
 Text = Show "CHECK"
 Tooltip = Show the "CHECK" graphic when some is behind the player.
@@ -390,3 +400,19 @@ Cvar = hud_lapem_xoffset
 MenuItem LAPEMBLEMY
 Text = Lap Emblem Y Offset
 Cvar = hud_lapem_yoffset
+
+MenuItem TIMERSX
+Text = Item Timers X Offset
+Cvar = hud_timers_xoffset
+
+MenuItem TIMERSY
+Text = Item Timers Y Offset
+Cvar = hud_timers_yoffset
+
+MenuItem DRAFTX
+Text = Drafting X Offset
+Cvar = hud_draft_xoffset
+
+MenuItem DRAFTY
+Text = Drafting Y Offset
+Cvar = hud_draft_yoffset
