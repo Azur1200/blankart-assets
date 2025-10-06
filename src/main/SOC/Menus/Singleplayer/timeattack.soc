@@ -261,6 +261,10 @@ MenuItem AIRDROP
 Text = Air Drop
 Cvar = dummyattackingairdrop
 
+MenuItem AIRTHRUST
+Text = Air Thrust
+Cvar = dummyattackingairthrust
+
 MenuItem BUMPSPARK
 Text = Bump Spark
 Cvar = dummyattackingbumpspark

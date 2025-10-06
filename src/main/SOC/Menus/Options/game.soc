@@ -132,6 +132,11 @@ Text = Air Drop
 Tooltip = When you brake in the air, you fall faster! Rings make it stronger.
 Cvar = kartairdrop
 
+MenuItem AIRTHRUST
+Text = Air Thrust
+Tooltip = Drift boost in the air to propel yourself forward!
+Cvar = kartairthrust
+
 MenuItem QOLHEAD
 OfsY = 10
 Style = header
