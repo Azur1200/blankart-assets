@@ -171,8 +171,8 @@ Tooltip = Jitter sprites using new skin format during drifts.
 Cvar = driftjitter
 
 MenuItem DRIFTEFX
-Text = New Drift Effects
-Tooltip = Toggle the new Driftboost effect.
+Text = Drift Effects
+Tooltip = Toggle the drift boost effect.
 Cvar = kartdriftefx
 
 MenuItem SPARKPULSE
@@ -184,3 +184,8 @@ MenuItem COLORFLAME
 Text = Flame Stack Coloring
 Tooltip = Change boost effect color based on sneaker stack count.
 Cvar = kartstacking_colorflame
+
+MenuItem SPLASH
+Text = Watertrail Effects
+Tooltip = Change the style for the water trail effect.
+Cvar = kartsplashefx

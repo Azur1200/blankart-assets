@@ -139,6 +139,16 @@ Text = Local ping display
 Tooltip = Shows current ping when online.
 Cvar = showping
 
+MenuItem PINGICON
+Text = Ping display icon
+Tooltip = Show ping icon when showing ping.
+Cvar = pingicon
+
+MenuItem pingstyle
+Text = Ping Display Style
+Tooltip = Change how the ping display looks visually.
+Cvar = pingicon
+
 
 Menu OP_GAMEHUD
 X = 30
