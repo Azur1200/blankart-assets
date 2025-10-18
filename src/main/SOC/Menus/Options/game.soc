@@ -147,6 +147,11 @@ Text = Bump Spring
 Tooltip = Don't lose pogospring state after wallbump.
 Cvar = kartbumpspring
 
+MenuItem ANTIBUMP
+Text = Anti-Bump
+Tooltip = Prevent player-on-player collisions for some time.
+Cvar = kartantibump
+
 MenuItem BALANCEHEAD
 OfsY = 10
 Style = header
