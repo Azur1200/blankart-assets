@@ -270,13 +270,18 @@ Text = Show "CHECK"
 Tooltip = Show the "CHECK" graphic when some is behind the player.
 Cvar = kartcheck
 
+MenuItem STATS
+Text = Show Stats
+Tooltip = Show your character stats.
+Cvar = showstats
+
 MenuItem POSSCALE
 Text = Postion Scaling
 Tooltip = Make the position number smoothly scale.
 Cvar = smoothposition
 
 MenuItem FANCYJIN
-Text = Fancy Roulette
+Text = Animated Roulette
 Tooltip = Make the roulette do a fancy animation.
 Cvar = fancyroulette
 
@@ -426,3 +431,11 @@ Cvar = hud_draft_xoffset
 MenuItem DRAFTY
 Text = Drafting Y Offset
 Cvar = hud_draft_yoffset
+
+MenuItem STLVX
+Text = Stats and Lives X Offset
+Cvar = hud_lives_xoffset
+
+MenuItem STLVY
+Text = Stats and Lives Y Offset
+Cvar = hud_lives_yoffset
