@@ -5386,8 +5386,8 @@ SpawnHealth = 1000
 SeeSound = sfx_ambint
 ReactionTime = 4
 PainChance = 255
-Radius = 8*FRACUNIT
-Height = 16*FRACUNIT
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
 ActiveSound = sfx_rocks1
 Flags = MF_BOUNCE
 
