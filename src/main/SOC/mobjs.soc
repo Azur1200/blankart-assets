@@ -1629,8 +1629,8 @@ ReactionTime = 8
 PainState = S_INVISIBLE
 PainSound = sfx_strpst
 Speed = 8
-Radius = 64*FRACUNIT
-Height = 128*FRACUNIT
+Radius = FRACUNIT
+Height = FRACUNIT
 Mass = 4
 Flags = MF_SPECIAL
 
