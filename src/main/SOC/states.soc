@@ -18555,6 +18555,21 @@ SpriteName = SPR_WTRU
 SpriteFrame = A|FF_TRANS50|FF_PAPERSPRITE
 Duration = 2
 
+# Airdrop dust
+State S_AIRDROPDUST1
+SpriteName = SPR_BKAD
+SpriteFrame = B|FF_FULLBRIGHT
+Duration = 1
+Next = AIRDROPDUST2
+
+State S_AIRDROPDUST2
+SpriteName = SPR_BKAD
+SpriteFrame = A|FF_FULLBRIGHT|FF_ANIMATE
+Duration = 4
+Var1 = 3
+Var2 = 1
+Next = S_NULL
+
 # Slipdash drift sparks
 State S_SLIPSPARK1
 SpriteName = SPR_DRIF
