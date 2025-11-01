@@ -620,12 +620,6 @@ Usage = Starting Countdown (Encore)
 Title = Phantom Ruby Ambience
 Source = Sonic Mania
 
-Lump KRWIN
-Usage = Race Finish (Win)
-Title = Practice
-Author = DEKU
-Source = Sora
-
 Lump KROK
 Usage = Race Finish (Cool)
 Title = Practice
