@@ -2652,7 +2652,8 @@ Sound sfx_cdfm78
 Priority = 64
 
 Sound sfx_cdfm79
-Priority = 64
+Priority = 128
+Caption = Invincibility running out
 
 Sound sfx_cdpcm0
 Priority = 64
@@ -2769,7 +2770,8 @@ Sound sfx_kc40
 Priority = 64
 
 Sound sfx_kc41
-Priority = 64
+Priority = 128
+Caption = Bubble Shield shattering
 
 Sound sfx_kc42
 Priority = 64
@@ -3181,7 +3183,8 @@ Priority = 64
 
 # Flip Over Sound
 Sound sfx_flipos
-Priority = 64
+Priority = 96
+Caption = Flipped over
 
 # Shout message sound effect
 Sound sfx_sysmsg
