@@ -610,16 +610,6 @@ Usage = Voting (Roulette End)
 Title = Decision
 Source = Knuckles' Chaotix
 
-Lump KINVNC
-Usage = Invincibility
-Title = Invincibility
-Source = Sonic the Hedgehog 3
-
-Lump KGROW
-Usage = Grow
-Title = Surging Power
-Source = Knuckles' Chaotix
-
 Lump KSTART
 Usage = Starting Countdown
 Title = Race Start

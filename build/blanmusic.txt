@@ -1,0 +1,5 @@
+$basepath src/blanmusic/
+$output out/blanmusic.pk3
+
+Music/**
+**

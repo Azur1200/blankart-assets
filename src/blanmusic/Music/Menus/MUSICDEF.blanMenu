@@ -1,0 +1,54 @@
+Lump TITLEA
+Title = Blessing
+Usage = Titlescreen 2
+Author = Yosuke Yasui
+Source = Mamarokun Curse!
+Volume = 150
+
+Lump EXTTL
+Usage = Titlescreen (Secret)
+Title = Main Menu
+Author = Shinobu Tanaka
+Source = Mario Kart DS
+Volume = 250
+
+Lump MNMENU
+Title = Backdoor Blaster [Chapter2]
+Usage = Main Menu
+Author = Ayako Saso
+Source = Ginga Force
+
+Lump GPMENU
+Title = Competition Menu (Prototype)
+Usage = Grand Prix Menu
+Author = SEGA SOUND TEAM
+Source = Sonic the Hedgehog 3
+Volume = 150
+
+Lump OLMENU
+Title = Main Menu
+Usage = Multiplayer/Online Menu
+Author = Naofumi Hataya
+Source = Sonic Gems Collection
+Volume = 150
+
+Lump RAMENU
+Title = Games Menu
+Usage = Record Attack Menu
+Author = Naofumi Hataya
+Source = Sonic Gems Collection
+Volume = 150
+
+Lump EXMENU
+Title = Gems Museum
+Usage = Extras Menu
+Author = Naofumi Hataya
+Source = Sonic Gems Collection
+Volume = 150
+
+Lump MSMENU
+Title = One step at a time
+Usage = Mission Menu
+Author = Yosuke Yasui
+Source = Mamarokun Curse!
+Volume = 175
