@@ -14177,6 +14177,7 @@ Next = S_EGGMANITEM1
 # Banana
 State S_BANANA
 SpriteName = SPR_BANA
+SpriteFrame = FF_SEMIBRIGHT
 Duration = -1
 
 State S_BANANA_DEAD
