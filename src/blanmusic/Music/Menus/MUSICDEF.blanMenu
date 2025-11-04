@@ -1,5 +1,5 @@
 Lump TITLEA
-Title = Blessing
+Title = Blessing (2009 Arrange Ver.)
 Usage = Titlescreen 2
 Author = Yosuke Yasui
 Source = Mamarokun Curse!
@@ -46,7 +46,14 @@ Author = Naofumi Hataya
 Source = Sonic Gems Collection
 Volume = 150
 
-Lump MSMENU
+Lump MSMNU1
+Title = One step at a time (2009 Arrange Ver.)
+Usage = Mission Menu
+Author = Yosuke Yasui
+Source = Mamarokun Curse!
+Volume = 175
+
+Lump MSMNU2
 Title = One step at a time
 Usage = Mission Menu
 Author = Yosuke Yasui
