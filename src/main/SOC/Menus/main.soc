@@ -1,5 +1,5 @@
 Menu MAIN
-Music = titles
+Music = mnmenu
 X = 160
 Y = 148
 MenuItem EXTRAS

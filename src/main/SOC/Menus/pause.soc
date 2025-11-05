@@ -126,7 +126,7 @@ SubMenu = OP_MAIN
 
 MenuItem ENDGAME
 OfsY = 8
-Text = Return to Title
+Text = Return to Menu
 Call = MR_EndGame
 
 MenuItem QUITGAME
