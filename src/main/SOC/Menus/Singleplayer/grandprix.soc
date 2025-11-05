@@ -3,13 +3,9 @@ X = 60
 Y = 40
 LineHeight = 10
 EnterRoutine = MR_GrandPrixTemp
-MenuItem SKIN
-Text = Character
-Cvar = chooseskin
-
-MenuItem COLOR
-Text = Color
-Cvar = color
+MenuItem PLAYERSETUP
+Text = Player setup...
+SubMenu = MN_MP_PLAYERSETUP
 
 MenuItem DIFFICULTY
 OfsY = 10
