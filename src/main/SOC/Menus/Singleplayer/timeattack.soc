@@ -17,16 +17,23 @@ Y = 0
 Text = Name
 Cvar = name
 
-MenuItem SKIN
+MenuItem PLAYERSETUP
 Y = 13
-Text = Character
-Cvar = chooseskin
+Text = Player setup...
+SubMenu = MN_MP_PLAYERSETUP
 
-MenuItem COLOR
-Y = 26
-Text = Color
-Cvar = color
-
+// MenuItem SKIN
+// Overlay = True
+// X = 128
+// Y = 64
+// Cvar = chooseskin
+//
+// MenuItem COLOR
+// Overlay = True
+// X = 36
+// Y = 64
+// Cvar = color
+//
 MenuItem LEVEL
 Y = 78
 Text = Level
