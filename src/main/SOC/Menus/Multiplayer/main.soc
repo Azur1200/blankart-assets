@@ -1,4 +1,5 @@
 Menu MP_MAIN
+Music = olmenu
 X = 42
 Y = 30
 HeaderPic = M_MULTI
