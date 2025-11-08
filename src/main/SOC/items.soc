@@ -392,8 +392,8 @@ OddsRace = 0,0,0,0,2,7,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 1,0
 BGoneTime = 5
 
-KartResultAlt eggman
-DisplayName = Egg Mine
-Flags = KRF_NOTFORBOTTOM
-OddsRace = 8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-OddsBattle = 2,0
+#KartResultAlt eggman
+#DisplayName = Egg Mine
+#Flags = KRF_NOTFORBOTTOM
+#OddsRace = 8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+#OddsBattle = 2,0
