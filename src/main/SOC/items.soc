@@ -335,7 +335,7 @@ DisplayName = Banana x3
 Type = BANANA
 Amount = 3
 Flags = KRF_POWERITEM|KRF_NOTFORBOTTOM|KRF_NOTNEAREND
-OddsRace = 0,7,7,7,9,7,0,0,0,0,0,0,0,0,0,0
+OddsRace = 0,7,7,6,5,4,0,0,0,0,0,0,0,0,0,0
 
 KartResult decabanana
 DisplayName = Banana x10
@@ -351,7 +351,7 @@ DisplayName = Orbinaut x3
 Type = ORBINAUT
 Amount = 3
 Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
-OddsRace = 0,0,0,2,5,2,0,0,0,0,0,0,0,0,0,0
+OddsRace = 0,0,0,2,7,9,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 2,0
 OddsSpecial = 0,1,1,0
 BGoneTime = 10
@@ -361,7 +361,7 @@ DisplayName = Orbinaut x4
 Type = ORBINAUT
 Amount = 4
 Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
-OddsRace = 0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+OddsRace = 0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,0
 OddsBattle = 1,1
 OddsSpecial = 0,0,1,1
 BGoneTime = 20
