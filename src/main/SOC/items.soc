@@ -88,10 +88,69 @@ SmallPatches = K_ISFLMS
 Flags = KIF_DARKBG
 
 ################################################################################
+# Item result declarations (so their toggles appear in the right order)
+################################################################################
+
+KartResult sneaker
+
+KartResult dualsneaker
+
+KartResult triplesneaker
+
+KartResult rocketsneaker
+
+KartResult banana
+
+KartResult triplebanana
+
+KartResult decabanana
+
+KartResult eggman
+
+KartResult orbinaut
+
+KartResult tripleorbinaut
+
+KartResult quadorbinaut
+
+KartResult mine
+
+KartResult landmine
+
+KartResult jawz
+
+KartResult dualjawz
+
+KartResult ballhog
+
+KartResult spb
+
+KartResult invincibility
+
+KartResult grow
+
+KartResult shrink
+
+KartResult thundershield
+
+KartResult bubbleshield
+
+KartResult flameshield
+
+KartResult hyudoro
+
+KartResult pogospring
+
+KartResult superring
+
+KartResult kitchensink
+
+################################################################################
 # Standard item results
 ################################################################################
 
 KartResult sneaker
+DisplayName = Sneaker
 Type = SNEAKER
 Amount = 1
 OddsRace = 0,0,0,0,8,24,60,0,0,0,0,0,0,0,0,0
@@ -99,12 +158,14 @@ OddsBattle = 2,1
 OddsSpecial = 1,1,0,0
 
 KartResult rocketsneaker
+DisplayName = Rocket Sneaker
 Type = ROCKETSNEAKER
 Amount = 1
 Flags = KRF_POWERITEM
 OddsRace = 0,0,0,0,0,0,0,0,0,0,28,35,42,48,37,37
 
 KartResult invincibility
+DisplayName = Invincibility
 Type = INVINCIBILITY
 Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
@@ -112,12 +173,14 @@ OddsRace = 0,0,0,0,0,0,0,0,0,0,0,4,24,50,75,75
 OddsBattle = 4,1
 
 KartResult banana
+DisplayName = Banana
 Type = BANANA
 Amount = 1
 Flags = KRF_NOTNEAREND|KRF_NOTFORBOTTOM
 OddsRace = 35,28,22,10,5,0,0,0,0,0,0,0,0,0,0,0
 
 KartResult eggman
+DisplayName = Eggman Monitor
 Type = EGGMAN
 Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_NOTNEAREND|KRF_NOTFORBOTTOM
@@ -126,6 +189,7 @@ OddsBattle = 1,0
 BGoneTime = 10
 
 KartResult orbinaut
+DisplayName = Orbinaut
 Type = ORBINAUT
 Amount = 1
 OddsRace = 45,28,24,5,0,0,0,0,0,0,0,0,0,0,0,0
@@ -133,6 +197,7 @@ OddsBattle = 8,0
 OddsSpecial = 1,1,0,0
 
 KartResult jawz
+DisplayName = Jawz
 Type = JAWZ
 Amount = 1
 Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
@@ -142,6 +207,7 @@ OddsSpecial = 1,1,0,0
 BGoneTime = 5
 
 KartResult mine
+DisplayName = Mine
 Type = MINE
 Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
@@ -149,6 +215,7 @@ OddsRace = 0,0,5,3,2,2,1,0,0,0,0,0,0,0,0,0
 OddsBattle = 6,1
 
 KartResult ballhog
+DisplayName = Ballhog
 Type = BALLHOG
 Amount = 1
 Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
@@ -157,6 +224,7 @@ OddsBattle = 2,1
 BGoneTime = 10
 
 KartResult spb
+DisplayName = Self-Propelled Bomb
 Type = SPB
 Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_INDIRECTITEM|KRF_NOTNEAREND|KRF_RUNNERAUGMENT
@@ -166,6 +234,7 @@ OddsSpecial = 0,0,0,1
 BGoneTime = 20
 
 KartResult grow
+DisplayName = Grow
 Type = GROW
 Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
@@ -174,6 +243,7 @@ OddsBattle = 2,1
 BGoneTime = 3
 
 KartResult shrink
+DisplayName = Shrink
 Type = SHRINK
 Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_INDIRECTITEM|KRF_POWERITEM|KRF_NOTNEAREND
@@ -181,6 +251,7 @@ OddsRace = 0,0,0,0,0,0,0,0,0,0,0,3,7,3,0,0
 BGoneTime = 20
 
 KartResult thundershield
+DisplayName = Thunder Shield
 Type = THUNDERSHIELD
 Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_UNIQUE
@@ -188,6 +259,7 @@ OddsRace = 12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 4,0
 
 KartResult hyudoro
+DisplayName = Hyudoro
 Type = HYUDORO
 Amount = 1
 Flags = KRF_COOLDOWNONSTART
@@ -196,27 +268,32 @@ OddsBattle = 2,0
 BGoneTime = 20
 
 KartResult pogospring
+DisplayName = Pogo Spring
 Type = POGOSPRING
 Amount = 1
 OddsBattle = 3,0
 
 KartResult kitchensink
+DisplayName = Kitchen Sink
 Type = KITCHENSINK
 Amount = 1
 
 KartResult superring
+DisplayName = Super Ring
 Type = SUPERRING
 Amount = 1
 Flags = KRF_NOTNEAREND|KRF_NOTFORBOTTOM
 OddsRace = 7,11,15,7,3,0,0,0,0,0,0,0,0,0,0,0
 
 KartResult landmine
+DisplayName = Land Mine
 Type = LANDMINE
 Amount = 1
 OddsRace = 8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 2,0
 
 KartResult bubbleshield
+DisplayName = Bubble Shield
 Type = BUBBLESHIELD
 Amount = 1
 Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM|KRF_UNIQUE
@@ -225,6 +302,7 @@ OddsBattle = 1,0
 BGoneTime = 5
 
 KartResult flameshield
+DisplayName = Flame Shield
 Type = FLAMESHIELD
 Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_UNIQUE
@@ -237,12 +315,14 @@ BGoneTime = 8
 ################################################################################
 
 KartResult dualsneaker
+DisplayName = Sneaker x2
 Type = SNEAKER
 Amount = 2
 OddsRace = 0,0,0,0,0,0,8,20,40,12,0,0,0,0,0,0
 OddsSpecial = 0,1,1,0
 
 KartResult triplesneaker
+DisplayName = Sneaker x3
 Type = SNEAKER
 Amount = 3
 Flags = KRF_POWERITEM
@@ -251,12 +331,14 @@ OddsBattle = 0,1
 OddsSpecial = 0,0,1,1
 
 KartResult triplebanana
+DisplayName = Banana x3
 Type = BANANA
 Amount = 3
 Flags = KRF_POWERITEM|KRF_NOTFORBOTTOM|KRF_NOTNEAREND
 OddsRace = 0,7,7,7,9,7,0,0,0,0,0,0,0,0,0,0
 
 KartResult decabanana
+DisplayName = Banana x10
 Type = BANANA
 Amount = 10
 Flags = KRF_POWERITEM|KRF_NOTFORBOTTOM|KRF_NOTNEAREND
@@ -265,6 +347,7 @@ OddsBattle = 1,1
 BGoneTime = 30
 
 KartResult tripleorbinaut
+DisplayName = Orbinaut x3
 Type = ORBINAUT
 Amount = 3
 Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
@@ -274,6 +357,7 @@ OddsSpecial = 0,1,1,0
 BGoneTime = 10
 
 KartResult quadorbinaut
+DisplayName = Orbinaut x4
 Type = ORBINAUT
 Amount = 4
 Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
@@ -283,6 +367,7 @@ OddsSpecial = 0,0,1,1
 BGoneTime = 20
 
 KartResult dualjawz
+DisplayName = Jawz x2
 Type = JAWZ
 Amount = 2
 Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
@@ -295,18 +380,20 @@ BGoneTime = 10
 # Alt. item results
 ################################################################################
 
-# Alt. Invin.: uses unique odds
 KartResultAlt invincibility
+DisplayName = Alt. Invincibility
 Flags = KRF_NOTNEAREND
 UniqueOddsRace = KO_AltInvinOdds
 
 KartResultAlt shrink
+DisplayName = Alt. Shrink
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_NOTNEAREND
 OddsRace = 0,0,0,0,2,7,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 1,0
 BGoneTime = 5
 
 KartResultAlt eggman
+DisplayName = Egg Mine
 Flags = KRF_NOTFORBOTTOM
 OddsRace = 8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 2,0
