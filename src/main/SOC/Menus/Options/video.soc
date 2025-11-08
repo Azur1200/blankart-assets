@@ -189,3 +189,8 @@ MenuItem SPLASH
 Text = Watertrail Effects
 Tooltip = Change the style for the water trail effect.
 Cvar = kartsplashefx
+
+MenuItem FOLLOW
+Text = Hide Followers
+Tooltip = Disable the visibility of Followers.
+Cvar = hidefollowers
