@@ -42,7 +42,7 @@ SmallPatches = K_ISBHOG
 KartItem SPB
 BigPatches = K_ITSPB
 SmallPatches = K_ISSPB
-Flags = KIF_DARKBG
+Flags = KIF_UNIQUE|KIF_DARKBG
 
 KartItem GROW
 BigPatches = K_ITGROW
@@ -51,11 +51,12 @@ SmallPatches = K_ISGROW
 KartItem SHRINK
 BigPatches = K_ITSHRK
 SmallPatches = K_ISSHRK
+Flags = KIF_UNIQUE
 
 KartItem THUNDERSHIELD
 BigPatches = K_ITTHNS
 SmallPatches = K_ISTHNS
-Flags = KIF_DARKBG
+Flags = KIF_UNIQUESLOT|KIF_DARKBG
 
 KartItem HYUDORO
 BigPatches = K_ITHYUD
@@ -80,12 +81,12 @@ SmallPatches = K_ISLNDM
 KartItem BUBBLESHIELD
 BigPatches = K_ITBUBS
 SmallPatches = K_ISBUBS
-Flags = KIF_DARKBG
+Flags = KIF_UNIQUESLOT|KIF_DARKBG
 
 KartItem FLAMESHIELD
 BigPatches = K_ITFLMS
 SmallPatches = K_ISFLMS
-Flags = KIF_DARKBG
+Flags = KIF_UNIQUESLOT|KIF_DARKBG
 
 ################################################################################
 # Item result declarations (so their toggles appear in the right order)
@@ -186,7 +187,7 @@ Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_NOTNEAREND|KRF_NOTFORBOTTOM
 OddsRace = 18,15,12,7,3,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 1,0
-BGoneTime = 10
+CooldownTime = 10
 
 KartResult orbinaut
 DisplayName = Orbinaut
@@ -204,7 +205,7 @@ Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
 OddsRace = 0,11,22,9,7,5,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 8,1
 OddsSpecial = 1,1,0,0
-BGoneTime = 5
+CooldownTime = 5
 
 KartResult mine
 DisplayName = Mine
@@ -221,7 +222,7 @@ Amount = 1
 Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
 OddsRace = 0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 2,1
-BGoneTime = 10
+CooldownTime = 10
 
 KartResult spb
 DisplayName = Self-Propelled Bomb
@@ -231,7 +232,7 @@ Flags = KRF_COOLDOWNONSTART|KRF_INDIRECTITEM|KRF_NOTNEAREND|KRF_RUNNERAUGMENT
 UniqueOddsRace = KO_SPBRaceOdds
 OddsRace = 0,0,2,3,4,5,6,9,10,12,8,5,2,2,0,0
 OddsSpecial = 0,0,0,1
-BGoneTime = 20
+CooldownTime = 20
 
 KartResult grow
 DisplayName = Grow
@@ -240,7 +241,7 @@ Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
 OddsRace = 0,0,0,0,0,0,0,0,0,4,9,12,9,0,0,0
 OddsBattle = 2,1
-BGoneTime = 3
+CooldownTime = 3
 
 KartResult shrink
 DisplayName = Shrink
@@ -248,13 +249,13 @@ Type = SHRINK
 Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_INDIRECTITEM|KRF_POWERITEM|KRF_NOTNEAREND
 OddsRace = 0,0,0,0,0,0,0,0,0,0,0,3,7,3,0,0
-BGoneTime = 20
+CooldownTime = 20
 
 KartResult thundershield
 DisplayName = Thunder Shield
 Type = THUNDERSHIELD
 Amount = 1
-Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_UNIQUE
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
 OddsRace = 12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 4,0
 
@@ -265,7 +266,7 @@ Amount = 1
 Flags = KRF_COOLDOWNONSTART
 OddsRace = 0,0,0,0,0,2,2,4,4,2,0,0,0,0,0,0
 OddsBattle = 2,0
-BGoneTime = 20
+CooldownTime = 20
 
 KartResult pogospring
 DisplayName = Pogo Spring
@@ -296,19 +297,19 @@ KartResult bubbleshield
 DisplayName = Bubble Shield
 Type = BUBBLESHIELD
 Amount = 1
-Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM|KRF_UNIQUE
+Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
 OddsRace = 0,0,0,12,15,8,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 1,0
-BGoneTime = 5
+CooldownTime = 5
 
 KartResult flameshield
 DisplayName = Flame Shield
 Type = FLAMESHIELD
 Amount = 1
-Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_UNIQUE
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
 OddsRace = 0,0,0,0,0,0,2,4,12,24,27,12,7,4,0,0
 OddsBattle = 1,0
-BGoneTime = 8
+CooldownTime = 8
 
 ################################################################################
 # Multi-item results
@@ -344,7 +345,7 @@ Amount = 10
 Flags = KRF_POWERITEM|KRF_NOTFORBOTTOM|KRF_NOTNEAREND
 OddsRace = 0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 1,1
-BGoneTime = 30
+CooldownTime = 30
 
 KartResult tripleorbinaut
 DisplayName = Orbinaut x3
@@ -354,7 +355,7 @@ Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
 OddsRace = 0,0,0,2,7,9,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 2,0
 OddsSpecial = 0,1,1,0
-BGoneTime = 10
+CooldownTime = 10
 
 KartResult quadorbinaut
 DisplayName = Orbinaut x4
@@ -364,7 +365,7 @@ Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
 OddsRace = 0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,0
 OddsBattle = 1,1
 OddsSpecial = 0,0,1,1
-BGoneTime = 20
+CooldownTime = 20
 
 KartResult dualjawz
 DisplayName = Jawz x2
@@ -374,7 +375,7 @@ Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
 OddsRace = 0,0,0,1,5,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 5,1
 OddsSpecial = 0,0,1,1
-BGoneTime = 10
+CooldownTime = 10
 
 ################################################################################
 # Alt. item results
@@ -390,7 +391,7 @@ DisplayName = Alt. Shrink
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_NOTNEAREND
 OddsRace = 0,0,0,0,2,7,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 1,0
-BGoneTime = 5
+CooldownTime = 5
 
 #KartResultAlt eggman
 #DisplayName = Egg Mine
