@@ -2,6 +2,10 @@
 # Item definitions
 ################################################################################
 
+KartItem NONE
+BigPatches = K_ITSAD
+SmallPatches = K_ISSAD
+
 KartItem SNEAKER
 BigPatches = K_ITSHOE,K_ITSHO2,K_ITSHO3
 SmallPatches = K_ISSHOE
