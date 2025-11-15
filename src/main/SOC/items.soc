@@ -102,15 +102,13 @@ KartResult dualsneaker
 
 KartResult triplesneaker
 
-KartResult rocketsneaker
-
 KartResult banana
 
 KartResult triplebanana
 
 KartResult decabanana
 
-KartResult eggman
+KartResult rocketsneaker
 
 KartResult orbinaut
 
@@ -118,17 +116,15 @@ KartResult tripleorbinaut
 
 KartResult quadorbinaut
 
-KartResult mine
-
-KartResult landmine
+KartResult eggman
 
 KartResult jawz
 
 KartResult dualjawz
 
-KartResult ballhog
+KartResult mine
 
-KartResult spb
+KartResult ballhog
 
 KartResult invincibility
 
@@ -136,19 +132,21 @@ KartResult grow
 
 KartResult shrink
 
-KartResult thundershield
+KartResult spb
 
-KartResult bubbleshield
-
-KartResult flameshield
+KartResult superring
 
 KartResult hyudoro
 
 KartResult pogospring
 
-KartResult superring
-
 KartResult kitchensink
+
+KartResult thundershield
+
+KartResult bubbleshield
+
+KartResult flameshield
 
 ################################################################################
 # Standard item results
@@ -289,13 +287,6 @@ Type = SUPERRING
 Amount = 1
 Flags = KRF_NOTNEAREND|KRF_NOTFORBOTTOM
 OddsRace = 7,11,15,7,3,0,0,0,0,0,0,0,0,0,0,0
-
-KartResult landmine
-DisplayName = Land Mine
-Type = LANDMINE
-Amount = 1
-OddsRace = 8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-OddsBattle = 2,0
 
 KartResult bubbleshield
 DisplayName = Bubble Shield
