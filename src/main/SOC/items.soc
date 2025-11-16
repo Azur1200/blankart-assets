@@ -1,0 +1,395 @@
+################################################################################
+# Item definitions
+################################################################################
+
+KartItem NONE
+BigPatches = K_ITSAD
+SmallPatches = K_ISSAD
+
+KartItem SNEAKER
+BigPatches = K_ITSHOE,K_ITSHO2,K_ITSHO3
+SmallPatches = K_ISSHOE
+
+KartItem ROCKETSNEAKER
+BigPatches = K_ITRSHE
+SmallPatches = K_ISRSHE
+
+KartItem INVINCIBILITY
+BigPatches = K_ITINV1,K_ITINV2,K_ITINV3,K_ITINV4,K_ITINV5,K_ITINV6,K_ITINV7
+SmallPatches = K_ISINV1,K_ISINV2,K_ISINV3,K_ISINV4,K_ISINV5,K_ISINV6
+Flags = KIF_ANIMATED|KIF_DARKBG
+
+KartItem BANANA
+BigPatches = K_ITBANA,K_ITBAN2,K_ITBAN3,K_ITBAN4
+SmallPatches = K_ISBANA
+
+KartItem EGGMAN
+BigPatches = K_ITEGGM
+SmallPatches = K_ISEGGM
+
+KartItem ORBINAUT
+BigPatches = K_ITORB1,K_ITORB2,K_ITORB3,K_ITORB4
+SmallPatches = K_ISORBN
+
+KartItem JAWZ
+BigPatches = K_ITJAWZ,K_ITJAW2
+SmallPatches = K_ISJAWZ
+
+KartItem MINE
+BigPatches = K_ITMINE
+SmallPatches = K_ISMINE
+
+KartItem BALLHOG
+BigPatches = K_ITBHOG
+SmallPatches = K_ISBHOG
+
+KartItem SPB
+BigPatches = K_ITSPB
+SmallPatches = K_ISSPB
+Flags = KIF_UNIQUE|KIF_DARKBG
+
+KartItem GROW
+BigPatches = K_ITGROW
+SmallPatches = K_ISGROW
+
+KartItem SHRINK
+BigPatches = K_ITSHRK
+SmallPatches = K_ISSHRK
+Flags = KIF_UNIQUE
+
+KartItem THUNDERSHIELD
+BigPatches = K_ITTHNS
+SmallPatches = K_ISTHNS
+Flags = KIF_UNIQUESLOT|KIF_DARKBG
+
+KartItem HYUDORO
+BigPatches = K_ITHYUD
+SmallPatches = K_ISHYUD
+
+KartItem POGOSPRING
+BigPatches = K_ITPOGO
+SmallPatches = K_ISPOGO
+
+KartItem KITCHENSINK
+BigPatches = K_ITSINK
+SmallPatches = K_ISSINK
+
+KartItem SUPERRING
+BigPatches = K_ITRING
+SmallPatches = K_ISRING
+
+KartItem LANDMINE
+BigPatches = K_ITLNDM
+SmallPatches = K_ISLNDM
+
+KartItem BUBBLESHIELD
+BigPatches = K_ITBUBS
+SmallPatches = K_ISBUBS
+Flags = KIF_UNIQUESLOT|KIF_DARKBG
+
+KartItem FLAMESHIELD
+BigPatches = K_ITFLMS
+SmallPatches = K_ISFLMS
+Flags = KIF_UNIQUESLOT|KIF_DARKBG
+
+################################################################################
+# Item result declarations (so their toggles appear in the right order)
+################################################################################
+
+KartResult sneaker
+
+KartResult dualsneaker
+
+KartResult triplesneaker
+
+KartResult banana
+
+KartResult triplebanana
+
+KartResult decabanana
+
+KartResult rocketsneaker
+
+KartResult orbinaut
+
+KartResult tripleorbinaut
+
+KartResult quadorbinaut
+
+KartResult eggman
+
+KartResult jawz
+
+KartResult dualjawz
+
+KartResult mine
+
+KartResult ballhog
+
+KartResult invincibility
+
+KartResult grow
+
+KartResult shrink
+
+KartResult spb
+
+KartResult superring
+
+KartResult hyudoro
+
+KartResult pogospring
+
+KartResult kitchensink
+
+KartResult thundershield
+
+KartResult bubbleshield
+
+KartResult flameshield
+
+################################################################################
+# Standard item results
+################################################################################
+
+KartResult sneaker
+DisplayName = Sneaker
+Type = SNEAKER
+Amount = 1
+OddsRace = 0,0,0,0,8,24,60,0,0,0,0,0,0,0,0,0
+OddsBattle = 2,1
+OddsSpecial = 1,1,0,0
+
+KartResult rocketsneaker
+DisplayName = Rocket Sneaker
+Type = ROCKETSNEAKER
+Amount = 1
+Flags = KRF_POWERITEM
+OddsRace = 0,0,0,0,0,0,0,0,0,0,28,35,42,48,37,37
+
+KartResult invincibility
+DisplayName = Invincibility
+Type = INVINCIBILITY
+Amount = 1
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+OddsRace = 0,0,0,0,0,0,0,0,0,0,0,4,24,50,75,75
+OddsBattle = 4,1
+
+KartResult banana
+DisplayName = Banana
+Type = BANANA
+Amount = 1
+Flags = KRF_NOTNEAREND|KRF_NOTFORBOTTOM
+OddsRace = 35,28,22,10,5,0,0,0,0,0,0,0,0,0,0,0
+
+KartResult eggman
+DisplayName = Eggman Monitor
+Type = EGGMAN
+Amount = 1
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_NOTNEAREND|KRF_NOTFORBOTTOM
+OddsRace = 18,15,12,7,3,0,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 1,0
+CooldownTime = 10
+
+KartResult orbinaut
+DisplayName = Orbinaut
+Type = ORBINAUT
+Amount = 1
+OddsRace = 45,28,24,5,0,0,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 8,0
+OddsSpecial = 1,1,0,0
+
+KartResult jawz
+DisplayName = Jawz
+Type = JAWZ
+Amount = 1
+Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
+OddsRace = 0,11,22,9,7,5,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 8,1
+OddsSpecial = 1,1,0,0
+CooldownTime = 5
+
+KartResult mine
+DisplayName = Mine
+Type = MINE
+Amount = 1
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+OddsRace = 0,0,5,3,2,2,1,0,0,0,0,0,0,0,0,0
+OddsBattle = 6,1
+
+KartResult ballhog
+DisplayName = Ballhog
+Type = BALLHOG
+Amount = 1
+Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
+OddsRace = 0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 2,1
+CooldownTime = 10
+
+KartResult spb
+DisplayName = Self-Propelled Bomb
+Type = SPB
+Amount = 1
+Flags = KRF_COOLDOWNONSTART|KRF_INDIRECTITEM|KRF_NOTNEAREND|KRF_RUNNERAUGMENT
+UniqueOddsRace = KO_SPBRaceOdds
+OddsRace = 0,0,2,3,4,5,6,9,10,12,8,5,2,2,0,0
+OddsSpecial = 0,0,0,1
+CooldownTime = 20
+
+KartResult grow
+DisplayName = Grow
+Type = GROW
+Amount = 1
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+OddsRace = 0,0,0,0,0,0,0,0,0,4,9,12,9,0,0,0
+OddsBattle = 2,1
+CooldownTime = 3
+
+KartResult shrink
+DisplayName = Shrink
+Type = SHRINK
+Amount = 1
+Flags = KRF_COOLDOWNONSTART|KRF_INDIRECTITEM|KRF_POWERITEM|KRF_NOTNEAREND
+OddsRace = 0,0,0,0,0,0,0,0,0,0,0,3,7,3,0,0
+CooldownTime = 20
+
+KartResult thundershield
+DisplayName = Thunder Shield
+Type = THUNDERSHIELD
+Amount = 1
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+OddsRace = 12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 4,0
+
+KartResult hyudoro
+DisplayName = Hyudoro
+Type = HYUDORO
+Amount = 1
+Flags = KRF_COOLDOWNONSTART
+OddsRace = 0,0,0,0,0,2,2,4,4,2,0,0,0,0,0,0
+OddsBattle = 2,0
+CooldownTime = 20
+
+KartResult pogospring
+DisplayName = Pogo Spring
+Type = POGOSPRING
+Amount = 1
+OddsBattle = 3,0
+
+KartResult kitchensink
+DisplayName = Kitchen Sink
+Type = KITCHENSINK
+Amount = 1
+
+KartResult superring
+DisplayName = Super Ring
+Type = SUPERRING
+Amount = 1
+Flags = KRF_NOTNEAREND|KRF_NOTFORBOTTOM
+OddsRace = 7,11,15,7,3,0,0,0,0,0,0,0,0,0,0,0
+
+KartResult bubbleshield
+DisplayName = Bubble Shield
+Type = BUBBLESHIELD
+Amount = 1
+Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
+OddsRace = 0,0,0,12,15,8,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 1,0
+CooldownTime = 5
+
+KartResult flameshield
+DisplayName = Flame Shield
+Type = FLAMESHIELD
+Amount = 1
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+OddsRace = 0,0,0,0,0,0,2,4,12,24,27,12,7,4,0,0
+OddsBattle = 1,0
+CooldownTime = 8
+
+################################################################################
+# Multi-item results
+################################################################################
+
+KartResult dualsneaker
+DisplayName = Sneaker x2
+Type = SNEAKER
+Amount = 2
+OddsRace = 0,0,0,0,0,0,8,20,40,12,0,0,0,0,0,0
+OddsSpecial = 0,1,1,0
+
+KartResult triplesneaker
+DisplayName = Sneaker x3
+Type = SNEAKER
+Amount = 3
+Flags = KRF_POWERITEM
+OddsRace = 0,0,0,0,0,0,0,7,35,45,60,56,52,4,0,0
+OddsBattle = 0,1
+OddsSpecial = 0,0,1,1
+
+KartResult triplebanana
+DisplayName = Banana x3
+Type = BANANA
+Amount = 3
+Flags = KRF_POWERITEM|KRF_NOTFORBOTTOM|KRF_NOTNEAREND
+OddsRace = 0,7,7,6,5,4,0,0,0,0,0,0,0,0,0,0
+
+KartResult decabanana
+DisplayName = Banana x10
+Type = BANANA
+Amount = 10
+Flags = KRF_POWERITEM|KRF_NOTFORBOTTOM|KRF_NOTNEAREND
+OddsRace = 0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 1,1
+CooldownTime = 30
+
+KartResult tripleorbinaut
+DisplayName = Orbinaut x3
+Type = ORBINAUT
+Amount = 3
+Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
+OddsRace = 0,0,0,2,7,9,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 2,0
+OddsSpecial = 0,1,1,0
+CooldownTime = 10
+
+KartResult quadorbinaut
+DisplayName = Orbinaut x4
+Type = ORBINAUT
+Amount = 4
+Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
+OddsRace = 0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,0
+OddsBattle = 1,1
+OddsSpecial = 0,0,1,1
+CooldownTime = 20
+
+KartResult dualjawz
+DisplayName = Jawz x2
+Type = JAWZ
+Amount = 2
+Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
+OddsRace = 0,0,0,1,5,0,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 5,1
+OddsSpecial = 0,0,1,1
+CooldownTime = 10
+
+################################################################################
+# Alt. item results
+################################################################################
+
+KartResultAlt invincibility
+DisplayName = Alt. Invincibility
+Flags = KRF_NOTNEAREND
+UniqueOddsRace = KO_AltInvinOdds
+
+KartResultAlt shrink
+DisplayName = Alt. Shrink
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_NOTNEAREND
+OddsRace = 0,0,0,0,2,7,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 1,0
+CooldownTime = 5
+
+#KartResultAlt eggman
+#DisplayName = Egg Mine
+#Flags = KRF_NOTFORBOTTOM
+#OddsRace = 8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+#OddsBattle = 2,0

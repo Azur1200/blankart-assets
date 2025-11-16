@@ -152,16 +152,6 @@ Text = Anti-Bump
 Tooltip = Prevent player-on-player collisions for some time.
 Cvar = kartantibump
 
-MenuItem BALANCEHEAD
-OfsY = 10
-Style = header
-Text = Balance Changes
-
-MenuItem IVINTYPE
-Text = Invincibility Type
-Tooltip = Alternative Invincibility balance. \n Alternative used as "powergap" catchup.
-Cvar = kartinvintype
-
 MenuItem MISCHEAD
 OfsY = 10
 Style = header
@@ -209,123 +199,7 @@ X = 30
 Y = 30
 HeaderPic = M_GAME
 KeyHandler = MR_HandleMonitorToggles
+EnterRoutine = MR_SetupMonitorToggles
 DrawRoutine = MD_DrawMonitorToggles
 # Mostly handled by the drawing function.
 # Instead of using this for dumb monitors, lets use the new item bools we have :V
-MenuItem SNEAKER
-Argument = KITEM_SNEAKER
-Text = Sneakers
-
-MenuItem SNEAKER2
-Argument = KRITEM_DUALSNEAKER
-Text = Sneakers x2
-
-MenuItem SNEAKER3
-Argument = KRITEM_TRIPLESNEAKER
-Text = Sneakers x3
-
-MenuItem TOGGLEALL
-Argument = 0
-Text = Toggle All
-
-MenuItem ROCKETSNEAKER
-Argument = KITEM_ROCKETSNEAKER
-Text = Rocket Sneakers
-
-MenuItem BANANA
-Argument = KITEM_BANANA
-Text = Bananas
-
-MenuItem BANANA3
-Argument = KRITEM_TRIPLEBANANA
-Text = Bananas x3
-
-MenuItem BANANA10
-Argument = KRITEM_TENFOLDBANANA
-Text = Bananas x10
-
-MenuItem EGGMAN
-Argument = KITEM_EGGMAN
-Text = Eggman Monitors
-
-MenuItem ORBINAUT
-Argument = KITEM_ORBINAUT
-Text = Orbinauts
-
-MenuItem ORBINAUT3
-Argument = KRITEM_TRIPLEORBINAUT
-Text = Orbinauts x3
-
-MenuItem ORBINAUT4
-Argument = KRITEM_QUADORBINAUT
-Text = Orbinauts x4
-
-MenuItem MINE
-Argument = KITEM_MINE
-Text = Mines
-
-MenuItem LANDMINE
-Argument = KITEM_LANDMINE
-Text = Land Mines
-
-MenuItem JAWZ
-Argument = KITEM_JAWZ
-Text = Jawz
-
-MenuItem JAWZ2
-Argument = KRITEM_DUALJAWZ
-Text = Jawz x2
-
-MenuItem BALLHOG
-Argument = KITEM_BALLHOG
-Text = Ballhogs
-
-MenuItem SPB
-Argument = KITEM_SPB
-Text = Self-Propelled Bombs
-
-MenuItem INVINCIBILITY
-Argument = KITEM_INVINCIBILITY
-Text = Invinciblity
-
-MenuItem GROW
-Argument = KITEM_GROW
-Text = Grow
-
-MenuItem SHRINK
-Argument = KITEM_SHRINK
-Text = Shrink
-
-MenuItem THUNDERSHIELD
-Argument = KITEM_THUNDERSHIELD
-Text = Thunder Shields
-
-MenuItem BUBBLESHIELD
-Argument = KITEM_BUBBLESHIELD
-Text = Bubble Shields
-
-MenuItem FLAMESHIELD
-Argument = KITEM_FLAMESHIELD
-Text = Flame Shields
-
-MenuItem HYUDORO
-Argument = KITEM_HYUDORO
-Text = Hyudoros
-
-MenuItem POGOSPRING
-Argument = KITEM_POGOSPRING
-Text = Pogo Springs
-
-MenuItem SUPERRING
-Argument = KITEM_SUPERRING
-Text = Super Rings
-
-MenuItem KITCHENSINK
-Argument = KITEM_KITCHENSINK
-Text = Kitchen Sinks
-
-#ifdef ITEMTOGGLEBOTTOMRIGHT
-#MenuItem ITSFREE
-#Argument = 255
-#Text = ---
-#endif
