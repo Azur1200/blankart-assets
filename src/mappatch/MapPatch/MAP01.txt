@@ -1,5 +1,5 @@
 // Green Hills Zone 1
-// Waypoints: Sonic1983 (PB), Frank, GenericHeroGuy
+// Waypoints: Sonic1983 (PB), Frank_th, GenericHeroGuy
 // Rings: ArcadeStriker
 
 namespace = "blankart-patch";

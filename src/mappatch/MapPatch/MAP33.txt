@@ -1,5 +1,5 @@
 // Ancient Tomb Zone
-// Waypoints: Frank
+// Waypoints: Frank_th
 
 namespace = "blankart-patch";
 version = 1;
