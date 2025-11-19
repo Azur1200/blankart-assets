@@ -14,7 +14,6 @@ thing	// 0
 	arg0 = 1;
 	arg1 = 320;
 	arg2 = 12;
-	arg4 = 1;
 }
 
 thing	// 1
@@ -22,10 +21,8 @@ thing	// 1
 	x = 4096.0;
 	y = -3808.0;
 	angle = 270;
-	type = 2001;
-	arg1 = 320;
-	arg2 = 13;
-	arg4 = 1;
+	type = 6502;
+	arg0 = 1;
 }
 
 thing	// 2
@@ -495,4 +492,13 @@ thing	// 43
 	arg0 = 320;
 	arg1 = 8;
 	arg2 = 1;
+}
+
+thing	// 44
+{
+	x = 6912.0;
+	y = -3968.0;
+	angle = 270;
+	type = 6502;
+	arg0 = 1;
 }

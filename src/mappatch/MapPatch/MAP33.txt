@@ -3,37 +3,31 @@
 
 namespace = "blankart-patch";
 version = 1;
-checksum = "9a4a9de1b6c3277c";
+checksum = "25b5c08fe9f9d677";
 
 thing	// 0
 {
 	x = -5760.0;
 	y = 17600.0;
 	angle = 270;
-	type = 2001;
-	arg1 = 300;
-	arg2 = 13;
+	type = 6502;
 }
 
 thing	// 1
 {
-	x = -8192.0;
-	y = -11008.0;
+	x = -8320.0;
+	y = -9280.0;
 	angle = 0;
-	type = 2001;
-	arg1 = 500;
-	arg2 = 13;
-	arg4 = 1;
+	type = 6502;
+	arg1 = 1;
 }
 
 thing	// 2
 {
-	x = -7232.0;
-	y = 4800.0;
+	x = -7168.0;
+	y = 4736.0;
 	angle = 270;
-	type = 2001;
-	arg1 = 300;
-	arg2 = 13;
+	type = 6502;
 }
 
 thing	// 3
@@ -4402,7 +4396,6 @@ thing	// 389
 	arg0 = 388;
 	arg1 = 384;
 	arg2 = 12;
-	arg4 = 1;
 }
 
 thing	// 390
@@ -4938,4 +4931,13 @@ thing	// 435
 	type = 2001;
 	arg0 = 67;
 	arg1 = 384;
+}
+
+thing	// 436
+{
+	x = 12224.0;
+	y = 16640.0;
+	angle = 270;
+	type = 6502;
+	arg0 = 1;
 }
