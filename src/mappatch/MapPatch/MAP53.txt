@@ -991,7 +991,7 @@ thing	// 99
 	type = 2001;
 	arg0 = 102;
 	arg1 = 192;
-	arg2 = 7;
+	arg2 = 6;
 }
 
 thing	// 100
@@ -1003,7 +1003,7 @@ thing	// 100
 	type = 2001;
 	arg0 = 103;
 	arg1 = 160;
-	arg2 = 7;
+	arg2 = 6;
 }
 
 thing	// 101
@@ -1015,7 +1015,7 @@ thing	// 101
 	type = 2001;
 	arg0 = 104;
 	arg1 = 160;
-	arg2 = 7;
+	arg2 = 6;
 }
 
 thing	// 102
@@ -1027,7 +1027,7 @@ thing	// 102
 	type = 2001;
 	arg0 = 105;
 	arg1 = 160;
-	arg2 = 7;
+	arg2 = 6;
 }
 
 thing	// 103
@@ -1039,7 +1039,7 @@ thing	// 103
 	type = 2001;
 	arg0 = 106;
 	arg1 = 160;
-	arg2 = 7;
+	arg2 = 6;
 }
 
 thing	// 104
@@ -1051,7 +1051,7 @@ thing	// 104
 	type = 2001;
 	arg0 = 27;
 	arg1 = 160;
-	arg2 = 7;
+	arg2 = 6;
 }
 
 thing	// 105
@@ -1064,4 +1064,12 @@ thing	// 105
 	arg0 = 4;
 	arg1 = 192;
 	arg3 = 3;
+}
+
+thing	// 106
+{
+	x = 1152.0;
+	y = -4160.0;
+	angle = 270;
+	type = 6502;
 }

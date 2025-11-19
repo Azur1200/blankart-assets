@@ -494,17 +494,19 @@ thing	// 40
 	height = 64.0;
 	angle = 0;
 	type = 2001;
-	arg0 = 42;
+	arg0 = 999;
 	arg1 = 384;
 }
 
 thing	// 41
 {
+	id = 999;
 	x = 5632.0;
 	y = -4768.0;
 	height = 64.0;
 	angle = 0;
 	type = 2001;
+	arg0 = 42;
 	arg1 = 384;
 }
 
@@ -3329,4 +3331,12 @@ thing	// 272
 	arg0 = 216;
 	arg1 = 128;
 	arg2 = 4;
+}
+
+thing	// 273
+{
+	x = 1088.0;
+	y = -9088.0;
+	angle = 270;
+	type = 6502;
 }

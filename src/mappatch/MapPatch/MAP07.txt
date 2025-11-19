@@ -192,8 +192,8 @@ thing	// 20
 	y = 3505.0;
 	angle = 165;
 	type = 300;
-	ambush = true;
 	flip = true;
+	ambush = true;
 }
 
 thing	// 21
@@ -202,8 +202,8 @@ thing	// 21
 	y = 3727.0;
 	angle = 345;
 	type = 300;
-	ambush = true;
 	flip = true;
+	ambush = true;
 }
 
 thing	// 22
@@ -212,8 +212,8 @@ thing	// 22
 	y = 3791.0;
 	angle = 345;
 	type = 300;
-	ambush = true;
 	flip = true;
+	ambush = true;
 }
 
 thing	// 23
@@ -222,8 +222,8 @@ thing	// 23
 	y = 3648.0;
 	angle = 165;
 	type = 300;
-	ambush = true;
 	flip = true;
+	ambush = true;
 }
 
 thing	// 24
@@ -232,8 +232,8 @@ thing	// 24
 	y = 3569.0;
 	angle = 165;
 	type = 300;
-	ambush = true;
 	flip = true;
+	ambush = true;
 }
 
 thing	// 25
@@ -4578,4 +4578,12 @@ thing	// 521
 	type = 2004;
 	arg0 = 256;
 	arg1 = 100;
+}
+
+thing	// 522
+{
+	x = 8512.0;
+	y = -2752.0;
+	angle = 0;
+	type = 6502;
 }

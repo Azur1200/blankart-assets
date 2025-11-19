@@ -2,10 +2,10 @@
 // Waypoints: NepDisk and LabrysXII
 // Rings: NepDisk
 
-
 namespace = "blankart-patch";
 version = 1;
 checksum = "fd5df5fa1c7d356d";
+basemaptyperemoval = "2001";
 
 thing	// 0
 {
@@ -3395,8 +3395,7 @@ thing	// 345
 	x = 677.0;
 	y = 375.0;
 	angle = 270;
-	type = 2001;
-	arg2 = 13;
+	type = 6502;
 }
 
 thing	// 346
@@ -3404,8 +3403,8 @@ thing	// 346
 	x = 1280.0;
 	y = 352.0;
 	angle = 270;
-	type = 2001;
-	arg2 = 13;
+	type = 6502;
+	arg0 = 1;
 }
 
 thing	// 347
@@ -6477,4 +6476,29 @@ thing	// 727
 	arg0 = 64;
 	arg1 = 384;
 	arg2 = 2;
+}
+
+thing	// 728
+{
+	x = 224.0;
+	y = 384.0;
+	angle = 0;
+	type = 6502;
+}
+
+thing	// 729
+{
+	x = 1568.0;
+	y = 334.0;
+	angle = 270;
+	type = 6502;
+}
+
+thing	// 730
+{
+	x = 2752.0;
+	y = 320.0;
+	angle = 270;
+	type = 6502;
+	arg0 = 1;
 }
