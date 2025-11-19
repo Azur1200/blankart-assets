@@ -5837,7 +5837,7 @@ Mass = 100
 Flags = MF_SLIDEME|MF_SPECIAL|MF_PICKUPFROMBELOW|MF_DONTENCOREMAP
 
 Mobj MT_ITEMCAPSULE
-MapThingNum = 2010
+MapThingNum = 20010
 SpawnState = S_ITEMCAPSULE
 SpawnHealth = 1
 DeathState = S_INVISIBLE
@@ -6403,7 +6403,7 @@ Mass = 100
 Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOGRAVITY|MF_SCENERY
 
 Mobj MT_WAYPOINT_RISER
-MapThingNum = 2002
+MapThingNum = 20002
 SpawnState = S_INVISIBLE
 SpawnHealth = 1000
 PainChance = 100
@@ -6413,7 +6413,7 @@ Mass = 100
 Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOGRAVITY|MF_SCENERY
 
 Mobj MT_WAYPOINT_ANCHOR
-MapThingNum = 2003
+MapThingNum = 20003
 SpawnState = S_INVISIBLE
 SpawnHealth = 1000
 PainChance = 100
@@ -6423,7 +6423,7 @@ Mass = 100
 Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOGRAVITY|MF_SCENERY
 
 Mobj MT_BOTHINT
-MapThingNum = 2004
+MapThingNum = 20004
 SpawnState = S_INVISIBLE
 SpawnHealth = 1000
 PainChance = 100
@@ -8063,7 +8063,7 @@ Damage = 1
 Flags = MF_NOBLOCKMAP|MF_NOCLIPTHING|MF_NOGRAVITY|MF_DONTENCOREMAP
 
 Mobj MT_LOOPENDPOINT
-MapThingNum = 2020
+MapThingNum = 20020
 SpawnState = S_INVISIBLE
 SpawnHealth = 1000
 ReactionTime = 8
@@ -8074,7 +8074,7 @@ Damage = 1
 Flags = MF_SPECIAL|MF_NOGRAVITY|MF_DONTENCOREMAP
 
 Mobj MT_LOOPCENTERPOINT
-MapThingNum = 2021
+MapThingNum = 20021
 SpawnState = S_INVISIBLE
 SpawnHealth = 1000
 ReactionTime = 8
@@ -8086,7 +8086,7 @@ Flags = MF_NOSECTOR|MF_NOBLOCKMAP|MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_DONTENCOREMAP
 
 # Dash Rings
 Mobj MT_DASHRING
-MapThingNum = 3441
+MapThingNum = 30441
 SpawnState = S_DASHRING_HORIZONTAL
 SpawnHealth = 1000
 SeeSound = sfx_dashr
@@ -8096,7 +8096,7 @@ Height = 192*FRACUNIT
 Flags = MF_NOGRAVITY|MF_SPECIAL|MF_DONTENCOREMAP
 
 Mobj MT_RAINBOWDASHRING
-MapThingNum = 3442
+MapThingNum = 30442
 SpawnState = S_DASHRING_HORIZONTAL
 SpawnHealth = 1000
 SeeSound = sfx_rainbr
@@ -8107,7 +8107,7 @@ Flags = MF_NOGRAVITY|MF_SPECIAL|MF_DONTENCOREMAP
 
 # Sneaker Panels
 Mobj MT_SNEAKERPANEL
-MapThingNum = 510
+MapThingNum = 5010
 SpawnState = S_SNEAKERPANEL
 SpawnHealth = 1000
 Radius = 91*FRACUNIT
@@ -8115,7 +8115,7 @@ Height = 16*FRACUNIT
 Flags = MF_SPECIAL|MF_ENEMY|MF_DONTENCOREMAP
 
 Mobj MT_SNEAKERPANELSPAWNER
-MapThingNum = 511
+MapThingNum = 5011
 SpawnState = S_INVISIBLE
 ReactionTime = 65
 Radius = 32*FRACUNIT
@@ -8123,7 +8123,7 @@ Height = 60*FRACUNIT
 Flags = MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIPTHING
 
 Mobj MT_SCRIPT_THING
-MapThingNum = 4096
+MapThingNum = 4097
 SpawnState = S_INVISIBLE
 SpawnHealth = 1000
 Radius = 16*FRACUNIT
