@@ -8122,6 +8122,67 @@ Radius = 32*FRACUNIT
 Height = 60*FRACUNIT
 Flags = MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIPTHING
 
+# Horizontal Springs 2.2 style
+Mobj MT_YELLOWHORIZ
+MapThingNum = 5058
+SpawnState = S_YHORIZ1
+SpawnHealth = 1
+PainSound = sfx_spring
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Damage = 36*FRACUNIT
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY
+RaiseState = S_YHORIZ2
+
+Mobj MT_REDHORIZ
+MapThingNum = 5059
+SpawnState = S_RHORIZ1
+SpawnHealth = 1
+PainSound = sfx_spring
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Damage = 72*FRACUNIT
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY
+RaiseState = S_RHORIZ2
+
+Mobj MT_BLUEHORIZ
+MapThingNum = 5060
+SpawnState = S_BHORIZ1
+SpawnHealth = 1
+PainSound = sfx_spring
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Damage = 11*FRACUNIT
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY
+RaiseState = S_BHORIZ2
+
+# Diagonal and Horizontal Gray Springs
+Mobj MT_GRAYDIAG
+MapThingNum = 5070
+SpawnState = S_GDIAG1
+SpawnHealth = 1
+SeeState = S_GDIAG2
+ReactionTime = 8
+PainChance = SKINCOLOR_POPCORN
+PainSound = sfx_s3kb1
+Radius = 16*FRACUNIT
+Height = 16*FRACUNIT
+Mass = 6*FRACUNIT
+Damage = 6*FRACUNIT
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
+RaiseState = S_GDIAG2
+
+Mobj MT_GRAYHORIZ
+MapThingNum = 5071
+SpawnState = S_GHORIZ1
+SpawnHealth = 1
+PainSound = sfx_spring
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Damage = 6*FRACUNIT
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY
+RaiseState = S_GHORIZ2
+
 Mobj MT_SCRIPT_THING
 MapThingNum = 4097
 SpawnState = S_INVISIBLE
