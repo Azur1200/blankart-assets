@@ -18363,141 +18363,6 @@ Var1 = 10
 Var2 = 3
 Next = S_FOLLOWERBUBBLE_BACK
 
-# generic chao:
-State S_GCHAOIDLE
-SpriteName = SPR_GCHA
-SpriteFrame = FF_ANIMATE
-Duration = -1
-Var1 = 1
-Var2 = 4
-Next = S_GCHAOIDLE
-
-State S_GCHAOFLY
-SpriteName = SPR_GCHA
-SpriteFrame = 2|FF_ANIMATE
-Duration = -1
-Var1 = 1
-Var2 = 2
-Next = S_GCHAOFLY
-
-State S_GCHAOSAD1
-SpriteName = SPR_GCHA
-SpriteFrame = 7
-Duration = 5
-Next = S_GCHAOSAD2
-
-State S_GCHAOSAD2
-SpriteName = SPR_GCHA
-SpriteFrame = 8
-Duration = 3
-Next = S_GCHAOSAD3
-
-State S_GCHAOSAD3
-SpriteName = SPR_GCHA
-SpriteFrame = 9
-Duration = 6
-Next = S_GCHAOSAD4
-
-State S_GCHAOSAD4
-SpriteName = SPR_GCHA
-SpriteFrame = 8
-Duration = 3
-Next = S_GCHAOSAD1
-
-State S_GCHAOHAPPY1
-SpriteName = SPR_GCHA
-SpriteFrame = 4
-Duration = 8
-Next = S_GCHAOHAPPY2
-
-State S_GCHAOHAPPY2
-SpriteName = SPR_GCHA
-SpriteFrame = 5
-Duration = 4
-Next = S_GCHAOHAPPY3
-
-State S_GCHAOHAPPY3
-SpriteName = SPR_GCHA
-SpriteFrame = 6
-Duration = 8
-Next = S_GCHAOHAPPY4
-
-State S_GCHAOHAPPY4
-SpriteName = SPR_GCHA
-SpriteFrame = 5
-Duration = 4
-Next = S_GCHAOHAPPY1
-
-# cheese:
-State S_CHEESEIDLE
-SpriteName = SPR_CHEZ
-SpriteFrame = FF_ANIMATE
-Duration = -1
-Var1 = 1
-Var2 = 4
-Next = S_CHEESEIDLE
-
-State S_CHEESEFLY
-SpriteName = SPR_CHEZ
-SpriteFrame = 2|FF_ANIMATE
-Duration = -1
-Var1 = 1
-Var2 = 2
-Next = S_CHEESEFLY
-
-State S_CHEESESAD1
-SpriteName = SPR_CHEZ
-SpriteFrame = 7
-Duration = 5
-Next = S_CHEESESAD2
-
-State S_CHEESESAD2
-SpriteName = SPR_CHEZ
-SpriteFrame = 8
-Duration = 3
-Next = S_CHEESESAD3
-
-State S_CHEESESAD3
-SpriteName = SPR_CHEZ
-SpriteFrame = 9
-Duration = 6
-Next = S_CHEESESAD4
-
-State S_CHEESESAD4
-SpriteName = SPR_CHEZ
-SpriteFrame = 8
-Duration = 3
-Next = S_CHEESESAD1
-
-State S_CHEESEHAPPY1
-SpriteName = SPR_CHEZ
-SpriteFrame = 4
-Duration = 8
-Next = S_CHEESEHAPPY2
-
-State S_CHEESEHAPPY2
-SpriteName = SPR_CHEZ
-SpriteFrame = 5
-Duration = 4
-Next = S_CHEESEHAPPY3
-
-State S_CHEESEHAPPY3
-SpriteName = SPR_CHEZ
-SpriteFrame = 6
-Duration = 8
-Next = S_CHEESEHAPPY4
-
-State S_CHEESEHAPPY4
-SpriteName = SPR_CHEZ
-SpriteFrame = 5
-Duration = 4
-Next = S_CHEESEHAPPY1
-
-State S_RINGDEBT
-SpriteName = SPR_MXCL
-SpriteFrame = FF_FULLBRIGHT
-Duration = -1
-
 State S_GAINAX_TINY
 SpriteName = SPR_LENS
 SpriteFrame = FF_FULLBRIGHT|FF_ADD|FF_TRANS10|FF_ANIMATE|11
@@ -18589,3 +18454,204 @@ SpriteName = SPR_DRIF
 SpriteFrame = A|FF_FULLBRIGHT
 Duration = 1
 Next = S_NULL
+
+# Dash Rings
+State S_DASHRING_HORIZONTAL
+SpriteName = SPR_RAIR
+Duration = -1
+
+State S_DASHRING_30DEGREES
+SpriteName = SPR_RAIR
+SpriteFrame = 1
+Duration = -1
+
+State S_DASHRING_60DEGREES
+SpriteName = SPR_RAIR
+SpriteFrame = 2
+Duration = -1
+
+State S_DASHRING_VERTICAL
+SpriteName = SPR_RAIR
+SpriteFrame = 3
+Duration = -1
+
+State S_DASHRING_HORIZONTAL_FLASH1
+Duration = TICRATE/3-2
+Next = S_DASHRING_HORIZONTAL_FLASH2
+
+State S_DASHRING_HORIZONTAL_FLASH2
+SpriteName = SPR_RAIR
+SpriteFrame = FF_ADD|0
+Duration = 2
+Next = S_DASHRING_HORIZONTAL_FLASH1
+
+State S_DASHRING_30DEGREES_FLASH1
+Duration = TICRATE/3-2
+Next = S_DASHRING_30DEGREES_FLASH2
+
+State S_DASHRING_30DEGREES_FLASH2
+SpriteName = SPR_RAIR
+SpriteFrame = FF_ADD|1
+Duration = 2
+Next = S_DASHRING_30DEGREES_FLASH1
+
+State S_DASHRING_60DEGREES_FLASH1
+Duration = TICRATE/3-2
+Next = S_DASHRING_60DEGREES_FLASH2
+
+State S_DASHRING_60DEGREES_FLASH2
+SpriteName = SPR_RAIR
+SpriteFrame = FF_ADD|2
+Duration = 2
+Next = S_DASHRING_60DEGREES_FLASH1
+
+State S_DASHRING_VERTICAL_FLASH1
+Duration = TICRATE/3-2
+Next = S_DASHRING_VERTICAL_FLASH2
+
+State S_DASHRING_VERTICAL_FLASH2
+SpriteName = SPR_RAIR
+SpriteFrame = FF_ADD|3
+Duration = 2
+Next = S_DASHRING_VERTICAL_FLASH1
+
+# Sneaker Panels
+State S_SNEAKERPANEL
+SpriteName = SPR_BSTP
+SpriteFrame = FF_ANIMATE|FF_GLOBALANIM|FF_FLOORSPRITE|FF_FULLBRIGHT
+Duration = -1
+Var1 = 5
+Var2 = 2
+Next = S_SNEAKERPANEL
+
+State S_SNEAKERPANEL_SMALL
+SpriteName = SPR_BSTS
+SpriteFrame = FF_ANIMATE|FF_GLOBALANIM|FF_FLOORSPRITE|FF_FULLBRIGHT
+Duration = -1
+Var1 = 5
+Var2 = 2
+Next = S_SNEAKERPANEL_SMALL
+
+State S_SNEAKERPANEL_TINY
+SpriteName = SPR_BSTT
+SpriteFrame = FF_ANIMATE|FF_GLOBALANIM|FF_FLOORSPRITE|FF_FULLBRIGHT
+Duration = -1
+Var1 = 5
+Var2 = 2
+Next = S_SNEAKERPANEL_TINY
+
+# Yellow Side Spring
+State S_YHORIZ1
+SpriteName = SPR_SSWY
+Duration = -1
+
+State S_YHORIZ2
+SpriteName = SPR_SSWY
+SpriteFrame = 1
+Duration = 1
+Action = A_Pain
+Next = S_YHORIZ3
+
+State S_YHORIZ3
+SpriteName = SPR_SSWY
+Duration = 1
+Next = S_YHORIZ4
+
+State S_YHORIZ4
+SpriteName = SPR_SSWY
+SpriteFrame = 2
+Duration = 4
+Next = S_YHORIZ1
+
+# Red Side Spring
+State S_RHORIZ1
+SpriteName = SPR_SSWR
+Duration = -1
+
+State S_RHORIZ2
+SpriteName = SPR_SSWR
+SpriteFrame = 1
+Duration = 1
+Action = A_Pain
+Next = S_RHORIZ3
+
+State S_RHORIZ3
+SpriteName = SPR_SSWR
+Duration = 1
+Next = S_RHORIZ4
+
+State S_RHORIZ4
+SpriteName = SPR_SSWR
+SpriteFrame = 2
+Duration = 4
+Next = S_RHORIZ1
+
+# Blue Side Spring
+State S_BHORIZ1
+SpriteName = SPR_SSWB
+Duration = -1
+
+State S_BHORIZ2
+SpriteName = SPR_SSWB
+SpriteFrame = 1
+Duration = 1
+Action = A_Pain
+Next = S_BHORIZ3
+
+State S_BHORIZ3
+SpriteName = SPR_SSWB
+Duration = 1
+Next = S_BHORIZ4
+
+State S_BHORIZ4
+SpriteName = SPR_SSWB
+SpriteFrame = 2
+Duration = 4
+Next = S_BHORIZ1
+
+# Gray Diagonal Spring
+State S_GDIAG1
+SpriteName = SPR_GSPR
+Duration = -1
+
+State S_GDIAG2
+SpriteName = SPR_GSPR
+SpriteFrame = 1
+Duration = 1
+Action = A_Pain
+Next = S_GDIAG3
+
+State S_GDIAG3
+SpriteName = SPR_GSPR
+Duration = 1
+Next = S_GDIAG4
+
+State S_GDIAG4
+SpriteName = SPR_GSPR
+SpriteFrame = 2
+Duration = 4
+Next = S_GDIAG1
+
+# Gray Side Spring
+State S_GHORIZ1
+SpriteName = SPR_SSWG
+Duration = -1
+
+State S_GHORIZ2
+SpriteName = SPR_SSWG
+SpriteFrame = 1
+Duration = 1
+Action = A_Pain
+Next = S_GHORIZ3
+
+State S_GHORIZ3
+SpriteName = SPR_SSWG
+Duration = 1
+Next = S_GHORIZ4
+
+State S_GHORIZ4
+SpriteName = SPR_SSWG
+SpriteFrame = 2
+Duration = 4
+Next = S_GHORIZ1
+

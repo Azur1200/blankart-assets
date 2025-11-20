@@ -3881,3 +3881,9 @@ Sound sfx_sysmsg
 Priority = 60
 Caption = Server notification
 
+# Dash Rings
+Sound sfx_dashr
+Priority = 64
+
+Sound sfx_rainbr
+Priority = 64
