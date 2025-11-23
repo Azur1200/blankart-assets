@@ -64,6 +64,11 @@ Text = Rumble
 Tooltip = Vibrate the gamepad during certain actions.
 Cvar = rumble
 
+MenuItem RUMBLESTR
+Text = Rumble Strength
+Tooltip = The strength of gamepad vibration.
+Cvar = rumblestrength
+
 MenuItem DEADZ
 Text = Deadzone
 Tooltip = Minimum Range for analog recognition.
