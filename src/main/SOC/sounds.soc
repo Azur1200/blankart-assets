@@ -173,15 +173,6 @@ Singular = true
 Priority = 64
 Caption = Wood breaking
 
-Sound sfx_ambmac
-Priority = 60
-Caption = Machinery
-
-Sound sfx_spsmsh
-Singular = true
-Priority = 60
-Caption = Heavy impact
-
 Sound sfx_rainin
 Singular = true
 Priority = 24
@@ -464,10 +455,6 @@ Sound sfx_gbeep
 Priority = 64
 Caption = Threatening beeping
 
-Sound sfx_wepfir
-Priority = 64
-Caption = Firing weapon
-
 Sound sfx_ghit
 Priority = 64
 Caption = Goop splash
@@ -516,10 +503,6 @@ Singular = true
 Priority = 127
 Caption = Teleport
 
-Sound sfx_monton
-Priority = 64
-Caption = Golden Monitor activated
-
 Sound sfx_pogo
 Priority = 64
 Caption = Mechanical pogo
@@ -543,30 +526,6 @@ Caption = Firing
 Sound sfx_shield
 Priority = 60
 Caption = Pity Shield
-
-Sound sfx_wirlsg
-Priority = 60
-Caption = Whirlwind Shield
-
-Sound sfx_forcsg
-Priority = 60
-Caption = Force Shield
-
-Sound sfx_frcssg
-Priority = 60
-Caption = Weak Force Shield
-
-Sound sfx_elemsg
-Priority = 60
-Caption = Elemental Shield
-
-Sound sfx_armasg
-Priority = 60
-Caption = Armageddon Shield
-
-Sound sfx_attrsg
-Priority = 60
-Caption = Attraction Shield
 
 Sound sfx_shldls
 Priority = 64
@@ -641,15 +600,6 @@ Sound sfx_wdjump
 Priority = 60
 Caption = Whirlwind jump
 
-Sound sfx_shrpsp
-Singular = true
-Priority = 60
-Caption = Spincushion
-
-Sound sfx_shrpgo
-Priority = 60
-Caption = Launch
-
 Sound sfx_mswarp
 Priority = 60
 Flags = 16
@@ -660,62 +610,6 @@ Singular = true
 Priority = 60
 Flags = 8
 Caption = Breaking through
-
-Sound sfx_boingf
-Priority = 60
-Caption = Bouncing
-
-Sound sfx_corkp
-Priority = 64
-Caption = Cork fired
-
-Sound sfx_corkh
-Priority = 32
-Caption = Cork hit
-
-Sound sfx_alart
-Priority = 200
-Caption = Caught red handed!
-
-Sound sfx_vwre
-Priority = 200
-Caption = Clone fighter!
-
-Sound sfx_bowl
-Priority = 32
-Caption = Bowling
-
-Sound sfx_chuchu
-Priority = 32
-Caption = Train horn
-
-#sfx_bsnipe,
-Sound sfx_sprong
-Priority = 112
-Caption = Power spring
-
-Sound sfx_lvfal1
-Singular = true
-Priority = 64
-Caption = Rumble
-
-Sound sfx_pscree
-Priority = 64
-Caption = SCREE!
-
-Sound sfx_iceb
-Priority = 64
-Caption = Ice crack
-
-Sound sfx_shattr
-Singular = true
-Priority = 64
-Caption = Shattering
-
-Sound sfx_antiri
-Singular = true
-Priority = 255
-Caption = Depletion
 
 # Menu, interface
 Sound sfx_chchng
@@ -767,21 +661,6 @@ Sound sfx_zelda
 Priority = 120
 Caption = Discovery
 
-Sound sfx_adderr
-Singular = true
-Priority = 64
-Caption = Error
-
-Sound sfx_notadd
-Singular = true
-Priority = 64
-Caption = Reject
-
-Sound sfx_addfil
-Singular = true
-Priority = 64
-Caption = Accept
-
 # NiGHTS
 Sound sfx_ideya
 Priority = 127
@@ -800,10 +679,6 @@ Caption = Bumper
 Sound sfx_nxbump
 Priority = 96
 Caption = Bumper
-
-Sound sfx_ncchip
-Priority = 204
-Caption = Got chip
 
 Sound sfx_ncitem
 Priority = 204
@@ -869,31 +744,6 @@ Sound sfx_timeup
 Singular = true
 Priority = 256
 Caption = Ominous Countdown
-
-Sound sfx_ngjump
-Priority = 96
-Caption = Jump
-
-Sound sfx_peww
-Priority = 96
-Caption = Pew
-
-# Halloween
-Sound sfx_lntsit
-Priority = 60
-Caption = Cacolantern awake
-
-Sound sfx_lntdie
-Priority = 60
-Caption = Cacolantern death
-
-Sound sfx_pumpkn
-Priority = 60
-Caption = Pumpkin smash
-
-Sound sfx_ghosty
-Priority = 64
-Caption = Laughter
 
 # Mario
 Sound sfx_koopfr
@@ -1504,10 +1354,6 @@ Sound sfx_s270
 Priority = 64
 
 # S3&K sounds
-Sound sfx_s3k2b
-Singular = true
-Priority = 120
-Caption = Got Emerald
 
 Sound sfx_s3k33
 Priority = 64
@@ -1994,66 +1840,6 @@ Priority = 64
 Caption = Bumper
 
 Sound sfx_s3kab
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kab1
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kab2
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kab3
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kab4
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kab5
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kab6
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kab7
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kab8
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kab9
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kaba
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kabb
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kabc
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kabd
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kabe
-Priority = 64
-Caption = Spindash
-
-Sound sfx_s3kabf
 Priority = 64
 Caption = Spindash
 
@@ -3173,24 +2959,6 @@ Sound sfx_dbgsal
 Priority = 255
 Flags = 8
 
-# Chaining Sound
-Sound sfx_bstchn
-Priority = 64
-
-# Low Ring Sound
-Sound sfx_ringlw
-Priority = 64
-
-# Flip Over Sound
-Sound sfx_flipos
-Priority = 96
-Caption = Flipped over
-
-# Shout message sound effect
-Sound sfx_sysmsg
-Priority = 60
-Caption = Server notification
-
 # Next up: UNIQUE ENGINE SOUNDS! Hoooooo boy...
 # Engine class A - Low Speed, Low Weight
 Sound sfx_krta00
@@ -3853,3 +3621,269 @@ Flags = 48
 SkinSound = SKSKPOWR
 Caption = /
 
+# location for new sounds not in v1
+# yes I have to do this because people thought it would
+# be funny to use magic numbers in their maps......
+
+# under wbreak
+
+Sound sfx_ambmac
+Priority = 60
+Caption = Machinery
+
+Sound sfx_spsmsh
+Singular = true
+Priority = 60
+Caption = Heavy impact
+
+# under gbeep
+
+Sound sfx_wepfir
+Priority = 64
+Caption = Firing weapon
+
+# under mixup
+
+Sound sfx_monton
+Priority = 64
+Caption = Golden Monitor activated
+
+# under shield
+
+Sound sfx_wirlsg
+Priority = 60
+Caption = Whirlwind Shield
+
+Sound sfx_forcsg
+Priority = 60
+Caption = Force Shield
+
+Sound sfx_frcssg
+Priority = 60
+Caption = Weak Force Shield
+
+Sound sfx_elemsg
+Priority = 60
+Caption = Elemental Shield
+
+Sound sfx_armasg
+Priority = 60
+Caption = Armageddon Shield
+
+Sound sfx_attrsg
+Priority = 60
+Caption = Attraction Shield
+
+# under wdjump
+
+Sound sfx_shrpsp
+Singular = true
+Priority = 60
+Caption = Spincushion
+
+Sound sfx_shrpgo
+Priority = 60
+Caption = Launch
+
+# under mspogo
+
+Sound sfx_boingf
+Priority = 60
+Caption = Bouncing
+
+Sound sfx_corkp
+Priority = 64
+Caption = Cork fired
+
+Sound sfx_corkh
+Priority = 32
+Caption = Cork hit
+
+Sound sfx_alart
+Priority = 200
+Caption = Caught red handed!
+
+Sound sfx_vwre
+Priority = 200
+Caption = Clone fighter!
+
+Sound sfx_bowl
+Priority = 32
+Caption = Bowling
+
+Sound sfx_chuchu
+Priority = 32
+Caption = Train horn
+
+Sound sfx_sprong
+Priority = 112
+Caption = Power spring
+
+Sound sfx_lvfal1
+Singular = true
+Priority = 64
+Caption = Rumble
+
+Sound sfx_pscree
+Priority = 64
+Caption = SCREE!
+
+Sound sfx_iceb
+Priority = 64
+Caption = Ice crack
+
+Sound sfx_shattr
+Singular = true
+Priority = 64
+Caption = Shattering
+
+Sound sfx_antiri
+Singular = true
+Priority = 255
+Caption = Depletion
+
+# Under zelda
+
+Sound sfx_adderr
+Singular = true
+Priority = 64
+Caption = Error
+
+Sound sfx_notadd
+Singular = true
+Priority = 64
+Caption = Reject
+
+Sound sfx_addfil
+Singular = true
+Priority = 64
+Caption = Accept
+
+# under nxbump
+
+Sound sfx_ncchip
+Priority = 204
+Caption = Got chip
+
+# under timeup
+
+Sound sfx_ngjump
+Priority = 96
+Caption = Jump
+
+Sound sfx_peww
+Priority = 96
+Caption = Pew
+
+# Halloween
+Sound sfx_lntsit
+Priority = 60
+Caption = Cacolantern awake
+
+Sound sfx_lntdie
+Priority = 60
+Caption = Cacolantern death
+
+Sound sfx_pumpkn
+Priority = 60
+Caption = Pumpkin smash
+
+Sound sfx_ghosty
+Priority = 64
+Caption = Laughter
+
+# Under #s3&k sounds
+
+Sound sfx_s3k2b
+Singular = true
+Priority = 120
+Caption = Got Emerald
+
+# under s3kab
+
+Sound sfx_s3kab1
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab2
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab3
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab4
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab5
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab6
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab7
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab8
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kab9
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kaba
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kabb
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kabc
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kabd
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kabe
+Priority = 64
+Caption = Spindash
+
+Sound sfx_s3kabf
+Priority = 64
+Caption = Spindash
+
+# New blan sounds
+
+# Chaining Sound
+Sound sfx_bstchn
+Priority = 64
+
+# Low Ring Sound
+Sound sfx_ringlw
+Priority = 64
+
+# Flip Over Sound
+Sound sfx_flipos
+Priority = 96
+Caption = Flipped over
+
+# Shout message sound effect
+Sound sfx_sysmsg
+Priority = 60
+Caption = Server notification
+
+# Dash Rings
+Sound sfx_dashr
+Priority = 64
+
+Sound sfx_rainbr
+Priority = 64

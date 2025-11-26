@@ -1423,7 +1423,7 @@ PainSound = sfx_s3kb1
 Radius = 20*FRACUNIT
 Height = 16*FRACUNIT
 Mass = 26*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
+Flags = MF_SOLID|MF_SPRING|MF_DONTENCOREMAP
 RaiseState = S_YELLOWSPRING2
 
 Mobj MT_REDSPRING
@@ -1437,7 +1437,7 @@ PainSound = sfx_s3kb1
 Radius = 20*FRACUNIT
 Height = 16*FRACUNIT
 Mass = 40*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
+Flags = MF_SOLID|MF_SPRING|MF_DONTENCOREMAP
 RaiseState = S_REDSPRING2
 
 Mobj MT_BLUESPRING
@@ -1451,7 +1451,7 @@ PainSound = sfx_s3kb1
 Radius = 20*FRACUNIT
 Height = 16*FRACUNIT
 Mass = 14*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
+Flags = MF_SOLID|MF_SPRING|MF_DONTENCOREMAP
 RaiseState = S_BLUESPRING2
 
 Mobj MT_GRAYSPRING
@@ -1465,7 +1465,7 @@ PainSound = sfx_s3kb1
 Radius = 20*FRACUNIT
 Height = 16*FRACUNIT
 Mass = 6*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
+Flags = MF_SOLID|MF_SPRING|MF_DONTENCOREMAP
 RaiseState = S_GRAYSPRING2
 
 Mobj MT_INVISSPRING
@@ -1494,7 +1494,7 @@ Radius = 16*FRACUNIT
 Height = 16*FRACUNIT
 Mass = 26*FRACUNIT
 Damage = 26*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
+Flags = MF_SOLID|MF_SPRING|MF_DONTENCOREMAP
 RaiseState = S_YDIAG2
 
 # Red Diagonal Spring
@@ -1510,7 +1510,7 @@ Radius = 16*FRACUNIT
 Height = 16*FRACUNIT
 Mass = 40*FRACUNIT
 Damage = 40*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
+Flags = MF_SOLID|MF_SPRING|MF_DONTENCOREMAP
 RaiseState = S_RDIAG2
 
 # Blue Diagonal Spring
@@ -1526,7 +1526,7 @@ Radius = 16*FRACUNIT
 Height = 16*FRACUNIT
 Mass = 14*FRACUNIT
 Damage = 14*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
+Flags = MF_SOLID|MF_SPRING|MF_DONTENCOREMAP
 RaiseState = S_BDIAG2
 
 # Interactive Objects
@@ -5837,7 +5837,7 @@ Mass = 100
 Flags = MF_SLIDEME|MF_SPECIAL|MF_PICKUPFROMBELOW|MF_DONTENCOREMAP
 
 Mobj MT_ITEMCAPSULE
-MapThingNum = 2010
+MapThingNum = 20010
 SpawnState = S_ITEMCAPSULE
 SpawnHealth = 1
 DeathState = S_INVISIBLE
@@ -6321,16 +6321,17 @@ DispOffset = 2
 Mass = 16
 Flags = MF_SPECIAL|MF_NOGRAVITY|MF_DONTENCOREMAP
 
-Mobj MT_BUBBLESHLD_DEBRIS
+Mobj MT_BUBBLESHIELD_DEBRIS
 SpawnState = S_BUBBLEDEBRIS_1
 SpawnHealth = 1000
 ReactionTime = 8
+DeathState = S_INVISIBLE
+DeathSound = sfx_s3k94
 Speed = 8<<FRACBITS
 Radius = 16<<FRACBITS
 Height = 16<<FRACBITS
 Mass = 100
-ActiveSound = sfx_s3k94
-Flags = MF_SPECIAL|MF_BOUNCE
+Flags = MF_NOBLOCKMAP|MF_NOCLIPTHING|MF_SCENERY|MF_BOUNCE|MF_DONTENCOREMAP
 
 # Kitchen Sink Stuff
 Mobj MT_SINK
@@ -6402,7 +6403,7 @@ Mass = 100
 Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOGRAVITY|MF_SCENERY
 
 Mobj MT_WAYPOINT_RISER
-MapThingNum = 2002
+MapThingNum = 20002
 SpawnState = S_INVISIBLE
 SpawnHealth = 1000
 PainChance = 100
@@ -6412,7 +6413,7 @@ Mass = 100
 Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOGRAVITY|MF_SCENERY
 
 Mobj MT_WAYPOINT_ANCHOR
-MapThingNum = 2003
+MapThingNum = 20003
 SpawnState = S_INVISIBLE
 SpawnHealth = 1000
 PainChance = 100
@@ -6422,7 +6423,7 @@ Mass = 100
 Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOGRAVITY|MF_SCENERY
 
 Mobj MT_BOTHINT
-MapThingNum = 2004
+MapThingNum = 20004
 SpawnState = S_INVISIBLE
 SpawnHealth = 1000
 PainChance = 100
@@ -8062,7 +8063,7 @@ Damage = 1
 Flags = MF_NOBLOCKMAP|MF_NOCLIPTHING|MF_NOGRAVITY|MF_DONTENCOREMAP
 
 Mobj MT_LOOPENDPOINT
-MapThingNum = 2020
+MapThingNum = 20020
 SpawnState = S_INVISIBLE
 SpawnHealth = 1000
 ReactionTime = 8
@@ -8073,7 +8074,7 @@ Damage = 1
 Flags = MF_SPECIAL|MF_NOGRAVITY|MF_DONTENCOREMAP
 
 Mobj MT_LOOPCENTERPOINT
-MapThingNum = 2021
+MapThingNum = 20021
 SpawnState = S_INVISIBLE
 SpawnHealth = 1000
 ReactionTime = 8
@@ -8083,8 +8084,107 @@ Mass = 100
 Damage = 1
 Flags = MF_NOSECTOR|MF_NOBLOCKMAP|MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_DONTENCOREMAP
 
+# Dash Rings
+Mobj MT_DASHRING
+MapThingNum = 30441
+SpawnState = S_DASHRING_HORIZONTAL
+SpawnHealth = 1000
+SeeSound = sfx_dashr
+ReactionTime = 8
+Radius = 112*FRACUNIT
+Height = 192*FRACUNIT
+Flags = MF_NOGRAVITY|MF_SPECIAL|MF_DONTENCOREMAP
+
+Mobj MT_RAINBOWDASHRING
+MapThingNum = 30442
+SpawnState = S_DASHRING_HORIZONTAL
+SpawnHealth = 1000
+SeeSound = sfx_rainbr
+ReactionTime = 8
+Radius = 112*FRACUNIT
+Height = 192*FRACUNIT
+Flags = MF_NOGRAVITY|MF_SPECIAL|MF_DONTENCOREMAP
+
+# Sneaker Panels
+Mobj MT_SNEAKERPANEL
+MapThingNum = 5010
+SpawnState = S_SNEAKERPANEL
+SpawnHealth = 1000
+Radius = 91*FRACUNIT
+Height = 16*FRACUNIT
+Flags = MF_SPECIAL|MF_ENEMY|MF_DONTENCOREMAP
+
+Mobj MT_SNEAKERPANELSPAWNER
+MapThingNum = 5011
+SpawnState = S_INVISIBLE
+ReactionTime = 65
+Radius = 32*FRACUNIT
+Height = 60*FRACUNIT
+Flags = MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIPTHING
+
+# Horizontal Springs 2.2 style
+Mobj MT_YELLOWHORIZ
+MapThingNum = 5058
+SpawnState = S_YHORIZ1
+SpawnHealth = 1
+PainSound = sfx_spring
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Damage = 36*FRACUNIT
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY
+RaiseState = S_YHORIZ2
+
+Mobj MT_REDHORIZ
+MapThingNum = 5059
+SpawnState = S_RHORIZ1
+SpawnHealth = 1
+PainSound = sfx_spring
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Damage = 72*FRACUNIT
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY
+RaiseState = S_RHORIZ2
+
+Mobj MT_BLUEHORIZ
+MapThingNum = 5060
+SpawnState = S_BHORIZ1
+SpawnHealth = 1
+PainSound = sfx_spring
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Damage = 11*FRACUNIT
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY
+RaiseState = S_BHORIZ2
+
+# Diagonal and Horizontal Gray Springs
+Mobj MT_GRAYDIAG
+MapThingNum = 5070
+SpawnState = S_GDIAG1
+SpawnHealth = 1
+SeeState = S_GDIAG2
+ReactionTime = 8
+PainChance = SKINCOLOR_POPCORN
+PainSound = sfx_s3kb1
+Radius = 16*FRACUNIT
+Height = 16*FRACUNIT
+Mass = 6*FRACUNIT
+Damage = 6*FRACUNIT
+Flags = MF_SOLID|MF_SPRING|MF_DONTENCOREMAP
+RaiseState = S_GDIAG2
+
+Mobj MT_GRAYHORIZ
+MapThingNum = 5071
+SpawnState = S_GHORIZ1
+SpawnHealth = 1
+PainSound = sfx_spring
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Damage = 6*FRACUNIT
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY
+RaiseState = S_GHORIZ2
+
 Mobj MT_SCRIPT_THING
-MapThingNum = 4096
+MapThingNum = 4097
 SpawnState = S_INVISIBLE
 SpawnHealth = 1000
 Radius = 16*FRACUNIT

@@ -60,6 +60,11 @@ Text = Skyboxes
 Tooltip = Toggle being able to see the sky.
 Cvar = skybox
 
+MenuItem SECBRIGHT
+Text = Sector Brightness
+Tooltip = Raises the minimum brightness for sectors.
+Cvar = r_secbright
+
 MenuItem PARALLEL
 Text = Parallel Software
 Tooltip = Run Software in parallel for performance boost.
@@ -133,11 +138,6 @@ MenuItem SHEARING
 Text = Software Perspective
 Tooltip = Recreates the look of software mode camera perspective.
 Cvar = gr_shearing
-
-MenuItem SECBRIGHT
-Text = Sector Brightness
-Tooltip = Raises the minimum brightness on dark sectors.
-Cvar = gr_secbright
 
 
 Menu OP_VISUAL

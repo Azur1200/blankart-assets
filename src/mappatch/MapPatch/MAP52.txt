@@ -908,7 +908,7 @@ thing	// 92
 	type = 2001;
 	arg0 = 25;
 	arg1 = 288;
-	arg2 = 7;
+	arg2 = 6;
 }
 
 thing	// 93
@@ -1346,7 +1346,7 @@ thing	// 130
 	type = 2001;
 	arg0 = 301;
 	arg1 = 288;
-	arg2 = 7;
+	arg2 = 6;
 }
 
 thing	// 131
@@ -1358,7 +1358,7 @@ thing	// 131
 	type = 2001;
 	arg0 = 302;
 	arg1 = 288;
-	arg2 = 7;
+	arg2 = 6;
 }
 
 thing	// 132
@@ -1370,7 +1370,7 @@ thing	// 132
 	type = 2001;
 	arg0 = 303;
 	arg1 = 288;
-	arg2 = 7;
+	arg2 = 6;
 }
 
 thing	// 133
@@ -1382,7 +1382,7 @@ thing	// 133
 	type = 2001;
 	arg0 = 304;
 	arg1 = 288;
-	arg2 = 7;
+	arg2 = 6;
 }
 
 thing	// 134
@@ -1394,7 +1394,7 @@ thing	// 134
 	type = 2001;
 	arg0 = 305;
 	arg1 = 288;
-	arg2 = 7;
+	arg2 = 6;
 }
 
 thing	// 135
@@ -1406,7 +1406,7 @@ thing	// 135
 	type = 2001;
 	arg0 = 306;
 	arg1 = 288;
-	arg2 = 7;
+	arg2 = 6;
 }
 
 thing	// 136
@@ -1418,5 +1418,13 @@ thing	// 136
 	type = 2001;
 	arg0 = 307;
 	arg1 = 288;
-	arg2 = 7;
+	arg2 = 6;
+}
+
+thing	// 137
+{
+	x = 7232.0;
+	y = -3328.0;
+	angle = 270;
+	type = 6502;
 }

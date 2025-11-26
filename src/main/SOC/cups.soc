@@ -1,11 +1,11 @@
-#Cup Ring
-#LevelList = MAP01,MAP02,MAP03,MAP04,MAP05
+Cup Ring
+LevelList = MAP01,MAP02,MAP03,MAP04,MAP05
 
-#Cup Sneaker
-#LevelList = MAP06,MAP07,MAP08,MAP09,MAP10
+Cup Sneaker
+LevelList = MAP06,MAP07,MAP08,MAP09,MAP10
 
-#Cup Water
-#LevelList = MAP11,MAP12,MAP13,MAP14,MAP15
+Cup Water
+LevelList = MAP11,MAP12,MAP13,MAP14,MAP15
 
 #Cup Lightning
 #LevelList = MAP16,MAP17,MAP18,MAP19,MAP20
@@ -33,3 +33,6 @@ LevelList = MAP51,MAP52,MAP53,MAP54,MAP55
 
 #Cup Community
 #LevelList = MAP56,MAP57,MAP58,MAP59,MAP60
+
+Cup Hell
+LevelList = MAPH4

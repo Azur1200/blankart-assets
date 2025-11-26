@@ -1,0 +1,3342 @@
+// MKSC Rainbow Road
+// Waypoints: WumboSpasm
+
+namespace = "blankart-patch";
+version = 1;
+checksum = "e90c3c80dc18682c";
+
+thing	// 0
+{
+	id = 34;
+	x = 5568.0;
+	y = -1664.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 35;
+	arg1 = 430;
+}
+
+thing	// 1
+{
+	id = 33;
+	x = 5264.0;
+	y = -1360.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 34;
+	arg1 = 430;
+}
+
+thing	// 2
+{
+	id = 32;
+	x = 4960.0;
+	y = -1056.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 33;
+	arg1 = 430;
+}
+
+thing	// 3
+{
+	id = 31;
+	x = 4544.0;
+	y = -960.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 32;
+	arg1 = 384;
+}
+
+thing	// 4
+{
+	id = 30;
+	x = 4160.0;
+	y = -960.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 31;
+	arg1 = 384;
+}
+
+thing	// 5
+{
+	id = 29;
+	x = 3808.0;
+	y = -1120.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 30;
+	arg1 = 384;
+}
+
+thing	// 6
+{
+	id = 28;
+	x = 3536.0;
+	y = -1392.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 29;
+	arg1 = 384;
+}
+
+thing	// 7
+{
+	id = 27;
+	x = 3456.0;
+	y = -1760.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 28;
+	arg1 = 384;
+}
+
+thing	// 8
+{
+	id = 26;
+	x = 3456.0;
+	y = -2144.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 27;
+	arg1 = 384;
+}
+
+thing	// 9
+{
+	id = 25;
+	x = 3456.0;
+	y = -2528.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 26;
+	arg1 = 384;
+}
+
+thing	// 10
+{
+	id = 24;
+	x = 3456.0;
+	y = -2912.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 25;
+	arg1 = 384;
+}
+
+thing	// 11
+{
+	id = 23;
+	x = 3456.0;
+	y = -3296.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 24;
+	arg1 = 384;
+}
+
+thing	// 12
+{
+	id = 22;
+	x = 3456.0;
+	y = -3680.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 23;
+	arg1 = 384;
+}
+
+thing	// 13
+{
+	id = 21;
+	x = 3456.0;
+	y = -4064.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 22;
+	arg1 = 384;
+}
+
+thing	// 14
+{
+	id = 20;
+	x = 3456.0;
+	y = -4448.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 21;
+	arg1 = 384;
+}
+
+thing	// 15
+{
+	id = 19;
+	x = 3456.0;
+	y = -4832.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 20;
+	arg1 = 384;
+}
+
+thing	// 16
+{
+	id = 18;
+	x = 3456.0;
+	y = -5216.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 19;
+	arg1 = 384;
+}
+
+thing	// 17
+{
+	id = 17;
+	x = 3248.0;
+	y = -5552.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 18;
+	arg1 = 384;
+}
+
+thing	// 18
+{
+	id = 16;
+	x = 2976.0;
+	y = -5824.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 17;
+	arg1 = 384;
+}
+
+thing	// 19
+{
+	id = 11;
+	x = 1376.0;
+	y = -6048.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 12;
+	arg1 = 320;
+}
+
+thing	// 20
+{
+	id = 10;
+	x = 1152.0;
+	y = -6272.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 11;
+	arg1 = 320;
+}
+
+thing	// 21
+{
+	id = 9;
+	x = 960.0;
+	y = -6528.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 10;
+	arg1 = 320;
+}
+
+thing	// 22
+{
+	id = 7;
+	x = 960.0;
+	y = -7168.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 8;
+	arg1 = 320;
+}
+
+thing	// 23
+{
+	id = 12;
+	x = 1664.0;
+	y = -5888.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 13;
+	arg1 = 320;
+}
+
+thing	// 24
+{
+	id = 8;
+	x = 960.0;
+	y = -6848.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 9;
+	arg1 = 320;
+}
+
+thing	// 25
+{
+	id = 6;
+	x = 960.0;
+	y = -7488.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 7;
+	arg1 = 320;
+}
+
+thing	// 26
+{
+	id = 5;
+	x = 960.0;
+	y = -7808.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 6;
+	arg1 = 320;
+}
+
+thing	// 27
+{
+	id = 13;
+	x = 1984.0;
+	y = -5888.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 14;
+	arg1 = 320;
+}
+
+thing	// 28
+{
+	id = 14;
+	x = 2304.0;
+	y = -5888.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 15;
+	arg1 = 320;
+}
+
+thing	// 29
+{
+	id = 15;
+	x = 2624.0;
+	y = -5888.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 16;
+	arg1 = 320;
+}
+
+thing	// 30
+{
+	id = 4;
+	x = 960.0;
+	y = -8128.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 5;
+	arg1 = 320;
+}
+
+thing	// 31
+{
+	id = 3;
+	x = 960.0;
+	y = -8448.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 4;
+	arg1 = 320;
+}
+
+thing	// 32
+{
+	id = 2;
+	x = 960.0;
+	y = -8768.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 3;
+	arg1 = 320;
+}
+
+thing	// 33
+{
+	id = 1;
+	x = 960.0;
+	y = -9088.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 2;
+	arg1 = 320;
+	arg2 = 8;
+}
+
+thing	// 34
+{
+	id = 35;
+	x = 5632.0;
+	y = -2080.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 36;
+	arg1 = 384;
+}
+
+thing	// 35
+{
+	id = 36;
+	x = 5632.0;
+	y = -2464.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 37;
+	arg1 = 384;
+}
+
+thing	// 36
+{
+	id = 37;
+	x = 5632.0;
+	y = -2848.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 38;
+	arg1 = 384;
+}
+
+thing	// 37
+{
+	id = 38;
+	x = 5632.0;
+	y = -3232.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 39;
+	arg1 = 384;
+}
+
+thing	// 38
+{
+	id = 39;
+	x = 5632.0;
+	y = -3616.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 40;
+	arg1 = 384;
+}
+
+thing	// 39
+{
+	id = 40;
+	x = 5632.0;
+	y = -4000.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 41;
+	arg1 = 384;
+}
+
+thing	// 40
+{
+	id = 41;
+	x = 5632.0;
+	y = -4384.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 999;
+	arg1 = 384;
+}
+
+thing	// 41
+{
+	id = 999;
+	x = 5632.0;
+	y = -4768.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 42;
+	arg1 = 384;
+}
+
+thing	// 42
+{
+	id = 42;
+	x = 5632.0;
+	y = -5152.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 43;
+	arg1 = 384;
+}
+
+thing	// 43
+{
+	id = 43;
+	x = 5632.0;
+	y = -5536.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 44;
+	arg1 = 384;
+}
+
+thing	// 44
+{
+	id = 44;
+	x = 5632.0;
+	y = -5920.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 45;
+	arg1 = 384;
+}
+
+thing	// 45
+{
+	id = 45;
+	x = 5632.0;
+	y = -6304.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 46;
+	arg1 = 384;
+}
+
+thing	// 46
+{
+	id = 46;
+	x = 5632.0;
+	y = -6688.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 47;
+	arg1 = 384;
+}
+
+thing	// 47
+{
+	id = 47;
+	x = 5632.0;
+	y = -7072.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 48;
+	arg1 = 384;
+}
+
+thing	// 48
+{
+	id = 48;
+	x = 5632.0;
+	y = -7456.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 49;
+	arg1 = 384;
+}
+
+thing	// 49
+{
+	id = 49;
+	x = 5632.0;
+	y = -7840.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 50;
+	arg1 = 384;
+}
+
+thing	// 50
+{
+	id = 50;
+	x = 5632.0;
+	y = -8224.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 51;
+	arg1 = 384;
+}
+
+thing	// 51
+{
+	id = 51;
+	x = 5632.0;
+	y = -8608.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 52;
+	arg1 = 384;
+}
+
+thing	// 52
+{
+	id = 52;
+	x = 5632.0;
+	y = -8992.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 53;
+	arg1 = 384;
+}
+
+thing	// 53
+{
+	id = 53;
+	x = 5632.0;
+	y = -9376.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 54;
+	arg1 = 384;
+}
+
+thing	// 54
+{
+	id = 54;
+	x = 5872.0;
+	y = -9712.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 55;
+	arg1 = 430;
+}
+
+thing	// 55
+{
+	id = 55;
+	x = 6304.0;
+	y = -9696.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 56;
+	arg1 = 384;
+}
+
+thing	// 56
+{
+	id = 56;
+	x = 6576.0;
+	y = -9424.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 57;
+	arg1 = 384;
+}
+
+thing	// 57
+{
+	id = 57;
+	x = 6848.0;
+	y = -9152.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 58;
+	arg1 = 384;
+}
+
+thing	// 58
+{
+	id = 58;
+	x = 7120.0;
+	y = -8880.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 59;
+	arg1 = 384;
+}
+
+thing	// 59
+{
+	id = 59;
+	x = 7392.0;
+	y = -8608.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 60;
+	arg1 = 384;
+}
+
+thing	// 60
+{
+	id = 60;
+	x = 7696.0;
+	y = -8384.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 61;
+	arg1 = 384;
+}
+
+thing	// 61
+{
+	id = 61;
+	x = 8080.0;
+	y = -8384.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 62;
+	arg1 = 384;
+}
+
+thing	// 62
+{
+	id = 62;
+	x = 8464.0;
+	y = -8384.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 63;
+	arg1 = 384;
+}
+
+thing	// 63
+{
+	id = 63;
+	x = 8848.0;
+	y = -8384.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 64;
+	arg1 = 384;
+}
+
+thing	// 64
+{
+	id = 64;
+	x = 9168.0;
+	y = -8176.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 65;
+	arg1 = 384;
+}
+
+thing	// 65
+{
+	id = 65;
+	x = 9440.0;
+	y = -7904.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 66;
+	arg1 = 384;
+}
+
+thing	// 66
+{
+	id = 66;
+	x = 9712.0;
+	y = -7632.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 67;
+	arg1 = 384;
+}
+
+thing	// 67
+{
+	id = 67;
+	x = 9984.0;
+	y = -7360.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 68;
+	arg1 = 384;
+}
+
+thing	// 68
+{
+	id = 68;
+	x = 10256.0;
+	y = -7088.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 69;
+	arg1 = 384;
+}
+
+thing	// 69
+{
+	id = 69;
+	x = 10528.0;
+	y = -6816.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 70;
+	arg1 = 384;
+}
+
+thing	// 70
+{
+	id = 70;
+	x = 10784.0;
+	y = -6528.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 71;
+	arg1 = 384;
+}
+
+thing	// 71
+{
+	id = 71;
+	x = 11008.0;
+	y = -6224.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 72;
+	arg1 = 384;
+}
+
+thing	// 72
+{
+	id = 72;
+	x = 11008.0;
+	y = -5840.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 73;
+	arg1 = 384;
+}
+
+thing	// 73
+{
+	id = 73;
+	x = 11008.0;
+	y = -5456.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 74;
+	arg1 = 384;
+}
+
+thing	// 74
+{
+	id = 74;
+	x = 10952.0;
+	y = -5072.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 75;
+	arg1 = 384;
+}
+
+thing	// 75
+{
+	id = 75;
+	x = 10688.0;
+	y = -4800.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 76;
+	arg1 = 384;
+}
+
+thing	// 76
+{
+	id = 76;
+	x = 10432.0;
+	y = -4528.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 77;
+	arg1 = 384;
+}
+
+thing	// 77
+{
+	id = 77;
+	x = 10160.0;
+	y = -4272.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 78;
+	arg1 = 384;
+}
+
+thing	// 78
+{
+	id = 78;
+	x = 9792.0;
+	y = -4160.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 79;
+	arg1 = 384;
+}
+
+thing	// 79
+{
+	id = 79;
+	x = 9408.0;
+	y = -4096.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 80;
+	arg1 = 384;
+}
+
+thing	// 80
+{
+	id = 80;
+	x = 9136.0;
+	y = -3824.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 81;
+	arg1 = 384;
+}
+
+thing	// 81
+{
+	id = 81;
+	x = 8880.0;
+	y = -3552.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 82;
+	arg1 = 384;
+}
+
+thing	// 82
+{
+	id = 82;
+	x = 8832.0;
+	y = -3168.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 83;
+	arg1 = 384;
+}
+
+thing	// 83
+{
+	id = 83;
+	x = 8832.0;
+	y = -2784.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 84;
+	arg1 = 384;
+}
+
+thing	// 84
+{
+	id = 84;
+	x = 9008.0;
+	y = -2448.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 85;
+	arg1 = 384;
+}
+
+thing	// 85
+{
+	id = 85;
+	x = 9328.0;
+	y = -2240.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 86;
+	arg1 = 384;
+}
+
+thing	// 86
+{
+	id = 86;
+	x = 9712.0;
+	y = -2240.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 87;
+	arg1 = 384;
+}
+
+thing	// 87
+{
+	id = 87;
+	x = 10080.0;
+	y = -2336.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 88;
+	arg1 = 384;
+}
+
+thing	// 88
+{
+	id = 88;
+	x = 10368.0;
+	y = -2592.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 89;
+	arg1 = 384;
+}
+
+thing	// 89
+{
+	id = 89;
+	x = 10752.0;
+	y = -2624.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 90;
+	arg1 = 384;
+}
+
+thing	// 90
+{
+	id = 90;
+	x = 11120.0;
+	y = -2512.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 91;
+	arg1 = 384;
+}
+
+thing	// 91
+{
+	id = 91;
+	x = 11392.0;
+	y = -2240.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 92;
+	arg1 = 384;
+}
+
+thing	// 92
+{
+	id = 92;
+	x = 11520.0;
+	y = -1872.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 93;
+	arg1 = 384;
+}
+
+thing	// 93
+{
+	id = 93;
+	x = 11520.0;
+	y = -1488.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 94;
+	arg1 = 384;
+}
+
+thing	// 94
+{
+	id = 94;
+	x = 11664.0;
+	y = -1136.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 95;
+	arg1 = 384;
+}
+
+thing	// 95
+{
+	id = 95;
+	x = 11984.0;
+	y = -912.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 96;
+	arg1 = 336;
+}
+
+thing	// 96
+{
+	id = 96;
+	x = 12320.0;
+	y = -896.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 97;
+	arg1 = 320;
+}
+
+thing	// 97
+{
+	id = 97;
+	x = 12640.0;
+	y = -896.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 98;
+	arg1 = 320;
+}
+
+thing	// 98
+{
+	id = 98;
+	x = 12960.0;
+	y = -896.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 99;
+	arg1 = 320;
+}
+
+thing	// 99
+{
+	id = 99;
+	x = 13280.0;
+	y = -896.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 100;
+	arg1 = 320;
+}
+
+thing	// 100
+{
+	id = 100;
+	x = 13600.0;
+	y = -928.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 101;
+	arg1 = 352;
+}
+
+thing	// 101
+{
+	id = 101;
+	x = 13888.0;
+	y = -1152.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 102;
+	arg1 = 384;
+}
+
+thing	// 102
+{
+	id = 102;
+	x = 14016.0;
+	y = -1520.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 103;
+	arg1 = 320;
+}
+
+thing	// 103
+{
+	id = 103;
+	x = 14016.0;
+	y = -1840.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 104;
+	arg1 = 320;
+}
+
+thing	// 104
+{
+	id = 104;
+	x = 14016.0;
+	y = -2160.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 105;
+	arg1 = 320;
+}
+
+thing	// 105
+{
+	id = 105;
+	x = 14016.0;
+	y = -2480.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 106;
+	arg1 = 320;
+}
+
+thing	// 106
+{
+	id = 106;
+	x = 14016.0;
+	y = -2800.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 107;
+	arg1 = 320;
+}
+
+thing	// 107
+{
+	id = 107;
+	x = 14016.0;
+	y = -3120.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 108;
+	arg1 = 320;
+}
+
+thing	// 108
+{
+	id = 108;
+	x = 14016.0;
+	y = -3440.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 109;
+	arg1 = 320;
+}
+
+thing	// 109
+{
+	id = 109;
+	x = 13920.0;
+	y = -3744.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 110;
+	arg1 = 294;
+}
+
+thing	// 110
+{
+	id = 110;
+	x = 13712.0;
+	y = -3952.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 111;
+	arg1 = 294;
+}
+
+thing	// 111
+{
+	id = 111;
+	x = 13504.0;
+	y = -4160.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 112;
+	arg1 = 294;
+}
+
+thing	// 112
+{
+	id = 112;
+	x = 13296.0;
+	y = -4368.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 113;
+	arg1 = 294;
+}
+
+thing	// 113
+{
+	id = 113;
+	x = 13184.0;
+	y = -4640.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 114;
+	arg1 = 256;
+}
+
+thing	// 114
+{
+	id = 114;
+	x = 13184.0;
+	y = -4896.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 115;
+	arg1 = 256;
+}
+
+thing	// 115
+{
+	id = 115;
+	x = 13184.0;
+	y = -5152.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 116;
+	arg1 = 256;
+}
+
+thing	// 116
+{
+	id = 116;
+	x = 13184.0;
+	y = -5408.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 117;
+	arg1 = 256;
+}
+
+thing	// 117
+{
+	id = 117;
+	x = 13184.0;
+	y = -5664.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 118;
+	arg1 = 256;
+}
+
+thing	// 118
+{
+	id = 118;
+	x = 13184.0;
+	y = -5920.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 119;
+	arg1 = 256;
+}
+
+thing	// 119
+{
+	id = 119;
+	x = 13184.0;
+	y = -6176.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 120;
+	arg1 = 256;
+}
+
+thing	// 120
+{
+	id = 120;
+	x = 13184.0;
+	y = -6432.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 121;
+	arg1 = 256;
+}
+
+thing	// 121
+{
+	id = 121;
+	x = 13184.0;
+	y = -6688.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 122;
+	arg1 = 256;
+}
+
+thing	// 122
+{
+	id = 122;
+	x = 13184.0;
+	y = -6944.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 123;
+	arg1 = 256;
+}
+
+thing	// 123
+{
+	id = 123;
+	x = 13184.0;
+	y = -7200.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 124;
+	arg1 = 256;
+}
+
+thing	// 124
+{
+	id = 124;
+	x = 13184.0;
+	y = -7456.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 125;
+	arg1 = 256;
+}
+
+thing	// 125
+{
+	id = 125;
+	x = 13184.0;
+	y = -7712.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 126;
+	arg1 = 256;
+}
+
+thing	// 126
+{
+	id = 126;
+	x = 13184.0;
+	y = -7968.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 127;
+	arg1 = 256;
+}
+
+thing	// 127
+{
+	id = 127;
+	x = 13184.0;
+	y = -8224.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 128;
+	arg1 = 256;
+}
+
+thing	// 128
+{
+	id = 128;
+	x = 13184.0;
+	y = -8480.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 129;
+	arg1 = 256;
+}
+
+thing	// 129
+{
+	id = 129;
+	x = 13184.0;
+	y = -8736.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 130;
+	arg1 = 256;
+}
+
+thing	// 130
+{
+	id = 130;
+	x = 13184.0;
+	y = -8992.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 131;
+	arg1 = 256;
+}
+
+thing	// 131
+{
+	id = 131;
+	x = 13184.0;
+	y = -9248.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 132;
+	arg1 = 256;
+}
+
+thing	// 132
+{
+	id = 132;
+	x = 13184.0;
+	y = -9504.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 133;
+	arg1 = 256;
+}
+
+thing	// 133
+{
+	id = 133;
+	x = 13184.0;
+	y = -9760.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 134;
+	arg1 = 256;
+}
+
+thing	// 134
+{
+	id = 134;
+	x = 13184.0;
+	y = -10016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 135;
+	arg1 = 256;
+}
+
+thing	// 135
+{
+	id = 135;
+	x = 13264.0;
+	y = -10256.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 136;
+	arg1 = 336;
+}
+
+thing	// 136
+{
+	id = 136;
+	x = 13472.0;
+	y = -10528.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 137;
+	arg1 = 384;
+}
+
+thing	// 137
+{
+	id = 137;
+	x = 13744.0;
+	y = -10800.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 138;
+	arg1 = 384;
+}
+
+thing	// 138
+{
+	id = 138;
+	x = 14016.0;
+	y = -11072.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 139;
+	arg1 = 384;
+}
+
+thing	// 139
+{
+	id = 139;
+	x = 14288.0;
+	y = -11344.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 140;
+	arg1 = 384;
+}
+
+thing	// 140
+{
+	id = 140;
+	x = 14560.0;
+	y = -11616.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 141;
+	arg1 = 384;
+}
+
+thing	// 141
+{
+	id = 141;
+	x = 14832.0;
+	y = -11888.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 142;
+	arg1 = 384;
+}
+
+thing	// 142
+{
+	id = 142;
+	x = 15104.0;
+	y = -12160.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 143;
+	arg1 = 384;
+}
+
+thing	// 143
+{
+	id = 143;
+	x = 15376.0;
+	y = -12432.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 144;
+	arg1 = 384;
+}
+
+thing	// 144
+{
+	id = 144;
+	x = 15608.0;
+	y = -12736.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 145;
+	arg1 = 384;
+}
+
+thing	// 145
+{
+	id = 145;
+	x = 15616.0;
+	y = -13120.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 146;
+	arg1 = 384;
+}
+
+thing	// 146
+{
+	id = 146;
+	x = 15616.0;
+	y = -13504.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 147;
+	arg1 = 384;
+}
+
+thing	// 147
+{
+	id = 147;
+	x = 15416.0;
+	y = -13832.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 148;
+	arg1 = 432;
+}
+
+thing	// 148
+{
+	id = 148;
+	x = 15024.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 149;
+	arg1 = 384;
+}
+
+thing	// 149
+{
+	id = 149;
+	x = 14640.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 150;
+	arg1 = 384;
+}
+
+thing	// 150
+{
+	id = 150;
+	x = 14256.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 151;
+	arg1 = 384;
+}
+
+thing	// 151
+{
+	id = 151;
+	x = 13872.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 152;
+	arg1 = 328;
+}
+
+thing	// 152
+{
+	id = 152;
+	x = 13536.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 153;
+	arg1 = 256;
+}
+
+thing	// 153
+{
+	id = 153;
+	x = 13280.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 154;
+	arg1 = 256;
+}
+
+thing	// 154
+{
+	id = 154;
+	x = 13024.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 155;
+	arg1 = 256;
+}
+
+thing	// 155
+{
+	id = 155;
+	x = 12768.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 156;
+	arg1 = 128;
+}
+
+thing	// 156
+{
+	id = 156;
+	x = 12640.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 157;
+	arg1 = 128;
+}
+
+thing	// 157
+{
+	id = 157;
+	x = 12512.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 158;
+	arg1 = 128;
+}
+
+thing	// 158
+{
+	id = 158;
+	x = 12384.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 159;
+	arg1 = 128;
+}
+
+thing	// 159
+{
+	id = 159;
+	x = 12256.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 160;
+	arg1 = 128;
+}
+
+thing	// 160
+{
+	id = 160;
+	x = 12128.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 161;
+	arg1 = 128;
+}
+
+thing	// 161
+{
+	id = 161;
+	x = 12000.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 162;
+	arg1 = 128;
+}
+
+thing	// 162
+{
+	id = 162;
+	x = 11872.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 163;
+	arg1 = 128;
+}
+
+thing	// 163
+{
+	id = 163;
+	x = 11744.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 164;
+	arg1 = 128;
+}
+
+thing	// 164
+{
+	id = 164;
+	x = 11616.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 165;
+	arg1 = 128;
+}
+
+thing	// 165
+{
+	id = 165;
+	x = 10112.0;
+	y = -13952.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 166;
+	arg1 = 320;
+}
+
+thing	// 166
+{
+	id = 166;
+	x = 9792.0;
+	y = -13952.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 167;
+	arg1 = 320;
+}
+
+thing	// 167
+{
+	id = 167;
+	x = 9472.0;
+	y = -13952.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 168;
+	arg1 = 320;
+}
+
+thing	// 168
+{
+	id = 168;
+	x = 9152.0;
+	y = -13952.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 169;
+	arg1 = 320;
+}
+
+thing	// 169
+{
+	id = 169;
+	x = 8832.0;
+	y = -13952.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 170;
+	arg1 = 320;
+}
+
+thing	// 170
+{
+	id = 170;
+	x = 8512.0;
+	y = -13952.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 171;
+	arg1 = 320;
+}
+
+thing	// 171
+{
+	id = 171;
+	x = 8192.0;
+	y = -13952.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 172;
+	arg1 = 320;
+}
+
+thing	// 172
+{
+	id = 172;
+	x = 7872.0;
+	y = -13952.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 173;
+	arg1 = 320;
+}
+
+thing	// 173
+{
+	id = 173;
+	x = 7552.0;
+	y = -13952.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 174;
+	arg1 = 320;
+}
+
+thing	// 174
+{
+	id = 174;
+	x = 7232.0;
+	y = -13952.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 175;
+	arg1 = 320;
+}
+
+thing	// 175
+{
+	id = 175;
+	x = 6928.0;
+	y = -14048.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 176;
+	arg1 = 224;
+}
+
+thing	// 176
+{
+	id = 176;
+	x = 6704.0;
+	y = -14080.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 177;
+	arg1 = 192;
+}
+
+thing	// 177
+{
+	id = 177;
+	x = 6528.0;
+	y = -14144.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 178;
+	arg1 = 128;
+}
+
+thing	// 178
+{
+	id = 178;
+	x = 6400.0;
+	y = -14144.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 179;
+	arg1 = 128;
+}
+
+thing	// 179
+{
+	id = 179;
+	x = 6272.0;
+	y = -14144.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 180;
+	arg1 = 128;
+}
+
+thing	// 180
+{
+	id = 180;
+	x = 6144.0;
+	y = -14144.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 181;
+	arg1 = 128;
+}
+
+thing	// 181
+{
+	id = 181;
+	x = 6016.0;
+	y = -14144.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 182;
+	arg1 = 128;
+}
+
+thing	// 182
+{
+	id = 182;
+	x = 5888.0;
+	y = -14144.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 183;
+	arg1 = 128;
+}
+
+thing	// 183
+{
+	id = 183;
+	x = 5760.0;
+	y = -14144.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 184;
+	arg1 = 128;
+}
+
+thing	// 184
+{
+	id = 184;
+	x = 5632.0;
+	y = -14144.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 185;
+	arg1 = 128;
+}
+
+thing	// 185
+{
+	id = 185;
+	x = 3904.0;
+	y = -14080.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 186;
+	arg1 = 320;
+}
+
+thing	// 186
+{
+	id = 186;
+	x = 3584.0;
+	y = -14080.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 187;
+	arg1 = 320;
+}
+
+thing	// 187
+{
+	id = 187;
+	x = 3264.0;
+	y = -14080.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 188;
+	arg1 = 320;
+}
+
+thing	// 188
+{
+	id = 188;
+	x = 2944.0;
+	y = -14080.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 189;
+	arg1 = 320;
+}
+
+thing	// 189
+{
+	id = 189;
+	x = 2624.0;
+	y = -14080.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 190;
+	arg1 = 320;
+}
+
+thing	// 190
+{
+	id = 190;
+	x = 2304.0;
+	y = -14080.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 191;
+	arg1 = 320;
+}
+
+thing	// 191
+{
+	id = 191;
+	x = 1984.0;
+	y = -14080.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 192;
+	arg1 = 320;
+}
+
+thing	// 192
+{
+	id = 192;
+	x = 1664.0;
+	y = -14016.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 193;
+	arg1 = 362;
+}
+
+thing	// 193
+{
+	id = 193;
+	x = 1408.0;
+	y = -13760.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 194;
+	arg1 = 362;
+}
+
+thing	// 194
+{
+	id = 194;
+	x = 1152.0;
+	y = -13504.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 195;
+	arg1 = 362;
+}
+
+thing	// 195
+{
+	id = 195;
+	x = 960.0;
+	y = -13200.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 196;
+	arg1 = 320;
+}
+
+thing	// 196
+{
+	id = 196;
+	x = 960.0;
+	y = -12880.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 197;
+	arg1 = 320;
+}
+
+thing	// 197
+{
+	id = 197;
+	x = 960.0;
+	y = -12560.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 198;
+	arg1 = 320;
+}
+
+thing	// 198
+{
+	id = 198;
+	x = 960.0;
+	y = -12240.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 199;
+	arg1 = 320;
+}
+
+thing	// 199
+{
+	id = 199;
+	x = 960.0;
+	y = -11920.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 200;
+	arg1 = 320;
+}
+
+thing	// 200
+{
+	id = 200;
+	x = 960.0;
+	y = -11600.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 201;
+	arg1 = 320;
+}
+
+thing	// 201
+{
+	id = 201;
+	x = 960.0;
+	y = -11280.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 202;
+	arg1 = 320;
+}
+
+thing	// 202
+{
+	id = 202;
+	x = 960.0;
+	y = -10960.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 203;
+	arg1 = 320;
+}
+
+thing	// 203
+{
+	id = 203;
+	x = 960.0;
+	y = -10640.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 204;
+	arg1 = 320;
+}
+
+thing	// 204
+{
+	id = 204;
+	x = 960.0;
+	y = -10320.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 205;
+	arg1 = 320;
+}
+
+thing	// 205
+{
+	id = 205;
+	x = 960.0;
+	y = -10000.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 206;
+	arg1 = 320;
+}
+
+thing	// 206
+{
+	id = 206;
+	x = 960.0;
+	y = -9680.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 207;
+	arg1 = 320;
+}
+
+thing	// 207
+{
+	id = 207;
+	x = 960.0;
+	y = -9384.0;
+	height = 64.0;
+	angle = 0;
+	type = 2001;
+	arg0 = 1;
+	arg1 = 320;
+}
+
+thing	// 208
+{
+	id = 216;
+	x = 14208.0;
+	y = -3328.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 217;
+	arg1 = 128;
+	arg2 = 4;
+}
+
+thing	// 209
+{
+	id = 271;
+	x = 14528.0;
+	y = -11008.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 141;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 210
+{
+	id = 270;
+	x = 14528.0;
+	y = -10880.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 271;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 211
+{
+	id = 269;
+	x = 14528.0;
+	y = -10752.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 270;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 212
+{
+	id = 220;
+	x = 14464.0;
+	y = -4352.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 221;
+	arg1 = 128;
+	arg2 = 4;
+}
+
+thing	// 213
+{
+	id = 221;
+	x = 14528.0;
+	y = -4608.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 222;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 214
+{
+	id = 222;
+	x = 14528.0;
+	y = -4736.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 223;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 215
+{
+	id = 223;
+	x = 14528.0;
+	y = -4864.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 224;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 216
+{
+	id = 224;
+	x = 14528.0;
+	y = -4992.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 225;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 217
+{
+	id = 225;
+	x = 14528.0;
+	y = -5120.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 226;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 218
+{
+	id = 226;
+	x = 14528.0;
+	y = -5248.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 227;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 219
+{
+	id = 227;
+	x = 14528.0;
+	y = -5376.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 228;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 220
+{
+	id = 228;
+	x = 14528.0;
+	y = -5504.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 229;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 221
+{
+	id = 229;
+	x = 14528.0;
+	y = -5632.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 230;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 222
+{
+	id = 230;
+	x = 14528.0;
+	y = -5760.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 231;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 223
+{
+	id = 231;
+	x = 14528.0;
+	y = -5888.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 232;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 224
+{
+	id = 232;
+	x = 14528.0;
+	y = -6016.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 233;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 225
+{
+	id = 233;
+	x = 14528.0;
+	y = -6144.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 234;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 226
+{
+	id = 234;
+	x = 14528.0;
+	y = -6272.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 235;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 227
+{
+	id = 235;
+	x = 14528.0;
+	y = -6400.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 236;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 228
+{
+	id = 236;
+	x = 14528.0;
+	y = -6528.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 237;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 229
+{
+	id = 237;
+	x = 14528.0;
+	y = -6656.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 238;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 230
+{
+	id = 238;
+	x = 14528.0;
+	y = -6784.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 239;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 231
+{
+	id = 239;
+	x = 14528.0;
+	y = -6912.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 240;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 232
+{
+	id = 240;
+	x = 14528.0;
+	y = -7040.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 241;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 233
+{
+	id = 241;
+	x = 14528.0;
+	y = -7168.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 242;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 234
+{
+	id = 242;
+	x = 14528.0;
+	y = -7296.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 243;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 235
+{
+	id = 243;
+	x = 14528.0;
+	y = -7424.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 244;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 236
+{
+	id = 244;
+	x = 14528.0;
+	y = -7552.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 245;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 237
+{
+	id = 245;
+	x = 14528.0;
+	y = -7680.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 246;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 238
+{
+	id = 246;
+	x = 14528.0;
+	y = -7808.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 247;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 239
+{
+	id = 247;
+	x = 14528.0;
+	y = -7936.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 248;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 240
+{
+	id = 248;
+	x = 14528.0;
+	y = -8064.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 249;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 241
+{
+	id = 249;
+	x = 14528.0;
+	y = -8192.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 250;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 242
+{
+	id = 250;
+	x = 14528.0;
+	y = -8320.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 251;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 243
+{
+	id = 251;
+	x = 14528.0;
+	y = -8448.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 252;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 244
+{
+	id = 252;
+	x = 14528.0;
+	y = -8576.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 253;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 245
+{
+	id = 253;
+	x = 14528.0;
+	y = -8704.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 254;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 246
+{
+	id = 254;
+	x = 14528.0;
+	y = -8832.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 255;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 247
+{
+	id = 255;
+	x = 14528.0;
+	y = -8960.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 256;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 248
+{
+	id = 256;
+	x = 14528.0;
+	y = -9088.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 257;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 249
+{
+	id = 257;
+	x = 14528.0;
+	y = -9216.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 258;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 250
+{
+	id = 258;
+	x = 14528.0;
+	y = -9344.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 259;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 251
+{
+	id = 259;
+	x = 14528.0;
+	y = -9472.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 260;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 252
+{
+	id = 260;
+	x = 14528.0;
+	y = -9600.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 261;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 253
+{
+	id = 261;
+	x = 14528.0;
+	y = -9728.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 262;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 254
+{
+	id = 262;
+	x = 14528.0;
+	y = -9856.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 263;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 255
+{
+	id = 263;
+	x = 14528.0;
+	y = -9984.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 264;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 256
+{
+	id = 264;
+	x = 14528.0;
+	y = -10112.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 265;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 257
+{
+	id = 265;
+	x = 14528.0;
+	y = -10240.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 266;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 258
+{
+	id = 266;
+	x = 14528.0;
+	y = -10368.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 267;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 259
+{
+	id = 267;
+	x = 14528.0;
+	y = -10496.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 268;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 260
+{
+	id = 268;
+	x = 14528.0;
+	y = -10624.0;
+	height = 64.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 269;
+	arg1 = 64;
+	arg2 = 4;
+}
+
+thing	// 261
+{
+	id = 101;
+	x = 13888.0;
+	y = -1024.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 208;
+	arg1 = 256;
+	arg2 = 4;
+}
+
+thing	// 262
+{
+	id = 208;
+	x = 14080.0;
+	y = -1216.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 209;
+	arg1 = 256;
+	arg2 = 4;
+}
+
+thing	// 263
+{
+	id = 209;
+	x = 14208.0;
+	y = -1536.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 210;
+	arg1 = 128;
+	arg2 = 4;
+}
+
+thing	// 264
+{
+	id = 210;
+	x = 14208.0;
+	y = -1792.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 211;
+	arg1 = 128;
+	arg2 = 4;
+}
+
+thing	// 265
+{
+	id = 219;
+	x = 14400.0;
+	y = -4096.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 220;
+	arg1 = 128;
+	arg2 = 4;
+}
+
+thing	// 266
+{
+	id = 218;
+	x = 14336.0;
+	y = -3840.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 219;
+	arg1 = 128;
+	arg2 = 4;
+}
+
+thing	// 267
+{
+	id = 217;
+	x = 14272.0;
+	y = -3584.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 218;
+	arg1 = 128;
+	arg2 = 4;
+}
+
+thing	// 268
+{
+	id = 211;
+	x = 14208.0;
+	y = -2048.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 212;
+	arg1 = 128;
+	arg2 = 4;
+}
+
+thing	// 269
+{
+	id = 212;
+	x = 14208.0;
+	y = -2304.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 213;
+	arg1 = 128;
+	arg2 = 4;
+}
+
+thing	// 270
+{
+	id = 213;
+	x = 14208.0;
+	y = -2560.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 214;
+	arg1 = 128;
+	arg2 = 4;
+}
+
+thing	// 271
+{
+	id = 214;
+	x = 14208.0;
+	y = -2816.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 215;
+	arg1 = 128;
+	arg2 = 4;
+}
+
+thing	// 272
+{
+	id = 215;
+	x = 14208.0;
+	y = -3072.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 216;
+	arg1 = 128;
+	arg2 = 4;
+}
+
+thing	// 273
+{
+	x = 1088.0;
+	y = -9088.0;
+	angle = 270;
+	type = 6502;
+}
