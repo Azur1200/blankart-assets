@@ -386,7 +386,7 @@ UniqueOddsRace = KO_AltInvinOdds
 KartResultAlt shrink
 DisplayName = Alt. Shrink
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_NOTNEAREND
-OddsRace = 0,0,0,0,2,7,0,0,0,0,0,0,0,0,0,0
+OddsRace = 0,0,0,0,0,0,0,4,7,12,2,0,0,0,0,0
 OddsBattle = 1,0
 CooldownTime = 5
 
