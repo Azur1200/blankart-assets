@@ -198,6 +198,11 @@ Text = Bot Difficulty
 Tooltip = How difficult should bots be? "Off" disables bots.
 Cvar = kartbot
 
+MenuItem MODIFIER
+Text = Bot Modifier
+Tooltip = This modifies the overall difficulty of bots.
+Cvar = kartbot_modifiermax
+
 
 Menu OP_MONITORTOGGLE
 X = 30
