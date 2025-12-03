@@ -1,38 +1,51 @@
 Cup Ring
 LevelList = MAP01,MAP02,MAP03,MAP04,MAP05
+BonusGame = MAPB0#,MAPB1
 
 Cup Sneaker
 LevelList = MAP06,MAP07,MAP08,MAP09,MAP10
+BonusGame = MAPB2#,MAPB3
 
 Cup Water
 LevelList = MAP11,MAP12,MAP13,MAP14,MAP15
+BonusGame = MAPB4#,MAPB5
 
 #Cup Lightning
 #LevelList = MAP16,MAP17,MAP18,MAP19,MAP20
+#BonusGame = MAPB6#,MAPB7
 
 #Cup Fire
 #LevelList = MAP21,MAP22,MAP23,MAP24,MAP25
+#BonusGame = MAPB8#,MAPB9
 
 #Cup Invincible
 #LevelList = MAP26,MAP27,MAP28,MAP29,MAP30
+#BonusGame = MAPBA#,MAPBB
 
 #Cup Emerald
 #LevelList = MAP31,MAP32,MAP33,MAP34,MAP35
+#BonusGame = MAPBC#,MAPBD
 
 #Cup Egg
 #LevelList = MAP36,MAP37,MAP38,MAP39,MAP40
+#BonusGame = MAPBE#,MAPBF
 
 #Cup Chao
 #LevelList = MAP41,MAP42,MAP43,MAP44,MAP45
+#BonusGame = MAPBG#,MAPBH
 
 #Cup Swap
 #LevelList = MAP46,MAP47,MAP48,MAP49,MAP50
+#BonusGame = MAPBI#,MAPBJ
 
 Cup SMK
 LevelList = MAP51,MAP52,MAP53,MAP54,MAP55
+BonusGame = MAPBN#,MAPBO,MAPBP,MAPBQ
 
 #Cup Community
 #LevelList = MAP56,MAP57,MAP58,MAP59,MAP60
+#BonusGame = MAPBK#,MAPBL,MAPBM
 
 Cup Hell
 LevelList = MAPH4
+BonusGame = MAPHE#,MAPHF,MAPHG,MAPBR,MAPBS
