@@ -3558,67 +3558,56 @@ Caption = /
 Sound sfx_kwin
 Priority = 64
 Flags = 96
-SkinSound = SKSKWIN
 Caption = /
 
 Sound sfx_klose
 Priority = 64
 Flags = 96
-SkinSound = SKSKLOSE
 Caption = /
 
 Sound sfx_khurt1
 Priority = 64
 Flags = 96
-SkinSound = SKSKPAN1
 Caption = /
 
 Sound sfx_khurt2
 Priority = 64
 Flags = 96
-SkinSound = SKSKPAN2
 Caption = /
 
 Sound sfx_kattk1
 Priority = 64
 Flags = 96
-SkinSound = SKSKATK1
 Caption = /
 
 Sound sfx_kattk2
 Priority = 64
 Flags = 96
-SkinSound = SKSKATK2
 Caption = /
 
 Sound sfx_kbost1
 Priority = 64
 Flags = 96
-SkinSound = SKSKBST1
 Caption = /
 
 Sound sfx_kbost2
 Priority = 64
 Flags = 96
-SkinSound = SKSKBST2
 Caption = /
 
 Sound sfx_kslow
 Priority = 64
 Flags = 32
-SkinSound = SKSKSLOW
 Caption = /
 
 Sound sfx_khitem
 Priority = 128
 Flags = 32
-SkinSound = SKSKHITM
 Caption = /
 
 Sound sfx_kgloat
 Priority = 64
 Flags = 48
-SkinSound = SKSKPOWR
 Caption = /
 
 # location for new sounds not in v1
