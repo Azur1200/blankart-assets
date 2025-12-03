@@ -45,6 +45,14 @@ MenuItem CPULEVEL
 Text = CPU Level
 Cvar = kartbot
 
+MenuItem CPUMOD
+Text = CPU Modifier
+Cvar = kartbot_modifiermax
+
+MenuItem CPUFORCERIVAL
+Text = All Rival CPUs
+Cvar = kartbot_forcerival
+
 MenuItem RACESPEED
 OfsY = 6
 Text = Race Speed
