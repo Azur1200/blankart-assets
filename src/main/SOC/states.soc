@@ -18653,3 +18653,11 @@ SpriteFrame = 2
 Duration = 4
 Next = S_GHORIZ1
 
+# Alt. Shrink Arrow Bullet
+State S_ALTSHRINK_ARROWBULLET
+SpriteName = SPR_AWBT
+SpriteFrame = FF_ANIMATE|FF_FULLBRIGHT|FF_ADD
+Duration = -1
+Var1 = 6
+Var2 = 2
+Next = S_NULL
