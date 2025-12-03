@@ -203,6 +203,11 @@ Text = Bot Modifier
 Tooltip = This modifies the overall difficulty of bots.
 Cvar = kartbot_modifiermax
 
+MenuItem FORCERIVAL
+Text = All Rivals
+Tooltip = Forces all bots to be rivals. Turn this on for a tougher challenge!
+Cvar = kartbot_forcerival
+
 
 Menu OP_MONITORTOGGLE
 X = 30
