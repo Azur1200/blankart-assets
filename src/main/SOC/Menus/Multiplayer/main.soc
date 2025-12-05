@@ -44,10 +44,6 @@ OfsY = 2
 Text = Internet server browser...
 Call = MR_ConnectMenuModChecks
 
-Menuitem CONNECTLASTSERVER
-Text = Join last server...
-Call = MR_ConnectLastServer
-
 MenuItem CONNECTIP
 Text = Specify IPv4 address:
 Cvar = dummyip
