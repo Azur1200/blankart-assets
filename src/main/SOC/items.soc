@@ -69,6 +69,8 @@ Equip = KITEMEQUIP_NONE
 KartItem SHRINK
 BigPatches = K_ITSHRK
 SmallPatches = K_ISSHRK
+BigAltPatches = K_ITASHK
+SmallAltPatches = K_ISASHK
 Flags = KIF_UNIQUE
 FlagsAlt = 0
 Equip = KITEMEQUIP_NONE
