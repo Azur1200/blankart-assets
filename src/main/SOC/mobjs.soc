@@ -6223,6 +6223,34 @@ Height = 32*FRACUNIT
 ActiveSound = sfx_s3k5c
 Flags = MF_SHOOTABLE|MF_DONTENCOREMAP|MF_APPLYTERRAIN
 
+# Egg Mine
+Mobj MT_EGGMINE
+SpawnState = S_EGGMINE
+SpawnHealth = 2
+SeeSound = sfx_tossed
+DeathState = S_EGGMINE_POP
+DeathSound = sfx_kc2e
+Speed = 36*FRACUNIT
+Radius = 20*FRACUNIT
+Height = 20*FRACUNIT
+Mass = 0
+ActiveSound = sfx_cdfm28
+Flags = MF_BOUNCE|MF_SHOOTABLE|MF_DONTENCOREMAP|MF_APPLYTERRAIN
+
+Mobj MT_EGGMINE_SHIELD
+SpawnState = S_EGGMINE
+SpawnHealth = 1000
+SeeSound = sfx_tossed
+ReactionTime = 8
+DeathState = S_EGGMINE_POP
+DeathSound = sfx_kc2e
+Speed = 4*FRACUNIT
+Radius = 16*FRACUNIT
+Height = 24*FRACUNIT
+Mass = 100
+Damage = 1
+Flags = MF_SHOOTABLE|MF_NOGRAVITY|MF_SCENERY|MF_DONTENCOREMAP|MF_APPLYTERRAIN
+
 # Ballhog
 Mobj MT_BALLHOG
 SpawnState = S_BALLHOG1

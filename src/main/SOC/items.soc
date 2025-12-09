@@ -34,6 +34,7 @@ KartItem EGGMAN
 BigPatches = K_ITEGGM
 SmallPatches = K_ISEGGM
 Equip = KITEMEQUIP_TRAIL
+EquipAlt = KITEMEQUIP_ORBIT
 
 KartItem ORBINAUT
 BigPatches = K_ITORB1,K_ITORB2,K_ITORB3,K_ITORB4
@@ -415,8 +416,8 @@ OddsRace = 0,0,0,0,0,0,0,4,7,12,2,0,0,0,0,0
 OddsBattle = 1,0
 CooldownTime = 5
 
-#KartResultAlt eggman
-#DisplayName = Egg Mine
-#Flags = KRF_NOTFORBOTTOM
-#OddsRace = 8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-#OddsBattle = 2,0
+KartResultAlt eggman
+DisplayName = Egg Mine
+Flags = KRF_NOTFORBOTTOM
+OddsRace = 30,28,14,5,0,0,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 4,0
