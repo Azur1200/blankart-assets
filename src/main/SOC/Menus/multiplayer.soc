@@ -52,21 +52,16 @@ Call = MR_ConfirmSpectateChange
 
 
 Menu CHANGELEVEL
-X = 24
+X = 32
 Y = 40
+LineHeight = 10
 EnterRoutine = MR_MapChange
+DrawRoutine = MD_DrawLevelPlatterMenu
+KeyHandler = MR_HandleLevelPlatter
 MenuItem GAMETYPE
-Y = 68
 Text = Game Type
 Cvar = newgametype
 
-MenuItem LEVEL
-Y = 78
-Text = Level
-Cvar = nextmap
-
-MenuItem CHANGELEVEL
-Y = 130
-Style = highlight
-Text = Change Level
-Call = MR_ChangeLevel
+MenuItem SORTBY
+Text = Sort by
+Cvar = levelselectsort
