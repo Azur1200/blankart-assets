@@ -137,6 +137,11 @@ Text = Air Thrust
 Tooltip = When you perform a drift boost in the air, you launch forwards!
 Cvar = kartairthrust
 
+MenuItem BLAN_ITEMSETTINGS
+Text = Item Settings...
+Tooltip = Customize certain items as you see fit.
+Submenu = OP_BLANITEMSETTINGS
+
 MenuItem QOLHEAD
 OfsY = 10
 Style = header
@@ -207,6 +212,57 @@ MenuItem FORCERIVAL
 Text = All Rivals
 Tooltip = Forces all bots to be rivals. Turn this on for a tougher challenge!
 Cvar = kartbot_forcerival
+
+
+Menu OP_BLANITEMSETTINGS
+X = 30
+Y = 30
+LineHeight = 10
+HeaderPic = M_GAME
+MenuItem INVINHEAD
+OfsY = 10
+Style = header
+Text = Invincibility
+
+MenuItem INVINDISTANCE
+Text = Alt. Invin. Start Distance
+Tooltip = Around this value, Alt. Invin. begins to appear. This also affects its time limit.
+Cvar = kartinvindist
+
+MenuItem INVIN_TIMEMID
+Text = Alt. Invin. Between Time
+Tooltip = The "in-between" time limit for Alt. Invin. that you want to give players.
+Cvar = kartinvin_midtime
+
+MenuItem INVIN_TIMEMAX
+Text = Alt. Invin. Maximum Time
+Tooltip = The longest you want Alt. Invincibility to last.
+Cvar = kartinvin_maxtime
+
+MenuItem INVIN_SPDCLS
+Text = Speedboost (Classic)
+Tooltip = How fast do you want Invincibility to go?
+Cvar = vanillaboost_invincibility_classicspeedboost
+
+MenuItem INVIN_ACLCLS
+Text = Accelboost (Classic)
+Tooltip = How fast do you want Invincibility to accelerate?
+Cvar = vanillaboost_invincibility_classicaccelboost
+
+MenuItem INVIN_SPDALT
+Text = Speedboost (Alternative)
+Tooltip = How fast do you want Alt. Invincibility to go?
+Cvar = vanillaboost_invincibility_alternatespeedboost
+
+MenuItem INVIN_ACLALT
+Text = Accelboost (Alternative)
+Tooltip = How fast do you want Alt. Invincibility to accelerate?
+Cvar = vanillaboost_invincibility_alternateaccelboost
+
+MenuItem INVIN_STACKME
+Text = Make Stackable
+Tooltip = (With stacking enabled) Can boosts stack on top of Invincibility?
+Cvar = vanillaboost_invincibility_stackable
 
 
 Menu OP_MONITORTOGGLE
