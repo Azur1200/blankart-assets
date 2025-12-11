@@ -28,7 +28,7 @@ Volume = 150
 Lump OLMENU
 Title = Ran (Stage1)
 Usage = Multiplayer/Online Menu
-Author = Manabi Namiki
+Author = Manabu Namiki
 Source = DODONPACHI SAIDAIOUJOU / DODONPACHI MAXIMUM
 
 Lump RAMENU
@@ -39,9 +39,9 @@ Source = Sonic Gems Collection
 Volume = 150
 
 Lump OPTMNU
-Title = Heiwa (Name Entry)
+Title = Saidaioujou (Ending)
 Usage = Options
-Author = Manabi Namiki
+Author = Manabu Namiki
 Source = DODONPACHI SAIDAIOUJOU / DODONPACHI MAXIMUM
 
 Lump EXMENU
