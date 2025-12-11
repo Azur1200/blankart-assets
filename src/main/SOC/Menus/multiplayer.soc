@@ -55,6 +55,7 @@ Menu CHANGELEVEL
 X = 32
 Y = 40
 LineHeight = 10
+ScrollHeight = 32
 EnterRoutine = MR_MapChange
 DrawRoutine = MD_DrawLevelPlatterMenu
 KeyHandler = MR_HandleLevelPlatter
@@ -62,6 +63,10 @@ MenuItem GAMETYPE
 Text = Game Type
 Cvar = newgametype
 
+MenuItem ENCORE
+Text = Encore Mode
+Cvar = kartencore
+
 MenuItem SORTBY
 Text = Sort by
-Cvar = levelselectsort
+Cvar = levelsort
