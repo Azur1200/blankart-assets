@@ -19,6 +19,16 @@ Text = Encore Mode
 Tooltip = Mirror mode.
 Cvar = dummygpencore
 
+MenuItem GPITEMOPTIONS
+Text = Random Item Toggles...
+Tooltip = Toggles for all in-game items.
+Submenu = OP_MONITORTOGGLE
+
+MenuItem GPMODS
+Text = Gameplay Mods...
+Tooltip = Gameplay-Related modifiers.
+Submenu = OP_BLANKARTGAME
+
 MenuItem CUP
 OfsY = 10
 Text = Cup
