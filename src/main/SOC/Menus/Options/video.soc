@@ -71,7 +71,6 @@ Tooltip = Run Software in parallel for performance boost.
 Cvar = parallelsoftware
 
 MenuItem OPENGL
-OfsY = 10
 Text = OpenGL Options...
 Tooltip = Options for OpenGL renderer.
 SubMenu = OP_OPENGL
@@ -99,12 +98,12 @@ Cvar = gr_models
 
 MenuItem MODELINTERPOLATION
 Text = Model Interpolation
-Tooltip = Determines how models interpolate.\nSet to "Sometimes" for best results.
+Tooltip = Determines how models interpolate. Set to "Sometimes" for best results.
 Cvar = gr_modelinterpolation
 
 MenuItem MODELLIGHTING
 Text = Model Lighting
-Tooltip = Determines how models are lit.\nSet to "Off" for best results.
+Tooltip = Determines how models are lit. Set to "Off" for best results.
 Cvar = gr_modellighting
 
 MenuItem SHADERS
@@ -157,7 +156,7 @@ LineHeight = 10
 HeaderPic = M_VIDEO
 MenuItem VHSPAUSE
 Text = VHS Effect
-Tooltip = Show a VHS-like effect when the game is paused\n or youre rewinding replays.
+Tooltip = Show a VHS-like effect when the game is paused or youre rewinding replays.
 Cvar = vhspause
 
 MenuItem SLOPEROLL

@@ -149,17 +149,17 @@ Text = Quality of Life
 
 MenuItem BUMPSPARK
 Text = Bump Spark
-Tooltip = Don't lose driftspark after wallbump.
+Tooltip = Decide what happens when you hit a wall while drifting.
 Cvar = kartbumpspark
 
 MenuItem BUMPSPRING
 Text = Bump Spring
-Tooltip = Don't lose pogospring state after wallbump.
+Tooltip = Maintain pogospring state after wallbump.
 Cvar = kartbumpspring
 
 MenuItem ANTIBUMP
 Text = Anti-Bump
-Tooltip = Prevent player-on-player collisions for some time.
+Tooltip = Prevent player-on-player collisions for some time at race start.
 Cvar = kartantibump
 
 MenuItem MISCHEAD

@@ -5,22 +5,27 @@ LineHeight = 10
 EnterRoutine = MR_GrandPrixTemp
 MenuItem PLAYERSETUP
 Text = Player setup...
+Tooltip = Player setup.
 SubMenu = MN_MP_PLAYERSETUP
 
 MenuItem DIFFICULTY
 OfsY = 10
 Text = Difficulty
+Tooltip = Determines gamespeed and bot difficulty.
 Cvar = dummygpdifficulty
 
 MenuItem ENCORE
 Text = Encore Mode
+Tooltip = Mirror mode.
 Cvar = dummygpencore
 
 MenuItem CUP
 OfsY = 10
 Text = Cup
+Tooltip = What cup do you want to play?
 Cvar = dummygpcup
 
 MenuItem START
 Text = Start
+Tooltip = Lets begin!
 Call = MR_StartGrandPrix

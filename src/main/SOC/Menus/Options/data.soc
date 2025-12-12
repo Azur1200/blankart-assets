@@ -42,7 +42,7 @@ Cvar = netdemo_record
 
 MenuItem SYNCQUALITY
 Text = Sync Check Interval
-Tooltip = interval to record sync checks.
+Tooltip = Interval to record sync checks.
 Cvar = netdemo_syncquality
 
 

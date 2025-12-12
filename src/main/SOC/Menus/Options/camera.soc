@@ -14,7 +14,7 @@ Cvar = tilting
 
 MenuItem NATURAL
 Text = Natural Camera
-Tooltip = Makes the camera zoom out based on current speed.
+Tooltip = Makes the camera zoom out as you pass your base speed.
 Cvar = naturalcamera
 
 MenuItem P1CAMERA
@@ -55,7 +55,7 @@ Text = Camera Options
 MenuItem FLIPCAM
 OfsY = 20
 Text = Flipcam
-Tooltip = Should the Camera flip on gravity flipped sections?
+Tooltip = Should the camera flip on gravity flipped sections?
 Cvar = flipcam
 
 MenuItem CAMFOV

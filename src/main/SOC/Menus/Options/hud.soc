@@ -192,12 +192,12 @@ Cvar = colorizedhud
 
 MenuItem COLORIZECOLOR
 Text = Colorized HUD Color
-Tooltip = The color to use instead of the player color when\ncolourized hud is enabled.
+Tooltip = The HUD color to use when colourized HUD is enabled.
 Cvar = colorizedhudcolor
 
 MenuItem COLORIZEITEMBOX
 Text = Colorized Itembox
-Tooltip = Enable the colourized itembox when colourized hud is enabled.
+Tooltip = Enable the colourized itembox when colourized HUD is enabled.
 Cvar = colorizeditembox
 
 MenuItem DARKITEMBOX
