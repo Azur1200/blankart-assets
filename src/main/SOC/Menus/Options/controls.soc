@@ -69,16 +69,6 @@ Text = Rumble Strength
 Tooltip = The strength of gamepad vibration.
 Cvar = rumblestrength
 
-MenuItem DEADZ
-Text = Deadzone
-Tooltip = Minimum Range for analog recognition.
-Cvar = deadzone
-
-MenuItem DEAZS
-Text = Deadzone Style
-Tooltip = Should deadzone function like SRB2Kart or Ring Racers.
-Cvar = deadzonestyle
-
 MenuItem TURNSMOOTHING
 Text = Digital Turn Easing
 Tooltip = Turn smoothing for non-analog turning.
@@ -93,6 +83,35 @@ MenuItem DEFAULTS
 Text = Reset to defaults
 Tooltip = Set controls to default.
 Call = MR_ResetControls
+
+MenuItem DEADZONEHEAD_
+
+MenuItem DEADZONEHEAD
+TempOffset = True
+OfsX = 9
+OfsY = -2
+Style = header
+Text = Deadzone
+
+MenuItem XDEADZ
+Text = X Deadzone
+Tooltip = Minimum Range for analog x recognition.
+Cvar = xdeadzone
+
+MenuItem YDEADZ
+Text = Y Deadzone
+Tooltip = Minimum Range for analog y recognition.
+Cvar = ydeadzone
+
+MenuItem TDEADZ
+Text = Trigger Deadzone
+Tooltip = Minimum Range for analog trigger recognition.
+Cvar = tdeadzone
+
+MenuItem DEAZS
+Text = Deadzone Style
+Tooltip = Should deadzone function like SRB2Kart or Ring Racers.
+Cvar = deadzonestyle
 
 MenuItem GAMEBUTTONS_
 
