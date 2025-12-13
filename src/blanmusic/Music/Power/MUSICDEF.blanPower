@@ -5,6 +5,13 @@ Author = Yosuke Yasui
 Source = Mamarokun Curse!
 Volume = 180
 
+Lump KINVNF
+Usage = Invincibility (Full)
+Title = Bless you! boy (Prolouge 1)
+Author = Yosuke Yasui
+Source = Mamarokun Curse!
+Volume = 180
+
 Lump KGROW
 Usage = Grow
 Title = [Alternate] Invincibility

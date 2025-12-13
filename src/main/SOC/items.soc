@@ -5,94 +5,120 @@
 KartItem NONE
 BigPatches = K_ITSAD
 SmallPatches = K_ISSAD
+Equip = KITEMEQUIP_NONE
 
 KartItem SNEAKER
 BigPatches = K_ITSHOE,K_ITSHO2,K_ITSHO3
 SmallPatches = K_ISSHOE
+Equip = KITEMEQUIP_NONE
 
 KartItem ROCKETSNEAKER
 BigPatches = K_ITRSHE
 SmallPatches = K_ISRSHE
+Equip = KITEMEQUIP_ROCKETS
 
 KartItem INVINCIBILITY
 BigPatches = K_ITINV1,K_ITINV2,K_ITINV3,K_ITINV4,K_ITINV5,K_ITINV6,K_ITINV7
 SmallPatches = K_ISINV1,K_ISINV2,K_ISINV3,K_ISINV4,K_ISINV5,K_ISINV6
 Flags = KIF_ANIMATED|KIF_DARKBG
 FlagsAlt = KIF_ANIMATED|KIF_DARKBG
+Equip = KITEMEQUIP_NONE
+EquipAlt = KITEMEQUIP_NONE
 
 KartItem BANANA
 BigPatches = K_ITBANA,K_ITBAN2,K_ITBAN3,K_ITBAN4
 SmallPatches = K_ISBANA
+Equip = KITEMEQUIP_TRAIL
 
 KartItem EGGMAN
 BigPatches = K_ITEGGM
 SmallPatches = K_ISEGGM
+Equip = KITEMEQUIP_TRAIL
+EquipAlt = KITEMEQUIP_ORBIT
 
 KartItem ORBINAUT
 BigPatches = K_ITORB1,K_ITORB2,K_ITORB3,K_ITORB4
 SmallPatches = K_ISORBN
+Equip = KITEMEQUIP_ORBIT
 
 KartItem JAWZ
 BigPatches = K_ITJAWZ,K_ITJAW2
 SmallPatches = K_ISJAWZ
+Equip = KITEMEQUIP_ORBIT
 
 KartItem MINE
 BigPatches = K_ITMINE
 SmallPatches = K_ISMINE
+Equip = KITEMEQUIP_TRAIL
 
 KartItem BALLHOG
 BigPatches = K_ITBHOG
 SmallPatches = K_ISBHOG
+Equip = KITEMEQUIP_NONE
 
 KartItem SPB
 BigPatches = K_ITSPB
 SmallPatches = K_ISSPB
 Flags = KIF_UNIQUE|KIF_DARKBG
+Equip = KITEMEQUIP_NONE
 
 KartItem GROW
 BigPatches = K_ITGROW
 SmallPatches = K_ISGROW
+Equip = KITEMEQUIP_NONE
 
 KartItem SHRINK
 BigPatches = K_ITSHRK
 SmallPatches = K_ISSHRK
+BigAltPatches = K_ITASHK
+SmallAltPatches = K_ISASHK
 Flags = KIF_UNIQUE
 FlagsAlt = 0
+Equip = KITEMEQUIP_NONE
+EquipAlt = KITEMEQUIP_NONE
 
 KartItem THUNDERSHIELD
 BigPatches = K_ITTHNS
 SmallPatches = K_ISTHNS
 Flags = KIF_UNIQUESLOT|KIF_DARKBG
+Equip = KITEMEQUIP_SHIELD
 
 KartItem HYUDORO
 BigPatches = K_ITHYUD
 SmallPatches = K_ISHYUD
+Equip = KITEMEQUIP_NONE
 
 KartItem POGOSPRING
 BigPatches = K_ITPOGO
 SmallPatches = K_ISPOGO
+Equip = KITEMEQUIP_NONE
 
 KartItem KITCHENSINK
 BigPatches = K_ITSINK
 SmallPatches = K_ISSINK
+Equip = KITEMEQUIP_TRAIL
 
 KartItem SUPERRING
 BigPatches = K_ITRING
 SmallPatches = K_ISRING
+Equip = KITEMEQUIP_NONE
 
 KartItem LANDMINE
 BigPatches = K_ITLNDM
 SmallPatches = K_ISLNDM
+Equip = KITEMEQUIP_NONE
 
 KartItem BUBBLESHIELD
 BigPatches = K_ITBUBS
 SmallPatches = K_ISBUBS
 Flags = KIF_UNIQUESLOT|KIF_DARKBG
+Equip = KITEMEQUIP_SHIELD
 
 KartItem FLAMESHIELD
 BigPatches = K_ITFLMS
 SmallPatches = K_ISFLMS
 Flags = KIF_UNIQUESLOT|KIF_DARKBG
+Equip = KITEMEQUIP_SHIELD
 
 ################################################################################
 # Item result declarations (so their toggles appear in the right order)
@@ -390,8 +416,8 @@ OddsRace = 0,0,0,0,0,0,0,4,7,12,2,0,0,0,0,0
 OddsBattle = 1,0
 CooldownTime = 5
 
-#KartResultAlt eggman
-#DisplayName = Egg Mine
-#Flags = KRF_NOTFORBOTTOM
-#OddsRace = 8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-#OddsBattle = 2,0
+KartResultAlt eggman
+DisplayName = Egg Mine
+Flags = KRF_NOTFORBOTTOM
+OddsRace = 30,28,14,5,0,0,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 4,0

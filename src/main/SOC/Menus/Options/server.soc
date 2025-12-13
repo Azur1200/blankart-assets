@@ -68,7 +68,7 @@ Cvar = mute
 
 MenuItem LAGLESS
 Text = Lagless
-Tooltip = When disabled, the server player will match the lowest player delay.
+Tooltip = Decide how to handle server player ping simulation.
 Cvar = lagless
 
 MenuItem ADVANCED

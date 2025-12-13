@@ -14705,6 +14705,26 @@ State S_LANDMINE_EXPLODE
 Duration = 1
 Action = A_LandMineExplode
 
+# Egg Mine
+State S_EGGMINE
+SpriteName = SPR_LNDM
+SpriteFrame = B
+Duration = -1
+Next = S_EGGMINE
+
+State S_EGGMINE_OVERLAY
+SpriteName = SPR_LNDM
+SpriteFrame = FF_ADD|FF_TRANS20|C
+Duration = 1
+Next = S_EGGMINE_OVERLAY
+Var1 = 1
+
+State S_EGGMINE_POP
+SpriteName = SPR_LNDM
+SpriteFrame = B
+Duration = 1
+Action = A_EggMinePop
+
 # Ballhog
 State S_BALLHOG1
 SpriteName = SPR_BHOG

@@ -7,54 +7,66 @@ HeaderPic = M_OPTTTL
 EnterRoutine = MR_Options
 MenuItem CONTROLS
 Text = Control Setup...
+Tooltip = Setup game controls.
 Submenu = OP_CONTROLSETUP
 
 MenuItem VIDEO
 OfsY = 10
 Text = Video Options...
+Tooltip = Modify visual and performance options.
 Submenu = OP_VIDEO
 
 MenuItem SOUND
 Text = Sound Options...
+Tooltip = Modify audio and audio effect options.
 Submenu = OP_SOUND
 
 MenuItem HUD
 OfsY = 10
 Text = HUD Options...
+Tooltip = Modify HUD options.
 Submenu = OP_HUD
 
 MenuItem CAMERA
 Text = Camera Options...
+Tooltip = Modify Player camera options.
 Submenu = OP_CAMERA
 
 MenuItem GAMEPLAY
 Text = Gameplay Options...
+Tooltip = Modify gameplay options.
 Submenu = OP_GAME
 
 MenuItem SERVER
 Text = Server Options...
+Tooltip = Modify online server options.
 Submenu = OP_SERVER
 
 MenuItem DATA
 OfsY = 10
 Text = Data Options...
+Tooltip = Modify or delete various types of data.
 Submenu = OP_DATA
 
 MenuItem CUSTOM
 Text = Custom Options...
+Tooltip = Custom options for Addons.
 Submenu = OP_CUSTOM
 
 MenuItem MANUAL
 OfsY = 10
 Text = Tricks & Secrets (F1)
+Tooltip = Learn the basics of play!
 SubMenu = HELP
 
 MenuItem KARTCREDITS
 Text = Play Kart Credits
+Tooltip = See who made SRB2Kart.
 Call = MR_Credits
 
 MenuItem EXTRAREDITS
 Text = BlanKart Credits...
+Tooltip = See who made BlanKart.
 Submenu = OP_EXTRACREDITS
 
 
@@ -65,10 +77,12 @@ LineHeight = 10
 HeaderPic = M_OPTTTL
 MenuItem BLANCREDITS
 Text = Play BlanKart Credits
+Tooltip = See who made BlanKart.
 Call = MR_BlanCredits
 
 MenuItem SECRETCREDS
 Text = Play Full Credits
+Tooltip = See everyone who made BlanKart possible!
 Call = MR_SecretCredits
 
 
