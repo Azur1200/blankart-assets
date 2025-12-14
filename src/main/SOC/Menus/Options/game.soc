@@ -218,6 +218,7 @@ Menu OP_BLANITEMSETTINGS
 X = 30
 Y = 30
 LineHeight = 10
+ScrollHeight = 134
 HeaderPic = M_GAME
 MenuItem INVINHEAD
 OfsY = 10
@@ -263,6 +264,51 @@ MenuItem INVIN_STACKME
 Text = Make Stackable
 Tooltip = (With stacking enabled) Can boosts stack on top of Invincibility?
 Cvar = vanillaboost_invincibility_stackable
+
+MenuItem GROWHEAD
+OfsY = 10
+Style = header
+Text = Grow
+
+MenuItem GROW_AIRSQUISH
+Text = Air Squish
+Tooltip = Should Grow be allowed to squish other racers mid-air?
+Cvar = kartairsquish
+
+MenuItem BUBBLEHEAD
+OfsY = 10
+Style = header
+Text = Bubble Shield
+
+MenuItem BUBBLE_DEFENSE
+Text = Inflated Damage Rate
+Tooltip = At what rate should the Bubble Shield be damaged by when inflated?
+Cvar = kartbubble_defense_damagerate
+
+MenuItem BUBBLE_BOOST
+Text = Pop to Boost
+Tooltip = Should the Bubble Shield cause the user to recieve a boost when popped early?
+Cvar = kartbubble_boost_allow
+
+MenuItem BUBBLE_IDLE
+Text = Passive Defense
+Tooltip = Should the Bubble Shield passively defend from attacks when not inflated?
+Cvar = kartbubble_defense_canidle
+
+MenuItem FLAMEHEAD
+OfsY = 10
+Style = header
+Text = Flame Shield
+
+MenuItem FLAME_FASTFUEL
+Text = Fast Fuel
+Tooltip = Should the Flame Shield heat up faster in exchange for increased fuel consumption?
+Cvar = kartflame_fastfuel
+
+MenuItem FLAME_OFFROAD
+Text = Offroad Burn
+Tooltip = Should the Flame Shield grant the user offroad resistance when overheating offroad?
+Cvar = kartflame_offroadburn
 
 
 Menu OP_MONITORTOGGLE
