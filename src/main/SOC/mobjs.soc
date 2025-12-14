@@ -7809,9 +7809,7 @@ Height = 128<<FRACBITS
 Mass = 100
 Flags = MF_SOLID
 
-# this may look wrong, but check kart's info.c and info.h
-# this MT_ARIDTOAD here is not where it's supposed to be in info.h...
-Mobj MT_ARIDTOAD
+Mobj MT_BLUEFRUIT
 MapThingNum = 731
 SpawnState = S_BLUEFRUIT
 SpawnHealth = 1000
@@ -7820,7 +7818,7 @@ Height = 16<<FRACBITS
 Mass = 100
 Flags = MF_SOLID
 
-Mobj MT_BLUEFRUIT
+Mobj MT_ORANGEFRUIT
 MapThingNum = 730
 SpawnState = S_ORANGEFRUIT
 SpawnHealth = 1000
@@ -7829,7 +7827,7 @@ Height = 16<<FRACBITS
 Mass = 100
 Flags = MF_SOLID
 
-Mobj MT_ORANGEFRUIT
+Mobj MT_REDFRUIT
 MapThingNum = 729
 SpawnState = S_REDFRUIT
 SpawnHealth = 1000
@@ -7838,7 +7836,7 @@ Height = 16<<FRACBITS
 Mass = 100
 Flags = MF_SOLID
 
-Mobj MT_REDFRUIT
+Mobj MT_PINKFRUIT
 MapThingNum = 728
 SpawnState = S_PINKFRUIT
 SpawnHealth = 1000
@@ -7847,7 +7845,7 @@ Height = 16<<FRACBITS
 Mass = 100
 Flags = MF_SOLID
 
-Mobj MT_PINKFRUIT
+Mobj MT_ADVENTURESPIKEA
 MapThingNum = 727
 SpawnState = S_ADVENTURESPIKEA1
 SpawnHealth = 1000
@@ -7859,7 +7857,7 @@ Mass = 100
 Damage = 1
 Flags = MF_SPECIAL|MF_PAIN
 
-Mobj MT_ADVENTURESPIKEA
+Mobj MT_ADVENTURESPIKEB
 MapThingNum = 726
 SpawnState = S_ADVENTURESPIKEB1
 SpawnHealth = 1000
@@ -7871,7 +7869,7 @@ Mass = 100
 Damage = 1
 Flags = MF_SPECIAL|MF_PAIN
 
-Mobj MT_ADVENTURESPIKEB
+Mobj MT_ADVENTURESPIKEC
 MapThingNum = 725
 SpawnState = S_ADVENTURESPIKEC1
 SpawnHealth = 1000
@@ -7883,7 +7881,7 @@ Mass = 100
 Damage = 1
 Flags = MF_SPECIAL|MF_PAIN
 
-Mobj MT_ADVENTURESPIKEC
+Mobj MT_BOOSTPROMPT
 MapThingNum = 724
 SpawnState = S_BOOSTPROMPT1
 SpawnHealth = 1000
@@ -7893,7 +7891,7 @@ Height = 64<<FRACBITS
 Mass = 100
 Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_SCENERY
 
-Mobj MT_BOOSTPROMPT
+Mobj MT_BOOSTOFF
 MapThingNum = 723
 SpawnState = S_BOOSTOFF1
 SpawnHealth = 1000
@@ -7903,7 +7901,7 @@ Height = 64<<FRACBITS
 Mass = 100
 Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_SCENERY
 
-Mobj MT_BOOSTOFF
+Mobj MT_BOOSTON
 MapThingNum = 722
 SpawnState = S_BOOSTON1
 SpawnHealth = 1000
@@ -7913,7 +7911,7 @@ Height = 64<<FRACBITS
 Mass = 100
 Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_SCENERY
 
-Mobj MT_BOOSTON
+Mobj MT_ARIDTOAD
 MapThingNum = 2200
 SpawnState = S_ARIDTOAD
 SpawnHealth = 1
