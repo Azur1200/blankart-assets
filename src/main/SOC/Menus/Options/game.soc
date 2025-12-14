@@ -218,6 +218,7 @@ Menu OP_BLANITEMSETTINGS
 X = 30
 Y = 30
 LineHeight = 10
+ScrollHeight = 134
 HeaderPic = M_GAME
 MenuItem INVINHEAD
 OfsY = 10
