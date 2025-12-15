@@ -162,6 +162,11 @@ Text = Anti-Bump
 Tooltip = Prevent player-on-player collisions for some time at race start.
 Cvar = kartantibump
 
+MenuItem WATERBRICKS
+Text = Waterskip Prevention
+Tooltip = Allows players to stop waterskipping by letting go of ACCEL.
+Cvar = kartwaterskiplock
+
 MenuItem MISCHEAD
 OfsY = 10
 Style = header
