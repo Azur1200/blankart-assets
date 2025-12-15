@@ -56,7 +56,7 @@ X = 32
 Y = 40
 LineHeight = 10
 ScrollHeight = 32
-EnterRoutine = MR_MapChange
+EnterRoutine = MR_PrepareLevelPlatter
 DrawRoutine = MD_DrawLevelPlatterMenu
 KeyHandler = MR_HandleLevelPlatter
 MenuItem GAMETYPE
@@ -68,5 +68,9 @@ Text = Encore Mode
 Cvar = kartencore
 
 MenuItem SORTBY
-Text = Sort by
+Text = Sort By
 Cvar = levelsort
+
+MenuItem RANDOM
+Text = Random Map
+Call = MR_LevelPlatterRandom

@@ -10,13 +10,13 @@ SubMenu = SP_GRANDPRIX
 MenuItem TIMEATTACK
 Style = center
 Text = Time Attack
-Argument = 0
+Argument = LLM_TIMEATTACK
 SubMenu = SP_TIMEATTACK
 
 MenuItem ITEMBREAKER
 Style = center
 Text = Item Breaker
-Argument = 1
+Argument = LLM_ITEMBREAKER
 SubMenu = SP_TIMEATTACK
 
 MenuItem FREEPLAY

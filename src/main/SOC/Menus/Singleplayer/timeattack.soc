@@ -37,7 +37,9 @@ SubMenu = MN_MP_PLAYERSETUP
 MenuItem LEVEL
 Y = 78
 Text = Level
+Argument = LLM_TIMEATTACK
 Cvar = nextmap
+SubMenu = CHANGELEVEL
 
 MenuItem GUEST
 Y = 98
@@ -61,7 +63,7 @@ MenuItem MODIFIERS
 Y = 128
 Style = highlight
 Text = Modifiers...
-SubMenu = SP_PRES
+SubMenu = SP_PRESETS
 
 MenuItem START
 Y = 140
@@ -194,7 +196,7 @@ Text = Back
 Call = MR_GoBack
 
 
-Menu SP_PRES
+Menu SP_PRESETS
 X = 34
 Y = 40
 HeaderPic = M_ATTACK
@@ -220,61 +222,8 @@ Text = BlanKart Mode
 Argument = 2
 Call = MR_TimeAttackPreset
 
-MenuItem CUSTOM
-Y = 124
-Style = highlight
-Text = Custom...
-SubMenu = SP_MODS
-
 MenuItem BACK
 Y = 150
 Style = highlight
 Text = Back
 Call = MR_GoBack
-
-
-Menu SP_MODS
-X = 34
-Y = 128
-LineHeight = 10
-ScrollHeight = 52
-HeaderPic = M_ATTACK
-DrawRoutine = MD_DrawTimeAttackMenu
-MenuItem RINGS
-Text = Rings
-Cvar = dummyattackingrings
-
-MenuItem STACKING
-Text = Stacking
-Cvar = dummyattackingstacking
-
-MenuItem CHAINING
-Text = Chaining
-Cvar = dummyattackingchaining
-
-MenuItem SLIPDASH
-Text = Slipdash
-Cvar = dummyattackingslipdash
-
-MenuItem PURPLEDRIFT
-Text = Purple Drift
-Cvar = dummyattackingpurpledrift
-
-MenuItem SLOPEBOOST
-Text = Slope Boost
-Cvar = dummyattackingslopeboost
-
-MenuItem AIRDROP
-Text = Air Drop
-Cvar = dummyattackingairdrop
-
-MenuItem BUMPSPARK
-Text = Bump Spark
-Cvar = dummyattackingbumpspark
-
-MenuItem BACK
-OfsY = 2
-Style = highlight
-Text = Back
-Call = MR_GoBack
-
