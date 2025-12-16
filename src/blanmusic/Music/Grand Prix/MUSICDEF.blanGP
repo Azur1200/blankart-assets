@@ -1,0 +1,34 @@
+Lump GPWIN1
+Usage = Grand Prix - Winning Run
+Title = Winning Run
+Author = Ryo Nagamatsu
+Source = Mario Kart Wii
+Volume = 150
+
+Lump GPWIN2
+Usage = Grand Prix - Trophy Screen
+Title = Award Ceremony
+Author = Ryo Nagamatsu
+Source = Mario Kart Wii
+Volume = 150
+
+Lump FLYOV1
+Usage = Grand Prix - Course Overview 1
+Title = Course Overview Fanfare
+Author = Shinobu Tanaka
+Source = Mario Kart DS
+Volume = 250
+
+Lump FLYOV2
+Usage = Grand Prix - Course Overview 2
+Title = Course Overview Fanfare (Circuit/Stadium)
+Author = Shinobu Tanaka
+Source = Mario Kart DS
+Volume = 250
+
+Lump GPSTRT
+Usage = Grand Prix - Starting Countdown
+Title = Starting Grid (Grand Prix)
+Author = Shinobu Tanaka
+Source = Mario Kart DS
+Volume = 250
