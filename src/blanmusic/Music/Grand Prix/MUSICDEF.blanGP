@@ -28,7 +28,6 @@ Volume = 250
 
 Lump GPSTRT
 Usage = Grand Prix - Starting Countdown
-Title = Starting Grid (Grand Prix)
-Author = Shinobu Tanaka
-Source = Mario Kart DS
-Volume = 250
+Title = Start Fanfare
+Author = Richard Jacques
+Source = Sonic R
