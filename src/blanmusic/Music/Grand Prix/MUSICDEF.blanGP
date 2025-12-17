@@ -3,14 +3,14 @@ Usage = Grand Prix - Winning Run
 Title = Winning Run
 Author = Ryo Nagamatsu
 Source = Mario Kart Wii
-Volume = 150
+Volume = 175
 
 Lump GPWIN2
 Usage = Grand Prix - Trophy Screen
 Title = Award Ceremony
 Author = Ryo Nagamatsu
 Source = Mario Kart Wii
-Volume = 150
+Volume = 175
 
 Lump FLYOV1
 Usage = Grand Prix - Course Overview 1
