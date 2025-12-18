@@ -1922,8 +1922,8 @@ Priority = 64
 Caption = Flying fortress
 
 Sound sfx_s3kbes
-Priority = 64
-Caption = Flying
+Priority = 128
+Caption = Invincibility bottleneck
 
 Sound sfx_s3kbel
 Priority = 64
@@ -2413,8 +2413,8 @@ Priority = 96
 Caption = Offroad
 
 Sound sfx_cdfm71
-Priority = 64
-Flags = 8
+Priority = 128
+Caption = Invincibility running out
 
 Sound sfx_cdfm72
 Priority = 64
@@ -2438,8 +2438,7 @@ Sound sfx_cdfm78
 Priority = 64
 
 Sound sfx_cdfm79
-Priority = 128
-Caption = Invincibility running out
+Priority = 64
 
 Sound sfx_cdpcm0
 Priority = 64
