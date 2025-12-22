@@ -883,3 +883,44 @@ MapName = MAP55
 Sprite = B
 Color = SKINCOLOR_GREY
 Var = 90*TICRATE
+
+# Extra emblems
+ExtraEmblem
+Name = Novice
+Objective = Play 100 matches
+ConditionSet = 10
+ShowConditionSet = 0
+Sprite = C
+Color = SKINCOLOR_RED
+
+ExtraEmblem
+Name = Standard
+Objective = Play 250 matches
+ConditionSet = 11
+ShowConditionSet = 0
+Sprite = C
+Color = SKINCOLOR_RED
+
+ExtraEmblem
+Name = Expert
+Objective = Play 500 matches
+ConditionSet = 12
+ShowConditionSet = 0
+Sprite = C
+Color = SKINCOLOR_RED
+
+ExtraEmblem
+Name = Master
+Objective = Play 750 matches
+ConditionSet = 13
+ShowConditionSet = 0
+Sprite = C
+Color = SKINCOLOR_RED
+
+ExtraEmblem
+Name = Nightmare
+Objective = Play 1000 matches
+ConditionSet = 14
+ShowConditionSet = 0
+Sprite = C
+Color = SKINCOLOR_RED

@@ -1,0 +1,51 @@
+Unlockable 1
+Name = Egg Cup
+ConditionSet = 1
+ShowConditionSet = -1
+Type = NONE
+
+Unlockable 2
+Name = Chao Cup
+ConditionSet = 2
+ShowConditionSet = -1
+Type = NONE
+
+Unlockable 3
+Name = SMK Cup
+ConditionSet = 3
+ShowConditionSet = 2
+Type = NONE
+
+Unlockable 4
+Name = Hard Game Speed
+ConditionSet = 4
+ShowConditionSet = -1
+Type = HARDSPEED
+
+Unlockable 5
+Name = Encore Mode
+ConditionSet = 5
+ShowConditionSet = 4
+Type = ENCORE
+
+Unlockable 6
+Name = Hell Attack
+ConditionSet = 6
+ShowConditionSet = 6
+Type = HELLATTACK
+
+Unlockable 7
+Name = Time Attack
+ConditionSet = -1
+ShowConditionSet = -1
+Type = TIMEATTACK
+NoCEcho = True
+NoChecklist = True
+
+Unlockable 8
+Name = Item Breaker
+ConditionSet = -1
+ShowConditionSet = -1
+Type = ITEMBREAKER
+NoCEcho = True
+NoChecklist = True
