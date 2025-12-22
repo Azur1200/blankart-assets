@@ -73,7 +73,7 @@ Call = MR_RestartAudio
 
 
 Menu OP_SNDEFX
-X = 60
+X = 30
 Y = 40
 LineHeight = 10
 HeaderPic = M_SOUND
@@ -101,6 +101,11 @@ MenuItem INVINCIBILITY
 Text = Invincibility Music
 Tooltip = Play music during Invincibility.
 Cvar = supermusic
+
+MenuItem INVINTHEMELENGTH
+Text = Invin. Music Length
+Tooltip = Change the length of Invincibility's music.
+Cvar = kartinvintheme
 
 MenuItem GROW
 Text = Grow Music

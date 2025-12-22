@@ -26,11 +26,10 @@ Source = Sonic the Hedgehog 3
 Volume = 150
 
 Lump OLMENU
-Title = Main Menu
+Title = Ran (Stage1)
 Usage = Multiplayer/Online Menu
-Author = Naofumi Hataya
-Source = Sonic Gems Collection
-Volume = 150
+Author = Manabu Namiki
+Source = DODONPACHI SAIDAIOUJOU / DODONPACHI MAXIMUM
 
 Lump RAMENU
 Title = Games Menu
@@ -39,9 +38,22 @@ Author = Naofumi Hataya
 Source = Sonic Gems Collection
 Volume = 150
 
+Lump OPTMNU
+Title = Saidaioujou (Ending)
+Usage = Options
+Author = Manabu Namiki
+Source = DODONPACHI SAIDAIOUJOU / DODONPACHI MAXIMUM
+
 Lump EXMENU
 Title = Gems Museum
 Usage = Extras Menu
+Author = Naofumi Hataya
+Source = Sonic Gems Collection
+Volume = 150
+
+Lump STMENU
+Title = Main Menu
+Usage = Player Statistics
 Author = Naofumi Hataya
 Source = Sonic Gems Collection
 Volume = 150

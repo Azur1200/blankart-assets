@@ -12,11 +12,13 @@ Text = Players
 MenuItem LOCALPLAYERS
 OfsY = 2
 Text = Number of local players
+Tooltip = Number of splitscreen players.
 Cvar = splitplayers
 
 MenuItem PLAYERSETUP
 Text = Player setup...
 Cvar = dummymultiplayer
+Tooltip = Player setup for selected player.
 SubMenu = MN_MP_PLAYERSETUP
 
 MenuItem HOSTHEADER
@@ -28,11 +30,13 @@ MenuItem STARTSERVER
 OfsY = 2
 Text = Internet/LAN...
 Patch = (2-16 players)
+Tooltip = Host a online server.
 SubMenu = MP_SERVER
 
 MenuItem OFFLINESERVER
 Text = Offline...
 Patch = (2-4 players)
+Tooltip = Host a local server.
 SubMenu = MP_SPLITSCREEN
 
 MenuItem JOINHEADER
@@ -43,9 +47,16 @@ Text = Join a game
 MenuItem BROWSER
 OfsY = 2
 Text = Internet server browser...
+Tooltip = Browse the master server.
 Call = MR_ConnectMenuModChecks
+
+Menuitem CONNECTLASTSERVER
+Text = Join last server...
+Tooltip = Connect to the last connected server.
+Call = MR_ConnectLastServer
 
 MenuItem CONNECTIP
 Text = Specify IPv4 address:
 Cvar = dummyip
+Tooltip = Connect to a IPv4 address.
 Call = MR_ConnectIP

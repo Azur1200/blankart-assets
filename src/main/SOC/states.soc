@@ -257,14 +257,13 @@ Next = S_OBJPLACE_DUMMY
 State S_KART_LEFTOVER
 SpriteName = SPR_KART
 SpriteFrame = A
-Duration = 1
-Next = S_KART_LEFTOVER
+Duration = -1
 
 State S_KART_LEFTOVER_NOTIRES
 SpriteName = SPR_KART
 SpriteFrame = B
-Duration = 1
-Next = S_KART_LEFTOVER_NOTIRES
+Duration = -1
+Action = A_KartGibs
 
 State S_KART_TIRE
 SpriteName = SPR_TIRE
@@ -272,7 +271,6 @@ SpriteFrame = FF_ANIMATE|FF_RANDOMANIM
 Duration = -1
 Var1 = 7
 Var2 = 3
-Next = S_KART_TIRE
 
 # Blue Crawla
 State S_POSS_STND
@@ -12678,7 +12676,7 @@ SpriteName = SPR_SHLP
 SpriteFrame = 3
 Duration = 400
 Action = A_SetObjectFlags
-Var1 = MF_SLIDEME|MF_ENEMY|MF_NOCLIP|MF_NOCLIPHEIGHT
+Var1 = MF_SLIDEME|MF_ENEMY|MF_BOUNCE|MF_NOCLIP|MF_NOCLIPHEIGHT
 
 State S_CRUMBLE1
 Duration = 35
@@ -14706,6 +14704,26 @@ Next = S_LANDMINE
 State S_LANDMINE_EXPLODE
 Duration = 1
 Action = A_LandMineExplode
+
+# Egg Mine
+State S_EGGMINE
+SpriteName = SPR_LNDM
+SpriteFrame = B
+Duration = -1
+Next = S_EGGMINE
+
+State S_EGGMINE_OVERLAY
+SpriteName = SPR_LNDM
+SpriteFrame = FF_ADD|FF_TRANS20|C
+Duration = 1
+Next = S_EGGMINE_OVERLAY
+Var1 = 1
+
+State S_EGGMINE_POP
+SpriteName = SPR_LNDM
+SpriteFrame = B
+Duration = 1
+Action = A_EggMinePop
 
 # Ballhog
 State S_BALLHOG1
@@ -18655,3 +18673,11 @@ SpriteFrame = 2
 Duration = 4
 Next = S_GHORIZ1
 
+# Alt. Shrink Arrow Bullet
+State S_ALTSHRINK_ARROWBULLET
+SpriteName = SPR_AWBT
+SpriteFrame = FF_ANIMATE|FF_FULLBRIGHT|FF_ADD
+Duration = -1
+Var1 = 6
+Var2 = 2
+Next = S_NULL

@@ -3,7 +3,6 @@ X = 24
 Y = 50
 LineHeight = 10
 HeaderPic = M_MULTI
-EnterRoutine = MR_StartServerMenu
 MenuItem MAXPLAYERS
 Text = Max. Player Count
 Cvar = maxplayers
@@ -16,14 +15,12 @@ MenuItem SERVERNAME
 Text = Server Name
 Cvar = servername
 
-MenuItem GAMETYPE
-OfsY = 12
-Text = Game Type
-Cvar = newgametype
-
 MenuItem LEVEL
+OfsY = 12
 Text = Level
+Argument = LLM_CREATESERVER
 Cvar = nextmap
+SubMenu = CHANGELEVEL
 
 MenuItem START
 OfsY = 42
@@ -36,14 +33,21 @@ Menu MP_SPLITSCREEN
 X = 24
 Y = 30
 LineHeight = 10
-EnterRoutine = MR_StartServerMenu
-MenuItem RACERS
-Text = Racers
-cvar = kartbot_cap
+MenuItem CPURACERS
+Text = CPU Racers
+Cvar = kartbot_cap
 
 MenuItem CPULEVEL
 Text = CPU Level
 Cvar = kartbot
+
+MenuItem CPUMOD
+Text = CPU Modifier
+Cvar = kartbot_modifiermax
+
+MenuItem CPUFORCERIVAL
+Text = All Rival CPUs
+Cvar = kartbot_forcerival
 
 MenuItem RACESPEED
 OfsY = 6
@@ -63,17 +67,15 @@ OfsY = 6
 Text = More Options...
 SubMenu = OP_GAME
 
-MenuItem GAMETYPE
-OfsY = 6
-Text = Game Type
-Cvar = newgametype
-
 MenuItem LEVEL
+OfsY = 6
 Text = Level
+Argument = LLM_CREATESERVER
 Cvar = nextmap
+SubMenu = CHANGELEVEL
 
 MenuItem START
-OfsY = 42
+OfsY = 40
 Style = highlight
 Text = Start
 Call = MR_StartServer

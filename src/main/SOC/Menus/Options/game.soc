@@ -132,6 +132,16 @@ Text = Air Drop
 Tooltip = When you brake in the air, you fall faster! Rings make it stronger.
 Cvar = kartairdrop
 
+MenuItem AIRTHRUST
+Text = Air Thrust
+Tooltip = When you perform a drift boost in the air, you launch forwards!
+Cvar = kartairthrust
+
+MenuItem BLAN_ITEMSETTINGS
+Text = Item Settings...
+Tooltip = Customize certain items as you see fit.
+Submenu = OP_BLANITEMSETTINGS
+
 MenuItem QOLHEAD
 OfsY = 10
 Style = header
@@ -139,18 +149,28 @@ Text = Quality of Life
 
 MenuItem BUMPSPARK
 Text = Bump Spark
-Tooltip = Don't lose driftspark after wallbump.
+Tooltip = Decide what happens when you hit a wall while drifting.
 Cvar = kartbumpspark
 
 MenuItem BUMPSPRING
 Text = Bump Spring
-Tooltip = Don't lose pogospring state after wallbump.
+Tooltip = Maintain pogospring state after wallbump.
 Cvar = kartbumpspring
 
 MenuItem ANTIBUMP
 Text = Anti-Bump
-Tooltip = Prevent player-on-player collisions for some time.
+Tooltip = Prevent player-on-player collisions for some time at race start.
 Cvar = kartantibump
+
+MenuItem ITEMLITTER
+Text = Item Litter
+Tooltip = Control if items get dropped on the track when hitting players with orbiting/trailing items.
+Cvar = kartitemlitter
+
+MenuItem WATERBRICKS
+Text = Waterskip Prevention
+Tooltip = Allows players to stop waterskipping by letting go of ACCEL.
+Cvar = kartwaterskiplock
 
 MenuItem MISCHEAD
 OfsY = 10
@@ -192,6 +212,113 @@ MenuItem DIFFICULTY
 Text = Bot Difficulty
 Tooltip = How difficult should bots be? "Off" disables bots.
 Cvar = kartbot
+
+MenuItem MODIFIER
+Text = Bot Modifier
+Tooltip = This modifies the overall difficulty of bots.
+Cvar = kartbot_modifiermax
+
+MenuItem FORCERIVAL
+Text = All Rivals
+Tooltip = Forces all bots to be rivals. Turn this on for a tougher challenge!
+Cvar = kartbot_forcerival
+
+
+Menu OP_BLANITEMSETTINGS
+X = 30
+Y = 30
+LineHeight = 10
+ScrollHeight = 134
+HeaderPic = M_GAME
+MenuItem INVINHEAD
+OfsY = 10
+Style = header
+Text = Invincibility
+
+MenuItem INVINDISTANCE
+Text = Alt. Invin. Start Distance
+Tooltip = Around this value, Alt. Invin. begins to appear. This also affects its time limit.
+Cvar = kartinvindist
+
+MenuItem INVIN_TIMEMID
+Text = Alt. Invin. Between Time
+Tooltip = The "in-between" time limit for Alt. Invin. that you want to give players.
+Cvar = kartinvin_midtime
+
+MenuItem INVIN_TIMEMAX
+Text = Alt. Invin. Maximum Time
+Tooltip = The longest you want Alt. Invincibility to last.
+Cvar = kartinvin_maxtime
+
+MenuItem INVIN_SPDCLS
+Text = Speedboost (Classic)
+Tooltip = How fast do you want Invincibility to go?
+Cvar = vanillaboost_invincibility_classicspeedboost
+
+MenuItem INVIN_ACLCLS
+Text = Accelboost (Classic)
+Tooltip = How fast do you want Invincibility to accelerate?
+Cvar = vanillaboost_invincibility_classicaccelboost
+
+MenuItem INVIN_SPDALT
+Text = Speedboost (Alternative)
+Tooltip = How fast do you want Alt. Invincibility to go?
+Cvar = vanillaboost_invincibility_alternatespeedboost
+
+MenuItem INVIN_ACLALT
+Text = Accelboost (Alternative)
+Tooltip = How fast do you want Alt. Invincibility to accelerate?
+Cvar = vanillaboost_invincibility_alternateaccelboost
+
+MenuItem INVIN_STACKME
+Text = Make Stackable
+Tooltip = (With stacking enabled) Can boosts stack on top of Invincibility?
+Cvar = vanillaboost_invincibility_stackable
+
+MenuItem GROWHEAD
+OfsY = 10
+Style = header
+Text = Grow
+
+MenuItem GROW_AIRSQUISH
+Text = Air Squish
+Tooltip = Should Grow be allowed to squish other racers mid-air?
+Cvar = kartairsquish
+
+MenuItem BUBBLEHEAD
+OfsY = 10
+Style = header
+Text = Bubble Shield
+
+MenuItem BUBBLE_DEFENSE
+Text = Inflated Damage Rate
+Tooltip = At what rate should the Bubble Shield be damaged by when inflated?
+Cvar = kartbubble_defense_damagerate
+
+MenuItem BUBBLE_BOOST
+Text = Pop to Boost
+Tooltip = Should the Bubble Shield cause the user to recieve a boost when popped early?
+Cvar = kartbubble_boost_allow
+
+MenuItem BUBBLE_IDLE
+Text = Passive Defense
+Tooltip = Should the Bubble Shield passively defend from attacks when not inflated?
+Cvar = kartbubble_defense_canidle
+
+MenuItem FLAMEHEAD
+OfsY = 10
+Style = header
+Text = Flame Shield
+
+MenuItem FLAME_FASTFUEL
+Text = Fast Fuel
+Tooltip = Should the Flame Shield heat up faster in exchange for increased fuel consumption?
+Cvar = kartflame_fastfuel
+
+MenuItem FLAME_OFFROAD
+Text = Offroad Burn
+Tooltip = Should the Flame Shield grant the user offroad resistance when overheating offroad?
+Cvar = kartflame_offroadburn
 
 
 Menu OP_MONITORTOGGLE

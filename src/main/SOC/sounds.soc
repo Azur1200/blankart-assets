@@ -1922,8 +1922,8 @@ Priority = 64
 Caption = Flying fortress
 
 Sound sfx_s3kbes
-Priority = 64
-Caption = Flying
+Priority = 128
+Caption = Invincibility bottleneck
 
 Sound sfx_s3kbel
 Priority = 64
@@ -2413,8 +2413,8 @@ Priority = 96
 Caption = Offroad
 
 Sound sfx_cdfm71
-Priority = 64
-Flags = 8
+Priority = 128
+Caption = Invincibility running out
 
 Sound sfx_cdfm72
 Priority = 64
@@ -2438,8 +2438,7 @@ Sound sfx_cdfm78
 Priority = 64
 
 Sound sfx_cdfm79
-Priority = 128
-Caption = Invincibility running out
+Priority = 64
 
 Sound sfx_cdpcm0
 Priority = 64
@@ -3558,67 +3557,56 @@ Caption = /
 Sound sfx_kwin
 Priority = 64
 Flags = 96
-SkinSound = SKSKWIN
 Caption = /
 
 Sound sfx_klose
 Priority = 64
 Flags = 96
-SkinSound = SKSKLOSE
 Caption = /
 
 Sound sfx_khurt1
 Priority = 64
 Flags = 96
-SkinSound = SKSKPAN1
 Caption = /
 
 Sound sfx_khurt2
 Priority = 64
 Flags = 96
-SkinSound = SKSKPAN2
 Caption = /
 
 Sound sfx_kattk1
 Priority = 64
 Flags = 96
-SkinSound = SKSKATK1
 Caption = /
 
 Sound sfx_kattk2
 Priority = 64
 Flags = 96
-SkinSound = SKSKATK2
 Caption = /
 
 Sound sfx_kbost1
 Priority = 64
 Flags = 96
-SkinSound = SKSKBST1
 Caption = /
 
 Sound sfx_kbost2
 Priority = 64
 Flags = 96
-SkinSound = SKSKBST2
 Caption = /
 
 Sound sfx_kslow
 Priority = 64
 Flags = 32
-SkinSound = SKSKSLOW
 Caption = /
 
 Sound sfx_khitem
 Priority = 128
 Flags = 32
-SkinSound = SKSKHITM
 Caption = /
 
 Sound sfx_kgloat
 Priority = 64
 Flags = 48
-SkinSound = SKSKPOWR
 Caption = /
 
 # location for new sounds not in v1

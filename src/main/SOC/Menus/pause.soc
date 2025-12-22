@@ -52,6 +52,7 @@ SubMenu = AD_MAIN
 MenuItem MAPCHANGE
 OfsY = 8
 Text = Switch Map...
+Argument = LLM_CREATESERVER
 SubMenu = CHANGELEVEL
 
 MenuItem SCRAMBLE
