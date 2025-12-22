@@ -1,4 +1,5 @@
 Menu SR_MAIN
+Music = exmenu
 X = 160
 Y = 172
 MenuItem UNLOCKABLES

@@ -1,4 +1,5 @@
 Menu SP_LEVELSTATS
+Music = stmenu
 X = 280
 Y = 185
 HeaderPic = M_STATS

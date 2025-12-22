@@ -1,4 +1,5 @@
 Menu OP_MAIN
+Music = optmnu
 FadeStrength = 17
 X = 60
 Y = 30
