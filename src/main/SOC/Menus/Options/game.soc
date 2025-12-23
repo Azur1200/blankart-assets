@@ -240,40 +240,15 @@ OfsY = 10
 Style = header
 Text = Invincibility
 
-MenuItem INVINDISTANCE
-Text = Alt. Invin. Start Distance
-Tooltip = Around this value, Alt. Invin. begins to appear. This also affects its time limit.
-Cvar = kartinvindist
-
-MenuItem INVIN_TIMEMID
-Text = Alt. Invin. Between Time
-Tooltip = The "in-between" time limit for Alt. Invin. that you want to give players.
-Cvar = kartinvin_midtime
-
-MenuItem INVIN_TIMEMAX
-Text = Alt. Invin. Maximum Time
-Tooltip = The longest you want Alt. Invincibility to last.
-Cvar = kartinvin_maxtime
-
-MenuItem INVIN_SPDCLS
-Text = Speedboost (Classic)
+MenuItem INVIN_SPD
+Text = Speedboost
 Tooltip = How fast do you want Invincibility to go?
-Cvar = vanillaboost_invincibility_classicspeedboost
+Cvar = vanillaboost_invincibility_speedboost
 
-MenuItem INVIN_ACLCLS
-Text = Accelboost (Classic)
+MenuItem INVIN_ACL
+Text = Accelboost
 Tooltip = How fast do you want Invincibility to accelerate?
-Cvar = vanillaboost_invincibility_classicaccelboost
-
-MenuItem INVIN_SPDALT
-Text = Speedboost (Alternative)
-Tooltip = How fast do you want Alt. Invincibility to go?
-Cvar = vanillaboost_invincibility_alternatespeedboost
-
-MenuItem INVIN_ACLALT
-Text = Accelboost (Alternative)
-Tooltip = How fast do you want Alt. Invincibility to accelerate?
-Cvar = vanillaboost_invincibility_alternateaccelboost
+Cvar = vanillaboost_invincibility_accelboost
 
 MenuItem INVIN_STACKME
 Text = Make Stackable

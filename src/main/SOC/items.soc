@@ -404,11 +404,6 @@ CooldownTime = 10
 # Alt. item results
 ################################################################################
 
-KartResultAlt invincibility
-DisplayName = Alt. Invincibility
-Flags = KRF_NOTNEAREND
-UniqueOddsRace = KO_AltInvinOdds
-
 KartResultAlt shrink
 DisplayName = Alt. Shrink
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_NOTNEAREND
