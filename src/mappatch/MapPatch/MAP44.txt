@@ -2,7 +2,7 @@
 // Waypoints: Super Chris, Frank_Th
 
 namespace = "blankart-patch";
-version = 1;
+version = 2;
 checksum = "12bc155f0350d49b";
 
 thing	// 0
@@ -141,8 +141,8 @@ thing	// 11
 thing	// 12
 {
 	id = 13;
-	x = -928.0;
-	y = -63.0;
+	x = -896.0;
+	y = -128.0;
 	angle = 270;
 	type = 2001;
 	arg0 = 14;
@@ -152,8 +152,8 @@ thing	// 12
 thing	// 13
 {
 	id = 14;
-	x = -1444.0;
-	y = 85.0;
+	x = -1280.0;
+	y = -128.0;
 	angle = 270;
 	type = 2001;
 	arg0 = 15;
@@ -163,8 +163,8 @@ thing	// 13
 thing	// 14
 {
 	id = 15;
-	x = -1854.0;
-	y = 395.0;
+	x = -1536.0;
+	y = 0.0;
 	angle = 270;
 	type = 2001;
 	arg0 = 16;
@@ -174,89 +174,91 @@ thing	// 14
 thing	// 15
 {
 	id = 16;
-	x = -2144.0;
-	y = 847.0;
+	x = -1792.0;
+	y = 224.0;
 	angle = 270;
 	type = 2001;
-	arg0 = 17;
-	arg1 = 350;
+	arg0 = 117;
+	arg1 = 250;
 }
 
 thing	// 16
 {
 	id = 17;
-	x = -2112.0;
-	y = 1344.0;
+	x = -2304.0;
+	y = 768.0;
 	angle = 270;
 	type = 2001;
 	arg0 = 18;
-	arg1 = 350;
+	arg1 = 250;
+	arg2 = 4;
 }
 
 thing	// 17
 {
 	id = 18;
-	x = -2112.0;
-	y = 1856.0;
+	x = -2432.0;
+	y = 2176.0;
 	angle = 270;
 	type = 2001;
-	arg0 = 19;
-	arg1 = 350;
+	arg0 = 119;
+	arg1 = 120;
+	arg2 = 4;
 }
 
 thing	// 18
 {
 	id = 19;
 	x = -2048.0;
-	y = 2368.0;
+	y = 2432.0;
 	angle = 270;
 	type = 2001;
 	arg0 = 20;
-	arg1 = 350;
+	arg1 = 100;
 	arg2 = 4;
 }
 
 thing	// 19
 {
 	id = 20;
-	x = -1654.0;
-	y = 2522.0;
+	x = -1792.0;
+	y = 2432.0;
 	angle = 270;
 	type = 2001;
 	arg0 = 21;
-	arg1 = 350;
+	arg1 = 100;
 	arg2 = 4;
 }
 
 thing	// 20
 {
 	id = 21;
-	x = -1130.0;
-	y = 2529.0;
+	x = -448.0;
+	y = 2368.0;
 	height = 346.0;
 	angle = 270;
 	type = 2001;
 	arg0 = 22;
-	arg1 = 350;
+	arg1 = 100;
 	arg2 = 4;
 }
 
 thing	// 21
 {
 	id = 22;
-	x = -448.0;
-	y = 2496.0;
+	x = -128.0;
+	y = 2368.0;
 	height = 128.0;
 	angle = 270;
 	type = 2001;
 	arg0 = 23;
-	arg1 = 435;
+	arg1 = 100;
 }
 
 thing	// 22
 {
 	id = 23;
-	x = 0.0;
+	x = 256.0;
 	y = 2368.0;
 	height = 1.0;
 	angle = 270;
@@ -268,7 +270,7 @@ thing	// 22
 thing	// 23
 {
 	id = 24;
-	x = 512.0;
+	x = 640.0;
 	y = 2368.0;
 	angle = 270;
 	type = 2001;
@@ -859,4 +861,160 @@ thing	// 75
 	height = 16.0;
 	angle = 90;
 	type = 6502;
+}
+
+thing	// 76
+{
+	id = 119;
+	x = -2304.0;
+	y = 2432.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 19;
+	arg1 = 100;
+	arg2 = 4;
+}
+
+thing	// 77
+{
+	id = 117;
+	x = -2176.0;
+	y = 512.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 17;
+	arg1 = 250;
+	arg2 = 4;
+}
+
+thing	// 78
+{
+	x = -1856.0;
+	y = 2880.0;
+	angle = 270;
+	type = 20004;
+	arg0 = 295;
+	arg1 = 10;
+	arg2 = 1;
+}
+
+thing	// 79
+{
+	x = -2112.0;
+	y = 2880.0;
+	angle = 270;
+	type = 20004;
+	arg0 = 295;
+	arg1 = 10;
+	arg2 = 1;
+}
+
+thing	// 80
+{
+	x = -2368.0;
+	y = 2880.0;
+	angle = 270;
+	type = 20004;
+	arg0 = 295;
+	arg1 = 10;
+	arg2 = 1;
+}
+
+thing	// 81
+{
+	x = -2595.0;
+	y = 2803.0;
+	angle = 270;
+	type = 20004;
+	arg0 = 295;
+	arg1 = 10;
+	arg2 = 1;
+}
+
+thing	// 82
+{
+	x = -2688.0;
+	y = 2624.0;
+	angle = 270;
+	type = 20004;
+	arg0 = 295;
+	arg1 = 10;
+	arg2 = 1;
+}
+
+thing	// 83
+{
+	x = -2741.0;
+	y = 698.0;
+	angle = 270;
+	type = 20004;
+	arg0 = 285;
+	arg1 = 10;
+	arg2 = 1;
+}
+
+thing	// 84
+{
+	x = -2656.0;
+	y = 320.0;
+	angle = 270;
+	type = 20004;
+	arg0 = 285;
+	arg1 = 10;
+	arg2 = 1;
+}
+
+thing	// 85
+{
+	x = -2496.0;
+	y = 128.0;
+	angle = 270;
+	type = 20004;
+	arg0 = 285;
+	arg1 = 10;
+	arg2 = 1;
+}
+
+thing	// 86
+{
+	x = -2176.0;
+	y = 0.0;
+	angle = 270;
+	type = 20004;
+	arg0 = 285;
+	arg1 = 10;
+	arg2 = 1;
+}
+
+thing	// 87
+{
+	x = -2768.0;
+	y = 1088.0;
+	angle = 270;
+	type = 20004;
+	arg0 = 285;
+	arg1 = 10;
+	arg2 = 1;
+}
+
+thing	// 88
+{
+	x = -2720.0;
+	y = 1408.0;
+	angle = 270;
+	type = 20004;
+	arg0 = 285;
+	arg1 = 10;
+	arg2 = 1;
+}
+
+thing	// 89
+{
+	x = -1632.0;
+	y = 2816.0;
+	angle = 270;
+	type = 20004;
+	arg0 = 295;
+	arg1 = 10;
+	arg2 = 1;
 }

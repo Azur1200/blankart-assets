@@ -10,9 +10,9 @@ Cup Water
 LevelList = MAP11,MAP12,MAP13,MAP14,MAP15
 BonusGame = MAPB4#,MAPB5
 
-#Cup Lightning
-#LevelList = MAP16,MAP17,MAP18,MAP19,MAP20
-#BonusGame = MAPB6#,MAPB7
+Cup Lightning
+LevelList = MAP16,MAP17,MAP18,MAP19,MAP20
+BonusGame = MAPB6#,MAPB7
 
 Cup Fire
 LevelList = MAP21,MAP22,MAP23,MAP24,MAP25
