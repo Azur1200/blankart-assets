@@ -1,0 +1,6 @@
+Sprite ITEM {
+	Default {
+		XPivot 25
+		YPivot 50
+	}
+}
