@@ -111,16 +111,16 @@ Text = Shaders
 Tooltip = Graphical Shaders.
 Cvar = gr_shaders
 
-#MenuItem PALRENDER
-#Text = Palette Rendering
-#Tooltip = Recreates the look of software mode.
-#Cvar = gr_paletteshader
-#
-#MenuItem PALRENDERDEPTH
-#Text = Palette Depth
-#Tooltip = Change the bit depth of the Lookup Palette in Palette rendering mode.
-#Cvar = gr_palettedepth
-#
+MenuItem PALRENDER
+Text = Palette Rendering
+Tooltip = Recreates the look of software mode.
+Cvar = gr_paletteshader
+
+MenuItem PALRENDERDEPTH
+Text = Palette Depth
+Tooltip = Change the bit depth of the Lookup Palette in Palette rendering mode.
+Cvar = gr_palettedepth
+
 MenuItem TEXTUREDEPTH
 OfsY = 10
 Text = Texture Quality

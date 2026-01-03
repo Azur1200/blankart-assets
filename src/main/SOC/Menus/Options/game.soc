@@ -162,6 +162,16 @@ Text = Anti-Bump
 Tooltip = Prevent player-on-player collisions for some time at race start.
 Cvar = kartantibump
 
+MenuItem ITEMLITTER
+Text = Item Litter
+Tooltip = Players drop orbiting/trailing items on the track when hit.
+Cvar = kartitemlitter
+
+MenuItem ITEMPUSHING
+Text = Item Pushing
+Tooltip = Push dropped items away from item boxes.
+Cvar = kartitempush
+
 MenuItem WATERBRICKS
 Text = Waterskip Prevention
 Tooltip = Allows players to stop waterskipping by letting go of ACCEL.

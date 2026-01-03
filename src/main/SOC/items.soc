@@ -144,7 +144,7 @@ KartResult tripleorbinaut
 
 KartResult quadorbinaut
 
-KartResult eggman
+KartResult eggmanmonitor
 
 KartResult jawz
 
@@ -160,7 +160,7 @@ KartResult grow
 
 KartResult shrink
 
-KartResult spb
+KartResult selfpropelledbomb
 
 KartResult superring
 
@@ -192,7 +192,7 @@ KartResult rocketsneaker
 DisplayName = Rocket Sneaker
 Type = ROCKETSNEAKER
 Amount = 1
-Flags = KRF_POWERITEM
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
 OddsRace = 0,0,0,0,0,0,0,0,0,0,28,35,42,48,37,37
 
 KartResult invincibility
@@ -210,7 +210,7 @@ Amount = 1
 Flags = KRF_NOTNEAREND|KRF_NOTFORBOTTOM
 OddsRace = 35,28,22,10,5,0,0,0,0,0,0,0,0,0,0,0
 
-KartResult eggman
+KartResult eggmanmonitor
 DisplayName = Eggman Monitor
 Type = EGGMAN
 Amount = 1
@@ -254,11 +254,13 @@ OddsRace = 0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 2,1
 CooldownTime = 10
 
-KartResult spb
+KartResult selfpropelledbomb
 DisplayName = Self-Propelled Bomb
 Type = SPB
 Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_INDIRECTITEM|KRF_NOTNEAREND|KRF_RUNNERAUGMENT
+RunnerDistance = 5648
+RunnerDistanceLegacy = 3324
 UniqueOddsRace = KO_SPBRaceOdds
 OddsRace = 0,0,2,3,4,5,6,9,10,12,8,5,2,2,0,0
 OddsSpecial = 0,0,0,1
@@ -286,7 +288,7 @@ DisplayName = Thunder Shield
 Type = THUNDERSHIELD
 Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
-OddsRace = 12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+OddsRace = 5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 4,0
 
 KartResult hyudoro
@@ -350,7 +352,7 @@ DisplayName = Sneaker x3
 Type = SNEAKER
 Amount = 3
 Flags = KRF_POWERITEM
-OddsRace = 0,0,0,0,0,0,0,7,35,45,60,56,52,4,0,0
+OddsRace = 0,0,0,0,0,0,0,7,35,45,60,56,52,4,2,2
 OddsBattle = 0,1
 OddsSpecial = 0,0,1,1
 
@@ -416,7 +418,7 @@ OddsRace = 0,0,0,0,0,0,0,4,7,12,2,0,0,0,0,0
 OddsBattle = 1,0
 CooldownTime = 5
 
-KartResultAlt eggman
+KartResultAlt eggmanmonitor
 DisplayName = Egg Mine
 Flags = KRF_NOTFORBOTTOM
 OddsRace = 30,28,14,5,0,0,0,0,0,0,0,0,0,0,0,0
