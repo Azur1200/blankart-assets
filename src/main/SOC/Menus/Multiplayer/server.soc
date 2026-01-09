@@ -1,81 +1,77 @@
-Menu MP_SERVER
-X = 24
-Y = 50
+MenuPanel MP_SERVER
 LineHeight = 10
+Items
+MAXPLAYERS
+	Text = Max. Player Count
+	Cvar = maxplayers
+ADVERTISE
+	Text = Advertise
+	Cvar = advertise
+SERVERNAME
+	Text = Server Name
+	Cvar = servername
+LEVEL
+	OfsY = 12
+	Text = Level
+	Argument = LLM_CREATESERVER
+	Cvar = nextmap
+	SubMenu = CHANGELEVEL
+START
+	OfsY = 42
+	Style = highlight
+	Text = Start
+	Call = MR_StartServer
+
+MenuPanel MP_SPLITSCREEN
+LineHeight = 10
+Items
+CPURACERS
+	Text = CPU Racers
+	Cvar = kartbot_cap
+CPULEVEL
+	Text = CPU Level
+	Cvar = kartbot
+CPUMOD
+	Text = CPU Modifier
+	Cvar = kartbot_modifiermax
+CPUFORCERIVAL
+	Text = All Rival CPUs
+	Cvar = kartbot_forcerival
+RACESPEED
+	OfsY = 6
+	Text = Race Speed
+	Cvar = kartspeed
+BATTLESPEED
+	Text = Battle Speed
+	Cvar = kartbattlespeed
+FRANTICITEMS
+	Text = Frantic Items
+	Cvar = kartfrantic
+MOREOPTIONS
+	OfsY = 6
+	Text = More Options...
+	SubMenu = OP_GAME
+LEVEL
+	OfsY = 6
+	Text = Level
+	Argument = LLM_CREATESERVER
+	Cvar = nextmap
+	SubMenu = CHANGELEVEL
+START
+	OfsY = 40
+	Style = highlight
+	Text = Start
+	Call = MR_StartServer
+
+Menu MP_SERVER
 HeaderPic = M_MULTI
-MenuItem MAXPLAYERS
-Text = Max. Player Count
-Cvar = maxplayers
-
-MenuItem ADVERTISE
-Text = Advertise
-Cvar = advertise
-
-MenuItem SERVERNAME
-Text = Server Name
-Cvar = servername
-
-MenuItem LEVEL
-OfsY = 12
-Text = Level
-Argument = LLM_CREATESERVER
-Cvar = nextmap
-SubMenu = CHANGELEVEL
-
-MenuItem START
-OfsY = 42
-Style = highlight
-Text = Start
-Call = MR_StartServer
-
+Panels
+MAIN : MP_SERVER
+	X = 24
+	Y = 50
 
 Menu MP_SPLITSCREEN
-X = 24
-Y = 30
-LineHeight = 10
-MenuItem CPURACERS
-Text = CPU Racers
-Cvar = kartbot_cap
-
-MenuItem CPULEVEL
-Text = CPU Level
-Cvar = kartbot
-
-MenuItem CPUMOD
-Text = CPU Modifier
-Cvar = kartbot_modifiermax
-
-MenuItem CPUFORCERIVAL
-Text = All Rival CPUs
-Cvar = kartbot_forcerival
-
-MenuItem RACESPEED
-OfsY = 6
-Text = Race Speed
-Cvar = kartspeed
-
-MenuItem BATTLESPEED
-Text = Battle Speed
-Cvar = kartbattlespeed
-
-MenuItem FRANTICITEMS
-Text = Frantic Items
-Cvar = kartfrantic
-
-MenuItem MOREOPTIONS
-OfsY = 6
-Text = More Options...
-SubMenu = OP_GAME
-
-MenuItem LEVEL
-OfsY = 6
-Text = Level
-Argument = LLM_CREATESERVER
-Cvar = nextmap
-SubMenu = CHANGELEVEL
-
-MenuItem START
-OfsY = 40
-Style = highlight
-Text = Start
-Call = MR_StartServer
+Panels
+MAIN : MP_SPLITSCREEN
+	X = 24
+	Y = 30

@@ -1,436 +1,371 @@
-Menu OP_HUD
-X = 30
-Y = 40
+MenuPanel OP_HUD
 LineHeight = 10
-HeaderPic = M_HUD
-MenuItem SHOWHUD
-Text = Show HUD (F3)
-Tooltip = Should in-game HUD be shown?
-Cvar = showhud
-
-MenuItem TRANSLUCENT
-Text = HUD Visibility
-Tooltip = How translucent are HUD elements?
-Slider = translucenthud
-
-MenuItem CHATHUD
-OfsY = 5
-Text = Online HUD options...
-Tooltip = Online HUD options.
-Submenu = OP_CHAT
-
-MenuItem GAMEHUD
-Text = Game HUD options...
-Tooltip = Gameplay HUD options.
-Submenu = OP_GAMEHUD
-
-MenuItem BACKCOLOR
-Text = Background Glass
-Tooltip = Console and chat background color.
-Cvar = con_backcolor
-
-MenuItem HIGHLIGHT
-OfsY = 5
-Text = Menu Highlights
-Tooltip = Menu hightlight color.
-Cvar = menuhighlight
-
-MenuItem HLTEST1
-X = -2
-Style = highlight
-Text = (
-
-MenuItem HLTEST2
-X = 6
-OfsY = -10
-Style = recommendedhighlight
-Text = Good highlight
-
-MenuItem HLTEST3
-X = 114
-OfsY = -10
-Style = highlight
-Text = ,
-
-MenuItem HLTEST4
-X = 122
-OfsY = -10
-Style = warninghighlight
-Text = Warning highlight
-
-MenuItem HLTEST5
-X = 254
-OfsY = -10
-Style = highlight
-Text = )
-
-MenuItem MENUCAPS
-OfsX = -254
-OfsY = 5
-Text = Uppercase Menus
-Tooltip = Should menus be in all caps?
-Cvar = menucaps
-
-MenuItem TEXTSIZE
-Text = Console Text Size
-Tooltip = Size of console text.
-Cvar = con_textsize
-
-MenuItem FOCUSLOST
-Text = Show "FOCUS LOST"
-Tooltip = Show "FOCUS LOST" when window is not active.
-Cvar = showfocuslost
-
-MenuItem ALLMAPS
-Text = Show All Maps
-Tooltip = Show all maps (including hell maps) in the menu.
-Cvar = showallmaps
-
+Items
+SHOWHUD
+	Text = Show HUD (F3)
+	Tooltip = Should in-game HUD be shown?
+	Cvar = showhud
+TRANSLUCENT
+	Text = HUD Visibility
+	Tooltip = How translucent are HUD elements?
+	Slider = translucenthud
+CHATHUD
+	OfsY = 5
+	Text = Online HUD options...
+	Tooltip = Online HUD options.
+	Submenu = OP_CHAT
+GAMEHUD
+	Text = Game HUD options...
+	Tooltip = Gameplay HUD options.
+	Submenu = OP_GAMEHUD
+BACKCOLOR
+	Text = Background Glass
+	Tooltip = Console and chat background color.
+	Cvar = con_backcolor
+HIGHLIGHT
+	OfsY = 5
+	Text = Menu Highlights
+	Tooltip = Menu hightlight color.
+	Cvar = menuhighlight
+HLTEST1
+	X = -2
+	Style = highlight
+	Text = (
+HLTEST2
+	X = 6
+	OfsY = -10
+	Style = recommendedhighlight
+	Text = Good highlight
+HLTEST3
+	X = 114
+	OfsY = -10
+	Style = highlight
+	Text = ,
+HLTEST4
+	X = 122
+	OfsY = -10
+	Style = warninghighlight
+	Text = Warning highlight
+HLTEST5
+	X = 254
+	OfsY = -10
+	Style = highlight
+	Text = )
+MENUCAPS
+	OfsX = -254
+	OfsY = 5
+	Text = Uppercase Menus
+	Tooltip = Should menus be in all caps?
+	Cvar = menucaps
+TEXTSIZE
+	Text = Console Text Size
+	Tooltip = Size of console text.
+	Cvar = con_textsize
+FOCUSLOST
+	Text = Show "FOCUS LOST"
+	Tooltip = Show "FOCUS LOST" when window is not active.
+	Cvar = showfocuslost
+ALLMAPS
+	Text = Show All Maps
+	Tooltip = Show all maps (including hell maps) in the menu.
+	Cvar = showallmaps
 
 # Ok it's still called chatoptions but we'll put ping display in here to be clean
-Menu OP_CHAT
-X = 30
-Y = 40
+MenuPanel OP_CHAT
 LineHeight = 10
-HeaderPic = M_HUD
 # will ANYONE who doesn't know how to use the console want to touch this one?
 # nonetheless...
-MenuItem CHATMODE
-Text = Chat Mode
-Tooltip = Determine how chat display looks in game.
-Cvar = chatmode
-
-MenuItem CHATWIDTH
-OfsY = 5
-Text = Chat Box Width
-Tooltip = Width of chat box window.
-Slider = chatwidth
-
-MenuItem CHATHEIGHT
-Text = Chat Box Height
-Tooltip = Height of chat box window.
-Slider = chatheight
-
-MenuItem CHATBACKTINT
-OfsY = 5
-Text = Chat Background Tint
-Tooltip = Background on chat box window.
-Cvar = chatbacktint
-
-MenuItem CHATTIME
-Text = Message Fadeout Time
-Tooltip = Time until chat message fades out.
-Cvar = chattime
-
-MenuItem CHATSPAM
-Text = Spam Protection
-Tooltip = Prevents chat spam.
-Cvar = chatspamprotection
-
+Items
+CHATMODE
+	Text = Chat Mode
+	Tooltip = Determine how chat display looks in game.
+	Cvar = chatmode
+CHATWIDTH
+	OfsY = 5
+	Text = Chat Box Width
+	Tooltip = Width of chat box window.
+	Slider = chatwidth
+CHATHEIGHT
+	Text = Chat Box Height
+	Tooltip = Height of chat box window.
+	Slider = chatheight
+CHATBACKTINT
+	OfsY = 5
+	Text = Chat Background Tint
+	Tooltip = Background on chat box window.
+	Cvar = chatbacktint
+CHATTIME
+	Text = Message Fadeout Time
+	Tooltip = Time until chat message fades out.
+	Cvar = chattime
+CHATSPAM
+	Text = Spam Protection
+	Tooltip = Prevents chat spam.
+	Cvar = chatspamprotection
 # shows ping next to framerate if we want to.
-MenuItem SHOWPING
-OfsY = 10
-Text = Local ping display
-Tooltip = Shows current ping when online.
-Cvar = showping
+SHOWPING
+	OfsY = 10
+	Text = Local ping display
+	Tooltip = Shows current ping when online.
+	Cvar = showping
+PINGICON
+	Text = Ping display icon
+	Tooltip = Show ping icon when showing ping.
+	Cvar = pingicon
+pingstyle
+	Text = Ping Display Style
+	Tooltip = Change how the ping display looks visually.
+	Cvar = pingicon
 
-MenuItem PINGICON
-Text = Ping display icon
-Tooltip = Show ping icon when showing ping.
-Cvar = pingicon
+MenuPanel OP_GAMEHUD
+LineHeight = 10
+ScrollHeight = 144
+Items
+MINIMAPHEAD
+	Style = header
+	Text = Minimap
+MINIVISI
+	Text = Minimap Visibility
+	Tooltip = How translucent is the minimap?
+	Slider = kartminimap
+MININAMETAGS
+	Text = Minimap Nametags
+	Tooltip = Show the names of players on the minimap.
+	Cvar = showminimapnames
+MINIANGLE
+	Text = Minimap Angle
+	Tooltip = Show the angle of the current player on the minimap.
+	Cvar = showminimapangle
+MINIFINISHED
+	Text = Finished Minimap Players
+	Tooltip = Show finished players on the minimap.
+	Cvar = showfinishedplayers
+COLORHUDHEAD
+	OfsY = 10
+	Style = header
+	Text = Color HUD
+COLORIZE
+	Text = Colorized HUD
+	Tooltip = Enable colourized hud.
+	Cvar = colorizedhud
+COLORIZECOLOR
+	Text = Colorized HUD Color
+	Tooltip = The HUD color to use when colourized HUD is enabled.
+	Cvar = colorizedhudcolor
+COLORIZEITEMBOX
+	Text = Colorized Itembox
+	Tooltip = Enable the colourized itembox when colourized HUD is enabled.
+	Cvar = colorizeditembox
+DARKITEMBOX
+	Text = Darken Itembox
+	Tooltip = Darken the itembox when certain items are inside it.
+	Cvar = darkitembox
+NAMETAGHEAD
+	OfsY = 10
+	Style = header
+	Text = Nametags
+NAMETAGS
+	Text = Nametags
+	Tooltip = Show the name of players online.
+	Cvar = seenames
+SPEEDOMETERHEAD
+	OfsY = 10
+	Style = header
+	Text = Speedometer
+SPEEDOMETER
+	Text = Speedometer Display
+	Tooltip = Display the current speed on the screen.
+	Cvar = kartdisplayspeed
+SPEEDSTYLE
+	Text = Speedometer Style
+	Tooltip = Change the visual style of the speedometer.
+	Cvar = newspeedometer
+DRIFTGAUGEHEAD
+	OfsY = 10
+	Style = header
+	Text = Drift Gauge
+DRIFTGAUGE
+	Text = Drift Gauge
+	Tooltip = Display how much drift you have.
+	Cvar = kartdriftgauge
+DRIFTGAUGEOFS
+	Text = Drift Gauge Offset
+	Tooltip = Adjust Drift Gauge offset.
+	Cvar = kartdriftgaugeoffset
+MISCHEAD
+	OfsY = 10
+	Style = header
+	Text = Misc
+SHOWINPUT
+	Text = Input Display
+	Tooltip = Show player inputs.
+	Cvar = showinput
+SHOWTIMER
+	Text = Item Timers
+	Tooltip = Show duration of boosts.
+	Cvar = itemtimers
+SHOWDRAFT
+	Text = Drafting Indicator
+	Tooltip = Show progress of drafting.
+	Cvar = draftindicator
+CHECK
+	Text = Show "CHECK"
+	Tooltip = Show the "CHECK" graphic when some is behind the player.
+	Cvar = kartcheck
+STATS
+	Text = Show Stats
+	Tooltip = Show your character stats.
+	Cvar = showstats
+POSSCALE
+	Text = Postion Scaling
+	Tooltip = Make the position number smoothly scale.
+	Cvar = smoothposition
+FANCYJIN
+	Text = Animated Roulette
+	Tooltip = Make the roulette do a fancy animation.
+	Cvar = fancyroulette
+CSSSTYLE
+	Text = Skin Select Menu
+	Tooltip = Use a different style of Skin Select.
+	Cvar = skinselectstyle
+CSSSORT
+	Text = Skin Select Sorting
+	Tooltip = Changes the sorting order in the Grid Skin Select
+	Cvar = skinselectsort
+OFFSETS
+	OfsY = 10
+	Text = HUD Offsets...
+	Tooltip = Adjust HUD offsets.
+	Submenu = OP_OFFSET
 
-MenuItem pingstyle
-Text = Ping Display Style
-Tooltip = Change how the ping display looks visually.
-Cvar = pingicon
+MenuPanel OP_OFFSET
+LineHeight = 10
+ScrollHeight = 144
+Items
+ITEMX
+	Text = Itembox X Offset
+	Cvar = hud_item_xoffset
+ITEMY
+	Text = Itembox Y Offset
+	Cvar = hud_item_yoffset
+TIMERX
+	Text = Timer X Offset
+	Cvar = hud_time_xoffset
+TIMERY
+	Text = Timer Y Offset
+	Cvar = hud_time_yoffset
+LAPSX
+	Text = Laps X Offset
+	Cvar = hud_laps_xoffset
+LAPSY
+	Text = Laps Y Offset
+	Cvar = hud_laps_yoffset
+RINGSX
+	Text = Rings X Offset
+	Cvar = hud_rings_xoffset
+RINGSY
+	Text = Rings Y Offset
+	Cvar = hud_rings_yoffset
+COUNTDOWNX
+	Text = Ending Countdown X Offset
+	Cvar = hud_dnft_xoffset
+COUNTDOWNY
+	Text = Ending Countdown Y Offset
+	Cvar = hud_dnft_yoffset
+SPEEDX
+	Text = Speedometer X Offset
+	Cvar = hud_speed_xoffset
+SPEEDY
+	Text = Speedometer Y Offset
+	Cvar = hud_speed_yoffset
+ACCESSX
+	Text = Accessibility X Offset
+	Cvar = hud_acce_xoffset
+ACCESSY
+	Text = Accessibility Y Offset
+	Cvar = hud_acce_yoffset
+POSITIONX
+	Text = Position X Offset
+	Cvar = hud_posi_xoffset
+POSITIONY
+	Text = Position Y Offset
+	Cvar = hud_posi_yoffset
+RANKINGX
+	Text = Miniranking X Offset
+	Cvar = hud_posi_xoffset
+RANKINGY
+	Text = Miniranking Y Offset
+	Cvar = hud_posi_yoffset
+STARTX
+	Text = Start Countdown X Offset
+	Cvar = hud_stcd_xoffset
+STARTY
+	Text = Start Countdown Y Offset
+	Cvar = hud_stcd_yoffset
+CHECKY
+	Text = Check Y Offset
+	Cvar = hud_chek_yoffset
+MINIX
+	Text = Minimap X Offset
+	Cvar = hud_mini_xoffset
+MINIY
+	Text = Minimap Y Offset
+	Cvar = hud_mini_yoffset
+WANTEDX
+	Text = Wanted X Offset
+	Cvar = hud_want_xoffset
+WANTEDY
+	Text = Wanted Y Offset
+	Cvar = hud_want_yoffset
+LAPEMBLEMX
+	Text = Lap Emblem X Offset
+	Cvar = hud_lapem_xoffset
+LAPEMBLEMY
+	Text = Lap Emblem Y Offset
+	Cvar = hud_lapem_yoffset
+TIMERSX
+	Text = Item Timers X Offset
+	Cvar = hud_timers_xoffset
+TIMERSY
+	Text = Item Timers Y Offset
+	Cvar = hud_timers_yoffset
+DRAFTX
+	Text = Drafting X Offset
+	Cvar = hud_draft_xoffset
+DRAFTY
+	Text = Drafting Y Offset
+	Cvar = hud_draft_yoffset
+STLVX
+	Text = Stats and Lives X Offset
+	Cvar = hud_lives_xoffset
+STLVY
+	Text = Stats and Lives Y Offset
+	Cvar = hud_lives_yoffset
 
+Menu OP_HUD
+HeaderPic = M_HUD
+Panels
+MAIN : OP_HUD
+	X = 30
+	Y = 40
+
+Menu OP_CHAT
+HeaderPic = M_HUD
+Panels
+MAIN : OP_CHAT
+	X = 30
+	Y = 40
 
 Menu OP_GAMEHUD
-X = 30
-Y = 30
-LineHeight = 10
-ScrollHeight = 144
 HeaderPic = M_HUD
-MenuItem MINIMAPHEAD
-Style = header
-Text = Minimap
-
-MenuItem MINIVISI
-Text = Minimap Visibility
-Tooltip = How translucent is the minimap?
-Slider = kartminimap
-
-MenuItem MININAMETAGS
-Text = Minimap Nametags
-Tooltip = Show the names of players on the minimap.
-Cvar = showminimapnames
-
-MenuItem MINIANGLE
-Text = Minimap Angle
-Tooltip = Show the angle of the current player on the minimap.
-Cvar = showminimapangle
-
-MenuItem MINIFINISHED
-Text = Finished Minimap Players
-Tooltip = Show finished players on the minimap.
-Cvar = showfinishedplayers
-
-MenuItem COLORHUDHEAD
-OfsY = 10
-Style = header
-Text = Color HUD
-
-MenuItem COLORIZE
-Text = Colorized HUD
-Tooltip = Enable colourized hud.
-Cvar = colorizedhud
-
-MenuItem COLORIZECOLOR
-Text = Colorized HUD Color
-Tooltip = The HUD color to use when colourized HUD is enabled.
-Cvar = colorizedhudcolor
-
-MenuItem COLORIZEITEMBOX
-Text = Colorized Itembox
-Tooltip = Enable the colourized itembox when colourized HUD is enabled.
-Cvar = colorizeditembox
-
-MenuItem DARKITEMBOX
-Text = Darken Itembox
-Tooltip = Darken the itembox when certain items are inside it.
-Cvar = darkitembox
-
-MenuItem NAMETAGHEAD
-OfsY = 10
-Style = header
-Text = Nametags
-
-MenuItem NAMETAGS
-Text = Nametags
-Tooltip = Show the name of players online.
-Cvar = seenames
-
-MenuItem SPEEDOMETERHEAD
-OfsY = 10
-Style = header
-Text = Speedometer
-
-MenuItem SPEEDOMETER
-Text = Speedometer Display
-Tooltip = Display the current speed on the screen.
-Cvar = kartdisplayspeed
-
-MenuItem SPEEDSTYLE
-Text = Speedometer Style
-Tooltip = Change the visual style of the speedometer.
-Cvar = newspeedometer
-
-MenuItem DRIFTGAUGEHEAD
-OfsY = 10
-Style = header
-Text = Drift Gauge
-
-MenuItem DRIFTGAUGE
-Text = Drift Gauge
-Tooltip = Display how much drift you have.
-Cvar = kartdriftgauge
-
-MenuItem DRIFTGAUGEOFS
-Text = Drift Gauge Offset
-Tooltip = Adjust Drift Gauge offset.
-Cvar = kartdriftgaugeoffset
-
-MenuItem MISCHEAD
-OfsY = 10
-Style = header
-Text = Misc
-
-MenuItem SHOWINPUT
-Text = Input Display
-Tooltip = Show player inputs.
-Cvar = showinput
-
-MenuItem SHOWTIMER
-Text = Item Timers
-Tooltip = Show duration of boosts.
-Cvar = itemtimers
-
-MenuItem SHOWDRAFT
-Text = Drafting Indicator
-Tooltip = Show progress of drafting.
-Cvar = draftindicator
-
-MenuItem CHECK
-Text = Show "CHECK"
-Tooltip = Show the "CHECK" graphic when some is behind the player.
-Cvar = kartcheck
-
-MenuItem STATS
-Text = Show Stats
-Tooltip = Show your character stats.
-Cvar = showstats
-
-MenuItem POSSCALE
-Text = Postion Scaling
-Tooltip = Make the position number smoothly scale.
-Cvar = smoothposition
-
-MenuItem FANCYJIN
-Text = Animated Roulette
-Tooltip = Make the roulette do a fancy animation.
-Cvar = fancyroulette
-
-MenuItem CSSSTYLE
-Text = Skin Select Menu
-Tooltip = Use a different style of Skin Select.
-Cvar = skinselectstyle
-
-MenuItem CSSSORT
-Text = Skin Select Sorting
-Tooltip = Changes the sorting order in the Grid Skin Select
-Cvar = skinselectsort
-
-MenuItem OFFSETS
-OfsY = 10
-Text = HUD Offsets...
-Tooltip = Adjust HUD offsets.
-Submenu = OP_OFFSET
-
+Panels
+MAIN : OP_GAMEHUD
+	X = 30
+	Y = 30
 
 Menu OP_OFFSET
-X = 30
-Y = 30
-LineHeight = 10
-ScrollHeight = 144
 HeaderPic = M_HUD
-MenuItem ITEMX
-Text = Itembox X Offset
-Cvar = hud_item_xoffset
-
-MenuItem ITEMY
-Text = Itembox Y Offset
-Cvar = hud_item_yoffset
-
-MenuItem TIMERX
-Text = Timer X Offset
-Cvar = hud_time_xoffset
-
-MenuItem TIMERY
-Text = Timer Y Offset
-Cvar = hud_time_yoffset
-
-MenuItem LAPSX
-Text = Laps X Offset
-Cvar = hud_laps_xoffset
-
-MenuItem LAPSY
-Text = Laps Y Offset
-Cvar = hud_laps_yoffset
-
-MenuItem RINGSX
-Text = Rings X Offset
-Cvar = hud_rings_xoffset
-
-MenuItem RINGSY
-Text = Rings Y Offset
-Cvar = hud_rings_yoffset
-
-MenuItem COUNTDOWNX
-Text = Ending Countdown X Offset
-Cvar = hud_dnft_xoffset
-
-MenuItem COUNTDOWNY
-Text = Ending Countdown Y Offset
-Cvar = hud_dnft_yoffset
-
-MenuItem SPEEDX
-Text = Speedometer X Offset
-Cvar = hud_speed_xoffset
-
-MenuItem SPEEDY
-Text = Speedometer Y Offset
-Cvar = hud_speed_yoffset
-
-MenuItem ACCESSX
-Text = Accessibility X Offset
-Cvar = hud_acce_xoffset
-
-MenuItem ACCESSY
-Text = Accessibility Y Offset
-Cvar = hud_acce_yoffset
-
-MenuItem POSITIONX
-Text = Position X Offset
-Cvar = hud_posi_xoffset
-
-MenuItem POSITIONY
-Text = Position Y Offset
-Cvar = hud_posi_yoffset
-
-MenuItem RANKINGX
-Text = Miniranking X Offset
-Cvar = hud_posi_xoffset
-
-MenuItem RANKINGY
-Text = Miniranking Y Offset
-Cvar = hud_posi_yoffset
-
-MenuItem STARTX
-Text = Start Countdown X Offset
-Cvar = hud_stcd_xoffset
-
-MenuItem STARTY
-Text = Start Countdown Y Offset
-Cvar = hud_stcd_yoffset
-
-MenuItem CHECKY
-Text = Check Y Offset
-Cvar = hud_chek_yoffset
-
-MenuItem MINIX
-Text = Minimap X Offset
-Cvar = hud_mini_xoffset
-
-MenuItem MINIY
-Text = Minimap Y Offset
-Cvar = hud_mini_yoffset
-
-MenuItem WANTEDX
-Text = Wanted X Offset
-Cvar = hud_want_xoffset
-
-MenuItem WANTEDY
-Text = Wanted Y Offset
-Cvar = hud_want_yoffset
-
-MenuItem LAPEMBLEMX
-Text = Lap Emblem X Offset
-Cvar = hud_lapem_xoffset
-
-MenuItem LAPEMBLEMY
-Text = Lap Emblem Y Offset
-Cvar = hud_lapem_yoffset
-
-MenuItem TIMERSX
-Text = Item Timers X Offset
-Cvar = hud_timers_xoffset
-
-MenuItem TIMERSY
-Text = Item Timers Y Offset
-Cvar = hud_timers_yoffset
-
-MenuItem DRAFTX
-Text = Drafting X Offset
-Cvar = hud_draft_xoffset
-
-MenuItem DRAFTY
-Text = Drafting Y Offset
-Cvar = hud_draft_yoffset
-
-MenuItem STLVX
-Text = Stats and Lives X Offset
-Cvar = hud_lives_xoffset
-
-MenuItem STLVY
-Text = Stats and Lives Y Offset
-Cvar = hud_lives_yoffset
+Panels
+MAIN : OP_OFFSET
+	X = 30
+	Y = 30

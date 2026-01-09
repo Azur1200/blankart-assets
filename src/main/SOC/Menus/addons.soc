@@ -1,7 +1,11 @@
-Menu AD_MAIN
-X = 50
-Y = 28
+MenuPanel AD_MAIN
 KeyHandler = MR_HandleAddons
 DrawRoutine = MD_DrawAddons
+
+Menu AD_MAIN
 EnterRoutine = MR_Addons
 QuitRoutine = MR_QuitAddons
+Panels
+MAIN : AD_MAIN
+	X = 50
+	Y = 28

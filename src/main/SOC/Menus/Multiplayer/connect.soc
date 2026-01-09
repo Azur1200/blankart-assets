@@ -1,66 +1,58 @@
-Menu MP_CONNECT
-X = 27
-Y = 24
-LineHeight = 12
-HeaderPic = M_MULTI
+MenuPanel MP_CONNECT
 DrawRoutine = MD_DrawConnectMenu
+LineHeight = 12
+Items
+SORTING
+	Y = 4
+	Text = Sort By
+	Cvar = serversort
+PAGE
+	Y = 12
+	Text = Page
+	Cvar = dummyserverpage
+REFRESH
+	Y = 20
+	Text = Refresh
+	Call = MR_Refresh
+LINE1
+	Y = 36
+	Argument = 0
+	Call = MR_Connect
+LINE2
+	Argument = 1
+	Call = MR_Connect
+LINE3
+	Argument = 2
+	Call = MR_Connect
+LINE4
+	Argument = 3
+	Call = MR_Connect
+LINE5
+	Argument = 4
+	Call = MR_Connect
+LINE6
+	Argument = 5
+	Call = MR_Connect
+LINE7
+	Argument = 6
+	Call = MR_Connect
+LINE8
+	Argument = 7
+	Call = MR_Connect
+LINE9
+	Argument = 8
+	Call = MR_Connect
+LINE10
+	Argument = 9
+	Call = MR_Connect
+LINEMAX
+	Argument = 10
+	Call = MR_Connect
+
+Menu MP_CONNECT
+HeaderPic = M_MULTI
 QuitRoutine = MR_CancelConnect
-MenuItem SORTING
-Y = 4
-Text = Sort By
-Cvar = serversort
-
-MenuItem PAGE
-Y = 12
-Text = Page
-Cvar = dummyserverpage
-
-MenuItem REFRESH
-Y = 20
-Text = Refresh
-Call = MR_Refresh
-
-MenuItem LINE1
-Y = 36
-Argument = 0
-Call = MR_Connect
-
-MenuItem LINE2
-Argument = 1
-Call = MR_Connect
-
-MenuItem LINE3
-Argument = 2
-Call = MR_Connect
-
-MenuItem LINE4
-Argument = 3
-Call = MR_Connect
-
-MenuItem LINE5
-Argument = 4
-Call = MR_Connect
-
-MenuItem LINE6
-Argument = 5
-Call = MR_Connect
-
-MenuItem LINE7
-Argument = 6
-Call = MR_Connect
-
-MenuItem LINE8
-Argument = 7
-Call = MR_Connect
-
-MenuItem LINE9
-Argument = 8
-Call = MR_Connect
-
-MenuItem LINE10
-Argument = 9
-Call = MR_Connect
-
-MenuItem LINEMAX
-Argument = 10
-Call = MR_Connect
+Panels
+MAIN : MP_CONNECT
+	X = 27
+	Y = 24

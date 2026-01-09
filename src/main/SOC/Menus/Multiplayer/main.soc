@@ -1,61 +1,57 @@
-Menu MP_MAIN
-X = 42
-Y = 30
-HeaderPic = M_MULTI
+MenuPanel MP_MAIN
 DrawRoutine = MD_DrawMPMainMenu
+Items
+PLAYERSHEADER
+	Style = header
+	Text = Players
+LOCALPLAYERS
+	OfsY = 2
+	Text = Number of local players
+	Tooltip = Number of splitscreen players.
+	Cvar = splitplayers
+PLAYERSETUP
+	Text = Player setup...
+	Cvar = dummymultiplayer
+	Tooltip = Player setup for selected player.
+	SubMenu = MN_MP_PLAYERSETUP
+HOSTHEADER
+	OfsY = 50
+	Style = header
+	Text = Host a game
+STARTSERVER
+	OfsY = 2
+	Text = Internet/LAN...
+	Patch = (2-16 players)
+	Tooltip = Host a online server.
+	SubMenu = MP_SERVER
+OFFLINESERVER
+	Text = Offline...
+	Patch = (2-4 players)
+	Tooltip = Host a local server.
+	SubMenu = MP_SPLITSCREEN
+JOINHEADER
+	OfsY = 6
+	Style = header
+	Text = Join a game
+BROWSER
+	OfsY = 2
+	Text = Internet server browser...
+	Tooltip = Browse the master server.
+	Call = MR_ConnectMenuModChecks
+CONNECTLASTSERVER
+	Text = Join last server...
+	Tooltip = Connect to the last connected server.
+	Call = MR_ConnectLastServer
+CONNECTIP
+	Text = Specify IPv4 address:
+	Cvar = dummyip
+	Tooltip = Connect to a IPv4 address.
+	Call = MR_ConnectIP
+
+Menu MP_MAIN
+HeaderPic = M_MULTI
 QuitRoutine = MR_CancelConnect
-MenuItem PLAYERSHEADER
-Style = header
-Text = Players
-
-MenuItem LOCALPLAYERS
-OfsY = 2
-Text = Number of local players
-Tooltip = Number of splitscreen players.
-Cvar = splitplayers
-
-MenuItem PLAYERSETUP
-Text = Player setup...
-Cvar = dummymultiplayer
-Tooltip = Player setup for selected player.
-SubMenu = MN_MP_PLAYERSETUP
-
-MenuItem HOSTHEADER
-OfsY = 50
-Style = header
-Text = Host a game
-
-MenuItem STARTSERVER
-OfsY = 2
-Text = Internet/LAN...
-Patch = (2-16 players)
-Tooltip = Host a online server.
-SubMenu = MP_SERVER
-
-MenuItem OFFLINESERVER
-Text = Offline...
-Patch = (2-4 players)
-Tooltip = Host a local server.
-SubMenu = MP_SPLITSCREEN
-
-MenuItem JOINHEADER
-OfsY = 6
-Style = header
-Text = Join a game
-
-MenuItem BROWSER
-OfsY = 2
-Text = Internet server browser...
-Tooltip = Browse the master server.
-Call = MR_ConnectMenuModChecks
-
-Menuitem CONNECTLASTSERVER
-Text = Join last server...
-Tooltip = Connect to the last connected server.
-Call = MR_ConnectLastServer
-
-MenuItem CONNECTIP
-Text = Specify IPv4 address:
-Cvar = dummyip
-Tooltip = Connect to a IPv4 address.
-Call = MR_ConnectIP
+Panels
+MAIN : MP_MAIN
+	X = 42
+	Y = 30

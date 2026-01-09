@@ -1,3 +1,7 @@
+MenuPanel MISC_REPLAYHUT
+KeyHandler = MR_HandleReplayHutList
+DrawRoutine = MD_DrawReplayHut
+
 Menu MISC_REPLAYHUT
 Music = replst
 BackgroundName = SRB2BACK
@@ -6,34 +10,35 @@ ScrollYSpeed = 0
 FadeStrength = 1
 EnterWipe = 0
 ExitWipe = 0
-X = 30
-Y = 80
-KeyHandler = MR_HandleReplayHutList
-DrawRoutine = MD_DrawReplayHut
 EnterRoutine = MR_ReplayHut
 QuitRoutine = MR_QuitReplayHut
+Panels
+MAIN : MISC_REPLAYHUT
+	X = 30
+	Y = 80
 
+MenuPanel MISC_REPLAYSTART
+DrawRoutine = MD_DrawReplayStartMenu
+Items
+LOADWATCH
+	Y = 0
+	Text = Load Addons and Watch
+	Call = MR_HutStartReplay
+NOLOADWATCH
+	Y = 10
+	Text = Watch Without Addons
+	Call = MR_HutStartReplay
+WATCH
+	Y = 10
+	Text = Watch Replay
+	Call = MR_HutStartReplay
+BACK
+	Y = 30
+	Text = Back
+	Call = MR_GoBack
 
 Menu MISC_REPLAYSTART
-X = 30
-Y = 90
-DrawRoutine = MD_DrawReplayStartMenu
-MenuItem LOADWATCH
-Y = 0
-Text = Load Addons and Watch
-Call = MR_HutStartReplay
-
-MenuItem NOLOADWATCH
-Y = 10
-Text = Watch Without Addons
-Call = MR_HutStartReplay
-
-MenuItem WATCH
-Y = 10
-Text = Watch Replay
-Call = MR_HutStartReplay
-
-MenuItem BACK
-Y = 30
-Text = Back
-Call = MR_GoBack
+Panels
+MAIN : MISC_REPLAYSTART
+	X = 30
+	Y = 90

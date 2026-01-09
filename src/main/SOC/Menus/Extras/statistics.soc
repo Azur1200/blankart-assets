@@ -1,7 +1,11 @@
-Menu SP_LEVELSTATS
-X = 280
-Y = 185
-HeaderPic = M_STATS
+MenuPanel SP_LEVELSTATS
 KeyHandler = MR_HandleLevelStats
 DrawRoutine = MD_DrawLevelStats
+
+Menu SP_LEVELSTATS
+HeaderPic = M_STATS
 EnterRoutine = MR_Statistics
+Panels
+MAIN : SP_LEVELSTATS
+	X = 280
+	Y = 185

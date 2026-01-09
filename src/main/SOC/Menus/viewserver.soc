@@ -1,89 +1,80 @@
-Menu VIEWSERVER
-X = 0
-Y = 0
-EnterRoutine = MR_EnterViewServer
+MenuPanel VIEWSERVER
 DrawRoutine = MD_DrawViewServer
-QuitRoutine = MR_QuitViewServer
 KeyHandler = MR_HandleViewServer
-MenuItem TOPBOX
-X = 8
-Y = 16
-Style = fill
-Patch = 304x54,159
+Items
+TOPBOX
+	X = 8
+	Y = 16
+	Style = fill
+	Patch = 304x54,159
+MIDBOX
+	X = 8
+	Y = 72
+	Style = fill
+	Patch = 304x112,159
+BOTBOX
+	X = 8
+	Y = BASEVIDHEIGHT - 14
+	Style = fill
+	Patch = 304x13,159
+Thumbnail
+	X = 10
+	Y = 18
+	Style = mapthumbnail
+ServerName
+	X = 92
+	Y = 18
+	Style = thin2
+ServerPing
+	X = 92
+	Y = 28
+	Style = thin2
+ServerMap
+	X = 92
+	Y = 38
+	Style = thin2
+	Text = ServerMap
+ServerGametype
+	X = 92
+	Y = 48
+	Style = thin2
+ServerAddon
+	X = 92
+	Y = 58
+	Style = thin2-recommendedhighlight
+ServerDedicated
+	X = 310
+	Y = 58
+	Style = thin2-right-recommendedhighlight
+ServerCheats
+	X = 310
+	Y = 48
+	Style = thin2-right-warninghighlight
+EXITBUTTON
+	X = 16
+	Y = BASEVIDHEIGHT - 11
+	Style = thin2
+	Text = [^2ESC^0] = Return
+TOGGLEBUTTON1
+	X = BASEVIDWIDTH/2
+	Y = BASEVIDHEIGHT - 11
+	Style = thin2-center
+	Text = [^2SPACE^0] = Players
+TOGGLEBUTTON2
+	X = BASEVIDWIDTH/2
+	Y = BASEVIDHEIGHT - 11
+	Style = thin2-center
+	Text = [^2SPACE^0] = Addons
+JOINBUTTON
+	X = BASEVIDWIDTH - 12
+	Y = BASEVIDHEIGHT - 11
+	Style = thin2-right
+	Text = [^2ENTER^0] = Join
 
-MenuItem MIDBOX
-X = 8
-Y = 72
-Style = fill
-Patch = 304x112,159
-
-MenuItem BOTBOX
-X = 8
-Y = BASEVIDHEIGHT - 14
-Style = fill
-Patch = 304x13,159
-
-MenuItem Thumbnail
-X = 10
-Y = 18
-Style = mapthumbnail
-
-MenuItem ServerName
-X = 92
-Y = 18
-Style = thin2
-
-MenuItem ServerPing
-X = 92
-Y = 28
-Style = thin2
-
-MenuItem ServerMap
-X = 92
-Y = 38
-Style = thin2
-Text = ServerMap
-
-MenuItem ServerGametype
-X = 92
-Y = 48
-Style = thin2
-
-MenuItem ServerAddon
-X = 92
-Y = 58
-Style = thin2-recommendedhighlight
-
-MenuItem ServerDedicated
-X = 310
-Y = 58
-Style = thin2-right-recommendedhighlight
-
-MenuItem ServerCheats
-X = 310
-Y = 48
-Style = thin2-right-warninghighlight
-
-MenuItem EXITBUTTON
-X = 16
-Y = BASEVIDHEIGHT - 11
-Style = thin2
-Text = [^2ESC^0] = Return
-
-MenuItem TOGGLEBUTTON1
-X = BASEVIDWIDTH/2
-Y = BASEVIDHEIGHT - 11
-Style = thin2-center
-Text = [^2SPACE^0] = Players
-
-MenuItem TOGGLEBUTTON2
-X = BASEVIDWIDTH/2
-Y = BASEVIDHEIGHT - 11
-Style = thin2-center
-Text = [^2SPACE^0] = Addons
-
-MenuItem JOINBUTTON
-X = BASEVIDWIDTH - 12
-Y = BASEVIDHEIGHT - 11
-Style = thin2-right
-Text = [^2ENTER^0] = Join
+Menu VIEWSERVER
+EnterRoutine = MR_EnterViewServer
+QuitRoutine = MR_QuitViewServer
+Panels
+MAIN : VIEWSERVER
+	X = 0
+	Y = 0

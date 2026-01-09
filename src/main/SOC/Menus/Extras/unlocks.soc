@@ -1,8 +1,13 @@
-Menu SR_UNLOCKCHECKLIST
-X = 280
-Y = 185
+MenuPanel SR_UNLOCKCHECKLIST
 DrawRoutine = MD_DrawCheckList
-MenuItem NEXT
-Y = 192
-Text = NEXT
-Call = MR_GoBack
+Items
+NEXT
+	Y = 192
+	Text = NEXT
+	Call = MR_GoBack
+
+Menu SR_UNLOCKCHECKLIST
+Panels
+MAIN : SR_UNLOCKCHECKLIST
+	X = 280
+	Y = 185

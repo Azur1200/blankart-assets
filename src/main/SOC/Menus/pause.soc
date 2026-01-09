@@ -1,135 +1,122 @@
-Menu MAPAUSE
-X = 40
-Y = 72 + 48
-LineHeight = 8
-MenuItem CONTINUE
-Text = Continue
-Call = MR_SelectableClearMenus
+MenuPanel MAPAUSE
+Items
+CONTINUE
+	Text = Continue
+	Call = MR_SelectableClearMenus
+RETRY
+	Text = Retry
+	Call = MR_ModeAttackRetry
+ABORT
+	Text = Abort
+	Call = MR_ModeAttackEndGame
 
-MenuItem RETRY
-Text = Retry
-Call = MR_ModeAttackRetry
+MenuPanel SPAUSE
+Items
+CONTINUE
+	Text = Continue
+	Call = MR_SelectableClearMenus
+RETRY
+	Text = Retry
+	Call = MR_Retry
+OPTIONS
+	Text = Options
+	SubMenu = OP_MAIN
+ENDGAME
+	OfsY = 8
+	Text = Return to Title
+	Call = MR_EndGame
+QUITGAME
+	Text = Quit Game
+	Call = MR_QuitSRB2
 
-MenuItem ABORT
-Text = Abort
-Call = MR_ModeAttackEndGame
-
+MenuPanel MPAUSE
+Items
+ADDONS
+	Text = Addons...
+	SubMenu = AD_MAIN
+MAPCHANGE
+	OfsY = 8
+	Text = Switch Map...
+	Argument = LLM_CREATESERVER
+	SubMenu = CHANGELEVEL
+SCRAMBLE
+	Text = Scramble Teams...
+	SubMenu = SCRAMBLETEAM
+DISCORDREQUESTS
+	Text = Ask To Join Requests...
+	SubMenu = MISC_DISCORDREQUESTS
+CONTINUE
+	OfsY = 8
+	Text = Continue
+	Call = MR_SelectableClearMenus
+# splitscreen
+SETUP1
+	Text = P1 Setup...
+	Argument = 0
+	SubMenu = MP_PLAYERSETUP
+# splitscreen
+SETUP2
+	Text = P2 Setup...
+	Argument = 1
+	SubMenu = MP_PLAYERSETUP
+# splitscreen
+SETUP3
+	Text = P3 Setup...
+	Argument = 2
+	SubMenu = MP_PLAYERSETUP
+# splitscreen
+SETUP4
+	Text = P4 Setup...
+	Argument = 3
+	SubMenu = MP_PLAYERSETUP
+# alone
+SPECTATE
+	Text = Spectate
+	Call = MR_ConfirmSpectate
+# alone
+ENTER
+	Text = Enter Game
+	Call = MR_ConfirmEnterGame
+# alone
+CANCELJOIN
+	Text = Cancel Join
+	Call = MR_ConfirmSpectate
+TEAMCHANGE
+	Text = Switch Team...
+	SubMenu = CHANGETEAM
+SPECTATECHANGE
+	Text = Enter/Spectate...
+	SubMenu = CHANGESPECTATE
+# alone
+PLAYERSETUP
+	Text = Player Setup...
+	Argument = 0
+	SubMenu = MP_PLAYERSETUP
+OPTIONS
+	Text = Options
+	SubMenu = OP_MAIN
+ENDGAME
+	OfsY = 8
+	Text = Return to Title
+	Call = MR_EndGame
+QUITGAME
+	Text = Quit Game
+	Call = MR_QuitSRB2
 
 Menu SPAUSE
-X = 40
-Y = 72 + 48
-LineHeight = 8
-MenuItem CONTINUE
-Text = Continue
-Call = MR_SelectableClearMenus
+Panels
+MAIN : SPAUSE
+	X = 40
+	Y = 72 + 48
 
-MenuItem RETRY
-Text = Retry
-Call = MR_Retry
-
-MenuItem OPTIONS
-Text = Options
-SubMenu = OP_MAIN
-
-MenuItem ENDGAME
-OfsY = 8
-Text = Return to Title
-Call = MR_EndGame
-
-MenuItem QUITGAME
-Text = Quit Game
-Call = MR_QuitSRB2
-
+Menu MAPAUSE
+Panels
+MAIN : MAPAUSE
+	X = 40
+	Y = 72 + 48
 
 Menu MPAUSE
-X = 40
-Y = 72
-LineHeight = 8
-MenuItem ADDONS
-Text = Addons...
-SubMenu = AD_MAIN
-
-MenuItem MAPCHANGE
-OfsY = 8
-Text = Switch Map...
-Argument = LLM_CREATESERVER
-SubMenu = CHANGELEVEL
-
-MenuItem SCRAMBLE
-Text = Scramble Teams...
-SubMenu = SCRAMBLETEAM
-
-MenuItem DISCORDREQUESTS
-Text = Ask To Join Requests...
-SubMenu = MISC_DISCORDREQUESTS
-
-MenuItem CONTINUE
-OfsY = 8
-Text = Continue
-Call = MR_SelectableClearMenus
-
-# splitscreen
-MenuItem SETUP1
-Text = P1 Setup...
-Argument = 0
-SubMenu = MP_PLAYERSETUP
-
-# splitscreen
-MenuItem SETUP2
-Text = P2 Setup...
-Argument = 1
-SubMenu = MP_PLAYERSETUP
-
-# splitscreen
-MenuItem SETUP3
-Text = P3 Setup...
-Argument = 2
-SubMenu = MP_PLAYERSETUP
-
-# splitscreen
-MenuItem SETUP4
-Text = P4 Setup...
-Argument = 3
-SubMenu = MP_PLAYERSETUP
-
-# alone
-MenuItem SPECTATE
-Text = Spectate
-Call = MR_ConfirmSpectate
-
-# alone
-MenuItem ENTER
-Text = Enter Game
-Call = MR_ConfirmEnterGame
-
-# alone
-MenuItem CANCELJOIN
-Text = Cancel Join
-Call = MR_ConfirmSpectate
-
-MenuItem TEAMCHANGE
-Text = Switch Team...
-SubMenu = CHANGETEAM
-
-MenuItem SPECTATECHANGE
-Text = Enter/Spectate...
-SubMenu = CHANGESPECTATE
-
-# alone
-MenuItem PLAYERSETUP
-Text = Player Setup...
-Argument = 0
-SubMenu = MP_PLAYERSETUP
-
-MenuItem OPTIONS
-Text = Options
-SubMenu = OP_MAIN
-
-MenuItem ENDGAME
-OfsY = 8
-Text = Return to Title
-Call = MR_EndGame
-
-MenuItem QUITGAME
-Text = Quit Game
-Call = MR_QuitSRB2
+Panels
+MAIN : MPAUSE
+	X = 40
+	Y = 72

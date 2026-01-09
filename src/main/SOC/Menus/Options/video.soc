@@ -1,205 +1,189 @@
-Menu OP_VIDEO
-X = 30
-Y = 25
+MenuPanel OP_VIDEO
 LineHeight = 10
-HeaderPic = M_VIDEO
-MenuItem SETMODE
-Text = Set Resolution...
-Tooltip = Resolution game runs at.
-SubMenu = OP_VIDEOMODE
+Items
+SETMODE
+	Text = Set Resolution...
+	Tooltip = Resolution game runs at.
+	SubMenu = OP_VIDEOMODE
+FULLSCREEN
+	Text = Fullscreen
+	Tooltip = Enable fullscreen.
+	Cvar = fullscreen
+RENDERER
+	Text = Renderer
+	Tooltip = Renderer to run game with.
+	Cvar = renderer
+GAMMA
+	OfsY = 10
+	Text = Gamma
+	Tooltip = Gamma (brightness) of the game.
+	Slider = gamma
+SHOWFPS
+	Text = Show FPS
+	Tooltip = Show current game framerate.
+	Cvar = showfps
+VSYNC
+	Text = Vertical Sync
+	Tooltip = Sync game framerate to refresh rate of monitor.
+	Cvar = vid_wait
+FPSCAP
+	Text = FPS Cap
+	Tooltip = Set manual framerate cap.
+	Cvar = fpscap
+VISUAL
+	OfsY = 10
+	Text = Visual Effects...
+	Tooltip = Adjust Visual Graphic effects.
+	SubMenu = OP_VISUAL
+DRAWDIST
+	Text = Draw Distance
+	Tooltip = How far away objects are drawn.
+	Cvar = drawdist
+DRAWDISTPRECIP
+	Text = Weather Draw Distance
+	Tooltip = How far away weather is drawn.
+	Cvar = drawdist_precip
+SKYBOX
+	Text = Skyboxes
+	Tooltip = Toggle being able to see the sky.
+	Cvar = skybox
+SECBRIGHT
+	Text = Sector Brightness
+	Tooltip = Raises the minimum brightness for sectors.
+	Cvar = r_secbright
+PARALLEL
+	Text = Parallel Software
+	Tooltip = Run Software in parallel for performance boost.
+	Cvar = parallelsoftware
+OPENGL
+	Text = OpenGL Options...
+	Tooltip = Options for OpenGL renderer.
+	SubMenu = OP_OPENGL
 
-MenuItem FULLSCREEN
-Text = Fullscreen
-Tooltip = Enable fullscreen.
-Cvar = fullscreen
-
-MenuItem RENDERER
-Text = Renderer
-Tooltip = Renderer to run game with.
-Cvar = renderer
-
-MenuItem GAMMA
-OfsY = 10
-Text = Gamma
-Tooltip = Gamma (brightness) of the game.
-Slider = gamma
-
-MenuItem SHOWFPS
-Text = Show FPS
-Tooltip = Show current game framerate.
-Cvar = showfps
-
-MenuItem VSYNC
-Text = Vertical Sync
-Tooltip = Sync game framerate to refresh rate of monitor.
-Cvar = vid_wait
-
-MenuItem FPSCAP
-Text = FPS Cap
-Tooltip = Set manual framerate cap.
-Cvar = fpscap
-
-MenuItem VISUAL
-OfsY = 10
-Text = Visual Effects...
-Tooltip = Adjust Visual Graphic effects.
-SubMenu = OP_VISUAL
-
-MenuItem DRAWDIST
-Text = Draw Distance
-Tooltip = How far away objects are drawn.
-Cvar = drawdist
-
-MenuItem DRAWDISTPRECIP
-Text = Weather Draw Distance
-Tooltip = How far away weather is drawn.
-Cvar = drawdist_precip
-
-MenuItem SKYBOX
-Text = Skyboxes
-Tooltip = Toggle being able to see the sky.
-Cvar = skybox
-
-MenuItem SECBRIGHT
-Text = Sector Brightness
-Tooltip = Raises the minimum brightness for sectors.
-Cvar = r_secbright
-
-MenuItem PARALLEL
-Text = Parallel Software
-Tooltip = Run Software in parallel for performance boost.
-Cvar = parallelsoftware
-
-MenuItem OPENGL
-Text = OpenGL Options...
-Tooltip = Options for OpenGL renderer.
-SubMenu = OP_OPENGL
-
-
-Menu OP_VIDEOMODE
-X = 48
-Y = 26
-HeaderPic = M_VIDEO
+MenuPanel OP_VIDEOMODE
 KeyHandler = MR_HandleVideoMode
 DrawRoutine = MD_DrawVideoMode
-EnterRoutine = MR_VideoModeMenu
 
+MenuPanel OP_OPENGL
+LineHeight = 10
+Items
+MODELS
+	Text = 3D Models
+	Tooltip = Use 3D models.
+	Cvar = gr_models
+MODELINTERPOLATION
+	Text = Model Interpolation
+	Tooltip = Determines how models interpolate. Set to "Sometimes" for best results.
+	Cvar = gr_modelinterpolation
+MODELLIGHTING
+	Text = Model Lighting
+	Tooltip = Determines how models are lit. Set to "Off" for best results.
+	Cvar = gr_modellighting
+SHADERS
+	Text = Shaders
+	Tooltip = Graphical Shaders.
+	Cvar = gr_shaders
+PALRENDER
+	Text = Palette Rendering
+	Tooltip = Recreates the look of software mode.
+	Cvar = gr_paletteshader
+PALRENDERDEPTH
+	Text = Palette Depth
+	Tooltip = Change the bit depth of the Lookup Palette in Palette rendering mode.
+	Cvar = gr_palettedepth
+TEXTUREDEPTH
+	OfsY = 10
+	Text = Texture Quality
+	Tooltip = Bit-depth of textures.
+	Cvar = scr_depth
+FILTERING
+	Text = Texture Filter
+	Tooltip = Filter to use on textures.
+	Cvar = gr_filtermode
+ANISOTROPIC
+	Text = Anisotropic
+	Tooltip = Anisotropic filtering.
+	Cvar = gr_anisotropicmode
+BILLBOARDING
+	OfsY = 10
+	Text = Sprite Billboarding
+	Tooltip = Should sprites always face the camera?
+	Cvar = gr_spritebillboarding
+SHEARING
+	Text = Software Perspective
+	Tooltip = Recreates the look of software mode camera perspective.
+	Cvar = gr_shearing
+
+MenuPanel OP_VISUAL
+LineHeight = 10
+Items
+VHSPAUSE
+	Text = VHS Effect
+	Tooltip = Show a VHS-like effect when the game is paused or youre rewinding replays.
+	Cvar = vhspause
+SLOPEROLL
+	Text = Sprite Slope Tilt
+	Tooltip = Rotate sprites on slopes.
+	Cvar = spritesloperoll
+SLIPTILT
+	Text = Sliptide Tilt
+	Tooltip = Rotate player sprites during a spliptide.
+	Cvar = sliptidetilt
+SALTYHOP
+	Text = Visual Hopping
+	Tooltip = Do a visual-only hop during drifts.
+	Cvar = hardcodehop
+DRIFTJITTER
+	Text = Drift Jitter
+	Tooltip = Jitter sprites using new skin format during drifts.
+	Cvar = driftjitter
+DRIFTEFX
+	Text = Drift Effects
+	Tooltip = Toggle the drift boost effect.
+	Cvar = kartdriftefx
+SPARKPULSE
+	Text = Driftspark Pulse
+	Tooltip = Size of drift spark pulse.
+	Cvar = driftsparkpulse
+COLORFLAME
+	Text = Flame Stack Coloring
+	Tooltip = Change boost effect color based on sneaker stack count.
+	Cvar = kartstacking_colorflame
+SPLASH
+	Text = Watertrail Effects
+	Tooltip = Change the style for the water trail effect.
+	Cvar = kartsplashefx
+FOLLOW
+	Text = Hide Followers
+	Tooltip = Disable the visibility of Followers.
+	Cvar = hidefollowers
+
+Menu OP_VIDEO
+HeaderPic = M_VIDEO
+Panels
+MAIN : OP_VIDEO
+	X = 30
+	Y = 25
+
+Menu OP_VIDEOMODE
+HeaderPic = M_VIDEO
+EnterRoutine = MR_VideoModeMenu
+Panels
+MAIN : OP_VIDEOMODE
+	X = 48
+	Y = 26
 
 Menu OP_OPENGL
-X = 30
-Y = 40
-LineHeight = 10
 HeaderPic = M_VIDEO
 EnterRoutine = MR_OpenGLOptionsMenu
-MenuItem MODELS
-Text = 3D Models
-Tooltip = Use 3D models.
-Cvar = gr_models
-
-MenuItem MODELINTERPOLATION
-Text = Model Interpolation
-Tooltip = Determines how models interpolate. Set to "Sometimes" for best results.
-Cvar = gr_modelinterpolation
-
-MenuItem MODELLIGHTING
-Text = Model Lighting
-Tooltip = Determines how models are lit. Set to "Off" for best results.
-Cvar = gr_modellighting
-
-MenuItem SHADERS
-Text = Shaders
-Tooltip = Graphical Shaders.
-Cvar = gr_shaders
-
-MenuItem PALRENDER
-Text = Palette Rendering
-Tooltip = Recreates the look of software mode.
-Cvar = gr_paletteshader
-
-MenuItem PALRENDERDEPTH
-Text = Palette Depth
-Tooltip = Change the bit depth of the Lookup Palette in Palette rendering mode.
-Cvar = gr_palettedepth
-
-MenuItem TEXTUREDEPTH
-OfsY = 10
-Text = Texture Quality
-Tooltip = Bit-depth of textures.
-Cvar = scr_depth
-
-MenuItem FILTERING
-Text = Texture Filter
-Tooltip = Filter to use on textures.
-Cvar = gr_filtermode
-
-MenuItem ANISOTROPIC
-Text = Anisotropic
-Tooltip = Anisotropic filtering.
-Cvar = gr_anisotropicmode
-
-MenuItem BILLBOARDING
-OfsY = 10
-Text = Sprite Billboarding
-Tooltip = Should sprites always face the camera?
-Cvar = gr_spritebillboarding
-
-MenuItem SHEARING
-Text = Software Perspective
-Tooltip = Recreates the look of software mode camera perspective.
-Cvar = gr_shearing
-
+Panels
+MAIN : OP_OPENGL
+	X = 30
+	Y = 40
 
 Menu OP_VISUAL
-X = 60
-Y = 40
-LineHeight = 10
 HeaderPic = M_VIDEO
-MenuItem VHSPAUSE
-Text = VHS Effect
-Tooltip = Show a VHS-like effect when the game is paused or youre rewinding replays.
-Cvar = vhspause
-
-MenuItem SLOPEROLL
-Text = Sprite Slope Tilt
-Tooltip = Rotate sprites on slopes.
-Cvar = spritesloperoll
-
-MenuItem SLIPTILT
-Text = Sliptide Tilt
-Tooltip = Rotate player sprites during a spliptide.
-Cvar = sliptidetilt
-
-MenuItem SALTYHOP
-Text = Visual Hopping
-Tooltip = Do a visual-only hop during drifts.
-Cvar = hardcodehop
-
-MenuItem DRIFTJITTER
-Text = Drift Jitter
-Tooltip = Jitter sprites using new skin format during drifts.
-Cvar = driftjitter
-
-MenuItem DRIFTEFX
-Text = Drift Effects
-Tooltip = Toggle the drift boost effect.
-Cvar = kartdriftefx
-
-MenuItem SPARKPULSE
-Text = Driftspark Pulse
-Tooltip = Size of drift spark pulse.
-Cvar = driftsparkpulse
-
-MenuItem COLORFLAME
-Text = Flame Stack Coloring
-Tooltip = Change boost effect color based on sneaker stack count.
-Cvar = kartstacking_colorflame
-
-MenuItem SPLASH
-Text = Watertrail Effects
-Tooltip = Change the style for the water trail effect.
-Cvar = kartsplashefx
-
-MenuItem FOLLOW
-Text = Hide Followers
-Tooltip = Disable the visibility of Followers.
-Cvar = hidefollowers
+Panels
+MAIN : OP_VISUAL
+	X = 60
+	Y = 40

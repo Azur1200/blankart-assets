@@ -1,88 +1,80 @@
+MenuPanel PLAYBACK
+DrawRoutine = MD_DrawPlaybackMenu
+Items
+HIDE
+	X = 0
+	Text = Hide Menu (Esc)
+	Patch = M_PHIDE
+	Call = MR_SelectableClearMenus
+REWIND
+	X = 20
+	Text = Rewind ([)
+	Patch = M_PREW
+	Call = MR_PlaybackRewind
+PAUSE
+	X = 36
+	Text = Pause (\\)
+	Patch = M_PPAUSE
+	Call = MR_PlaybackPause
+FASTFORWARD
+	X = 52
+	Text = Fast-Forward (])
+	Patch = M_PFFWD
+	Call = MR_PlaybackFastForward
+REWINDFRAME
+	X = 20
+	Text = Backup Frame ([)
+	Patch = M_PSTEPB
+	Call = MR_PlaybackRewind
+RESUME
+	X = 36
+	Text = Resume
+	Patch = M_PRESUM
+	Call = MR_PlaybackPause
+ADVANCEFRAME
+	X = 52
+	Text = Advance Frame (])
+	Patch = M_PFADV
+	Call = MR_PlaybackAdvance
+NUMVIEWS
+	X = 72
+	Text = View Count (- and =)
+	Patch = M_PVIEWS
+	Arrows = MR_PlaybackSetViews
+VIEW1
+	X = 88
+	Text = Viewpoint (1)
+	Patch = M_PNVIEW
+	Arrows = MR_PlaybackAdjustView
+VIEW2
+	X = 104
+	Text = Viewpoint 2 (2)
+	Patch = M_PNVIEW
+	Arrows = MR_PlaybackAdjustView
+VIEW3
+	X = 120
+	Text = Viewpoint 3 (3)
+	Patch = M_PNVIEW
+	Arrows = MR_PlaybackAdjustView
+VIEW4
+	X = 136
+	Text = Viewpoint 4 (4)
+	Patch = M_PNVIEW
+	Arrows = MR_PlaybackAdjustView
+FREECAM
+	X = 156
+	Text = Toggle Free Camera (')
+	Patch = M_PVIEWS
+	Call = MR_PlaybackToggleFreecam
+QUIT
+	X = 172
+	Text = Stop Playback
+	Patch = M_PEXIT
+	Call = MR_PlaybackQuit
+
 Menu PLAYBACK
 FadeStrength = 1
-X = 72
-Y = 2
-DrawRoutine = MD_DrawPlaybackMenu
-MenuItem HIDE
-X = 0
-Text = Hide Menu (Esc)
-Patch = M_PHIDE
-Call = MR_SelectableClearMenus
-
-MenuItem REWIND
-X = 20
-Text = Rewind ([)
-Patch = M_PREW
-Call = MR_PlaybackRewind
-
-MenuItem PAUSE
-X = 36
-Text = Pause (\\)
-Patch = M_PPAUSE
-Call = MR_PlaybackPause
-
-MenuItem FASTFORWARD
-X = 52
-Text = Fast-Forward (])
-Patch = M_PFFWD
-Call = MR_PlaybackFastForward
-
-MenuItem REWINDFRAME
-X = 20
-Text = Backup Frame ([)
-Patch = M_PSTEPB
-Call = MR_PlaybackRewind
-
-MenuItem RESUME
-X = 36
-Text = Resume
-Patch = M_PRESUM
-Call = MR_PlaybackPause
-
-MenuItem ADVANCEFRAME
-X = 52
-Text = Advance Frame (])
-Patch = M_PFADV
-Call = MR_PlaybackAdvance
-
-MenuItem NUMVIEWS
-X = 72
-Text = View Count (- and =)
-Patch = M_PVIEWS
-Arrows = MR_PlaybackSetViews
-
-MenuItem VIEW1
-X = 88
-Text = Viewpoint (1)
-Patch = M_PNVIEW
-Arrows = MR_PlaybackAdjustView
-
-MenuItem VIEW2
-X = 104
-Text = Viewpoint 2 (2)
-Patch = M_PNVIEW
-Arrows = MR_PlaybackAdjustView
-
-MenuItem VIEW3
-X = 120
-Text = Viewpoint 3 (3)
-Patch = M_PNVIEW
-Arrows = MR_PlaybackAdjustView
-
-MenuItem VIEW4
-X = 136
-Text = Viewpoint 4 (4)
-Patch = M_PNVIEW
-Arrows = MR_PlaybackAdjustView
-
-MenuItem FREECAM
-X = 156
-Text = Toggle Free Camera (')
-Patch = M_PVIEWS
-Call = MR_PlaybackToggleFreecam
-
-MenuItem QUIT
-X = 172
-Text = Stop Playback
-Patch = M_PEXIT
-Call = MR_PlaybackQuit
+Panels
+MAIN : PLAYBACK
+	X = 72
+	Y = 2
