@@ -1,6 +1,97 @@
-MenuPanel MISC_REPLAYHUT
+MenuPanel REPLAYHUT_DEMOLIST
+Initializer = MP_PrepReplayList
 KeyHandler = MR_HandleReplayHutList
 DrawRoutine = MD_DrawReplayHut
+ScrollHeight = 110
+
+MenuPanel REPLAYHUT_DEMOINFO_BG
+Items
+BACKGROUND
+	Style = fill
+	Patch = 300x60,159
+CENTERTEXT
+	X = 150
+	Y = 30
+	Style = center
+
+MenuPanel REPLAYHUT_DEMOINFO_FG
+DrawRoutine = MD_DrawReplayHutReplayInfo
+Items
+OUTDATED
+	X = 7
+	Y = 54
+	Style = thin-highlight-translucent
+	Text = Recorded on an outdated version.
+THUMBNAIL
+	X = 5
+	Y = 5
+	Style = mapthumbnail
+MAPNAME
+	X = 90
+	Y = 5
+NUMLAPS
+	X = 90
+	Y = 14
+	Style = thin
+GAMETYPE
+	X = 90
+	Y = 25
+NOSTANDINGS
+	X = 90
+	Y = 44
+	Style = translucent
+	Text = No standings available.
+WINNER
+	X = 90
+	Y = 34
+	Style = thin-highlight
+	Text = Winner
+WINNERNAME
+	X = 128
+	Y = 35
+SCORENAME
+	X = 90
+	Y = 44
+	Style = thin-highlight
+SCORE
+	X = 128
+	Y = 45
+FACE
+	X = 295
+	Y = 25
+	Style = patch-right
+
+MenuPanel REPLAYHUT_RANKINGS
+
+MenuPanel REPLAYHUT_ADDONWARN
+Items
+WARNING
+	Style = small
+
+MenuPanel REPLAYHUT_DEMOSTART
+Initializer = MP_ReplayHutStart
+DrawRoutine = MD_DrawReplayStartMenu
+Items
+DEMOTITLE
+	TempOffset = True
+	OfsX = -20
+	Style = highlight
+LOADWATCH
+	Y = 18
+	Text = Load Addons and Watch
+	Call = MR_HutStartReplay
+NOLOADWATCH
+	Y = 28
+	Text = Watch Without Addons
+	Call = MR_HutStartReplay
+WATCH
+	Y = 28
+	Text = Watch Replay
+	Call = MR_HutStartReplay
+BACK
+	Y = 48
+	Text = Back
+	Call = MR_GoBack
 
 Menu MISC_REPLAYHUT
 Music = replst
@@ -13,32 +104,38 @@ ExitWipe = 0
 EnterRoutine = MR_ReplayHut
 QuitRoutine = MR_QuitReplayHut
 Panels
-MAIN : MISC_REPLAYHUT
+DEMOLIST : REPLAYHUT_DEMOLIST
 	X = 30
 	Y = 80
-
-MenuPanel MISC_REPLAYSTART
-DrawRoutine = MD_DrawReplayStartMenu
-Items
-LOADWATCH
-	Y = 0
-	Text = Load Addons and Watch
-	Call = MR_HutStartReplay
-NOLOADWATCH
+	Flags = V_SNAPTOTOP
+DEMOINFOBG : REPLAYHUT_DEMOINFO_BG
+	X = 10
 	Y = 10
-	Text = Watch Without Addons
-	Call = MR_HutStartReplay
-WATCH
+	Flags = V_SNAPTOTOP
+DEMOINFOFG : REPLAYHUT_DEMOINFO_FG
+	X = 10
 	Y = 10
-	Text = Watch Replay
-	Call = MR_HutStartReplay
-BACK
-	Y = 30
-	Text = Back
-	Call = MR_GoBack
+	Flags = V_SNAPTOTOP
 
 Menu MISC_REPLAYSTART
 Panels
-MAIN : MISC_REPLAYSTART
+MAIN : REPLAYHUT_DEMOSTART
 	X = 30
-	Y = 90
+	Y = 72
+	Flags = V_SNAPTOTOP
+RANKINGS : REPLAYHUT_RANKINGS
+	X = BASEVIDWIDTH-100
+	Y = 62
+	Flags = V_SNAPTOTOP
+WARNING : REPLAYHUT_ADDONWARN
+	X = 4
+	Y = BASEVIDHEIGHT-14
+	Flags = V_SNAPTOBOTTOM|V_SNAPTOLEFT
+DEMOINFOBG : REPLAYHUT_DEMOINFO_BG
+	X = 10
+	Y = 10
+	Flags = V_SNAPTOTOP
+DEMOINFOFG : REPLAYHUT_DEMOINFO_FG
+	X = 10
+	Y = 10
+	Flags = V_SNAPTOTOP
