@@ -59,7 +59,11 @@ SCORE
 FACE
 	X = 295
 	Y = 25
-	Style = patch-right
+	Style = skin-right
+DEMOTITLE
+	OfsX = -295 # autolayout...
+	Y = 62
+	Style = highlight
 
 MenuPanel REPLAYHUT_RANKINGS
 
@@ -72,24 +76,20 @@ MenuPanel REPLAYHUT_DEMOSTART
 Initializer = MP_ReplayHutStart
 DrawRoutine = MD_DrawReplayStartMenu
 Items
-DEMOTITLE
-	TempOffset = True
-	OfsX = -20
-	Style = highlight
 LOADWATCH
-	Y = 18
+	Y = 0
 	Text = Load Addons and Watch
 	Call = MR_HutStartReplay
 NOLOADWATCH
-	Y = 28
+	Y = 10
 	Text = Watch Without Addons
 	Call = MR_HutStartReplay
 WATCH
-	Y = 28
+	Y = 10
 	Text = Watch Replay
 	Call = MR_HutStartReplay
 BACK
-	Y = 48
+	Y = 30
 	Text = Back
 	Call = MR_GoBack
 
@@ -107,7 +107,7 @@ Panels
 DEMOLIST : REPLAYHUT_DEMOLIST
 	X = 30
 	Y = 80
-	Flags = V_SNAPTOTOP
+	Flags = V_SNAPTOTOP|V_SNAPTOLEFT|V_ALLOWLOWERCASE
 DEMOINFOBG : REPLAYHUT_DEMOINFO_BG
 	X = 10
 	Y = 10
@@ -115,22 +115,21 @@ DEMOINFOBG : REPLAYHUT_DEMOINFO_BG
 DEMOINFOFG : REPLAYHUT_DEMOINFO_FG
 	X = 10
 	Y = 10
-	Flags = V_SNAPTOTOP
+	Flags = V_SNAPTOTOP|V_ALLOWLOWERCASE
 
 Menu MISC_REPLAYSTART
 Panels
 MAIN : REPLAYHUT_DEMOSTART
 	X = 30
-	Y = 72
-	Flags = V_SNAPTOTOP
+	Y = 90
 RANKINGS : REPLAYHUT_RANKINGS
 	X = BASEVIDWIDTH-100
 	Y = 62
-	Flags = V_SNAPTOTOP
+	Flags = V_SNAPTOTOP|V_ALLOWLOWERCASE
 WARNING : REPLAYHUT_ADDONWARN
 	X = 4
 	Y = BASEVIDHEIGHT-14
-	Flags = V_SNAPTOBOTTOM|V_SNAPTOLEFT
+	Flags = V_SNAPTOBOTTOM|V_SNAPTOLEFT|V_ALLOWLOWERCASE
 DEMOINFOBG : REPLAYHUT_DEMOINFO_BG
 	X = 10
 	Y = 10
@@ -138,4 +137,4 @@ DEMOINFOBG : REPLAYHUT_DEMOINFO_BG
 DEMOINFOFG : REPLAYHUT_DEMOINFO_FG
 	X = 10
 	Y = 10
-	Flags = V_SNAPTOTOP
+	Flags = V_SNAPTOTOP|V_ALLOWLOWERCASE
