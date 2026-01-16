@@ -60,9 +60,59 @@ OPENGL
 	Tooltip = Options for OpenGL renderer.
 	SubMenu = OP_OPENGL
 
-MenuPanel OP_VIDEOMODE
-KeyHandler = MR_HandleVideoMode
+MenuPanel VIDEOMODE_LIST
+Initializer = MP_VideoModeList
 DrawRoutine = MD_DrawVideoMode
+KeyHandler = MR_HandleVideoMode
+CursorOffset = 6
+MultiNav = True
+# nav item count is set by MP_VideoModeList
+
+MenuPanel VIDEOMODE_HEADING
+Items
+CHOOSEMODE
+	Style = center-highlight
+	Text = Choose mode, reselect to change default
+
+MenuPanel VIDEOMODE_INFO
+Items
+CURRENTMODE
+	Style = center
+#	...current mode is 123x456...
+DEFAULTMODE
+	Y = 8
+	Style = center
+#	...default mode is 123x456...
+MARKEDMODES
+	Y = 22
+	Style = center-recommendedhighlight
+	Text = Marked modes are recommended.
+OTHERMODES
+	Y = 30
+	Style = center-highlight
+	Text = Other modes may have visual errors.
+LARGERMODES
+	Y = 42
+	Style = center-highlight
+	Text = Larger modes may have performance issues.
+
+MenuPanel VIDEOMODE_TESTING
+Items
+CURRENTMODE
+	Style = center
+#	...previewing mode 123x456...
+KEEPMODE
+	Y = 22
+	Style = center
+	Text = Press ENTER again to keep this mode
+WAITTIME
+	Y = 34
+	Style = center
+#	...wait 15 seconds...
+CANCELMODE
+	Y = 42
+	Style = center
+	Text = or press ESC to return
 
 MenuPanel OP_OPENGL
 LineHeight = 10
@@ -167,11 +217,19 @@ MAIN : OP_VIDEO
 
 Menu OP_VIDEOMODE
 HeaderPic = M_VIDEO
-EnterRoutine = MR_VideoModeMenu
 Panels
-MAIN : OP_VIDEOMODE
-	X = 48
+MAIN : VIDEOMODE_LIST
+	X = 41
+	Y = 40
+HEADING : VIDEOMODE_HEADING
+	X = 160
 	Y = 26
+INFO : VIDEOMODE_INFO
+	X = 160
+	Y = 142
+TESTING : VIDEOMODE_TESTING
+	X = 160
+	Y = 142
 
 Menu OP_OPENGL
 HeaderPic = M_VIDEO
