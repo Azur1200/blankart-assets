@@ -1,5 +1,6 @@
 MenuPanel PLAYBACK
 DrawRoutine = MD_DrawPlaybackMenu
+Horizontal = True
 Items
 HIDE
 	X = 0

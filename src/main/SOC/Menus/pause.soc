@@ -30,6 +30,7 @@ QUITGAME
 	Call = MR_QuitSRB2
 
 MenuPanel MPAUSE
+Initializer = MP_MultiplayerPause
 Items
 ADDONS
 	Text = Addons...

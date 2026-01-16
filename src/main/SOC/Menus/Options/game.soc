@@ -264,6 +264,8 @@ MenuPanel OP_MONITORTOGGLE
 Initializer = MP_SetupMonitorToggles
 KeyHandler = MR_HandleMonitorToggles
 DrawRoutine = MD_DrawMonitorToggles
+MultiNav = True
+NavItemCount = 4
 
 Menu OP_GAME
 HeaderPic = M_GAME

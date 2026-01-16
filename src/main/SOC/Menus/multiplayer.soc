@@ -11,6 +11,7 @@ CONFIRM
 	Call = MR_ConfirmTeamScramble
 
 MenuPanel CHANGETEAM
+Initializer = MP_PlayerSplitscreen
 LineHeight = 10
 Items
 PLAYER
@@ -26,6 +27,7 @@ CONFIRM
 	Call = MR_ConfirmTeamChange
 
 MenuPanel CHANGESPECTATE
+Initializer = MP_PlayerSplitscreen
 LineHeight = 10
 Items
 PLAYER
