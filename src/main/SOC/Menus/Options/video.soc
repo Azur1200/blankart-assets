@@ -2,6 +2,7 @@ MenuPanel OP_VIDEO
 LineHeight = 10
 Items
 SETMODE
+	Style = VIDEOMODE
 	Text = Set Resolution...
 	Tooltip = Resolution game runs at.
 	SubMenu = OP_VIDEOMODE

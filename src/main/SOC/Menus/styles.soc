@@ -1,0 +1,195 @@
+MenuItemStyle center
+Part 0
+	Align = Center
+
+MenuItemStyle highlight
+Part 0
+	Highlight = Highlight
+
+MenuItemStyle recommendedhighlight
+Part 0
+	Highlight = Recommended
+
+MenuItemStyle warninghighlight
+Part 0
+	Highlight = warning
+
+MenuItemStyle center-highlight
+Part 0
+	Align = Center
+	Highlight = Highlight
+
+MenuItemStyle center-recommendedhighlight
+Part 0
+	Align = Center
+	Highlight = Recommended
+
+MenuItemStyle fill
+Part 0
+	Type = fill
+	Source = Patch
+
+MenuItemStyle thin-highlight-translucent
+Part 0
+	Font = TINY
+	Highlight = Highlight
+	Translucent = True
+
+MenuItemStyle mapthumbnail
+Part 0
+	Type = Thumbnail
+	Source = Patch
+
+MenuItemStyle thin
+Part 0
+	Font = TINY
+
+MenuItemStyle thin-highlight
+Part 0
+	Font = TINY
+	Highlight = Highlight
+
+MenuItemStyle small
+Part 0
+	Small = True
+
+MenuItemStyle thin2
+Part 0
+	FontAlt = TINY
+
+MenuItemStyle thin2-center
+Part 0
+	FontAlt = TINY
+	Align = Center
+
+MenuItemStyle thin2-right
+Part 0
+	FontAlt = TINY
+	Align = Right
+
+MenuItemStyle thin2-highlight
+Part 0
+	FontAlt = TINY
+	Highlight = Highlight
+
+MenuItemStyle thin2-recommendedhighlight
+Part 0
+	FontAlt = TINY
+	Highlight = Recommended
+
+MenuItemStyle thin2-right-recommendedhighlight
+Part 0
+	FontAlt = TINY
+	Align = Right
+	Highlight = Recommended
+
+MenuItemStyle thin2-right-warninghighlight
+Part 0
+	FontAlt = TINY
+	Align = Right
+	Highlight = Warning
+
+MenuItemStyle patch
+Part 0
+	Type = Patch
+	Source = Patch
+
+MenuItemStyle patch-small
+Part 0
+	Type = Patch
+	Source = Patch
+	Small = True
+
+MenuItemStyle patch-highlight
+Part 0
+	Type = Patch
+	Source = Patch
+	Highlight = Highlight
+
+MenuItemStyle translucent
+Part 0
+	Translucent = True
+
+MenuItemStyle header
+Part 0
+	X = -16*FRACUNIT
+	Highlight = Highlight
+
+MenuItemStyle thin2-sticker
+Part 0
+#	Type = Sticker
+Part 1
+	FontAlt = TINY
+
+MenuItemStyle PATCHSTRING
+Part 0
+Part 1
+	Align = Edge
+	Source = Patch
+
+# lots of things previously hardcoded in M_DrawRightString, fixedstring set by hardcode
+
+# shows the current resolution (123x456)
+MenuItemStyle VIDEOMODE
+Part 0
+Part 1
+	Align = Edge
+	Source = Fixed
+	NoHighlight = True
+
+# shows the setupplayer's joystick name
+MenuItemStyle JOYSTICKNAME
+Part 0
+Part 1
+	Align = Edge
+	Source = Fixed
+	Highlight = Highlight
+
+# blinking envelope for discord notifications
+MenuItemStyle DISCORDREQUEST
+Part 0
+Part 1
+	Type = Patch
+	X = 164*FRACUNIT
+	Y = -FRACUNIT
+	Source = Fixed
+	FixedString = K_REQUE2
+
+# MP_SetupControls will automatically change any item with MR_ChangeControl to this style
+# the keybinds are written to item->patch
+MenuItemStyle CHANGECONTROLNAME
+Part 0
+Part 1
+	Align = Edge
+	Highlight = Highlight
+	Source = Patch
+
+# ...or this one if the binds are too long
+MenuItemStyle CHANGECONTROLNAMELONG
+Part 0
+Part 1
+	Font = TINY
+	Align = Edge
+	Highlight = Highlight
+	Source = Patch
+
+# used by MD_DrawJoystick
+MenuItemStyle JOYSTICKLIST
+Part 0
+	Type = Fill
+	X = -3*FRACUNIT
+	Y = -3*FRACUNIT
+	Source = Patch
+Part 1
+	NoHighlight = True
+
+# highlights the selected joystick
+MenuItemStyle JOYSTICKLISTSET
+Part 0
+	Type = Fill
+	X = -3*FRACUNIT
+	Y = -3*FRACUNIT
+	Source = Patch
+Part 1
+	Highlight = Recommended
+	NoHighlight = True

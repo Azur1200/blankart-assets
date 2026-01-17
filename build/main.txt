@@ -1,4 +1,6 @@
 $basepath src/main/
 $output out/main.pk3
 
+SOC/Menus/styles.soc
+SOC/**
 **

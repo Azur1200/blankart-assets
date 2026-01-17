@@ -44,6 +44,7 @@ SCRAMBLE
 	Text = Scramble Teams...
 	SubMenu = SCRAMBLETEAM
 DISCORDREQUESTS
+	Style = DISCORDREQUEST
 	Text = Ask To Join Requests...
 	SubMenu = MISC_DISCORDREQUESTS
 CONTINUE

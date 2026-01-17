@@ -20,11 +20,13 @@ HOSTHEADER
 	Text = Host a game
 STARTSERVER
 	OfsY = 2
+	Style = PATCHSTRING
 	Text = Internet/LAN...
 	Patch = (2-16 players)
 	Tooltip = Host a online server.
 	SubMenu = MP_SERVER
 OFFLINESERVER
+	Style = PATCHSTRING
 	Text = Offline...
 	Patch = (2-4 players)
 	Tooltip = Host a local server.

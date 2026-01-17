@@ -1,3 +1,58 @@
+MenuItemStyle REPLAYSUBDIR
+Part 0
+	Type = Patch
+	X = -4*FRACUNIT
+	Source = Patch
+Part 1
+	X = 8*FRACUNIT
+
+MenuItemStyle REPLAYSELECT
+Part 0
+# X scrolled by MD_DrawReplayHut
+
+MenuItemStyle REPLAYRANKING
+Part 0 # ranking
+	Source = Text
+	Highlight = Highlight
+	Align = Right
+Part 1 # name
+	Font = TINY
+	X = 4*FRACUNIT
+	Source = Patch
+Part 2 # score
+	X = 8*FRACUNIT
+	Y = 9*FRACUNIT
+	Source = Extra
+
+# for no contest
+MenuItemStyle REPLAYRANKINGTHIN
+Part 0 # ranking
+	Source = Text
+	Highlight = Highlight
+	Align = Right
+Part 1 # name
+	Font = TINY
+	X = 4*FRACUNIT
+	Source = Patch
+Part 2 # score
+	Font = TINY
+	X = 8*FRACUNIT
+	Y = 9*FRACUNIT
+	Source = Extra
+
+MenuItemStyle REPLAYRANKINGICON
+Part 0
+	Type = SkinIcon
+	Align = Right
+	Small = True
+	Source = Patch
+
+MenuItemStyle REPLAYHUT_ICON
+Part 0
+	Type = SkinIcon
+	Source = Patch
+	Align = Right
+
 MenuPanel REPLAYHUT_DEMOLIST
 Initializer = MP_PrepReplayList
 KeyHandler = MR_HandleReplayHutList
@@ -59,7 +114,7 @@ SCORE
 FACE
 	X = 295
 	Y = 25
-	Style = skin-right
+	Style = REPLAYHUT_ICON
 DEMOTITLE
 	OfsX = -295 # autolayout...
 	Y = 62

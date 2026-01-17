@@ -39,6 +39,7 @@ ScrollHeight = 134
 CursorOffset = 6
 Items
 SETJOY
+	Style = JOYSTICKNAME
 	Text = Select Gamepad...
 	Argument = 0
 	Tooltip = Select your gamepad!
@@ -264,52 +265,53 @@ CUSTOM3
 	Call = MR_ChangeControl
 
 MenuPanel OP_JOYSTICKSET
+Initializer = MP_SetupJoystick
 DrawRoutine = MD_DrawJoystick
 LineHeight = 16
 Items
 JOY1
-	Style = fill
-	Patch = 230x14,159,-3,-3
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
 	Argument = 0
 	Call = MR_AssignJoystick
 JOY2
-	Style = fill
-	Patch = 230x14,159,-3,-3
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
 	Argument = 1
 	Call = MR_AssignJoystick
 JOY3
-	Style = fill
-	Patch = 230x14,159,-3,-3
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
 	Argument = 2
 	Call = MR_AssignJoystick
 JOY4
-	Style = fill
-	Patch = 230x14,159,-3,-3
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
 	Argument = 3
 	Call = MR_AssignJoystick
 JOY5
-	Style = fill
-	Patch = 230x14,159,-3,-3
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
 	Argument = 4
 	Call = MR_AssignJoystick
 JOY6
-	Style = fill
-	Patch = 230x14,159,-3,-3
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
 	Argument = 5
 	Call = MR_AssignJoystick
 JOY7
-	Style = fill
-	Patch = 230x14,159,-3,-3
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
 	Argument = 6
 	Call = MR_AssignJoystick
 JOY8
-	Style = fill
-	Patch = 230x14,159,-3,-3
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
 	Argument = 7
 	Call = MR_AssignJoystick
 JOY9
-	Style = fill
-	Patch = 230x14,159,-3,-3
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
 	Argument = 8
 	Call = MR_AssignJoystick
 
@@ -333,7 +335,7 @@ HINT : CHANGECONTROLSHINT
 
 Menu OP_JOYSTICKSET
 HeaderPic = M_CONTRO
-EnterRoutine = MR_SetupJoystickMenu
+EnterRoutine = MR_SetupControlsMenu
 Panels
 MAIN : OP_JOYSTICKSET
 	X = 50
