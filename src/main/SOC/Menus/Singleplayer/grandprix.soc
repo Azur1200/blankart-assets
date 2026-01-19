@@ -30,13 +30,9 @@ Text = Gameplay Mods...
 Tooltip = Gameplay-Related modifiers.
 Submenu = OP_BLANKARTGAME
 
-MenuItem CUP
-OfsY = 10
-Text = Cup
-Tooltip = What cup do you want to play?
-Cvar = dummygpcup
-
 MenuItem START
-Text = Start
-Tooltip = Lets begin!
-Call = MR_StartGrandPrix
+OfsY = 10
+Text = Cup Select...
+Tooltip = Let's begin!
+Argument = LLM_CUPSELECT
+SubMenu = CHANGELEVEL

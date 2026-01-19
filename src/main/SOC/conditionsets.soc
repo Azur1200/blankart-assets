@@ -1,0 +1,39 @@
+# UNLOCKABLES
+ConditionSet 1
+Condition 1 = TotalEmblems 5
+Condition 2 = MatchesPlayed 25
+
+ConditionSet 2
+Condition 1 = TotalEmblems 15
+Condition 2 = MatchesPlayed 50
+
+ConditionSet 3
+Condition 1 = TotalEmblems 30
+Condition 2 = MatchesPlayed 150
+
+ConditionSet 4
+Condition 1 = TotalEmblems 50
+Condition 2 = MatchesPlayed 200
+
+ConditionSet 5
+Condition 1 = TotalEmblems 70
+Condition 2 = MatchesPlayed 300
+
+ConditionSet 6
+Condition 1 = TotalEmblems 110
+
+# MILESTONES
+ConditionSet 10
+Condition 1 = MatchesPlayed 100
+
+ConditionSet 11
+Condition 1 = MatchesPlayed 250
+
+ConditionSet 12
+Condition 1 = MatchesPlayed 500
+
+ConditionSet 13
+Condition 1 = MatchesPlayed 750
+
+ConditionSet 14
+Condition 1 = MatchesPlayed 1000
