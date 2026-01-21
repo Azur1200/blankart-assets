@@ -42,13 +42,23 @@ CONFIRM
 	Text = Confirm
 	Call = MR_ConfirmSpectateChange
 
+MenuItemStyle CHANGELEVELBACK
+Part 0
+	X = -13*FRACUNIT
+	Y = -3*FRACUNIT
+	Type = Fill
+	Source = Fixed
+	FixedString = 282x44,27
+
 MenuPanel CHANGELEVEL
-DrawRoutine = MD_DrawLevelPlatterMenu
-KeyHandler = MR_HandleLevelPlatter
+Initializer = MP_LevelPlatterOptions
 LineHeight = 10
 ScrollHeight = 32
 Items
+BACKGROUND
+	Style = CHANGELEVELBACK
 GAMETYPE
+	OfsY = -10
 	Text = Game Type
 	Cvar = newgametype
 ENCORE
@@ -60,6 +70,14 @@ SORTBY
 RANDOM
 	Text = Random Map
 	Call = MR_LevelPlatterRandom
+
+MenuPanel LEVELPLATTER
+Initializer = MP_PrepareLevelPlatter
+DrawRoutine = MD_DrawLevelPlatterMenu
+KeyHandler = MR_HandleLevelPlatter
+Items
+DUMMY
+	Call = MR_PlaySound
 
 Menu SCRAMBLETEAM
 Panels
@@ -80,8 +98,11 @@ MAIN : CHANGESPECTATE
 	Y = 70
 
 Menu CHANGELEVEL
-EnterRoutine = MR_PrepareLevelPlatter
+EnterRoutine = MR_SetLevelListMode
 Panels
+PLATTER : LEVELPLATTER
+	X = 32
+	Y = 40
 OPTIONS : CHANGELEVEL
 	X = 32
 	Y = 40
