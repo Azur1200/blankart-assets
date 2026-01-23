@@ -1,172 +1,160 @@
 MenuPanel TIMEATTACKCOMMON
 DrawRoutine = MD_DrawTimeAttackMenu
+LineHeight = 0
 Items
 NAME
 	Y = 0
 	Text = Name
 	Cvar = name
+PLAYERICON
+	Y = 0
+	Style = SKINICONEDGE
+#	set by hardcode
 PLAYERSETUP
 	Y = 13
 	Text = Player setup...
 	SubMenu = MN_MP_PLAYERSETUP
 
 MenuPanel SP_TIMEATTACK
+Initializer = MP_TimeAttackMenu
 Items
 LEVEL
-	Y = 78
+	Y = 0
 	Text = Level
 	Argument = LLM_TIMEATTACK
 	Cvar = nextmap
 	SubMenu = CHANGELEVEL
-GUEST
-	Y = 98
+SHOWGUEST
+	Y = 20
 	Style = highlight
 	Text = Guest...
 	SubMenu = SP_GUESTREPLAY
-REPLAY
-	Y = 108
+SHOWREPLAY
+	Y = 30
 	Style = highlight
 	Text = Replay...
 	SubMenu = SP_REPLAY
 GHOSTS
-	Y = 118
+	Y = 40
 	Style = highlight
 	Text = Ghosts...
 	SubMenu = SP_GHOST
 MODIFIERS
-	Y = 128
+	Y = 50
 	Style = highlight
 	Text = Modifiers...
 	SubMenu = SP_PRESETS
 START
-	Y = 140
+	Y = 62
 	Style = highlight
 	Text = Start
 	Call = MR_ChooseTimeAttack
 
 MenuPanel SP_GUESTREPLAY
+Initializer = MP_TimeAttackMenu
 Items
-SAVETIME
-	Y = 94
+REPLAYTIME
+	Y = 0
 	Style = highlight
 	Text = Save Best Time as Guest
 	Argument = 0
 	Call = MR_SetGuestReplay
-SAVELAP
-	Y = 102
+REPLAYLAP
+	Y = 8
 	Style = highlight
 	Text = Save Best Lap as Guest
 	Argument = 1
 	Call = MR_SetGuestReplay
-SAVELAST
-	Y = 110
+REPLAYLAST
+	Y = 16
 	Style = highlight
 	Text = Save Last as Guest
 	Argument = 2
 	Call = MR_SetGuestReplay
-DELETE
-	Y = 120
+REPLAYGUEST
+	Y = 26
 	Style = highlight
 	Text = Delete Guest Replay
 	Argument = 3
 	Call = MR_SetGuestReplay
 BACK
-	Y = 130
+	Y = 36
 	Style = highlight
 	Text = Back
 	Call = MR_GoBack
 
 MenuPanel SP_REPLAY
+Initializer = MP_TimeAttackMenu
 Items
 REPLAYTIME
-	Y = 90
+	Y = 0
 	Style = highlight
 	Text = Replay Best Time
 	Argument = 0
 	Call = MR_ReplayTimeAttack
 REPLAYLAP
-	Y = 98
+	Y = 8
 	Style = highlight
 	Text = Replay Best Lap
 	Argument = 1
 	Call = MR_ReplayTimeAttack
 REPLAYLAST
-	Y = 106
+	Y = 16
 	Style = highlight
 	Text = Replay Last
 	Argument = 2
 	Call = MR_ReplayTimeAttack
 REPLAYGUEST
-	Y = 114
+	Y = 24
 	Style = highlight
 	Text = Replay Guest
 	Argument = 3
 	Call = MR_ReplayTimeAttack
 REPLAYSTAFF
-	Y = 122
+	Y = 32
 	Style = highlight
 	Text = Replay Staff
 	Cvar = dummystaff
 	Call = MR_ReplayStaff
 BACK
-	Y = 130
+	Y = 40
 	Style = highlight
 	Text = Back
 	Call = MR_GoBack
 
 MenuPanel SP_GHOST
+Initializer = MP_TimeAttackMenu
 Items
 BESTTIME
-	Y = 88
+	Y = 0
 	Text = Best Time
 	Cvar = ghost_besttime
 BESTLAP
-	Y = 96
+	Y = 8
 	Text = Best Lap
 	Cvar = ghost_bestlap
 LAST
-	Y = 104
+	Y = 16
 	Text = Last
 	Cvar = ghost_last
-GUEST
-	Y = 112
+REPLAYGUEST
+	Y = 24
 	Text = Guest
 	Cvar = ghost_guest
-STAFF
-	Y = 120
+REPLAYSTAFF
+	Y = 32
 	Text = Staff Attack
 	Cvar = ghost_staff
 BACK
-	Y = 130
+	Y = 42
 	Style = highlight
 	Text = Back
 	Call = MR_GoBack
 
 MenuPanel SP_PRESETS
-Items
-SRB2KART
-	Y = 94
-	Style = highlight
-	Text = SRB2Kart Mode
-	Argument = 0
-	Call = MR_TimeAttackPreset
-TECH
-	Y = 104
-	Style = highlight
-	Text = Tech Mode
-	Argument = 1
-	Call = MR_TimeAttackPreset
-BLANKART
-	Y = 114
-	Style = highlight
-	Text = BlanKart Mode
-	Argument = 2
-	Call = MR_TimeAttackPreset
-BACK
-	Y = 150
-	Style = highlight
-	Text = Back
-	Call = MR_GoBack
+Initializer = MP_TimeAttackPresets
+LineHeight = 10
+ScrollHeight = 60
 
 Menu SP_TIMEATTACK
 Music = racent
@@ -182,7 +170,7 @@ QuitRoutine = MR_QuitTimeAttackMenu
 Panels
 MAIN : SP_TIMEATTACK
 	X = 34
-	Y = 40
+	Y = 118
 COMMON : TIMEATTACKCOMMON
 	X = 34
 	Y = 40
@@ -192,37 +180,45 @@ HeaderPic = M_ATTACK
 Panels
 MAIN : SP_GUESTREPLAY
 	X = 34
-	Y = 40
+	Y = 134
 COMMON : TIMEATTACKCOMMON
 	X = 34
 	Y = 40
+	Flags = V_50TRANS
+	Disabled = True
 
 Menu SP_REPLAY
 HeaderPic = M_ATTACK
 Panels
 MAIN : SP_REPLAY
 	X = 34
-	Y = 40
+	Y = 130
 COMMON : TIMEATTACKCOMMON
 	X = 34
 	Y = 40
+	Flags = V_50TRANS
+	Disabled = True
 
 Menu SP_GHOST
 HeaderPic = M_ATTACK
 Panels
 MAIN : SP_GHOST
 	X = 34
-	Y = 40
+	Y = 128
 COMMON : TIMEATTACKCOMMON
 	X = 34
 	Y = 40
+	Flags = V_50TRANS
+	Disabled = True
 
 Menu SP_PRESETS
 HeaderPic = M_ATTACK
 Panels
 MAIN : SP_PRESETS
 	X = 34
-	Y = 40
+	Y = 134
 COMMON : TIMEATTACKCOMMON
 	X = 34
 	Y = 40
+	Flags = V_50TRANS
+	Disabled = True

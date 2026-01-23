@@ -127,6 +127,12 @@ Part 1
 	Align = Edge
 	Source = Patch
 
+MenuItemStyle SKINICONEDGE
+Part 0
+	Type = SkinIcon
+	Align = Edge
+	Source = Patch
+
 # lots of things previously hardcoded in M_DrawRightString, fixedstring set by hardcode
 
 # shows the current resolution (123x456)
