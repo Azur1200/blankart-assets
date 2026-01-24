@@ -203,3 +203,8 @@ MenuItem FOLLOW
 Text = Hide Followers
 Tooltip = Disable the visibility of Followers.
 Cvar = hidefollowers
+
+MenuItem PFFADE
+Text = Fade Players+Followers Near Camera
+Tooltip = Fade players and their followers when they get too close to your camera.
+Cvar = playerfade
