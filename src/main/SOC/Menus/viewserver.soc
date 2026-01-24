@@ -1,4 +1,85 @@
+MenuItemStyle VIEWSERVER_PLAYER
+Part 0
+	Type = SkinIcon
+	Y = 5*FRACUNIT
+	Small = True
+	Source = Patch
+Part 1
+	FontAlt = TINY
+	X = 20*FRACUNIT
+	Y = 8*FRACUNIT
+
+MenuItemStyle VIEWSERVER_PLAYER_MISSING
+Part 0
+	Type = Fill
+	Y = 5*FRACUNIT
+	Source = Patch
+Part 1
+	FontAlt = TINY
+	X = 20*FRACUNIT
+	Y = 8*FRACUNIT
+
+MenuItemStyle VIEWSERVER_PLAYER_SMALL
+Part 0
+	Type = Fill
+	Source = Fixed
+	FixedString = 7x7,31
+Part 1
+	Type = Fill
+	Source = Patch
+Part 2
+	FontAlt = TINY
+	X = 10*FRACUNIT
+
+MenuItemStyle VIEWSERVER_ADDON_SMALL_BACK
+Part 0
+	Type = Fill
+#	Y = -FRACUNIT
+	Source = Fixed
+	FixedString = 292x9,156
+Part 1
+	FontAlt = TINY
+Part 2
+	Font = TINY
+	Align = Edge
+	Highlight = Highlight
+	Source = Extra
+
+MenuItemStyle VIEWSERVER_ADDON_SMALL
+Part 0
+	FontAlt = TINY
+Part 1
+	Font = TINY
+	Align = Edge
+	Highlight = Highlight
+	Source = Extra
+
+MenuItemStyle VIEWSERVER_ADDON_BACK
+Part 0
+	Type = Fill
+#	Y = -FRACUNIT
+	Source = Fixed
+	FixedString = 146x9,156
+Part 1
+	FontAlt = TINY
+
+MenuItemStyle VIEWSERVER_ADDON
+Part 0
+	FontAlt = TINY
+
+MenuPanel VIEWSERVER_PLAYERS
+Initializer = MP_ViewServerPlayers
+KeyHandler = MR_HandleViewServer
+ScrollHeight = 92
+
+MenuPanel VIEWSERVER_ADDONS
+Initializer = MP_ViewServerAddons
+KeyHandler = MR_HandleViewServer
+ScrollHeight = 92
+CursorOffset = 10
+
 MenuPanel VIEWSERVER
+Initializer = MP_SetupViewServer
 DrawRoutine = MD_DrawViewServer
 KeyHandler = MR_HandleViewServer
 Items
@@ -70,11 +151,34 @@ JOINBUTTON
 	Y = BASEVIDHEIGHT - 11
 	Style = thin2-right
 	Text = [^2ENTER^0] = Join
+PLAYERSHEADING
+	X = 12
+	Y = 74
+	Style = highlight
+	Text = Players
+PLAYERSCOUNT
+	X = 12
+	Y = 74
+	Style = edge-highlight
+ADDONSHEADING
+	X = 12
+	Y = 74
+	Style = highlight
+	Text = Addons
+ADDONSCOUNT
+	X = 12
+	Y = 74
+	Style = thin-edge-highlight
 
 Menu VIEWSERVER
-EnterRoutine = MR_EnterViewServer
 QuitRoutine = MR_QuitViewServer
 Panels
 MAIN : VIEWSERVER
 	X = 0
 	Y = 0
+PLAYERS : VIEWSERVER_PLAYERS
+	X = 14
+	Y = 84
+ADDONS : VIEWSERVER_ADDONS
+	X = 14
+	Y = 84

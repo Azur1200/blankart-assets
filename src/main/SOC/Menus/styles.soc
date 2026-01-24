@@ -24,6 +24,11 @@ Part 0
 	Align = Center
 	Highlight = Recommended
 
+MenuItemStyle edge-highlight
+Part 0
+	Align = Edge
+	Highlight = Highlight
+
 MenuItemStyle fill
 Part 0
 	Type = fill
@@ -47,6 +52,12 @@ Part 0
 MenuItemStyle thin-highlight
 Part 0
 	Font = TINY
+	Highlight = Highlight
+
+MenuItemStyle thin-edge-highlight
+Part 0
+	Font = TINY
+	Align = Edge
 	Highlight = Highlight
 
 MenuItemStyle small
