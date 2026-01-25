@@ -24,6 +24,11 @@ Part 0
 	Align = Center
 	Highlight = Recommended
 
+MenuItemStyle center-warninghighlight
+Part 0
+	Align = Center
+	Highlight = Warning
+
 MenuItemStyle edge-highlight
 Part 0
 	Align = Edge
@@ -33,6 +38,12 @@ MenuItemStyle fill
 Part 0
 	Type = fill
 	Source = Patch
+
+MenuItemStyle fill-highlight
+Part 0
+	Type = fill
+	Source = Patch
+	Highlight = Highlight
 
 MenuItemStyle thin-highlight-translucent
 Part 0
@@ -110,6 +121,13 @@ Part 0
 	Type = Patch
 	Source = Patch
 	Small = True
+
+MenuItemStyle patch-small-translucent
+Part 0
+	Type = Patch
+	Source = Patch
+	Small = True
+	Translucent = True
 
 MenuItemStyle patch-highlight
 Part 0
