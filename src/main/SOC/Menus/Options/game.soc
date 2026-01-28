@@ -139,7 +139,7 @@ Cvar = kartairthrust
 
 MenuItem RECOVERYDASH
 Text = Recovery Dash
-Tooltip = When you accelerate and brake simultaneously, you charge up a Recovery Dash! You also resist offroad while charging and while dashing.
+Tooltip = When you hold ACCEL + BRAKE, you resist offroad and charge a Recovery Dash!
 Cvar = kartrecoverydash
 
 MenuItem BLAN_ITEMSETTINGS
