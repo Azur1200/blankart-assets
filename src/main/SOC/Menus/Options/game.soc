@@ -137,6 +137,11 @@ Text = Air Thrust
 Tooltip = When you perform a drift boost in the air, you launch forwards!
 Cvar = kartairthrust
 
+MenuItem RECOVERYDASH
+Text = Recovery Dash
+Tooltip = When you accelerate and brake simultaneously, you charge up a Recovery Dash! You also resist offroad while charging and while dashing.
+Cvar = kartrecoverydash
+
 MenuItem BLAN_ITEMSETTINGS
 Text = Item Settings...
 Tooltip = Customize certain items as you see fit.
