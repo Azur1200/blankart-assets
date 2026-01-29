@@ -18681,3 +18681,12 @@ Duration = -1
 Var1 = 6
 Var2 = 2
 Next = S_NULL
+
+# Recovery Spin Skid
+State S_RECSPIN_SKID
+SpriteName = SPR_RCSP
+SpriteFrame = FF_ANIMATE|FF_FULLBRIGHT|FF_ADD
+Duration = 4
+Var1 = 3
+Var2 = 1
+Next = S_NULL
