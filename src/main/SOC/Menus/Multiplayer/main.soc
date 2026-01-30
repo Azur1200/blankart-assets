@@ -1,5 +1,4 @@
 MenuPanel MP_MAIN
-DrawRoutine = MD_DrawMPMainMenu
 Items
 PLAYERSHEADER
 	Style = header
@@ -49,6 +48,22 @@ CONNECTIP
 	Cvar = dummyip
 	Tooltip = Connect to a IPv4 address.
 	Call = MR_ConnectIP
+PLAYER1
+	X = 6
+	Y = 32
+	Style = P1MULTIPLAYER
+PLAYER2
+	X = 70
+	Y = 32
+	Style = P2MULTIPLAYER
+PLAYER3
+	X = 134
+	Y = 32
+	Style = P3MULTIPLAYER
+PLAYER4
+	X = 198
+	Y = 32
+	Style = P4MULTIPLAYER
 
 Menu MP_MAIN
 HeaderPic = M_MULTI

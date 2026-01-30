@@ -180,6 +180,7 @@ Part 0
 	Type = SkinIcon
 	Align = Edge
 	Source = Patch
+	Source2 = Extra
 
 # lots of things previously hardcoded in M_DrawRightString, fixedstring set by hardcode
 
@@ -247,3 +248,37 @@ Part 0
 Part 1
 	Highlight = Recommended
 	NoHighlight = True
+
+# icons for each local player
+MenuItemStyle P1WANTED
+Part 0
+	Type = SkinIcon
+	Source = Fixed
+	Source2 = Fixed2
+
+MenuItemStyle P2WANTED
+Part 0
+	Type = SkinIcon
+	Source = Fixed
+	Source2 = Fixed2
+
+MenuItemStyle P3WANTED
+Part 0
+	Type = SkinIcon
+	Source = Fixed
+	Source2 = Fixed2
+
+MenuItemStyle P4WANTED
+Part 0
+	Type = SkinIcon
+	Source = Fixed
+	Source2 = Fixed2
+
+# special variants with highlights and translucency for multiplayer setup
+MenuItemStyle P1MULTIPLAYER : P1WANTED
+
+MenuItemStyle P2MULTIPLAYER : P2WANTED
+
+MenuItemStyle P3MULTIPLAYER : P3WANTED
+
+MenuItemStyle P4MULTIPLAYER : P4WANTED

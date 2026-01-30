@@ -46,11 +46,13 @@ Part 0
 	Align = Right
 	Small = True
 	Source = Patch
+	Source2 = Extra
 
 MenuItemStyle REPLAYHUT_ICON
 Part 0
 	Type = SkinIcon
 	Source = Patch
+	Source2 = Extra
 	Align = Right
 
 MenuPanel REPLAYHUT_DEMOLIST

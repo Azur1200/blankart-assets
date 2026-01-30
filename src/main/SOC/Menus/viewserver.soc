@@ -4,6 +4,7 @@ Part 0
 	Y = 5*FRACUNIT
 	Small = True
 	Source = Patch
+	Source2 = Extra
 Part 1
 	FontAlt = TINY
 	X = 20*FRACUNIT
