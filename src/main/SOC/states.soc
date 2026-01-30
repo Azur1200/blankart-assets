@@ -18690,3 +18690,10 @@ Duration = 4
 Var1 = 3
 Var2 = 1
 Next = S_NULL
+
+# Horncode
+State S_HORNCODE
+SpriteName = SPR_FHRN
+SpriteFrame = 0
+Duration = -1
+Next = S_NULL
