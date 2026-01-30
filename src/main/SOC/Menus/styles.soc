@@ -29,10 +29,24 @@ Part 0
 	Align = Center
 	Highlight = Warning
 
+MenuItemStyle edge
+Part 0
+	Align = Edge
+
 MenuItemStyle edge-highlight
 Part 0
 	Align = Edge
 	Highlight = Highlight
+
+MenuItemStyle edge-recommendedhighlight
+Part 0
+	Align = Edge
+	Highlight = Recommended
+
+MenuItemStyle edge-warninghighlight
+Part 0
+	Align = Edge
+	Highlight = Warning
 
 MenuItemStyle fill
 Part 0
@@ -88,6 +102,11 @@ MenuItemStyle thin2-right
 Part 0
 	FontAlt = TINY
 	Align = Right
+
+MenuItemStyle thin2-edge
+Part 0
+	FontAlt = TINY
+	Align = Edge
 
 MenuItemStyle thin2-highlight
 Part 0
