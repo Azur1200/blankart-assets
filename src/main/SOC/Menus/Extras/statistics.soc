@@ -163,9 +163,11 @@ Panels
 PLAYTIME : STATS_PLAYTIME
 	X = 20
 	Y = 42
+	Disabled = True
 RECORDS : STATS_RECORDS
 	X = 20
 	Y = 62
+	Disabled = True
 EXTRA : STATS_EXTRA
 	X = 20
 	Y = 42
