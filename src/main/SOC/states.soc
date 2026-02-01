@@ -18697,3 +18697,15 @@ SpriteName = SPR_FHRN
 SpriteFrame = 0
 Duration = -1
 Next = S_NULL
+
+State S_HORNCODE_HAPPY
+SpriteName = SPR_FHRN
+SpriteFrame = 1
+Duration = -1
+Next = S_NULL
+
+State S_HORNCODE_ANGRY
+SpriteName = SPR_FHRN
+SpriteFrame = 2
+Duration = -1
+Next = S_NULL
