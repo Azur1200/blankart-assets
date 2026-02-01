@@ -142,7 +142,7 @@ Cvar = pingicon
 MenuItem pingstyle
 Text = Ping Display Style
 Tooltip = Change how the ping display looks visually.
-Cvar = pingicon
+Cvar = pingstyle
 
 
 Menu OP_GAMEHUD
