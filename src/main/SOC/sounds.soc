@@ -3875,3 +3875,7 @@ Priority = 64
 
 Sound sfx_rainbr
 Priority = 64
+
+Sound sfx_horn00
+Priority = 255
+Caption = Gratuitous honking
