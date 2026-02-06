@@ -19,6 +19,11 @@ Text = Renderer
 Tooltip = Renderer to run game with.
 Cvar = renderer
 
+MenuItem HIGHRESHUDSCALE
+Text = HUD Scaling (Highres Only)
+Tooltip = At high resolutions, this adjusts the HUD's scale. Larger value = smaller HUD
+Cvar = highreshudscale
+
 MenuItem GAMMA
 OfsY = 10
 Text = Gamma
