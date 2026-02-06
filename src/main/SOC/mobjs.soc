@@ -1596,7 +1596,7 @@ Mass = 4
 Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_SCENERY|MF_NOCLIPHEIGHT
 
 Mobj MT_WALLSPIKE
-MapThingNum = 522
+MapThingNum = 5022
 SpawnState = S_WALLSPIKE1
 SpawnHealth = 1000
 ReactionTime = 8
