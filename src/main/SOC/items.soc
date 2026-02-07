@@ -120,6 +120,11 @@ SmallPatches = K_ISFLMS
 Flags = KIF_UNIQUESLOT|KIF_DARKBG
 Equip = KITEMEQUIP_SHIELD
 
+KartItem EGGBRICK
+BigPatches = K_ITBRCK
+SmallPatches = K_ISBRCK
+Equip = KITEMEQUIP_NONE
+
 ################################################################################
 # Item result declarations (so their toggles appear in the right order)
 ################################################################################
