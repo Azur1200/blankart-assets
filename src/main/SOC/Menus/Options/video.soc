@@ -27,7 +27,7 @@ Cvar = highreshudscale
 MenuItem GAMMA
 OfsY = 10
 Text = Gamma
-Tooltip = Gamma (brightness) of the game.
+Tooltip = Gamma of the game.
 Slider = gamma
 
 MenuItem SHOWFPS
@@ -180,6 +180,11 @@ Text = Sliptide Tilt
 Tooltip = Rotate player sprites during a spliptide.
 Cvar = sliptidetilt
 
+MenuItem NULLTILT
+Text = Null Drift Tilt
+Tooltip = Rotate player sprites during a null drift.
+Cvar = nulldrifttilt
+
 MenuItem SALTYHOP
 Text = Visual Hopping
 Tooltip = Do a visual-only hop during drifts.
@@ -194,6 +199,11 @@ MenuItem DRIFTEFX
 Text = Drift Effects
 Tooltip = Toggle the drift boost effect.
 Cvar = kartdriftefx
+
+MenuItem NULLEFX
+Text = Null Drift Effects
+Tooltip = Toggle the null drift effect
+Cvar = nulldriftefx
 
 MenuItem SPARKPULSE
 Text = Driftspark Pulse
