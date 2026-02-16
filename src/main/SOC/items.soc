@@ -21,9 +21,7 @@ KartItem INVINCIBILITY
 BigPatches = K_ITINV1,K_ITINV2,K_ITINV3,K_ITINV4,K_ITINV5,K_ITINV6,K_ITINV7
 SmallPatches = K_ISINV1,K_ISINV2,K_ISINV3,K_ISINV4,K_ISINV5,K_ISINV6
 Flags = KIF_ANIMATED|KIF_DARKBG
-FlagsAlt = KIF_ANIMATED|KIF_DARKBG
 Equip = KITEMEQUIP_NONE
-EquipAlt = KITEMEQUIP_NONE
 
 KartItem BANANA
 BigPatches = K_ITBANA,K_ITBAN2,K_ITBAN3,K_ITBAN4
@@ -125,6 +123,15 @@ BigPatches = K_ITBRCK
 SmallPatches = K_ISBRCK
 Equip = KITEMEQUIP_NONE
 
+# To add later: K_ITSMR2,K_ITSMR3,K_ITSMR4,K_ITSMR5,K_ITSMR6,K_ITSMR7
+# To add later: K_ISSMR2,K_ISSMR3,K_ISSMR4,K_ISSMR5,K_ISSMR6
+
+KartItem S_MONITOR
+BigPatches = K_ITSMR1
+SmallPatches = K_ISSMR1
+Flags = KIF_DARKBG
+Equip = KITEMEQUIP_NONE
+
 ################################################################################
 # Item result declarations (so their toggles appear in the right order)
 ################################################################################
@@ -180,6 +187,8 @@ KartResult thundershield
 KartResult bubbleshield
 
 KartResult flameshield
+
+KartResult smonitor
 
 ################################################################################
 # Standard item results
@@ -341,6 +350,15 @@ OddsRace = 0,0,0,0,0,0,2,4,12,24,27,12,7,4,0,0
 OddsBattle = 1,0
 CooldownTime = 8
 
+# TODO: Change this to KO_SMonitorOdds when the main repo finalizes the split
+
+KartResult smonitor
+DisplayName = S-Monitor
+Type = S_MONITOR
+Amount = 1
+Flags = KRF_NOTNEAREND
+UniqueOddsRace = KO_AltInvinOdds
+
 ################################################################################
 # Multi-item results
 ################################################################################
@@ -410,11 +428,6 @@ CooldownTime = 10
 ################################################################################
 # Alt. item results
 ################################################################################
-
-KartResultAlt invincibility
-DisplayName = Alt. Invincibility
-Flags = KRF_NOTNEAREND
-UniqueOddsRace = KO_AltInvinOdds
 
 KartResultAlt shrink
 DisplayName = Alt. Shrink
