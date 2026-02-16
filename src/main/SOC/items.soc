@@ -126,10 +126,10 @@ Equip = KITEMEQUIP_NONE
 # To add later: K_ITSMR2,K_ITSMR3,K_ITSMR4,K_ITSMR5,K_ITSMR6,K_ITSMR7
 # To add later: K_ISSMR2,K_ISSMR3,K_ISSMR4,K_ISSMR5,K_ISSMR6
 
-KartItem S_MONITOR
+KartItem SMONITOR
 BigPatches = K_ITSMR1
 SmallPatches = K_ISSMR1
-Flags = KIF_DARKBG
+Flags = KIF_DARKBG|KIF_HYUCANTSTEAL
 Equip = KITEMEQUIP_NONE
 
 ################################################################################
@@ -350,14 +350,12 @@ OddsRace = 0,0,0,0,0,0,2,4,12,24,27,12,7,4,0,0
 OddsBattle = 1,0
 CooldownTime = 8
 
-# TODO: Change this to KO_SMonitorOdds when the main repo finalizes the split
-
 KartResult smonitor
 DisplayName = S-Monitor
-Type = S_MONITOR
+Type = SMONITOR
 Amount = 1
 Flags = KRF_NOTNEAREND
-UniqueOddsRace = KO_AltInvinOdds
+UniqueOddsRace = KO_SMonitorOdds
 
 ################################################################################
 # Multi-item results
