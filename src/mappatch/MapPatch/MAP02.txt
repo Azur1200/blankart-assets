@@ -991,6 +991,7 @@ thing	// 86
 	type = 2001;
 	arg0 = 65;
 	arg1 = 350;
+	arg2 = 4;
 }
 
 thing	// 87
@@ -1003,6 +1004,7 @@ thing	// 87
 	type = 2001;
 	arg0 = 66;
 	arg1 = 350;
+	arg2 = 4;
 }
 
 thing	// 88
@@ -1015,6 +1017,7 @@ thing	// 88
 	type = 2001;
 	arg0 = 67;
 	arg1 = 350;
+	arg2 = 4;
 }
 
 thing	// 89
@@ -1027,6 +1030,7 @@ thing	// 89
 	type = 2001;
 	arg0 = 68;
 	arg1 = 350;
+	arg2 = 4;
 }
 
 thing	// 90
@@ -1443,6 +1447,7 @@ thing	// 126
 	type = 2001;
 	arg0 = 105;
 	arg1 = 280;
+	arg2 = 4;
 }
 
 thing	// 127
@@ -1455,6 +1460,7 @@ thing	// 127
 	type = 2001;
 	arg0 = 106;
 	arg1 = 280;
+	arg2 = 4;
 }
 
 thing	// 128
@@ -1467,6 +1473,7 @@ thing	// 128
 	type = 2001;
 	arg0 = 107;
 	arg1 = 350;
+	arg2 = 4;
 }
 
 thing	// 129
