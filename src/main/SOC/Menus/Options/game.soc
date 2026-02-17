@@ -270,10 +270,15 @@ OfsY = 10
 Style = header
 Text = S-Monitor
 
-MenuItem SMONITORDISTANCE
+MenuItem SMONITORSTARTDISTANCE
 Text = S-Monitor Start Distance
 Tooltip = At this distance value, the S-Monitor is forced into a player's slot.
-Cvar = smonitordist
+Cvar = smonitor_startdist
+
+MenuItem SMONITORDECAYDISTANCE
+Text = S-Monitor Decay Distance
+Tooltip = At this distance value, the S-Monitor is forced into a player's slot.
+Cvar = smonitor_decaydist
 
 MenuItem SMONITOR_SPD
 Text = Speedboost
