@@ -277,7 +277,7 @@ Cvar = smonitor_startdist
 
 MenuItem SMONITORDECAYDISTANCE
 Text = S-Monitor Decay Distance
-Tooltip = At this distance value, the S-Monitor is forced into a player's slot.
+Tooltip = At this distance value, the S-Monitor's time limit begins.
 Cvar = smonitor_decaydist
 
 MenuItem SMONITOR_SPD
