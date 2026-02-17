@@ -1,5 +1,5 @@
 // Aurora Atoll Zone
-// Waypoints: Sunflower
+// Waypoints: Sunflower, NepDisk
 // Rings: CoolThok
 
 namespace = "blankart-patch";
@@ -673,6 +673,7 @@ thing	// 56
 	type = 2001;
 	arg0 = 58;
 	arg1 = 384;
+	arg2 = 4;
 }
 
 thing	// 57
@@ -685,6 +686,7 @@ thing	// 57
 	type = 2001;
 	arg0 = 59;
 	arg1 = 384;
+	arg2 = 4;
 }
 
 thing	// 58

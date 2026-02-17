@@ -2,6 +2,7 @@ Menu OP_VIDEO
 X = 30
 Y = 25
 LineHeight = 10
+ScrollHeight = 134
 HeaderPic = M_VIDEO
 MenuItem SETMODE
 Text = Set Resolution...
@@ -18,10 +19,15 @@ Text = Renderer
 Tooltip = Renderer to run game with.
 Cvar = renderer
 
+MenuItem HIGHRESHUDSCALE
+Text = HUD Scaling (Highres Only)
+Tooltip = At high resolutions, this adjusts the HUD's scale. Larger value = smaller HUD
+Cvar = highreshudscale
+
 MenuItem GAMMA
 OfsY = 10
 Text = Gamma
-Tooltip = Gamma (brightness) of the game.
+Tooltip = Gamma of the game.
 Slider = gamma
 
 MenuItem SHOWFPS
@@ -40,12 +46,17 @@ Tooltip = Set manual framerate cap.
 Cvar = fpscap
 
 MenuItem VISUAL
-OfsY = 10
 Text = Visual Effects...
 Tooltip = Adjust Visual Graphic effects.
 SubMenu = OP_VISUAL
 
+MenuItem COLORPRF
+Text = Color Profile...
+Tooltip = Adjust the color profile of the game's display.
+SubMenu = OP_VIDCOLORPROFILE
+
 MenuItem DRAWDIST
+OfsY = 10
 Text = Draw Distance
 Tooltip = How far away objects are drawn.
 Cvar = drawdist
@@ -169,6 +180,11 @@ Text = Sliptide Tilt
 Tooltip = Rotate player sprites during a spliptide.
 Cvar = sliptidetilt
 
+MenuItem NULLTILT
+Text = Null Drift Tilt
+Tooltip = Rotate player sprites during a null drift.
+Cvar = nulldrifttilt
+
 MenuItem SALTYHOP
 Text = Visual Hopping
 Tooltip = Do a visual-only hop during drifts.
@@ -183,6 +199,11 @@ MenuItem DRIFTEFX
 Text = Drift Effects
 Tooltip = Toggle the drift boost effect.
 Cvar = kartdriftefx
+
+MenuItem NULLEFX
+Text = Null Drift Effects
+Tooltip = Toggle the null drift effect
+Cvar = nulldriftefx
 
 MenuItem SPARKPULSE
 Text = Driftspark Pulse
@@ -203,3 +224,145 @@ MenuItem FOLLOW
 Text = Hide Followers
 Tooltip = Disable the visibility of Followers.
 Cvar = hidefollowers
+
+MenuItem PFFADE
+Text = Fade Players+Followers Near Camera
+Tooltip = Fade players and their followers when they get too close to your camera.
+Cvar = playerfade
+
+
+Menu OP_VIDCOLORPROFILE
+X = 30
+Y = 25
+LineHeight = 10
+ScrollHeight = 134
+HeaderPic = M_VIDEO
+MenuItem GLOBALSATR
+Text = Global Saturation
+Tooltip = Reduce the saturation of the displayed image.
+Cvar = saturation
+
+MenuItem GLOBALGAMM
+Text = Global Gamma
+Tooltip = Increase or decrease the brightness of the displayed image.
+Cvar = gamma
+
+MenuItem REDHEAD
+OfsY = 10
+Style = header
+Text = Red
+
+MenuItem REDSATURATE
+Text = Red Saturation
+Tooltip = Reduce the saturation of red in the displayed image.
+Cvar = rsaturation
+
+MenuItem REDGAMMA
+Text = Red Gamma
+Tooltip = Increase or decrease the brightness of red in the displayed image.
+Cvar = rgamma
+
+MenuItem REDHUE
+Text = Red Hue
+Tooltip = Adjust the hue of red in the displayed image.
+Cvar = rhue
+
+MenuItem YELHEAD
+OfsY = 10
+Style = header
+Text = Yellow
+
+MenuItem YELSATURATE
+Text = Yellow Saturation
+Tooltip = Reduce the saturation of yellow in the displayed image.
+Cvar = ysaturation
+
+MenuItem YELGAMMA
+Text = Yellow Gamma
+Tooltip = Increase or decrease the brightness of yellow in the displayed image.
+Cvar = ygamma
+
+MenuItem YELHUE
+Text = Yellow Hue
+Tooltip = Adjust the hue of yellow in the displayed image.
+Cvar = yhue
+
+MenuItem GRNHEAD
+OfsY = 10
+Style = header
+Text = Green
+
+MenuItem GRNSATURATE
+Text = Green Saturation
+Tooltip = Reduce the saturation of green in the displayed image.
+Cvar = gsaturation
+
+MenuItem GRNGAMMA
+Text = Green Gamma
+Tooltip = Increase or decrease the brightness of green in the displayed image.
+Cvar = ggamma
+
+MenuItem GRNHUE
+Text = Green Hue
+Tooltip = Adjust the hue of green in the displayed image.
+Cvar = ghue
+
+MenuItem CYNHEAD
+OfsY = 10
+Style = header
+Text = Cyan
+
+MenuItem CYNSATURATE
+Text = Cyan Saturation
+Tooltip = Reduce the saturation of cyan in the displayed image.
+Cvar = csaturation
+
+MenuItem CYNGAMMA
+Text = Cyan Gamma
+Tooltip = Increase or decrease the brightness of cyan in the displayed image.
+Cvar = cgamma
+
+MenuItem CYNHUE
+Text = Cyan Hue
+Tooltip = Adjust the hue of cyan in the displayed image.
+Cvar = chue
+
+MenuItem BLUHEAD
+OfsY = 10
+Style = header
+Text = Blue
+
+MenuItem BLUSATURATE
+Text = Blue Saturation
+Tooltip = Reduce the saturation of blue in the displayed image.
+Cvar = bsaturation
+
+MenuItem BLUGAMMA
+Text = Blue Gamma
+Tooltip = Increase or decrease the brightness of blue in the displayed image.
+Cvar = bgamma
+
+MenuItem BLUHUE
+Text = Blue Hue
+Tooltip = Adjust the hue of blue in the displayed image.
+Cvar = bhue
+
+MenuItem MGNHEAD
+OfsY = 10
+Style = header
+Text = Magenta
+
+MenuItem MGNSATURATE
+Text = Magenta Saturation
+Tooltip = Reduce the saturation of magenta in the displayed image.
+Cvar = msaturation
+
+MenuItem MGNGAMMA
+Text = Magenta Gamma
+Tooltip = Increase or decrease the brightness of magenta in the displayed image.
+Cvar = mgamma
+
+MenuItem MGNHUE
+Text = Magenta Hue
+Tooltip = Adjust the hue of magenta in the displayed image.
+Cvar = mhue

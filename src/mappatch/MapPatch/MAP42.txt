@@ -2,7 +2,7 @@
 // Waypoints: Lugent
 
 namespace = "blankart-patch";
-version = 1;
+version = 2;
 checksum = "ff9952a4e9dda3ec";
 
 thing	// 0
@@ -1239,7 +1239,7 @@ thing	// 106
 	x = 1440.0;
 	y = 256.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 256;
 	arg1 = 4;
 	arg2 = 1;
@@ -1250,7 +1250,7 @@ thing	// 107
 	x = 4800.0;
 	y = 2144.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 96;
 	arg1 = 4;
 	arg2 = 1;
@@ -1261,7 +1261,7 @@ thing	// 108
 	x = 5152.0;
 	y = 1760.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 96;
 	arg1 = 4;
 	arg2 = 1;
@@ -1372,7 +1372,7 @@ thing	// 118
 	x = 1504.0;
 	y = -3808.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 128;
 	arg1 = 4;
 	arg2 = 1;
@@ -1383,7 +1383,7 @@ thing	// 119
 	x = 1312.0;
 	y = -3776.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 128;
 	arg1 = 4;
 	arg2 = 1;

@@ -2,7 +2,7 @@
 // Waypoints: Sonic1983 (PB), SinosTH (PB), luna, GenericHeroGuy
 
 namespace = "blankart-patch";
-version = 1;
+version = 2;
 checksum = "cade667da28b9d58";
 
 thing	// 0
@@ -3069,7 +3069,7 @@ thing	// 271
 	x = -5696.0;
 	y = -3136.0;
 	angle = 16;
-	type = 2004;
+	type = 20004;
 	arg0 = 256;
 	arg1 = 10;
 }
