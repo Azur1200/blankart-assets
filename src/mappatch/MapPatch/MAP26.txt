@@ -1,8 +1,8 @@
 // Desert Palace Zone
-// Waypoints: Super Chris, Frank_Th
+// Waypoints: Super Chris, Frank_Th, NepDisk
 
 namespace = "blankart-patch";
-version = 1;
+version = 2;
 checksum = "1ffd4e18169ba68d";
 
 thing	// 0
@@ -889,4 +889,51 @@ thing	// 75
 	arg0 = 18;
 	arg1 = 600;
 	arg2 = 6;
+}
+
+thing	// 76
+{
+	id = 40;
+	x = 1600.0;
+	y = -2752.0;
+	height = 320.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 67;
+	arg1 = 384;
+	arg2 = 6;
+}
+
+thing	// 77
+{
+	id = 67;
+	x = 1230.0;
+	y = -2418.0;
+	height = 320.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 68;
+	arg1 = 384;
+	arg2 = 6;
+}
+
+thing	// 78
+{
+	id = 68;
+	x = 768.0;
+	y = -1920.0;
+	height = 320.0;
+	angle = 270;
+	type = 2001;
+	arg0 = 47;
+	arg1 = 384;
+	arg2 = 6;
+}
+
+thing	// 79
+{
+	x = -3168.0;
+	y = -192.0;
+	angle = 270;
+	type = 6502;
 }

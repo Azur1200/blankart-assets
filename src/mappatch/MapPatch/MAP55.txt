@@ -2,7 +2,7 @@
 // Waypoints: GenericHeroGuy
 
 namespace = "blankart-patch";
-version = 1;
+version = 2;
 checksum = "bd965a1a53b4250f";
 
 thing	// 0
@@ -466,7 +466,7 @@ thing	// 41
 	x = 3456.0;
 	y = -6848.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 320;
 	arg1 = 6;
 	arg2 = 1;
@@ -477,7 +477,7 @@ thing	// 42
 	x = 4032.0;
 	y = -6720.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 320;
 	arg1 = 6;
 	arg2 = 1;
@@ -488,7 +488,7 @@ thing	// 43
 	x = 2048.0;
 	y = -6208.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 320;
 	arg1 = 8;
 	arg2 = 1;

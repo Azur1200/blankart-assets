@@ -3,7 +3,7 @@
 // Rings: Phoenix
 
 namespace = "blankart-patch";
-version = 1;
+version = 2;
 checksum = "395afd528cd901c2";
 
 thing	// 0
@@ -1213,7 +1213,7 @@ thing	// 107
 	x = -4800.0;
 	y = -5312.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 140;
 	arg1 = 16;
 }
@@ -1223,7 +1223,7 @@ thing	// 108
 	x = -3328.0;
 	y = -7456.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 140;
 	arg1 = 16;
 }
