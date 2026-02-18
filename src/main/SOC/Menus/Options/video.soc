@@ -24,11 +24,11 @@ Text = HUD Scaling (Highres Only)
 Tooltip = At high resolutions, this adjusts the HUD's scale. Larger value = smaller HUD
 Cvar = highreshudscale
 
-MenuItem GAMMA
+MenuItem COLORPRF
 OfsY = 10
-Text = Gamma
-Tooltip = Gamma of the game.
-Slider = gamma
+Text = Color Profile...
+Tooltip = Adjust the color profile of the game's display.
+SubMenu = OP_VIDCOLORPROFILE
 
 MenuItem SHOWFPS
 Text = Show FPS
@@ -49,11 +49,6 @@ MenuItem VISUAL
 Text = Visual Effects...
 Tooltip = Adjust Visual Graphic effects.
 SubMenu = OP_VISUAL
-
-MenuItem COLORPRF
-Text = Color Profile...
-Tooltip = Adjust the color profile of the game's display.
-SubMenu = OP_VIDCOLORPROFILE
 
 MenuItem DRAWDIST
 OfsY = 10
@@ -240,12 +235,12 @@ HeaderPic = M_VIDEO
 MenuItem GLOBALSATR
 Text = Global Saturation
 Tooltip = Reduce the saturation of the displayed image.
-Cvar = saturation
+Slider = saturation
 
-MenuItem GLOBALGAMM
-Text = Global Gamma
+MenuItem GLOBALBRGH
+Text = Global Brightness
 Tooltip = Increase or decrease the brightness of the displayed image.
-Cvar = gamma
+Slider = brightness
 
 MenuItem REDHEAD
 OfsY = 10
@@ -255,17 +250,17 @@ Text = Red
 MenuItem REDSATURATE
 Text = Red Saturation
 Tooltip = Reduce the saturation of red in the displayed image.
-Cvar = rsaturation
+Slider = rsaturation
 
-MenuItem REDGAMMA
-Text = Red Gamma
+MenuItem REDBRIGHT
+Text = Red Brightness
 Tooltip = Increase or decrease the brightness of red in the displayed image.
-Cvar = rgamma
+Slider = rbrightness
 
 MenuItem REDHUE
 Text = Red Hue
 Tooltip = Adjust the hue of red in the displayed image.
-Cvar = rhue
+Slider = rhue
 
 MenuItem YELHEAD
 OfsY = 10
@@ -275,17 +270,17 @@ Text = Yellow
 MenuItem YELSATURATE
 Text = Yellow Saturation
 Tooltip = Reduce the saturation of yellow in the displayed image.
-Cvar = ysaturation
+Slider = ysaturation
 
-MenuItem YELGAMMA
-Text = Yellow Gamma
+MenuItem YELBRIGHT
+Text = Yellow Brightness
 Tooltip = Increase or decrease the brightness of yellow in the displayed image.
-Cvar = ygamma
+Slider = ybrightness
 
 MenuItem YELHUE
 Text = Yellow Hue
 Tooltip = Adjust the hue of yellow in the displayed image.
-Cvar = yhue
+Slider = yhue
 
 MenuItem GRNHEAD
 OfsY = 10
@@ -295,17 +290,17 @@ Text = Green
 MenuItem GRNSATURATE
 Text = Green Saturation
 Tooltip = Reduce the saturation of green in the displayed image.
-Cvar = gsaturation
+Slider = gsaturation
 
-MenuItem GRNGAMMA
-Text = Green Gamma
+MenuItem GRNBRIGHT
+Text = Green Brightness
 Tooltip = Increase or decrease the brightness of green in the displayed image.
-Cvar = ggamma
+Slider = gbrightness
 
 MenuItem GRNHUE
 Text = Green Hue
 Tooltip = Adjust the hue of green in the displayed image.
-Cvar = ghue
+Slider = ghue
 
 MenuItem CYNHEAD
 OfsY = 10
@@ -315,17 +310,17 @@ Text = Cyan
 MenuItem CYNSATURATE
 Text = Cyan Saturation
 Tooltip = Reduce the saturation of cyan in the displayed image.
-Cvar = csaturation
+Slider = csaturation
 
-MenuItem CYNGAMMA
-Text = Cyan Gamma
+MenuItem CYNBRIGHT
+Text = Cyan Brightness
 Tooltip = Increase or decrease the brightness of cyan in the displayed image.
-Cvar = cgamma
+Slider = cbrightness
 
 MenuItem CYNHUE
 Text = Cyan Hue
 Tooltip = Adjust the hue of cyan in the displayed image.
-Cvar = chue
+Slider = chue
 
 MenuItem BLUHEAD
 OfsY = 10
@@ -335,17 +330,17 @@ Text = Blue
 MenuItem BLUSATURATE
 Text = Blue Saturation
 Tooltip = Reduce the saturation of blue in the displayed image.
-Cvar = bsaturation
+Slider = bsaturation
 
-MenuItem BLUGAMMA
-Text = Blue Gamma
+MenuItem BLUBRIGHT
+Text = Blue Brightness
 Tooltip = Increase or decrease the brightness of blue in the displayed image.
-Cvar = bgamma
+Slider = bbrightness
 
 MenuItem BLUHUE
 Text = Blue Hue
 Tooltip = Adjust the hue of blue in the displayed image.
-Cvar = bhue
+Slider = bhue
 
 MenuItem MGNHEAD
 OfsY = 10
@@ -355,14 +350,14 @@ Text = Magenta
 MenuItem MGNSATURATE
 Text = Magenta Saturation
 Tooltip = Reduce the saturation of magenta in the displayed image.
-Cvar = msaturation
+Slider = msaturation
 
-MenuItem MGNGAMMA
-Text = Magenta Gamma
+MenuItem MGNBRIGHT
+Text = Magenta Brightness
 Tooltip = Increase or decrease the brightness of magenta in the displayed image.
-Cvar = mgamma
+Slider = mbrightness
 
 MenuItem MGNHUE
 Text = Magenta Hue
 Tooltip = Adjust the hue of magenta in the displayed image.
-Cvar = mhue
+Slider = mhue
