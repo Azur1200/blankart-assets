@@ -143,6 +143,11 @@ LOOKBACK
 	Text = Look Backward
 	Tooltip = Bind looking backwards.
 	Call = MR_ChangeControl
+HORNCODE
+	Argument = GC_HORNCODE
+	Text = Follower Horn
+	Tooltip = Bind honking your horn. Only works if you have a Follower with you.
+	Call = MR_ChangeControl
 MISCBUTTONS_
 MISCBUTTONS
 	TempOffset = True

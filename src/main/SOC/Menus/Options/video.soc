@@ -1,5 +1,6 @@
 MenuPanel OP_VIDEO
 LineHeight = 10
+ScrollHeight = 134
 Items
 SETMODE
 	Style = VIDEOMODE
@@ -14,11 +15,15 @@ RENDERER
 	Text = Renderer
 	Tooltip = Renderer to run game with.
 	Cvar = renderer
-GAMMA
+HIGHRESHUDSCALE
+	Text = HUD Scaling (Highres Only)
+	Tooltip = At high resolutions, this adjusts the HUD's scale. Larger value = smaller HUD
+	Cvar = highreshudscale
+COLORPRF
 	OfsY = 10
-	Text = Gamma
-	Tooltip = Gamma (brightness) of the game.
-	Slider = gamma
+	Text = Color Profile...
+	Tooltip = Adjust the color profile of the game's display.
+	SubMenu = OP_VIDCOLORPROFILE
 SHOWFPS
 	Text = Show FPS
 	Tooltip = Show current game framerate.
@@ -32,11 +37,11 @@ FPSCAP
 	Tooltip = Set manual framerate cap.
 	Cvar = fpscap
 VISUAL
-	OfsY = 10
 	Text = Visual Effects...
 	Tooltip = Adjust Visual Graphic effects.
 	SubMenu = OP_VISUAL
 DRAWDIST
+	OfsY = 10
 	Text = Draw Distance
 	Tooltip = How far away objects are drawn.
 	Cvar = drawdist
@@ -180,6 +185,10 @@ SLIPTILT
 	Text = Sliptide Tilt
 	Tooltip = Rotate player sprites during a spliptide.
 	Cvar = sliptidetilt
+NULLTILT
+	Text = Null Drift Tilt
+	Tooltip = Rotate player sprites during a null drift.
+	Cvar = nulldrifttilt
 SALTYHOP
 	Text = Visual Hopping
 	Tooltip = Do a visual-only hop during drifts.
@@ -192,6 +201,10 @@ DRIFTEFX
 	Text = Drift Effects
 	Tooltip = Toggle the drift boost effect.
 	Cvar = kartdriftefx
+NULLEFX
+	Text = Null Drift Effects
+	Tooltip = Toggle the null drift effect
+	Cvar = nulldriftefx
 SPARKPULSE
 	Text = Driftspark Pulse
 	Tooltip = Size of drift spark pulse.
@@ -208,6 +221,119 @@ FOLLOW
 	Text = Hide Followers
 	Tooltip = Disable the visibility of Followers.
 	Cvar = hidefollowers
+PFFADE
+	Text = Fade Players	Followers Near Camera
+	Tooltip = Fade players and their followers when they get too close to your camera.
+	Cvar = playerfade
+
+MenuPanel OP_VIDCOLORPROFILE
+LineHeight = 10
+ScrollHeight = 134
+Items
+GLOBALSATR
+	Text = Global Saturation
+	Tooltip = Reduce the saturation of the displayed image.
+	Slider = saturation
+GLOBALBRGH
+	Text = Global Brightness
+	Tooltip = Increase or decrease the brightness of the displayed image.
+	Slider = brightness
+REDHEAD
+	OfsY = 10
+	Style = header
+	Text = Red
+REDSATURATE
+	Text = Red Saturation
+	Tooltip = Reduce the saturation of red in the displayed image.
+	Slider = rsaturation
+REDBRIGHT
+	Text = Red Brightness
+	Tooltip = Increase or decrease the brightness of red in the displayed image.
+	Slider = rbrightness
+REDHUE
+	Text = Red Hue
+	Tooltip = Adjust the hue of red in the displayed image.
+	Slider = rhue
+YELHEAD
+	OfsY = 10
+	Style = header
+	Text = Yellow
+YELSATURATE
+	Text = Yellow Saturation
+	Tooltip = Reduce the saturation of yellow in the displayed image.
+	Slider = ysaturation
+YELBRIGHT
+	Text = Yellow Brightness
+	Tooltip = Increase or decrease the brightness of yellow in the displayed image.
+	Slider = ybrightness
+YELHUE
+	Text = Yellow Hue
+	Tooltip = Adjust the hue of yellow in the displayed image.
+	Slider = yhue
+GRNHEAD
+	OfsY = 10
+	Style = header
+	Text = Green
+GRNSATURATE
+	Text = Green Saturation
+	Tooltip = Reduce the saturation of green in the displayed image.
+	Slider = gsaturation
+GRNBRIGHT
+	Text = Green Brightness
+	Tooltip = Increase or decrease the brightness of green in the displayed image.
+	Slider = gbrightness
+GRNHUE
+	Text = Green Hue
+	Tooltip = Adjust the hue of green in the displayed image.
+	Slider = ghue
+CYNHEAD
+	OfsY = 10
+	Style = header
+	Text = Cyan
+CYNSATURATE
+	Text = Cyan Saturation
+	Tooltip = Reduce the saturation of cyan in the displayed image.
+	Slider = csaturation
+CYNBRIGHT
+	Text = Cyan Brightness
+	Tooltip = Increase or decrease the brightness of cyan in the displayed image.
+	Slider = cbrightness
+CYNHUE
+	Text = Cyan Hue
+	Tooltip = Adjust the hue of cyan in the displayed image.
+	Slider = chue
+BLUHEAD
+	OfsY = 10
+	Style = header
+	Text = Blue
+BLUSATURATE
+	Text = Blue Saturation
+	Tooltip = Reduce the saturation of blue in the displayed image.
+	Slider = bsaturation
+BLUBRIGHT
+	Text = Blue Brightness
+	Tooltip = Increase or decrease the brightness of blue in the displayed image.
+	Slider = bbrightness
+BLUHUE
+	Text = Blue Hue
+	Tooltip = Adjust the hue of blue in the displayed image.
+	Slider = bhue
+MGNHEAD
+	OfsY = 10
+	Style = header
+	Text = Magenta
+MGNSATURATE
+	Text = Magenta Saturation
+	Tooltip = Reduce the saturation of magenta in the displayed image.
+	Slider = msaturation
+MGNBRIGHT
+	Text = Magenta Brightness
+	Tooltip = Increase or decrease the brightness of magenta in the displayed image.
+	Slider = mbrightness
+MGNHUE
+	Text = Magenta Hue
+	Tooltip = Adjust the hue of magenta in the displayed image.
+	Slider = mhue
 
 Menu OP_VIDEO
 HeaderPic = M_VIDEO
@@ -246,3 +372,10 @@ Panels
 MAIN : OP_VISUAL
 	X = 60
 	Y = 40
+
+Menu OP_VIDCOLORPROFILE
+HeaderPic = M_VIDEO
+Panels
+MAIN : OP_VIDCOLORPROFILE
+	X = 30
+	Y = 25

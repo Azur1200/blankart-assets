@@ -3,7 +3,7 @@
 // Rings: ArcadeStriker
 
 namespace = "blankart-patch";
-version = 1;
+version = 2;
 checksum = "cc633b25497f57cd";
 
 thing	// 0
@@ -991,6 +991,7 @@ thing	// 86
 	type = 2001;
 	arg0 = 65;
 	arg1 = 350;
+	arg2 = 4;
 }
 
 thing	// 87
@@ -1003,6 +1004,7 @@ thing	// 87
 	type = 2001;
 	arg0 = 66;
 	arg1 = 350;
+	arg2 = 4;
 }
 
 thing	// 88
@@ -1015,6 +1017,7 @@ thing	// 88
 	type = 2001;
 	arg0 = 67;
 	arg1 = 350;
+	arg2 = 4;
 }
 
 thing	// 89
@@ -1027,6 +1030,7 @@ thing	// 89
 	type = 2001;
 	arg0 = 68;
 	arg1 = 350;
+	arg2 = 4;
 }
 
 thing	// 90
@@ -1443,6 +1447,7 @@ thing	// 126
 	type = 2001;
 	arg0 = 105;
 	arg1 = 280;
+	arg2 = 4;
 }
 
 thing	// 127
@@ -1455,6 +1460,7 @@ thing	// 127
 	type = 2001;
 	arg0 = 106;
 	arg1 = 280;
+	arg2 = 4;
 }
 
 thing	// 128
@@ -1467,6 +1473,7 @@ thing	// 128
 	type = 2001;
 	arg0 = 107;
 	arg1 = 350;
+	arg2 = 4;
 }
 
 thing	// 129
@@ -2012,7 +2019,7 @@ thing	// 176
 	x = 4800.0;
 	y = 2752.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 128;
 	arg1 = 16;
 }
@@ -2022,7 +2029,7 @@ thing	// 177
 	x = -320.0;
 	y = 2752.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 64;
 	arg1 = 16;
 }
@@ -2032,7 +2039,7 @@ thing	// 178
 	x = -7840.0;
 	y = 6016.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 64;
 	arg1 = 4;
 	arg2 = 1;
@@ -2043,7 +2050,7 @@ thing	// 179
 	x = -8224.0;
 	y = 6016.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 64;
 	arg1 = 4;
 	arg2 = 1;
@@ -2054,7 +2061,7 @@ thing	// 180
 	x = -8224.0;
 	y = 5760.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 64;
 	arg1 = 4;
 	arg2 = 1;
@@ -2065,7 +2072,7 @@ thing	// 181
 	x = -8224.0;
 	y = 5504.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 64;
 	arg1 = 4;
 	arg2 = 1;
@@ -2076,7 +2083,7 @@ thing	// 182
 	x = -7840.0;
 	y = 5504.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 64;
 	arg1 = 4;
 	arg2 = 1;
@@ -2087,7 +2094,7 @@ thing	// 183
 	x = -7840.0;
 	y = 5760.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 64;
 	arg1 = 4;
 	arg2 = 1;
@@ -2098,7 +2105,7 @@ thing	// 184
 	x = -7840.0;
 	y = 5248.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 64;
 	arg1 = 4;
 	arg2 = 1;
@@ -2109,7 +2116,7 @@ thing	// 185
 	x = -8224.0;
 	y = 5248.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 64;
 	arg1 = 4;
 	arg2 = 1;
@@ -2120,7 +2127,7 @@ thing	// 186
 	x = -6720.0;
 	y = 5952.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 64;
 	arg1 = 16;
 }
@@ -2130,7 +2137,7 @@ thing	// 187
 	x = -6720.0;
 	y = 5504.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 64;
 	arg1 = 16;
 }

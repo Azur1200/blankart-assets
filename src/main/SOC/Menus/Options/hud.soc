@@ -115,7 +115,7 @@ PINGICON
 pingstyle
 	Text = Ping Display Style
 	Tooltip = Change how the ping display looks visually.
-	Cvar = pingicon
+	Cvar = pingstyle
 
 MenuPanel OP_GAMEHUD
 LineHeight = 10
