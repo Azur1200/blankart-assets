@@ -430,5 +430,5 @@ CooldownTime = 5
 KartResultAlt eggmanmonitor
 DisplayName = Egg Mine
 Flags = KRF_NOTFORBOTTOM
-OddsRace = 30,28,14,5,0,0,0,0,0,0,0,0,0,0,0,0
+OddsRace = 25,26,16,2,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 4,0
