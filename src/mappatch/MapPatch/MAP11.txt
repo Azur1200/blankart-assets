@@ -3,7 +3,7 @@
 // Rings: ArcadeStriker
 
 namespace = "blankart-patch";
-version = 1;
+version = 2;
 checksum = "b851a70d9d0aefc3";
 
 thing	// 0
@@ -4308,7 +4308,7 @@ thing	// 470
 	x = -6496.0;
 	y = -5120.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 1024;
 	arg1 = 512;
 	arg2 = 1;
@@ -4319,7 +4319,7 @@ thing	// 471
 	x = -4000.0;
 	y = 3808.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 128;
 	arg1 = 48;
 	arg2 = 1;
@@ -4330,7 +4330,7 @@ thing	// 472
 	x = -3840.0;
 	y = 3808.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 128;
 	arg1 = 48;
 	arg2 = 1;

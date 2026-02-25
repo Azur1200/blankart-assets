@@ -3875,3 +3875,13 @@ Priority = 64
 
 Sound sfx_rainbr
 Priority = 64
+
+Sound sfx_horn00
+Priority = 255
+Caption = Gratuitous honking
+
+# Fastfall bounce
+Sound sfx_vclgna
+Priority = 96
+Flags = 64
+Caption = Bouncy landing

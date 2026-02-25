@@ -3,7 +3,7 @@
 // Rings: NepDisk
 
 namespace = "blankart-patch";
-version = 1;
+version = 2;
 checksum = "fd5df5fa1c7d356d";
 basemaptyperemoval = "2001";
 
@@ -6412,7 +6412,7 @@ thing	// 722
 	x = -13664.0;
 	y = -12864.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 386;
 	arg1 = 50;
 	arg2 = 1;
@@ -6423,7 +6423,7 @@ thing	// 723
 	x = -14336.0;
 	y = -12864.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 386;
 	arg1 = 50;
 	arg2 = 1;
@@ -6434,7 +6434,7 @@ thing	// 724
 	x = -14880.0;
 	y = -12864.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 386;
 	arg1 = 50;
 	arg2 = 1;

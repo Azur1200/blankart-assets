@@ -17,12 +17,16 @@ BigPatches = K_ITRSHE
 SmallPatches = K_ISRSHE
 Equip = KITEMEQUIP_ROCKETS
 
+# To add later: K_ITSMR2,K_ITSMR3,K_ITSMR4,K_ITSMR5,K_ITSMR6,K_ITSMR7
+# To add later: K_ISSMR2,K_ISSMR3,K_ISSMR4,K_ISSMR5,K_ISSMR6
 KartItem INVINCIBILITY
 BigPatches = K_ITINV1,K_ITINV2,K_ITINV3,K_ITINV4,K_ITINV5,K_ITINV6,K_ITINV7
 SmallPatches = K_ISINV1,K_ISINV2,K_ISINV3,K_ISINV4,K_ISINV5,K_ISINV6
+BigAltPatches = K_ITSMR1
+SmallAltPatches = K_ISSMR1
 Flags = KIF_ANIMATED|KIF_DARKBG
-FlagsAlt = KIF_ANIMATED|KIF_DARKBG
 Equip = KITEMEQUIP_NONE
+FlagsAlt = KIF_DARKBG|KIF_HYUCANTSTEAL
 EquipAlt = KITEMEQUIP_NONE
 
 KartItem BANANA
@@ -119,6 +123,11 @@ BigPatches = K_ITFLMS
 SmallPatches = K_ISFLMS
 Flags = KIF_UNIQUESLOT|KIF_DARKBG
 Equip = KITEMEQUIP_SHIELD
+
+KartItem EGGBRICK
+BigPatches = K_ITBRCK
+SmallPatches = K_ISBRCK
+Equip = KITEMEQUIP_NONE
 
 ################################################################################
 # Item result declarations (so their toggles appear in the right order)
@@ -407,9 +416,9 @@ CooldownTime = 10
 ################################################################################
 
 KartResultAlt invincibility
-DisplayName = Alt. Invincibility
+DisplayName = S-Monitor
 Flags = KRF_NOTNEAREND
-UniqueOddsRace = KO_AltInvinOdds
+UniqueOddsRace = KO_SMonitorOdds
 
 KartResultAlt shrink
 DisplayName = Alt. Shrink
@@ -421,5 +430,5 @@ CooldownTime = 5
 KartResultAlt eggmanmonitor
 DisplayName = Egg Mine
 Flags = KRF_NOTFORBOTTOM
-OddsRace = 30,28,14,5,0,0,0,0,0,0,0,0,0,0,0,0
+OddsRace = 25,26,16,2,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 4,0

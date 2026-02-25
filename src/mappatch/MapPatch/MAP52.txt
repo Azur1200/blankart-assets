@@ -3,7 +3,7 @@
 // Rings: GenericHeroGuy
 
 namespace = "blankart-patch";
-version = 1;
+version = 2;
 checksum = "c71e32e19067f80f";
 
 thing	// 0
@@ -1269,7 +1269,7 @@ thing	// 124
 	x = 384.0;
 	y = -2624.0;
 	angle = 270;
-	type = 2004;
+	type = 20004;
 	arg0 = 160;
 	arg1 = 10;
 	arg2 = 1;
