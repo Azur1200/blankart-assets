@@ -79,6 +79,11 @@ Text = Digital Lite Steer
 Tooltip = Allow digital users to do shallow turns by holding back.
 Cvar = litesteer
 
+MenuItem TILTCONTROL
+Text = Tilt Steering
+Tooltip = Enable using the motion sensors on supported gamepads.
+Cvar = tiltcontrol
+
 MenuItem DEFAULTS
 Text = Reset to defaults
 Tooltip = Set controls to default.
