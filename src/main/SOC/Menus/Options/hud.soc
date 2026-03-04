@@ -144,6 +144,11 @@ Text = Ping Display Style
 Tooltip = Change how the ping display looks visually.
 Cvar = pingstyle
 
+MenuItem nodeip
+Text = Show IP address in playerlist
+Tooltip = Should Player IP addresses be printed in the nodes or listplayers command?
+Cvar = showipinnodelist
+
 
 Menu OP_GAMEHUD
 X = 30
@@ -159,6 +164,11 @@ MenuItem MINIVISI
 Text = Minimap Visibility
 Tooltip = How translucent is the minimap?
 Slider = kartminimap
+
+MenuItem MINISMALL
+Text = Small Minimap Players
+Tooltip = Scale minimap player and object icons smaller.
+Cvar = smallminimapplayers
 
 MenuItem MININAMETAGS
 Text = Minimap Nametags
