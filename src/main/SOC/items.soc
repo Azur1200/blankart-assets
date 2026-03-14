@@ -421,7 +421,7 @@ Flags = KRF_NOTNEAREND
 UniqueOddsRace = KO_SMonitorOdds
 
 KartResultAlt shrink
-DisplayName = Alt. Shrink
+DisplayName = Mini
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_NOTNEAREND
 OddsRace = 0,0,0,0,0,0,0,4,7,12,2,0,0,0,0,0
 OddsBattle = 1,0
@@ -431,4 +431,10 @@ KartResultAlt eggmanmonitor
 DisplayName = Egg Mine
 Flags = KRF_NOTFORBOTTOM
 OddsRace = 25,26,16,2,0,0,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 4,0
+
+KartResultAlt thundershield
+DisplayName = Attraction Shield
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+OddsRace = 5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 4,0
