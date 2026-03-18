@@ -87,6 +87,11 @@ Text = Character voices
 Tooltip = Frequency of character voice lines.
 Cvar = kartvoices
 
+MenuItem FHORNS
+Text = Follower Horns
+Tooltip = Frequency of follower horns.
+Cvar = taunthorns
+
 MenuItem HITEM
 Text = HitEm Dialog
 Tooltip = Globally play hurt sound of other player.
