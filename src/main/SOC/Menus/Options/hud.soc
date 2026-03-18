@@ -210,6 +210,26 @@ Text = Darken Itembox
 Tooltip = Darken the itembox when certain items are inside it.
 Cvar = darkitembox
 
+MenuItem LAPHEAD
+OfsY = 10
+Style = header
+Text = Lap Emblem
+
+MenuItem LAPEMBLEM
+Text = Lap Emblem and Splits
+Tooltip = Decide if lap emblems and splits are shown.
+Cvar = showlapemblem
+
+MenuItem SPLITSTYLE
+Text = Splits Style
+Tooltip = Decide how lap splits are shown.
+Cvar = lapemblemmode
+
+MenuItem SPLITTIME
+Text = Splits Time
+Tooltip = Decide who's time to show in splits.
+Cvar = racesplits
+
 MenuItem NAMETAGHEAD
 OfsY = 10
 Style = header
@@ -219,6 +239,16 @@ MenuItem NAMETAGS
 Text = Nametags
 Tooltip = Show the name of players online.
 Cvar = seenames
+
+MenuItem NAMETAGRESTAT
+Text = Nametag Restat
+Tooltip = Show the restat of players online.
+Cvar = seenamerestat
+
+MenuItem NAMETAGOWN
+Text = Show own Nametag
+Tooltip = Show your own name.
+Cvar = seeownname
 
 MenuItem SPEEDOMETERHEAD
 OfsY = 10
