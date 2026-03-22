@@ -2,9 +2,9 @@ Welcome to blankart-assets.
 
 This contains everything to create main.pk3.
 
-Requriements:
+Requirements:
 python3
-zopfil (or zlib although hashes were made with zopfil in mind)
+zopfli (or zlib although hashes were made with zopfli in mind)
 xxhash (For printing the checksum after file is made)
 
-Thanks to GenericHeroGuy for creating this very handy Pk3 build system!
+Thanks to GenericHeroGuy for creating this very handy PK3 build system!
