@@ -37,6 +37,11 @@ Text = Surround Sound
 Tooltip = Toggle the usage of Surround Sound
 Cvar = surround
 
+MenuItem SOUNDEFX
+Text = Sound EFX
+Tooltip = Turn Sound Effect EFX on or off.
+Cvar = soundefx
+
 MenuItem AUDIOEFFECTS
 Text = Audio Effects...
 Tooltip = Adjust Audio effects.
