@@ -84,6 +84,8 @@ EquipAlt = KITEMEQUIP_NONE
 KartItem THUNDERSHIELD
 BigPatches = K_ITTHNS
 SmallPatches = K_ISTHNS
+BigAltPatches = K_ITATRS
+SmallAltPatches = K_ISATRS
 Flags = KIF_UNIQUESLOT|KIF_DARKBG
 Equip = KITEMEQUIP_SHIELD
 
