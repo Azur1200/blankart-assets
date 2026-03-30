@@ -37,6 +37,8 @@ Equip = KITEMEQUIP_TRAIL
 KartItem EGGMAN
 BigPatches = K_ITEGGM
 SmallPatches = K_ISEGGM
+BigAltPatches = K_ITALEG
+SmallAltPatches = K_ISEGGM
 Equip = KITEMEQUIP_TRAIL
 EquipAlt = KITEMEQUIP_ORBIT
 
