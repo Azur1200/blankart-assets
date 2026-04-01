@@ -156,7 +156,7 @@ Cvar = gr_shearing
 
 
 Menu OP_VISUAL
-X = 60
+X = 30
 Y = 40
 LineHeight = 10
 HeaderPic = M_VIDEO
@@ -164,6 +164,21 @@ MenuItem VHSPAUSE
 Text = VHS Effect
 Tooltip = Show a VHS-like effect when the game is paused or youre rewinding replays.
 Cvar = vhspause
+
+MenuItem AFFINEPRESCALE
+Text = Pre-Scale Sprites
+Tooltip = Should affine-rendered sprites scale before rotating?
+Cvar = affineprescale
+
+MenuItem AFFINEMOSAIC
+Text = Mosaic Filter (Software Only)
+Tooltip = Applies a mosaic filter to affine sprites, making them look "pixel-perfect".
+Cvar = affinemosaic
+
+MenuItem FAKEROLLANGLE
+Text = Simulate Legacy Rotations
+Tooltip = Forces rotated sprites to use a set number of angles, instead of rotating smoothly.
+Cvar = fakerollangle
 
 MenuItem SLOPEROLL
 Text = Sprite Slope Tilt

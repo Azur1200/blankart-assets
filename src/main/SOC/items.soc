@@ -37,6 +37,8 @@ Equip = KITEMEQUIP_TRAIL
 KartItem EGGMAN
 BigPatches = K_ITEGGM
 SmallPatches = K_ISEGGM
+BigAltPatches = K_ITALEG
+SmallAltPatches = K_ISEGGM
 Equip = KITEMEQUIP_TRAIL
 EquipAlt = KITEMEQUIP_ORBIT
 
@@ -84,6 +86,8 @@ EquipAlt = KITEMEQUIP_NONE
 KartItem THUNDERSHIELD
 BigPatches = K_ITTHNS
 SmallPatches = K_ISTHNS
+BigAltPatches = K_ITATRS
+SmallAltPatches = K_ISATRS
 Flags = KIF_UNIQUESLOT|KIF_DARKBG
 Equip = KITEMEQUIP_SHIELD
 
@@ -421,7 +425,7 @@ Flags = KRF_NOTNEAREND
 UniqueOddsRace = KO_SMonitorOdds
 
 KartResultAlt shrink
-DisplayName = Alt. Shrink
+DisplayName = Mini
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_NOTNEAREND
 OddsRace = 0,0,0,0,0,0,0,4,7,12,2,0,0,0,0,0
 OddsBattle = 1,0
@@ -431,4 +435,10 @@ KartResultAlt eggmanmonitor
 DisplayName = Egg Mine
 Flags = KRF_NOTFORBOTTOM
 OddsRace = 25,26,16,2,0,0,0,0,0,0,0,0,0,0,0,0
+OddsBattle = 4,0
+
+KartResultAlt thundershield
+DisplayName = Attraction Shield
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+OddsRace = 5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 4,0

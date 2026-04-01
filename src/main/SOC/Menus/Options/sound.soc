@@ -37,6 +37,11 @@ Text = Surround Sound
 Tooltip = Toggle the usage of Surround Sound
 Cvar = surround
 
+MenuItem SOUNDEFX
+Text = Sound EFX
+Tooltip = Turn Sound Effect EFX on or off.
+Cvar = soundefx
+
 MenuItem AUDIOEFFECTS
 Text = Audio Effects...
 Tooltip = Adjust Audio effects.
@@ -86,6 +91,11 @@ MenuItem VOICES
 Text = Character voices
 Tooltip = Frequency of character voice lines.
 Cvar = kartvoices
+
+MenuItem FHORNS
+Text = Follower Horns
+Tooltip = Frequency of follower horns.
+Cvar = taunthorns
 
 MenuItem HITEM
 Text = HitEm Dialog
