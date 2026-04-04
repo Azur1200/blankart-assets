@@ -237,6 +237,12 @@ Text = Toggle Camera Perspective
 Tooltip = Bind toggle between first and third-person perspective.
 Call = MR_ChangeControl
 
+MenuItem CAMFREELOOK
+Argument = GC_FREELOOK
+Text = Use vertical freelook
+Tooltip = Bind camera vertical freelook when held
+Call = MR_ChangeControl
+
 MenuItem PAUSE
 Argument = GC_PAUSE
 Text = Pause
