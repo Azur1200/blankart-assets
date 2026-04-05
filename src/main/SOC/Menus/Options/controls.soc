@@ -239,7 +239,7 @@ Call = MR_ChangeControl
 
 MenuItem CAMFREELOOK
 Argument = GC_FREELOOK
-Text = Use vertical freelook
+Text = Use Vertical Freelook
 Tooltip = Bind camera vertical freelook when held
 Call = MR_ChangeControl
 
