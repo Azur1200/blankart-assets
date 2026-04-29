@@ -109,7 +109,7 @@ Cvar = gr_modelinterpolation
 
 MenuItem MODELLIGHTING
 Text = Model Lighting
-Tooltip = Determines how models are lit. Set to "Off" for best results.
+Tooltip = Determines how models are lit. This is required for directional lighting on some maps.
 Cvar = gr_modellighting
 
 MenuItem SHADERS
