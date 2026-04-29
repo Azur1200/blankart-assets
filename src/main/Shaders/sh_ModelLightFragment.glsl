@@ -15,36 +15,25 @@ float R_DoomColormap(float light, float z, vec2 position)
 	float cap = (155.0 - light) * 0.26;
 #ifdef SRB2_LIGHT_DITHER
 	float baseValue = max(startmap * STARTMAP_FUDGE - scale * 0.5 * SCALE_FUDGE, cap);
-	float endResolutionx = scr_resolution.x;
-	float endResolutiony = scr_resolution.y;
-	
-	if (scr_resolution.x > 1280.0) {
-		endResolutionx = scr_resolution.x * 0.5;
-	}
-	
-	if (scr_resolution.y > 720.0) {
-		endResolutiony = scr_resolution.y * 0.5;
-	}
-	
-	float zFactor = clamp((z - 192.0) / (6144.0 - 192.0), 0.0, 1.0);
-	int scaleFactor = int(mix(1.0, 8.0, zFactor));
-	endResolutionx = endResolutionx * scaleFactor;
-	endResolutiony = endResolutiony * scaleFactor;
-	vec2 normalizedPosition = position * vec2(endResolutionx / scr_resolution.x, endResolutiony / scr_resolution.y);
-	int x = int(mod(normalizedPosition.x, 4.0));
-	int y = int(mod(normalizedPosition.y, 4.0));
+	float patscale = min(scr_resolution.x / 1280.0, scr_resolution.y / 720.0);
+	patscale = max(floor(patscale + 0.5), 1.0);
+	patscale = 1.0 / patscale;
+	ivec2 p = ivec2(mod(floor(position * patscale), 4.0));
+	float depthfactor = clamp((z - 192.0) / (6144.0 - 192.0), 0.0, 1.0);
 	float bayerMatrix[4*4] = float[4*4](
 		0.0, 8.0, 2.0, 10.0,
 		12.0, 4.0, 14.0, 6.0,
 		3.0, 11.0, 1.0, 9.0,
 		15.0, 7.0, 13.0, 5.0
 	);
+	float threshold = 16.0;
+
 #ifdef SRB2_PALETTE_RENDERING
-	float threshold = (1.0 - pow(zFactor, 2.0)) * (bayerMatrix[y*4 + x] / 11.0);
-#else
-	float threshold = (1.0 - pow(zFactor, 2.0)) * (bayerMatrix[y*4 + x] / 16.0);
+	threshold = 11.0;
 #endif
-	return mix(baseValue + threshold - 0.5 / 16.0, baseValue, zFactor);
+
+	threshold = (1.0 - pow(depthfactor, 2.0)) * (bayerMatrix[p.y*4 + p.x] / threshold);
+	return mix(baseValue + threshold - 0.5 / 16.0, baseValue, depthfactor);
 #else
 	return max(startmap * STARTMAP_FUDGE - scale * 0.5 * SCALE_FUDGE, cap);
 #endif
