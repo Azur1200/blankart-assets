@@ -48,10 +48,10 @@ float R_DoomColormap(float light, float z, vec2 position)
 	int x = int(mod(normalizedPosition.x, 4.0));
 	int y = int(mod(normalizedPosition.y, 4.0));
 	float bayerMatrix[4*4] = float[4*4](
-	0.0, 8.0, 2.0, 10.0,
-	12.0, 4.0, 14.0, 6.0,
-	3.0, 11.0, 1.0, 9.0,
-	15.0, 7.0, 13.0, 5.0
+		0.0, 8.0, 2.0, 10.0,
+		12.0, 4.0, 14.0, 6.0,
+		3.0, 11.0, 1.0, 9.0,
+		15.0, 7.0, 13.0, 5.0
 	);
 	
 #ifdef SRB2_PALETTE_RENDERING
@@ -71,6 +71,7 @@ float R_DoomLightingEquation(float light)
 	float colormap = floor(R_DoomColormap(light, z, gl_FragCoord.xy)) + 0.5;
 	return clamp(colormap, 0.0, 31.0) / 32.0;
 }
+
 void main(void) {
 	vec4 base_color = gl_Color;
 	vec4 final_color = base_color;
