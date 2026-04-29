@@ -127,6 +127,11 @@ Text = Palette Depth
 Tooltip = Change the bit depth of the Lookup Palette in Palette rendering mode.
 Cvar = gr_palettedepth
 
+MenuItem LIGHTDITHER
+Text = Light Dithering
+Tooltip = Attempts to make lighting appear smoother by dithering it.
+Cvar = gr_lightdithering
+
 MenuItem TEXTUREDEPTH
 OfsY = 10
 Text = Texture Quality
