@@ -182,6 +182,16 @@ Text = Item Pushing
 Tooltip = Push dropped items away from item boxes.
 Cvar = kartitempush
 
+MenuItem PLAYERBUMP
+Text = Player Bump Setting
+Tooltip = Change how players collide with one another.
+Cvar = playerbump
+
+MenuItem TRAILSLOWDOWN
+Text = Trailing Item Slowdown
+Tooltip = When on, trailing an item behind you will eventually slow you down.
+Cvar = trailslow
+
 MenuItem WATERBRICKS
 Text = Waterskip Prevention
 Tooltip = Allows players to stop waterskipping by letting go of ACCEL.
