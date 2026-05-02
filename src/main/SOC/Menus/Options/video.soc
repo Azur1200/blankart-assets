@@ -95,6 +95,7 @@ Menu OP_OPENGL
 X = 30
 Y = 40
 LineHeight = 10
+ScrollHeight = 130
 HeaderPic = M_VIDEO
 EnterRoutine = MR_OpenGLOptionsMenu
 MenuItem MODELS
@@ -158,6 +159,16 @@ MenuItem SHEARING
 Text = Software Perspective
 Tooltip = Recreates the look of software mode camera perspective.
 Cvar = gr_shearing
+
+MenuItem ADVANCEDHEAD
+OfsY = 10
+Style = header
+Text = Advanced
+
+MenuItem SCREENTEXTURES
+Text = Screen Textures
+Tooltip = Disabling improves performance but breaks effects and fullscreen scaling.
+Cvar = gr_screentextures
 
 
 Menu OP_VISUAL
