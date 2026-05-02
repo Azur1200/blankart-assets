@@ -330,6 +330,11 @@ Text = Skin Select Sorting
 Tooltip = Changes the sorting order in the Grid Skin Select
 Cvar = skinselectsort
 
+MenuItem HIRESPORT
+Text = High Resolution Ranks
+Tooltip = Use the Wanted icon for when the Rank icon would be used.
+Cvar = highresportrait
+
 MenuItem OFFSETS
 OfsY = 10
 Text = HUD Offsets...
