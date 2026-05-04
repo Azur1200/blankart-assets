@@ -142,6 +142,11 @@ Text = Recovery Dash
 Tooltip = When you hold ACCEL + BRAKE, you resist offroad and charge a Recovery Dash!
 Cvar = kartrecoverydash
 
+MenuItem KEEPSTUFF
+Text = Keep Stuff
+Tooltip = When you respawn, you retain power items such as Invincibility and Grow!
+Cvar = kartkeepstuff
+
 MenuItem BLAN_ITEMSETTINGS
 Text = Item Settings...
 Tooltip = Customize certain items as you see fit.
@@ -176,6 +181,16 @@ MenuItem ITEMPUSHING
 Text = Item Pushing
 Tooltip = Push dropped items away from item boxes.
 Cvar = kartitempush
+
+MenuItem PLAYERBUMP
+Text = Player Bump Setting
+Tooltip = Change how players collide with one another.
+Cvar = playerbump
+
+MenuItem TRAILSLOWDOWN
+Text = Trailing Item Slowdown
+Tooltip = When on, trailing an item behind you will eventually slow you down.
+Cvar = trailslow
 
 MenuItem WATERBRICKS
 Text = Waterskip Prevention

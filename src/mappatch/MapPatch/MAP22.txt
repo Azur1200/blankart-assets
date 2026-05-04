@@ -2,9 +2,8 @@
 // Waypoints: ArcadeStriker
 // Rings: ArcadeStriker
 
-
 namespace = "blankart-patch";
-version = 1;
+version = 2;
 checksum = "a7862a80c9cb7ffb";
 
 thing	// 0
@@ -1730,6 +1729,7 @@ thing	// 177
 	type = 2001;
 	arg0 = 55;
 	arg1 = 384;
+	arg2 = 4;
 }
 
 thing	// 178
@@ -1742,6 +1742,7 @@ thing	// 178
 	type = 2001;
 	arg0 = 56;
 	arg1 = 384;
+	arg2 = 4;
 }
 
 thing	// 179
