@@ -17,10 +17,10 @@ ShowConditionSet = 2
 Type = NONE
 
 Unlockable 4
-Name = Hard Game Speed
+Name = Expert Game Speed
 ConditionSet = 4
 ShowConditionSet = -1
-Type = HARDSPEED
+Type = EXPERTSPEED
 
 Unlockable 5
 Name = Encore Mode

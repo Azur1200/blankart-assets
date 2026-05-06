@@ -122,6 +122,7 @@ CANCELMODE
 
 MenuPanel OP_OPENGL
 LineHeight = 10
+ScrollHeight = 130
 Items
 MODELS
 	Text = 3D Models
@@ -133,7 +134,7 @@ MODELINTERPOLATION
 	Cvar = gr_modelinterpolation
 MODELLIGHTING
 	Text = Model Lighting
-	Tooltip = Determines how models are lit. Set to "Off" for best results.
+	Tooltip = Determines how models are lit. This is required for directional lighting on some maps.
 	Cvar = gr_modellighting
 SHADERS
 	Text = Shaders
@@ -147,6 +148,10 @@ PALRENDERDEPTH
 	Text = Palette Depth
 	Tooltip = Change the bit depth of the Lookup Palette in Palette rendering mode.
 	Cvar = gr_palettedepth
+LIGHTDITHER
+	Text = Light Dithering
+	Tooltip = Attempts to make lighting appear smoother by dithering it.
+	Cvar = gr_lightdithering
 TEXTUREDEPTH
 	OfsY = 10
 	Text = Texture Quality
@@ -169,6 +174,14 @@ SHEARING
 	Text = Software Perspective
 	Tooltip = Recreates the look of software mode camera perspective.
 	Cvar = gr_shearing
+ADVANCEDHEAD
+	OfsY = 10
+	Style = header
+	Text = Advanced
+SCREENTEXTURES
+	Text = Screen Textures
+	Tooltip = Disabling improves performance but breaks effects and fullscreen scaling.
+	Cvar = gr_screentextures
 
 MenuPanel OP_VISUAL
 LineHeight = 10
@@ -177,6 +190,18 @@ VHSPAUSE
 	Text = VHS Effect
 	Tooltip = Show a VHS-like effect when the game is paused or youre rewinding replays.
 	Cvar = vhspause
+AFFINEPRESCALE
+	Text = Pre-Scale Sprites
+	Tooltip = Should affine-rendered sprites scale before rotating?
+	Cvar = affineprescale
+AFFINEMOSAIC
+	Text = Mosaic Filter (Software Only)
+	Tooltip = Applies a mosaic filter to affine sprites, making them look "pixel-perfect".
+	Cvar = affinemosaic
+FAKEROLLANGLE
+	Text = Simulate Legacy Rotations
+	Tooltip = Forces rotated sprites to use a set number of angles, instead of rotating smoothly.
+	Cvar = fakerollangle
 SLOPEROLL
 	Text = Sprite Slope Tilt
 	Tooltip = Rotate sprites on slopes.
@@ -370,7 +395,7 @@ Menu OP_VISUAL
 HeaderPic = M_VIDEO
 Panels
 MAIN : OP_VISUAL
-	X = 60
+	X = 30
 	Y = 40
 
 Menu OP_VIDCOLORPROFILE

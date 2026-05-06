@@ -71,3 +71,10 @@ Usage = Mission Menu
 Author = Yosuke Yasui
 Source = Mamarokun Curse!
 Volume = 175
+
+Lump PALMNU
+Title = Drawing Board 1
+Usage = Palette Editor
+Author = Kazumi Totaka
+Source = Mario Paint
+Volume = 175

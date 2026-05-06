@@ -64,6 +64,10 @@ LITESTEER
 	Text = Digital Lite Steer
 	Tooltip = Allow digital users to do shallow turns by holding back.
 	Cvar = litesteer
+TILTCONTROL
+	Text = Tilt Steering
+	Tooltip = Enable using the motion sensors on supported gamepads.
+	Cvar = tiltcontrol
 DEFAULTS
 	Text = Reset to defaults
 	Tooltip = Set controls to default.
@@ -188,6 +192,11 @@ CAMTOGGLE
 	Argument = GC_CAMTOGGLE
 	Text = Toggle Camera Perspective
 	Tooltip = Bind toggle between first and third-person perspective.
+	Call = MR_ChangeControl
+CAMFREELOOK
+	Argument = GC_FREELOOK
+	Text = Use Vertical Freelook
+	Tooltip = Bind camera vertical freelook when held
 	Call = MR_ChangeControl
 PAUSE
 	Argument = GC_PAUSE

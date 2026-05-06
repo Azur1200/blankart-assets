@@ -116,6 +116,10 @@ pingstyle
 	Text = Ping Display Style
 	Tooltip = Change how the ping display looks visually.
 	Cvar = pingstyle
+nodeip
+	Text = Show IP address in playerlist
+	Tooltip = Should Player IP addresses be printed in the nodes or listplayers command?
+	Cvar = showipinnodelist
 
 MenuPanel OP_GAMEHUD
 LineHeight = 10
@@ -128,6 +132,10 @@ MINIVISI
 	Text = Minimap Visibility
 	Tooltip = How translucent is the minimap?
 	Slider = kartminimap
+MINISMALL
+	Text = Small Minimap Players
+	Tooltip = Scale minimap player and object icons smaller.
+	Cvar = smallminimapplayers
 MININAMETAGS
 	Text = Minimap Nametags
 	Tooltip = Show the names of players on the minimap.
@@ -160,6 +168,22 @@ DARKITEMBOX
 	Text = Darken Itembox
 	Tooltip = Darken the itembox when certain items are inside it.
 	Cvar = darkitembox
+LAPHEAD
+	OfsY = 10
+	Style = header
+	Text = Lap Emblem
+LAPEMBLEM
+	Text = Lap Emblem and Splits
+	Tooltip = Decide if lap emblems and splits are shown.
+	Cvar = showlapemblem
+SPLITSTYLE
+	Text = Splits Style
+	Tooltip = Decide how lap splits are shown.
+	Cvar = lapemblemmode
+SPLITTIME
+	Text = Splits Time
+	Tooltip = Decide who's time to show in splits.
+	Cvar = racesplits
 NAMETAGHEAD
 	OfsY = 10
 	Style = header
@@ -168,6 +192,14 @@ NAMETAGS
 	Text = Nametags
 	Tooltip = Show the name of players online.
 	Cvar = seenames
+NAMETAGRESTAT
+	Text = Nametag Restat
+	Tooltip = Show the restat of players online.
+	Cvar = seenamerestat
+NAMETAGOWN
+	Text = Show own Nametag
+	Tooltip = Show your own name.
+	Cvar = seeownname
 SPEEDOMETERHEAD
 	OfsY = 10
 	Style = header
@@ -232,6 +264,10 @@ CSSSORT
 	Text = Skin Select Sorting
 	Tooltip = Changes the sorting order in the Grid Skin Select
 	Cvar = skinselectsort
+HIRESPORT
+	Text = High Resolution Ranks
+	Tooltip = Use the Wanted icon for when the Rank icon would be used.
+	Cvar = highresportrait
 OFFSETS
 	OfsY = 10
 	Text = HUD Offsets...
