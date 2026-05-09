@@ -10145,8 +10145,8 @@ Next = S_BALLOONPOP4
 
 State S_BALLOONPOP4
 Duration = TICRATE
-Action = A_CheckFlags2
-Var1 = MF2_AMBUSH
+Action = A_CheckScriptArg
+Var1 = 0
 Var2 = S_BALLOONPOP5
 
 State S_BALLOONPOP5

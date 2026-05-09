@@ -254,7 +254,7 @@ KartResult mine
 DisplayName = Mine
 Type = MINE
 Amount = 1
-Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_NOTNEAREND
 OddsRace = 0,0,5,3,2,2,1,0,0,0,0,0,0,0,0,0
 OddsBattle = 6,1
 

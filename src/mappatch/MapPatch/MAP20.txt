@@ -376,7 +376,7 @@ thing	// 31
 	id = 407;
 	x = 0.0;
 	y = -4480.0;
-	height = 312.0;
+	height = 305.0;
 	angle = 47;
 	type = 2001;
 	arg0 = 408;
@@ -388,7 +388,7 @@ thing	// 32
 	id = 406;
 	x = 0.0;
 	y = -4864.0;
-	height = 311.0;
+	height = 305.0;
 	angle = 46;
 	type = 2001;
 	arg0 = 407;
@@ -400,7 +400,7 @@ thing	// 33
 	id = 405;
 	x = 0.0;
 	y = -5376.0;
-	height = 310.0;
+	height = 305.0;
 	angle = 45;
 	type = 2001;
 	arg0 = 406;
@@ -412,7 +412,7 @@ thing	// 34
 	id = 404;
 	x = 0.0;
 	y = -5952.0;
-	height = 309.0;
+	height = 305.0;
 	angle = 44;
 	type = 2001;
 	arg0 = 405;
@@ -1306,6 +1306,7 @@ thing	// 113
 	id = 164;
 	x = -448.0;
 	y = 3968.0;
+	height = 300.0;
 	angle = 164;
 	type = 2001;
 	arg0 = 165;

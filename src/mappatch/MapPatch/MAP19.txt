@@ -789,6 +789,7 @@ thing	// 69
 	type = 2001;
 	arg0 = 69;
 	arg1 = 384;
+	arg2 = 4;
 }
 
 thing	// 70
@@ -1208,6 +1209,7 @@ thing	// 104
 	type = 2001;
 	arg0 = 98;
 	arg1 = 384;
+	arg2 = 4;
 }
 
 thing	// 105
@@ -1219,6 +1221,7 @@ thing	// 105
 	type = 2001;
 	arg0 = 99;
 	arg1 = 400;
+	arg2 = 4;
 }
 
 thing	// 106
@@ -1230,6 +1233,7 @@ thing	// 106
 	type = 2001;
 	arg0 = 100;
 	arg1 = 500;
+	arg2 = 4;
 }
 
 thing	// 107

@@ -75,14 +75,20 @@ Text = Viewpoint 4 (4)
 Patch = M_PNVIEW
 Arrows = MR_PlaybackAdjustView
 
-MenuItem FREECAM
+MenuItem DIRECTOR
 X = 156
+Text = Toggle Director (;)
+Patch = M_PDIR
+Call = MR_PlaybackToggleDirector
+
+MenuItem FREECAM
+X = 172
 Text = Toggle Free Camera (')
 Patch = M_PVIEWS
 Call = MR_PlaybackToggleFreecam
 
 MenuItem QUIT
-X = 172
+X = 188
 Text = Stop Playback
 Patch = M_PEXIT
 Call = MR_PlaybackQuit

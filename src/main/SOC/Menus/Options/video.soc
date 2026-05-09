@@ -95,6 +95,7 @@ Menu OP_OPENGL
 X = 30
 Y = 40
 LineHeight = 10
+ScrollHeight = 130
 HeaderPic = M_VIDEO
 EnterRoutine = MR_OpenGLOptionsMenu
 MenuItem MODELS
@@ -109,7 +110,7 @@ Cvar = gr_modelinterpolation
 
 MenuItem MODELLIGHTING
 Text = Model Lighting
-Tooltip = Determines how models are lit. Set to "Off" for best results.
+Tooltip = Determines how models are lit. This is required for directional lighting on some maps.
 Cvar = gr_modellighting
 
 MenuItem SHADERS
@@ -126,6 +127,11 @@ MenuItem PALRENDERDEPTH
 Text = Palette Depth
 Tooltip = Change the bit depth of the Lookup Palette in Palette rendering mode.
 Cvar = gr_palettedepth
+
+MenuItem LIGHTDITHER
+Text = Light Dithering
+Tooltip = Attempts to make lighting appear smoother by dithering it.
+Cvar = gr_lightdithering
 
 MenuItem TEXTUREDEPTH
 OfsY = 10
@@ -153,6 +159,16 @@ MenuItem SHEARING
 Text = Software Perspective
 Tooltip = Recreates the look of software mode camera perspective.
 Cvar = gr_shearing
+
+MenuItem ADVANCEDHEAD
+OfsY = 10
+Style = header
+Text = Advanced
+
+MenuItem SCREENTEXTURES
+Text = Screen Textures
+Tooltip = Disabling improves performance but breaks effects and fullscreen scaling.
+Cvar = gr_screentextures
 
 
 Menu OP_VISUAL
