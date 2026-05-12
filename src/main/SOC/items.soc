@@ -205,14 +205,14 @@ KartResult rocketsneaker
 DisplayName = Rocket Sneaker
 Type = ROCKETSNEAKER
 Amount = 1
-Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_DONTCHANGERESULT
 OddsRace = 0,0,0,0,0,0,0,0,0,0,28,35,42,48,37,37
 
 KartResult invincibility
 DisplayName = Invincibility
 Type = INVINCIBILITY
 Amount = 1
-Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_DONTCHANGERESULT
 OddsRace = 0,0,0,0,0,0,0,0,0,0,0,4,24,50,75,75
 OddsBattle = 4,1
 
@@ -271,7 +271,7 @@ KartResult selfpropelledbomb
 DisplayName = Self-Propelled Bomb
 Type = SPB
 Amount = 1
-Flags = KRF_COOLDOWNONSTART|KRF_INDIRECTITEM|KRF_NOTNEAREND|KRF_RUNNERAUGMENT
+Flags = KRF_COOLDOWNONSTART|KRF_INDIRECTITEM|KRF_NOTNEAREND|KRF_RUNNERAUGMENT|KRF_DONTCHANGERESULT
 RunnerDistance = 5648
 RunnerDistanceLegacy = 3324
 UniqueOddsRace = KO_SPBRaceOdds
@@ -283,7 +283,8 @@ KartResult grow
 DisplayName = Grow
 Type = GROW
 Amount = 1
-Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_DONTCHANGERESULT
+UniqueOddsRace = KO_GrowRaceOdds
 OddsRace = 0,0,0,0,0,0,0,0,0,4,9,12,9,0,0,0
 OddsBattle = 2,1
 CooldownTime = 3
@@ -292,7 +293,7 @@ KartResult shrink
 DisplayName = Shrink
 Type = SHRINK
 Amount = 1
-Flags = KRF_COOLDOWNONSTART|KRF_INDIRECTITEM|KRF_POWERITEM|KRF_NOTNEAREND
+Flags = KRF_COOLDOWNONSTART|KRF_INDIRECTITEM|KRF_POWERITEM|KRF_NOTNEAREND|KRF_DONTCHANGERESULT
 OddsRace = 0,0,0,0,0,0,0,0,0,0,0,3,7,3,0,0
 CooldownTime = 20
 
@@ -300,7 +301,7 @@ KartResult thundershield
 DisplayName = Thunder Shield
 Type = THUNDERSHIELD
 Amount = 1
-Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_DONTCHANGERESULT
 OddsRace = 5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 4,0
 
@@ -308,7 +309,7 @@ KartResult hyudoro
 DisplayName = Hyudoro
 Type = HYUDORO
 Amount = 1
-Flags = KRF_COOLDOWNONSTART
+Flags = KRF_COOLDOWNONSTART|KRF_DONTCHANGERESULT
 OddsRace = 0,0,0,0,0,2,2,4,4,2,0,0,0,0,0,0
 OddsBattle = 2,0
 CooldownTime = 20
@@ -335,7 +336,7 @@ KartResult bubbleshield
 DisplayName = Bubble Shield
 Type = BUBBLESHIELD
 Amount = 1
-Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
+Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM|KRF_DONTCHANGERESULT
 OddsRace = 0,0,0,12,15,8,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 1,0
 CooldownTime = 5
@@ -344,7 +345,7 @@ KartResult flameshield
 DisplayName = Flame Shield
 Type = FLAMESHIELD
 Amount = 1
-Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_DONTCHANGERESULT
 OddsRace = 0,0,0,0,0,0,2,4,12,24,27,12,7,4,0,0
 OddsBattle = 1,0
 CooldownTime = 8
@@ -380,7 +381,7 @@ KartResult decabanana
 DisplayName = Banana x10
 Type = BANANA
 Amount = 10
-Flags = KRF_POWERITEM|KRF_NOTFORBOTTOM|KRF_NOTNEAREND
+Flags = KRF_POWERITEM|KRF_NOTFORBOTTOM|KRF_NOTNEAREND|KRF_DONTCHANGERESULT
 OddsRace = 0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 1,1
 CooldownTime = 30
@@ -421,12 +422,12 @@ CooldownTime = 10
 
 KartResultAlt invincibility
 DisplayName = S-Monitor
-Flags = KRF_NOTNEAREND
+Flags = KRF_NOTNEAREND|KRF_DONTCHANGERESULT
 UniqueOddsRace = KO_SMonitorOdds
 
 KartResultAlt shrink
 DisplayName = Mini
-Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_NOTNEAREND
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_NOTNEAREND|KRF_DONTCHANGERESULT
 OddsRace = 0,0,0,0,0,0,0,0,3,7,9,2,0,0,0,0
 OddsBattle = 1,0
 CooldownTime = 5
@@ -440,6 +441,6 @@ CooldownTime = 5
 
 KartResultAlt thundershield
 DisplayName = Attraction Shield
-Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM
+Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_DONTCHANGERESULT
 OddsRace = 5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 4,0
