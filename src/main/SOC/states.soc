@@ -18427,6 +18427,12 @@ Duration = 1
 
 State S_EGOORB
 SpriteName = SPR_EGOO
+SpriteFrame = A
+Duration = 1
+
+State S_BADWAYPOINT
+SpriteName = SPR_EGOO
+SpriteFrame = B
 Duration = 1
 
 State S_WATERTRAILS
