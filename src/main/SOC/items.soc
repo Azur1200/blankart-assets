@@ -133,6 +133,12 @@ BigPatches = K_ITBRCK
 SmallPatches = K_ISBRCK
 Equip = KITEMEQUIP_NONE
 
+KartItem BONUSITEMROLL
+BigPatches = K_ITSAD
+SmallPatches = K_ISITEM
+Flags = KIF_HIDEFROMROULETTE|KIF_DARKBG|KIF_SINGLEFROMRESERVE|KIF_DESTROYONDROP
+Equip = KITEMEQUIP_NONE
+
 ################################################################################
 # Item result declarations (so their toggles appear in the right order)
 ################################################################################
