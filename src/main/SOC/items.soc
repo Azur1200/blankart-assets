@@ -371,7 +371,7 @@ KartResult triplesneaker
 DisplayName = Sneaker x3
 Type = SNEAKER
 Amount = 3
-Flags = KRF_POWERITEM
+Flags = KRF_POWERITEM|KRF_DONTCHANGERESULT
 OddsRace = 0,0,0,0,0,0,0,7,35,45,60,56,52,4,2,2
 OddsBattle = 0,1
 OddsSpecial = 0,0,1,1
@@ -396,7 +396,7 @@ KartResult tripleorbinaut
 DisplayName = Orbinaut x3
 Type = ORBINAUT
 Amount = 3
-Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
+Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM|KRF_DONTCHANGERESULT
 OddsRace = 0,0,0,2,7,9,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 2,0
 OddsSpecial = 0,1,1,0
@@ -406,7 +406,7 @@ KartResult quadorbinaut
 DisplayName = Orbinaut x4
 Type = ORBINAUT
 Amount = 4
-Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
+Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM|KRF_DONTCHANGERESULT
 OddsRace = 0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,0
 OddsBattle = 1,1
 OddsSpecial = 0,0,1,1
@@ -416,7 +416,7 @@ KartResult dualjawz
 DisplayName = Jawz x2
 Type = JAWZ
 Amount = 2
-Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM
+Flags = KRF_NOTFORBOTTOM|KRF_POWERITEM|KRF_DONTCHANGERESULT
 OddsRace = 0,0,0,1,5,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 5,1
 OddsSpecial = 0,0,1,1
