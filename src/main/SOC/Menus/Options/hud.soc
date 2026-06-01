@@ -335,6 +335,11 @@ Text = High Resolution Ranks
 Tooltip = Use the Wanted icon for when the Rank icon would be used.
 Cvar = highresportrait
 
+MenuItem RIDERSTICKER
+Text = Player Finish Ticker
+Tooltip = Show when each player ends the race on the HUD.
+Cvar = ridersfinishticker
+
 MenuItem OFFSETS
 OfsY = 10
 Text = HUD Offsets...
@@ -414,11 +419,11 @@ Cvar = hud_posi_yoffset
 
 MenuItem RANKINGX
 Text = Miniranking X Offset
-Cvar = hud_posi_xoffset
+Cvar = hud_face_xoffset
 
 MenuItem RANKINGY
 Text = Miniranking Y Offset
-Cvar = hud_posi_yoffset
+Cvar = hud_face_yoffset
 
 MenuItem STARTX
 Text = Start Countdown X Offset
