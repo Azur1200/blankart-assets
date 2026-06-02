@@ -3609,6 +3609,31 @@ Priority = 64
 Flags = 48
 Caption = /
 
+Sound sfx_ktalk
+Priority = 64
+Flags = 48
+Caption = /
+
+Sound sfx_kfast
+Priority = 64
+Flags = 48
+Caption = /
+
+Sound sfx_kgood
+Priority = 64
+Flags = 48
+Caption = /
+
+Sound sfx_kdnf
+Priority = 64
+Flags = 48
+Caption = /
+
+Sound sfx_kcsel
+Priority = 64
+Flags = 48
+Caption = /
+
 # location for new sounds not in v1
 # yes I have to do this because people thought it would
 # be funny to use magic numbers in their maps......
