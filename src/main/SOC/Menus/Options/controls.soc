@@ -198,6 +198,26 @@ CAMFREELOOK
 	Text = Use Vertical Freelook
 	Tooltip = Bind camera vertical freelook when held
 	Call = MR_ChangeControl
+CAMFLICKSTICK_LEFT
+	Argument = GC_FLICKSTICK_LEFT
+	Text = Aim Camera Left
+	Tooltip = Bind manual left camera aiming.
+	Call = MR_ChangeControl
+CAMFLICKSTICK_RIGHT
+	Argument = GC_FLICKSTICK_RIGHT
+	Text = Aim Camera Right
+	Tooltip = Bind manual right camera aiming.
+	Call = MR_ChangeControl
+CAMFLICKSTICK_FORWARD
+	Argument = GC_FLICKSTICK_FORWARD
+	Text = Aim Camera Forward
+	Tooltip = Bind manual forward camera aiming.
+	Call = MR_ChangeControl
+CAMFLICKSTICK_BACK
+	Argument = GC_FLICKSTICK_BACK
+	Text = Aim Camera Back
+	Tooltip = Bind manual back camera aiming.
+	Call = MR_ChangeControl
 PAUSE
 	Argument = GC_PAUSE
 	Text = Pause
