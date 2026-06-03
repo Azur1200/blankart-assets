@@ -295,6 +295,11 @@ Text = Item Timers
 Tooltip = Show duration of boosts.
 Cvar = itemtimers
 
+MenuItem SHOWTIMERMODE
+Text = Item Timers Mode
+Tooltip = How should item timers display?
+Cvar = itemtimers_mode
+
 MenuItem SHOWDRAFT
 Text = Drafting Indicator
 Tooltip = Show progress of drafting.
