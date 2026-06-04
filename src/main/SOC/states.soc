@@ -256,18 +256,18 @@ Next = S_OBJPLACE_DUMMY
 
 State S_KART_LEFTOVER
 SpriteName = SPR_VCHL
-SpriteFrame = SPR2_VSTN
+SpriteFrame = SPRV_VSTN
 Duration = -1
 
 State S_KART_LEFTOVER_NOTIRES
 SpriteName = SPR_VCHL
-SpriteFrame = SPR2_VDED
+SpriteFrame = SPRV_VDED
 Duration = -1
 Action = A_KartGibs
 
 State S_KART_TIRE
 SpriteName = SPR_VCHL
-SpriteFrame = SPR2_VTYR
+SpriteFrame = SPRV_VTYR
 Duration = -1
 
 # Blue Crawla
