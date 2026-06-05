@@ -242,6 +242,12 @@ SpriteFrame = SPR2_DEAD
 Duration = 3
 Next = S_KART_DEAD
 
+State S_KART_DNF
+SpriteName = SPR_PLAY
+SpriteFrame = SPR2__DNF
+Duration = 3
+Next = S_KART_DNF
+
 State S_KART_SIGN
 SpriteName = SPR_PLAY
 SpriteFrame = SPR2_SIGN
