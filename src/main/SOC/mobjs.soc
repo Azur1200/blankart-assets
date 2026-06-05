@@ -43,6 +43,7 @@ AttackSound = sfx_thok
 PainState = S_KART_SPINOUT
 PainChance = MT_THOK
 DeathState = S_KART_DEAD
+XDeathState = S_KART_DNF
 Speed = 1
 Radius = 16*FRACUNIT
 Height = 48*FRACUNIT
