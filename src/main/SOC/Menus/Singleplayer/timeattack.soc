@@ -178,6 +178,7 @@ COMMON : TIMEATTACKCOMMON
 
 Menu SP_GUESTREPLAY
 HeaderPic = M_ATTACK
+TickRoutine = MR_TickTimeAttackMenu
 Panels
 MAIN : SP_GUESTREPLAY
 	X = 34
