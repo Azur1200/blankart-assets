@@ -66,6 +66,7 @@ PLAYER4
 	Style = P4MULTIPLAYER
 
 Menu MP_MAIN
+Music = olmenu
 HeaderPic = M_MULTI
 QuitRoutine = MR_CancelConnect
 Panels

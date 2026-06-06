@@ -157,7 +157,7 @@ LineHeight = 10
 ScrollHeight = 60
 
 Menu SP_TIMEATTACK
-Music = racent
+Music = ramenu
 BackgroundName = SRB2BACK
 ScrollXSpeed = 0
 ScrollYSpeed = 0
@@ -167,6 +167,7 @@ ExitWipe = 0
 HeaderPic = M_ATTACK
 EnterRoutine = MR_TimeAttack
 QuitRoutine = MR_QuitTimeAttackMenu
+TickRoutine = MR_TickTimeAttackMenu
 Panels
 MAIN : SP_TIMEATTACK
 	X = 34
@@ -189,6 +190,7 @@ COMMON : TIMEATTACKCOMMON
 
 Menu SP_REPLAY
 HeaderPic = M_ATTACK
+TickRoutine = MR_TickTimeAttackMenu
 Panels
 MAIN : SP_REPLAY
 	X = 34
@@ -201,6 +203,7 @@ COMMON : TIMEATTACKCOMMON
 
 Menu SP_GHOST
 HeaderPic = M_ATTACK
+TickRoutine = MR_TickTimeAttackMenu
 Panels
 MAIN : SP_GHOST
 	X = 34
@@ -213,6 +216,7 @@ COMMON : TIMEATTACKCOMMON
 
 Menu SP_PRESETS
 HeaderPic = M_ATTACK
+TickRoutine = MR_TickTimeAttackMenu
 Panels
 MAIN : SP_PRESETS
 	X = 34

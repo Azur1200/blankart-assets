@@ -83,6 +83,7 @@ ADDONSLOADED
 Menu AD_MAIN
 EnterRoutine = MR_Addons
 QuitRoutine = MR_QuitAddons
+TickRoutine = MR_TickAddons
 Panels
 MAIN : ADDONS_MAIN
 	X = 50

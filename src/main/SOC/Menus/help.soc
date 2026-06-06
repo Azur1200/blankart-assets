@@ -1,6 +1,5 @@
 MenuPanel HELP
 KeyHandler = MR_HandleImageDef
-DrawRoutine = MD_DrawImageDef
 Items
 PAGE0
 	Style = patch-small
@@ -49,6 +48,7 @@ PAGE99
 
 
 Menu HELP
+TickRoutine = MR_TickImageDef
 Panels
 MAIN : HELP
 	X = 0

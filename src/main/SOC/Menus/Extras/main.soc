@@ -14,6 +14,7 @@ REPLAYHUT
 	SubMenu = MISC_REPLAYHUT
 
 Menu SR_MAIN
+Music = exmenu 
 Panels
 MAIN : SR_MAIN
 	X = 160

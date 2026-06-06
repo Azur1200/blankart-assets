@@ -27,7 +27,7 @@ QUITGAME
 	Call = MR_QuitSRB2
 
 Menu MAIN
-Music = titles
+Music = mnmenu
 Panels
 MAIN : MAIN
 	X = 160

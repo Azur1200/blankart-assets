@@ -66,6 +66,7 @@ STATBAR
 Menu MP_PLAYERSETUP
 EnterRoutine = MR_SetupMultiPlayer
 QuitRoutine = MR_QuitMultiPlayerMenu
+TickRoutine = MR_TickMultiPlayerMenu
 Panels
 MAIN : MP_PLAYERSETUP
 	X = 36
