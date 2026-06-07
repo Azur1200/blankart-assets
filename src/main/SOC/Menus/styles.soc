@@ -166,8 +166,9 @@ Part 0
 MenuItemStyle thin2-sticker
 Part 0
 #	Type = Sticker
-Part 1
 	FontAlt = TINY
+#Part 1
+	
 
 MenuItemStyle PATCHSTRING
 Part 0

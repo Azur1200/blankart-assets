@@ -12,6 +12,7 @@ CONTROL
 	Text = ^2ENTER^0 - Accept    ^2ESC^0 - Decline
 
 Menu MISC_DISCORDREQUESTS
+TickRoutine = MR_TickDiscordRequests
 Panels
 MAIN : MISC_DISCORDREQUESTS
 	X = 100
