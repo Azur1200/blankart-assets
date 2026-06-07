@@ -158,6 +158,7 @@ RESPAWNS
 	Text = Total respawns:
 
 Menu SP_LEVELSTATS
+TickRoutine = MR_TickStats
 HeaderPic = M_STATS
 Panels
 PLAYTIME : STATS_PLAYTIME
