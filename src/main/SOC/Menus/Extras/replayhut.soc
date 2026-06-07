@@ -8,7 +8,7 @@ Part 1
 
 MenuItemStyle REPLAYSELECT
 Part 0
-# X scrolled by MD_DrawReplayHut
+# X scrolled by MR_TickReplayHut
 
 MenuItemStyle REPLAYRANKING
 Part 0 # ranking
@@ -58,7 +58,7 @@ Part 0
 MenuPanel REPLAYHUT_DEMOLIST
 Initializer = MP_PrepReplayList
 KeyHandler = MR_HandleReplayHutList
-DrawRoutine = MD_DrawReplayHut
+ScrollBar = True
 ScrollHeight = 110
 
 MenuPanel REPLAYHUT_DEMOINFO_BG
@@ -72,7 +72,6 @@ CENTERTEXT
 	Style = center
 
 MenuPanel REPLAYHUT_DEMOINFO_FG
-DrawRoutine = MD_DrawReplayHutReplayInfo
 Items
 OUTDATED
 	X = 7
@@ -131,7 +130,6 @@ WARNING
 
 MenuPanel REPLAYHUT_DEMOSTART
 Initializer = MP_ReplayHutStart
-DrawRoutine = MD_DrawReplayStartMenu
 Items
 LOADWATCH
 	Y = 0
@@ -160,6 +158,8 @@ EnterWipe = 0
 ExitWipe = 0
 EnterRoutine = MR_ReplayHut
 QuitRoutine = MR_QuitReplayHut
+TickRoutine = MR_TickReplayHut
+VHS = true
 Panels
 DEMOLIST : REPLAYHUT_DEMOLIST
 	X = 30
@@ -175,6 +175,7 @@ DEMOINFOFG : REPLAYHUT_DEMOINFO_FG
 	Flags = V_SNAPTOTOP|V_ALLOWLOWERCASE
 
 Menu MISC_REPLAYSTART
+TickRoutine = MR_TickReplayHut
 Panels
 MAIN : REPLAYHUT_DEMOSTART
 	X = 30
