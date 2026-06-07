@@ -70,6 +70,7 @@ SECRETCREDS
 Menu OP_MAIN
 Music = optmnu
 FadeStrength = 17
+EnterRoutine = MR_Options
 HeaderPic = M_OPTTTL
 Panels
 MAIN : OP_MAIN
