@@ -3910,3 +3910,79 @@ Sound sfx_vclgna
 Priority = 96
 Flags = 64
 Caption = Bouncy landing
+
+# BlanKart's new items
+# Egg Mine
+Sound sfx_bckuse
+Priority = 96
+Caption = Egg Brick Discarded
+
+Sound sfx_egrbhe
+Priority = 96
+Caption = Egg Mine Hit
+
+# Customizable engine sounds
+Sound sfx_kvch00
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_kvch01
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_kvch02
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_kvch03
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_kvch04
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_kvch05
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_kvch06
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_kvch07
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_kvch08
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_kvch09
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_kvch10
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_kvch11
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_kvch12
+Priority = 48
+Flags = 65
+Caption = /
