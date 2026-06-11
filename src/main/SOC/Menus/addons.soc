@@ -79,6 +79,15 @@ DISKICON
 ADDONSLOADED
 	Style = patch-small
 	Patch = M_FLOAD
+SEARCHBOX
+	X = -21
+	Y = 150
+	Style = fill
+	Patch = 262x14,159
+SEARCHTEXT
+	Text = Press to Search
+	X = -17
+	Y = 153
 
 Menu AD_MAIN
 EnterRoutine = MR_Addons
