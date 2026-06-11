@@ -81,7 +81,6 @@ CursorOffset = 10
 
 MenuPanel VIEWSERVER
 Initializer = MP_SetupViewServer
-DrawRoutine = MD_DrawViewServer
 KeyHandler = MR_HandleViewServer
 Items
 TOPBOX
@@ -173,6 +172,7 @@ ADDONSCOUNT
 
 Menu VIEWSERVER
 QuitRoutine = MR_QuitViewServer
+TickRoutine = MR_TickViewServer
 Panels
 MAIN : VIEWSERVER
 	X = 0
