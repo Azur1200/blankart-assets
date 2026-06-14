@@ -116,10 +116,6 @@ FACE
 	X = 295
 	Y = 25
 	Style = REPLAYHUT_ICON
-DEMOTITLE
-	OfsX = -295 # autolayout...
-	Y = 62
-	Style = highlight
 
 MenuPanel REPLAYHUT_RANKINGS
 
@@ -142,6 +138,16 @@ BACK
 	Y = 30
 	Text = Back
 	Call = MR_GoBack
+RANKINGBG
+	X = BASEVIDWIDTH-138
+	Y = -52
+	Style = fill
+	Patch = 98x200,157
+
+MenuPanel REPLAYHUT_DEMOTITLE
+Items
+DEMOTITLE
+	Style = highlight
 
 Menu MISC_REPLAYHUT
 Music = replst
@@ -175,12 +181,20 @@ Panels
 MAIN : REPLAYHUT_DEMOSTART
 	X = 30
 	Y = 90
+DEMOTITLE : REPLAYHUT_DEMOTITLE
+	X = 10
+	Y = 72
+	ClipRect = True
+	ClipRect_X = 0
+	ClipRect_Y = 72
+	ClipRect_Width = 212
+	ClipRect_Height = 10
 RANKINGS : REPLAYHUT_RANKINGS
-	X = BASEVIDWIDTH-110
-	Y = 62
+	X = BASEVIDWIDTH-109
+	Y = 52
 	Flags = V_SNAPTOTOP|V_ALLOWLOWERCASE
 	ClipRect = True
-	ClipRect_X = BASEVIDWIDTH-110
+	ClipRect_X = BASEVIDWIDTH-109
 	ClipRect_Y = 70
 	ClipRect_Width = 100
 	ClipRect_Height = 200
