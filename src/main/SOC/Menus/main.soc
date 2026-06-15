@@ -28,10 +28,10 @@ QUITGAME
 
 Menu MAIN
 Music = mnmenu
-BackgroundName = SKY2
+BackgroundName = SRB2KTTL
 ScrollXSpeed = 5
 ScrollYSpeed = 0
-FadeStrength = 7
+FadeStrength = 16
 Panels
 MAIN : MAIN
 	X = 160
