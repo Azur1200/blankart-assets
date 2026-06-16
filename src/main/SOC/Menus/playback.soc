@@ -1,5 +1,6 @@
 MenuPanel PLAYBACK
 DrawRoutine = MD_DrawPlaybackMenu
+TickRoutine = MP_TickPlayBackMenu
 Horizontal = True
 Items
 HIDE
@@ -80,7 +81,6 @@ QUIT
 
 Menu PLAYBACK
 FadeStrength = 1
-TickRoutine = MR_TickPlayBackMenu
 Panels
 MAIN : PLAYBACK
 	X = 72

@@ -33,6 +33,7 @@ ScrollHeight = 128
 LineHeight = 16
 
 MenuPanel ADDONS_URL
+TickRoutine = MP_TickAddonsURL
 LineHeight = 0
 Items
 LOCATION1
@@ -46,6 +47,7 @@ MIDGAME
 	Text = Adding files mid-game may cause problems.
 
 MenuPanel ADDONS_BACK
+TickRoutine = MP_TickAddonsBackground
 LineHeight = 0
 Items
 HEADERPATH
@@ -92,7 +94,6 @@ SEARCHTEXT
 Menu AD_MAIN
 EnterRoutine = MR_Addons
 QuitRoutine = MR_QuitAddons
-TickRoutine = MR_TickAddons
 Panels
 MAIN : ADDONS_MAIN
 	X = 50

@@ -1,5 +1,6 @@
 MenuPanel TIMEATTACKCOMMON
 DrawRoutine = MD_DrawTimeAttackMenu
+TickRoutine = MP_TickTimeAttackMenu
 LineHeight = 0
 Items
 NAME
@@ -167,7 +168,6 @@ ExitWipe = 0
 HeaderPic = M_ATTACK
 EnterRoutine = MR_TimeAttack
 QuitRoutine = MR_QuitTimeAttackMenu
-TickRoutine = MR_TickTimeAttackMenu
 Panels
 MAIN : SP_TIMEATTACK
 	X = 34
@@ -178,7 +178,6 @@ COMMON : TIMEATTACKCOMMON
 
 Menu SP_GUESTREPLAY
 HeaderPic = M_ATTACK
-TickRoutine = MR_TickTimeAttackMenu
 Panels
 MAIN : SP_GUESTREPLAY
 	X = 34
@@ -191,7 +190,6 @@ COMMON : TIMEATTACKCOMMON
 
 Menu SP_REPLAY
 HeaderPic = M_ATTACK
-TickRoutine = MR_TickTimeAttackMenu
 Panels
 MAIN : SP_REPLAY
 	X = 34
@@ -204,7 +202,6 @@ COMMON : TIMEATTACKCOMMON
 
 Menu SP_GHOST
 HeaderPic = M_ATTACK
-TickRoutine = MR_TickTimeAttackMenu
 Panels
 MAIN : SP_GHOST
 	X = 34
@@ -217,7 +214,6 @@ COMMON : TIMEATTACKCOMMON
 
 Menu SP_PRESETS
 HeaderPic = M_ATTACK
-TickRoutine = MR_TickTimeAttackMenu
 Panels
 MAIN : SP_PRESETS
 	X = 34
