@@ -1,5 +1,6 @@
 MenuPanel OP_MAIN
 Initializer = MP_Options
+TickRoutine = MP_TickOptions
 LineHeight = 10
 Items
 CONTROLS
@@ -70,7 +71,6 @@ SECRETCREDS
 Menu OP_MAIN
 Music = optmnu
 FadeStrength = 17
-EnterRoutine = MR_Options
 HeaderPic = M_OPTTTL
 Panels
 MAIN : OP_MAIN
