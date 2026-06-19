@@ -1,17 +1,21 @@
+MenuPanel SR_MAIN
+Items
+UNLOCKABLES
+	Style = center
+	Text = Unlockables
+	SubMenu = SR_UNLOCKCHECKLIST
+STATISTICS
+	Style = center
+	Text = Statistics
+	SubMenu = SP_LEVELSTATS
+REPLAYHUT
+	Style = center
+	Text = Replay Hut
+	SubMenu = MISC_REPLAYHUT
+
 Menu SR_MAIN
-X = 160
-Y = 172
-MenuItem UNLOCKABLES
-Style = center
-Text = Unlockables
-SubMenu = SR_UNLOCKCHECKLIST
-
-MenuItem STATISTICS
-Style = center
-Text = Statistics
-SubMenu = SP_LEVELSTATS
-
-MenuItem REPLAYHUT
-Style = center
-Text = Replay Hut
-SubMenu = MISC_REPLAYHUT
+Music = exmenu 
+Panels
+MAIN : SR_MAIN
+	X = 160
+	Y = 172

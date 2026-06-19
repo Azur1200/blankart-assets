@@ -1,62 +1,55 @@
-Menu HELP
-X = 0
-Y = 0
+MenuPanel HELP
 KeyHandler = MR_HandleImageDef
-DrawRoutine = MD_DrawImageDef
-MenuItem PAGE0
-Style = patch-small
-Patch = MANUAL00
-Argument = 1
+TickRoutine = MP_TickImageDef
+Items
+PAGE0
+	Style = patch-small
+	Patch = MANUAL00
+	Argument = 1
+PAGE1
+	Style = patch-small
+	Patch = MANUAL01
+PAGE2
+	Style = patch-small
+	Patch = MANUAL02
+PAGE3
+	Style = patch
+	Patch = MANUAL03
+PAGE4
+	Style = patch
+	Patch = MANUAL04
+PAGE5
+	Style = patch
+	Patch = MANUAL05
+PAGE6
+	Style = patch
+	Patch = MANUAL06
+PAGE7
+	Style = patch
+	Patch = MANUAL07
+PAGE8
+	Style = patch
+	Patch = MANUAL08
+PAGE9
+	Style = patch
+	Patch = MANUAL09
+PAGE10
+	Style = patch
+	Patch = MANUAL10
+PAGE11
+	Style = patch
+	Patch = MANUAL11
+PAGE12
+	Style = patch
+	Patch = MANUAL12
+PAGE99
+	Style = patch-small
+	Patch = MANUAL99
+	Argument = 1
 
-MenuItem PAGE1
-Style = patch-small
-Patch = MANUAL01
 
-MenuItem PAGE2
-Style = patch-small
-Patch = MANUAL02
-
-MenuItem PAGE3
-Style = patch
-Patch = MANUAL03
-
-MenuItem PAGE4
-Style = patch
-Patch = MANUAL04
-
-MenuItem PAGE5
-Style = patch
-Patch = MANUAL05
-
-MenuItem PAGE6
-Style = patch
-Patch = MANUAL06
-
-MenuItem PAGE7
-Style = patch
-Patch = MANUAL07
-
-MenuItem PAGE8
-Style = patch
-Patch = MANUAL08
-
-MenuItem PAGE9
-Style = patch
-Patch = MANUAL09
-
-MenuItem PAGE10
-Style = patch
-Patch = MANUAL10
-
-MenuItem PAGE11
-Style = patch
-Patch = MANUAL11
-
-MenuItem PAGE12
-Style = patch
-Patch = MANUAL12
-
-MenuItem PAGE99
-Style = patch-small
-Patch = MANUAL99
-Argument = 1
+Menu HELP
+Panels
+MAIN : HELP
+	X = 0
+	Y = 0

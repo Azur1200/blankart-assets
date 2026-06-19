@@ -1,14 +1,19 @@
-Menu MISC_DISCORDREQUESTS
-X = 100
-Y = 133
+MenuPanel MISC_DISCORDREQUESTS
 KeyHandler = MR_HandleDiscordRequests
 DrawRoutine = MD_DrawDiscordRequests
-MenuItem WANT
-Y = 10
-Style = thin2-sticker
-Text = ...would like to join!
+Items
+WANT
+	Y = 10
+	Style = thin2-sticker
+	Text = ...would like to join!
+CONTROL
+	Y = 24
+	Style = thin2-sticker
+	Text = ^2ENTER^0 - Accept    ^2ESC^0 - Decline
 
-MenuItem CONTROL
-Y = 24
-Style = thin2-sticker
-Text = ^2ENTER^0 - Accept    ^2ESC^0 - Decline
+Menu MISC_DISCORDREQUESTS
+TickRoutine = MR_TickDiscordRequests
+Panels
+MAIN : MISC_DISCORDREQUESTS
+	X = 100
+	Y = 133
