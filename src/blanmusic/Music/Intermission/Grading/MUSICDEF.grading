@@ -1,6 +1,27 @@
-Lump GRADE
-Usage = End-of-Race Grading
-Title = Bonus Points
+Lump PGDFST
+Usage = Pre-Grade Finish (First)
+Title = Bonus (Excellent)
 Author = Yoshie Arakawa
 Source = Cosmo Gang: The Video
+Volume = 160
+
+Lump PGDGUD
+Usage = Pre-Grade Finish (Top Half)
+Title = Bonus (Good)
+Author = Yoshie Arakawa
+Source = Cosmo Gang: The Video
+Volume = 160
+
+Lump PGDBAD
+Usage = Pre-Grade Finish (Bottom Half)
+Title = Bonus (Fair)
+Author = Yoshie Arakawa
+Source = Cosmo Gang: The Video
+Volume = 160
+
+Lump GRADE
+Usage = End-of-Race Grading
+Title = Single Player Puzzle
+Author = Yoshie Arakawa
+Source = Cosmo Gang: The Puzzle
 Volume = 160
