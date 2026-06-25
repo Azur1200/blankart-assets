@@ -1,7 +1,109 @@
-Menu AD_MAIN
-X = 50
-Y = 28
+MenuItemStyle ADDON
+Part 0
+	Type = Patch
+	X = -20*FRACUNIT
+	Source = Patch
+	Small = True
+Part 1
+	Y = 4*FRACUNIT
+
+MenuItemStyle ADDONLOADED
+Part 0
+	Type = Patch
+	X = -20*FRACUNIT
+	Source = Patch
+	Small = True
+	Translucent = True
+Part 1
+	Type = Patch
+	X = -20*FRACUNIT
+	Source = Fixed
+	FixedString = M_FLOAD
+	Small = True
+Part 2
+	Y = 4*FRACUNIT
+	Translucent = True
+
+MenuPanel ADDONS_MAIN
+Initializer = MP_PrepAddonList
 KeyHandler = MR_HandleAddons
 DrawRoutine = MD_DrawAddons
+CursorOffset = -11
+ScrollHeight = 128
+LineHeight = 16
+
+MenuPanel ADDONS_URL
+TickRoutine = MP_TickAddonsURL
+LineHeight = 0
+Items
+LOCATION1
+	Style = center
+	Text = Visit                           to get & make addons!
+LOCATION2
+	Style = center-recommendedhighlight
+	Text =            SRB2.ORG/MODS                                      
+MIDGAME
+	Style = center-warninghighlight
+	Text = Adding files mid-game may cause problems.
+
+MenuPanel ADDONS_BACK
+TickRoutine = MP_TickAddonsBackground
+LineHeight = 0
+Items
+HEADERPATH
+	X = -21
+	Y = -12
+	Style = highlight
+HEADERFILL1
+	X = -21
+	Y = -3
+	Style = fill-highlight
+	Patch = 262x1,0
+HEADERFILL2
+	X = -21
+	Y = -2
+	Style = fill
+	Patch = 262x1,30
+BACKGROUND
+	X = -21
+	Y = -1
+	Style = fill
+	Patch = 262x144,159
+SEARCHICON
+	X = -42
+	Y = 149
+	Style = patch-small
+	Patch = M_FSRCH
+DISKICON
+	X = 246
+	Style = patch-small
+	Patch = M_FSAVE
+ADDONSLOADED
+	Style = patch-small
+	Patch = M_FLOAD
+SEARCHBOX
+	X = -21
+	Y = 150
+	Style = fill
+	Patch = 262x14,159
+SEARCHTEXT
+	Text = Press to Search
+	X = -17
+	Y = 153
+
+Menu AD_MAIN
 EnterRoutine = MR_Addons
 QuitRoutine = MR_QuitAddons
+Panels
+MAIN : ADDONS_MAIN
+	X = 50
+	Y = 29
+	Flags = V_ALLOWLOWERCASE
+BACK : ADDONS_BACK
+	X = 50
+	Y = 29
+	Layer = -10
+	Flags = V_ALLOWLOWERCASE
+URL : ADDONS_URL
+	X = 160
+	Y = 5

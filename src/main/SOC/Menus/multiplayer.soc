@@ -1,76 +1,108 @@
-Menu SCRAMBLETEAM
-X = 27
-Y = 70
+MenuPanel SCRAMBLETEAM
 LineHeight = 10
-MenuItem SCRAMBLE
-Text = Scramble Method
-Cvar = dummyscramble
+Items
+SCRAMBLE
+	Text = Scramble Method
+	Cvar = dummyscramble
+CONFIRM
+	OfsY = 50
+	Style = highlight
+	Text = Confirm
+	Call = MR_ConfirmTeamScramble
 
-MenuItem CONFIRM
-OfsY = 50
-Style = highlight
-Text = Confirm
-Call = MR_ConfirmTeamScramble
-
-
-Menu CHANGETEAM
-X = 27
-Y = 70
+MenuPanel CHANGETEAM
+Initializer = MP_PlayerSplitscreen
 LineHeight = 10
-MenuItem PLAYER
-Text = Player
-Cvar = dummymenuplayer
+Items
+PLAYER
+	Text = Player
+	Cvar = dummymenuplayer
+TEAM
+	Text = Team
+	Cvar = dummyteam
+CONFIRM
+	OfsY = 40
+	Style = highlight
+	Text = Confirm
+	Call = MR_ConfirmTeamChange
 
-MenuItem TEAM
-Text = Team
-Cvar = dummyteam
-
-MenuItem CONFIRM
-OfsY = 40
-Style = highlight
-Text = Confirm
-Call = MR_ConfirmTeamChange
-
-
-Menu CHANGESPECTATE
-X = 27
-Y = 70
+MenuPanel CHANGESPECTATE
+Initializer = MP_PlayerSplitscreen
 LineHeight = 10
-MenuItem PLAYER
-Text = Player
-Cvar = dummymenuplayer
+Items
+PLAYER
+	Text = Player
+	Cvar = dummymenuplayer
+STATUS
+	Text = Status
+	Cvar = dummyspectate
+CONFIRM
+	OfsY = 40
+	Style = highlight
+	Text = Confirm
+	Call = MR_ConfirmSpectateChange
 
-MenuItem STATUS
-Text = Status
-Cvar = dummyspectate
+MenuItemStyle CHANGELEVELBACK
+Part 0
+	X = -13*FRACUNIT
+	Y = -3*FRACUNIT
+	Type = Fill
+	Source = Fixed
+	FixedString = 282x44,27
 
-MenuItem CONFIRM
-OfsY = 40
-Style = highlight
-Text = Confirm
-Call = MR_ConfirmSpectateChange
-
-
-Menu CHANGELEVEL
-X = 32
-Y = 40
+MenuPanel CHANGELEVEL
+Initializer = MP_LevelPlatterOptions
 LineHeight = 10
 ScrollHeight = 32
-EnterRoutine = MR_PrepareLevelPlatter
+Items
+BACKGROUND
+	Style = CHANGELEVELBACK
+GAMETYPE
+	OfsY = -10
+	Text = Game Type
+	Cvar = newgametype
+ENCORE
+	Text = Encore Mode
+	Cvar = kartencore
+SORTBY
+	Text = Sort By
+	Cvar = levelsort
+RANDOM
+	Text = Random Map
+	Call = MR_LevelPlatterRandom
+
+MenuPanel LEVELPLATTER
+Initializer = MP_PrepareLevelPlatter
 DrawRoutine = MD_DrawLevelPlatterMenu
 KeyHandler = MR_HandleLevelPlatter
-MenuItem GAMETYPE
-Text = Game Type
-Cvar = newgametype
+Items
+DUMMY
+	Call = MR_PlaySound
 
-MenuItem ENCORE
-Text = Encore Mode
-Cvar = kartencore
+Menu SCRAMBLETEAM
+Panels
+MAIN : SCRAMBLETEAM
+	X = 27
+	Y = 70
 
-MenuItem SORTBY
-Text = Sort By
-Cvar = levelsort
+Menu CHANGETEAM
+Panels
+MAIN : CHANGETEAM
+	X = 27
+	Y = 70
 
-MenuItem RANDOM
-Text = Random Map
-Call = MR_LevelPlatterRandom
+Menu CHANGESPECTATE
+Panels
+MAIN : CHANGESPECTATE
+	X = 27
+	Y = 70
+
+Menu CHANGELEVEL
+EnterRoutine = MR_SetLevelListMode
+Panels
+PLATTER : LEVELPLATTER
+	X = 32
+	Y = 40
+OPTIONS : CHANGELEVEL
+	X = 32
+	Y = 40

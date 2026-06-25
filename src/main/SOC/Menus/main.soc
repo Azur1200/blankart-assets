@@ -1,34 +1,38 @@
-Menu MAIN
-Music = titles
-X = 160
-Y = 148
-MenuItem EXTRAS
-Style = center
-Text = Extras
-SubMenu = SR_MAIN
-
-MenuItem SINGLEPLAYER
-Style = center
-Text = 1 Player
-SubMenu = SP_MAIN
-
-MenuItem MULTIPLAYER
-Style = center
-Text = Multiplayer
-SubMenu = MP_MAIN
-
-MenuItem OPTIONS
-Style = center
-Text = Options
-SubMenu = OP_MAIN
-
+MenuPanel MAIN
+Items
+EXTRAS
+	Style = center
+	Text = Extras
+	SubMenu = SR_MAIN
+SINGLEPLAYER
+	Style = center
+	Text = 1 Player
+	SubMenu = SP_MAIN
+MULTIPLAYER
+	Style = center
+	Text = Multiplayer
+	SubMenu = MP_MAIN
+OPTIONS
+	Style = center
+	Text = Options
+	SubMenu = OP_MAIN
 # I don't think is useful at all...
-MenuItem ADDONS
-Style = center
-Text = Addons
-SubMenu = AD_MAIN
+ADDONS
+	Style = center
+	Text = Addons
+	SubMenu = AD_MAIN
+QUITGAME
+	Style = center
+	Text = Quit  Game
+	Call = MR_QuitSRB2
 
-MenuItem QUITGAME
-Style = center
-Text = Quit  Game
-Call = MR_QuitSRB2
+Menu MAIN
+Music = mnmenu
+BackgroundName = SRB2KTTL
+ScrollXSpeed = 5
+ScrollYSpeed = 0
+FadeStrength = 16
+Panels
+MAIN : MAIN
+	X = 160
+	Y = 148

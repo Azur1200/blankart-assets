@@ -1,3 +1,160 @@
+MenuItemStyle REPLAYSUBDIR
+Part 0
+	Type = Patch
+	X = -4*FRACUNIT
+	Source = Patch
+Part 1
+	X = 8*FRACUNIT
+
+MenuItemStyle REPLAYSELECT
+Part 0
+# X scrolled by MR_TickReplayHut
+
+MenuItemStyle REPLAYRANKING
+Part 0 # ranking
+	Source = Text
+	Highlight = Highlight
+	Align = Right
+Part 1 # name
+	Font = TINY
+	X = 4*FRACUNIT
+	Source = Patch
+Part 2 # score
+	X = 8*FRACUNIT
+	Y = 9*FRACUNIT
+	Source = Extra
+
+# for no contest
+MenuItemStyle REPLAYRANKINGTHIN
+Part 0 # ranking
+	Source = Text
+	Highlight = Highlight
+	Align = Right
+Part 1 # name
+	Font = TINY
+	X = 4*FRACUNIT
+	Source = Patch
+Part 2 # score
+	Font = TINY
+	X = 8*FRACUNIT
+	Y = 9*FRACUNIT
+	Source = Extra
+
+MenuItemStyle REPLAYRANKINGICON
+Part 0
+	Type = SkinIcon
+	Align = Right
+	Small = True
+	Source = Patch
+	Source2 = Extra
+
+MenuItemStyle REPLAYHUT_ICON
+Part 0
+	Type = SkinIcon
+	Source = Patch
+	Source2 = Extra
+	Align = Right
+
+MenuPanel REPLAYHUT_DEMOLIST
+Initializer = MP_PrepReplayList
+KeyHandler = MR_HandleReplayHutList
+TickRoutine = MP_TickReplayHutDemoList
+ScrollBar = True
+ScrollHeight = 110
+
+MenuPanel REPLAYHUT_DEMOINFO_BG
+TickRoutine = MP_TickReplayHutInfoBackground
+Items
+BACKGROUND
+	Style = fill
+	Patch = 300x60,159
+CENTERTEXT
+	X = 150
+	Y = 30
+	Style = center
+
+MenuPanel REPLAYHUT_DEMOINFO_FG
+TickRoutine = MP_TickReplayHutInfoForeground
+Items
+OUTDATED
+	X = 7
+	Y = 54
+	Style = thin-highlight-translucent
+	Text = Recorded on an outdated version.
+THUMBNAIL
+	X = 5
+	Y = 5
+	Style = mapthumbnail
+MAPNAME
+	X = 90
+	Y = 5
+NUMLAPS
+	X = 90
+	Y = 14
+	Style = thin
+GAMETYPE
+	X = 90
+	Y = 25
+NOSTANDINGS
+	X = 90
+	Y = 44
+	Style = translucent
+	Text = No standings available.
+WINNER
+	X = 90
+	Y = 34
+	Style = thin-highlight
+	Text = Winner
+WINNERNAME
+	X = 128
+	Y = 35
+SCORENAME
+	X = 90
+	Y = 44
+	Style = thin-highlight
+SCORE
+	X = 128
+	Y = 45
+FACE
+	X = 295
+	Y = 25
+	Style = REPLAYHUT_ICON
+
+MenuPanel REPLAYHUT_RANKINGS
+TickRoutine = MP_TickReplayHutRankings
+
+MenuPanel REPLAYHUT_DEMOSTART
+Initializer = MP_ReplayHutStart
+TickRoutine = MP_TickReplayHutMain
+Items
+LOADWATCH
+	Y = 0
+	Text = Load Addons and Watch
+	Call = MR_HutStartReplay
+NOLOADWATCH
+	Y = 10
+	Text = Watch Without Addons
+	Call = MR_HutStartReplay
+WATCH
+	Y = 10
+	Text = Watch Replay
+	Call = MR_HutStartReplay
+BACK
+	Y = 30
+	Text = Back
+	Call = MR_GoBack
+RANKINGBG
+	X = BASEVIDWIDTH-138
+	Y = -52
+	Style = fill
+	Patch = 98x200,157
+
+MenuPanel REPLAYHUT_DEMOTITLE
+TickRoutine = MP_TickReplayHutDemoTitle
+Items
+DEMOTITLE
+	Style = highlight
+
 Menu MISC_REPLAYHUT
 Music = replst
 BackgroundName = SRB2BACK
@@ -6,34 +163,50 @@ ScrollYSpeed = 0
 FadeStrength = 1
 EnterWipe = 0
 ExitWipe = 0
-X = 30
-Y = 80
-KeyHandler = MR_HandleReplayHutList
-DrawRoutine = MD_DrawReplayHut
 EnterRoutine = MR_ReplayHut
 QuitRoutine = MR_QuitReplayHut
-
+VHS = true
+Panels
+DEMOLIST : REPLAYHUT_DEMOLIST
+	X = 30
+	Y = 80
+	Flags = V_SNAPTOTOP|V_SNAPTOLEFT|V_ALLOWLOWERCASE
+DEMOINFOBG : REPLAYHUT_DEMOINFO_BG
+	X = 10
+	Y = 10
+	Flags = V_SNAPTOTOP
+DEMOINFOFG : REPLAYHUT_DEMOINFO_FG
+	X = 10
+	Y = 10
+	Flags = V_SNAPTOTOP|V_ALLOWLOWERCASE
 
 Menu MISC_REPLAYSTART
-X = 30
-Y = 90
-DrawRoutine = MD_DrawReplayStartMenu
-MenuItem LOADWATCH
-Y = 0
-Text = Load Addons and Watch
-Call = MR_HutStartReplay
-
-MenuItem NOLOADWATCH
-Y = 10
-Text = Watch Without Addons
-Call = MR_HutStartReplay
-
-MenuItem WATCH
-Y = 10
-Text = Watch Replay
-Call = MR_HutStartReplay
-
-MenuItem BACK
-Y = 30
-Text = Back
-Call = MR_GoBack
+Panels
+MAIN : REPLAYHUT_DEMOSTART
+	X = 30
+	Y = 90
+DEMOTITLE : REPLAYHUT_DEMOTITLE
+	X = 10
+	Y = 72
+	ClipRect = True
+	ClipRect_X = 0
+	ClipRect_Y = 72
+	ClipRect_Width = 212
+	ClipRect_Height = 10
+RANKINGS : REPLAYHUT_RANKINGS
+	X = BASEVIDWIDTH-109
+	Y = 52
+	Flags = V_SNAPTOTOP|V_ALLOWLOWERCASE
+	ClipRect = True
+	ClipRect_X = BASEVIDWIDTH-109
+	ClipRect_Y = 70
+	ClipRect_Width = 100
+	ClipRect_Height = 200
+DEMOINFOBG : REPLAYHUT_DEMOINFO_BG
+	X = 10
+	Y = 10
+	Flags = V_SNAPTOTOP
+DEMOINFOFG : REPLAYHUT_DEMOINFO_FG
+	X = 10
+	Y = 10
+	Flags = V_SNAPTOTOP|V_ALLOWLOWERCASE

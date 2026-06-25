@@ -1,37 +1,38 @@
-Menu SP_GRANDPRIX
-X = 60
-Y = 40
+MenuPanel SP_GRANDPRIX
 LineHeight = 10
+Items
+PLAYERSETUP
+	Text = Player setup...
+	Tooltip = Player setup.
+	SubMenu = MN_MP_PLAYERSETUP
+DIFFICULTY
+	OfsY = 10
+	Text = Difficulty
+	Tooltip = Determines gamespeed and bot difficulty.
+	Cvar = dummygpdifficulty
+ENCORE
+	Text = Encore Mode
+	Tooltip = Mirror mode.
+	Cvar = dummygpencore
+GPITEMOPTIONS
+	Text = Random Item Toggles...
+	Tooltip = Toggles for all in-game items.
+	Submenu = OP_MONITORTOGGLE
+GPMODS
+	Text = Gameplay Mods...
+	Tooltip = Gameplay-Related modifiers.
+	Submenu = OP_BLANKARTGAME
+START
+	OfsY = 10
+	Text = Cup Select...
+	Tooltip = Let's begin!
+	Argument = LLM_CUPSELECT
+	SubMenu = CHANGELEVEL
+
+Menu SP_GRANDPRIX
+Music = gpmenu 
 EnterRoutine = MR_GrandPrixTemp
-MenuItem PLAYERSETUP
-Text = Player setup...
-Tooltip = Player setup.
-SubMenu = MN_MP_PLAYERSETUP
-
-MenuItem DIFFICULTY
-OfsY = 10
-Text = Difficulty
-Tooltip = Determines gamespeed and bot difficulty.
-Cvar = dummygpdifficulty
-
-MenuItem ENCORE
-Text = Encore Mode
-Tooltip = Mirror mode.
-Cvar = dummygpencore
-
-MenuItem GPITEMOPTIONS
-Text = Random Item Toggles...
-Tooltip = Toggles for all in-game items.
-Submenu = OP_MONITORTOGGLE
-
-MenuItem GPMODS
-Text = Gameplay Mods...
-Tooltip = Gameplay-Related modifiers.
-Submenu = OP_BLANKARTGAME
-
-MenuItem START
-OfsY = 10
-Text = Cup Select...
-Tooltip = Let's begin!
-Argument = LLM_CUPSELECT
-SubMenu = CHANGELEVEL
+Panels
+MAIN : SP_GRANDPRIX
+	X = 60
+	Y = 40

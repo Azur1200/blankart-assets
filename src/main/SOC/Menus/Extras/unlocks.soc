@@ -1,8 +1,11 @@
+MenuPanel SR_UNLOCKCHECKLIST
+Initializer = MP_UnlockablesChecklist
+LineHeight = 8 # try changing this! :^)
+CursorOffset = 12
+ScrollHeight = 176
+
 Menu SR_UNLOCKCHECKLIST
-X = 280
-Y = 185
-DrawRoutine = MD_DrawCheckList
-MenuItem NEXT
-Y = 192
-Text = NEXT
-Call = MR_GoBack
+Panels
+MAIN : SR_UNLOCKCHECKLIST
+	X = 8
+	Y = 8

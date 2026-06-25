@@ -1,7 +1,180 @@
-Menu SP_LEVELSTATS
-X = 280
-Y = 185
-HeaderPic = M_STATS
+MenuItemStyle STATSAMOUNT
+Part 0
+	Highlight = Highlight
+Part 1
+	Source = Patch
+	Align = Edge
+
+MenuItemStyle STATSMAP
+Part 0
+	Font = TINY
+Part 1
+	Font = TINY
+	Source = Patch
+	X = 140*FRACUNIT
+Part 2
+	Font = TINY
+	Source = Extra
+	X = 204*FRACUNIT
+
+MenuItemStyle STATSMAPHEADING
+Part 0
+	Highlight = Highlight
+Part 1
+	Source = Patch
+	Highlight = Highlight
+	X = 140*FRACUNIT
+Part 2
+	Source = Extra
+	Highlight = Highlight
+	X = 204*FRACUNIT
+
+MenuPanel SP_LEVELSTATS
 KeyHandler = MR_HandleLevelStats
 DrawRoutine = MD_DrawLevelStats
-EnterRoutine = MR_Statistics
+Items
+HEADING
+	X = 160
+	Y = 28
+	Style = center-highlight
+
+MenuPanel STATS_PLAYTIME
+Initializer = MP_StatsPlaytime
+KeyHandler = MR_HandleLevelStats
+CursorOffset = 1
+Items
+TOTALPLAYTIME
+	Style = highlight
+	Text = Total Play Time:
+PLAYTIME
+	X = 140
+	Y = 10
+	Style = center
+TOTALMATCHES
+	OfsX = -140
+	Y = 20
+	Style = highlight
+	Text = Total Matches:
+MATCHES
+	Y = 20
+	Style = edge
+POWERLEVEL
+	Y = 40
+	Style = highlight
+	Text = Online Power Level:
+RACEPWRLV
+	Y = 50
+	Style = edge
+BATTLEPWRLV
+	Y = 60
+	Style = edge
+RAPLAYTIME
+	Y = 80
+	Style = STATSAMOUNT
+	Text = RA Play Time:
+ONLINEPLAYTIME
+	Y = 90
+	Style = STATSAMOUNT
+	Text = Online Play Time:
+RACEPLAYTIME
+	Y = 100
+	Style = STATSAMOUNT
+	Text = Race Play Time:
+BATTLEPLAYTIME
+	Y = 110
+	Style = STATSAMOUNT
+	Text = Battle Play Time:
+
+MenuPanel STATS_RECORDSBG
+Initializer = MP_StatsRecordsBG
+LineHeight = 0
+Items
+MODE
+	Style = highlight
+CHANGEMODE
+	Style = thin2-edge
+	Text = ^6(BKSP to change)
+COMBINEDRECORDS
+	OfsY = 8
+	Text = Combined time records:
+TOTALTIME
+	Style = edge
+MAPSFINISHED
+	X = 16
+	OfsY = 8
+EMBLEMCOUNT
+	X = 32
+GOTIT
+	X = 20
+	Style = patch-small
+	Patch = GOTITA
+
+MenuPanel STATS_RECORDS
+Initializer = MP_StatsRecords
+KeyHandler = MR_HandleLevelStats
+LineHeight = 8
+ScrollHeight = 130
+CursorOffset = 1
+
+MenuPanel STATS_EXTRA
+Initializer = MP_StatsExtra
+KeyHandler = MR_HandleLevelStats
+CursorOffset = 1
+Items
+SPBTARGETTIME
+	Style = STATSAMOUNT
+	Text = Time being SPB target:
+SPINOUTTIME
+	Y = 10
+	Style = STATSAMOUNT
+	Text = Time spent in spinout:
+TOTALWINS
+	Y = 30
+	Style = STATSAMOUNT
+	Text = Total wins:
+TOTALPODIUM
+	Y = 40
+	Style = STATSAMOUNT
+	Text = Total podium (2nd/3rd place):
+HITS
+	Y = 60
+	Style = STATSAMOUNT
+	Text = Hits landed:
+SELFHITS
+	Y = 70
+	Style = STATSAMOUNT
+	Text = Self-hits landed:
+SINKS
+	Y = 90
+	Style = STATSAMOUNT
+	Text = Sinks landed:
+SINKED
+	Y = 100
+	Style = STATSAMOUNT
+	Text = Times hit by sink:
+RESPAWNS
+	Y = 120
+	Style = STATSAMOUNT
+	Text = Total respawns:
+
+Menu SP_LEVELSTATS
+TickRoutine = MR_TickStats
+HeaderPic = M_STATS
+Panels
+PLAYTIME : STATS_PLAYTIME
+	X = 20
+	Y = 42
+	Disabled = True
+RECORDS : STATS_RECORDS
+	X = 20
+	Y = 62
+	Disabled = True
+EXTRA : STATS_EXTRA
+	X = 20
+	Y = 42
+RECORDSBG : STATS_RECORDSBG
+	X = 20
+	Y = 36
+MAIN : SP_LEVELSTATS
+	X = 0
+	Y = 0
