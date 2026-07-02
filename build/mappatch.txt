@@ -1,5 +1,0 @@
-$basepath src/mappatch/
-$output out/mappatch.pk3
-
-MapPatch/**
-**
