@@ -1,372 +1,333 @@
-Menu OP_GAME
-X = 30
-Y = 30
+MenuPanel OP_GAME
+Initializer = MP_GameOptions
 LineHeight = 10
+Items
+ITEMOPTIONS
+	Text = Random Item Toggles...
+	Tooltip = Toggles for all in-game items.
+	Submenu = OP_MONITORTOGGLE
+BLANKARTOPTIONS
+	Text = Gameplay Mods...
+	Tooltip = Gameplay-Related modifiers.
+	Submenu = OP_BLANKARTGAME
+BOTOPTIONS
+	Text = Bots...
+	Tooltip = Bot related options.
+	Submenu = OP_BLANKARTBOT
+RACESPEED
+	Text = Race Game Speed
+	Tooltip = Driving speed of game in race mode.
+	Cvar = kartspeed
+BATTLESPEED
+	Text = Battle Game Speed
+	Tooltip = Driving speed of game in battle mode.
+	Cvar = kartbattlespeed
+FRANTICITEMS
+	Text = Frantic Items
+	Tooltip = Crazier item rolls.
+	Cvar = kartfrantic
+ENCORE
+	Text = Encore Mode
+	Tooltip = Mirror mode.
+	Cvar = kartencore
+NUMLAPS
+	OfsY = 10
+	Text = Number of Laps
+	Tooltip = Number of laps.
+	Cvar = numlaps
+COUNTDOWN
+	Text = Exit Countdown Timer
+	Tooltip = Countdown for other players when people finish.
+	Cvar = countdowntime
+ELIMINATE
+	Text = Eliminate Last
+	Tooltip = Last explodes when the standings are complete.
+	Cvar = karteliminatelast
+TIMELIMIT
+	OfsY = 10
+	Text = Time Limit
+	Tooltip = Time limit for battle mode.
+	Cvar = timelimit
+NUMBUMPERS
+	Text = Starting Bumpers
+	Tooltip = Number of bumpers to start with in battle mode.
+	Cvar = kartbumpers
+KARMA
+	Text = Karma Comeback
+	Tooltip = Allow players to come back via karma in battle mode.
+	Cvar = kartcomeback
+POWERLEVELS
+	Text = Track Power Levels
+	Tooltip = Use Power Levels instead of points.
+	Cvar = kartusepwrlv
+
+MenuPanel OP_BLANKARTGAME
+ScrollHeight = 134
+LineHeight = 10
+Items
+MECHANICHEAD
+	OfsY = 10
+	Style = header
+	Text = Gameplay Mechanics
+RINGS
+	Text = Rings
+	Tooltip = Pick up Rings to use as a on demand speedboost!
+	Cvar = kartrings
+PURPLEDRIFT
+	Text = Purple Drift
+	Tooltip = 4-Tier drift boost.
+	Cvar = kartpurpledrift
+SLIPDASH
+	Text = Slipdash
+	Tooltip = Get better turning during a sliptide and a boost afterwards!
+	Cvar = kartslipdash
+STACKING
+	Text = Boost Stacking
+	Tooltip = Allows boosts to combine to become stronger!
+	Cvar = kartstacking
+CHAINING
+	Text = Boost Chaining
+	Tooltip = Extend the length of boosts with other boosts!
+	Cvar = kartchaining
+CHAINOFFROAD
+	Text = Chain Offroad
+	Tooltip = Should extended sneakers mow offroad?
+	Cvar = kartchaining_chainoffroad
+SLOPEBOOST
+	Text = Slope Boost
+	Tooltip = When you go down slopes you go faster!
+	Cvar = kartslopeboost
+DRAFTING
+	Text = Drafting
+	Tooltip = When you trail behind someone you get a speedboost!
+	Cvar = kartdrafting
+AIRDROP
+	Text = Air Drop
+	Tooltip = When you brake in the air, you fall faster! Rings make it stronger.
+	Cvar = kartairdrop
+AIRTHRUST
+	Text = Air Thrust
+	Tooltip = When you perform a drift boost in the air, you launch forwards!
+	Cvar = kartairthrust
+RECOVERYDASH
+	Text = Recovery Dash
+	Tooltip = When you hold ACCEL + BRAKE, you resist offroad and charge a Recovery Dash!
+	Cvar = kartrecoverydash
+KEEPSTUFF
+	Text = Keep Stuff
+	Tooltip = When you respawn, you retain power items such as Invincibility and Grow!
+	Cvar = kartkeepstuff
+BLAN_ITEMSETTINGS
+	Text = Item Settings...
+	Tooltip = Customize certain items as you see fit.
+	Submenu = OP_BLANITEMSETTINGS
+QOLHEAD
+	OfsY = 10
+	Style = header
+	Text = Quality of Life
+BUMPSPARK
+	Text = Bump Spark
+	Tooltip = Decide what happens when you hit a wall while drifting.
+	Cvar = kartbumpspark
+BUMPSPRING
+	Text = Bump Spring
+	Tooltip = Maintain pogospring state after wallbump.
+	Cvar = kartbumpspring
+ANTIBUMP
+	Text = Anti-Bump
+	Tooltip = Prevent player-on-player collisions for some time at race start.
+	Cvar = kartantibump
+ITEMLITTER
+	Text = Item Litter
+	Tooltip = Players drop orbiting/trailing items on the track when hit.
+	Cvar = kartitemlitter
+ITEMPUSHING
+	Text = Item Pushing
+	Tooltip = Push dropped items away from item boxes.
+	Cvar = kartitempush
+PLAYERBUMP
+	Text = Player Bump Setting
+	Tooltip = Change how players collide with one another.
+	Cvar = playerbump
+TRAILSLOWDOWN
+	Text = Trailing Item Slowdown
+	Tooltip = When on, trailing an item behind you will eventually slow you down.
+	Cvar = trailslow
+WATERBRICKS
+	Text = Waterskip Prevention
+	Tooltip = Allows players to stop waterskipping by letting go of ACCEL.
+	Cvar = kartwaterskiplock
+MISCHEAD
+	OfsY = 10
+	Style = header
+	Text = Misc
+ITEMBREAKER
+	Text = Item Breaker
+	Tooltip = When in single player battle, Item Breaker will start. Smash the item boxes fast to win.
+	Cvar = kartitembreaker
+RINGSTART
+	Text = Starting Rings
+	Tooltip = Amount of rings a player starts with when starting a game.
+	Cvar = kartringsstart
+RINGCAPMAX
+	Text = Maximum Rings
+	Tooltip = Maximum amount of rings a player can carry.
+	Cvar = kartringsmax
+RINGCAPMIN
+	Text = Minimum Rings
+	Tooltip = Amount of rings a player can enter ring debt into.
+	Cvar = kartringsmin
+
+MenuPanel OP_BLANKARTBOT
+LineHeight = 10
+Items
+CAP
+	Text = Bot Cap
+	Tooltip = Add bots to the race until the player count reaches this value.
+	Cvar = kartbot_cap
+DIFFICULTY
+	Text = Bot Difficulty
+	Tooltip = How difficult should bots be? "Off" disables bots.
+	Cvar = kartbot
+MODIFIER
+	Text = Bot Modifier
+	Tooltip = This modifies the overall difficulty of bots.
+	Cvar = kartbot_modifiermax
+FORCERIVAL
+	Text = All Rivals
+	Tooltip = Forces all bots to be rivals. Turn this on for a tougher challenge!
+	Cvar = kartbot_forcerival
+
+
+MenuPanel OP_BLANITEMSETTINGS
+ScrollHeight = 134
+LineHeight = 10
+Items
+INVINHEAD
+	OfsY = 10
+	Style = header
+	Text = Invincibility
+INVIN_SPD
+	Text = Speedboost
+	Tooltip = How fast do you want Invincibility to go?
+	Cvar = vanillaboost_invincibility_speedboost
+INVIN_ACL
+	Text = Accelboost
+	Tooltip = How fast do you want Invincibility to accelerate?
+	Cvar = vanillaboost_invincibility_accelboost
+INVIN_HDL
+	Text = Handleboost
+	Tooltip = How fast do you want Invincibility to turn?
+	Cvar = vanillaboost_invincibility_handleboost
+INVIN_STACKME
+	Text = Make Stackable
+	Tooltip = (With stacking enabled) Can boosts stack on top of Invincibility?
+	Cvar = vanillaboost_invincibility_stackable
+SMONITORHEAD
+	OfsY = 10
+	Style = header
+	Text = S-Monitor
+SMONITORSTARTDISTANCE
+	Text = S-Monitor Start Distance
+	Tooltip = At this distance value, the S-Monitor is forced into a player's slot.
+	Cvar = smonitor_startdist
+SMONITORDECAYDISTANCE
+	Text = S-Monitor Decay Distance
+	Tooltip = At this distance value, the S-Monitor's time limit begins.
+	Cvar = smonitor_decaydist
+SMONITOR_SPD
+	Text = Speedboost
+	Tooltip = How fast do you want the S-Monitor to go?
+	Cvar = vanillaboost_smonitor_speedboost
+SMONITOR_ACL
+	Text = Accelboost
+	Tooltip = How fast do you want the S-Monitor to accelerate?
+	Cvar = vanillaboost_smonitor_speedboost
+SMONITOR_HDL
+	Text = Handleboost
+	Tooltip = How fast do you want the S-Monitor to turn?
+	Cvar = vanillaboost_smonitor_handleboost
+SMONITOR_STACKME
+	Text = Make Stackable
+	Tooltip = (With stacking enabled) Can boosts stack on top of the S-Monitor?
+	Cvar = vanillaboost_smonitor_stackable
+GROWHEAD
+	OfsY = 10
+	Style = header
+	Text = Grow
+GROW_AIRSQUISH
+	Text = Air Squish
+	Tooltip = Should Grow be allowed to squish other racers mid-air?
+	Cvar = kartairsquish
+BUBBLEHEAD
+	OfsY = 10
+	Style = header
+	Text = Bubble Shield
+BUBBLE_DEFENSE
+	Text = Inflated Damage Rate
+	Tooltip = At what rate should the Bubble Shield be damaged by when inflated?
+	Cvar = kartbubble_defense_damagerate
+BUBBLE_BOOST
+	Text = Pop to Boost
+	Tooltip = Should the Bubble Shield cause the user to recieve a boost when popped early?
+	Cvar = kartbubble_boost_allow
+BUBBLE_IDLE
+	Text = Passive Defense
+	Tooltip = Should the Bubble Shield passively defend from attacks when not inflated?
+	Cvar = kartbubble_defense_canidle
+FLAMEHEAD
+	OfsY = 10
+	Style = header
+	Text = Flame Shield
+FLAME_FASTFUEL
+	Text = Fast Fuel
+	Tooltip = Should the Flame Shield heat up faster in exchange for increased fuel consumption?
+	Cvar = kartflame_fastfuel
+FLAME_OFFROAD
+	Text = Offroad Burn
+	Tooltip = Should the Flame Shield grant the user offroad resistance when overheating offroad?
+	Cvar = kartflame_offroadburn
+
+MenuPanel OP_MONITORTOGGLE
+Initializer = MP_SetupMonitorToggles
+KeyHandler = MR_HandleMonitorToggles
+DrawRoutine = MD_DrawMonitorToggles
+MultiNav = True
+NavItemCount = 4
+
+Menu OP_GAME
 HeaderPic = M_GAME
-MenuItem ITEMOPTIONS
-Text = Random Item Toggles...
-Tooltip = Toggles for all in-game items.
-Submenu = OP_MONITORTOGGLE
-
-MenuItem BLANKARTOPTIONS
-Text = Gameplay Mods...
-Tooltip = Gameplay-Related modifiers.
-Submenu = OP_BLANKARTGAME
-
-MenuItem BOTOPTIONS
-Text = Bots...
-Tooltip = Bot related options.
-Submenu = OP_BLANKARTBOT
-
-MenuItem RACESPEED
-Text = Race Game Speed
-Tooltip = Driving speed of game in race mode.
-Cvar = kartspeed
-
-MenuItem BATTLESPEED
-Text = Battle Game Speed
-Tooltip = Driving speed of game in battle mode.
-Cvar = kartbattlespeed
-
-MenuItem FRANTICITEMS
-Text = Frantic Items
-Tooltip = Crazier item rolls.
-Cvar = kartfrantic
-
-MenuItem ENCORE
-Text = Encore Mode
-Tooltip = Mirror mode.
-Cvar = kartencore
-
-MenuItem NUMLAPS
-OfsY = 10
-Text = Number of Laps
-Tooltip = Number of laps.
-Cvar = numlaps
-
-MenuItem COUNTDOWN
-Text = Exit Countdown Timer
-Tooltip = Countdown for other players when people finish.
-Cvar = countdowntime
-
-MenuItem ELIMINATE
-Text = Eliminate Last
-Tooltip = Last explodes when the standings are complete.
-Cvar = karteliminatelast
-
-MenuItem TIMELIMIT
-OfsY = 10
-Text = Time Limit
-Tooltip = Time limit for battle mode.
-Cvar = timelimit
-
-MenuItem NUMBUMPERS
-Text = Starting Bumpers
-Tooltip = Number of bumpers to start with in battle mode.
-Cvar = kartbumpers
-
-MenuItem KARMA
-Text = Karma Comeback
-Tooltip = Allow players to come back via karma in battle mode.
-Cvar = kartcomeback
-
-MenuItem POWERLEVELS
-Text = Track Power Levels
-Tooltip = Use Power Levels instead of points.
-Cvar = kartusepwrlv
-
+Panels
+MAIN : OP_GAME
+	X = 30
+	Y = 30
 
 Menu OP_BLANKARTGAME
-X = 30
-Y = 30
-LineHeight = 10
-ScrollHeight = 134
 HeaderPic = M_GAME
-MenuItem MECHANICHEAD
-OfsY = 10
-Style = header
-Text = Gameplay Mechanics
-
-MenuItem RINGS
-Text = Rings
-Tooltip = Pick up Rings to use as a on demand speedboost!
-Cvar = kartrings
-
-MenuItem PURPLEDRIFT
-Text = Purple Drift
-Tooltip = 4-Tier drift boost.
-Cvar = kartpurpledrift
-
-MenuItem SLIPDASH
-Text = Slipdash
-Tooltip = Get better turning during a sliptide and a boost afterwards!
-Cvar = kartslipdash
-
-MenuItem STACKING
-Text = Boost Stacking
-Tooltip = Allows boosts to combine to become stronger!
-Cvar = kartstacking
-
-MenuItem CHAINING
-Text = Boost Chaining
-Tooltip = Extend the length of boosts with other boosts!
-Cvar = kartchaining
-
-MenuItem CHAINOFFROAD
-Text = Chain Offroad
-Tooltip = Should extended sneakers mow offroad?
-Cvar = kartchaining_chainoffroad
-
-MenuItem SLOPEBOOST
-Text = Slope Boost
-Tooltip = When you go down slopes you go faster!
-Cvar = kartslopeboost
-
-MenuItem DRAFTING
-Text = Drafting
-Tooltip = When you trail behind someone you get a speedboost!
-Cvar = kartdrafting
-
-MenuItem AIRDROP
-Text = Air Drop
-Tooltip = When you brake in the air, you fall faster! Rings make it stronger.
-Cvar = kartairdrop
-
-MenuItem AIRTHRUST
-Text = Air Thrust
-Tooltip = When you perform a drift boost in the air, you launch forwards!
-Cvar = kartairthrust
-
-MenuItem RECOVERYDASH
-Text = Recovery Dash
-Tooltip = When you hold ACCEL + BRAKE, you resist offroad and charge a Recovery Dash!
-Cvar = kartrecoverydash
-
-MenuItem KEEPSTUFF
-Text = Keep Stuff
-Tooltip = When you respawn, you retain power items such as Invincibility and Grow!
-Cvar = kartkeepstuff
-
-MenuItem BLAN_ITEMSETTINGS
-Text = Item Settings...
-Tooltip = Customize certain items as you see fit.
-Submenu = OP_BLANITEMSETTINGS
-
-MenuItem QOLHEAD
-OfsY = 10
-Style = header
-Text = Quality of Life
-
-MenuItem BUMPSPARK
-Text = Bump Spark
-Tooltip = Decide what happens when you hit a wall while drifting.
-Cvar = kartbumpspark
-
-MenuItem BUMPSPRING
-Text = Bump Spring
-Tooltip = Maintain pogospring state after wallbump.
-Cvar = kartbumpspring
-
-MenuItem ANTIBUMP
-Text = Anti-Bump
-Tooltip = Prevent player-on-player collisions for some time at race start.
-Cvar = kartantibump
-
-MenuItem ITEMLITTER
-Text = Item Litter
-Tooltip = Players drop orbiting/trailing items on the track when hit.
-Cvar = kartitemlitter
-
-MenuItem ITEMPUSHING
-Text = Item Pushing
-Tooltip = Push dropped items away from item boxes.
-Cvar = kartitempush
-
-MenuItem PLAYERBUMP
-Text = Player Bump Setting
-Tooltip = Change how players collide with one another.
-Cvar = playerbump
-
-MenuItem TRAILSLOWDOWN
-Text = Trailing Item Slowdown
-Tooltip = When on, trailing an item behind you will eventually slow you down.
-Cvar = trailslow
-
-MenuItem WATERBRICKS
-Text = Waterskip Prevention
-Tooltip = Allows players to stop waterskipping by letting go of ACCEL.
-Cvar = kartwaterskiplock
-
-MenuItem MISCHEAD
-OfsY = 10
-Style = header
-Text = Misc
-
-MenuItem ITEMBREAKER
-Text = Item Breaker
-Tooltip = When in single player battle, Item Breaker will start. Smash the item boxes fast to win.
-Cvar = kartitembreaker
-
-MenuItem RINGSTART
-Text = Starting Rings
-Tooltip = Amount of rings a player starts with when starting a game.
-Cvar = kartringsstart
-
-MenuItem RINGCAPMAX
-Text = Maximum Rings
-Tooltip = Maximum amount of rings a player can carry.
-Cvar = kartringsmax
-
-MenuItem RINGCAPMIN
-Text = Minimum Rings
-Tooltip = Amount of rings a player can enter ring debt into.
-Cvar = kartringsmin
-
+Panels
+MAIN : OP_BLANKARTGAME
+	X = 30
+	Y = 30
 
 Menu OP_BLANKARTBOT
-X = 30
-Y = 40
-LineHeight = 10
 HeaderPic = M_GAME
-MenuItem CAP
-Text = Bot Cap
-Tooltip = Add bots to the race until the player count reaches this value.
-Cvar = kartbot_cap
-
-MenuItem DIFFICULTY
-Text = Bot Difficulty
-Tooltip = How difficult should bots be? "Off" disables bots.
-Cvar = kartbot
-
-MenuItem MODIFIER
-Text = Bot Modifier
-Tooltip = This modifies the overall difficulty of bots.
-Cvar = kartbot_modifiermax
-
-MenuItem FORCERIVAL
-Text = All Rivals
-Tooltip = Forces all bots to be rivals. Turn this on for a tougher challenge!
-Cvar = kartbot_forcerival
-
+Panels
+MAIN : OP_BLANKARTBOT
+	X = 30
+	Y = 40
 
 Menu OP_BLANITEMSETTINGS
-X = 30
-Y = 30
-LineHeight = 10
-ScrollHeight = 134
 HeaderPic = M_GAME
-MenuItem INVINHEAD
-OfsY = 10
-Style = header
-Text = Invincibility
-
-MenuItem INVIN_SPD
-Text = Speedboost
-Tooltip = How fast do you want Invincibility to go?
-Cvar = vanillaboost_invincibility_speedboost
-
-MenuItem INVIN_ACL
-Text = Accelboost
-Tooltip = How fast do you want Invincibility to accelerate?
-Cvar = vanillaboost_invincibility_accelboost
-
-MenuItem INVIN_HDL
-Text = Handleboost
-Tooltip = How fast do you want Invincibility to turn?
-Cvar = vanillaboost_invincibility_handleboost
-
-MenuItem INVIN_STACKME
-Text = Make Stackable
-Tooltip = (With stacking enabled) Can boosts stack on top of Invincibility?
-Cvar = vanillaboost_invincibility_stackable
-
-MenuItem SMONITORHEAD
-OfsY = 10
-Style = header
-Text = S-Monitor
-
-MenuItem SMONITORSTARTDISTANCE
-Text = S-Monitor Start Distance
-Tooltip = At this distance value, the S-Monitor is forced into a player's slot.
-Cvar = smonitor_startdist
-
-MenuItem SMONITORDECAYDISTANCE
-Text = S-Monitor Decay Distance
-Tooltip = At this distance value, the S-Monitor's time limit begins.
-Cvar = smonitor_decaydist
-
-MenuItem SMONITOR_SPD
-Text = Speedboost
-Tooltip = How fast do you want the S-Monitor to go?
-Cvar = vanillaboost_smonitor_speedboost
-
-MenuItem SMONITOR_ACL
-Text = Accelboost
-Tooltip = How fast do you want the S-Monitor to accelerate?
-Cvar = vanillaboost_smonitor_speedboost
-
-MenuItem SMONITOR_HDL
-Text = Handleboost
-Tooltip = How fast do you want the S-Monitor to turn?
-Cvar = vanillaboost_smonitor_handleboost
-
-MenuItem SMONITOR_STACKME
-Text = Make Stackable
-Tooltip = (With stacking enabled) Can boosts stack on top of the S-Monitor?
-Cvar = vanillaboost_smonitor_stackable
-
-MenuItem GROWHEAD
-OfsY = 10
-Style = header
-Text = Grow
-
-MenuItem GROW_AIRSQUISH
-Text = Air Squish
-Tooltip = Should Grow be allowed to squish other racers mid-air?
-Cvar = kartairsquish
-
-MenuItem BUBBLEHEAD
-OfsY = 10
-Style = header
-Text = Bubble Shield
-
-MenuItem BUBBLE_DEFENSE
-Text = Inflated Damage Rate
-Tooltip = At what rate should the Bubble Shield be damaged by when inflated?
-Cvar = kartbubble_defense_damagerate
-
-MenuItem BUBBLE_BOOST
-Text = Pop to Boost
-Tooltip = Should the Bubble Shield cause the user to recieve a boost when popped early?
-Cvar = kartbubble_boost_allow
-
-MenuItem BUBBLE_IDLE
-Text = Passive Defense
-Tooltip = Should the Bubble Shield passively defend from attacks when not inflated?
-Cvar = kartbubble_defense_canidle
-
-MenuItem FLAMEHEAD
-OfsY = 10
-Style = header
-Text = Flame Shield
-
-MenuItem FLAME_FASTFUEL
-Text = Fast Fuel
-Tooltip = Should the Flame Shield heat up faster in exchange for increased fuel consumption?
-Cvar = kartflame_fastfuel
-
-MenuItem FLAME_OFFROAD
-Text = Offroad Burn
-Tooltip = Should the Flame Shield grant the user offroad resistance when overheating offroad?
-Cvar = kartflame_offroadburn
-
+Panels
+MAIN : OP_BLANITEMSETTINGS
+	X = 30
+	Y = 30
 
 Menu OP_MONITORTOGGLE
-X = 30
-Y = 30
 HeaderPic = M_GAME
-KeyHandler = MR_HandleMonitorToggles
-EnterRoutine = MR_SetupMonitorToggles
-DrawRoutine = MD_DrawMonitorToggles
+Panels
+MAIN : OP_MONITORTOGGLE
+	X = 30
+	Y = 30
 # Mostly handled by the drawing function.
 # Instead of using this for dumb monitors, lets use the new item bools we have :V

@@ -1,402 +1,376 @@
-Menu OP_CONTROLSETUP
-X = 60
-Y = 40
+MenuPanel OP_CONTROLSETUP
 LineHeight = 10
-HeaderPic = M_CONTRO
-MenuItem P1CONTROLS
-Text = Player 1 Controls...
-Tooltip = Setup player 1 controls.
-Argument = 0
-SubMenu = OP_CHANGECONTROLS
+Items
+P1CONTROLS
+	Text = Player 1 Controls...
+	Tooltip = Setup player 1 controls.
+	Argument = 0
+	SubMenu = OP_CHANGECONTROLS
+P2CONTROLS
+	Text = Player 2 Controls...
+	Tooltip = Setup player 2 controls.
+	Argument = 1
+	SubMenu = OP_CHANGECONTROLS
+P3CONTROLS
+	Text = Player 3 Controls...
+	Tooltip = Setup player 3 controls.
+	Argument = 2
+	SubMenu = OP_CHANGECONTROLS
+P4CONTROLS
+	Text = Player 4 Controls...
+	Tooltip = Setup player 4 controls.
+	Argument = 3
+	SubMenu = OP_CHANGECONTROLS
+CONTROLPERKEY
+	OfsY = 10
+	Text = Controls per key
+	Tooltip = Allowed amount of controls per key.
+	Cvar = controlperkey
 
-MenuItem P2CONTROLS
-Text = Player 2 Controls...
-Tooltip = Setup player 2 controls.
-Argument = 1
-SubMenu = OP_CHANGECONTROLS
+MenuPanel CHANGECONTROLSHINT
+Items
+WHICH1
+	Style = center
+	Text = ^6Press ^2ENTER^6 to change, ^2BACKSPACE^6 to clear
 
-MenuItem P3CONTROLS
-Text = Player 3 Controls...
-Tooltip = Setup player 3 controls.
-Argument = 2
-SubMenu = OP_CHANGECONTROLS
-
-MenuItem P4CONTROLS
-Text = Player 4 Controls...
-Tooltip = Setup player 4 controls.
-Argument = 3
-SubMenu = OP_CHANGECONTROLS
-
-MenuItem CONTROLPERKEY
-OfsY = 10
-Text = Controls per key
-Tooltip = Allowed amount of controls per key.
-Cvar = controlperkey
-
-
-Menu OP_CHANGECONTROLS
-X = 20
-Y = 40
+MenuPanel OP_CHANGECONTROLS
+Initializer = MP_SetupControls
 ScrollHeight = 134
 CursorOffset = 6
+Items
+SETJOY
+	Style = JOYSTICKNAME
+	Text = Select Gamepad...
+	Argument = 0
+	Tooltip = Select your gamepad!
+	SubMenu = OP_JOYSTICKSET
+LEDCOLOR
+	Text = LED Color
+	Tooltip = Decide what happens with LED colors on supported gamepads.
+	Cvar = gamepadled
+RUMBLE
+	Text = Rumble
+	Tooltip = Vibrate the gamepad during certain actions.
+	Cvar = rumble
+RUMBLESTR
+	Text = Rumble Strength
+	Tooltip = The strength of gamepad vibration.
+	Cvar = rumblestrength
+TURNSMOOTHING
+	Text = Digital Turn Easing
+	Tooltip = Turn smoothing for non-analog turning.
+	Cvar = turnsmoothing
+LITESTEER
+	Text = Digital Lite Steer
+	Tooltip = Allow digital users to do shallow turns by holding back.
+	Cvar = litesteer
+TILTCONTROL
+	Text = Tilt Steering
+	Tooltip = Enable using the motion sensors on supported gamepads.
+	Cvar = tiltcontrol
+DEFAULTS
+	Text = Reset to defaults
+	Tooltip = Set controls to default.
+	Call = MR_ResetControls
+DEADZONEHEAD_
+DEADZONEHEAD
+	TempOffset = True
+	OfsX = 9
+	OfsY = -2
+	Style = header
+	Text = Deadzone
+XDEADZ
+	Text = X Deadzone
+	Tooltip = Minimum Range for analog x recognition.
+	Cvar = xdeadzone
+YDEADZ
+	Text = Y Deadzone
+	Tooltip = Minimum Range for analog y recognition.
+	Cvar = ydeadzone
+TDEADZ
+	Text = Trigger Deadzone
+	Tooltip = Minimum Range for analog trigger recognition.
+	Cvar = tdeadzone
+DEAZS
+	Text = Deadzone Style
+	Tooltip = Should deadzone function like SRB2Kart or Ring Racers.
+	Cvar = deadzonestyle
+GAMEBUTTONS_
+GAMEBUTTONS
+	TempOffset = True
+	OfsX = 9
+	OfsY = -2
+	Style = header
+	Text = Gameplay Controls
+ACCEL
+	Argument = GC_ACCELERATE
+	Text = Accelerate
+	Tooltip = Bind forward movement.
+	Call = MR_ChangeControl
+TURNLEFT
+	Argument = GC_TURNLEFT
+	Text = Turn Left
+	Tooltip = Bind turning left.
+	Call = MR_ChangeControl
+TURNRIGHT
+	Argument = GC_TURNRIGHT
+	Text = Turn Right
+	Tooltip = Bind turning right.
+	Call = MR_ChangeControl
+DRIFT
+	Argument = GC_DRIFT
+	Text = Drift
+	Tooltip = Bind drifitng.
+	Call = MR_ChangeControl
+BRAKE
+	Argument = GC_BRAKE
+	Text = Brake
+	Tooltip = Bind braking.
+	Call = MR_ChangeControl
+ITEM
+	Argument = GC_FIRE
+	Text = Use/Throw Item
+	Tooltip = Bind item usage.
+	Call = MR_ChangeControl
+AIMFORWARD
+	Argument = GC_AIMFORWARD
+	Text = Aim Forward
+	Tooltip = Bind forward aiming.
+	Call = MR_ChangeControl
+AIMBACKWARD
+	Argument = GC_AIMBACKWARD
+	Text = Aim Backward
+	Tooltip = Bind backword aiming.
+	Call = MR_ChangeControl
+LOOKBACK
+	Argument = GC_LOOKBACK
+	Text = Look Backward
+	Tooltip = Bind looking backwards.
+	Call = MR_ChangeControl
+HORNCODE
+	Argument = GC_HORNCODE
+	Text = Follower Horn
+	Tooltip = Bind honking your horn. Only works if you have a Follower with you.
+	Call = MR_ChangeControl
+MISCBUTTONS_
+MISCBUTTONS
+	TempOffset = True
+	OfsX = 9
+	OfsY = -2
+	Style = header
+	Text = Miscelleanous Controls
+TALK
+	Argument = GC_TALKKEY
+	Text = Chat
+	Tooltip = Bind Chat key.
+	Call = MR_ChangeControl
+#TEAM
+#	Argument = GC_TEAMKEY
+#	Text = Team Chat
+#	Call = MR_ChangeControl
+SCORES
+	Argument = GC_SCORES
+	Text = Show Rankings
+	Tooltip = Bind rankings.
+	Call = MR_ChangeControl
+VIEWPOINT
+	Argument = GC_VIEWPOINT
+	Text = Change Viewpoint
+	Tooltip = Bind changing viewpoints.
+	Call = MR_ChangeControl
+RESPAWN
+	Argument = GC_RESPAWN
+	Text = Respawn
+	Tooltip = Bind reespawning.
+	Call = MR_ChangeControl
+CAMRESET
+	Argument = GC_CAMRESET
+	Text = Reset Camera
+	Tooltip = Bind camera reset.
+	Call = MR_ChangeControl
+CAMTOGGLE
+	Argument = GC_CAMTOGGLE
+	Text = Toggle Camera Perspective
+	Tooltip = Bind toggle between first and third-person perspective.
+	Call = MR_ChangeControl
+CAMFREELOOK
+	Argument = GC_FREELOOK
+	Text = Use Vertical Freelook
+	Tooltip = Bind camera vertical freelook when held
+	Call = MR_ChangeControl
+CAMFLICKSTICK_LEFT
+	Argument = GC_FLICKSTICK_LEFT
+	Text = Aim Camera Left
+	Tooltip = Bind manual left camera aiming.
+	Call = MR_ChangeControl
+CAMFLICKSTICK_RIGHT
+	Argument = GC_FLICKSTICK_RIGHT
+	Text = Aim Camera Right
+	Tooltip = Bind manual right camera aiming.
+	Call = MR_ChangeControl
+CAMFLICKSTICK_FORWARD
+	Argument = GC_FLICKSTICK_FORWARD
+	Text = Aim Camera Forward
+	Tooltip = Bind manual forward camera aiming.
+	Call = MR_ChangeControl
+CAMFLICKSTICK_BACK
+	Argument = GC_FLICKSTICK_BACK
+	Text = Aim Camera Back
+	Tooltip = Bind manual back camera aiming.
+	Call = MR_ChangeControl
+PAUSE
+	Argument = GC_PAUSE
+	Text = Pause
+	Tooltip = Bind pausing.
+	Call = MR_ChangeControl
+SCREENSHOT
+	Argument = GC_SCREENSHOT
+	Text = Screenshot
+	Tooltip = Bind taking a screenshot.
+	Call = MR_ChangeControl
+RECORDGIF
+	Argument = GC_RECORDGIF
+	Text = Record GIF
+	Tooltip = Bind recording a GIF.
+	Call = MR_ChangeControl
+SYSTEMMENU
+	Argument = GC_SYSTEMMENU
+	Text = Open/Close Menu
+	Tooltip = Bind menu toggle.
+	Call = MR_ChangeControl
+CONSOLE
+	Argument = GC_CONSOLE
+	Text = Open Console
+	Tooltip = Bind developer console key.
+	Call = MR_ChangeControl
+SPECTATORBUTTONS_
+SPECTATORBUTTONS
+	TempOffset = True
+	OfsX = 9
+	OfsY = -2
+	Style = header
+	Text = Spectator Controls
+SPECTATE
+	Argument = GC_SPECTATE
+	Text = Become Spectator
+	Tooltip = Bind spectator switch.
+	Call = MR_ChangeControl
+DIRECTOR
+	Argument = GC_DIRECTOR
+	Text = Toggle Director
+	Tooltip = Bind automatic spectator viewpoint switching toggle.
+	Call = MR_ChangeControl
+LOOKUP
+	Argument = GC_LOOKUP
+	Text = Look Up
+	Tooltip = Bind spectator look up.
+	Call = MR_ChangeControl
+LOOKDOWN
+	Argument = GC_LOOKDOWN
+	Text = Look Down
+	Tooltip = Bind spectator look down.
+	Call = MR_ChangeControl
+CENTERVIEW
+	Argument = GC_CENTERVIEW
+	Text = Center View
+	Tooltip = Bind camera centering.
+	Call = MR_ChangeControl
+LUABUTTONS_
+LUABUTTONS
+	TempOffset = True
+	OfsX = 9
+	OfsY = -2
+	Style = header
+	Text = Custom Lua Actions
+CUSTOM1
+	Argument = GC_CUSTOM1
+	Text = Custom Action 1
+	Tooltip = Bind Lua custom action 1.
+	Call = MR_ChangeControl
+CUSTOM2
+	Argument = GC_CUSTOM2
+	Text = Custom Action 2
+	Tooltip = Bind Lua custom action 2.
+	Call = MR_ChangeControl
+CUSTOM3
+	Argument = GC_CUSTOM3
+	Text = Custom Action 3
+	Tooltip = Bind Lua custom action 3.
+	Call = MR_ChangeControl
+
+MenuPanel OP_JOYSTICKSET
+Initializer = MP_SetupJoystick
+DrawRoutine = MD_DrawJoystick
+LineHeight = 16
+Items
+JOY1
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
+	Argument = 0
+	Call = MR_AssignJoystick
+JOY2
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
+	Argument = 1
+	Call = MR_AssignJoystick
+JOY3
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
+	Argument = 2
+	Call = MR_AssignJoystick
+JOY4
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
+	Argument = 3
+	Call = MR_AssignJoystick
+JOY5
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
+	Argument = 4
+	Call = MR_AssignJoystick
+JOY6
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
+	Argument = 5
+	Call = MR_AssignJoystick
+JOY7
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
+	Argument = 6
+	Call = MR_AssignJoystick
+JOY8
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
+	Argument = 7
+	Call = MR_AssignJoystick
+JOY9
+	Style = JOYSTICKLIST
+	Patch = 230x14,159
+	Argument = 8
+	Call = MR_AssignJoystick
+
+Menu OP_CONTROLSETUP
+HeaderPic = M_CONTRO
+Panels
+MAIN : OP_CONTROLSETUP
+	X = 60
+	Y = 40
+
+Menu OP_CHANGECONTROLS
 HeaderPic = M_CONTRO
 EnterRoutine = MR_SetupControlsMenu
-MenuItem WHICH1
-Overlay = True
-X = 160
-Y = 28
-Style = center
-Text = ^6Press ^2ENTER^6 to change, ^2BACKSPACE^6 to clear
-
-MenuItem SETJOY
-Text = Select Gamepad...
-Argument = 0
-Tooltip = Select your gamepad!
-SubMenu = OP_JOYSTICKSET
-
-MenuItem LEDCOLOR
-Text = LED Color
-Tooltip = Decide what happens with LED colors on supported gamepads.
-Cvar = gamepadled
-
-MenuItem RUMBLE
-Text = Rumble
-Tooltip = Vibrate the gamepad during certain actions.
-Cvar = rumble
-
-MenuItem RUMBLESTR
-Text = Rumble Strength
-Tooltip = The strength of gamepad vibration.
-Cvar = rumblestrength
-
-MenuItem TURNSMOOTHING
-Text = Digital Turn Easing
-Tooltip = Turn smoothing for non-analog turning.
-Cvar = turnsmoothing
-
-MenuItem LITESTEER
-Text = Digital Lite Steer
-Tooltip = Allow digital users to do shallow turns by holding back.
-Cvar = litesteer
-
-MenuItem TILTCONTROL
-Text = Tilt Steering
-Tooltip = Enable using the motion sensors on supported gamepads.
-Cvar = tiltcontrol
-
-MenuItem DEFAULTS
-Text = Reset to defaults
-Tooltip = Set controls to default.
-Call = MR_ResetControls
-
-MenuItem DEADZONEHEAD_
-
-MenuItem DEADZONEHEAD
-TempOffset = True
-OfsX = 9
-OfsY = -2
-Style = header
-Text = Deadzone
-
-MenuItem XDEADZ
-Text = X Deadzone
-Tooltip = Minimum Range for analog x recognition.
-Cvar = xdeadzone
-
-MenuItem YDEADZ
-Text = Y Deadzone
-Tooltip = Minimum Range for analog y recognition.
-Cvar = ydeadzone
-
-MenuItem TDEADZ
-Text = Trigger Deadzone
-Tooltip = Minimum Range for analog trigger recognition.
-Cvar = tdeadzone
-
-MenuItem DEAZS
-Text = Deadzone Style
-Tooltip = Should deadzone function like SRB2Kart or Ring Racers.
-Cvar = deadzonestyle
-
-MenuItem GAMEBUTTONS_
-
-MenuItem GAMEBUTTONS
-TempOffset = True
-OfsX = 9
-OfsY = -2
-Style = header
-Text = Gameplay Controls
-
-MenuItem ACCEL
-Argument = GC_ACCELERATE
-Text = Accelerate
-Tooltip = Bind forward movement.
-Call = MR_ChangeControl
-
-MenuItem TURNLEFT
-Argument = GC_TURNLEFT
-Text = Turn Left
-Tooltip = Bind turning left.
-Call = MR_ChangeControl
-
-MenuItem TURNRIGHT
-Argument = GC_TURNRIGHT
-Text = Turn Right
-Tooltip = Bind turning right.
-Call = MR_ChangeControl
-
-MenuItem DRIFT
-Argument = GC_DRIFT
-Text = Drift
-Tooltip = Bind drifitng.
-Call = MR_ChangeControl
-
-MenuItem BRAKE
-Argument = GC_BRAKE
-Text = Brake
-Tooltip = Bind braking.
-Call = MR_ChangeControl
-
-MenuItem ITEM
-Argument = GC_FIRE
-Text = Use/Throw Item
-Tooltip = Bind item usage.
-Call = MR_ChangeControl
-
-MenuItem AIMFORWARD
-Argument = GC_AIMFORWARD
-Text = Aim Forward
-Tooltip = Bind forward aiming.
-Call = MR_ChangeControl
-
-MenuItem AIMBACKWARD
-Argument = GC_AIMBACKWARD
-Text = Aim Backward
-Tooltip = Bind backword aiming.
-Call = MR_ChangeControl
-
-MenuItem LOOKBACK
-Argument = GC_LOOKBACK
-Text = Look Backward
-Tooltip = Bind looking backwards.
-Call = MR_ChangeControl
-
-MenuItem HORNCODE
-Argument = GC_HORNCODE
-Text = Follower Horn
-Tooltip = Bind honking your horn. Only works if you have a Follower with you.
-Call = MR_ChangeControl
-
-MenuItem MISCBUTTONS_
-
-MenuItem MISCBUTTONS
-TempOffset = True
-OfsX = 9
-OfsY = -2
-Style = header
-Text = Miscelleanous Controls
-
-MenuItem TALK
-Argument = GC_TALKKEY
-Text = Chat
-Tooltip = Bind Chat key.
-Call = MR_ChangeControl
-
-#MenuItem TEAM
-#Argument = GC_TEAMKEY
-#Text = Team Chat
-#Call = MR_ChangeControl
-#
-MenuItem SCORES
-Argument = GC_SCORES
-Text = Show Rankings
-Tooltip = Bind rankings.
-Call = MR_ChangeControl
-
-MenuItem VIEWPOINT
-Argument = GC_VIEWPOINT
-Text = Change Viewpoint
-Tooltip = Bind changing viewpoints.
-Call = MR_ChangeControl
-
-MenuItem RESPAWN
-Argument = GC_RESPAWN
-Text = Respawn
-Tooltip = Bind reespawning.
-Call = MR_ChangeControl
-
-MenuItem CAMRESET
-Argument = GC_CAMRESET
-Text = Reset Camera
-Tooltip = Bind camera reset.
-Call = MR_ChangeControl
-
-MenuItem CAMTOGGLE
-Argument = GC_CAMTOGGLE
-Text = Toggle Camera Perspective
-Tooltip = Bind toggle between first and third-person perspective.
-Call = MR_ChangeControl
-
-MenuItem CAMFREELOOK
-Argument = GC_FREELOOK
-Text = Use Vertical Freelook
-Tooltip = Bind camera vertical freelook when held
-Call = MR_ChangeControl
-
-MenuItem PAUSE
-Argument = GC_PAUSE
-Text = Pause
-Tooltip = Bind pausing.
-Call = MR_ChangeControl
-
-MenuItem SCREENSHOT
-Argument = GC_SCREENSHOT
-Text = Screenshot
-Tooltip = Bind taking a screenshot.
-Call = MR_ChangeControl
-
-MenuItem RECORDGIF
-Argument = GC_RECORDGIF
-Text = Record GIF
-Tooltip = Bind recording a GIF.
-Call = MR_ChangeControl
-
-MenuItem SYSTEMMENU
-Argument = GC_SYSTEMMENU
-Text = Open/Close Menu
-Tooltip = Bind menu toggle.
-Call = MR_ChangeControl
-
-MenuItem CONSOLE
-Argument = GC_CONSOLE
-Text = Open Console
-Tooltip = Bind developer console key.
-Call = MR_ChangeControl
-
-MenuItem SPECTATORBUTTONS_
-
-MenuItem SPECTATORBUTTONS
-TempOffset = True
-OfsX = 9
-OfsY = -2
-Style = header
-Text = Spectator Controls
-
-MenuItem SPECTATE
-Argument = GC_SPECTATE
-Text = Become Spectator
-Tooltip = Bind spectator switch.
-Call = MR_ChangeControl
-
-MenuItem DIRECTOR
-Argument = GC_DIRECTOR
-Text = Toggle Director
-Tooltip = Bind automatic spectator viewpoint switching toggle.
-Call = MR_ChangeControl
-
-MenuItem LOOKUP
-Argument = GC_LOOKUP
-Text = Look Up
-Tooltip = Bind spectator look up.
-Call = MR_ChangeControl
-
-MenuItem LOOKDOWN
-Argument = GC_LOOKDOWN
-Text = Look Down
-Tooltip = Bind spectator look down.
-Call = MR_ChangeControl
-
-MenuItem CENTERVIEW
-Argument = GC_CENTERVIEW
-Text = Center View
-Tooltip = Bind camera centering.
-Call = MR_ChangeControl
-
-MenuItem LUABUTTONS_
-
-MenuItem LUABUTTONS
-TempOffset = True
-OfsX = 9
-OfsY = -2
-Style = header
-Text = Custom Lua Actions
-
-MenuItem CUSTOM1
-Argument = GC_CUSTOM1
-Text = Custom Action 1
-Tooltip = Bind Lua custom action 1.
-Call = MR_ChangeControl
-
-MenuItem CUSTOM2
-Argument = GC_CUSTOM2
-Text = Custom Action 2
-Tooltip = Bind Lua custom action 2.
-Call = MR_ChangeControl
-
-MenuItem CUSTOM3
-Argument = GC_CUSTOM3
-Text = Custom Action 3
-Tooltip = Bind Lua custom action 3.
-Call = MR_ChangeControl
-
+Panels
+MAIN : OP_CHANGECONTROLS
+	X = 20
+	Y = 40
+HINT : CHANGECONTROLSHINT
+	X = 160
+	Y = 28
 
 Menu OP_JOYSTICKSET
-X = 50
-Y = 40
-LineHeight = 16
 HeaderPic = M_CONTRO
-DrawRoutine = MD_DrawJoystick
-EnterRoutine = MR_SetupJoystickMenu
-MenuItem JOY1
-Style = fill
-Patch = 230x14,159,-3,-3
-Argument = 0
-Call = MR_AssignJoystick
-
-MenuItem JOY2
-Style = fill
-Patch = 230x14,159,-3,-3
-Argument = 1
-Call = MR_AssignJoystick
-
-MenuItem JOY3
-Style = fill
-Patch = 230x14,159,-3,-3
-Argument = 2
-Call = MR_AssignJoystick
-
-MenuItem JOY4
-Style = fill
-Patch = 230x14,159,-3,-3
-Argument = 3
-Call = MR_AssignJoystick
-
-MenuItem JOY5
-Style = fill
-Patch = 230x14,159,-3,-3
-Argument = 4
-Call = MR_AssignJoystick
-
-MenuItem JOY6
-Style = fill
-Patch = 230x14,159,-3,-3
-Argument = 5
-Call = MR_AssignJoystick
-
-MenuItem JOY7
-Style = fill
-Patch = 230x14,159,-3,-3
-Argument = 6
-Call = MR_AssignJoystick
-
-MenuItem JOY8
-Style = fill
-Patch = 230x14,159,-3,-3
-Argument = 7
-Call = MR_AssignJoystick
-
-MenuItem JOY9
-Style = fill
-Patch = 230x14,159,-3,-3
-Argument = 8
-Call = MR_AssignJoystick
+EnterRoutine = MR_SetupControlsMenu
+Panels
+MAIN : OP_JOYSTICKSET
+	X = 50
+	Y = 40

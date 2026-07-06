@@ -1,394 +1,406 @@
-Menu OP_VIDEO
-X = 30
-Y = 25
+MenuPanel OP_VIDEO
 LineHeight = 10
 ScrollHeight = 134
-HeaderPic = M_VIDEO
-MenuItem SETMODE
-Text = Set Resolution...
-Tooltip = Resolution game runs at.
-SubMenu = OP_VIDEOMODE
+Items
+SETMODE
+	Style = VIDEOMODE
+	Text = Set Resolution...
+	Tooltip = Resolution game runs at.
+	SubMenu = OP_VIDEOMODE
+FULLSCREEN
+	Text = Fullscreen
+	Tooltip = Enable fullscreen.
+	Cvar = fullscreen
+RENDERER
+	Text = Renderer
+	Tooltip = Renderer to run game with.
+	Cvar = renderer
+HIGHRESHUDSCALE
+	Text = HUD Scaling (Highres Only)
+	Tooltip = At high resolutions, this adjusts the HUD's scale. Larger value = smaller HUD
+	Cvar = highreshudscale
+COLORPRF
+	OfsY = 10
+	Text = Color Profile...
+	Tooltip = Adjust the color profile of the game's display.
+	SubMenu = OP_VIDCOLORPROFILE
+SHOWFPS
+	Text = Show FPS
+	Tooltip = Show current game framerate.
+	Cvar = showfps
+VSYNC
+	Text = Vertical Sync
+	Tooltip = Sync game framerate to refresh rate of monitor.
+	Cvar = vid_wait
+FPSCAP
+	Text = FPS Cap
+	Tooltip = Set manual framerate cap.
+	Cvar = fpscap
+VISUAL
+	Text = Visual Effects...
+	Tooltip = Adjust Visual Graphic effects.
+	SubMenu = OP_VISUAL
+DRAWDIST
+	OfsY = 10
+	Text = Draw Distance
+	Tooltip = How far away objects are drawn.
+	Cvar = drawdist
+DRAWDISTPRECIP
+	Text = Weather Draw Distance
+	Tooltip = How far away weather is drawn.
+	Cvar = drawdist_precip
+SKYBOX
+	Text = Skyboxes
+	Tooltip = Toggle being able to see the sky.
+	Cvar = skybox
+SECBRIGHT
+	Text = Sector Brightness
+	Tooltip = Raises the minimum brightness for sectors.
+	Cvar = r_secbright
+PARALLEL
+	Text = Parallel Software
+	Tooltip = Run Software in parallel for performance boost.
+	Cvar = parallelsoftware
+OPENGL
+	Text = OpenGL Options...
+	Tooltip = Options for OpenGL renderer.
+	SubMenu = OP_OPENGL
 
-MenuItem FULLSCREEN
-Text = Fullscreen
-Tooltip = Enable fullscreen.
-Cvar = fullscreen
-
-MenuItem RENDERER
-Text = Renderer
-Tooltip = Renderer to run game with.
-Cvar = renderer
-
-MenuItem HIGHRESHUDSCALE
-Text = HUD Scaling (Highres Only)
-Tooltip = At high resolutions, this adjusts the HUD's scale. Larger value = smaller HUD
-Cvar = highreshudscale
-
-MenuItem COLORPRF
-OfsY = 10
-Text = Color Profile...
-Tooltip = Adjust the color profile of the game's display.
-SubMenu = OP_VIDCOLORPROFILE
-
-MenuItem SHOWFPS
-Text = Show FPS
-Tooltip = Show current game framerate.
-Cvar = showfps
-
-MenuItem VSYNC
-Text = Vertical Sync
-Tooltip = Sync game framerate to refresh rate of monitor.
-Cvar = vid_wait
-
-MenuItem FPSCAP
-Text = FPS Cap
-Tooltip = Set manual framerate cap.
-Cvar = fpscap
-
-MenuItem VISUAL
-Text = Visual Effects...
-Tooltip = Adjust Visual Graphic effects.
-SubMenu = OP_VISUAL
-
-MenuItem DRAWDIST
-OfsY = 10
-Text = Draw Distance
-Tooltip = How far away objects are drawn.
-Cvar = drawdist
-
-MenuItem DRAWDISTPRECIP
-Text = Weather Draw Distance
-Tooltip = How far away weather is drawn.
-Cvar = drawdist_precip
-
-MenuItem SKYBOX
-Text = Skyboxes
-Tooltip = Toggle being able to see the sky.
-Cvar = skybox
-
-MenuItem SECBRIGHT
-Text = Sector Brightness
-Tooltip = Raises the minimum brightness for sectors.
-Cvar = r_secbright
-
-MenuItem PARALLEL
-Text = Parallel Software
-Tooltip = Run Software in parallel for performance boost.
-Cvar = parallelsoftware
-
-MenuItem OPENGL
-Text = OpenGL Options...
-Tooltip = Options for OpenGL renderer.
-SubMenu = OP_OPENGL
-
-
-Menu OP_VIDEOMODE
-X = 48
-Y = 26
-HeaderPic = M_VIDEO
-KeyHandler = MR_HandleVideoMode
+MenuPanel VIDEOMODE_LIST
+Initializer = MP_VideoModeList
 DrawRoutine = MD_DrawVideoMode
-EnterRoutine = MR_VideoModeMenu
+KeyHandler = MR_HandleVideoMode
+CursorOffset = 6
+MultiNav = True
+# nav item count is set by MP_VideoModeList
 
+MenuPanel VIDEOMODE_HEADING
+Items
+CHOOSEMODE
+	Style = center-highlight
+	Text = Choose mode, reselect to change default
 
-Menu OP_OPENGL
-X = 30
-Y = 40
+MenuPanel VIDEOMODE_INFO
+Items
+CURRENTMODE
+	Style = center
+#	...current mode is 123x456...
+DEFAULTMODE
+	Y = 8
+	Style = center
+#	...default mode is 123x456...
+MARKEDMODES
+	Y = 22
+	Style = center-recommendedhighlight
+	Text = Marked modes are recommended.
+OTHERMODES
+	Y = 30
+	Style = center-highlight
+	Text = Other modes may have visual errors.
+LARGERMODES
+	Y = 42
+	Style = center-highlight
+	Text = Larger modes may have performance issues.
+
+MenuPanel VIDEOMODE_TESTING
+Items
+CURRENTMODE
+	Style = center
+#	...previewing mode 123x456...
+KEEPMODE
+	Y = 22
+	Style = center
+	Text = Press ENTER again to keep this mode
+WAITTIME
+	Y = 34
+	Style = center
+#	...wait 15 seconds...
+CANCELMODE
+	Y = 42
+	Style = center
+	Text = or press ESC to return
+
+MenuPanel OP_OPENGL
 LineHeight = 10
 ScrollHeight = 130
-HeaderPic = M_VIDEO
-EnterRoutine = MR_OpenGLOptionsMenu
-MenuItem MODELS
-Text = 3D Models
-Tooltip = Use 3D models.
-Cvar = gr_models
+Items
+MODELS
+	Text = 3D Models
+	Tooltip = Use 3D models.
+	Cvar = gr_models
+MODELINTERPOLATION
+	Text = Model Interpolation
+	Tooltip = Determines how models interpolate. Set to "Sometimes" for best results.
+	Cvar = gr_modelinterpolation
+MODELLIGHTING
+	Text = Model Lighting
+	Tooltip = Determines how models are lit. This is required for directional lighting on some maps.
+	Cvar = gr_modellighting
+SHADERS
+	Text = Shaders
+	Tooltip = Graphical Shaders.
+	Cvar = gr_shaders
+PALRENDER
+	Text = Palette Rendering
+	Tooltip = Recreates the look of software mode.
+	Cvar = gr_paletteshader
+PALRENDERDEPTH
+	Text = Palette Depth
+	Tooltip = Change the bit depth of the Lookup Palette in Palette rendering mode.
+	Cvar = gr_palettedepth
+LIGHTDITHER
+	Text = Light Dithering
+	Tooltip = Attempts to make lighting appear smoother by dithering it.
+	Cvar = gr_lightdithering
+TEXTUREDEPTH
+	OfsY = 10
+	Text = Texture Quality
+	Tooltip = Bit-depth of textures.
+	Cvar = scr_depth
+FILTERING
+	Text = Texture Filter
+	Tooltip = Filter to use on textures.
+	Cvar = gr_filtermode
+ANISOTROPIC
+	Text = Anisotropic
+	Tooltip = Anisotropic filtering.
+	Cvar = gr_anisotropicmode
+BILLBOARDING
+	OfsY = 10
+	Text = Sprite Billboarding
+	Tooltip = Should sprites always face the camera?
+	Cvar = gr_spritebillboarding
+SHEARING
+	Text = Software Perspective
+	Tooltip = Recreates the look of software mode camera perspective.
+	Cvar = gr_shearing
+ADVANCEDHEAD
+	OfsY = 10
+	Style = header
+	Text = Advanced
+SCREENTEXTURES
+	Text = Screen Textures
+	Tooltip = Disabling improves performance but breaks effects and fullscreen scaling.
+	Cvar = gr_screentextures
 
-MenuItem MODELINTERPOLATION
-Text = Model Interpolation
-Tooltip = Determines how models interpolate. Set to "Sometimes" for best results.
-Cvar = gr_modelinterpolation
-
-MenuItem MODELLIGHTING
-Text = Model Lighting
-Tooltip = Determines how models are lit. This is required for directional lighting on some maps.
-Cvar = gr_modellighting
-
-MenuItem SHADERS
-Text = Shaders
-Tooltip = Graphical Shaders.
-Cvar = gr_shaders
-
-MenuItem PALRENDER
-Text = Palette Rendering
-Tooltip = Recreates the look of software mode.
-Cvar = gr_paletteshader
-
-MenuItem PALRENDERDEPTH
-Text = Palette Depth
-Tooltip = Change the bit depth of the Lookup Palette in Palette rendering mode.
-Cvar = gr_palettedepth
-
-MenuItem LIGHTDITHER
-Text = Light Dithering
-Tooltip = Attempts to make lighting appear smoother by dithering it.
-Cvar = gr_lightdithering
-
-MenuItem TEXTUREDEPTH
-OfsY = 10
-Text = Texture Quality
-Tooltip = Bit-depth of textures.
-Cvar = scr_depth
-
-MenuItem FILTERING
-Text = Texture Filter
-Tooltip = Filter to use on textures.
-Cvar = gr_filtermode
-
-MenuItem ANISOTROPIC
-Text = Anisotropic
-Tooltip = Anisotropic filtering.
-Cvar = gr_anisotropicmode
-
-MenuItem BILLBOARDING
-OfsY = 10
-Text = Sprite Billboarding
-Tooltip = Should sprites always face the camera?
-Cvar = gr_spritebillboarding
-
-MenuItem SHEARING
-Text = Software Perspective
-Tooltip = Recreates the look of software mode camera perspective.
-Cvar = gr_shearing
-
-MenuItem ADVANCEDHEAD
-OfsY = 10
-Style = header
-Text = Advanced
-
-MenuItem SCREENTEXTURES
-Text = Screen Textures
-Tooltip = Disabling improves performance but breaks effects and fullscreen scaling.
-Cvar = gr_screentextures
-
-
-Menu OP_VISUAL
-X = 30
-Y = 40
+MenuPanel OP_VISUAL
 LineHeight = 10
-HeaderPic = M_VIDEO
-MenuItem VHSPAUSE
-Text = VHS Effect
-Tooltip = Show a VHS-like effect when the game is paused or youre rewinding replays.
-Cvar = vhspause
+Items
+VHSPAUSE
+	Text = VHS Effect
+	Tooltip = Show a VHS-like effect when the game is paused or youre rewinding replays.
+	Cvar = vhspause
+AFFINEPRESCALE
+	Text = Pre-Scale Sprites
+	Tooltip = Should affine-rendered sprites scale before rotating?
+	Cvar = affineprescale
+AFFINEMOSAIC
+	Text = Mosaic Filter (Software Only)
+	Tooltip = Applies a mosaic filter to affine sprites, making them look "pixel-perfect".
+	Cvar = affinemosaic
+FAKEROLLANGLE
+	Text = Simulate Legacy Rotations
+	Tooltip = Forces rotated sprites to use a set number of angles, instead of rotating smoothly.
+	Cvar = fakerollangle
+SLOPEROLL
+	Text = Sprite Slope Tilt
+	Tooltip = Rotate sprites on slopes.
+	Cvar = spritesloperoll
+SLIPTILT
+	Text = Sliptide Tilt
+	Tooltip = Rotate player sprites during a spliptide.
+	Cvar = sliptidetilt
+NULLTILT
+	Text = Null Drift Tilt
+	Tooltip = Rotate player sprites during a null drift.
+	Cvar = nulldrifttilt
+SALTYHOP
+	Text = Visual Hopping
+	Tooltip = Do a visual-only hop during drifts.
+	Cvar = hardcodehop
+DRIFTJITTER
+	Text = Drift Jitter
+	Tooltip = Jitter sprites using new skin format during drifts.
+	Cvar = driftjitter
+DRIFTEFX
+	Text = Drift Effects
+	Tooltip = Toggle the drift boost effect.
+	Cvar = kartdriftefx
+NULLEFX
+	Text = Null Drift Effects
+	Tooltip = Toggle the null drift effect
+	Cvar = nulldriftefx
+SPARKPULSE
+	Text = Driftspark Pulse
+	Tooltip = Size of drift spark pulse.
+	Cvar = driftsparkpulse
+COLORFLAME
+	Text = Flame Stack Coloring
+	Tooltip = Change boost effect color based on sneaker stack count.
+	Cvar = kartstacking_colorflame
+SPLASH
+	Text = Watertrail Effects
+	Tooltip = Change the style for the water trail effect.
+	Cvar = kartsplashefx
+FOLLOW
+	Text = Hide Followers
+	Tooltip = Disable the visibility of Followers.
+	Cvar = hidefollowers
+PFFADE
+	Text = Fade Players	Followers Near Camera
+	Tooltip = Fade players and their followers when they get too close to your camera.
+	Cvar = playerfade
 
-MenuItem AFFINEPRESCALE
-Text = Pre-Scale Sprites
-Tooltip = Should affine-rendered sprites scale before rotating?
-Cvar = affineprescale
-
-MenuItem AFFINEMOSAIC
-Text = Mosaic Filter (Software Only)
-Tooltip = Applies a mosaic filter to affine sprites, making them look "pixel-perfect".
-Cvar = affinemosaic
-
-MenuItem FAKEROLLANGLE
-Text = Simulate Legacy Rotations
-Tooltip = Forces rotated sprites to use a set number of angles, instead of rotating smoothly.
-Cvar = fakerollangle
-
-MenuItem SLOPEROLL
-Text = Sprite Slope Tilt
-Tooltip = Rotate sprites on slopes.
-Cvar = spritesloperoll
-
-MenuItem SLIPTILT
-Text = Sliptide Tilt
-Tooltip = Rotate player sprites during a spliptide.
-Cvar = sliptidetilt
-
-MenuItem NULLTILT
-Text = Null Drift Tilt
-Tooltip = Rotate player sprites during a null drift.
-Cvar = nulldrifttilt
-
-MenuItem SALTYHOP
-Text = Visual Hopping
-Tooltip = Do a visual-only hop during drifts.
-Cvar = hardcodehop
-
-MenuItem DRIFTJITTER
-Text = Drift Jitter
-Tooltip = Jitter sprites using new skin format during drifts.
-Cvar = driftjitter
-
-MenuItem DRIFTEFX
-Text = Drift Effects
-Tooltip = Toggle the drift boost effect.
-Cvar = kartdriftefx
-
-MenuItem NULLEFX
-Text = Null Drift Effects
-Tooltip = Toggle the null drift effect
-Cvar = nulldriftefx
-
-MenuItem SPARKPULSE
-Text = Driftspark Pulse
-Tooltip = Size of drift spark pulse.
-Cvar = driftsparkpulse
-
-MenuItem COLORFLAME
-Text = Flame Stack Coloring
-Tooltip = Change boost effect color based on sneaker stack count.
-Cvar = kartstacking_colorflame
-
-MenuItem SPLASH
-Text = Watertrail Effects
-Tooltip = Change the style for the water trail effect.
-Cvar = kartsplashefx
-
-MenuItem FOLLOW
-Text = Hide Followers
-Tooltip = Disable the visibility of Followers.
-Cvar = hidefollowers
-
-MenuItem PFFADE
-Text = Fade Players+Followers Near Camera
-Tooltip = Fade players and their followers when they get too close to your camera.
-Cvar = playerfade
-
-
-Menu OP_VIDCOLORPROFILE
-X = 30
-Y = 25
+MenuPanel OP_VIDCOLORPROFILE
 LineHeight = 10
 ScrollHeight = 134
+Items
+GLOBALSATR
+	Text = Global Saturation
+	Tooltip = Reduce the saturation of the displayed image.
+	Slider = saturation
+GLOBALBRGH
+	Text = Global Brightness
+	Tooltip = Increase or decrease the brightness of the displayed image.
+	Slider = brightness
+REDHEAD
+	OfsY = 10
+	Style = header
+	Text = Red
+REDSATURATE
+	Text = Red Saturation
+	Tooltip = Reduce the saturation of red in the displayed image.
+	Slider = rsaturation
+REDBRIGHT
+	Text = Red Brightness
+	Tooltip = Increase or decrease the brightness of red in the displayed image.
+	Slider = rbrightness
+REDHUE
+	Text = Red Hue
+	Tooltip = Adjust the hue of red in the displayed image.
+	Slider = rhue
+YELHEAD
+	OfsY = 10
+	Style = header
+	Text = Yellow
+YELSATURATE
+	Text = Yellow Saturation
+	Tooltip = Reduce the saturation of yellow in the displayed image.
+	Slider = ysaturation
+YELBRIGHT
+	Text = Yellow Brightness
+	Tooltip = Increase or decrease the brightness of yellow in the displayed image.
+	Slider = ybrightness
+YELHUE
+	Text = Yellow Hue
+	Tooltip = Adjust the hue of yellow in the displayed image.
+	Slider = yhue
+GRNHEAD
+	OfsY = 10
+	Style = header
+	Text = Green
+GRNSATURATE
+	Text = Green Saturation
+	Tooltip = Reduce the saturation of green in the displayed image.
+	Slider = gsaturation
+GRNBRIGHT
+	Text = Green Brightness
+	Tooltip = Increase or decrease the brightness of green in the displayed image.
+	Slider = gbrightness
+GRNHUE
+	Text = Green Hue
+	Tooltip = Adjust the hue of green in the displayed image.
+	Slider = ghue
+CYNHEAD
+	OfsY = 10
+	Style = header
+	Text = Cyan
+CYNSATURATE
+	Text = Cyan Saturation
+	Tooltip = Reduce the saturation of cyan in the displayed image.
+	Slider = csaturation
+CYNBRIGHT
+	Text = Cyan Brightness
+	Tooltip = Increase or decrease the brightness of cyan in the displayed image.
+	Slider = cbrightness
+CYNHUE
+	Text = Cyan Hue
+	Tooltip = Adjust the hue of cyan in the displayed image.
+	Slider = chue
+BLUHEAD
+	OfsY = 10
+	Style = header
+	Text = Blue
+BLUSATURATE
+	Text = Blue Saturation
+	Tooltip = Reduce the saturation of blue in the displayed image.
+	Slider = bsaturation
+BLUBRIGHT
+	Text = Blue Brightness
+	Tooltip = Increase or decrease the brightness of blue in the displayed image.
+	Slider = bbrightness
+BLUHUE
+	Text = Blue Hue
+	Tooltip = Adjust the hue of blue in the displayed image.
+	Slider = bhue
+MGNHEAD
+	OfsY = 10
+	Style = header
+	Text = Magenta
+MGNSATURATE
+	Text = Magenta Saturation
+	Tooltip = Reduce the saturation of magenta in the displayed image.
+	Slider = msaturation
+MGNBRIGHT
+	Text = Magenta Brightness
+	Tooltip = Increase or decrease the brightness of magenta in the displayed image.
+	Slider = mbrightness
+MGNHUE
+	Text = Magenta Hue
+	Tooltip = Adjust the hue of magenta in the displayed image.
+	Slider = mhue
+
+Menu OP_VIDEO
 HeaderPic = M_VIDEO
-MenuItem GLOBALSATR
-Text = Global Saturation
-Tooltip = Reduce the saturation of the displayed image.
-Slider = saturation
+Panels
+MAIN : OP_VIDEO
+	X = 30
+	Y = 25
 
-MenuItem GLOBALBRGH
-Text = Global Brightness
-Tooltip = Increase or decrease the brightness of the displayed image.
-Slider = brightness
+Menu OP_VIDEOMODE
+HeaderPic = M_VIDEO
+Panels
+MAIN : VIDEOMODE_LIST
+	X = 41
+	Y = 40
+HEADING : VIDEOMODE_HEADING
+	X = 160
+	Y = 26
+INFO : VIDEOMODE_INFO
+	X = 160
+	Y = 142
+TESTING : VIDEOMODE_TESTING
+	X = 160
+	Y = 142
 
-MenuItem REDHEAD
-OfsY = 10
-Style = header
-Text = Red
+Menu OP_OPENGL
+HeaderPic = M_VIDEO
+EnterRoutine = MR_OpenGLOptionsMenu
+Panels
+MAIN : OP_OPENGL
+	X = 30
+	Y = 40
 
-MenuItem REDSATURATE
-Text = Red Saturation
-Tooltip = Reduce the saturation of red in the displayed image.
-Slider = rsaturation
+Menu OP_VISUAL
+HeaderPic = M_VIDEO
+Panels
+MAIN : OP_VISUAL
+	X = 30
+	Y = 40
 
-MenuItem REDBRIGHT
-Text = Red Brightness
-Tooltip = Increase or decrease the brightness of red in the displayed image.
-Slider = rbrightness
-
-MenuItem REDHUE
-Text = Red Hue
-Tooltip = Adjust the hue of red in the displayed image.
-Slider = rhue
-
-MenuItem YELHEAD
-OfsY = 10
-Style = header
-Text = Yellow
-
-MenuItem YELSATURATE
-Text = Yellow Saturation
-Tooltip = Reduce the saturation of yellow in the displayed image.
-Slider = ysaturation
-
-MenuItem YELBRIGHT
-Text = Yellow Brightness
-Tooltip = Increase or decrease the brightness of yellow in the displayed image.
-Slider = ybrightness
-
-MenuItem YELHUE
-Text = Yellow Hue
-Tooltip = Adjust the hue of yellow in the displayed image.
-Slider = yhue
-
-MenuItem GRNHEAD
-OfsY = 10
-Style = header
-Text = Green
-
-MenuItem GRNSATURATE
-Text = Green Saturation
-Tooltip = Reduce the saturation of green in the displayed image.
-Slider = gsaturation
-
-MenuItem GRNBRIGHT
-Text = Green Brightness
-Tooltip = Increase or decrease the brightness of green in the displayed image.
-Slider = gbrightness
-
-MenuItem GRNHUE
-Text = Green Hue
-Tooltip = Adjust the hue of green in the displayed image.
-Slider = ghue
-
-MenuItem CYNHEAD
-OfsY = 10
-Style = header
-Text = Cyan
-
-MenuItem CYNSATURATE
-Text = Cyan Saturation
-Tooltip = Reduce the saturation of cyan in the displayed image.
-Slider = csaturation
-
-MenuItem CYNBRIGHT
-Text = Cyan Brightness
-Tooltip = Increase or decrease the brightness of cyan in the displayed image.
-Slider = cbrightness
-
-MenuItem CYNHUE
-Text = Cyan Hue
-Tooltip = Adjust the hue of cyan in the displayed image.
-Slider = chue
-
-MenuItem BLUHEAD
-OfsY = 10
-Style = header
-Text = Blue
-
-MenuItem BLUSATURATE
-Text = Blue Saturation
-Tooltip = Reduce the saturation of blue in the displayed image.
-Slider = bsaturation
-
-MenuItem BLUBRIGHT
-Text = Blue Brightness
-Tooltip = Increase or decrease the brightness of blue in the displayed image.
-Slider = bbrightness
-
-MenuItem BLUHUE
-Text = Blue Hue
-Tooltip = Adjust the hue of blue in the displayed image.
-Slider = bhue
-
-MenuItem MGNHEAD
-OfsY = 10
-Style = header
-Text = Magenta
-
-MenuItem MGNSATURATE
-Text = Magenta Saturation
-Tooltip = Reduce the saturation of magenta in the displayed image.
-Slider = msaturation
-
-MenuItem MGNBRIGHT
-Text = Magenta Brightness
-Tooltip = Increase or decrease the brightness of magenta in the displayed image.
-Slider = mbrightness
-
-MenuItem MGNHUE
-Text = Magenta Hue
-Tooltip = Adjust the hue of magenta in the displayed image.
-Slider = mhue
+Menu OP_VIDCOLORPROFILE
+HeaderPic = M_VIDEO
+Panels
+MAIN : OP_VIDCOLORPROFILE
+	X = 30
+	Y = 25

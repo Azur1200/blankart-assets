@@ -1,92 +1,90 @@
-Menu OP_MAIN
-FadeStrength = 17
-X = 60
-Y = 30
+MenuPanel OP_MAIN
+Initializer = MP_Options
+TickRoutine = MP_TickOptions
 LineHeight = 10
+Items
+CONTROLS
+	Text = Control Setup...
+	Tooltip = Setup game controls.
+	Submenu = OP_CONTROLSETUP
+VIDEO
+	OfsY = 10
+	Text = Video Options...
+	Tooltip = Modify visual and performance options.
+	Submenu = OP_VIDEO
+SOUND
+	Text = Sound Options...
+	Tooltip = Modify audio and audio effect options.
+	Submenu = OP_SOUND
+HUD
+	OfsY = 10
+	Text = HUD Options...
+	Tooltip = Modify HUD options.
+	Submenu = OP_HUD
+CAMERA
+	Text = Camera Options...
+	Tooltip = Modify Player camera options.
+	Submenu = OP_CAMERA
+GAMEPLAY
+	Text = Gameplay Options...
+	Tooltip = Modify gameplay options.
+	Submenu = OP_GAME
+SERVER
+	Text = Server Options...
+	Tooltip = Modify online server options.
+	Submenu = OP_SERVER
+DATA
+	OfsY = 10
+	Text = Data Options...
+	Tooltip = Modify or delete various types of data.
+	Submenu = OP_DATA
+CUSTOM
+	Text = Custom Options...
+	Tooltip = Custom options for Addons.
+	Submenu = OP_CUSTOM
+MANUAL
+	OfsY = 10
+	Text = Tricks & Secrets (F1)
+	Tooltip = Learn the basics of play!
+	SubMenu = HELP
+KARTCREDITS
+	Text = Play Kart Credits
+	Tooltip = See who made SRB2Kart.
+	Call = MR_Credits
+EXTRAREDITS
+	Text = BlanKart Credits...
+	Tooltip = See who made BlanKart.
+	Submenu = OP_EXTRACREDITS
+
+MenuPanel OP_EXTRACREDITS
+LineHeight = 10
+Items
+BLANCREDITS
+	Text = Play BlanKart Credits
+	Tooltip = See who made BlanKart.
+	Call = MR_BlanCredits
+SECRETCREDS
+	Text = Play Full Credits
+	Tooltip = See everyone who made BlanKart possible!
+	Call = MR_SecretCredits
+
+Menu OP_MAIN
+Music = optmnu
+FadeStrength = 17
 HeaderPic = M_OPTTTL
-EnterRoutine = MR_Options
-MenuItem CONTROLS
-Text = Control Setup...
-Tooltip = Setup game controls.
-Submenu = OP_CONTROLSETUP
-
-MenuItem VIDEO
-OfsY = 10
-Text = Video Options...
-Tooltip = Modify visual and performance options.
-Submenu = OP_VIDEO
-
-MenuItem SOUND
-Text = Sound Options...
-Tooltip = Modify audio and audio effect options.
-Submenu = OP_SOUND
-
-MenuItem HUD
-OfsY = 10
-Text = HUD Options...
-Tooltip = Modify HUD options.
-Submenu = OP_HUD
-
-MenuItem CAMERA
-Text = Camera Options...
-Tooltip = Modify Player camera options.
-Submenu = OP_CAMERA
-
-MenuItem GAMEPLAY
-Text = Gameplay Options...
-Tooltip = Modify gameplay options.
-Submenu = OP_GAME
-
-MenuItem SERVER
-Text = Server Options...
-Tooltip = Modify online server options.
-Submenu = OP_SERVER
-
-MenuItem DATA
-OfsY = 10
-Text = Data Options...
-Tooltip = Modify or delete various types of data.
-Submenu = OP_DATA
-
-MenuItem CUSTOM
-Text = Custom Options...
-Tooltip = Custom options for Addons.
-Submenu = OP_CUSTOM
-
-MenuItem MANUAL
-OfsY = 10
-Text = Tricks & Secrets (F1)
-Tooltip = Learn the basics of play!
-SubMenu = HELP
-
-MenuItem KARTCREDITS
-Text = Play Kart Credits
-Tooltip = See who made SRB2Kart.
-Call = MR_Credits
-
-MenuItem EXTRAREDITS
-Text = BlanKart Credits...
-Tooltip = See who made BlanKart.
-Submenu = OP_EXTRACREDITS
-
+Panels
+MAIN : OP_MAIN
+	X = 60
+	Y = 30
 
 Menu OP_EXTRACREDITS
-X = 60
-Y = 40
-LineHeight = 10
 HeaderPic = M_OPTTTL
-MenuItem BLANCREDITS
-Text = Play BlanKart Credits
-Tooltip = See who made BlanKart.
-Call = MR_BlanCredits
-
-MenuItem SECRETCREDS
-Text = Play Full Credits
-Tooltip = See everyone who made BlanKart possible!
-Call = MR_SecretCredits
-
+Panels
+MAIN : OP_EXTRACREDITS
+	X = 60
+	Y = 40
 
 Menu OP_CUSTOM
-X = 30
-Y = 30
+#X = 30
+#Y = 30
 # nothing here, load some addons and you'll get menuitems!

@@ -1,229 +1,225 @@
+MenuPanel TIMEATTACKCOMMON
+DrawRoutine = MD_DrawTimeAttackMenu
+TickRoutine = MP_TickTimeAttackMenu
+LineHeight = 0
+Items
+NAME
+	Y = 0
+	Text = Name
+	Cvar = name
+PLAYERICON
+	Y = 0
+	Style = SKINICONEDGE
+#	set by hardcode
+PLAYERSETUP
+	Y = 13
+	Text = Player setup...
+	SubMenu = MN_MP_PLAYERSETUP
+
+MenuPanel SP_TIMEATTACK
+Initializer = MP_TimeAttackMenu
+Items
+LEVEL
+	Y = 0
+	Text = Level
+	Argument = LLM_TIMEATTACK
+	Cvar = nextmap
+	SubMenu = CHANGELEVEL
+SHOWGUEST
+	Y = 20
+	Style = highlight
+	Text = Guest...
+	SubMenu = SP_GUESTREPLAY
+SHOWREPLAY
+	Y = 30
+	Style = highlight
+	Text = Replay...
+	SubMenu = SP_REPLAY
+GHOSTS
+	Y = 40
+	Style = highlight
+	Text = Ghosts...
+	SubMenu = SP_GHOST
+MODIFIERS
+	Y = 50
+	Style = highlight
+	Text = Modifiers...
+	SubMenu = SP_PRESETS
+START
+	Y = 62
+	Style = highlight
+	Text = Start
+	Call = MR_ChooseTimeAttack
+
+MenuPanel SP_GUESTREPLAY
+Initializer = MP_TimeAttackMenu
+Items
+REPLAYTIME
+	Y = 0
+	Style = highlight
+	Text = Save Best Time as Guest
+	Argument = 0
+	Call = MR_SetGuestReplay
+REPLAYLAP
+	Y = 8
+	Style = highlight
+	Text = Save Best Lap as Guest
+	Argument = 1
+	Call = MR_SetGuestReplay
+REPLAYLAST
+	Y = 16
+	Style = highlight
+	Text = Save Last as Guest
+	Argument = 2
+	Call = MR_SetGuestReplay
+REPLAYGUEST
+	Y = 26
+	Style = highlight
+	Text = Delete Guest Replay
+	Argument = 3
+	Call = MR_SetGuestReplay
+BACK
+	Y = 36
+	Style = highlight
+	Text = Back
+	Call = MR_GoBack
+
+MenuPanel SP_REPLAY
+Initializer = MP_TimeAttackMenu
+Items
+REPLAYTIME
+	Y = 0
+	Style = highlight
+	Text = Replay Best Time
+	Argument = 0
+	Call = MR_ReplayTimeAttack
+REPLAYLAP
+	Y = 8
+	Style = highlight
+	Text = Replay Best Lap
+	Argument = 1
+	Call = MR_ReplayTimeAttack
+REPLAYLAST
+	Y = 16
+	Style = highlight
+	Text = Replay Last
+	Argument = 2
+	Call = MR_ReplayTimeAttack
+REPLAYGUEST
+	Y = 24
+	Style = highlight
+	Text = Replay Guest
+	Argument = 3
+	Call = MR_ReplayTimeAttack
+REPLAYSTAFF
+	Y = 32
+	Style = highlight
+	Text = Replay Staff
+	Cvar = dummystaff
+	Call = MR_ReplayStaff
+BACK
+	Y = 40
+	Style = highlight
+	Text = Back
+	Call = MR_GoBack
+
+MenuPanel SP_GHOST
+Initializer = MP_TimeAttackMenu
+Items
+BESTTIME
+	Y = 0
+	Text = Best Time
+	Cvar = ghost_besttime
+BESTLAP
+	Y = 8
+	Text = Best Lap
+	Cvar = ghost_bestlap
+LAST
+	Y = 16
+	Text = Last
+	Cvar = ghost_last
+REPLAYGUEST
+	Y = 24
+	Text = Guest
+	Cvar = ghost_guest
+REPLAYSTAFF
+	Y = 32
+	Text = Staff Attack
+	Cvar = ghost_staff
+BACK
+	Y = 42
+	Style = highlight
+	Text = Back
+	Call = MR_GoBack
+
+MenuPanel SP_PRESETS
+Initializer = MP_TimeAttackPresets
+LineHeight = 10
+ScrollHeight = 60
+
 Menu SP_TIMEATTACK
-Music = racent
+Music = ramenu
 BackgroundName = SRB2BACK
 ScrollXSpeed = 0
 ScrollYSpeed = 0
 FadeStrength = 1
 EnterWipe = 0
 ExitWipe = 0
-X = 34
-Y = 40
 HeaderPic = M_ATTACK
-DrawRoutine = MD_DrawTimeAttackMenu
 EnterRoutine = MR_TimeAttack
 QuitRoutine = MR_QuitTimeAttackMenu
-MenuItem NAME
-Y = 0
-Text = Name
-Cvar = name
-
-MenuItem PLAYERSETUP
-Y = 13
-Text = Player setup...
-SubMenu = MN_MP_PLAYERSETUP
-
-# MenuItem SKIN
-# Overlay = True
-# X = 128
-# Y = 64
-# Cvar = chooseskin
-#
-# MenuItem COLOR
-# Overlay = True
-# X = 36
-# Y = 64
-# Cvar = color
-#
-MenuItem LEVEL
-Y = 78
-Text = Level
-Argument = LLM_TIMEATTACK
-Cvar = nextmap
-SubMenu = CHANGELEVEL
-
-MenuItem GUEST
-Y = 98
-Style = highlight
-Text = Guest...
-SubMenu = SP_GUESTREPLAY
-
-MenuItem REPLAY
-Y = 108
-Style = highlight
-Text = Replay...
-SubMenu = SP_REPLAY
-
-MenuItem GHOSTS
-Y = 118
-Style = highlight
-Text = Ghosts...
-SubMenu = SP_GHOST
-
-MenuItem MODIFIERS
-Y = 128
-Style = highlight
-Text = Modifiers...
-SubMenu = SP_PRESETS
-
-MenuItem START
-Y = 140
-Style = highlight
-Text = Start
-Call = MR_ChooseTimeAttack
-
+Panels
+MAIN : SP_TIMEATTACK
+	X = 34
+	Y = 118
+COMMON : TIMEATTACKCOMMON
+	X = 34
+	Y = 40
 
 Menu SP_GUESTREPLAY
-X = 34
-Y = 40
 HeaderPic = M_ATTACK
-DrawRoutine = MD_DrawTimeAttackMenu
-MenuItem SAVETIME
-Y = 94
-Style = highlight
-Text = Save Best Time as Guest
-Argument = 0
-Call = MR_SetGuestReplay
-
-MenuItem SAVELAP
-Y = 102
-Style = highlight
-Text = Save Best Lap as Guest
-Argument = 1
-Call = MR_SetGuestReplay
-
-MenuItem SAVELAST
-Y = 110
-Style = highlight
-Text = Save Last as Guest
-Argument = 2
-Call = MR_SetGuestReplay
-
-MenuItem DELETE
-Y = 120
-Style = highlight
-Text = Delete Guest Replay
-Argument = 3
-Call = MR_SetGuestReplay
-
-MenuItem BACK
-Y = 130
-Style = highlight
-Text = Back
-Call = MR_GoBack
-
+Panels
+MAIN : SP_GUESTREPLAY
+	X = 34
+	Y = 134
+COMMON : TIMEATTACKCOMMON
+	X = 34
+	Y = 40
+	Flags = V_50TRANS
+	Disabled = True
 
 Menu SP_REPLAY
-X = 34
-Y = 40
 HeaderPic = M_ATTACK
-DrawRoutine = MD_DrawTimeAttackMenu
-MenuItem REPLAYTIME
-Y = 90
-Style = highlight
-Text = Replay Best Time
-Argument = 0
-Call = MR_ReplayTimeAttack
-
-MenuItem REPLAYLAP
-Y = 98
-Style = highlight
-Text = Replay Best Lap
-Argument = 1
-Call = MR_ReplayTimeAttack
-
-MenuItem REPLAYLAST
-Y = 106
-Style = highlight
-Text = Replay Last
-Argument = 2
-Call = MR_ReplayTimeAttack
-
-MenuItem REPLAYGUEST
-Y = 114
-Style = highlight
-Text = Replay Guest
-Argument = 3
-Call = MR_ReplayTimeAttack
-
-MenuItem REPLAYSTAFF
-Y = 122
-Style = highlight
-Text = Replay Staff
-Cvar = dummystaff
-Call = MR_ReplayStaff
-
-MenuItem BACK
-Y = 130
-Style = highlight
-Text = Back
-Call = MR_GoBack
-
+Panels
+MAIN : SP_REPLAY
+	X = 34
+	Y = 130
+COMMON : TIMEATTACKCOMMON
+	X = 34
+	Y = 40
+	Flags = V_50TRANS
+	Disabled = True
 
 Menu SP_GHOST
-X = 34
-Y = 40
 HeaderPic = M_ATTACK
-DrawRoutine = MD_DrawTimeAttackMenu
-MenuItem BESTTIME
-Y = 88
-Text = Best Time
-Cvar = ghost_besttime
-
-MenuItem BESTLAP
-Y = 96
-Text = Best Lap
-Cvar = ghost_bestlap
-
-MenuItem LAST
-Y = 104
-Text = Last
-Cvar = ghost_last
-
-MenuItem GUEST
-Y = 112
-Text = Guest
-Cvar = ghost_guest
-
-MenuItem STAFF
-Y = 120
-Text = Staff Attack
-Cvar = ghost_staff
-
-MenuItem BACK
-Y = 130
-Style = highlight
-Text = Back
-Call = MR_GoBack
-
+Panels
+MAIN : SP_GHOST
+	X = 34
+	Y = 128
+COMMON : TIMEATTACKCOMMON
+	X = 34
+	Y = 40
+	Flags = V_50TRANS
+	Disabled = True
 
 Menu SP_PRESETS
-X = 34
-Y = 40
 HeaderPic = M_ATTACK
-DrawRoutine = MD_DrawTimeAttackMenu
-MenuItem SRB2KART
-Y = 94
-Style = highlight
-Text = SRB2Kart Mode
-Argument = 0
-Call = MR_TimeAttackPreset
-
-MenuItem TECH
-Y = 104
-Style = highlight
-Text = Tech Mode
-Argument = 1
-Call = MR_TimeAttackPreset
-
-MenuItem BLANKART
-Y = 114
-Style = highlight
-Text = BlanKart Mode
-Argument = 2
-Call = MR_TimeAttackPreset
-
-MenuItem BACK
-Y = 150
-Style = highlight
-Text = Back
-Call = MR_GoBack
+Panels
+MAIN : SP_PRESETS
+	X = 34
+	Y = 134
+COMMON : TIMEATTACKCOMMON
+	X = 34
+	Y = 40
+	Flags = V_50TRANS
+	Disabled = True

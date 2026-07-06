@@ -1,8 +1,12 @@
-Menu SR_SOUNDTEST
-NoMusic = True
-X = 60
-Y = 150
+MenuPanel SR_SOUNDTEST
 KeyHandler = MR_HandleMusicTest
 DrawRoutine = MD_DrawMusicTest
+
+Menu SR_SOUNDTEST
+NoMusic = True
 EnterRoutine = MR_MusicTest
 QuitRoutine = MR_QuitMusicTest
+Panels
+MAIN : SR_SOUNDTEST
+	X = 60
+	Y = 150

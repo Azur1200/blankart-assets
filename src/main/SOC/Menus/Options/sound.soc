@@ -1,149 +1,134 @@
-Menu OP_SOUND
-X = 30
-Y = 30
+MenuPanel OP_SOUND
 LineHeight = 10
+Items
+SOUND
+	Text = SFX
+	Tooltip = Turn Sound effects on or off.
+	Cvar = sounds
+SOUNDVOLUME
+	OfsY = -2
+	Text = SFX Volume
+	Tooltip = Volume of Sound effects.
+	Slider = soundvolume
+MUSIC
+	OfsY = 2
+	Text = Music
+	Tooltip = Turn Music effects on or off.
+	Cvar = music
+MUSICVOLUME
+	OfsY = -2
+	Text = Music Volume
+	Tooltip = Volume of Music.
+	Slider = musicvolume
+REVERSE
+	OfsY = 2
+	Text = Reverse L/R Channels
+	Tooltip = Reverse left and right channels of audio.
+	Cvar = stereoreverse
+SURROUND
+	Text = Surround Sound
+	Tooltip = Toggle the usage of Surround Sound
+	Cvar = surround
+SOUNDEFX
+	Text = Sound EFX
+	Tooltip = Turn Sound Effect EFX on or off.
+	Cvar = soundefx
+AUDIOEFFECTS
+	Text = Audio Effects...
+	Tooltip = Adjust Audio effects.
+	OfsY = 5
+	SubMenu = OP_SNDEFX
+SOUNDTEST
+	OfsY = 5
+	Text = Sound Test
+	Cvar = soundtest
+	Tooltip = Testing sounds...
+	Call = MR_PlaySound
+MUSICTEST
+	Text = Music Test
+	Tooltip = Testing music...
+	SubMenu = SR_SOUNDTEST
+MUSICUNFOCUSED
+	OfsY = 5
+	Text = Play Music While Unfocused
+	Tooltip = Should music play while the game is unfocused?
+	Cvar = playmusicifunfocused
+SOUNDUNFOCUSED
+	Text = Play SFX While Unfocused
+	Tooltip = Should sounds play while the game is unfocused?
+	Cvar = playsoundifunfocused
+RESTARTAUDIO
+	Text = Restart Audio System
+	Tooltip = Restart the audio subsystem.
+	Call = MR_RestartAudio
+
+MenuPanel OP_SNDEFX
+LineHeight = 10
+Items
+CHATNOTIFICATIONS
+	Text = Chat Notifications
+	Tooltip = Chat notification sound.
+	Cvar = chatnotifications
+VOICES
+	Text = Character voices
+	Tooltip = Frequency of character voice lines.
+	Cvar = kartvoices
+FHORNS
+	Text = Follower Horns
+	Tooltip = Frequency of follower horns.
+	Cvar = taunthorns
+HITEM
+	Text = HitEm Dialog
+	Tooltip = Globally play hurt sound of other player.
+	Cvar = karthitemdialog
+POWERUPS
+	Text = Powerup Warning
+	Tooltip = Should the powerup warning be a sound effect or music?
+	Cvar = kartinvinsfx
+INVINCIBILITY
+	Text = Invincibility Music
+	Tooltip = Play music during Invincibility.
+	Cvar = supermusic
+INVINTHEMELENGTH
+	Text = Invin. Music Length
+	Tooltip = Change the length of Invincibility's music.
+	Cvar = kartinvintheme
+GROW
+	Text = Grow Music
+	Tooltip = Play music during Grow.
+	Cvar = growmusic
+RESETSPECIAL
+	Text = Reset Special Music
+	Tooltip = Should power item music reset after using another one.
+	Cvar = resetspecialmusic
+DRIFTSOUNDS
+	Text = New Drift Sounds
+	Tooltip = Toggle the new Driftboost sound effects.
+	Cvar = kartdriftsounds
+SNEAKERSTACK
+	Text = Sneaker Stack Sound
+	Tooltip = Play different sound when stacking sneakers.
+	Cvar = kartstacking_sneakerstacksound
+MUSICRESYNC
+	OfsY = 10
+	Text = Music Resync Threshold
+	Tooltip = Adjust when music gets resynced online.
+	Cvar = music_resync_threshold
+RESYNCPOWERUPS
+	Text = Only Resync Power Music
+	Tooltip = Adjust if only powerup music gets resynced.
+	Cvar = music_resync_powerups_only
+
+Menu OP_SOUND
 HeaderPic = M_SOUND
-MenuItem SOUND
-Text = SFX
-Tooltip = Turn Sound effects on or off.
-Cvar = sounds
-
-MenuItem SOUNDVOLUME
-OfsY = -2
-Text = SFX Volume
-Tooltip = Volume of Sound effects.
-Slider = soundvolume
-
-MenuItem MUSIC
-OfsY = 2
-Text = Music
-Tooltip = Turn Music effects on or off.
-Cvar = music
-
-MenuItem MUSICVOLUME
-OfsY = -2
-Text = Music Volume
-Tooltip = Volume of Music.
-Slider = musicvolume
-
-MenuItem REVERSE
-OfsY = 2
-Text = Reverse L/R Channels
-Tooltip = Reverse left and right channels of audio.
-Cvar = stereoreverse
-
-MenuItem SURROUND
-Text = Surround Sound
-Tooltip = Toggle the usage of Surround Sound
-Cvar = surround
-
-MenuItem SOUNDEFX
-Text = Sound EFX
-Tooltip = Turn Sound Effect EFX on or off.
-Cvar = soundefx
-
-MenuItem AUDIOEFFECTS
-Text = Audio Effects...
-Tooltip = Adjust Audio effects.
-OfsY = 5
-SubMenu = OP_SNDEFX
-
-MenuItem SOUNDTEST
-OfsY = 5
-Text = Sound Test
-Cvar = soundtest
-Tooltip = Testing sounds...
-Call = MR_PlaySound
-
-MenuItem MUSICTEST
-Text = Music Test
-Tooltip = Testing music...
-SubMenu = SR_SOUNDTEST
-
-MenuItem MUSICUNFOCUSED
-OfsY = 5
-Text = Play Music While Unfocused
-Tooltip = Should music play while the game is unfocused?
-Cvar = playmusicifunfocused
-
-MenuItem SOUNDUNFOCUSED
-Text = Play SFX While Unfocused
-Tooltip = Should sounds play while the game is unfocused?
-Cvar = playsoundifunfocused
-
-MenuItem RESTARTAUDIO
-Text = Restart Audio System
-Tooltip = Restart the audio subsystem.
-Call = MR_RestartAudio
-
+Panels
+MAIN : OP_SOUND
+	X = 30
+	Y = 30
 
 Menu OP_SNDEFX
-X = 30
-Y = 40
-LineHeight = 10
 HeaderPic = M_SOUND
-MenuItem CHATNOTIFICATIONS
-Text = Chat Notifications
-Tooltip = Chat notification sound.
-Cvar = chatnotifications
-
-MenuItem VOICES
-Text = Character voices
-Tooltip = Frequency of character voice lines.
-Cvar = kartvoices
-
-MenuItem FHORNS
-Text = Follower Horns
-Tooltip = Frequency of follower horns.
-Cvar = taunthorns
-
-MenuItem HITEM
-Text = HitEm Dialog
-Tooltip = Globally play hurt sound of other player.
-Cvar = karthitemdialog
-
-MenuItem POWERUPS
-Text = Powerup Warning
-Tooltip = Should the powerup warning be a sound effect or music?
-Cvar = kartinvinsfx
-
-MenuItem INVINCIBILITY
-Text = Invincibility Music
-Tooltip = Play music during Invincibility.
-Cvar = supermusic
-
-MenuItem INVINTHEMELENGTH
-Text = Invin. Music Length
-Tooltip = Change the length of Invincibility's music.
-Cvar = kartinvintheme
-
-MenuItem GROW
-Text = Grow Music
-Tooltip = Play music during Grow.
-Cvar = growmusic
-
-MenuItem RESETSPECIAL
-Text = Reset Special Music
-Tooltip = Should power item music reset after using another one.
-Cvar = resetspecialmusic
-
-MenuItem DRIFTSOUNDS
-Text = New Drift Sounds
-Tooltip = Toggle the new Driftboost sound effects.
-Cvar = kartdriftsounds
-
-MenuItem SNEAKERSTACK
-Text = Sneaker Stack Sound
-Tooltip = Play different sound when stacking sneakers.
-Cvar = kartstacking_sneakerstacksound
-
-MenuItem MUSICRESYNC
-OfsY = 10
-Text = Music Resync Threshold
-Tooltip = Adjust when music gets resynced online.
-Cvar = music_resync_threshold
-
-MenuItem RESYNCPOWERUPS
-Text = Only Resync Power Music
-Tooltip = Adjust if only powerup music gets resynced.
-Cvar = music_resync_powerups_only
+Panels
+MAIN : OP_SNDEFX
+	X = 30
+	Y = 40
