@@ -80,6 +80,10 @@ CHATMODE
 	Text = Chat Mode
 	Tooltip = Determine how chat display looks in game.
 	Cvar = chatmode
+CHATCHARCAP
+	Text = Chat Limit Display
+	Tooltip = Display current and maximum amount of chat characters entered.
+	Cvar = chat_showlimit
 CHATWIDTH
 	OfsY = 5
 	Text = Chat Box Width
@@ -89,6 +93,14 @@ CHATHEIGHT
 	Text = Chat Box Height
 	Tooltip = Height of chat box window.
 	Slider = chatheight
+CHATXOFS
+	Text = Chat Box X Offset
+	Tooltip = X offset of chat box window.
+	Slider = chat_xoffset
+CHATYOFS
+	Text = Chat Box Y Offset
+	Tooltip = Y offset of chat box window.
+	Slider = chat_yoffset
 CHATBACKTINT
 	OfsY = 5
 	Text = Chat Background Tint
