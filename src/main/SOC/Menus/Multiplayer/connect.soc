@@ -50,7 +50,7 @@ LINEMAX
 	Call = MR_Connect
 
 Menu MP_CONNECT
-Music = mserv
+Music = _mserv
 HeaderPic = M_MULTI
 QuitRoutine = MR_CancelConnect
 Panels

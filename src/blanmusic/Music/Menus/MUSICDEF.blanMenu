@@ -89,9 +89,16 @@ Author = Toshiyuki Sudo
 Source = Wii Food Delivery Channel
 Volume = 200
 
-Lump MSERV
+Lump _MSERV
 Title = Get Out There And Golf!
 Usage = Master Server Listing
 Author = SlappyHappy2000
 Source = Uncanny Cat Golf
 Volume = 195
+
+Lump ADNMNU
+Title = Tell Me, Mystery Man
+Usage = Addons Menu
+Author = SlappyHappy2000
+Source = Uncanny Cat Golf
+Volume = 225
