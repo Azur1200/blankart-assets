@@ -92,6 +92,7 @@ SEARCHTEXT
 	Y = 153
 
 Menu AD_MAIN
+Music = adnmnu
 EnterRoutine = MR_Addons
 QuitRoutine = MR_QuitAddons
 Panels
