@@ -1,0 +1,13 @@
+Level BK_Test
+NoVisitNeeded = True
+LevelName = Test Map
+TypeOfLevel = None
+NumLaps = 1
+LightAngle = 135
+LightContrast = 64
+SkyTexture = SKY6
+Music = EXOLAB,GLFCTL
+GlobalEFX = EFFECT_EAXREVERB
+GlobalEFX_EAXREVERB_DECAY_TIME = 4
+GlobalEFX_EAXREVERB_ECHO_DEPTH = 0.5
+GlobalEFX_EAXREVERB_ROOM_ROLLOFF_FACTOR = 2.0
