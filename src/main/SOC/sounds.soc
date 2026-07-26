@@ -3912,3 +3912,9 @@ Caption = Rank: OK
 Sound sfx_rhmrng
 Priority = 64
 Caption = Rank: Bad...
+
+# Dig Dug Arrangement (DDA)
+
+sound sfx_dda96
+Priority = 64
+Caption = Results blip
