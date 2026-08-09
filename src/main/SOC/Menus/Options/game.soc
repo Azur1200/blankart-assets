@@ -121,6 +121,10 @@ BLAN_ITEMSETTINGS
 	Text = Item Settings...
 	Tooltip = Customize certain items as you see fit.
 	Submenu = OP_BLANITEMSETTINGS
+BLAN_RANKSETTINGS
+	Text = Rank Settings...
+	Tooltip = Customize the Rank Score system.
+	Submenu = OP_BLANRANKSETTINGS
 QOLHEAD
 	OfsY = 10
 	Style = header
@@ -288,6 +292,103 @@ FLAME_OFFROAD
 	Tooltip = Should the Flame Shield grant the user offroad resistance when overheating offroad?
 	Cvar = kartflame_offroadburn
 
+MenuPanel OP_BLANRANKSETTINGS
+ScrollHeight = 134
+LineHeight = 10
+Items
+RANK_TOGGLE
+	Text = Race Ranks
+	Tooltip = When enabled, players are ranked by their overall game performance.
+	Cvar = raceranks
+INVIN_ACL
+	Text = Penalties
+	Tooltip = Do you want players to be penalized for certain actions?
+	Cvar = racerankpenalties
+RANKBONUSHEAD
+	OfsY = 10
+	Style = header
+	Text = Rank Bonuses
+INVIN_HDL
+	Text = Drift Bonus
+	Tooltip = Do you want players to earn points for drift-boosting?
+	Cvar = rank_driftbonus
+INVIN_STACKME
+	Text = Hit Bonus
+	Tooltip = Do you want players to earn points for hitting others?
+	Cvar = rank_hitbonus
+RANKPTBALANCEHEAD
+	OfsY = 10
+	Style = header
+	Text = Rank Point Balance Adjustment
+RANKLAWNMOWERTICS
+	Text = Lawnmower Threshold
+	Tooltip = The time (in seconds) before the player is penalized for driving offroad.
+	Cvar = rank_lawnmowerthreshold
+RANKHAZARDMERCY
+	Text = Hazard Damage Threshold
+	Tooltip = How many times can players take damage from hazards before being penalized?
+	Cvar = rank_hazardmercy
+RANKRESPAWNMERCY
+	Text = Respawn Threshold
+	Tooltip = How many times can players respawn before being penalized?
+	Cvar = rank_respawnmercy
+RANKLAPGRDHEAD
+	OfsY = 10
+	Style = header
+	Text = Lap Grading
+RANKLAPGRADEMUL
+	Text = With Penalties
+	Tooltip = The value multipler for Lap Grading (between -100 and 100).
+	Cvar = rank_lapgrademul
+RANKLAPGRADEMULNOPENALTY
+	Text = Without Penalties
+	Tooltip = The value multipler for Lap Grading when penalties are off (between -100 and 100).
+	Cvar = rank_lapgrademul_penaltiesoff
+RANKPOINTHEAD
+	OfsY = 10
+	Style = header
+	Text = Rank Point Values
+RANKPARPTS
+	Text = Par-Time Points
+	Tooltip = This value constantly decreases due to a set course's time limit.
+	Cvar = rank_partimepoints
+RANKPOSITIONPTS
+	Text = Position Bonus Points
+	Tooltip = The points you earn over time based on position.
+	Cvar = rank_leadertimepoints
+RANKSPBATKPTS
+	Text = SPB-Attack Bonus Points
+	Tooltip = The points you earn over time for being chased by an SPB. More points for closer calls!
+	Cvar = rank_spbtimepoints
+RANKSTARTBOOSTPTS
+	Text = Starboost Bonus Points
+	Tooltip = The points you earn based on how well you do the starting countdown boost.
+	Cvar = rank_startboostpoints
+RANKDRIFTPTS
+	Text = Drift Bonus Points
+	Tooltip = (With Drift Bonus enabled) The points you earn for performing drift boosts.
+	Cvar = rank_driftboostpoints
+RANKHITCONFIRMPTS
+	Text = Hit Bonus Points
+	Tooltip = (With Hit Bonus enabled) The points you earn for hitting other players.
+	Cvar = rank_hitconfirmpoints
+RANKOFFROADDIV
+	Text = Offroad Penalty Divisor
+	Tooltip = The tic delay for each point lost for driving offroad past a grace period.
+	Cvar = rank_offroad_divisor
+RANKWALLPTS
+	Text = Wall Penalty Points
+	Tooltip = The points you lose for running into walls above 75% speed.
+	Cvar = rank_wallbonkpenalty
+RANKHAZARDPTS
+	Text = Hazard Penalty Points
+	Tooltip = The points you lose for taking damage from hazards past a threshold.
+	Cvar = rank_hazardpenalty
+RANKRESPAWNPTS
+	Text = Respawn Penalty Points
+	Tooltip = The points you lose for respawning past a threshold.
+	Cvar = rank_respawnpenalty
+
 MenuPanel OP_MONITORTOGGLE
 Initializer = MP_SetupMonitorToggles
 KeyHandler = MR_HandleMonitorToggles
@@ -320,6 +421,13 @@ Menu OP_BLANITEMSETTINGS
 HeaderPic = M_GAME
 Panels
 MAIN : OP_BLANITEMSETTINGS
+	X = 30
+	Y = 30
+
+Menu OP_BLANRANKSETTINGS
+HeaderPic = M_GAME
+Panels
+MAIN : OP_BLANRANKSETTINGS
 	X = 30
 	Y = 30
 

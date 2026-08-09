@@ -6,11 +6,27 @@ NAME
 	Text = Server Name
 	Tooltip = Name of server.
 	Cvar = servername
-INTERTIME
+ITEMLIST
 	OfsY = 4
+	Text = Item Roll Tracker
+	Tooltip = Display a list of all players' item rolls during the intermission.
+	Cvar = kartitemlist
+INTERTIME
 	Text = Intermission Timer
 	Tooltip = Length of intermission after races.
 	Cvar = inttime
+ROLLTIME
+	Text = Item Roll List Timer
+	Tooltip = Length of the "item rolls" segment of the intermission.
+	Cvar = rolltime
+RANKGRAPHTIME
+	Text = Rank Graph Timer
+	Tooltip = How long the game lets the rank score graph stay once it finishes.
+	Cvar = graphtime
+RANKSCORETIME
+	Text = Rank Comparison Timer
+	Tooltip = Length of the "comparison" segment of the intermission when ranked races are on.
+	Cvar = rankscoretime
 ADVANCEMAP
 	Text = Map Progression
 	Tooltip = How the next map to be played is choosen.
