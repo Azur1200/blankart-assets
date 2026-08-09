@@ -388,6 +388,10 @@ RANKRESPAWNPTS
 	Text = Respawn Penalty Points
 	Tooltip = The points you lose for respawning past a threshold.
 	Cvar = rank_respawnpenalty
+RANKDNFPTS
+	Text = Retire Penalty Points
+	Tooltip = The points you lose for NO CONTESTing in a race.
+	Cvar = rank_dnfpenalty
 
 MenuPanel OP_MONITORTOGGLE
 Initializer = MP_SetupMonitorToggles
