@@ -332,30 +332,18 @@ RANKRESPAWNMERCY
 	Text = Respawn Threshold
 	Tooltip = How many times can players respawn before being penalized?
 	Cvar = rank_respawnmercy
-RANKLAPGRDHEAD
-	OfsY = 10
-	Style = header
-	Text = Lap Grading
-RANKLAPGRADEMUL
-	Text = With Penalties
-	Tooltip = The value multipler for Lap Grading (between -100 and 100).
-	Cvar = rank_lapgrademul
-RANKLAPGRADEMULNOPENALTY
-	Text = Without Penalties
-	Tooltip = The value multipler for Lap Grading when penalties are off (between -100 and 100).
-	Cvar = rank_lapgrademul_penaltiesoff
 RANKPOINTHEAD
 	OfsY = 10
 	Style = header
 	Text = Rank Point Values
 RANKPARPTS
-	Text = Par-Time Points
-	Tooltip = This value constantly decreases due to a set course's time limit.
+	Text = Position Points
+	Tooltip = The maximum points a player can earn over time.
 	Cvar = rank_partimepoints
-RANKPOSITIONPTS
-	Text = Position Bonus Points
-	Tooltip = The points you earn over time based on position.
-	Cvar = rank_leadertimepoints
+RANKCOMEBACKPTS
+	Text = Comeback Points
+	Tooltip = The points to reward struggling players with for placing high.
+	Cvar = rank_comebackpoints
 RANKSPBATKPTS
 	Text = SPB-Attack Bonus Points
 	Tooltip = The points you earn over time for being chased by an SPB. More points for closer calls!
