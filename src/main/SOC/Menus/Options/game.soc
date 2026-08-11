@@ -320,6 +320,10 @@ RANKPTBALANCEHEAD
 	OfsY = 10
 	Style = header
 	Text = Rank Point Balance Adjustment
+RANKGENERICPAR
+	Text = Generic Par-time
+	Tooltip = The time (in seconds) used for Position Grading in non-waypointed maps.
+	Cvar = rank_genericpartime
 RANKLAWNMOWERTICS
 	Text = Lawnmower Threshold
 	Tooltip = The time (in seconds) before the player is penalized for driving offroad.
@@ -336,9 +340,17 @@ RANKPOINTHEAD
 	OfsY = 10
 	Style = header
 	Text = Rank Point Values
+RANKBESTPTS
+	Text = Highest Rank-score
+	Tooltip = The maximum points a player is able to earn. (97% of this score = P rank)
+	Cvar = rank_highestscore
+RANKWORSTPTS
+	Text = Lowest Rank-score
+	Tooltip = The minimum points a player is able to earn.
+	Cvar = rank_lowestscore
 RANKPARPTS
 	Text = Position Points
-	Tooltip = The maximum points a player can earn over time.
+	Tooltip = The most points one can earn over time. Recommended: 1.47x highest score.
 	Cvar = rank_partimepoints
 RANKCOMEBACKPTS
 	Text = Comeback Points
@@ -348,10 +360,6 @@ RANKSPBATKPTS
 	Text = SPB-Attack Bonus Points
 	Tooltip = The points you earn over time for being chased by an SPB. More points for closer calls!
 	Cvar = rank_spbtimepoints
-RANKSTARTBOOSTPTS
-	Text = Starboost Bonus Points
-	Tooltip = The points you earn based on how well you do the starting countdown boost.
-	Cvar = rank_startboostpoints
 RANKDRIFTPTS
 	Text = Drift Bonus Points
 	Tooltip = (With Drift Bonus enabled) The points you earn for performing drift boosts.
