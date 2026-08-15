@@ -350,8 +350,8 @@ RANKWORSTPTS
 	Cvar = rank_lowestscore
 RANKPARPTS
 	Text = Position Points
-	Tooltip = The most points one can earn over time. Recommended: 1.47x highest score.
-	Cvar = rank_partimepoints
+	Tooltip = The most points earned per position. Recommended: 1.47x highest score.
+	Cvar = rank_progressionpoints
 RANKCOMEBACKPTS
 	Text = Comeback Points
 	Tooltip = The points to reward struggling players with for placing high.
