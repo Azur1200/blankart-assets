@@ -320,10 +320,6 @@ RANKPTBALANCEHEAD
 	OfsY = 10
 	Style = header
 	Text = Rank Point Balance Adjustment
-RANKGENERICPAR
-	Text = Generic Par-time
-	Tooltip = The time (in seconds) used for Position Grading in non-waypointed maps.
-	Cvar = rank_genericpartime
 RANKLAWNMOWERTICS
 	Text = Lawnmower Threshold
 	Tooltip = The time (in seconds) before the player is penalized for driving offroad.
@@ -350,16 +346,24 @@ RANKWORSTPTS
 	Cvar = rank_lowestscore
 RANKPARPTS
 	Text = Position Points
-	Tooltip = The most points earned per position. Recommended: 1.47x highest score.
+	Tooltip = The most points earned per position. Recommended: 1.07x highest score.
 	Cvar = rank_progressionpoints
-RANKCOMEBACKPTS
-	Text = Comeback Points
+RANKFINISHBONUSPTS
+	Text = Finish Bonus Points
 	Tooltip = The points to reward struggling players with for placing high.
-	Cvar = rank_comebackpoints
+	Cvar = rank_finishbonus
+RANKFINISHPENALTYPTS
+	Text = Finish Penalty Points
+	Tooltip = The points to deduct from leading players for placing low.
+	Cvar = rank_finishpenalty
 RANKSPBATKPTS
 	Text = SPB-Attack Bonus Points
 	Tooltip = The points you earn over time for being chased by an SPB. More points for closer calls!
 	Cvar = rank_spbtimepoints
+RANKGENERICPAR
+	Text = Generic Par-time
+	Tooltip = The time (in seconds) used for the SPB Bonus in non-waypointed maps.
+	Cvar = rank_genericpartime
 RANKDRIFTPTS
 	Text = Drift Bonus Points
 	Tooltip = (With Drift Bonus enabled) The points you earn for performing drift boosts.
@@ -384,10 +388,6 @@ RANKRESPAWNPTS
 	Text = Respawn Penalty Points
 	Tooltip = The points you lose for respawning past a threshold.
 	Cvar = rank_respawnpenalty
-RANKDNFPTS
-	Text = Retire Penalty Points
-	Tooltip = The points you lose for NO CONTESTing in a race.
-	Cvar = rank_dnfpenalty
 
 MenuPanel OP_MONITORTOGGLE
 Initializer = MP_SetupMonitorToggles
