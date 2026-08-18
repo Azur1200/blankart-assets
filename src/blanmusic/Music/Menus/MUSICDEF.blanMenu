@@ -90,11 +90,11 @@ Source = Wii Food Delivery Channel
 Volume = 200
 
 Lump _MSERV
-Title = Get Out There And Golf!
+Title = Golf Balls for Breakfast
 Usage = Master Server Listing
 Author = SlappyHappy2000
 Source = Uncanny Cat Golf
-Volume = 195
+Volume = 225
 
 Lump ADNMNU
 Title = I Mod This Video Game, This Funny Video Game

@@ -71,7 +71,7 @@ async def Deflate(filename, zipname, level, i, usezlib):
 		fdata = f.read()
 
 	file = PkFile()
-	file.crc = zlib.crc32(fdata)
+	file.crc = zlib.crc32(fdata) & 0xffffffff
 	file.size = len(fdata)
 
 	if usezlib:
