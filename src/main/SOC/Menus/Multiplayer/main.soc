@@ -21,7 +21,7 @@ STARTSERVER
 	OfsY = 2
 	Style = PATCHSTRING
 	Text = Internet/LAN...
-	Patch = (2-16 players)
+	Patch = (2-32 players)
 	Tooltip = Host a online server.
 	SubMenu = MP_SERVER
 OFFLINESERVER

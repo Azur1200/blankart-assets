@@ -272,10 +272,10 @@ FANCYJIN
 	Text = Animated Roulette
 	Tooltip = Make the roulette do a fancy animation.
 	Cvar = fancyroulette
-CSSSTYLE
-	Text = Skin Select Menu
-	Tooltip = Use a different style of Skin Select.
-	Cvar = skinselectstyle
+# CSSSTYLE
+# 	Text = Skin Select Menu
+# 	Tooltip = Use a different style of Skin Select.
+# 	Cvar = skinselectstyle
 CSSSORT
 	Text = Skin Select Sorting
 	Tooltip = Changes the sorting order in the Grid Skin Select

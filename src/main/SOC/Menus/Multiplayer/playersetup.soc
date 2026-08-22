@@ -10,10 +10,16 @@ NAME
 # Tails 01-18-2001
 SKIN
 	Y = 16
-	Text = Character
+	Text = Choose Character...
+	Tooltip = Choose this player's character.
 	Cvar = chooseskin
-FOLLOWER
+VEHICLE
 	Y = 26
+	Text = Choose Vehicle...
+	Tooltip = Choose this player's vehicle.
+	Cvar = choosevehicle
+FOLLOWER
+	Y = 36
 	Text = Follower
 	Cvar = dummyfollower
 COLOR
@@ -58,11 +64,29 @@ STATBG
 	Patch = K_STATBG
 # grid style stat backer
 STATBAR
-	X = 7
-	Y = 34
+	X = 96
+	Y = 43
 	Style = patch
 #	Overlay = True
 	Patch = K_STATBR
+
+MenuPanel MP_PLAYER_SKIN
+DrawRoutine = MD_DrawSetupMultiPlayerMenuCharacter
+Items
+BACK
+	X = 0
+	Y = 0
+	Style = fill
+	Patch = 146x74,159
+
+MenuPanel MP_PLAYER_VEHICLE
+DrawRoutine = MD_DrawSetupMultiPlayerMenuVehicle
+Items
+BACK
+	X = 0
+	Y = 0
+	Style = fill
+	Patch = 146x74,159
 
 Menu MP_PLAYERSETUP
 EnterRoutine = MR_SetupMultiPlayer
@@ -71,3 +95,9 @@ Panels
 MAIN : MP_PLAYERSETUP
 	X = 36
 	Y = 14
+SKIN : MP_PLAYER_SKIN
+	X = 132
+	Y = 89
+VEHICLE : MP_PLAYER_VEHICLE
+	X = 132
+	Y = 89
