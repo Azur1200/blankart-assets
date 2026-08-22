@@ -3885,3 +3885,24 @@ Sound sfx_vclgna
 Priority = 96
 Flags = 64
 Caption = Bouncy landing
+
+# Laps and Finish
+Sound sfx_nxtlap
+Priority = 64
+Caption = Next Lap
+
+Sound sfx_finlap
+Priority = 64
+Caption = Final Lap!
+
+Sound sfx_rcefin
+Priority = 64
+Caption = FINISH!
+
+Sound sfx_cntdwn
+Priority = 64
+Caption = Countdown beep
+
+Sound sfx_cntdwg
+Priority = 64
+Caption = GO!
