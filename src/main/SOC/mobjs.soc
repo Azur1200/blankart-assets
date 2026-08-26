@@ -8175,7 +8175,7 @@ PainSound = sfx_spring
 Radius = 16*FRACUNIT
 Height = 32*FRACUNIT
 Damage = 36*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
 RaiseState = S_YHORIZ2
 
 Mobj MT_REDHORIZ
@@ -8186,7 +8186,7 @@ PainSound = sfx_spring
 Radius = 16*FRACUNIT
 Height = 32*FRACUNIT
 Damage = 72*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
 RaiseState = S_RHORIZ2
 
 Mobj MT_BLUEHORIZ
@@ -8197,7 +8197,7 @@ PainSound = sfx_spring
 Radius = 16*FRACUNIT
 Height = 32*FRACUNIT
 Damage = 11*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
 RaiseState = S_BHORIZ2
 
 # Diagonal and Horizontal Gray Springs
@@ -8224,7 +8224,7 @@ PainSound = sfx_spring
 Radius = 16*FRACUNIT
 Height = 32*FRACUNIT
 Damage = 6*FRACUNIT
-Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
 RaiseState = S_GHORIZ2
 
 Mobj MT_FOLLOWERHORN
@@ -8242,3 +8242,42 @@ SpawnHealth = 1000
 Radius = 16*FRACUNIT
 Height = 16*FRACUNIT
 Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOCLIPTHING|MF_NOGRAVITY|MF_SCENERY
+
+Mobj MT_NEOSPRING
+MapThingNum = 5050
+SpawnState = S_NEOSPRING1
+SpawnHealth = 1000
+SeeState = S_NEOSPRING2
+ReactionTime = 8
+PainChance = INT32_MAX
+PainSound = sfx_s3kb1
+Radius = 48*FRACUNIT
+Height = 32*FRACUNIT
+Flags = MF_SOLID|MF_SPRING|MF_DONTENCOREMAP
+RaiseState = S_NEOSPRING2
+
+Mobj MT_NEODIAG
+MapThingNum = 5051
+SpawnState = S_NEODIAG1
+SpawnHealth = 1
+PainChance = INT32_MAX
+SeeState = S_NEODIAG2
+ReactionTime = 8
+PainSound = sfx_s3kb1
+Radius = 48*FRACUNIT
+Height = 56*FRACUNIT
+Flags = MF_SOLID|MF_SPRING|MF_DONTENCOREMAP
+RaiseState = S_NEODIAG2
+
+Mobj MT_NEOHORIZ
+MapThingNum = 5052
+SpawnState = S_NEOHORIZ1
+SpawnHealth = 1
+PainChance = INT32_MAX
+SeeState = S_NEOHORIZ2
+PainSound = sfx_spring
+Radius = 48*FRACUNIT
+Height = 56*FRACUNIT
+Damage = 69*FRACUNIT
+Flags = MF_SOLID|MF_SPRING|MF_NOGRAVITY|MF_DONTENCOREMAP
+RaiseState = S_NEOHORIZ2
