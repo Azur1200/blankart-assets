@@ -32,7 +32,7 @@ SPEEDBAR
 	Style = patch
 	Patch = K_STATBS
 WEIGHTBAR
-	X = 167
+	X = 170
 	Y = 46
 	Style = patch
 	Patch = K_STATBS
