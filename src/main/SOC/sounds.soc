@@ -2706,6 +2706,39 @@ Priority = 64
 Sound sfx_kc6e
 Priority = 64
 
+# Rhythm Heaven Megamix (RHM)
+
+Sound sfx_rhmgug
+Priority = 64
+Caption = Gauge filling
+
+Sound sfx_rhmgus
+Priority = 64
+Caption = Gauge stopped
+
+Sound sfx_rhmrhi
+Priority = 64
+Caption = Rank: VERY good!!
+
+# Originally the "no miss" sound; used as a "good rank" sound here
+Sound sfx_rhmnms
+Priority = 64
+Caption = Rank: Good!
+
+Sound sfx_rhmrok
+Priority = 64
+Caption = Rank: OK
+
+Sound sfx_rhmrng
+Priority = 64
+Caption = Rank: Bad...
+
+# Dig Dug Arrangement (DDA)
+
+sound sfx_dda96
+Priority = 64
+Caption = Results blip
+
 # SRB2kart
 Sound sfx_slip
 Priority = 96
@@ -3886,35 +3919,23 @@ Priority = 96
 Flags = 64
 Caption = Bouncy landing
 
-# Rhythm Heaven Megamix (RHM)
-
-Sound sfx_rhmgug
+# Laps and Finish
+Sound sfx_nxtlap
 Priority = 64
-Caption = Gauge filling
+Caption = Next Lap
 
-Sound sfx_rhmgus
+Sound sfx_finlap
 Priority = 64
-Caption = Gauge stopped
+Caption = Final Lap!
 
-Sound sfx_rhmrhi
+Sound sfx_rcefin
 Priority = 64
-Caption = Rank: VERY good!!
+Caption = FINISH!
 
-# Originally the "no miss" sound; used as a "good rank" sound here
-Sound sfx_rhmnms
+Sound sfx_cntdwn
 Priority = 64
-Caption = Rank: Good!
+Caption = Countdown beep
 
-Sound sfx_rhmrok
+Sound sfx_cntdwg
 Priority = 64
-Caption = Rank: OK
-
-Sound sfx_rhmrng
-Priority = 64
-Caption = Rank: Bad...
-
-# Dig Dug Arrangement (DDA)
-
-sound sfx_dda96
-Priority = 64
-Caption = Results blip
+Caption = GO!
