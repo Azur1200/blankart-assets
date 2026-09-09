@@ -20,8 +20,9 @@ VEHICLE
 	Cvar = choosevehicle
 FOLLOWER
 	Y = 36
-	Text = Follower
-	Cvar = dummyfollower
+	Text = Choose Follower...
+	Tooltip = Choose this player's follower.
+	Cvar = choosefollower
 COLOR
 	Y = 152
 	Text = Color
