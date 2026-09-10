@@ -56,6 +56,15 @@ BACK
 	Style = fill
 	Patch = 146x74,159
 
+MenuPanel MP_PLAYER_FOLLOWER
+DrawRoutine = MD_DrawSetupMultiPlayerMenuFollower
+Items
+BACK
+	X = 0
+	Y = 0
+	Style = fill
+	Patch = 146x74,159
+
 Menu MP_PLAYERSETUP
 EnterRoutine = MR_SetupMultiPlayer
 QuitRoutine = MR_QuitMultiPlayerMenu
@@ -67,5 +76,8 @@ SKIN : MP_PLAYER_SKIN
 	X = 132
 	Y = 89
 VEHICLE : MP_PLAYER_VEHICLE
+	X = 132
+	Y = 89
+FOLLOWER : MP_PLAYER_FOLLOWER
 	X = 132
 	Y = 89
