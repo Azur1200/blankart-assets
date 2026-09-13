@@ -153,6 +153,10 @@ PLAYERBUMP
 	Text = Player Bump Setting
 	Tooltip = Change how players collide with one another.
 	Cvar = playerbump
+SOFTBUMP
+	Text = Soft Player Bump
+	Tooltip = Reduce the impulse caused by player-on-player bumps.
+	Cvar = kart_softbump
 TRAILSLOWDOWN
 	Text = Trailing Item Slowdown
 	Tooltip = When on, trailing an item behind you will eventually slow you down.
@@ -207,6 +211,22 @@ MenuPanel OP_BLANITEMSETTINGS
 ScrollHeight = 134
 LineHeight = 10
 Items
+ORBIHEAD
+	OfsY = 10
+	Style = header
+	Text = Orbinaut
+ORBI_DMG
+	Text = Damage Type
+	Tooltip = (Also changes Jawz.) Set the damage type that Orbinauts inflict. "Auto" picks based on player count.
+	Cvar = orbijawzdamage
+JAWZHEAD
+	OfsY = 10
+	Style = header
+	Text = Jawz
+JAWZ_DMG
+	Text = Damage Type
+	Tooltip = (Also changes Orbinauts.) Set the damage type that Jawz inflict. "Auto" picks based on player count.
+	Cvar = orbijawzdamage
 INVINHEAD
 	OfsY = 10
 	Style = header
@@ -291,6 +311,38 @@ FLAME_OFFROAD
 	Text = Offroad Burn
 	Tooltip = Should the Flame Shield grant the user offroad resistance when overheating offroad?
 	Cvar = kartflame_offroadburn
+FLAME_SHOVE
+	Text = Attack Shoves
+	Tooltip = Should the Flame Shield's attack Shove players instead of causing Flip-Over damage?
+	Cvar = kartflame_shove
+THUNDERHEAD
+	OfsY = 10
+	Style = header
+	Text = Thunder Shield
+THUNDER_RADIUS
+	Text = AOE Attack Radius
+	Tooltip = How wide should the Thunder Shield's area-of-effect attack be?
+	Cvar = kartthunder_radius
+ATTRACTIONHEAD
+	OfsY = 10
+	Style = header
+	Text = Attraction Shield
+ATTRACTION_ASSIST
+	Text = Homing Attack Assist
+	Tooltip = How hard should the Attraction Shield's homing attack steer towards targets?
+	Cvar = kartattraction_assistpower
+ATTRACTION_AOEDMG
+	Text = AOE Attack Damage
+	Tooltip = Set or disable the damage for the Attraction Shield's area-of-effect attack.
+	Cvar = kartattraction_aoedmg
+ATTRACTION_AOESHOVE
+	Text = AOE Attack Shove
+	Tooltip = Set the Shove impulse of the Attraction Shield's area-of-effect attack.
+	Cvar = kartattraction_aoeshove
+ATTRACTION_AOEEMP
+	Text = AOE Attack Item EMP
+	Tooltip = How long should the area-of-effect attack disable victims' items?
+	Cvar = kartattraction_aoeemp
 
 MenuPanel OP_BLANRANKSETTINGS
 ScrollHeight = 134
