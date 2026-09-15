@@ -18745,68 +18745,22 @@ Duration = -1
 Next = S_NULL
 
 # New Springs
-State S_NEOSPRING1
-SpriteName = SPR_NSPV
-Duration = -1
-
-State S_NEOSPRING2
-SpriteName = SPR_NSPV
-SpriteFrame = 1
+State S_NEOSPRING
 Duration = 1
 Action = A_Pain
-Next = S_NEOSPRING3
+Next = S_INVISIBLE
 
-State S_NEOSPRING3
-SpriteName = SPR_NSPV
-Duration = 1
-Next = S_NEOSPRING4
-
-State S_NEOSPRING4
-SpriteName = SPR_NSPV
-SpriteFrame = 2
-Duration = 4
-Next = S_NEOSPRING1
-
-State S_NEODIAG1
-SpriteName = SPR_NSPD
+State S_NEOSPRING_FRONT
+SpriteName = SPR_NSPG
+SpriteFrame = 0
 Duration = -1
 
-State S_NEODIAG2
-SpriteName = SPR_NSPD
+State S_NEOSPRING_BACK
+SpriteName = SPR_NSPG
 SpriteFrame = 1
-Duration = 1
-Action = A_Pain
-Next = S_NEODIAG3
-
-State S_NEODIAG3
-SpriteName = SPR_NSPD
-Duration = 1
-Next = S_NEODIAG4
-
-State S_NEODIAG4
-SpriteName = SPR_NSPD
-SpriteFrame = 2
-Duration = 4
-Next = S_NEODIAG1
-
-State S_NEOHORIZ1
-SpriteName = SPR_NSPH
 Duration = -1
 
-State S_NEOHORIZ2
-SpriteName = SPR_NSPH
-SpriteFrame = 1
-Duration = 1
-Action = A_Pain
-Next = S_NEOHORIZ3
-
-State S_NEOHORIZ3
-SpriteName = SPR_NSPH
-Duration = 1
-Next = S_NEOHORIZ4
-
-State S_NEOHORIZ4
-SpriteName = SPR_NSPH
+State S_NEOSPRING_SIDE
+SpriteName = SPR_NSPG
 SpriteFrame = 2
-Duration = 4
-Next = S_NEOHORIZ1
+Duration = -1
