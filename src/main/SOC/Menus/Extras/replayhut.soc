@@ -60,7 +60,7 @@ Initializer = MP_PrepReplayList
 KeyHandler = MR_HandleReplayHutList
 TickRoutine = MP_TickReplayHutDemoList
 ScrollBar = True
-ScrollHeight = 110
+ScrollHeight = 90
 
 MenuPanel REPLAYHUT_DEMOINFO_BG
 TickRoutine = MP_TickReplayHutInfoBackground
@@ -72,6 +72,20 @@ CENTERTEXT
 	X = 150
 	Y = 30
 	Style = center
+SEARCHICON
+	X = -42 + 40
+	Y = 149 + 19
+	Style = patch-small
+	Patch = M_FSRCH
+SEARCHBOX
+	X = -21 + 40
+	Y = 150 + 19
+	Style = fill
+	Patch = 262x14,159
+SEARCHTEXT
+	Text = Press to Search
+	X = -17 + 40
+	Y = 153 + 19
 
 MenuPanel REPLAYHUT_DEMOINFO_FG
 TickRoutine = MP_TickReplayHutInfoForeground
