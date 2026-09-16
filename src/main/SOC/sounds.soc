@@ -3942,6 +3942,9 @@ Sound sfx_cntdwg
 Priority = 64
 Caption = GO!
 
+Sound sfx_advsp
+Priority = 112
+Caption = Spring
 
 # Customizable engine sounds
 Sound sfx_kvch00
