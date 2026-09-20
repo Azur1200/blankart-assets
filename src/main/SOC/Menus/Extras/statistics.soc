@@ -136,24 +136,28 @@ TOTALPODIUM
 	Y = 40
 	Style = STATSAMOUNT
 	Text = Total podium (2nd/3rd place):
+PERFECTMEDALS
+	Y = 50
+	Style = STATSAMOUNT
+	Text = Total Perfect Ranks:
 HITS
-	Y = 60
+	Y = 70
 	Style = STATSAMOUNT
 	Text = Hits landed:
 SELFHITS
-	Y = 70
+	Y = 80
 	Style = STATSAMOUNT
 	Text = Self-hits landed:
 SINKS
-	Y = 90
+	Y = 100
 	Style = STATSAMOUNT
 	Text = Sinks landed:
 SINKED
-	Y = 100
+	Y = 110
 	Style = STATSAMOUNT
 	Text = Times hit by sink:
 RESPAWNS
-	Y = 120
+	Y = 130
 	Style = STATSAMOUNT
 	Text = Total respawns:
 

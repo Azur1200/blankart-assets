@@ -121,6 +121,10 @@ BLAN_ITEMSETTINGS
 	Text = Item Settings...
 	Tooltip = Customize certain items as you see fit.
 	Submenu = OP_BLANITEMSETTINGS
+BLAN_RANKSETTINGS
+	Text = Rank Settings...
+	Tooltip = Customize the Rank Score system.
+	Submenu = OP_BLANRANKSETTINGS
 QOLHEAD
 	OfsY = 10
 	Style = header
@@ -340,6 +344,103 @@ ATTRACTION_AOEEMP
 	Tooltip = How long should the area-of-effect attack disable victims' items?
 	Cvar = kartattraction_aoeemp
 
+MenuPanel OP_BLANRANKSETTINGS
+ScrollHeight = 134
+LineHeight = 10
+Items
+RANK_TOGGLE
+	Text = Race Ranks
+	Tooltip = When enabled, players are ranked by their overall game performance.
+	Cvar = raceranks
+INVIN_ACL
+	Text = Penalties
+	Tooltip = Do you want players to be penalized for certain actions?
+	Cvar = racerankpenalties
+RANKBONUSHEAD
+	OfsY = 10
+	Style = header
+	Text = Rank Bonuses
+INVIN_HDL
+	Text = Drift Bonus
+	Tooltip = Do you want players to earn points for drift-boosting?
+	Cvar = rank_driftbonus
+INVIN_STACKME
+	Text = Hit Bonus
+	Tooltip = Do you want players to earn points for hitting others?
+	Cvar = rank_hitbonus
+RANKPTBALANCEHEAD
+	OfsY = 10
+	Style = header
+	Text = Rank Point Balance Adjustment
+RANKLAWNMOWERTICS
+	Text = Lawnmower Threshold
+	Tooltip = The time (in seconds) before the player is penalized for driving offroad.
+	Cvar = rank_lawnmowerthreshold
+RANKHAZARDMERCY
+	Text = Hazard Damage Threshold
+	Tooltip = How many times can players take damage from hazards before being penalized?
+	Cvar = rank_hazardmercy
+RANKRESPAWNMERCY
+	Text = Respawn Threshold
+	Tooltip = How many times can players respawn before being penalized?
+	Cvar = rank_respawnmercy
+RANKPOINTHEAD
+	OfsY = 10
+	Style = header
+	Text = Rank Point Values
+RANKBESTPTS
+	Text = Highest Rank-score
+	Tooltip = The maximum points a player is able to earn. (97% of this score = P rank)
+	Cvar = rank_highestscore
+RANKWORSTPTS
+	Text = Lowest Rank-score
+	Tooltip = The minimum points a player is able to earn.
+	Cvar = rank_lowestscore
+RANKPARPTS
+	Text = Position Points
+	Tooltip = The most points earned per position. Recommended: 1.07x highest score.
+	Cvar = rank_progressionpoints
+RANKFINISHBONUSPTS
+	Text = Finish Bonus Points
+	Tooltip = The points to reward struggling players with for placing high.
+	Cvar = rank_finishbonus
+RANKFINISHPENALTYPTS
+	Text = Finish Penalty Points
+	Tooltip = The points to deduct from leading players for placing low.
+	Cvar = rank_finishpenalty
+RANKSPBATKPTS
+	Text = SPB-Attack Bonus Points
+	Tooltip = The points you earn over time for being chased by an SPB. More points for closer calls!
+	Cvar = rank_spbtimepoints
+RANKGENERICPAR
+	Text = Generic Par-time
+	Tooltip = The time (in seconds) used for the SPB Bonus in non-waypointed maps.
+	Cvar = rank_genericpartime
+RANKDRIFTPTS
+	Text = Drift Bonus Points
+	Tooltip = (With Drift Bonus enabled) The points you earn for performing drift boosts.
+	Cvar = rank_driftboostpoints
+RANKHITCONFIRMPTS
+	Text = Hit Bonus Points
+	Tooltip = (With Hit Bonus enabled) The points you earn for hitting other players.
+	Cvar = rank_hitconfirmpoints
+RANKOFFROADDIV
+	Text = Offroad Penalty Divisor
+	Tooltip = The tic delay for each point lost for driving offroad past a grace period.
+	Cvar = rank_offroad_divisor
+RANKWALLPTS
+	Text = Wall Penalty Points
+	Tooltip = The points you lose for running into walls above 75% speed.
+	Cvar = rank_wallbonkpenalty
+RANKHAZARDPTS
+	Text = Hazard Penalty Points
+	Tooltip = The points you lose for taking damage from hazards past a threshold.
+	Cvar = rank_hazardpenalty
+RANKRESPAWNPTS
+	Text = Respawn Penalty Points
+	Tooltip = The points you lose for respawning past a threshold.
+	Cvar = rank_respawnpenalty
+
 MenuPanel OP_MONITORTOGGLE
 Initializer = MP_SetupMonitorToggles
 KeyHandler = MR_HandleMonitorToggles
@@ -372,6 +473,13 @@ Menu OP_BLANITEMSETTINGS
 HeaderPic = M_GAME
 Panels
 MAIN : OP_BLANITEMSETTINGS
+	X = 30
+	Y = 30
+
+Menu OP_BLANRANKSETTINGS
+HeaderPic = M_GAME
+Panels
+MAIN : OP_BLANRANKSETTINGS
 	X = 30
 	Y = 30
 
