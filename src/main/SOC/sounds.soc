@@ -3979,6 +3979,10 @@ Sound sfx_advsp
 Priority = 112
 Caption = Spring
 
+Sound sfx_dialogue
+Priority = 64
+Caption = /
+
 # Customizable engine sounds
 Sound sfx_kvch00
 Priority = 48
