@@ -3979,7 +3979,7 @@ Sound sfx_advsp
 Priority = 112
 Caption = Spring
 
-Sound sfx_dialogue
+Sound sfx_conver
 Priority = 64
 Caption = /
 
