@@ -185,6 +185,7 @@ SCREENTEXTURES
 
 MenuPanel OP_VISUAL
 LineHeight = 10
+ScrollHeight = 134
 Items
 VHSPAUSE
 	Text = VHS Effect
