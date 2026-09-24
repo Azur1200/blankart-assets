@@ -2739,6 +2739,28 @@ sound sfx_dda96
 Priority = 64
 Caption = Results blip
 
+# Mario Kart Wii
+
+Sound sfx_italw2
+Priority = 128
+Caption = Watch out!
+
+Sound sfx_italm1
+Priority = 128
+Caption = Danger...
+
+Sound sfx_italm2
+Priority = 128
+Caption = Danger...!
+
+Sound sfx_italm3
+Priority = 128
+Caption = Danger!
+
+Sound sfx_italm4
+Priority = 128
+Caption = DANGER!!!
+
 # SRB2kart
 Sound sfx_slip
 Priority = 96
@@ -3943,3 +3965,9 @@ Caption = GO!
 Sound sfx_advsp
 Priority = 112
 Caption = Spring
+
+# SPB seeking
+Sound sfx_spbsek
+Priority = 128
+Flags = 16
+Caption = Impending doom
