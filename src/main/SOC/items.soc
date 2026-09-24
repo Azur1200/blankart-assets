@@ -310,6 +310,7 @@ DisplayName = Thunder Shield
 Type = THUNDERSHIELD
 Amount = 1
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_DONTCHANGERESULT
+UniqueOddsRace = KO_ThunderShieldRaceOdds
 OddsRace = 5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 4,0
 
@@ -450,5 +451,6 @@ CooldownTime = 5
 KartResultAlt thundershield
 DisplayName = Attraction Shield
 Flags = KRF_COOLDOWNONSTART|KRF_POWERITEM|KRF_DONTCHANGERESULT
+UniqueOddsRace = KO_ThunderShieldRaceOdds
 OddsRace = 5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 OddsBattle = 4,0
