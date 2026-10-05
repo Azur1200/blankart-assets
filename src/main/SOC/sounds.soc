@@ -3667,6 +3667,16 @@ Priority = 64
 Flags = 48
 Caption = /
 
+Sound sfx_kidle1
+Priority = 64
+Flags = 48
+Caption = /
+
+Sound sfx_kidle2
+Priority = 64
+Flags = 48
+Caption = /
+
 # location for new sounds not in v1
 # yes I have to do this because people thought it would
 # be funny to use magic numbers in their maps......
