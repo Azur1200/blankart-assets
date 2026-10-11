@@ -215,10 +215,18 @@ NULLTILT
 	Text = Null Drift Tilt
 	Tooltip = Rotate player sprites during a null drift.
 	Cvar = nulldrifttilt
+GRAVSTRECH
+	Text = Visual Streching
+	Tooltip = Visually strech the sprite while in the air.
+	Cvar = gravstretch
 SALTYHOP
 	Text = Visual Hopping
 	Tooltip = Do a visual-only hop during drifts.
 	Cvar = hardcodehop
+SALTYHOPSQUISH
+	Text = Visual Hopping Squish
+	Tooltip = When doing a visual hop, squish the player sprite
+	Cvar = hardcodehopsquish
 DRIFTJITTER
 	Text = Drift Jitter
 	Tooltip = Jitter sprites using new skin format during drifts.
