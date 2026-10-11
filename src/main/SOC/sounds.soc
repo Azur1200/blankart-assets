@@ -3989,6 +3989,23 @@ Sound sfx_advsp
 Priority = 112
 Caption = Spring
 
+# Shove Sounds (Heaven Studio - Nail Carpenter)
+Sound sfx_nchmmw
+Priority = 96
+Flags = 64
+Caption = Weak Shove
+
+Sound sfx_nchmms
+Priority = 96
+Flags = 64
+Caption = Strong Shove
+
+# Mini Dodges (Heaven Studio - Trick on the Class)
+Sound sfx_tcbdod
+Priority = 64
+Flags = 64
+Caption = Mini Dodges
+
 Sound sfx_conver
 Priority = 64
 Caption = /
