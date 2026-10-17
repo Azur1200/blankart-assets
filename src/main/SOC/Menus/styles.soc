@@ -182,6 +182,10 @@ Part 0
 	Align = Edge
 	Source = Patch
 	Source2 = Extra
+	
+MenuItemStyle TEXTTAG
+Part 0
+	TextTag = True
 
 # lots of things previously hardcoded in M_DrawRightString, fixedstring set by hardcode
 
