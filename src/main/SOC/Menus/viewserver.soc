@@ -67,6 +67,23 @@ Part 1
 MenuItemStyle VIEWSERVER_ADDON
 Part 0
 	FontAlt = TINY
+	
+MenuItemStyle VIEWSERVER_BUTTON
+Part 0
+	FontAlt = TINY
+	TextTag = True
+
+MenuItemStyle VIEWSERVER_CENTERBUTTON
+Part 0
+	FontAlt = TINY
+	Align = Center
+	TextTag = True
+
+MenuItemStyle VIEWSERVER_RIGHTBUTTON
+Part 0
+	FontAlt = TINY
+	Align = Right
+	TextTag = True
 
 MenuPanel VIEWSERVER_PLAYERS
 Initializer = MP_ViewServerPlayers
@@ -134,22 +151,22 @@ ServerCheats
 EXITBUTTON
 	X = 16
 	Y = BASEVIDHEIGHT - 11
-	Style = thin2
+	Style = VIEWSERVER_BUTTON
 	Text = [^2ESC^0] = Return
 TOGGLEBUTTON1
 	X = BASEVIDWIDTH/2
 	Y = BASEVIDHEIGHT - 11
-	Style = thin2-center
+	Style = VIEWSERVER_CENTERBUTTON
 	Text = [^2SPACE^0] = Players
 TOGGLEBUTTON2
 	X = BASEVIDWIDTH/2
 	Y = BASEVIDHEIGHT - 11
-	Style = thin2-center
+	Style = VIEWSERVER_CENTERBUTTON
 	Text = [^2SPACE^0] = Addons
 JOINBUTTON
 	X = BASEVIDWIDTH - 12
 	Y = BASEVIDHEIGHT - 11
-	Style = thin2-right
+	Style = VIEWSERVER_RIGHTBUTTON
 	Text = [^2ENTER^0] = Join
 PLAYERSHEADING
 	X = 12

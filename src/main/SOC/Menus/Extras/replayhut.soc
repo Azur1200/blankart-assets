@@ -84,6 +84,7 @@ SEARCHBOX
 	Patch = 262x14,159
 SEARCHTEXT
 	Text = Press to Search
+	Style = TEXTTAG
 	X = -17 + 40
 	Y = 153 + 19
 
