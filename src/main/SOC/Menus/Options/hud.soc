@@ -140,6 +140,10 @@ Items
 MINIMAPHEAD
 	Style = header
 	Text = Minimap
+MINISTYLE
+	Text = Minimap Style
+	Tooltip = How should icons on the minimap display?
+	Cvar = minimapstyle
 MINIVISI
 	Text = Minimap Visibility
 	Tooltip = How translucent is the minimap?
@@ -236,14 +240,22 @@ DRIFTGAUGEOFS
 	Text = Drift Gauge Offset
 	Tooltip = Adjust Drift Gauge offset.
 	Cvar = kartdriftgaugeoffset
-MISCHEAD
+CHARACTERSELECTHEAD
 	OfsY = 10
 	Style = header
-	Text = Misc
-SHOWINPUT
-	Text = Input Display
-	Tooltip = Show player inputs.
-	Cvar = showinput
+	Text = Character Select
+CSSSTYLE
+	Text = Skin Select Menu
+	Tooltip = Use a different style of Skin Select.
+	Cvar = skinselectstyle
+CSSSORT
+	Text = Skin Select Sorting
+	Tooltip = Changes the sorting order in the Grid Skin Select
+	Cvar = skinselectsort
+ITEMTIMERHEAD
+	OfsY = 10
+	Style = header
+	Text = Item Timers
 SHOWTIMER
 	Text = Item Timers
 	Tooltip = Show duration of boosts.
@@ -256,6 +268,14 @@ SHOWDRAFT
 	Text = Drafting Indicator
 	Tooltip = Show progress of drafting.
 	Cvar = draftindicator
+MISCHEAD
+	OfsY = 10
+	Style = header
+	Text = Misc HUD
+SHOWINPUT
+	Text = Input Display
+	Tooltip = Show player inputs.
+	Cvar = showinput
 CHECK
 	Text = Show "CHECK"
 	Tooltip = Show the "CHECK" graphic when some is behind the player.
@@ -272,14 +292,6 @@ FANCYJIN
 	Text = Animated Roulette
 	Tooltip = Make the roulette do a fancy animation.
 	Cvar = fancyroulette
-CSSSTYLE
-	Text = Skin Select Menu
-	Tooltip = Use a different style of Skin Select.
-	Cvar = skinselectstyle
-CSSSORT
-	Text = Skin Select Sorting
-	Tooltip = Changes the sorting order in the Grid Skin Select
-	Cvar = skinselectsort
 HIRESPORT
 	Text = High Resolution Ranks
 	Tooltip = Use the Wanted icon for when the Rank icon would be used.

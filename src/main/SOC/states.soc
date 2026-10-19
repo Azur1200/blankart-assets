@@ -4230,6 +4230,7 @@ Next = S_CYBRAKDEMONELECTRICBARRIER_REVIVE2
 
 State S_CYBRAKDEMONELECTRICBARRIER_REVIVE2
 Action = A_SpawnFreshCopy
+Var1 = 0
 Next = S_CYBRAKDEMONELECTRICBARRIER_REVIVE3
 
 State S_CYBRAKDEMONELECTRICBARRIER_REVIVE3
@@ -10155,6 +10156,7 @@ Next = S_BALLOONPOP6
 
 State S_BALLOONPOP6
 Action = A_SpawnFreshCopy
+Var1 = 0
 
 # Yellow Spring
 State S_YELLOWSPRING
@@ -10529,6 +10531,80 @@ State S_POP1
 SpriteName = SPR_BUBL
 SpriteFrame = 5
 Duration = 16
+
+State S_TRAPBUBBLE1
+SpriteName = SPR_BUBS
+SpriteFrame = FF_FULLBRIGHT|11
+Duration = 2
+Next = S_TRAPBUBBLE2
+
+State S_TRAPBUBBLE2
+SpriteName = SPR_BUBS
+SpriteFrame = FF_FULLBRIGHT|10
+Duration = 2
+Next = S_TRAPBUBBLE3
+
+State S_TRAPBUBBLE3
+SpriteName = SPR_BUBS
+SpriteFrame = FF_FULLBRIGHT|9
+Duration = 2
+Next = S_TRAPBUBBLE4
+
+State S_TRAPBUBBLE4
+SpriteName = SPR_BUBS
+SpriteFrame = FF_FULLBRIGHT|10
+Duration = 2
+Next = S_TRAPBUBBLE5
+
+State S_TRAPBUBBLE5
+SpriteName = SPR_BUBS
+SpriteFrame = FF_FULLBRIGHT|11
+Duration = 2
+Next = S_TRAPBUBBLE6
+
+State S_TRAPBUBBLE6
+SpriteName = SPR_BUBS
+SpriteFrame = FF_FULLBRIGHT|10
+Duration = 2
+Next = S_TRAPBUBBLE7
+
+State S_TRAPBUBBLE7
+SpriteName = SPR_BUBS
+SpriteFrame = FF_FULLBRIGHT|9
+Duration = 2
+Next = S_TRAPBUBBLE8
+
+State S_TRAPBUBBLE8
+SpriteName = SPR_BUBS
+SpriteFrame = FF_FULLBRIGHT|10
+Duration = 2
+Next = S_TRAPBUBBLE1
+
+# FIXME: An actual popping sprite... please?!
+State S_TRAPBUBBLE_POP_1
+Duration = 4
+Next = S_TRAPBUBBLE_POP_2
+
+State S_TRAPBUBBLE_POP_2
+Duration = 1
+Action = A_WarpToSpawnpoint
+Next = S_TRAPBUBBLE_POP_3
+
+# Duration: TICRATE - 1
+# I like consistency
+State S_TRAPBUBBLE_POP_3
+Duration = 34
+Action = A_CheckScriptArg
+Var1 = 0
+Var2 = S_TRAPBUBBLE_POP_4
+
+State S_TRAPBUBBLE_POP_4
+Duration = 15*TICRATE
+Next = S_TRAPBUBBLE_POP_5
+
+State S_TRAPBUBBLE_POP_5
+Action = A_SpawnFreshCopy
+Var1 = 1
 
 State S_WATERZAP
 SpriteName = SPR_WZAP
@@ -15271,54 +15347,6 @@ SpriteFrame = FF_FULLBRIGHT|9
 Duration = -1
 Next = S_BUBBLESHIELDBLOWUP
 
-State S_BUBBLESHIELDTRAP1
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|11
-Duration = 2
-Next = S_BUBBLESHIELDTRAP2
-
-State S_BUBBLESHIELDTRAP2
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|10
-Duration = 2
-Next = S_BUBBLESHIELDTRAP3
-
-State S_BUBBLESHIELDTRAP3
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|9
-Duration = 2
-Next = S_BUBBLESHIELDTRAP4
-
-State S_BUBBLESHIELDTRAP4
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|10
-Duration = 2
-Next = S_BUBBLESHIELDTRAP5
-
-State S_BUBBLESHIELDTRAP5
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|11
-Duration = 2
-Next = S_BUBBLESHIELDTRAP6
-
-State S_BUBBLESHIELDTRAP6
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|10
-Duration = 2
-Next = S_BUBBLESHIELDTRAP7
-
-State S_BUBBLESHIELDTRAP7
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|9
-Duration = 2
-Next = S_BUBBLESHIELDTRAP8
-
-State S_BUBBLESHIELDTRAP8
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|10
-Duration = 2
-Next = S_BUBBLESHIELDTRAP1
-
 # Bubble Shield damage and debris
 State S_BUBLSHLD_DMG_1
 SpriteName = SPR_BUBC
@@ -18715,3 +18743,24 @@ SpriteName = SPR_FHRN
 SpriteFrame = 2
 Duration = -1
 Next = S_NULL
+
+# New Springs
+State S_NEOSPRING
+Duration = 1
+Action = A_Pain
+Next = S_INVISIBLE
+
+State S_NEOSPRING_FRONT
+SpriteName = SPR_NSPG
+SpriteFrame = 0
+Duration = -1
+
+State S_NEOSPRING_BACK
+SpriteName = SPR_NSPG
+SpriteFrame = 1
+Duration = -1
+
+State S_NEOSPRING_SIDE
+SpriteName = SPR_NSPG
+SpriteFrame = 2
+Duration = -1

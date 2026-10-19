@@ -17,6 +17,7 @@ Title = Backdoor Blaster [Chapter2]
 Usage = Main Menu
 Author = Ayako Saso
 Source = Ginga Force
+Volume = 75
 
 Lump GPMENU
 Title = Competition Menu (Prototype)
@@ -30,6 +31,7 @@ Title = Ran (Stage1)
 Usage = Multiplayer/Online Menu
 Author = Manabu Namiki
 Source = DODONPACHI SAIDAIOUJOU / DODONPACHI MAXIMUM
+Volume = 75
 
 Lump RAMENU
 Title = Games Menu
@@ -43,6 +45,7 @@ Title = Saidaioujou (Ending)
 Usage = Options
 Author = Manabu Namiki
 Source = DODONPACHI SAIDAIOUJOU / DODONPACHI MAXIMUM
+Volume = 75
 
 Lump EXMENU
 Title = Gems Museum
@@ -85,3 +88,17 @@ Usage = Voice Preferences
 Author = Toshiyuki Sudo
 Source = Wii Food Delivery Channel
 Volume = 200
+
+Lump _MSERV
+Title = Golf Balls for Breakfast
+Usage = Master Server Listing
+Author = SlappyHappy2000
+Source = Uncanny Cat Golf
+Volume = 225
+
+Lump ADNMNU
+Title = I Mod This Video Game, This Funny Video Game
+Usage = Addons Menu
+Author = SlappyHappy2000
+Source = Uncanny Cat Golf
+Volume = 225

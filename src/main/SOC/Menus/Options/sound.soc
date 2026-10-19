@@ -25,10 +25,14 @@ REVERSE
 	Text = Reverse L/R Channels
 	Tooltip = Reverse left and right channels of audio.
 	Cvar = stereoreverse
-SURROUND
-	Text = Surround Sound
-	Tooltip = Toggle the usage of Surround Sound
-	Cvar = surround
+#SURROUND
+#	Text = Surround Sound
+#	Tooltip = Toggle the usage of Surround Sound
+#	Cvar = surround
+3DSOUND
+	Text = 3D Sound
+	Tooltip = Toggle the usage of 3d Sound
+	Cvar = 3dsound
 SOUNDEFX
 	Text = Sound EFX
 	Tooltip = Turn Sound Effect EFX on or off.
@@ -63,6 +67,7 @@ RESTARTAUDIO
 	Call = MR_RestartAudio
 
 MenuPanel OP_SNDEFX
+ScrollHeight = 134
 LineHeight = 10
 Items
 CHATNOTIFICATIONS
@@ -118,6 +123,14 @@ RESYNCPOWERUPS
 	Text = Only Resync Power Music
 	Tooltip = Adjust if only powerup music gets resynced.
 	Cvar = music_resync_powerups_only
+DOPPLER
+	Text = Doppler
+	Tooltip = Adjust amount of doppler applied in game.
+	Cvar = al_doppler
+SPEEDOFSOUND
+	Text = Speed of Sound
+	Tooltip = Adjust Speed of Sound used for 3D audio and doppler.
+	Cvar = al_speedofsound
 
 Menu OP_SOUND
 HeaderPic = M_SOUND

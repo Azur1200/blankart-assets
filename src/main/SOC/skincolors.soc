@@ -377,7 +377,7 @@ Accessible = 1
 
 Color SKINCOLOR_YELLOW
 Name = Yellow
-Ramp = 0,80,81,82,83,73,84,74,64,65,66,67,68,69,70,71
+Ramp = 0,80,81,82,83,72,73,73,74,75,76,67,68,69,70,71
 InvColor = SKINCOLOR_AQUAMARINE
 InvShade = 8
 ChatColor = V_YELLOWMAP

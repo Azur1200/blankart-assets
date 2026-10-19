@@ -71,11 +71,11 @@ async def Deflate(filename, zipname, level, i, usezlib):
 		fdata = f.read()
 
 	file = PkFile()
-	file.crc = zlib.crc32(fdata)
+	file.crc = zlib.crc32(fdata) & 0xffffffff
 	file.size = len(fdata)
 
 	if usezlib:
-		obj = zlib.compressobj(level = 9, wbits = -15)
+		obj = zlib.compressobj(level = 9, wbits = -15, method=zlib.DEFLATED, memLevel=8)
 		file.data = obj.compress(fdata)
 		file.data += obj.flush()
 	else: # zopfli

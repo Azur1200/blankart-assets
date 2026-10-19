@@ -2706,6 +2706,39 @@ Priority = 64
 Sound sfx_kc6e
 Priority = 64
 
+# Rhythm Heaven Megamix (RHM)
+
+Sound sfx_rhmgug
+Priority = 64
+Caption = Gauge filling
+
+Sound sfx_rhmgus
+Priority = 64
+Caption = Gauge stopped
+
+Sound sfx_rhmrhi
+Priority = 64
+Caption = Rank: VERY good!!
+
+# Originally the "no miss" sound; used as a "good rank" sound here
+Sound sfx_rhmnms
+Priority = 64
+Caption = Rank: Good!
+
+Sound sfx_rhmrok
+Priority = 64
+Caption = Rank: OK
+
+Sound sfx_rhmrng
+Priority = 64
+Caption = Rank: Bad...
+
+# Dig Dug Arrangement (DDA)
+
+sound sfx_dda96
+Priority = 64
+Caption = Results blip
+
 # SRB2kart
 Sound sfx_slip
 Priority = 96
@@ -3885,3 +3918,45 @@ Sound sfx_vclgna
 Priority = 96
 Flags = 64
 Caption = Bouncy landing
+
+# Laps and Finish
+Sound sfx_nxtlap
+Priority = 64
+Caption = Next Lap
+
+Sound sfx_finlap
+Priority = 64
+Caption = Final Lap!
+
+Sound sfx_rcefin
+Priority = 64
+Caption = FINISH!
+
+Sound sfx_cntdwn
+Priority = 64
+Caption = Countdown beep
+
+Sound sfx_cntdwg
+Priority = 64
+Caption = GO!
+
+Sound sfx_advsp
+Priority = 112
+Caption = Spring
+
+# Shove Sounds (Heaven Studio - Nail Carpenter)
+Sound sfx_nchmmw
+Priority = 96
+Flags = 64
+Caption = Weak Shove
+
+Sound sfx_nchmms
+Priority = 96
+Flags = 64
+Caption = Strong Shove
+
+# Mini Dodges (Heaven Studio - Trick on the Class)
+Sound sfx_tcbdod
+Priority = 64
+Flags = 64
+Caption = Mini Dodges

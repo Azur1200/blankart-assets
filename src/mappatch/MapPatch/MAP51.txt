@@ -1,5 +1,6 @@
 // SMK Donut Plains 1
 // Waypoints: GenericHeroGuy
+// Rings: GenericHeroGuy
 
 namespace = "blankart-patch";
 version = 2;
@@ -664,6 +665,14 @@ thing	// 58
 	arg2 = 1;
 }
 
+thing	// 59
+{
+	x = 1952.0;
+	y = -6560.0;
+	angle = 270;
+	type = 300;
+}
+
 thing	// 60
 {
 	id = 500;
@@ -673,6 +682,366 @@ thing	// 60
 	type = 2001;
 	arg0 = 43;
 	arg1 = 352;
+}
+
+thing	// 61
+{
+	x = 800.0;
+	y = -3744.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 62
+{
+	x = 1056.0;
+	y = -3744.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 63
+{
+	x = 928.0;
+	y = -3616.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 64
+{
+	x = 800.0;
+	y = -3488.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 65
+{
+	x = 1056.0;
+	y = -3488.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 66
+{
+	x = 1952.0;
+	y = -1376.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 67
+{
+	x = 1760.0;
+	y = -1248.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 68
+{
+	x = 2272.0;
+	y = -928.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 69
+{
+	x = 2528.0;
+	y = -1120.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 70
+{
+	x = 4960.0;
+	y = -734.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 71
+{
+	x = 4960.0;
+	y = -864.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 72
+{
+	x = 4960.0;
+	y = -992.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 73
+{
+	x = 7392.0;
+	y = -1952.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 74
+{
+	x = 7648.0;
+	y = -1952.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 75
+{
+	x = 7520.0;
+	y = -1824.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 76
+{
+	x = 7648.0;
+	y = -1696.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 77
+{
+	x = 7392.0;
+	y = -1696.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 78
+{
+	x = 6432.0;
+	y = -4064.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 79
+{
+	x = 6176.0;
+	y = -4064.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 80
+{
+	x = 6304.0;
+	y = -3936.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 81
+{
+	x = 6176.0;
+	y = -3808.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 82
+{
+	x = 6432.0;
+	y = -3808.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 83
+{
+	x = 7264.0;
+	y = -7520.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 84
+{
+	x = 7136.0;
+	y = -7392.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 85
+{
+	x = 7264.0;
+	y = -7392.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 86
+{
+	x = 7392.0;
+	y = -7392.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 87
+{
+	x = 7264.0;
+	y = -7264.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 88
+{
+	x = 4576.0;
+	y = -3744.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 89
+{
+	x = 4704.0;
+	y = -3616.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 90
+{
+	x = 4832.0;
+	y = -3488.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 91
+{
+	x = 4320.0;
+	y = -3488.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 92
+{
+	x = 4448.0;
+	y = -3360.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 93
+{
+	x = 4576.0;
+	y = -3232.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 94
+{
+	x = 4768.0;
+	y = -3936.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 95
+{
+	x = 4896.0;
+	y = -3936.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 96
+{
+	x = 4896.0;
+	y = -4064.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 97
+{
+	x = 5024.0;
+	y = -3936.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 98
+{
+	x = 4896.0;
+	y = -3808.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 99
+{
+	x = 3104.0;
+	y = -3872.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 100
+{
+	x = 2976.0;
+	y = -4000.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 101
+{
+	x = 2848.0;
+	y = -4128.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 102
+{
+	x = 3360.0;
+	y = -6624.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 103
+{
+	x = 2976.0;
+	y = -7136.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 104
+{
+	x = 2528.0;
+	y = -7136.0;
+	angle = 270;
+	type = 300;
+}
+
+thing	// 105
+{
+	x = 2592.0;
+	y = -6816.0;
+	angle = 270;
+	type = 300;
 }
 
 thing	// 106
