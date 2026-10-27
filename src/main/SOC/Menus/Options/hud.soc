@@ -268,6 +268,22 @@ SHOWDRAFT
 	Text = Drafting Indicator
 	Tooltip = Show progress of drafting.
 	Cvar = draftindicator
+HUDFEEDHEAD
+	OfsY = 10
+	Style = header
+	Text = HUD Feed
+HUDFEED
+	Text = HUD Feed
+	Tooltip = Show player events such as item hits on the hud.
+	Cvar = hudfeed
+HUDFEEDPOS
+	Text = HUD Feed Position
+	Tooltip = Change the location of HUD Feed.
+	Cvar = hudfeedposition
+HUDFEEDGRADES
+	Text = Show Race Ranks in HUD Feed
+	Tooltip = Show ranks in HUD Feed at the end of races during ranked races.
+	Cvar = hudfeed_show_grades
 MISCHEAD
 	OfsY = 10
 	Style = header

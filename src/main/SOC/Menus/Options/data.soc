@@ -177,7 +177,7 @@ UNLOCKABLES
 EVERYTHING
 	OfsY = 10
 	Text = \85Erase ALL Data
-	Tooltip = Destruction of the world as we know it.
+	Tooltip = <red>Destruction of the world as we know it.
 	Argument = 2
 	Call = MR_EraseData
 
