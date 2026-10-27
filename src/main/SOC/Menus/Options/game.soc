@@ -171,7 +171,7 @@ MISCHEAD
 	Text = Misc
 ITEMBREAKER
 	Text = Item Breaker
-	Tooltip = When in single player battle, Item Breaker will start. Smash the item boxes fast to win.
+	Tooltip = When in single player battle, Item Breaker will start.
 	Cvar = kartitembreaker
 RINGSTART
 	Text = Starting Rings
@@ -211,21 +211,13 @@ MenuPanel OP_BLANITEMSETTINGS
 ScrollHeight = 134
 LineHeight = 10
 Items
-ORBIHEAD
+ORBIJAWZHEAD
 	OfsY = 10
 	Style = header
-	Text = Orbinaut
-ORBI_DMG
+	Text = Orbinaut and Jawz
+ORBIJAWZDMG
 	Text = Damage Type
-	Tooltip = (Also changes Jawz.) Set the damage type that Orbinauts inflict. "Auto" picks based on player count.
-	Cvar = orbijawzdamage
-JAWZHEAD
-	OfsY = 10
-	Style = header
-	Text = Jawz
-JAWZ_DMG
-	Text = Damage Type
-	Tooltip = (Also changes Orbinauts.) Set the damage type that Jawz inflict. "Auto" picks based on player count.
+	Tooltip = Set the damage that Orbinauts and Jawz do. "Auto" picks based on player count.
 	Cvar = orbijawzdamage
 INVINHEAD
 	OfsY = 10
