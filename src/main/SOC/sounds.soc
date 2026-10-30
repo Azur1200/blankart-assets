@@ -4075,3 +4075,19 @@ Sound sfx_kvch12
 Priority = 48
 Flags = 65
 Caption = /
+
+# Select sounds
+Sound sfx_kartse
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_saddse
+Priority = 48
+Flags = 65
+Caption = /
+
+Sound sfx_stndse
+Priority = 48
+Flags = 65
+Caption = /
