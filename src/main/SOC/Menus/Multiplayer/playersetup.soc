@@ -10,19 +10,24 @@ NAME
 # Tails 01-18-2001
 SKIN
 	Y = 16
-	Text = Choose Character...
+	Text = Character
 	Tooltip = Choose this player's character.
 	Cvar = chooseskin
 VEHICLE
 	Y = 26
-	Text = Choose Vehicle...
+	Text = Vehicle
 	Tooltip = Choose this player's vehicle.
 	Cvar = choosevehicle
 FOLLOWER
 	Y = 36
-	Text = Choose Follower...
+	Text = Follower
 	Tooltip = Choose this player's follower.
 	Cvar = choosefollower
+TUNING
+	Y = 46
+	Text = Stat Tuning
+	Tooltip = Choose this player's stats.
+	Cvar = dummystats
 COLOR
 	Y = 152
 	Text = Color
@@ -65,6 +70,15 @@ BACK
 	Style = fill
 	Patch = 146x74,159
 
+MenuPanel MP_PLAYER_TUNING
+DrawRoutine = MD_DrawSetupMultiPlayerMenuTuning
+Items
+BACK
+	X = 0
+	Y = 0
+	Style = fill
+	Patch = 146x84,159
+
 Menu MP_PLAYERSETUP
 EnterRoutine = MR_SetupMultiPlayer
 QuitRoutine = MR_QuitMultiPlayerMenu
@@ -81,3 +95,6 @@ VEHICLE : MP_PLAYER_VEHICLE
 FOLLOWER : MP_PLAYER_FOLLOWER
 	X = 132
 	Y = 89
+TUNING : MP_PLAYER_TUNING
+	X = 132
+	Y = 79
