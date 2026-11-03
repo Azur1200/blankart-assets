@@ -64,9 +64,10 @@ float R_DoomLightingEquation(float light)
 		if (brightmap_mix > 0.5) {
 			final_color.rgb = texel.rgb;
 		} else {
+			float final_lighting = gl_Color.r * 255.0;
 			float tex_pal_idx = texture3D(palette_lookup_tex, vec3((texel * 63.0 + 0.5) / 64.0))[0] * 255.0;
 			float z = gl_FragCoord.z / gl_FragCoord.w;
-			float light_y = clamp(floor(R_DoomColormap(lighting, z, gl_FragCoord.xy)), 0.0, 31.0);
+			float light_y = clamp(floor(R_DoomColormap(final_lighting, z, gl_FragCoord.xy)), 0.0, 31.0);
 			vec2 lighttable_coord = vec2((tex_pal_idx + 0.5) / 256.0, (light_y + 0.5) / 32.0);
 			final_color = texture2D(lighttable_tex, lighttable_coord);
 		}
