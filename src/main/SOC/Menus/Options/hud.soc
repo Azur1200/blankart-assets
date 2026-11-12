@@ -292,6 +292,10 @@ SHOWINPUT
 	Text = Input Display
 	Tooltip = Show player inputs.
 	Cvar = showinput
+ACCELPROMPT
+	Text = Show Accel Prompt
+	Tooltip = Shows the "HIT THE GAS!" prompt where applicable.
+	Cvar = showaccelprompt
 CHECK
 	Text = Show "CHECK"
 	Tooltip = Show the "CHECK" graphic when some is behind the player.
