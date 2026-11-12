@@ -28,7 +28,7 @@ QUITGAME
 
 Menu MAIN
 Music = bmmenu
-BackgroundName = SRB2KTTL
+BackgroundName = BLANKTTL
 ScrollXSpeed = 5
 ScrollYSpeed = 0
 FadeStrength = 16
