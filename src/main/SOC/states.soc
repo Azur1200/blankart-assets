@@ -4231,6 +4231,7 @@ Next = S_CYBRAKDEMONELECTRICBARRIER_REVIVE2
 State S_CYBRAKDEMONELECTRICBARRIER_REVIVE2
 Action = A_SpawnFreshCopy
 Var1 = 0
+Var2 = 0
 Next = S_CYBRAKDEMONELECTRICBARRIER_REVIVE3
 
 State S_CYBRAKDEMONELECTRICBARRIER_REVIVE3
@@ -10157,6 +10158,7 @@ Next = S_BALLOONPOP6
 State S_BALLOONPOP6
 Action = A_SpawnFreshCopy
 Var1 = 0
+Var2 = 0
 
 # Yellow Spring
 State S_YELLOWSPRING
@@ -10532,79 +10534,69 @@ SpriteName = SPR_BUBL
 SpriteFrame = 5
 Duration = 16
 
-State S_TRAPBUBBLE1
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|11
-Duration = 2
-Next = S_TRAPBUBBLE2
+State S_TRAPBUBBLE
+SpriteName = SPR_TBBF
+SpriteFrame = FF_FULLBRIGHT|FF_ANIMATE
+Duration = -1
+Var1 = 7
+Var2 = 2
+Next = S_TRAPBUBBLE
 
-State S_TRAPBUBBLE2
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|10
-Duration = 2
-Next = S_TRAPBUBBLE3
+State S_TRAPBUBBLE_FLOAT
+SpriteName = SPR_TBFF
+SpriteFrame = FF_FULLBRIGHT|FF_ANIMATE
+Duration = -1
+Var1 = 7
+Var2 = 1
+Next = S_TRAPBUBBLE_FLOAT
 
-State S_TRAPBUBBLE3
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|9
-Duration = 2
-Next = S_TRAPBUBBLE4
-
-State S_TRAPBUBBLE4
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|10
-Duration = 2
-Next = S_TRAPBUBBLE5
-
-State S_TRAPBUBBLE5
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|11
-Duration = 2
-Next = S_TRAPBUBBLE6
-
-State S_TRAPBUBBLE6
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|10
-Duration = 2
-Next = S_TRAPBUBBLE7
-
-State S_TRAPBUBBLE7
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|9
-Duration = 2
-Next = S_TRAPBUBBLE8
-
-State S_TRAPBUBBLE8
-SpriteName = SPR_BUBS
-SpriteFrame = FF_FULLBRIGHT|10
-Duration = 2
-Next = S_TRAPBUBBLE1
-
-# FIXME: An actual popping sprite... please?!
 State S_TRAPBUBBLE_POP_1
-Duration = 4
+SpriteName = SPR_TBPF
+SpriteFrame = FF_FULLBRIGHT
+Duration = 1
 Next = S_TRAPBUBBLE_POP_2
 
 State S_TRAPBUBBLE_POP_2
+SpriteName = SPR_TBPF
+SpriteFrame = FF_FULLBRIGHT|1
 Duration = 1
-Action = A_WarpToSpawnpoint
 Next = S_TRAPBUBBLE_POP_3
+
+State S_TRAPBUBBLE_POP_3
+SpriteName = SPR_TBPF
+SpriteFrame = FF_FULLBRIGHT|2
+Duration = 1
+Next = S_TRAPBUBBLE_POP_4
+
+State S_TRAPBUBBLE_POP_4
+Duration = 2
+Action = A_WarpToSpawnpoint
+Next = S_TRAPBUBBLE_POP_5
 
 # Duration: TICRATE - 1
 # I like consistency
-State S_TRAPBUBBLE_POP_3
+State S_TRAPBUBBLE_POP_5
 Duration = 34
 Action = A_CheckScriptArg
 Var1 = 0
-Var2 = S_TRAPBUBBLE_POP_4
+Var2 = S_TRAPBUBBLE_POP_6
 
-State S_TRAPBUBBLE_POP_4
+State S_TRAPBUBBLE_POP_6
 Duration = 15*TICRATE
-Next = S_TRAPBUBBLE_POP_5
+Next = S_TRAPBUBBLE_POP_7
 
-State S_TRAPBUBBLE_POP_5
+State S_TRAPBUBBLE_POP_7
 Action = A_SpawnFreshCopy
 Var1 = 1
+Var2 = S_TRAPBUBBLE_SPAWN
+
+State S_TRAPBUBBLE_SPAWN
+SpriteName = SPR_TBSF
+SpriteFrame = FF_FULLBRIGHT|FF_ANIMATE
+Duration = 18
+Var1 = 8
+Var2 = 2
+Next = S_TRAPBUBBLE
 
 State S_WATERZAP
 SpriteName = SPR_WZAP
