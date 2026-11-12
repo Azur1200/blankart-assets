@@ -166,9 +166,9 @@ WATERBRICKS
 	Tooltip = Allows players to stop waterskipping by letting go of ACCEL.
 	Cvar = kartwaterskiplock
 PANELCOLLISION
-	Text = Sneaker Panel Collision
-	Tooltip = Adjusts how players collide with Sneaker Panels.
-	Cvar = sneakerpanel_collidemode
+	Text = Panel Collision
+	Tooltip = Adjusts how players collide with panels such as sneaker panels.
+	Cvar = panel_collidemode
 MISCHEAD
 	OfsY = 10
 	Style = header
