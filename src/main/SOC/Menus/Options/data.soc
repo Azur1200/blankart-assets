@@ -34,6 +34,10 @@ SYNCQUALITY
 	Text = Sync Check Interval
 	Tooltip = Interval to record sync checks.
 	Cvar = netdemo_syncquality
+DATEFORMAT
+	Text = Replay Date Format
+	Tooltip = Change the format of which replay dates are displayed.
+	Cvar = netdemo_dateformat
 
 MenuPanel OP_SCREENSHOTS
 Initializer = MP_ScreenshotOptions
@@ -177,7 +181,7 @@ UNLOCKABLES
 EVERYTHING
 	OfsY = 10
 	Text = \85Erase ALL Data
-	Tooltip = Destruction of the world as we know it.
+	Tooltip = <red>Destruction of the world as we know it.
 	Argument = 2
 	Call = MR_EraseData
 

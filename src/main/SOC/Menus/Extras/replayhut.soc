@@ -103,7 +103,7 @@ THUMBNAIL
 MAPNAME
 	X = 90
 	Y = 5
-NUMLAPS
+DATEANDLAPS
 	X = 90
 	Y = 14
 	Style = thin
