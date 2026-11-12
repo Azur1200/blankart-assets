@@ -4241,7 +4241,7 @@ RaiseState = S_EXTRALARGEBUBBLE
 # trap bubble
 Mobj MT_TRAPBUBBLE
 MapThingNum = 5080
-SpawnState = S_TRAPBUBBLE1
+SpawnState = S_TRAPBUBBLE
 SpawnHealth = 1000
 ReactionTime = 8
 DeathState = S_TRAPBUBBLE_POP_1
