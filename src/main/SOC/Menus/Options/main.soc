@@ -69,7 +69,7 @@ SECRETCREDS
 	Call = MR_SecretCredits
 
 Menu OP_MAIN
-Music = bmmenu
+Music = optmnu
 FadeStrength = 17
 HeaderPic = M_OPTTTL
 Panels

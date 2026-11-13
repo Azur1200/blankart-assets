@@ -158,7 +158,7 @@ LineHeight = 10
 ScrollHeight = 60
 
 Menu SP_TIMEATTACK
-Music = bmmenu
+Music = ramenu
 BackgroundName = SRB2BACK
 ScrollXSpeed = 0
 ScrollYSpeed = 0

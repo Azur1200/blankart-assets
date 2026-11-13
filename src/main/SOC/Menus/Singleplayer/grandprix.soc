@@ -30,7 +30,7 @@ START
 	SubMenu = CHANGELEVEL
 
 Menu SP_GRANDPRIX
-Music = bmmenu 
+Music = gpmenu
 EnterRoutine = MR_GrandPrixTemp
 Panels
 MAIN : SP_GRANDPRIX
