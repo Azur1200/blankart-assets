@@ -223,6 +223,10 @@ ORBIJAWZDMG
 	Text = Damage Type
 	Tooltip = Set the damage that Orbinauts and Jawz do. "Auto" picks based on player count.
 	Cvar = orbijawzdamage
+ORBIJAWZSOFTDMG
+	Text = Soft Damage
+	Tooltip = Set the damage that piercing Orbinauts and Jawz do.
+	Cvar = orbijawzsoftdamage
 INVINHEAD
 	OfsY = 10
 	Style = header
@@ -295,6 +299,14 @@ BUBBLE_IDLE
 	Text = Passive Defense
 	Tooltip = Should the Bubble Shield passively defend from attacks when not inflated?
 	Cvar = kartbubble_defense_canidle
+BUBBLE_PIERCESHIELD
+	Text = Shield piercing
+	Tooltip = Should certain item interactions pierce the Bubble Shield?
+	Cvar = kartbubble_pierceshield
+BUBBLE_REFLECTKILL
+	Text = Kill Reflected Items
+	Tooltip = Should the Bubble Shield kill certain reflected items?
+	Cvar = kartbubble_killonreflect
 FLAMEHEAD
 	OfsY = 10
 	Style = header
