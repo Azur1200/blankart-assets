@@ -14,15 +14,15 @@ Volume = 175
 
 Lump FLYOV1
 Usage = Grand Prix - Course Overview 1
-Title = Course Overview Fanfare
-Author = Shinobu Tanaka
+Title = Course Intro (Grand Prix B)
+Author = Shinobu Nagata
 Source = Mario Kart DS
 Volume = 250
 
 Lump FLYOV2
 Usage = Grand Prix - Course Overview 2
-Title = Course Overview Fanfare (Circuit/Stadium)
-Author = Shinobu Tanaka
+Title = Course Intro (Grand Prix A)
+Author = Shinobu Nagata
 Source = Mario Kart DS
 Volume = 250
 
