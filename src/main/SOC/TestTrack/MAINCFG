@@ -1,7 +1,7 @@
 Level BK_Test
 NoVisitNeeded = True
 LevelName = Test Map
-TypeOfLevel = None
+TypeOfLevel = Freeroam
 NumLaps = 1
 LightAngle = 135
 LightContrast = 64
