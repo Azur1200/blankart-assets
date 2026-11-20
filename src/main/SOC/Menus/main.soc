@@ -27,8 +27,8 @@ QUITGAME
 	Call = MR_QuitSRB2
 
 Menu MAIN
-Music = mnmenu
-BackgroundName = SRB2KTTL
+Music = bmmenu
+BackgroundName = BLANKTTL
 ScrollXSpeed = 5
 ScrollYSpeed = 0
 FadeStrength = 16
